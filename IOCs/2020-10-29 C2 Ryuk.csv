@@ -1,0 +1,461 @@
+Indicator,Source,Kill chain,Creation date,End of validity,Context
+5.2.64.135,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+109.70.236.134,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+5.2.79.12,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+5.2.64.144,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-12T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.171.73,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+107.173.58.175,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+5.2.64.174,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+213.252.244.170,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.175.153,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+5.2.64.167,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+5.2.64.149,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.171.94,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+213.252.245.71,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+5.2.64.133,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+5.2.64.182,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+5.2.64.172,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.171.77,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+213.252.244.38,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.147.230.87,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.147.229.180,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.147.229.92,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.147.230.132,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.147.230.133,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.171.76,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.174.139,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.147.230.141,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.147.229.68,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.171.78,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+69.61.38.155,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+5.2.72.202,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+213.252.244.126,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.171.96,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+5.2.64.113,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.171.75,SEKOIA,"command-and-control 
+",2020-10-12T15:55:29.736Z,2021-04-10T15:55:29.736Z,Wizard Spider / Ryuk
+88.119.171.74,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+5.2.72.200,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.174.127,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-12T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+5.2.79.10,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-12T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+69.61.38.156,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+213.252.246.154,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.147.228.77,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.174.118,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.174.126,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+96.9.209.217,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+96.9.225.144,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+213.252.244.62,SEKOIA C2 Tracker,"command-and-control 
+",2020-09-28T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.34.6.226,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.171.67,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.171.68,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.174.109,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.174.125,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.174.114,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.174.128,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.171.69,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+107.173.58.184,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+96.9.225.143,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.171.55,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.138.172.95,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.174.119,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+107.173.58.183,SEKOIA,"command-and-control 
+",2020-10-12T16:02:29.740Z,2021-04-10T16:02:29.740Z,Wizard Spider / Ryuk
+45.147.230.159,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.147.229.52,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+108.62.12.119,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+108.62.12.105,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+96.9.209.215,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.174.121,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.34.6.225,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+96.9.209.216,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+107.173.58.185,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+107.173.58.176,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+88.119.174.116,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.147.230.131,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.153.241.153,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.153.241.138,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.147.231.222,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+74.118.138.115,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+74.118.138.138,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+190.211.254.154,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+108.62.12.121,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+108.62.12.12,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.153.240.138,SEKOIA,"command-and-control 
+",2020-10-21T13:44:38.916Z,2020-11-20T13:44:38.916Z,Wizard Spider / Ryuk
+45.153.241.158,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+172.241.27.70,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.153.240.220,SEKOIA,"command-and-control 
+",2020-10-21T13:44:38.916Z,2020-11-20T13:44:38.916Z,Wizard Spider / Ryuk
+45.153.241.1,SEKOIA,"command-and-control 
+",2020-10-21T13:44:38.916Z,2020-11-20T13:44:38.916Z,Wizard Spider / Ryuk
+45.153.240.136,SEKOIA,"command-and-control 
+",2020-10-21T13:44:38.916Z,2020-11-20T13:44:38.916Z,Wizard Spider / Ryuk
+74.118.138.139,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+172.241.27.68,SEKOIA,"command-and-control 
+",2020-07-08T00:00:00.00000Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.147.230.140,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.153.240.222,SEKOIA,"command-and-control 
+",2020-10-21T13:44:38.916Z,2020-11-20T13:44:38.916Z,Wizard Spider / Ryuk
+45.153.240.194,SEKOIA,"command-and-control 
+",2020-10-21T13:44:38.916Z,2020-11-20T13:44:38.916Z,Wizard Spider / Ryuk
+74.118.138.137,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+108.62.12.114,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+108.62.12.116,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+45.153.240.178,SEKOIA,"command-and-control 
+",2020-10-21T13:44:38.916Z,2020-11-20T13:44:38.916Z,Wizard Spider / Ryuk
+45.153.240.240,SEKOIA,"command-and-control 
+",2020-10-21T13:44:38.916Z,2020-11-20T13:44:38.916Z,Wizard Spider / Ryuk
+45.153.240.157,SEKOIA,"command-and-control 
+",2020-10-21T13:44:38.916Z,2020-11-20T13:44:38.916Z,Wizard Spider / Ryuk
+108.177.235.53,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+172.241.27.65,SEKOIA,"command-and-control 
+",2020-07-15T00:00:00.00000Z,2020-11-05T00:00:00Z,Wizard Spider / Ryuk
+hakunaman.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+service-boosterr.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+harddagger.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+tarhungangster.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+gameleaderr.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+backup-leader.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+getinformationss.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+best-nas.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+raaidboss.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+service-leader.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+sobcase.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+topbackup-helper.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+best-backup.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+loockfinderrs.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+dotmaingame.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+reginds.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+servicemount.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+gtrsqer.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+topbackupintheworld.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+vnuret.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+zetrexx.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+gungameon.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+chalengges.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+cheapshhot.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+luckyhunterrs.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+saynoforbubble.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+hybriqdjs.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+hungrrybaby.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+havemosts.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+bithunterr.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+servicesupdater.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+sibalsakie.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+gunsdrag.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+secondlivve.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+rapirasa.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+top-backuphelper.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+bakcup-monster.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+regbed.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+backup-simple.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+bakcup-checker.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+jonsonsbabyy.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+qascker.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+serviceupdatter.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+remotessa.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+maybebaybe.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+errvghu.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+realgamess.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+imagodd.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+wondergodst.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+wodemayaa.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+bugsbunnyy.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+elephantdrrive.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+voiddas.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+puckhunterrr.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+cantliee.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+ayiyas.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+lindasak.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+pudgeee.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+sunofgodd.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+quwasd.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+razorses.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+chekingking.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+serviceboosterr.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+mixunderax.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+martahzz.com,SEKOIA,"command-and-control 
+",2020-09-30T22:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+nasmastrservice.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+loxliver.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+sweetmonsterr.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+service-checker.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+zhameharden.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+nas-leader.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+unlockwsa.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-20T00:00:00.000Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+nomadfunclub.com,SEKOIA,"command-and-control 
+",2020-10-12T16:06:09.299Z,2021-04-10T16:06:09.299Z,Wizard Spider / Ryuk
+tiancaii.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+service-hellper.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+bouths.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+mountasd.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+boost-servicess.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+servicegungster.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+raidbossa.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+topservicebooster.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+simple-backupbooster.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+checktodrivers.com,SEKOIA,"command-and-control 
+",2020-10-21T13:35:09.368Z,2021-04-19T13:35:09.368Z,Wizard Spider / Ryuk
+driver1downloads.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+backup1master.com,SEKOIA,"command-and-control 
+",2020-10-21T13:49:50.286Z,2021-04-19T13:49:50.286Z,Wizard Spider / Ryuk
+top-backupservice.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+top3-services.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+backup1services.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+top3servicebooster.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+servicereader.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+backup1helper.com,SEKOIA,"command-and-control 
+",2020-10-21T13:49:50.286Z,2021-04-19T13:49:50.286Z,Wizard Spider / Ryuk
+backupmasterservice.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+viewdrivers.com,SEKOIA,"command-and-control 
+",2020-10-21T13:49:50.286Z,2021-04-19T13:49:50.286Z,Wizard Spider / Ryuk
+topservice-masters.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+service1updater.com,SEKOIA,"command-and-control 
+",2020-10-21T13:35:09.368Z,2021-04-19T13:35:09.368Z,Wizard Spider / Ryuk
+nas-simple-helper.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+driver1master.com,SEKOIA,"command-and-control 
+",2020-10-21T13:49:50.286Z,2021-04-19T13:49:50.286Z,Wizard Spider / Ryuk
+bestservicehelper.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+backupmaster-service.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-26T00:00:00Z,2021-01-24T00:00:00Z,Wizard Spider / Ryuk
+driver1updater.com,SEKOIA,"command-and-control 
+",2020-10-21T13:49:50.286Z,2021-04-19T13:49:50.286Z,Wizard Spider / Ryuk
+boost-yourservice.com,SEKOIA,"command-and-control 
+",2020-10-21T13:49:50.286Z,2021-04-19T13:49:50.286Z,Wizard Spider / Ryuk
+driverdwl.com,SEKOIA,"command-and-control 
+",2020-10-21T13:49:50.286Z,2021-04-19T13:49:50.286Z,Wizard Spider / Ryuk
+bigjamg.xyz,SEKOIA,"command-and-control 
+",2020-10-23T10:48:52.097Z,2021-04-21T10:48:52.097Z,Wizard Spider / Ryuk
+https://bigjamg.xyz/f57f86c4bfa3702d46ba9d6ca684937b/2,SEKOIA,"command-and-control 
+",2020-10-23T10:36:41.776Z,2021-04-21T10:36:41.776Z,Wizard Spider / Ryuk
+https://bigjamg.xyz/f57f86c4bfa3702d46ba9d6ca684937b/4,SEKOIA,"command-and-control 
+",2020-10-23T10:36:41.776Z,2021-04-21T10:36:41.776Z,Wizard Spider / Ryuk
+cntrhum.xyz,SEKOIA,"command-and-control 
+",2020-10-23T10:36:41.776Z,2021-04-21T10:36:41.776Z,Wizard Spider / Ryuk
+45.153.240.246,SEKOIA,"command-and-control 
+",2020-10-21T13:44:38.916Z,2020-11-20T13:44:38.916Z,Wizard Spider / Ryuk
+fastbloodhunter.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-17T00:00:00Z,Wizard Spider / Ryuk
+caonimas.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-17T00:00:00Z,Wizard Spider / Ryuk
+bukaguka.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-17T00:00:00Z,Wizard Spider / Ryuk
+backupmastter.com,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-17T00:00:00Z,Wizard Spider / Ryuk
+12402-22344.bacloud.info,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2021-01-17T00:00:00Z,Wizard Spider / Ryuk
+88.119.174.117,SEKOIA C2 Tracker,"command-and-control 
+",2020-10-19T00:00:00Z,2020-10-29T00:00:00Z,Wizard Spider / Ryuk
+https://titlecs.com/issues/282,SEKOIA,"command-and-control 
+",2020-10-16T08:51:10.463Z,2021-01-14T08:51:10.463Z,Wizard Spider / Ryuk
+https://titlecs.com/issues/284,SEKOIA,"command-and-control 
+",2020-10-16T08:51:10.463Z,2021-01-14T08:51:10.463Z,Wizard Spider / Ryuk
+https://labelcs.com/f57f86c4bfa3702d46ba9d6ca684937b/2,SEKOIA,"command-and-control 
+",2020-10-16T08:51:10.463Z,2021-01-14T08:51:10.463Z,Wizard Spider / Ryuk
+https://labelcs.com/f57f86c4bfa3702d46ba9d6ca684937b/4,SEKOIA,"command-and-control 
+",2020-10-16T08:51:10.463Z,2021-01-14T08:51:10.463Z,Wizard Spider / Ryuk
+labelcs.com,SEKOIA,"command-and-control 
+",2020-10-16T08:52:21.283Z,2021-04-14T08:52:21.283Z,Wizard Spider / Ryuk
+titlecs.com,SEKOIA,"command-and-control 
+",2020-10-16T08:52:21.283Z,2021-04-14T08:52:21.283Z,Wizard Spider / Ryuk
+nicknamec.com,SEKOIA,"command-and-control 
+",2020-10-16T08:51:10.463Z,2021-04-14T08:51:10.463Z,Wizard Spider / Ryuk
+mixcinc.com,SEKOIA,"command-and-control 
+",2020-10-16T08:51:10.463Z,2021-04-14T08:51:10.463Z,Wizard Spider / Ryuk
+freedubcs.com,SEKOIA,"command-and-control 
+",2020-10-16T08:51:10.463Z,2021-04-14T08:51:10.463Z,Wizard Spider / Ryuk
+5.182.210.145,SEKOIA C2 Tracker,"command-and-control 
+",2020-09-30T22:00:00.000Z,2021-03-31T22:00:00.000Z,Wizard Spider / Ryuk
+https://cstr4.com/phpbb/article,SEKOIA,"command-and-control 
+",2020-10-09T08:49:22.546Z,2021-01-07T08:49:22.546Z,Wizard Spider / Ryuk
+cstr1.com,SEKOIA,"command-and-control 
+",2020-10-09T08:49:22.546Z,2021-04-07T08:49:22.546Z,Wizard Spider / Ryuk
+cstr5.com,SEKOIA,"command-and-control 
+",2020-10-09T09:01:57.090Z,2021-04-07T09:01:57.09Z,Wizard Spider / Ryuk
+cstr4.com,SEKOIA,"command-and-control 
+",2020-10-09T09:01:57.090Z,2021-04-07T09:01:57.09Z,Wizard Spider / Ryuk
+https://cstr3.com/phpbb/article,SEKOIA,"command-and-control 
+",2020-10-09T08:49:22.546Z,2021-01-07T08:49:22.546Z,Wizard Spider / Ryuk
+cstr2.com,SEKOIA,"command-and-control 
+",2020-10-09T08:49:22.546Z,2021-04-07T08:49:22.546Z,Wizard Spider / Ryuk
+cstr3.com,SEKOIA,"command-and-control 
+",2020-10-09T09:01:57.090Z,2021-04-07T09:01:57.09Z,Wizard Spider / Ryuk
+https://cstr5.com/phpbb/article,SEKOIA,"command-and-control 
+",2020-10-09T08:49:22.546Z,2021-01-07T08:49:22.546Z,Wizard Spider / Ryuk
