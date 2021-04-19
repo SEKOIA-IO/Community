@@ -1,4 +1,59 @@
 {
+  "openssh": [{
+      "value": "{source.ip} failed the security negociation with server {log.hostname}",
+      "conditions": [{
+	  "field": "action.name",
+	  "value": "negociate"
+	}, {
+	   "field": "action.outcome",
+	   "value": "failure"
+	}, {
+	  "field": "action.type",
+	  "value": "open"
+	}
+      ]
+    },
+    {
+      "value": "{source.ip} failed to connect to {log.hostname} (invalid user {user.name})",
+      "conditions": [{
+	  "field": "action.name",
+	  "value": "connection"
+	}, {
+	   "field": "action.outcome",
+	   "value": "failure"
+	}, {
+	  "field": "action.outcome_reason",
+	  "value": "Invalid user"
+	}
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "log.hostname",
+        "type": "failed to connect to"
+      }]
+    },
+    {
+      "value": "{source.ip} with username {user.name} disconnected from {log.hostname}",
+      "conditions": [{
+	  "field": "action.name",
+	  "value": "connection"
+	}, {
+	   "field": "action.outcome",
+	   "value": "success"
+	}, {
+	  "field": "action.type",
+	  "value": "close"
+	}, {
+         "field": "user.name"
+	}
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "log.hostname",
+        "type": "disconnected from"
+      }]
+    }
+  ],
   "nginx": [{
       "value": "{http.request.method} request from {source.ip}: {url.original} (status: {http.response.status_code})",
       "conditions": [{
