@@ -1,4 +1,102 @@
 {
+  "fortigate":[{
+      "value": "{log.hostname} denied {network.protocol} traffic initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "conditions": [{
+	  "field": "action.name",
+	  "value": "deny"
+	}, {
+	   "field": "action.outcome",
+	   "value": "success"
+	}, {
+	   "field": "action.type"
+	}
+      ]
+  }, {
+      "value": "{log.hostname} accepted {network.protocol} traffic initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "conditions": [{
+	  "field": "action.name",
+	  "value": "accept"
+	}, {
+	   "field": "action.outcome",
+	   "value": "success"
+	}, {
+	   "field": "action.type"
+	}
+      ]
+    }, {
+      "value": "{log.hostname} observed client reset {network.protocol} session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "conditions": [{
+	  "field": "action.name",
+	  "value": "client-rst"
+	}, {
+	   "field": "action.outcome",
+	   "value": "success"
+	}, {
+	   "field": "action.type"
+	}
+      ]
+    }, {
+      "value": "{log.hostname} observed server reset {network.protocol} session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "conditions": [{
+	  "field": "action.name",
+	  "value": "server-rst"
+	}, {
+	   "field": "action.outcome",
+	   "value": "success"
+	}, {
+	   "field": "action.type"
+	}
+      ]
+    }, {
+      "value": "{log.hostname} observed timeout {network.protocol} session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "conditions": [{
+	  "field": "action.name",
+	  "value": "timeout"
+	}, {
+	   "field": "action.outcome",
+	   "value": "success"
+	}, {
+	   "field": "action.type"
+	}
+      ]
+    }, {
+      "value": "{log.hostname} observed start {network.protocol} session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "conditions": [{
+	  "field": "action.name",
+	  "value": "start"
+	}, {
+	   "field": "action.outcome",
+	   "value": "success"
+	}, {
+	   "field": "action.type"
+	}
+      ]
+    }, {
+      "value": "{log.hostname} observed close {network.protocol} session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "conditions": [{
+	  "field": "action.name",
+	  "value": "close"
+	}, {
+	   "field": "action.outcome",
+	   "value": "success"
+	}, {
+	   "field": "action.type"
+	}
+      ]
+    }, {
+      "value": "{log.hostname} observed DNS session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "conditions": [{
+	  "field": "action.name",
+	  "value": "dns"
+	}, {
+	   "field": "action.outcome",
+	   "value": "success"
+	}, {
+	   "field": "action.type"
+	}
+      ]
+    }
+  ],
   "openssh": [{
       "value": "{source.ip} failed the security negociation with server {log.hostname}",
       "conditions": [{
