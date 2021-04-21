@@ -1,4 +1,24 @@
 {
+  "netflow": [
+    {
+      "value": "Netflow initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port} with {source.packets} packets sents and {destination.packets} packets received",
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ],
+      "conditions": [
+        {
+          "field": "source.ip"
+        },
+        {
+          "field": "destination.ip"
+        }
+      ]
+    }
+  ],
   "fortigate": [
     {
       "value": "{log.hostname} denied {network.protocol} traffic initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
