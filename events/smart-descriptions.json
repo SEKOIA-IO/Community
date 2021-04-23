@@ -936,7 +936,7 @@
       ]
     },
     {
-      "value": "File {file.name} created by {process.executable}device on {log.hostname}",
+      "value": "File {file.name} created by {process.executable} on {log.hostname}",
       "conditions": [{
           "field": "action.id",
           "value": 11
