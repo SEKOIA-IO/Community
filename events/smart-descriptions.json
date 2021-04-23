@@ -887,7 +887,102 @@
         }
       ]
     },
-
+    {
+      "value": "Process {process.executable} changed the creation time of the file {file.name} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 2
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Driver {process.executable} loaded on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 6
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Process {action.properties.SourceImage} created a thread in process {action.properties.TargetImage} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 8
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.executable} read on {action.properties.Device} device on {log.hostname} hostname",
+      "conditions": [{
+          "field": "action.id",
+          "value": 9
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "File {file.name} created by {process.executable}device on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 11
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Registry key {action.properties.TargetObject} created by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 12
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Pipe {action.properties.PipeName} created by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 17
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Pipe {action.properties.PipeName} connected by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 18
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
 
     {
       "value": "Microsoft Defender Antivirus client is up and running in a healthy state on {log.hostname}",
