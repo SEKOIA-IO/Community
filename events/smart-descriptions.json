@@ -930,6 +930,58 @@
           "value": 12
         },
         {
+          "field": "action.properties.MessEventType",
+          "value": "CreateKey"
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Registry value of the key {action.properties.TargetObject} created by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 12
+        },
+        {
+          "field": "action.properties.MessEventType",
+          "value": "CreateValue"
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Registry key {action.properties.TargetObject} deleted by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 12
+        },
+        {
+          "field": "action.properties.MessEventType",
+          "value": "DeleteKey"
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Registry value of the key {action.properties.TargetObject} deleted by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 12
+        },
+        {
+          "field": "action.properties.MessEventType",
+          "value": "DeleteValue"
+        },
+        {
           "field": "event.provider",
           "value": "Microsoft-Windows-Sysmon"
         }
