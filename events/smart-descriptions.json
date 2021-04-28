@@ -828,18 +828,6 @@
 
 
     {
-      "value": "{log.hostname} performed a DNS query for name {dns.question.name} (status: {dns.response_code})",
-      "conditions": [{
-          "field": "action.id",
-          "value": 22
-        },
-        {
-          "field": "event.provider",
-          "value": "Microsoft-Windows-Sysmon"
-        }
-      ]
-    },
-    {
       "value": "Process {process.executable} created by {user.name} on {log.hostname}",
       "conditions": [{
           "field": "action.id",
@@ -852,10 +840,10 @@
       ]
     },
     {
-      "value": "Registry key {action.properties.TargetObject} set by {process.executable} on {log.hostname}",
+      "value": "Process {process.executable} changed the creation time of the file {file.name} on {log.hostname}",
       "conditions": [{
           "field": "action.id",
-          "value": 13
+          "value": 2
         },
         {
           "field": "event.provider",
@@ -880,18 +868,6 @@
       "conditions": [{
           "field": "action.id",
           "value": 5
-        },
-        {
-          "field": "event.provider",
-          "value": "Microsoft-Windows-Sysmon"
-        }
-      ]
-    },
-    {
-      "value": "Process {process.executable} changed the creation time of the file {file.name} on {log.hostname}",
-      "conditions": [{
-          "field": "action.id",
-          "value": 2
         },
         {
           "field": "event.provider",
@@ -960,6 +936,18 @@
       ]
     },
     {
+      "value": "Registry key {action.properties.TargetObject} set by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 13
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
       "value": "Pipe {action.properties.PipeName} created by {process.executable} on {log.hostname}",
       "conditions": [{
           "field": "action.id",
@@ -976,6 +964,18 @@
       "conditions": [{
           "field": "action.id",
           "value": 18
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "{log.hostname} performed a DNS query for name {dns.question.name} (status: {dns.response_code})",
+      "conditions": [{
+          "field": "action.id",
+          "value": 22
         },
         {
           "field": "event.provider",
