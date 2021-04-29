@@ -852,7 +852,7 @@
       ]
     },
     {
-      "value": "Network connection from {source.ip} to {destination.ip} on port {destination.port} by {process.executable}",
+      "value": "Network connection from {source.ip} to {destination.ip}:{destination.port} by {process.executable} on {log.hostname}",
       "conditions": [{
           "field": "action.id",
           "value": 3
