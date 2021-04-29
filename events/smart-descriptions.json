@@ -900,7 +900,7 @@
       ]
     },
     {
-      "value": "Process {process.executable} read on {action.properties.Device} device on {log.hostname} hostname",
+      "value": "Process {process.executable} read on {action.properties.Device} device on {log.hostname}",
       "conditions": [{
           "field": "action.id",
           "value": 9
