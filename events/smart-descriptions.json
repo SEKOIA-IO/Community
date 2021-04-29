@@ -940,7 +940,7 @@
       ]
     },
     {
-      "value": "Registry value of the key {action.properties.TargetObject} created by {process.executable} on {log.hostname}",
+      "value": "Registry value {action.properties.TargetObject} created by {process.executable} on {log.hostname}",
       "conditions": [{
           "field": "action.id",
           "value": 12
