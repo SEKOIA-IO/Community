@@ -3,7 +3,7 @@
         {
             "conditions": [
                 {
-                    "field": "action.properties.type",
+                    "field": "event.kind",
                     "value": "statistics"
                 }
             ],
@@ -11,25 +11,25 @@
                 {
                     "source": "source.user.email",
                     "target": "destination.user.email",
-                    "type": "action.properties.fortimail_scanner_status"
+                    "type": "action.outcome_reason"
                 }
             ],
-            "value": "A statistic is raised form the scanner. Classified as {action.properties.fortimail_scanner_status} (action taken: {action.properties.fortimail_action_taken}), from: {source.user.email} ({source.ip}) to: {destination.user.email} ({destination.ip})"
+            "value": "A statistic is raised form the scanner. Classified as {action.outcome_reason} (action taken: {action.outcome}), from: {source.user.email} ({source.ip}) to: {destination.user.email} ({destination.ip})"
         },
         {
             "conditions": [
                 {
-                    "field": "action.properties.type",
+                    "field": "event.kind",
                     "value": "kevent"
                 }
             ],
             "relationships": [],
-            "value": "An event activity has been detected, with subactivity type: {action.properties.subtype} and message: {action.properties.kevent_message}"
+            "value": "An event activity has been detected, with subactivity type: {event.category} and message: {event.message}"
         },
         {
             "conditions": [
                 {
-                    "field": "action.properties.type",
+                    "field": "event.kind",
                     "value": "event"
                 },
                 {
@@ -43,7 +43,7 @@
         {
             "conditions": [
                 {
-                    "field": "action.properties.type",
+                    "field": "event.kind",
                     "value": "event"
                 },
                 {
@@ -61,7 +61,7 @@
         {
             "conditions": [
                 {
-                    "field": "action.properties.type",
+                    "field": "event.kind",
                     "value": "event"
                 },
                 {
@@ -75,7 +75,7 @@
         {
             "conditions": [
                 {
-                    "field": "action.properties.type",
+                    "field": "event.kind",
                     "value": "event"
                 },
                 {
@@ -93,7 +93,7 @@
         {
             "conditions": [
                 {
-                    "field": "action.properties.type",
+                    "field": "event.kind",
                     "value": "event"
                 },
                 {
@@ -107,7 +107,7 @@
         {
             "conditions": [
                 {
-                    "field": "action.properties.type",
+                    "field": "event.kind",
                     "value": "event"
                 },
                 {
@@ -127,32 +127,32 @@
         {
             "conditions": [
                 {
-                    "field": "action.properties.type",
+                    "field": "event.kind",
                     "value": "spam"
                 }
             ],
             "relationships": [],
-            "value": "A spam activity has been detected from source IP {source.ip}: {action.properties.spam_message}"
+            "value": "A spam activity has been detected from source IP {source.ip}: {event.message}"
         },
         {
             "conditions": [
                 {
-                    "field": "action.properties.type",
+                    "field": "event.kind",
                     "value": "virus"
                 }
             ],
             "relationships": [],
-            "value": "An virus activity has been detected: {action.properties.virus_message}"
+            "value": "An virus activity has been detected: {event.message}"
         },
         {
             "conditions": [
                 {
-                    "field": "action.properties.type",
+                    "field": "event.kind",
                     "value": "encrypt"
                 }
             ],
             "relationships": [],
-            "value": "An encryption activity has been detected: {action.properties.encrypt_message}"
+            "value": "An encryption activity has been detected: {event.message}"
         }
     ],	
 
