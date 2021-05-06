@@ -200,6 +200,21 @@
 	}
       ]
     }, {
+      "value": "{log.hostname} accepted {network.protocol} traffic initiated by {source.ip} to {destination.ip}",
+      "conditions": [{
+	  "field": "action.name",
+	  "value": "accept"
+	}, {
+	   "field": "network.protocol",
+	   "value": "icmp"
+	},{
+	   "field": "action.outcome",
+	   "value": "success"
+	}, {
+	   "field": "action.type"
+	}
+      ]
+    },{
       "value": "{log.hostname} observed client reset {network.protocol} session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "conditions": [{
 	  "field": "action.name",
