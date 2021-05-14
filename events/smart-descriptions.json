@@ -1,4 +1,58 @@
 {
+    "harfanglab": [
+        {
+            "value": "Hostname: {host.hostname} - Source: {event.provider} - EventID: {event.code}",
+            "conditions": [
+                {
+                    "field": "event.provider"
+                }
+            ]
+        },
+        {
+            "value": "{action.properties.TargetUserName} failed to log on {host.hostname} (LogonType {action.properties.LogonType})",
+            "relationships": [
+                {
+                    "source": "action.properties.TargetUserName",
+                    "target": "host.hostname",
+                    "type": "failed to log on to"
+                }
+            ],
+            "conditions": [
+                {
+                    "field": "event.provider"
+                },
+                {
+                    "field": "event.code",
+                    "value": "4625"
+                }
+            ]
+        },
+        {
+            "value": "{process.executable} ({process.pe.company}) executed by {user.name} is running on {host.hostname}",
+            "conditions": [
+                {
+                    "field": "event.category",
+                    "value": "process"
+                }
+            ]
+        },
+        {
+            "value": "{process.executable} on {host.hostname} handles network traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+            "relationships": [
+                {
+                    "source": "source.ip",
+                    "target": "destination.ip",
+                    "type": "connected to"
+                }
+            ],
+            "conditions": [
+                {
+                    "field": "event.category",
+                    "value": "network"
+                }
+            ]
+        }
+    ],
   "netflow": [
     {
       "value": "Netflow initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port} with {source.packets} packets sents and {destination.packets} packets received",
