@@ -57,7 +57,7 @@
                 }
             ],
             "relationships": [],
-            "value": "The server {action.properties.relay} sent {file.size} bits over {tls.version} with the status {action.properties.verify}"
+            "value": "The server {action.properties.relay} sent {file.size} bits with the status {action.properties.verify}"
         },
         {
             "conditions": [
@@ -75,7 +75,7 @@
                 }
             ],
             "relationships": [],
-            "value": "The server {action.properties.relay} sent {file.size} bits over {tls.version} but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
+            "value": "The server {action.properties.relay} sent {file.size} bits but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
         },
         {
             "conditions": [
@@ -89,7 +89,7 @@
                 }
             ],
             "relationships": [],
-            "value": "The client {action.properties.relay} sent {file.size} bits over {tls.version} with the status {action.properties.verify}"
+            "value": "The client {action.properties.relay} sent {file.size} bits with the status {action.properties.verify}"
         },
         {
             "conditions": [
@@ -107,7 +107,7 @@
                 }
             ],
             "relationships": [],
-            "value": "The client {action.properties.relay} sent {file.size} bits over {tls.version} but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
+            "value": "The client {action.properties.relay} sent {file.size} bits but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
         },
         {
             "conditions": [
