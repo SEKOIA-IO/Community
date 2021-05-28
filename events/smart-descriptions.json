@@ -26,6 +26,162 @@
         }
     ],
 	
+  "fortimail": [
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "statistics"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "source.user.email",
+                    "target": "destination.user.email",
+                    "type": "action.outcome_reason"
+                }
+            ],
+            "value": "A statistic is raised form the scanner. Classified as {action.outcome_reason} (action taken: {action.outcome}), from: {source.user.email} ({source.ip}) to: {destination.user.email} ({destination.ip})"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "kevent"
+                }
+            ],
+            "relationships": [],
+            "value": "An event activity has been detected, with subactivity type: {event.category} and message: {event.message}"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "action.properties.start_tls",
+                    "value": "server"
+                }
+            ],
+            "relationships": [],
+            "value": "The server {action.properties.relay} sent {file.size} bits with the status {action.properties.verify}"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "action.properties.start_tls",
+                    "value": "server"
+                },
+                {
+                    "field": "action.properties.verify",
+                    "value": "CAFAIL"
+                }
+            ],
+            "relationships": [],
+            "value": "The server {action.properties.relay} sent {file.size} bits but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "action.properties.start_tls",
+                    "value": "client"
+                }
+            ],
+            "relationships": [],
+            "value": "The client {action.properties.relay} sent {file.size} bits with the status {action.properties.verify}"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "action.properties.start_tls",
+                    "value": "client"
+                },
+                {
+                    "field": "action.properties.verify",
+                    "value": "CAFAIL"
+                }
+            ],
+            "relationships": [],
+            "value": "The client {action.properties.relay} sent {file.size} bits but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "action.properties.nrcpts",
+                    "value": 1
+                }
+            ],
+            "relationships": [],
+            "value": "{source.user.email} sent {file.size} bits over protocol {network.protocol} and used the following relay {action.properties.relay}"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "action.properties.stat",
+                    "value": "Sent"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "action.properties.relay",
+                    "target": "destination.user.email",
+                    "type": "accepted a message form the following relay"
+                }
+            ],
+            "value": "{destination.user.email} accepted a message form the following relay {action.properties.relay}"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "spam"
+                }
+            ],
+            "relationships": [],
+            "value": "A spam activity has been detected from source IP {source.ip}: {event.message}"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "virus"
+                }
+            ],
+            "relationships": [],
+            "value": "An virus activity has been detected: {event.message}"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "encrypt"
+                }
+            ],
+            "relationships": [],
+            "value": "An encryption activity has been detected: {event.message}"
+        }
+    ],
   "fortigate":[{
       "value": "{log.hostname} denied {network.protocol} traffic initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "conditions": [{
