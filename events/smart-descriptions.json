@@ -11,7 +11,7 @@
                 {
                     "source": "source.ip",
                     "target": "destination.ip",
-                    "type": "event.outcome"
+                    "type": "action.outcome"
                 }
             ],
             "value": "{event.category} request from {source.ip}:{source.port} to {destination.ip}:{destination.port} with status {http.response.status_code}"
