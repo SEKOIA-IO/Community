@@ -125,7 +125,7 @@
                 },
                 {
                     "field": "action.properties.nrcpts",
-                    "value": 1
+                    "value": "1"
                 }
             ],
             "relationships": [],
