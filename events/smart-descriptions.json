@@ -99,24 +99,6 @@
             "relationships": [],
             "value": "The client {action.properties.relay} sent {action.properties.bits_sent_ratio} bits with the status {action.properties.verify}"
         },
-	{
-            "conditions": [
-                {
-                    "field": "event.kind",
-                    "value": "event"
-                },
-                {
-                    "field": "action.properties.start_tls",
-                    "value": "client"
-                },
-                {
-                    "field": "action.outcome_reason",
-                    "value": "unable to get local issuer certificate"
-                }
-            ],
-            "relationships": [],
-            "value": "The client is unable to get local issuer certificate"
-        },
         {
             "conditions": [
                 {
