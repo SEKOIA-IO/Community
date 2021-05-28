@@ -165,6 +165,20 @@
             ],
             "value": "{destination.user.email} accepted a message form the following relay {action.properties.relay}"
         },
+	{
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "action.properties.stat",
+                    "value": "sent"
+                }
+            ],
+            "relationships": [],
+            "value": "A message to {destination.user.email} was {action.properties.stat}"
+        },
         {
             "conditions": [
                 {
