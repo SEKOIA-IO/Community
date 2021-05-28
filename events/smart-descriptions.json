@@ -97,7 +97,7 @@
                 }
             ],
             "relationships": [],
-            "value": "The client {action.properties.relay} sent {file.size} bits with the status {action.properties.verify}"
+            "value": "The client {action.properties.relay} sent {action.properties.bits_sent_ratio} bits with the status {action.properties.verify}"
         },
         {
             "conditions": [
@@ -115,7 +115,7 @@
                 }
             ],
             "relationships": [],
-            "value": "The client {action.properties.relay} sent {file.size} bits but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
+            "value": "The client {action.properties.relay} sent {action.properties.bits_sent_ratio} bits but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
         },
         {
             "conditions": [
