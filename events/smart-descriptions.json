@@ -65,7 +65,7 @@
                 }
             ],
             "relationships": [],
-            "value": "The server {action.properties.relay} sent {file.size} bits with the status {action.properties.verify}"
+            "value": "The server {action.properties.relay} sent {action.properties.bits_sent_ratio} bits with the verify status {action.properties.verify}"
         },
         {
             "conditions": [
@@ -97,7 +97,7 @@
                 }
             ],
             "relationships": [],
-            "value": "The client {action.properties.relay} sent {action.properties.bits_sent_ratio} bits with the status {action.properties.verify}"
+            "value": "The client {action.properties.relay} sent {action.properties.bits_sent_ratio} bits with the verify status {action.properties.verify}"
         },
         {
             "conditions": [
