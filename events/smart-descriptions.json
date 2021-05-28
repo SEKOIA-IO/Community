@@ -15,6 +15,14 @@
                 }
             ],
             "value": "{event.category} request from {source.ip}:{source.port} to {destination.ip}:{destination.port} with status {http.response.status_code}"
+        }, {
+            "conditions": [
+                {
+                    "field": "event.category",
+                    "value": "system"
+                }
+            ],
+            "value": "{event.message}"
         }
     ],
 	
