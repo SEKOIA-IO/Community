@@ -83,7 +83,7 @@
                 }
             ],
             "relationships": [],
-            "value": "The server {action.properties.relay} sent {file.size} bits but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
+            "value": "The server {action.properties.relay} sent {action.properties.bits_sent_ratio} bits but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
         },
         {
             "conditions": [
@@ -130,6 +130,20 @@
             ],
             "relationships": [],
             "value": "{source.user.email} sent {file.size} bits over protocol {network.protocol} and used the following relay {action.properties.relay}"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "action.properties.mailer",
+                    "value": "esmtp"
+                }
+            ],
+            "relationships": [],
+            "value": "An email from relay: {action.properties.relay} was sent to {destination.user.email} with status: {action.properties.stat}"
         },
         {
             "conditions": [
