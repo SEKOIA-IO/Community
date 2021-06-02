@@ -155,7 +155,7 @@
                     "value": "client"
                 },
                 {
-                    "field": "event.outcome_reason",
+                    "field": "action.outcome_reason",
                     "value": "unable to get local issuer certificate"
                 }
             ],
@@ -172,7 +172,7 @@
                     "value": "server"
                 },
                 {
-                    "field": "event.outcome_reason",
+                    "field": "action.outcome_reason",
                     "value": "unable to get local issuer certificate"
                 }
             ],
