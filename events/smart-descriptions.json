@@ -151,12 +151,16 @@
                     "value": "event"
                 },
                 {
-                    "field": "action.outcome_reason",
+                    "field": "action.properties.start_tls",
+                    "value": "client"
+                },
+                {
+                    "field": "event.reason",
                     "value": "unable to get local issuer certificate"
                 }
             ],
             "relationships": [],
-            "value": "The {action.properties.start_tls} is {action.outcome_reason}"
+            "value": "The {action.properties.start_tls} is {event.reason}"
         }, {
             "conditions": [
                 {
@@ -164,14 +168,17 @@
                     "value": "event"
                 },
                 {
-                    "field": "action.outcome_reason",
+                    "field": "action.properties.start_tls",
+                    "value": "server"
+                },
+                {
+                    "field": "event.reason",
                     "value": "unable to get local issuer certificate"
                 }
             ],
             "relationships": [],
-            "value": "The {action.properties.start_tls} is {action.outcome_reason}"
-        },
-        {
+            "value": "The {action.properties.start_tls} is {event.reason}"
+        }, {
             "conditions": [
                 {
                     "field": "event.kind",
