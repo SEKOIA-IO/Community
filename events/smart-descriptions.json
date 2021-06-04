@@ -62,20 +62,6 @@
                 {
                     "field": "action.properties.start_tls",
                     "value": "server"
-                }
-            ],
-            "relationships": [],
-            "value": "The server {action.properties.relay} sent {action.properties.bits_sent_ratio} bits with the verify status {action.properties.verify}"
-        },
-        {
-            "conditions": [
-                {
-                    "field": "event.kind",
-                    "value": "event"
-                },
-                {
-                    "field": "action.properties.start_tls",
-                    "value": "server"
                 },
                 {
                     "field": "action.properties.verify",
@@ -84,20 +70,6 @@
             ],
             "relationships": [],
             "value": "The server {action.properties.relay} sent {action.properties.bits_sent_ratio} bits but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
-        },
-        {
-            "conditions": [
-                {
-                    "field": "event.kind",
-                    "value": "event"
-                },
-                {
-                    "field": "action.properties.start_tls",
-                    "value": "client"
-                }
-            ],
-            "relationships": [],
-            "value": "The client {action.properties.relay} sent {action.properties.bits_sent_ratio} bits with the verify status {action.properties.verify}"
         },
         {
             "conditions": [
@@ -178,7 +150,36 @@
             ],
             "relationships": [],
             "value": "The {action.properties.start_tls} is {event.reason}"
-        }, {
+        }, 
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "action.properties.start_tls",
+                    "value": "client"
+                }
+            ],
+            "relationships": [],
+            "value": "The client {action.properties.relay} sent {action.properties.bits_sent_ratio} bits with the verify status {action.properties.verify}"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "action.properties.start_tls",
+                    "value": "server"
+                }
+            ],
+            "relationships": [],
+            "value": "The server {action.properties.relay} sent {action.properties.bits_sent_ratio} bits with the verify status {action.properties.verify}"
+        },
+        {
             "conditions": [
                 {
                     "field": "event.kind",
