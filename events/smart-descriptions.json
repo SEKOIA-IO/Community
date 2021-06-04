@@ -160,6 +160,41 @@
                 {
                     "field": "action.properties.start_tls",
                     "value": "client"
+                },
+                {
+                    "field": "event.reason",
+                    "value": "self signed certificate in certificate chain"
+                }
+            ],
+            "relationships": [],
+            "value": "The {action.properties.start_tls} has a {event.reason}"
+        }, {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "action.properties.start_tls",
+                    "value": "server"
+                },
+                {
+                    "field": "event.reason",
+                    "value": "self signed certificate in certificate chain"
+                }
+            ],
+            "relationships": [],
+            "value": "The {action.properties.start_tls} has a {event.reason}"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "action.properties.start_tls",
+                    "value": "client"
                 }
             ],
             "relationships": [],
