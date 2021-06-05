@@ -115,8 +115,29 @@
                 }
             ],
             "relationships": [],
-            "value": "An email from relay: {action.properties.relay} was sent to {destination.user.email} with status: {action.properties.stat}"
+            "value": "An email from relay: {action.properties.relay} was sent to {destination.user.email} with status: {event.reason}"
         },{
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "event"
+                },
+                {
+                    "field": "event.category",
+                    "value": "smtp"
+                },
+                {
+                    "field": "destination.user.email",
+                    "value": "postmaster"
+                },
+                {
+                    "field": "action.properties.mailer",
+                    "value": "local"
+                }
+            ],
+            "relationships": [],
+            "value": "A {action.properties.mailer} message to {destination.user.email} with status message {event.reason}"
+        }, {
             "conditions": [
                 {
                     "field": "event.kind",
@@ -234,7 +255,7 @@
             ],
             "value": "{destination.user.email} accepted a message form the following relay {action.properties.relay}"
         },
-	{
+	     {
             "conditions": [
                 {
                     "field": "event.kind",
