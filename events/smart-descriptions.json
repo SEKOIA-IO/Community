@@ -1,4 +1,23 @@
 {
+  "retarus email security": [{
+      "value": "{retarus.sender} sent an e-mail to {retarus.recipient} with status: {retarus.status} (Message-ID: {retarus.message_id})",
+      "conditions": [{
+          "field": "retarus.class",
+          "value": "EVENT"
+        },
+        {
+          "field": "retarus.type",
+          "value": "MTA"
+        }]
+    },
+    {
+      "value": "Retarus Email Security analyzed a malware sent by {retarus.sender} to {retarus.recipient} with status: {retarus.status} (detection engine: {retarus.type}, Message-ID: {retarus.message_id})",
+      "conditions": [{
+          "field": "retarus.class",
+          "value": "THREAT"
+        }]
+    }
+  ],
   "harfanglab": [{
       "value": "Hostname: {host.hostname} - Source: {event.provider} - EventID: {event.code}",
       "conditions": [{
