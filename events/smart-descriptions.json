@@ -36,12 +36,12 @@
             ],
             "relationships": [
                 {
-                    "source": "source.user.email",
-                    "target": "destination.user.email",
+                    "source": "email.from",
+                    "target": "email.to",
                     "type": "action.outcome_reason"
                 }
             ],
-            "value": "A statistic is raised form the scanner. Classified as {action.outcome_reason} (action taken: {action.outcome}), from: {source.user.email} ({source.ip}) to: {destination.user.email} ({destination.ip})"
+            "value": "A statistic is raised form the scanner. Classified as {action.outcome_reason} (action taken: {action.outcome}), from: {email.from} ({source.ip}) to: {email.to} ({destination.ip})"
         },
         {
             "conditions": [
@@ -101,7 +101,7 @@
                 }
             ],
             "relationships": [],
-            "value": "{source.user.email} sent {file.size} bits over protocol {network.protocol} and used the following relay {action.properties.relay}"
+            "value": "{email.from} sent {file.size} bits over protocol {network.protocol} and used the following relay {action.properties.relay}"
         },
         {
             "conditions": [
@@ -115,7 +115,7 @@
                 }
             ],
             "relationships": [],
-            "value": "An email from relay: {action.properties.relay} was sent to {destination.user.email} with status: {event.reason}"
+            "value": "An email from relay: {action.properties.relay} was sent to {email.to} with status: {event.reason}"
         },{
             "conditions": [
                 {
@@ -127,7 +127,7 @@
                     "value": "smtp"
                 },
                 {
-                    "field": "destination.user.email",
+                    "field": "email.to",
                     "value": "postmaster"
                 },
                 {
@@ -136,7 +136,7 @@
                 }
             ],
             "relationships": [],
-            "value": "A {action.properties.mailer} message to {destination.user.email} with status message {event.reason}"
+            "value": "A {action.properties.mailer} message to {email.to} with status message {event.reason}"
         }, {
             "conditions": [
                 {
@@ -242,18 +242,18 @@
                     "value": "event"
                 },
                 {
-                    "field": "action.properties.stat",
+                    "field": "event.reason",
                     "value": "Sent"
                 }
             ],
             "relationships": [
                 {
                     "source": "action.properties.relay",
-                    "target": "destination.user.email",
+                    "target": "email.to",
                     "type": "accepted a message form the following relay"
                 }
             ],
-            "value": "{destination.user.email} accepted a message form the following relay {action.properties.relay}"
+            "value": "{email.to} accepted a message form the following relay {action.properties.relay}"
         },
 	     {
             "conditions": [
@@ -262,12 +262,12 @@
                     "value": "event"
                 },
                 {
-                    "field": "action.properties.stat",
+                    "field": "even.reason",
                     "value": "sent"
                 }
             ],
             "relationships": [],
-            "value": "A message to {destination.user.email} was {action.properties.stat}"
+            "value": "A message to {email.to} was {action.properties.stat}"
         },
         {
             "conditions": [
