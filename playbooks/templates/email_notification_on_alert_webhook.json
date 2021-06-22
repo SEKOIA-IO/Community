@@ -1,0 +1,64 @@
+{
+    "name": "Mail Webhook notification on alert",
+    "description": "Send an email about an alert when receiving a webhook event",
+    "tags": [
+        "alert",
+        "notification",
+        "webhook"
+    ],
+    "nodes": {
+        "0": {
+            "name": "Alert webhook",
+            "type": "trigger",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "trigger_uuid": "fc26eb9f-b272-4c15-b3bf-ace397c0dc57",
+            "outputs": {
+                "default": [
+                    "1"
+                ]
+            }
+        },
+        "1": {
+            "name": "Retrieve alert",
+            "type": "action",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
+            "arguments": {
+                "stix": false,
+                "uuid": "{{ node.0['alert_uuid'] }}"
+            },
+            "outputs": {
+                "default": [
+                    "2"
+                ]
+            }
+        },
+        "2": {
+            "name": "Send Message",
+            "type": "action",
+            "module_uuid": "bc2699a6-93e5-4d74-816d-4186d6eb3ce8",
+            "action_uuid": "cb61842a-e09f-417d-acdf-34c818c61c87",
+            "arguments": {
+                "async": false,
+                "message": {
+                    "html": "<p>Hello, <br>This is an automatic email alert notification.<br>A new alert is declared: {{ node.1.rule.name }}.</p> <p>Description: {{ node.1.rule.description }}.</p> <p>Urgency: {{ node.1.urgency.current_value }}.</p>  <p>More details:</p> <ul> \t <li>Entity name: {{ node.1.entity.name }}</li>\t <li>Alert type category: {{ node.1.alert_type.value }}</li> <li>Kill Chain: {{ node.1.kill_chain_short_id }}</li>\t <li>Created at: {{ node.1.created_at|timestamp_to_iso8601 }}</li> <li>Source: {{ node.1.source }}</li> \t <li>Target: {{ node.1.target }}</li> <li>Check https://app.sekoia.io/sic/alerts/{{ node.1.short_id }} for more information.</li> </ul><br>  <ul><p>Comments:</p> {% for comment in node.1['comments'] %}     <li>{{ comment.content }}</li> {% endfor %} </ul><br>  <ul><p>Contermeasures:</p> {% for countermeasure in node.1['countermeasures'] %}     <li>{{ countermeasure.description }}</li> {% endfor %} </ul><br>",
+                    "merge": false,
+                    "subject": "A new alert concerning rule {{ node.1.rule.name }} has been created.",
+                    "auto_html": false,
+                    "auto_text": false,
+                    "from_name": "SEKOIA.IO",
+                    "important": false,
+                    "from_email": "no-reply@sekoia.fr",
+                    "track_opens": false,
+                    "track_clicks": false,
+                    "url_strip_qs": false,
+                    "view_content_link": false,
+                    "preserve_recipients": false
+                }
+            },
+            "outputs": {
+                "default": []
+            }
+        }
+    }
+}

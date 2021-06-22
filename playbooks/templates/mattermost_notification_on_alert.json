@@ -1,0 +1,71 @@
+{
+    "name": "Mattermost notification on alert",
+    "description": "Notify by mattermost when new alerts are created",
+    "tags": [
+        "alert",
+        "notification"
+    ],
+    "nodes": {
+        "0": {
+            "name": "Security alerts trigger",
+            "type": "trigger",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "trigger_uuid": "fe249825-c8c5-4321-8791-f476b505072d",
+            "outputs": {
+                "default": [
+                    "1"
+                ]
+            }
+        },
+        "1": {
+            "name": "Filter new alerts",
+            "type": "operator",
+            "subtype": "condition",
+            "cases": [
+                {
+                    "left": "{{ node.0.event_type }}",
+                    "name": "Is new alert",
+                    "right": "alert-created",
+                    "comparison": "==",
+                    "value_type": "string",
+                    "description": "Test if node.0.event_type is 'alert-created'"
+                }
+            ],
+            "outputs": {
+                "else": [],
+                "Is new alert": [
+                    "2"
+                ]
+            }
+        },
+        "2": {
+            "name": "Retrieve alert",
+            "type": "action",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
+            "arguments": {
+                "stix": false,
+                "uuid": "{{ node.0.alert_uuid }}"
+            },
+            "outputs": {
+                "default": [
+                    "3"
+                ]
+            }
+        },
+        "3": {
+            "name": "Mattermost notification",
+            "type": "action",
+            "module_uuid": "89c860f0-3e73-4946-a5c9-431deb33b0e8",
+            "action_uuid": "ef3794ca-b5fa-4cee-af3f-fd5ffac01c88",
+            "arguments": {
+                "pretext": "New alert: {{node.2.rule.name}}. Urgency: {{node.2.urgency.current_value}}",
+                "base_url": "https://api.sekoia.io/",
+                "alert_uuid": "{{ node.0.alert_uuid }}"
+            },
+            "outputs": {
+                "default": []
+            }
+        }
+    }
+}
