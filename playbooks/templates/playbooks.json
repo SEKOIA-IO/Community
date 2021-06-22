@@ -1,0 +1,38 @@
+[
+    {
+        "file": "email_notification_on_alert_webhook.json",
+        "name": "Mail Webhook notification on alert",
+        "description": "Send an email about an alert when receiving a webhook event",
+        "tags": [
+            "alert",
+            "notification",
+            "webhook"
+        ]
+    },
+    {
+        "file": "mattermost_notification_on_alert.json",
+        "name": "Mattermost notification on alert",
+        "description": "Notify by mattermost when news alerts are created",
+        "tags": [
+            "alert",
+            "notification"
+        ]
+    },
+    {
+        "file": "alert_webhook_internet_scan.json",
+        "name": "Qualify Internet Scan webhook",
+        "description": "Qualify an Internet scan alert on webhook",
+        "tags": [
+            "alert",
+            "webhook"
+        ]
+    },
+    {
+        "file": "urgency_to_0_on_rejected.json",
+        "name": "Alert urgency to 0 when rejected",
+        "description": "Put the urgency of an alert to 0 when it is rejected",
+        "tags": [
+            "alert"
+        ]
+    }
+]
