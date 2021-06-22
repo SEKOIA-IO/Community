@@ -12,7 +12,7 @@
     {
         "file": "mattermost_notification_on_alert.json",
         "name": "Mattermost notification on alert",
-        "description": "Notify by mattermost when news alerts are created",
+        "description": "Notify by mattermost when new alerts are created",
         "tags": [
             "alert",
             "notification"

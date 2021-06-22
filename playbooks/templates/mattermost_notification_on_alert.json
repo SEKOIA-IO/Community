@@ -1,6 +1,6 @@
 {
     "name": "Mattermost notification on alert",
-    "description": "Notify by mattermost when news alerts are created",
+    "description": "Notify by mattermost when new alerts are created",
     "tags": [
         "alert",
         "notification"
@@ -59,8 +59,7 @@
             "module_uuid": "89c860f0-3e73-4946-a5c9-431deb33b0e8",
             "action_uuid": "ef3794ca-b5fa-4cee-af3f-fd5ffac01c88",
             "arguments": {
-                "channel": "soc",
-                "pretext": "Une nouvelle alerte vient d'être levée",
+                "pretext": "New alert: {{node.2.rule.name}}. Urgency: {{node.2.urgency.current_value}}",
                 "base_url": "https://api.sekoia.io/",
                 "alert_uuid": "{{ node.0.alert_uuid }}"
             },
