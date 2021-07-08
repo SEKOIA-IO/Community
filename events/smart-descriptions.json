@@ -8,14 +8,15 @@
         {
           "field": "retarus.type",
           "value": "MTA"
-        }]
+        }
+      ]
     },
     {
       "value": "Retarus Email Security analyzed a malware sent by {retarus.sender} to {retarus.recipient} with status: {retarus.status} (detection engine: {retarus.type}, Message-ID: {retarus.message_id})",
       "conditions": [{
-          "field": "retarus.class",
-          "value": "THREAT"
-        }]
+        "field": "retarus.class",
+        "value": "THREAT"
+      }]
     }
   ],
   "harfanglab": [{
@@ -75,6 +76,43 @@
       }
     ]
   }],
+  "netfilter": [{
+      "value": "{log.hostname} dropped {network.transport} traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "failed to connect to"
+      }],
+      "conditions": [{
+        "field": "action.name",
+        "value": "drop"
+      }]
+    },
+    {
+      "value": "{log.hostname} rejected {network.transport} traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "failed to connect to"
+      }],
+      "conditions": [{
+        "field": "action.name",
+        "value": "rjct"
+      }]
+    },
+    {
+      "value": "{log.hostname} accepted {network.transport} traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "connected to"
+      }],
+      "conditions": [{
+        "field": "action.name",
+        "value": "accept"
+      }]
+    }
+  ],
   "fortigate": [{
       "value": "{log.hostname} denied {network.protocol} traffic initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "conditions": [{
@@ -260,12 +298,34 @@
   ],
   "nginx": [{
       "value": "{http.request.method} request from {source.ip}: {url.original} (status: {http.response.status_code})",
+      "relationships": [{
+          "source": "source.ip",
+          "target": "url.original",
+          "type": "requested"
+        },
+        {
+          "source": "url.original",
+          "target": "destination.domain",
+          "type": "hosted on"
+        }
+      ],
       "conditions": [{
         "field": "url.original"
       }]
     },
     {
       "value": "{http.request.method} request from {source.ip}: {url.full} (status: {http.response.status_code})",
+      "relationships": [{
+          "source": "source.ip",
+          "target": "url.original",
+          "type": "requested"
+        },
+        {
+          "source": "url.original",
+          "target": "destination.domain",
+          "type": "hosted on"
+        }
+      ],
       "conditions": [{
         "field": "url.full"
       }]
@@ -286,10 +346,20 @@
   ],
   "unbound": [{
       "value": "{source.ip} performed a DNS query of type {dns.question.type} for name {dns.question.name}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "dns.question.name",
+        "type": "resolved"
+      }],
       "conditions": []
     },
     {
       "value": "{source.ip} resolved domain name {dns.question.name}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "dns.question.name",
+        "type": "resolved"
+      }],
       "conditions": [{
         "field": "dns.question.type",
         "value": "A"
@@ -467,13 +537,56 @@
     {
       "value": "{user.domain}\\{user.name} executed {process.command_line} on {log.hostname}",
       "relationships": [{
-        "source": "user.name",
-        "target": "process.command_line",
-        "type": "executed command"
-      }],
+          "source": "user.name",
+          "target": "process.command_line",
+          "type": "executed"
+        },
+        {
+          "source": "user.name",
+          "target": "process.parent.executable",
+          "type": "executed"
+        },
+        {
+          "source": "process.command_line",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "process.command_line",
+          "target": "process.executable",
+          "type": "uses executable"
+        },
+        {
+          "source": "process.parent.executable",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "process.parent.executable",
+          "target": "process.command_line",
+          "type": "started"
+        }
+      ],
       "conditions": [{
           "field": "action.id",
           "value": 4688
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Security-Auditing"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.name} exited. It was executed by {user.domain}\\{user.name} on {log.hostname}",
+      "relationships": [{
+        "source": "user.name",
+        "target": "process.executable",
+        "type": "executed"
+      }],
+      "conditions": [{
+          "field": "action.id",
+          "value": 4689
         },
         {
           "field": "event.provider",
@@ -816,6 +929,23 @@
       ]
     },
     {
+      "value": "{log.hostname} allowed a connection from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "connected to"
+      }],
+      "conditions": [{
+          "field": "action.id",
+          "value": 5156
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Security-Auditing"
+        }
+      ]
+    },
+    {
       "value": "{user.domain}\\{user.name} executed PowerShell code on {log.hostname}",
       "conditions": [{
           "field": "action.id",
@@ -1130,11 +1260,6 @@
           "source": "action.properties.SourceImage",
           "target": "action.properties.TargetImage",
           "type": "was granted access to"
-        },
-        {
-          "source": "process.executable",
-          "target": "process.name",
-          "type": "uses executable"
         }
       ],
       "conditions": [{
