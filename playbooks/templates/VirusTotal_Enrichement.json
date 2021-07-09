@@ -530,18 +530,18 @@
         "type": "operator",
         "cases": [
           {
-            "left": "{{ node.2.rule.name }}",
+            "left": "{{ node.35['rule.name'] }}",
             "name": "Webfilter - Spam URLs",
             "right": "Webfilter - Spam URLs",
             "comparison": "==",
-            "description": "{{ node.2.rule.name }} == Webfilter - Spam URLs"
+            "description": "{{ node.35['rule.name'] }} == Webfilter - Spam URLs"
           },
           {
-            "left": "{{ node.2.rule.name }}",
+            "left": "{{ node.35['rule.name'] }}",
             "name": "Webfilter - Malicious Websites",
             "right": "Webfilter - Malicious Websites",
             "comparison": "==",
-            "description": "{{ node.2.rule.name }} == Webfilter - Malicious Websites"
+            "description": "{{ node.35['rule.name'] }} == Webfilter - Malicious Websites"
           }
         ],
         "outputs": {
@@ -554,6 +554,21 @@
           ]
         },
         "subtype": "condition"
+      },
+      "35": {
+        "name": "get_an_alert",
+        "type": "action",
+        "outputs": {
+          "default": [
+            "34"
+          ]
+        },
+        "arguments": {
+          "stix": true,
+          "uuid": "{{ node.32['alert_uuid'] }}"
+        },
+        "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
+        "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
       }
     },
     "workspace": "Operation Center",
