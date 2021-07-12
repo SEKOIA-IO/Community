@@ -1,0 +1,261 @@
+{
+  "name": "Adware domain related ",
+  "nodes": {
+    "0": {
+      "name": "security_alerts_trigger",
+      "type": "trigger",
+      "outputs": {
+        "default": [
+          "1"
+        ]
+      },
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "trigger_uuid": "fe249825-c8c5-4321-8791-f476b505072d"
+    },
+    "1": {
+      "name": "It is a new alert ?",
+      "type": "operator",
+      "cases": [
+        {
+          "left": "{{ node.0.event_type }}",
+          "name": "Yes",
+          "right": "alert-created",
+          "comparison": "==",
+          "description": "{{ node.0['alert_type'] }} == alert-created"
+        }
+      ],
+      "outputs": {
+        "Yes": [
+          "2"
+        ],
+        "else": []
+      },
+      "subtype": "condition"
+    },
+    "2": {
+      "name": "get_an_alert",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "8"
+        ]
+      },
+      "arguments": {
+        "stix": true,
+        "uuid": "{{ node.0['alert_uuid'] }}"
+      },
+      "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    },
+    "3": {
+      "name": "Read JSON File",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "4"
+        ]
+      },
+      "arguments": {
+        "file": "{{ node.2.stix }}",
+        "to_file": false,
+        "jsonpath": "$.objects[?(type=\"observed-data\")].objects[?(@.type=\"domain-name\")].value",
+        "return_list": true
+      },
+      "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
+      "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
+    },
+    "4": {
+      "loop": [
+        "5"
+      ],
+      "name": "Check every domain",
+      "type": "operator",
+      "items": "{{ node.3['output'] }}",
+      "outputs": {
+        "default": []
+      },
+      "subtype": "foreach"
+    },
+    "5": {
+      "name": "Adware domain",
+      "type": "operator",
+      "cases": [
+        {
+          "left": "{% if node.4.default.value | regex_match('.*exampleAdware\\.com',ignore_case=False) %}true1{% endif %}",
+          "name": "Yes",
+          "right": "true1",
+          "comparison": "==",
+          "description": "{% if node.4.default.value | regex_match('.*exampleAdware\\.com',ignore_case=False) %}true1{% endif %} == true1"
+        }
+      ],
+      "outputs": {
+        "Yes": [
+          "9"
+        ],
+        "else": []
+      },
+      "subtype": "condition"
+    },
+    "6": {
+      "name": "patch_an_alert",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "7"
+        ]
+      },
+      "arguments": {
+        "uuid": "{{ node.0['alert_uuid'] }}",
+        "urgency": 0,
+        "alert_type_value": "spam",
+        "alert_type_category": "abusive-content"
+      },
+      "action_uuid": "113a06db-3cef-48ac-908b-45f3ebc4d1bf",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    },
+    "7": {
+      "name": "trigger_an_action_on_the_alert_workflow",
+      "type": "action",
+      "outputs": {
+        "default": []
+      },
+      "arguments": {
+        "uuid": "{{ node.0['alert_uuid'] }}",
+        "comment": "The domain {{ node.4.default.value }} is related to adware.",
+        "action_uuid": "ade85d7b-7507-4026-bfc6-cc006d10ddac"
+      },
+      "action_uuid": "c4b84449-a26f-4f18-bde4-33efa921f4d4",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    },
+    "8": {
+      "name": "Rule Name",
+      "type": "operator",
+      "cases": [
+        {
+          "left": "{{ node.2.rule.name }}",
+          "name": "webfilter",
+          "right": "Webfilter - Malicious Websites",
+          "comparison": "==",
+          "value_type": "string",
+          "description": "{{ node.2.rule.name }} == Webfilter - Malicious Websites"
+        },
+        {
+          "left": "{{ node.2.rule.name }}",
+          "name": "Spam",
+          "right": "Webfilter - Spam URLs",
+          "comparison": "==",
+          "value_type": "string",
+          "description": "{{ node.2.rule.name }} == Webfilter - Spam URLs"
+        }
+      ],
+      "outputs": {
+        "Spam": [
+          "3"
+        ],
+        "else": [],
+        "webfilter": [
+          "3"
+        ]
+      },
+      "subtype": "condition"
+    },
+    "9": {
+      "name": "Read JSON File",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "10"
+        ]
+      },
+      "arguments": {
+        "file": "{{ node.2.stix }}",
+        "to_file": false,
+        "jsonpath": "$.objects[?(type=\"observed-data\")].objects[?(type=\"x-sic-customer-info\")].zone_id",
+        "return_list": false
+      },
+      "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
+      "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
+    },
+    "10": {
+      "name": "Check zone",
+      "type": "operator",
+      "cases": [
+        {
+          "left": "{{ node.9['output'] }}",
+          "name": "Zone1",
+          "right": "{{ 386139 }}",
+          "comparison": "==",
+          "description": ""
+        },
+        {
+          "left": "{{ node.9.output }}",
+          "name": "Zone2",
+          "right": "{{ 401471 }} ",
+          "comparison": "==",
+          "description": ""
+        },
+        {
+          "left": "{{ node.9.output }}",
+          "name": "Zone3",
+          "right": "{{ 445060 }} ",
+          "comparison": "=="
+        },
+        {
+          "left": "{{ node.9.output }}",
+          "name": "Zone4",
+          "right": "{{ 321003 }}",
+          "comparison": "=="
+        }
+      ],
+      "outputs": {
+        "else": [],
+        "Zone1": [
+          "6"
+        ],
+        "Zone4": [
+          "6"
+        ],
+        "Zone2": [
+          "11"
+        ],
+        "Zone3": [
+          "11"
+        ]
+      },
+      "subtype": "condition"
+    },
+    "11": {
+      "name": "patch_an_alert",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "12"
+        ]
+      },
+      "arguments": {
+        "uuid": "{{ node.0['alert_uuid'] }}",
+        "urgency": 20,
+        "alert_type_value": "spam",
+        "alert_type_category": "abusive-content"
+      },
+      "action_uuid": "113a06db-3cef-48ac-908b-45f3ebc4d1bf",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    },
+    "12": {
+      "name": "trigger_an_action_on_the_alert_workflow",
+      "type": "action",
+      "outputs": {
+        "default": []
+      },
+      "arguments": {
+        "uuid": "{{ node.0['alert_uuid'] }}",
+        "comment": "The domain {{ node.4.default.value }} is related to adware.",
+        "action_uuid": "c39a0a95-aa2c-4d0d-8d2e-d3decf426eea"
+      },
+      "action_uuid": "c4b84449-a26f-4f18-bde4-33efa921f4d4",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    }
+  },
+  "workspace": "Operation Center",
+  "description": "Automatic response to Adware domain related "
+}
