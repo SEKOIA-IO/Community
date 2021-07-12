@@ -34,5 +34,13 @@
         "tags": [
             "alert"
         ]
+    },
+    {
+        "file": "VirusTotal_Enrichement.json",
+        "name": "Enrich alerts with VirusTotal",
+        "description": "Enrich alerts with VirusTotal informations",
+        "tags": [
+            "alert"
+        ]
     }
 ]
