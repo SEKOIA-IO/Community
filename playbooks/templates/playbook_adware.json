@@ -256,6 +256,19 @@
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
     }
   },
+  "13": {
+      "loop": [
+        "10"
+      ],
+      "name": "Foreach",
+      "type": "operator",
+      "items": "{{ node.9['output'] }}",
+      "outputs": {
+        "default": []
+      },
+      "subtype": "foreach"
+    }
+  },
   "workspace": "Operation Center",
   "description": "Automatic response to Adware domain related "
 }
