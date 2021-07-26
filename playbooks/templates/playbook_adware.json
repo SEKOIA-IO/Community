@@ -2,7 +2,7 @@
   "name": "Adware domain related ",
   "nodes": {
     "0": {
-      "name": "security_alerts_trigger",
+      "name": "Security alerts trigger",
       "type": "trigger",
       "outputs": {
         "default": [
@@ -33,7 +33,7 @@
       "subtype": "condition"
     },
     "2": {
-      "name": "get_an_alert",
+      "name": "Get an alert",
       "type": "action",
       "outputs": {
         "default": [
@@ -97,7 +97,7 @@
       "subtype": "condition"
     },
     "6": {
-      "name": "patch_an_alert",
+      "name": "Patch an alert",
       "type": "action",
       "outputs": {
         "default": [
@@ -114,7 +114,7 @@
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
     },
     "7": {
-      "name": "trigger_an_action_on_the_alert_workflow",
+      "name": "Trigger an action on the alert workflow",
       "type": "action",
       "outputs": {
         "default": []
@@ -225,7 +225,7 @@
       "subtype": "condition"
     },
     "11": {
-      "name": "patch_an_alert",
+      "name": "Patch an alert",
       "type": "action",
       "outputs": {
         "default": [
@@ -242,7 +242,7 @@
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
     },
     "12": {
-      "name": "trigger_an_action_on_the_alert_workflow",
+      "name": "Trigger an action on the alert workflow",
       "type": "action",
       "outputs": {
         "default": []
