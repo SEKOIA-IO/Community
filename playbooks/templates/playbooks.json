@@ -30,7 +30,7 @@
     {
         "file": "playbook_adware.json",
         "name": "Playbook adware",
-        "description": "Automatic management of adware-related domains",
+        "description": "Automatic validation of alerts with predefined adware domains",
         "tags": [
             "alert"
         ]
