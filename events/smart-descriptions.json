@@ -284,10 +284,42 @@
                 {
                     "field": "event.kind",
                     "value": "virus"
+                },
+                {
+                    "field": "file.type",
+                    "value": "file"
+                },
+                {
+                    "field": "action.properties.event_status",
+                    "value": "CLEAN"
                 }
             ],
             "relationships": [],
-            "value": "An virus activity has been detected: {event.message}"
+            "value": "A {file.type} nammed {file.name} with the related checksum: {file.hash.sha256} was concidered as {action.properties.event_status}"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "virus"
+                },
+                {
+                    "field": "file.type",
+                    "value": "file"
+                }
+            ],
+            "relationships": [],
+            "value": "A {file.type} nammed {file.name} with the related checksum: {file.hash.sha256} with no specific status"
+        },
+        {
+            "conditions": [
+                {
+                    "field": "event.kind",
+                    "value": "virus"
+                }
+            ],
+            "relationships": [],
+            "value": "A virus activity has been detected: {event.message}"
         },
         {
             "conditions": [
