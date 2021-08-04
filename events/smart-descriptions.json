@@ -319,7 +319,7 @@
                 }
             ],
             "relationships": [],
-            "value": "A virus activity has been detected: {event.message}"
+            "value": "A virus activity has been detected: {fortimail.msg}"
         },
         {
             "conditions": [
