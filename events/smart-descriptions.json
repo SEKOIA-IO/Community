@@ -115,7 +115,7 @@
                 }
             ],
             "relationships": [],
-            "value": "An email from relay: {action.properties.relay} was sent to {email.to} with status: {event.reason}"
+            "value": "An email from relay: {destination.domain} was sent to {user.email} with status: {event.reason}"
         },{
             "conditions": [
                 {
