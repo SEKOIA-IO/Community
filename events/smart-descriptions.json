@@ -1,4 +1,18 @@
 {
+    "vectra cognito detect": [
+	{
+	    "value": "{observer.ip} detected {vectra.detection.name} : {host.name} ({host.ip})",
+	    "conditions": [{
+		"field": "vectra.detection.name"
+	    }]
+	},
+	{
+	    "value": "{observer.ip} refreshed detection {vectra.detection.last_type} : {host.name} ({host.ip})",
+	    "conditions": [{
+		"field": "vectra.detection.last_type"
+	    }]
+	}	
+    ],
   "retarus email security": [{
       "value": "{retarus.sender} sent an e-mail to {retarus.recipient} with status: {retarus.status} (Message-ID: {retarus.message_id})",
       "conditions": [{
