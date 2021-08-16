@@ -281,7 +281,7 @@
       "arguments": {
         "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
         "author": "Playbook Enrich domain with VT",
-        "content": "{{ node.17.positives }}/{{ node.17.total }} security vendors flagged the target domain ({{ node.7.output.0 }}) as malicious. [Direct link to VirusTotal]({{ node.17.permalink }})"
+        "content": "{{ node.17.positives }}/{{ node.17.total }} security vendors flagged the target domain ({{ node.7.output.0 }}) the {{ node.17.scan_date }} as malicious. [Direct link to VirusTotal]({{ node.17.permalink }})"
       },
       "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
