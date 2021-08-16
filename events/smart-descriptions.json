@@ -1,4 +1,56 @@
 {
+    "vectra cognito detect": [
+    {
+        "value": "{observer.ip} detected {vectra.detection.name} : {host.name} ({host.ip})",
+        "conditions": [{
+      "field": "vectra.detection.name"
+        }],
+      "relationships": [{
+          "source": "host.ip",
+          "target": "destination.ip",
+          "type": "{vectra.detection.name}"
+        }]
+    },
+    {
+        "value": "{observer.ip} refreshed detection {vectra.detection.last_type} : {host.name} ({host.ip})",
+        "conditions": [{
+      "field": "vectra.detection.last_type"
+        }]
+    },
+    {
+      "value": "[HOST SCORING] {host.name} ({host.ip}) : threat = {vectra.risk_score_norm}",
+      "conditions": [{
+      "field": "event.type",
+      "value": "HOST SCORING"
+        }],
+    },
+    {
+      "value": "[LOCKDOWN] {user.name} {action.name} {vectra.account.name} ",
+      "conditions": [{
+      "field": "event.type",
+      "value": "LOCKDOWN"
+        }]
+    },
+    {
+      "value": "[HOST LOCKDOWN] {user.name} {action.name} {host.name} ",
+      "conditions": [{
+      "field": "event.type",
+      "value": "HOST_LOCKDOWN"
+        }]
+    },
+    {
+      "value": "[CAMPAIGN] event : {vectra.detection.reason} from {source.ip} to {vectra.destination.name} ({destination.ip}) ",
+      "conditions": [{
+      "field": "event.type",
+      "value": "HOST_LOCKDOWN"
+        }],
+      "relationships": [{
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "{vectra.detection.reason}"
+        }]
+    } 
+  ],
   "retarus email security": [{
       "value": "{retarus.sender} sent an e-mail to {retarus.recipient} with status: {retarus.status} (Message-ID: {retarus.message_id})",
       "conditions": [{
