@@ -389,7 +389,7 @@
       "cases": [
         {
           "left": "{% if node.8['Webutation domain info'] is defined %}true1{% endif %}}",
-          "name": "Webtuation is defined",
+          "name": "Webutation is defined",
           "right": "true1",
           "comparison": "=="
         }
