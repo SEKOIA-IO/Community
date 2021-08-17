@@ -1,5 +1,5 @@
 {
-  "name": "Enrich alert with VT",
+  "name": "Enrich alert with VirusTotal",
   "nodes": {
     "0": {
       "name": "Manual trigger",
