@@ -332,145 +332,271 @@
             "value": "An encryption activity has been detected: {event.message}"
         }
     ],
-  "fortigate":[{
+  "retarus email security": [{
+      "value": "{retarus.sender} sent an e-mail to {retarus.recipient} with status: {retarus.status} (Message-ID: {retarus.message_id})",
+      "conditions": [{
+          "field": "retarus.class",
+          "value": "EVENT"
+        },
+        {
+          "field": "retarus.type",
+          "value": "MTA"
+        }
+      ]
+    },
+    {
+      "value": "Retarus Email Security analyzed a malware sent by {retarus.sender} to {retarus.recipient} with status: {retarus.status} (detection engine: {retarus.type}, Message-ID: {retarus.message_id})",
+      "conditions": [{
+        "field": "retarus.class",
+        "value": "THREAT"
+      }]
+    }
+  ],
+  "harfanglab": [{
+      "value": "Hostname: {host.hostname} - Source: {event.provider} - EventID: {event.code}",
+      "conditions": [{
+        "field": "event.provider"
+      }]
+    },
+    {
+      "value": "{action.properties.TargetUserName} failed to log on {host.hostname} (LogonType {action.properties.LogonType})",
+      "relationships": [{
+        "source": "action.properties.TargetUserName",
+        "target": "host.hostname",
+        "type": "failed to log on to"
+      }],
+      "conditions": [{
+          "field": "event.provider"
+        },
+        {
+          "field": "event.code",
+          "value": "4625"
+        }
+      ]
+    },
+    {
+      "value": "{process.executable} ({process.pe.company}) executed by {user.name} is running on {host.hostname}",
+      "conditions": [{
+        "field": "event.category",
+        "value": "process"
+      }]
+    },
+    {
+      "value": "{process.executable} on {host.hostname} handles network traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "connected to"
+      }],
+      "conditions": [{
+        "field": "event.category",
+        "value": "network"
+      }]
+    }
+  ],
+  "netflow": [{
+    "value": "Netflow initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port} with {source.packets} packets sents and {destination.packets} packets received",
+    "relationships": [{
+      "source": "source.ip",
+      "target": "destination.ip",
+      "type": "connected to"
+    }],
+    "conditions": [{
+        "field": "source.ip"
+      },
+      {
+        "field": "destination.ip"
+      }
+    ]
+  }],
+  "netfilter": [{
+      "value": "{log.hostname} dropped {network.transport} traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "failed to connect to"
+      }],
+      "conditions": [{
+        "field": "action.name",
+        "value": "drop"
+      }]
+    },
+    {
+      "value": "{log.hostname} rejected {network.transport} traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "failed to connect to"
+      }],
+      "conditions": [{
+        "field": "action.name",
+        "value": "rjct"
+      }]
+    },
+    {
+      "value": "{log.hostname} accepted {network.transport} traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "connected to"
+      }],
+      "conditions": [{
+        "field": "action.name",
+        "value": "accept"
+      }]
+    }
+  ],
+  "fortigate": [{
       "value": "{log.hostname} denied {network.protocol} traffic initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "conditions": [{
-	  "field": "action.name",
-	  "value": "deny"
-	}, {
-	   "field": "action.outcome",
-	   "value": "success"
-	}, {
-	   "field": "action.type"
-	}
+          "field": "action.name",
+          "value": "deny"
+        },
+        {
+          "field": "action.outcome",
+          "value": "success"
+        },
+        {
+          "field": "action.type"
+        }
       ]
-  }, {
+    },
+    {
       "value": "{log.hostname} accepted {network.protocol} traffic initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "conditions": [{
-	  "field": "action.name",
-	  "value": "accept"
-	}, {
-	   "field": "action.outcome",
-	   "value": "success"
-	}, {
-	   "field": "action.type"
-	}
+          "field": "action.name",
+          "value": "accept"
+        },
+        {
+          "field": "action.outcome",
+          "value": "success"
+        },
+        {
+          "field": "action.type"
+        }
       ]
-    }, {
-      "value": "{log.hostname} accepted {network.protocol} traffic initiated by {source.ip} to {destination.ip}",
-      "conditions": [{
-	  "field": "action.name",
-	  "value": "accept"
-	}, {
-	   "field": "network.protocol",
-	   "value": "icmp"
-	},{
-	   "field": "action.outcome",
-	   "value": "success"
-	}, {
-	   "field": "action.type"
-	}
-      ]
-    },{
+    },
+    {
       "value": "{log.hostname} observed client reset {network.protocol} session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "conditions": [{
-	  "field": "action.name",
-	  "value": "client-rst"
-	}, {
-	   "field": "action.outcome",
-	   "value": "success"
-	}, {
-	   "field": "action.type"
-	}
+          "field": "action.name",
+          "value": "client-rst"
+        },
+        {
+          "field": "action.outcome",
+          "value": "success"
+        },
+        {
+          "field": "action.type"
+        }
       ]
-    }, {
+    },
+    {
       "value": "{log.hostname} observed server reset {network.protocol} session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "conditions": [{
-	  "field": "action.name",
-	  "value": "server-rst"
-	}, {
-	   "field": "action.outcome",
-	   "value": "success"
-	}, {
-	   "field": "action.type"
-	}
+          "field": "action.name",
+          "value": "server-rst"
+        },
+        {
+          "field": "action.outcome",
+          "value": "success"
+        },
+        {
+          "field": "action.type"
+        }
       ]
-    }, {
+    },
+    {
       "value": "{log.hostname} observed timeout {network.protocol} session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "conditions": [{
-	  "field": "action.name",
-	  "value": "timeout"
-	}, {
-	   "field": "action.outcome",
-	   "value": "success"
-	}, {
-	   "field": "action.type"
-	}
+          "field": "action.name",
+          "value": "timeout"
+        },
+        {
+          "field": "action.outcome",
+          "value": "success"
+        },
+        {
+          "field": "action.type"
+        }
       ]
-    }, {
+    },
+    {
       "value": "{log.hostname} observed start {network.protocol} session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "conditions": [{
-	  "field": "action.name",
-	  "value": "start"
-	}, {
-	   "field": "action.outcome",
-	   "value": "success"
-	}, {
-	   "field": "action.type"
-	}
+          "field": "action.name",
+          "value": "start"
+        },
+        {
+          "field": "action.outcome",
+          "value": "success"
+        },
+        {
+          "field": "action.type"
+        }
       ]
-    }, {
+    },
+    {
       "value": "{log.hostname} observed close {network.protocol} session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "conditions": [{
-	  "field": "action.name",
-	  "value": "close"
-	}, {
-	   "field": "action.outcome",
-	   "value": "success"
-	}, {
-	   "field": "action.type"
-	}
+          "field": "action.name",
+          "value": "close"
+        },
+        {
+          "field": "action.outcome",
+          "value": "success"
+        },
+        {
+          "field": "action.type"
+        }
       ]
-    }, {
+    },
+    {
       "value": "{log.hostname} observed DNS session initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "conditions": [{
-	  "field": "action.name",
-	  "value": "dns"
-	}, {
-	   "field": "action.outcome",
-	   "value": "success"
-	}, {
-	   "field": "action.type"
-	}
+          "field": "action.name",
+          "value": "dns"
+        },
+        {
+          "field": "action.outcome",
+          "value": "success"
+        },
+        {
+          "field": "action.type"
+        }
       ]
     }
   ],
   "openssh": [{
       "value": "{source.ip} failed the security negociation with server {log.hostname}",
       "conditions": [{
-	  "field": "action.name",
-	  "value": "negociate"
-	}, {
-	   "field": "action.outcome",
-	   "value": "failure"
-	}, {
-	  "field": "action.type",
-	  "value": "open"
-	}
+          "field": "action.name",
+          "value": "negociate"
+        },
+        {
+          "field": "action.outcome",
+          "value": "failure"
+        },
+        {
+          "field": "action.type",
+          "value": "open"
+        }
       ]
     },
     {
       "value": "{source.ip} failed to connect to {log.hostname} (invalid user {user.name})",
       "conditions": [{
-	  "field": "action.name",
-	  "value": "connection"
-	}, {
-	   "field": "action.outcome",
-	   "value": "failure"
-	}, {
-	  "field": "action.outcome_reason",
-	  "value": "Invalid user"
-	}
+          "field": "action.name",
+          "value": "connection"
+        },
+        {
+          "field": "action.outcome",
+          "value": "failure"
+        },
+        {
+          "field": "action.outcome_reason",
+          "value": "Invalid user"
+        }
       ],
       "relationships": [{
         "source": "source.ip",
@@ -481,17 +607,20 @@
     {
       "value": "{source.ip} with username {user.name} disconnected from {log.hostname}",
       "conditions": [{
-	  "field": "action.name",
-	  "value": "connection"
-	}, {
-	   "field": "action.outcome",
-	   "value": "success"
-	}, {
-	  "field": "action.type",
-	  "value": "close"
-	}, {
-         "field": "user.name"
-	}
+          "field": "action.name",
+          "value": "connection"
+        },
+        {
+          "field": "action.outcome",
+          "value": "success"
+        },
+        {
+          "field": "action.type",
+          "value": "close"
+        },
+        {
+          "field": "user.name"
+        }
       ],
       "relationships": [{
         "source": "source.ip",
@@ -502,12 +631,34 @@
   ],
   "nginx": [{
       "value": "{http.request.method} request from {source.ip}: {url.original} (status: {http.response.status_code})",
+      "relationships": [{
+          "source": "source.ip",
+          "target": "url.original",
+          "type": "requested"
+        },
+        {
+          "source": "url.original",
+          "target": "destination.domain",
+          "type": "hosted on"
+        }
+      ],
       "conditions": [{
         "field": "url.original"
       }]
     },
     {
       "value": "{http.request.method} request from {source.ip}: {url.full} (status: {http.response.status_code})",
+      "relationships": [{
+          "source": "source.ip",
+          "target": "url.original",
+          "type": "requested"
+        },
+        {
+          "source": "url.original",
+          "target": "destination.domain",
+          "type": "hosted on"
+        }
+      ],
       "conditions": [{
         "field": "url.full"
       }]
@@ -528,10 +679,20 @@
   ],
   "unbound": [{
       "value": "{source.ip} performed a DNS query of type {dns.question.type} for name {dns.question.name}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "dns.question.name",
+        "type": "resolved"
+      }],
       "conditions": []
     },
     {
       "value": "{source.ip} resolved domain name {dns.question.name}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "dns.question.name",
+        "type": "resolved"
+      }],
       "conditions": [{
         "field": "dns.question.type",
         "value": "A"
@@ -548,7 +709,6 @@
         "field": "action.name"
       }]
     },
-
     {
       "value": "{action.properties.TargetDomainName}\\{action.properties.TargetUserName} logged on to {log.hostname} (LogonType {action.properties.LogonType})",
       "relationships": [{
@@ -592,7 +752,6 @@
         }
       ]
     },
-
     {
       "value": "{action.properties.TargetDomainName}\\{action.properties.TargetUserName} failed to log on to {log.hostname} (LogonType {action.properties.LogonType})",
       "relationships": [{
@@ -636,7 +795,6 @@
         }
       ]
     },
-
     {
       "value": "{action.properties.TargetDomainName}\\{action.properties.TargetUserName} logged off from {log.hostname}",
       "relationships": [{
@@ -654,7 +812,6 @@
         }
       ]
     },
-
     {
       "value": "{action.properties.TargetDomainName}\\{action.properties.TargetUserName} attempted to log on to {action.properties.TargetServerName} using explicit credentials",
       "relationships": [{
@@ -693,7 +850,6 @@
         }
       ]
     },
-
     {
       "value": "{user.domain}\\{user.name} logged on to {log.hostname} with special privileges",
       "relationships": [{
@@ -711,14 +867,39 @@
         }
       ]
     },
-
     {
       "value": "{user.domain}\\{user.name} executed {process.command_line} on {log.hostname}",
       "relationships": [{
-        "source": "user.name",
-        "target": "process.command_line",
-        "type": "executed command"
-      }],
+          "source": "user.name",
+          "target": "process.command_line",
+          "type": "executed"
+        },
+        {
+          "source": "user.name",
+          "target": "process.parent.executable",
+          "type": "executed"
+        },
+        {
+          "source": "process.command_line",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "process.command_line",
+          "target": "process.executable",
+          "type": "uses executable"
+        },
+        {
+          "source": "process.parent.executable",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "process.parent.executable",
+          "target": "process.command_line",
+          "type": "started"
+        }
+      ],
       "conditions": [{
           "field": "action.id",
           "value": 4688
@@ -729,7 +910,23 @@
         }
       ]
     },
-
+    {
+      "value": "Process {process.name} exited. It was executed by {user.domain}\\{user.name} on {log.hostname}",
+      "relationships": [{
+        "source": "user.name",
+        "target": "process.executable",
+        "type": "executed"
+      }],
+      "conditions": [{
+          "field": "action.id",
+          "value": 4689
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Security-Auditing"
+        }
+      ]
+    },
     {
       "value": "{user.domain}\\{user.name} created account {action.properties.TargetDomainName}\\{action.properties.TargetUserName} on {log.hostname}",
       "relationships": [{
@@ -747,7 +944,6 @@
         }
       ]
     },
-
     {
       "value": "{user.domain}\\{user.name} enabled account {action.properties.TargetDomainName}\\{action.properties.TargetUserName}",
       "relationships": [{
@@ -765,7 +961,6 @@
         }
       ]
     },
-
     {
       "value": "{user.domain}\\{user.name} changed their password on {log.hostname}",
       "relationships": [{
@@ -808,7 +1003,6 @@
         }
       ]
     },
-
     {
       "value": "{user.domain}\\{user.name} disabled account {action.properties.TargetDomainName}\\{action.properties.TargetUserName}",
       "relationships": [{
@@ -826,7 +1020,6 @@
         }
       ]
     },
-
     {
       "value": "{user.domain}\\{user.name} deleted account {action.properties.TargetDomainName}\\{action.properties.TargetUserName} on {log.hostname}",
       "relationships": [{
@@ -844,7 +1037,6 @@
         }
       ]
     },
-
     {
       "value": "{user.domain}\\{user.name} created group {action.properties.TargetDomainName}\\{action.properties.TargetUserName}",
       "relationships": [{
@@ -862,7 +1054,6 @@
         }
       ]
     },
-
     {
       "value": "{action.properties.TargetDomainName}\\{action.properties.TargetUserName} failed to authenticate from {source.ip} (Error Code: {action.properties.Status})",
       "relationships": [{
@@ -901,7 +1092,6 @@
         }
       ]
     },
-
     {
       "value": "{action.properties.TargetDomainName}\\{action.properties.TargetUserName} was denied a service ticket for {action.properties.ServiceName} from {source.ip} (Error Code: {action.properties.Status})",
       "relationships": [{
@@ -940,7 +1130,6 @@
         }
       ]
     },
-
     {
       "value": "{action.properties.TargetUserName} failed to authenticate from {source.ip}",
       "relationships": [{
@@ -958,7 +1147,6 @@
         }
       ]
     },
-
     {
       "value": "{action.properties.TargetUserName} failed to authenticate on {action.properties.Workstation} (Reason: {action.properties.Status})",
       "relationships": [{
@@ -1001,7 +1189,6 @@
         }
       ]
     },
-
     {
       "value": "{user.domain}\\{user.name} enumerated local groups of {action.properties.TargetDomainName}\\{action.properties.TargetUserName} on {log.hostname}",
       "relationships": [{
@@ -1019,7 +1206,6 @@
         }
       ]
     },
-
     {
       "value": "{user.domain}\\{user.name} enumerated members of local group {action.properties.TargetUserName} on {log.hostname}",
       "relationships": [{
@@ -1037,7 +1223,6 @@
         }
       ]
     },
-
     {
       "value": "{user.domain}\\{user.name} was granted access to {action.properties.ShareName}\\{action.properties.RelativeTargetName} from IP {source.ip}",
       "relationships": [{
@@ -1076,7 +1261,23 @@
         }
       ]
     },
-
+    {
+      "value": "{log.hostname} allowed a connection from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "connected to"
+      }],
+      "conditions": [{
+          "field": "action.id",
+          "value": 5156
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Security-Auditing"
+        }
+      ]
+    },
     {
       "value": "{user.domain}\\{user.name} executed PowerShell code on {log.hostname}",
       "conditions": [{
@@ -1173,13 +1374,42 @@
         }
       ]
     },
-
-
     {
-      "value": "{log.hostname} performed a DNS query for name {dns.question.name} (status: {dns.response_code})",
+      "value": "Process {process.executable} created by {user.name} on {log.hostname}",
+      "relationships": [{
+          "source": "user.name",
+          "target": "process.command_line",
+          "type": "executed"
+        },
+        {
+          "source": "process.command_line",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "process.command_line",
+          "target": "process.executable",
+          "type": "uses executable"
+        },
+        {
+          "source": "process.parent.command_line",
+          "target": "process.parent.name",
+          "type": "uses executable"
+        },
+        {
+          "source": "process.parent.command_line",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "process.parent.command_line",
+          "target": "process.command_line",
+          "type": "started"
+        }
+      ],
       "conditions": [{
           "field": "action.id",
-          "value": 22
+          "value": 1
         },
         {
           "field": "event.provider",
@@ -1188,10 +1418,262 @@
       ]
     },
     {
-      "value": "Process {process.executable} created by {user.name} on {log.hostname}",
+      "value": "Process {process.executable} changed the creation time of the file {file.name} on {log.hostname}",
+      "relationships": [{
+          "source": "process.executable",
+          "target": "file.name",
+          "type": "changed creation time of"
+        },
+        {
+          "source": "process.executable",
+          "target": "log.hostname",
+          "type": "executed on"
+        }
+      ],
       "conditions": [{
           "field": "action.id",
-          "value": 1
+          "value": 2
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Network connection from {source.ip} to {destination.ip}:{destination.port} by {process.executable} on {log.hostname}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "connected to"
+      }],
+      "conditions": [{
+          "field": "action.id",
+          "value": 3
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Sysmon service state changed to {action.properties.State} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 4
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.executable} terminated on {log.hostname}",
+      "relationships": [{
+        "source": "process.executable",
+        "target": "log.hostname",
+        "type": "terminated on"
+      }],
+      "conditions": [{
+          "field": "action.id",
+          "value": 5
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Driver {process.executable} loaded on {log.hostname}",
+      "relationships": [{
+        "source": "process.executable",
+        "target": "log.hostname",
+        "type": "loaded on"
+      }],
+      "conditions": [{
+          "field": "action.id",
+          "value": 6
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.executable} loaded image {action.properties.ImageLoaded} on {log.hostname}",
+      "relationships": [{
+          "source": "process.executable",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "process.executable",
+          "target": "action.properties.ImageLoaded",
+          "type": "loaded image"
+        }
+      ],
+      "conditions": [{
+          "field": "action.id",
+          "value": 7
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Process {action.properties.SourceImage} created a thread in process {action.properties.TargetImage} on {log.hostname}",
+      "relationships": [{
+          "source": "action.properties.SourceImage",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "action.properties.TargetImage",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "action.properties.SourceImage",
+          "target": "action.properties.TargetImage",
+          "type": "created thread in"
+        }
+      ],
+      "conditions": [{
+          "field": "action.id",
+          "value": 8
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.executable} read on {action.properties.Device} device on {log.hostname}",
+      "relationships": [{
+          "source": "process.executable",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "process.executable",
+          "target": "action.properties.Device",
+          "type": "read on"
+        }
+      ],
+      "conditions": [{
+          "field": "action.id",
+          "value": 9
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "{action.properties.SourceImage} was granted {action.properties.GrantedAccess} access to {action.properties.TargetImage} on {log.hostname}",
+      "relationships": [{
+          "source": "action.properties.SourceImage",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "action.properties.TargetImage",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "action.properties.SourceImage",
+          "target": "action.properties.TargetImage",
+          "type": "was granted access to"
+        }
+      ],
+      "conditions": [{
+          "field": "action.id",
+          "value": 10
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "File {file.name} created by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 11
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Registry key {action.properties.TargetObject} created by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 12
+        },
+        {
+          "field": "action.properties.MessEventType",
+          "value": "CreateKey"
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Registry value {action.properties.TargetObject} created by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 12
+        },
+        {
+          "field": "action.properties.MessEventType",
+          "value": "CreateValue"
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Registry key {action.properties.TargetObject} deleted by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 12
+        },
+        {
+          "field": "action.properties.MessEventType",
+          "value": "DeleteKey"
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Registry value {action.properties.TargetObject} deleted by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 12
+        },
+        {
+          "field": "action.properties.MessEventType",
+          "value": "DeleteValue"
         },
         {
           "field": "event.provider",
@@ -1212,10 +1694,10 @@
       ]
     },
     {
-      "value": "Network connection from {source.ip} to {destination.ip} on port {destination.port} by {process.executable}",
+      "value": "Registry key {action.properties.TargetObject} renamed to {action.properties.NewName} by {process.executable} on {log.hostname}",
       "conditions": [{
           "field": "action.id",
-          "value": 3
+          "value": 14
         },
         {
           "field": "event.provider",
@@ -1224,10 +1706,26 @@
       ]
     },
     {
-      "value": "Process {process.executable} terminated on {log.hostname}",
+      "value": "Registry value {action.properties.TargetObject} renamed to {action.properties.NewName} by {process.executable} on {log.hostname}",
       "conditions": [{
           "field": "action.id",
-          "value": 5
+          "value": 14
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        },
+        {
+          "field": "action.properties.MessEventType",
+          "value": "RenameValue"
+        }
+      ]
+    },
+    {
+      "value": "{action.properties.Image} added a named stream to file {action.properties.TargetFilename} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 15
         },
         {
           "field": "event.provider",
@@ -1235,7 +1733,90 @@
         }
       ]
     },
-
+    {
+      "value": "Sysmon configuration was updated on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 16
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Pipe {action.properties.PipeName} created by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 17
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "Pipe {action.properties.PipeName} connected by {process.executable} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 18
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "{action.properties.User} created WMI Event Filter {action.properties.Name} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 19
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "{action.properties.User} {action.properties.Operation} WMI Consumer {action.properties.Name} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 20
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "{action.properties.User} binded WMI Consumer {action.properties.Consumer} to Event Filter {action.properties.Filter} on {log.hostname}",
+      "conditions": [{
+          "field": "action.id",
+          "value": 21
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
+    {
+      "value": "{log.hostname} performed a DNS query for name {dns.question.name} (status: {dns.response_code})",
+      "conditions": [{
+          "field": "action.id",
+          "value": 22
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Sysmon"
+        }
+      ]
+    },
 
     {
       "value": "Microsoft Defender Antivirus client is up and running in a healthy state on {log.hostname}",
@@ -1285,8 +1866,6 @@
         }
       ]
     },
-
-
     {
       "value": "Windows Update successfully found updates on {log.hostname}",
       "conditions": [{
@@ -1299,8 +1878,6 @@
         }
       ]
     },
-
-
     {
       "value": "W32time Service configuration parameters have been updated on {log.hostname}",
       "conditions": [{
@@ -1313,8 +1890,6 @@
         }
       ]
     },
-
-
     {
       "value": "Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON on {log.hostname}",
       "conditions": [{

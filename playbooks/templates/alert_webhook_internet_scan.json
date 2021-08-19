@@ -1,0 +1,64 @@
+{
+    "name": "Qualify Internet Scan webhook",
+    "description": "Qualify an Internet scan alert on webhook",
+    "tags": [
+        "alert",
+        "webhook"
+    ],
+    "nodes": {
+        "0": {
+            "name": "Alert webhook",
+            "type": "trigger",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "trigger_uuid": "fc26eb9f-b272-4c15-b3bf-ace397c0dc57",
+            "outputs": {
+                "default": [
+                    "1"
+                ]
+            }
+        },
+        "1": {
+            "name": "Retrieve alert",
+            "type": "action",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
+            "arguments": {
+                "uuid": "{{ node.6.alert_uuid }}"
+            },
+            "outputs": {
+                "default": [
+                    "2"
+                ]
+            }
+        },
+        "2": {
+            "name": "Add type and category to alert",
+            "type": "action",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "113a06db-3cef-48ac-908b-45f3ebc4d1bf",
+            "arguments": {
+                "uuid": "{{ node.6.alert_uuid }}",
+                "alert_type_value": "scanner",
+                "alert_type_category": "information-gathering"
+            },
+            "outputs": {
+                "default": [
+                    "3"
+                ]
+            }
+        },
+        "3": {
+            "name": "Triggers an action on the alert workflow",
+            "type": "action",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "c4b84449-a26f-4f18-bde4-33efa921f4d4",
+            "arguments": {
+                "uuid": "{{ node.6.alert_uuid }}",
+                "action_uuid": "ade85d7b-7507-4026-bfc6-cc006d10ddac"
+            },
+            "outputs": {
+                "default": []
+            }
+        }
+    }
+}
