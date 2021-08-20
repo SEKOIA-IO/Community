@@ -301,7 +301,7 @@
                 }
             ],
             "relationships": [],
-            "value": "A {file.type} nammed {file.name} with the related checksum: {file.hash.sha256} with no specific status"
+            "value": "A {file.type} named {file.name} (SHA-256: {file.hash.sha256}) was scanned."
         },
         {
             "conditions": [
