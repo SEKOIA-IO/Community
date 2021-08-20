@@ -242,7 +242,7 @@
                 {
                     "source": "action.properties.relay",
                     "target": "email.to",
-                    "type": "accepted a message form the following relay"
+                    "type": "accepted a message from relay"
                 }
             ],
             "value": "{email.to} accepted a message form the following relay {action.properties.relay}"
