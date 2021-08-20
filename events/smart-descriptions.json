@@ -33,7 +33,7 @@
                     "type": "action.outcome_reason"
                 }
             ],
-            "value": "A statistic is raised form the scanner. Classified as {action.outcome_reason} ( action taken: {action.outcome}), from: {email.from} ({source.ip}) to: {email.to} ({destination.ip})"
+            "value": "A statistic is raised form the scanner. Classified as {action.outcome_reason} (action taken: {action.outcome}), from: {email.from} ({source.ip}) to: {email.to} ({destination.ip})"
         },
         {
             "conditions": [
