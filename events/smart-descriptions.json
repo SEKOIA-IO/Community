@@ -128,7 +128,7 @@
                 }
             ],
             "relationships": [],
-            "value": "A {action.properties.mailer} message to {email.to} with status message {event.reason}"
+            "value": "A {action.properties.mailer} message was sent to {email.to} with status message {event.reason}"
         }, {
             "conditions": [
                 {
