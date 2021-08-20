@@ -269,7 +269,7 @@
                 }
             ],
             "relationships": [],
-            "value": "A spam activity has been detected from source IP {source.ip}: {event.message}"
+            "value": "A spam activity has been detected from {source.ip}: {event.message}"
         },
         {
             "conditions": [
