@@ -287,7 +287,7 @@
                 }
             ],
             "relationships": [],
-            "value": "A {file.type} nammed {file.name} with the related checksum: {file.hash.sha256} was concidered as {action.properties.event_status}"
+            "value": "A {file.type} named {file.name} (SHA-256: {file.hash.sha256}) was considered as {action.properties.event_status}"
         },
         {
             "conditions": [
