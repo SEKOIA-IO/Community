@@ -245,7 +245,7 @@
                     "type": "accepted a message from relay"
                 }
             ],
-            "value": "{email.to} accepted a message form the following relay {action.properties.relay}"
+            "value": "{email.to} accepted a message from relay {action.properties.relay}"
         },
 	     {
             "conditions": [
