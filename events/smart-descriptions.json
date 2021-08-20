@@ -11,7 +11,7 @@
                 {
                     "source": "source.ip",
                     "target": "destination.ip",
-                    "type": "action.outcome"
+                    "type": "connected to"
                 }
             ],
             "value": "{event.category} request from {source.ip}:{source.port} to {destination.ip}:{destination.port} with status {http.response.status_code}"
@@ -30,7 +30,7 @@
                 {
                     "source": "email.from",
                     "target": "email.to",
-                    "type": "action.outcome_reason"
+                    "type": "exchanged email"
                 }
             ],
             "value": "A statistic is raised form the scanner. Classified as {action.outcome_reason} (action taken: {action.outcome}), from: {email.from} ({source.ip}) to: {email.to} ({destination.ip})"
