@@ -254,12 +254,12 @@
                     "value": "event"
                 },
                 {
-                    "field": "even.reason",
+                    "field": "event.reason",
                     "value": "sent"
                 }
             ],
             "relationships": [],
-            "value": "A message to {email.to} was {action.properties.stat}"
+            "value": "A message to {user.email} was sent"
         },
         {
             "conditions": [
