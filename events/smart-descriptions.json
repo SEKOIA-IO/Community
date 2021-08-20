@@ -93,7 +93,7 @@
                 }
             ],
             "relationships": [],
-            "value": "{email.from} sent {file.size} bits over protocol {network.protocol} and used the following relay {action.properties.relay}"
+            "value": "{email.from} sent {file.size} bits over protocol {network.protocol} and used relay {action.properties.relay}"
         },
         {
             "conditions": [
