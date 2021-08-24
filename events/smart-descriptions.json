@@ -1,4 +1,296 @@
 {
+  "fortiweb": [{
+    "conditions": [{
+      "field": "event.kind",
+      "value": "traffic"
+    }],
+    "relationships": [{
+      "source": "source.ip",
+      "target": "destination.ip",
+      "type": "connected to"
+    }],
+    "value": "{event.category} request from {source.ip}:{source.port} to {destination.ip}:{destination.port} with status {http.response.status_code}"
+  }],
+  "fortimail": [{
+      "conditions": [{
+        "field": "event.kind",
+        "value": "statistics"
+      }],
+      "relationships": [{
+        "source": "email.from",
+        "target": "email.to",
+        "type": "sent email to"
+      }],
+      "value": "A statistic is raised form the scanner. Classified as {action.outcome_reason} (action taken: {action.outcome}), from: {email.from} ({source.ip}) to: {email.to} ({destination.ip})"
+    },
+    {
+      "conditions": [{
+        "field": "event.kind",
+        "value": "kevent"
+      }],
+      "relationships": [],
+      "value": "An event activity has been detected, with subactivity type: {event.category} and message: {event.message}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "action.properties.start_tls",
+          "value": "server"
+        },
+        {
+          "field": "action.properties.verify",
+          "value": "CAFAIL"
+        }
+      ],
+      "relationships": [],
+      "value": "The server {action.properties.relay} sent {action.properties.bits_sent_ratio} bits but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "action.properties.start_tls",
+          "value": "client"
+        },
+        {
+          "field": "action.properties.verify",
+          "value": "CAFAIL"
+        }
+      ],
+      "relationships": [],
+      "value": "The client {action.properties.relay} sent {action.properties.bits_sent_ratio} bits but the remote certificate is not issued by a trusted CA or the CA certificate is not available for verification"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "network.protocol",
+          "value": "ESMTP"
+        }
+      ],
+      "relationships": [],
+      "value": "{email.from} sent {file.size} bits over protocol {network.protocol} and used relay {action.properties.relay}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "action.properties.mailer",
+          "value": "esmtp"
+        }
+      ],
+      "relationships": [],
+      "value": "An email from relay {destination.domain} was sent to {user.email} with status {event.reason}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "event.category",
+          "value": "smtp"
+        },
+        {
+          "field": "email.to",
+          "value": "postmaster"
+        },
+        {
+          "field": "action.properties.mailer",
+          "value": "local"
+        }
+      ],
+      "relationships": [],
+      "value": "A {action.properties.mailer} message was sent to {email.to} with status message {event.reason}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "action.properties.start_tls",
+          "value": "client"
+        },
+        {
+          "field": "event.reason",
+          "value": "unable to get local issuer certificate"
+        }
+      ],
+      "relationships": [],
+      "value": "The {action.properties.start_tls} is {event.reason}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "action.properties.start_tls",
+          "value": "server"
+        },
+        {
+          "field": "event.reason",
+          "value": "unable to get local issuer certificate"
+        }
+      ],
+      "relationships": [],
+      "value": "The {action.properties.start_tls} is {event.reason}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "action.properties.start_tls",
+          "value": "client"
+        },
+        {
+          "field": "event.reason",
+          "value": "self signed certificate in certificate chain"
+        }
+      ],
+      "relationships": [],
+      "value": "The {action.properties.start_tls} has a {event.reason}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "action.properties.start_tls",
+          "value": "server"
+        },
+        {
+          "field": "event.reason",
+          "value": "self signed certificate in certificate chain"
+        }
+      ],
+      "relationships": [],
+      "value": "The {action.properties.start_tls} has a {event.reason}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "action.properties.start_tls",
+          "value": "client"
+        }
+      ],
+      "relationships": [],
+      "value": "The client {action.properties.relay} sent {action.properties.bits_sent_ratio} bits with the verify status {action.properties.verify}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "action.properties.start_tls",
+          "value": "server"
+        }
+      ],
+      "relationships": [],
+      "value": "The server {action.properties.relay} sent {action.properties.bits_sent_ratio} bits with the verify status {action.properties.verify}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "event.reason",
+          "value": "Sent"
+        }
+      ],
+      "relationships": [{
+        "source": "action.properties.relay",
+        "target": "email.to",
+        "type": "accepted a message from relay"
+      }],
+      "value": "{email.to} accepted a message from relay {action.properties.relay}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "event"
+        },
+        {
+          "field": "event.reason",
+          "value": "sent"
+        }
+      ],
+      "relationships": [],
+      "value": "A message to {user.email} was sent"
+    },
+    {
+      "conditions": [{
+        "field": "event.kind",
+        "value": "spam"
+      }],
+      "relationships": [],
+      "value": "A spam activity has been detected from {source.ip}: {event.message}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "virus"
+        },
+        {
+          "field": "file.type",
+          "value": "file"
+        },
+        {
+          "field": "action.properties.event_status",
+          "value": "CLEAN"
+        }
+      ],
+      "relationships": [],
+      "value": "A {file.type} named {file.name} (SHA-256: {file.hash.sha256}) was considered as {action.properties.event_status}"
+    },
+    {
+      "conditions": [{
+          "field": "event.kind",
+          "value": "virus"
+        },
+        {
+          "field": "file.type",
+          "value": "file"
+        }
+      ],
+      "relationships": [],
+      "value": "A {file.type} named {file.name} (SHA-256: {file.hash.sha256}) was scanned."
+    },
+    {
+      "conditions": [{
+        "field": "event.kind",
+        "value": "virus"
+      }],
+      "relationships": [],
+      "value": "A virus activity has been detected: {event.message}"
+    },
+    {
+      "conditions": [{
+        "field": "event.kind",
+        "value": "encrypt"
+      }],
+      "relationships": [],
+      "value": "An encryption activity has been detected: {event.message}"
+    }
+  ],
   "retarus email security": [{
       "value": "{retarus.sender} sent an e-mail to {retarus.recipient} with status: {retarus.status} (Message-ID: {retarus.message_id})",
       "conditions": [{
@@ -1484,7 +1776,6 @@
         }
       ]
     },
-
     {
       "value": "Microsoft Defender Antivirus client is up and running in a healthy state on {log.hostname}",
       "conditions": [{
