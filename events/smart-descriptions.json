@@ -19,7 +19,7 @@
       "relationships": [{
         "source": "email.from",
         "target": "email.to",
-        "type": "exchanged email"
+        "type": "sent email to"
       }],
       "value": "A statistic is raised form the scanner. Classified as {action.outcome_reason} (action taken: {action.outcome}), from: {email.from} ({source.ip}) to: {email.to} ({destination.ip})"
     },
