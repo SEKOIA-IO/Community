@@ -1,55 +1,73 @@
 {
     "vectra cognito detect": [
     {
-        "value": "{observer.ip} detected {vectra.detection.name} : {host.name} ({host.ip})",
+        "value": "{observer.ip} detected {vectra.detection.name} on {host.name} ({host.ip})",
         "conditions": [{
       "field": "vectra.detection.name"
-        }],
-      "relationships": [{
-          "source": "host.ip",
-          "target": "destination.ip",
-          "type": "{vectra.detection.name}"
         }]
     },
     {
-        "value": "{observer.ip} refreshed detection {vectra.detection.last_type} : {host.name} ({host.ip})",
+        "value": "{observer.ip} refreshed detection {vectra.detection.last_type} on {host.name} ({host.ip})",
         "conditions": [{
       "field": "vectra.detection.last_type"
         }]
     },
     {
-      "value": "[HOST SCORING] {host.name} ({host.ip}) : threat = {vectra.risk_score_norm}",
+      "value": "Score of {host.name} ({host.ip}) is {vectra.risk_score_norm}",
       "conditions": [{
       "field": "event.type",
       "value": "HOST SCORING"
         }],
     },
     {
-      "value": "[LOCKDOWN] {user.name} {action.name} {vectra.account.name} ",
+      "value": "{user.name} has {action.name} on {vectra.account.name} ",
       "conditions": [{
       "field": "event.type",
       "value": "LOCKDOWN"
         }]
     },
     {
-      "value": "[HOST LOCKDOWN] {user.name} {action.name} {host.name} ",
+      "value": "{user.name} has {action.name} on {host.name} ",
       "conditions": [{
       "field": "event.type",
       "value": "HOST_LOCKDOWN"
         }]
     },
     {
-      "value": "[CAMPAIGN] event : {vectra.detection.reason} from {source.ip} to {vectra.destination.name} ({destination.ip}) ",
+      "value": "Campaign {vectra.campaign.name} detected, {vectra.detection.reason} from {source.ip} to {vectra.destination.name} ({destination.ip}) ",
       "conditions": [{
-      "field": "event.type",
-      "value": "HOST_LOCKDOWN"
+      "field": "vectra.campaign.name"
         }],
       "relationships": [{
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "{vectra.detection.reason}"
+          "type": "campaign"
         }]
-    } 
+    },
+    {
+      "value": "Heartbeat on {log.hostname} {event.outcome} at {vectra.timestamp} ) ",
+      "conditions": [{
+      "field": "event.type",
+      "value": "heartbeat_check"
+        }],
+      "relationships": [{
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "campaign"
+        }]
+    },
+    {
+      "value": "{vectra.detection.name} observed by {observer.ip} with a risk score {vectra.risk_score_norm}",
+      "conditions": [{
+      "field": "event.type",
+      "value": "LATERAL MOVEMENT"
+        }],
+      "relationships": [{
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "campaign"
+        }]
+    }, 
   ],
   "retarus email security": [{
       "value": "{retarus.sender} sent an e-mail to {retarus.recipient} with status: {retarus.status} (Message-ID: {retarus.message_id})",
