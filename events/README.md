@@ -38,7 +38,7 @@ The JSON file contains a list of descriptions associated with an intake name (he
 
 * `value`: the Smart Description itself, with variables from the event expressed as `{ECS_EVENT_PATH}`
 * `conditions`: a set of conditions that should be met for this description to be used. Each condition has a `field` name and a `value`. A condition without a `value` means that the field should be set (whatever the value).
-* `relationships` (optional): this will be used in the future to display events inside an investigation graph. Each relationship should have a `source` (object path), a `target` (object path) and a `type` (text, description of the relationship).
+* `relationships` (optional): this will be used in the future to display events inside an investigation graph. Each relationship should have a `source` (object path), a `target` (object path) and a `type` (text, description of the relationship, with variables from the event expressed as `{ECS_EVENT_PATH}`).
 
 When several conditions match the same event, the Smart Description with the most conditions is used.
 
