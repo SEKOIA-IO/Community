@@ -28,6 +28,14 @@
         ]
     },
     {
+        "file": "playbook_adware.json",
+        "name": "Playbook adware",
+        "description": "Automatic validation of alerts with predefined adware domains",
+        "tags": [
+            "alert"
+        ]
+    },
+    {
         "file": "urgency_to_0_on_rejected.json",
         "name": "Alert urgency to 0 when rejected",
         "description": "Put the urgency of an alert to 0 when it is rejected",
