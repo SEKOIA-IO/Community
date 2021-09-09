@@ -406,6 +406,248 @@
     }
   ],
   "fortigate": [{
+      "value": "{source.ip} connected to {destination.ip}:{destination.port}",
+      "conditions": [{
+        "field": "action.outcome",
+        "value": "passthrough"
+      }],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "connected to"
+      }]
+    },
+    {
+      "value": "{source.ip} was denied a connection to {destination.ip}:{destination.port}",
+      "conditions": [{
+        "field": "action.outcome",
+        "value": "block"
+      }],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "was denied a connection to"
+      }]
+    },
+    {
+      "value": "{source.ip} was denied a connection to {destination.ip}:{destination.port}",
+      "conditions": [{
+        "field": "action.outcome",
+        "value": "blocked"
+      }],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "was denied a connection to"
+      }]
+    },
+    {
+      "value": "{source.ip} connected to {destination.ip}:{destination.port}",
+      "conditions": [{
+        "field": "event.dataset",
+        "value": "fortinet.ips"
+      }],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "connected to"
+      }]
+    },
+    {
+      "value": "{source.ip} was denied a connection to {destination.ip}:{destination.port}",
+      "conditions": [{
+          "field": "event.dataset",
+          "value": "fortinet.ips"
+        },
+        {
+          "field": "action.name",
+          "value": "blocked"
+        }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "was denied a connection to"
+      }]
+    },
+    {
+      "value": "{source.ip} connected to malicious URL {url.original} (threat: {virus.virus})",
+      "conditions": [{
+          "field": "event.dataset",
+          "value": "fortinet.virus"
+        },
+        {
+          "field": "virus.virus"
+        }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.original",
+        "type": "connected to malicious"
+      }]
+    },
+    {
+      "value": "{source.ip} was denied a connection to malicious URL {url.original} (threat: {virus.virus})",
+      "conditions": [{
+          "field": "event.dataset",
+          "value": "fortinet.virus"
+        },
+        {
+          "field": "action.name",
+          "value": "blocked"
+        }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.original",
+        "type": "was blocked from connecting to malicious"
+      }]
+    },
+    {
+      "value": "{source.ip} failed to connect to {destination.ip}:{destination.port} because of SSL anomalies",
+      "conditions": [{
+        "field": "action.type",
+        "value": "ssl-anomalies"
+      }],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "failed to connect to"
+      }]
+    },
+    {
+      "value": "{source.ip} connected to {url.domain}{url.path} (category {application.category})",
+      "conditions": [{
+          "field": "event.dataset",
+          "value": "fortinet.web-filter"
+        },
+        {
+          "field": "action.name",
+          "value": "passthrough"
+        }
+      ],
+      "relationships": [{
+          "source": "source.ip",
+          "target": "url.domain",
+          "type": "connected to"
+        },
+        {
+          "source": "url.domain",
+          "target": "destination.ip",
+          "type": "resolves to"
+        }
+      ]
+    },
+    {
+      "value": "{source.ip} was denied a connection to {url.domain}{url.path} (category {application.category})",
+      "conditions": [{
+          "field": "event.dataset",
+          "value": "fortinet.web-filter"
+        },
+        {
+          "field": "action.name",
+          "value": "blocked"
+        }
+      ],
+      "relationships": [{
+          "source": "source.ip",
+          "target": "url.domain",
+          "type": "was denied a connection to"
+        },
+        {
+          "source": "url.domain",
+          "target": "destination.ip",
+          "type": "resolves to"
+        }
+      ]
+    },
+    {
+      "value": "{source.ip} connected to {destination.ip}:{destination.port} (recognised as {application.category}/{application.name})",
+      "conditions": [{
+          "field": "event.dataset",
+          "value": "fortinet.app-ctrl"
+        },
+        {
+          "field": "action.name",
+          "value": "pass"
+        }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "connected to"
+      }]
+    },
+    {
+      "value": "{source.ip} connected to {url.domain}{url.path} (recognised as {application.category}/{application.name})",
+      "conditions": [{
+          "field": "event.dataset",
+          "value": "fortinet.app-ctrl"
+        },
+        {
+          "field": "action.name",
+          "value": "pass"
+        },
+        {
+          "field": "url.domain"
+        }
+      ],
+      "relationships": [{
+          "source": "source.ip",
+          "target": "url.domain",
+          "type": "connected to"
+        },
+        {
+          "source": "url.domain",
+          "target": "destination.ip",
+          "type": "resolves to"
+        }
+      ]
+    },
+    {
+      "value": "{source.ip} was denied a connection to {destination.ip}:{destination.port} (recognised as {application.category}/{application.name})",
+      "conditions": [{
+          "field": "event.dataset",
+          "value": "fortinet.app-ctrl"
+        },
+        {
+          "field": "action.name",
+          "value": "block"
+        }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "was denied a connection to"
+      }]
+    },
+    {
+      "value": "{source.ip} was denied a connection to {url.domain}{url.path} (recognised as {application.category}/{application.name})",
+      "conditions": [{
+          "field": "event.dataset",
+          "value": "fortinet.app-ctrl"
+        },
+        {
+          "field": "action.name",
+          "value": "block"
+        },
+        {
+          "field": "url.domain"
+        }
+      ],
+      "relationships": [{
+          "source": "source.ip",
+          "target": "url.domain",
+          "type": "was denied a connection to"
+        },
+        {
+          "source": "url.domain",
+          "target": "destination.ip",
+          "type": "resolves to"
+        }
+      ]
+    },
+    {
       "value": "{log.hostname} denied {network.protocol} traffic initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "conditions": [{
           "field": "action.name",
