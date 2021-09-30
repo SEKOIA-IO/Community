@@ -1,4 +1,8 @@
 {
+  "sentinelone": [{
+    "value": "{sentinelone.primaryDescription}",
+    "conditions": []
+  }],
   "fortiweb": [{
     "conditions": [{
       "field": "event.kind",
