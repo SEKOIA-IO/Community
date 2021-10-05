@@ -873,13 +873,55 @@
       "value": "User {user.name} made {http.request.method} request from {source.ip}: {url.original} (status: {http.response.status_code})",
       "conditions": [{
         "field": "url.original"
-      }]
+      }],
+      "relationships": [{
+          "source": "user.name",
+          "target": "url.original",
+          "type": "HTTP {http.request.method} request"
+        },
+        {
+          "source": "url.original",
+          "target": "url.domain",
+          "type": "hosted on"
+        },
+        {
+          "source": "url.domain",
+          "target": "destination.ip",
+          "type": "resolved to"
+        },
+        {
+          "source": "user.name",
+          "target": "source.ip",
+          "type": "connected on"
+        }
+      ]
     },
     {
       "value": "User {user.name} made {http.request.method} request from {source.ip}: {url.original} (status: {http.response.status_code})",
       "conditions": [{
         "field": "url.full"
-      }]
+      }],
+      "relationships": [{
+          "source": "user.name",
+          "target": "url.full",
+          "type": "HTTP {http.request.method} request"
+        },
+        {
+          "source": "url.full",
+          "target": "url.domain",
+          "type": "hosted on"
+        },
+        {
+          "source": "url.domain",
+          "target": "destination.ip",
+          "type": "resolved to"
+        },
+        {
+          "source": "user.name",
+          "target": "source.ip",
+          "type": "connected on"
+        }
+      ]
     }
   ],
   "unbound": [{
