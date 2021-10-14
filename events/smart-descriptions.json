@@ -505,7 +505,7 @@
       "value": "{source.ip} connected to malicious URL {url.original} (threat: {virus.virus})",
       "conditions": [{
           "field": "event.dataset",
-          "value": "fortinet.virus"
+          "value": "fortinet.antivirus"
         },
         {
           "field": "virus.virus"
@@ -521,7 +521,7 @@
       "value": "{source.ip} was denied a connection to malicious URL {url.original} (threat: {virus.virus})",
       "conditions": [{
           "field": "event.dataset",
-          "value": "fortinet.virus"
+          "value": "fortinet.antivirus"
         },
         {
           "field": "action.name",
@@ -547,10 +547,10 @@
       }]
     },
     {
-      "value": "{source.ip} connected to {url.domain}{url.path} (category {application.category})",
+      "value": "{source.ip} connected to {url.domain}{url.path} on {customer.zone_name} (category {application.category})",
       "conditions": [{
           "field": "event.dataset",
-          "value": "fortinet.web-filter"
+          "value": "fortinet.webfilter"
         },
         {
           "field": "action.name",
@@ -573,7 +573,7 @@
       "value": "{source.ip} was denied a connection to {url.domain}{url.path} (category {application.category})",
       "conditions": [{
           "field": "event.dataset",
-          "value": "fortinet.web-filter"
+          "value": "fortinet.webfilter"
         },
         {
           "field": "action.name",
