@@ -85,7 +85,7 @@
       "type": "operator",
       "cases": [
         {
-          "left": "{%if node.2.output.0 | regex_match('(^127\\.)|(^10\\.)|(^172\\.1[6-9]\\.)|(^172\\.2[0-9]\\.)|(^172\\.3[0-1]\\.)|(^192\\.168\\.)',ignore_case=False) %}true1{% endif %}",
+          "left": "{%if node.2.output.0 | regex_match('(^127\\.)|(^10\\.)|(^172\\.1[6-9]\\.)|(^172\\.2[0-9]\\.)|(^172\\.3[0-1]\\.)|(^192\\.168\\..*)',ignore_case=False) %}true1{% endif %}",
           "name": "Not Private IP",
           "right": "true1",
           "comparison": "!="
