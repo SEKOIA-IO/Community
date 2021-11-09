@@ -338,34 +338,33 @@
       ]
     },
     {
-	"value": "{process.executable} ({process.pe.company}) executed by {user.name} is running on {host.hostname}",
-	"relationships": [
-	    {
-		"source": "user.name",
-		"target": "process.command_line",
-		"type": "executed"
-	    },
-	    {
-		"source": "process.command_line",
-		"target": "log.hostname",
-		"type": "executed on"
-            },
-	    {
-		"source": "user.name",
-		"target": "process.parent.executable",
-		"type": "executed"
-	    },
-	    {
-		"source": "process.command_line",
-		"target": "process.executable",
-		"type": "uses executable"
-            },
-	    {
-		"source": "process.parent.executable",
-		"target": "process.executable",
-		"type": "started"
-	    }
-	],
+      "value": "{process.executable} ({process.pe.company}) executed by {user.name} is running on {host.hostname}",
+      "relationships": [{
+          "source": "user.name",
+          "target": "process.command_line",
+          "type": "executed"
+        },
+        {
+          "source": "process.command_line",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "user.name",
+          "target": "process.parent.executable",
+          "type": "executed"
+        },
+        {
+          "source": "process.command_line",
+          "target": "process.executable",
+          "type": "uses executable"
+        },
+        {
+          "source": "process.parent.executable",
+          "target": "process.executable",
+          "type": "started"
+        }
+      ],
       "conditions": [{
         "field": "event.category",
         "value": "process"
@@ -2174,6 +2173,103 @@
           "value": "SecurityCenter"
         }
       ]
+    }
+  ],
+  "azure active directory": [{
+      "value": "Azure AD: {action.name} succeeded",
+      "conditions": []
+    },
+    {
+      "value": "Azure AD: {action.name} failed (reason: {action.outcome_reason})",
+      "conditions": [{
+        "field": "action.outcome",
+        "value": "failure"
+      }]
+    }
+  ],
+  "azure mysql": [{
+      "value": "Azure MySQL action {action.name} recorded by {log.hostname}",
+      "conditions": []
+    },
+    {
+      "value": "{user.name} performed an SQL request on {log.hostname}",
+      "conditions": [{
+        "field": "action.name",
+        "value": "log"
+      }],
+      "relationships": [{
+        "source": "user.name",
+        "target": "log.hostname",
+        "type": "SQL request"
+      }]
+    },
+    {
+      "value": "A {action.name} operation was performed on a SQL table on {log.hostname}",
+      "conditions": [{
+        "field": "action.type",
+        "value": "table_access_log"
+      }]
+    },
+    {
+      "value": "{user.name} connected to {log.hostname} from IP {source.ip}",
+      "conditions": [{
+        "field": "action.name",
+        "value": "connect"
+      }],
+      "relationships": [{
+          "source": "user.name",
+          "target": "log.hostname",
+          "type": "connected to"
+        },
+        {
+          "source": "user.name",
+          "target": "source.ip",
+          "type": "connected from"
+        }
+      ]
+    },
+    {
+      "value": "{user.name} disconnected from {log.hostname} (source IP: {source.ip})",
+      "conditions": [{
+        "field": "action.name",
+        "value": "disconnect"
+      }],
+      "relationships": [{
+          "source": "user.name",
+          "target": "log.hostname",
+          "type": "disconnected from"
+        },
+        {
+          "source": "user.name",
+          "target": "source.ip",
+          "type": "connected from"
+        }
+      ]
+    }
+  ],
+  "azure network watcher": [{
+      "value": "{source.ip} connected to {destination.ip}:{destination.port}",
+      "conditions": [{
+        "field": "action.name",
+        "value": "accept"
+      }],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "connected to"
+      }]
+    },
+    {
+      "value": "A connection from {source.ip} to {destination.ip}:{destination.port} was denied",
+      "conditions": [{
+        "field": "action.name",
+        "value": "reject"
+      }],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "was denied a connection to"
+      }]
     }
   ]
 }
