@@ -2313,5 +2313,446 @@
           "target": "url.original",
           "type": "updated resource"
       }]
-  }]
+  }],
+  "auditbeat": [{
+      "value": "{event.module}/{event.action} event on {log.hostname}",
+      "conditions": []
+    },
+    {
+      "value": "File {file.path} was scanned for the first time on {log.hostname} (SHA-1: {file.hash.sha1})",
+      "conditions": [{
+        "field": "event.action",
+        "value": "initial_scan"
+      }],
+      "relationships": [{
+        "source": "file.path",
+        "target": "log.hostname",
+        "type": "was scanned on"
+      }]
+    },
+    {
+      "value": "File {file.path} was created on {log.hostname}",
+      "conditions": [{
+          "field": "event.action",
+          "value": "created"
+        },
+        {
+          "field": "event.module",
+          "value": "file_integrity"
+        }
+      ],
+      "relationships": [{
+        "source": "file.path",
+        "target": "log.hostname",
+        "type": "was created on"
+      }]
+    },
+    {
+      "value": "{user.name} executed {process.title} on {log.hostname}",
+      "conditions": [{
+          "field": "event.category",
+          "value": "process"
+        },
+        {
+          "field": "event.action",
+          "value": "executed"
+        }
+      ],
+      "relationships": [{
+          "source": "user.name",
+          "target": "process.title",
+          "type": "executed"
+        },
+        {
+          "source": "process.title",
+          "target": "process.executable",
+          "type": "uses executable"
+        },
+        {
+          "source": "process.title",
+          "target": "log.hostname",
+          "type": "executed on"
+        }
+      ]
+    },
+    {
+      "value": "A session for user {user.name} ended on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "ended-session"
+      }],
+      "relationships": [{
+        "source": "user.name",
+        "target": "log.hostname",
+        "type": "ended session on"
+      }]
+    },
+    {
+      "value": "A sudo session from user {user.name} to user {user.effective.name} ended on {log.hostname}",
+      "conditions": [{
+          "field": "event.action",
+          "value": "ended-session"
+        },
+        {
+          "field": "process.executable",
+          "value": "/usr/bin/sudo"
+        }
+      ],
+      "relationships": [{
+          "source": "user.effective.name",
+          "target": "log.hostname",
+          "type": "ended session on"
+        },
+        {
+          "source": "user.name",
+          "target": "user.effective.name",
+          "type": "used sudo to act as"
+        }
+      ]
+    },
+    {
+      "value": "A session for user {user.name} started on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "started-session"
+      }],
+      "relationships": [{
+        "source": "user.name",
+        "target": "log.hostname",
+        "type": "started session on"
+      }]
+    },
+    {
+      "value": "A sudo session from user {user.name} to user {user.effective.name} started on {log.hostname}",
+      "conditions": [{
+          "field": "event.action",
+          "value": "started-session"
+        },
+        {
+          "field": "process.executable",
+          "value": "/usr/bin/sudo"
+        }
+      ],
+      "relationships": [{
+          "source": "user.effective.name",
+          "target": "log.hostname",
+          "type": "started session on"
+        },
+        {
+          "source": "user.name",
+          "target": "user.effective.name",
+          "type": "used sudo to act as"
+        }
+      ]
+    },
+    {
+      "value": "User {user.name} connected to {destination.ip} from process {process.name} on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "network_flow"
+      }],
+      "relationships": [{
+          "source": "user.name",
+          "target": "process.name",
+          "type": "executed"
+        },
+        {
+          "source": "process.name",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "process.name",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ]
+    },
+    {
+      "value": "User {user.name} connected to {destination.domain} from process {process.name} on {log.hostname}",
+      "conditions": [{
+          "field": "event.action",
+          "value": "network_flow"
+        },
+        {
+          "field": "destination.domain"
+        }
+      ],
+      "relationships": [{
+          "source": "user.name",
+          "target": "process.name",
+          "type": "executed"
+        },
+        {
+          "source": "process.name",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "process.name",
+          "target": "destination.domain",
+          "type": "connected to"
+        },
+        {
+          "source": "destination.domain",
+          "target": "destination.ip",
+          "type": "resolves to"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.name} started by {user.name} attempted a syscall restricted by the Secure Computing Policy on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "violated-seccomp-policy"
+      }],
+      "relationships": [{
+          "source": "user.name",
+          "target": "process.name",
+          "type": "executed"
+        },
+        {
+          "source": "process.name",
+          "target": "log.hostname",
+          "type": "executed on"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.title} started by {user.name} violated the AppArmor policy on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "violated-apparmor-policy"
+      }],
+      "relationships": [{
+          "source": "user.name",
+          "target": "process.title",
+          "type": "executed"
+        },
+        {
+          "source": "process.title",
+          "target": "log.hostname",
+          "type": "executed on"
+        },
+        {
+          "source": "process.title",
+          "target": "process.executable",
+          "type": "uses executable"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.executable} (pid: {process.pid}) is no longer using {user.name} credentials on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "disposed-credentials"
+      }],
+      "relationships": [{
+          "source": "process.executable",
+          "target": "user.name",
+          "type": "used credentials"
+        },
+        {
+          "source": "process.executable",
+          "target": "log.hostname",
+          "type": "executed on"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.executable} (pid: {process.pid}) is no longer using {user.effective.name} credentials on {log.hostname}",
+      "conditions": [{
+          "field": "event.action",
+          "value": "disposed-credentials"
+        },
+        {
+          "field": "user.effective.name"
+        }
+      ],
+      "relationships": [{
+          "source": "process.executable",
+          "target": "user.effective.name",
+          "type": "used credentials"
+        },
+        {
+          "source": "process.executable",
+          "target": "log.hostname",
+          "type": "executed on"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.executable} (pid: {process.pid}) acquired {user.name} credentials on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "acquired-credentials"
+      }],
+      "relationships": [{
+          "source": "process.executable",
+          "target": "user.name",
+          "type": "used credentials"
+        },
+        {
+          "source": "process.executable",
+          "target": "log.hostname",
+          "type": "executed on"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.executable} (pid: {process.pid}) acquired {user.effective.name} credentials on {log.hostname}",
+      "conditions": [{
+          "field": "event.action",
+          "value": "acquired-credentials"
+        },
+        {
+          "field": "user.effective.name"
+        }
+      ],
+      "relationships": [{
+          "source": "process.executable",
+          "target": "user.effective.name",
+          "type": "used credentials"
+        },
+        {
+          "source": "process.executable",
+          "target": "log.hostname",
+          "type": "executed on"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.executable} (pid: {process.pid}) refreshed {user.name} credentials on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "refreshed-credentials"
+      }],
+      "relationships": [{
+          "source": "process.executable",
+          "target": "user.name",
+          "type": "used credentials"
+        },
+        {
+          "source": "process.executable",
+          "target": "log.hostname",
+          "type": "executed on"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.executable} (pid: {process.pid}) refreshed {user.effective.name} credentials on {log.hostname}",
+      "conditions": [{
+          "field": "event.action",
+          "value": "refreshed-credentials"
+        },
+        {
+          "field": "user.effective.name"
+        }
+      ],
+      "relationships": [{
+          "source": "process.executable",
+          "target": "user.effective.name",
+          "type": "used credentials"
+        },
+        {
+          "source": "process.executable",
+          "target": "log.hostname",
+          "type": "executed on"
+        }
+      ]
+    },
+    {
+      "value": "A process changed its login ID to {user.effective.name} on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "changed-login-id-to"
+      }]
+    },
+    {
+      "value": "Process {process.name} (pid: {process.pid}) running as {user.name} stopped on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "process_stopped"
+      }],
+      "relationships": [{
+          "source": "user.name",
+          "target": "process.name",
+          "type": "executed"
+        },
+        {
+          "source": "process.name",
+          "target": "log.hostname",
+          "type": "executed on"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.name} (pid: {process.pid}) running as {user.name} started on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "process_started"
+      }],
+      "relationships": [{
+          "source": "user.name",
+          "target": "process.name",
+          "type": "executed"
+        },
+        {
+          "source": "process.name",
+          "target": "log.hostname",
+          "type": "executed on"
+        }
+      ]
+    },
+    {
+      "value": "Process {process.executable} (pid: {process.pid}) was authorized to login as {user.effective.name} on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "was-authorized"
+      }],
+      "relationships": [{
+          "source": "process.executable",
+          "target": "user.effective.name",
+          "type": "was authorized to login as"
+        },
+        {
+          "source": "process.executable",
+          "target": "log.hostname",
+          "type": "executed on"
+        }
+      ]
+    },
+    {
+      "value": "Error on {log.hostname}: {error.message}",
+      "conditions": [{
+        "field": "error.message"
+      }]
+    },
+    {
+      "value": "{user.name} authenticated on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "authenticated"
+      }],
+      "relationships": [{
+        "source": "user.name",
+        "target": "log.hostname",
+        "type": "authenticated on"
+      }]
+    },
+    {
+      "value": "Host message on {log.hostname}: {auditbeat.message}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "host"
+      }]
+    },
+    {
+      "value": "Audit Configuration was changed on {log.hostname}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "changed-audit-configuration"
+      }]
+    }
+  ]
 }
