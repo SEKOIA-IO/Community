@@ -1,4 +1,93 @@
 {
+  "aioniq": [
+    {
+      "value": "{gatewatcher.type}:{gatewatcher.event_type} event observed between {source.ip} and {destination.ip}",
+      "conditions": [],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ]
+    },
+    {
+      "value": "{gatewatcher.type}:{gatewatcher.event_type} found {gatewatcher.state} file sent by {source.ip} to {destination.ip}",
+      "conditions": [
+        {
+          "field": "gatewatcher.type",
+          "value": "malcore"
+        }
+      ]
+    },
+    {
+      "value": "{gatewatcher.type}:{gatewatcher.event_type} found {gatewatcher.state} file sent by {source.ip} to {destination.ip}",
+      "conditions": [
+        {
+          "field": "gatewatcher.type",
+          "value": "codebreaker"
+        }
+      ]
+    },
+    {
+      "value": "Alert {rule.name} on {network.protocol} flow initiated by {source.ip} to {destination.ip}",
+      "conditions": [
+        {
+          "field": "gatewatcher.type",
+          "value": "suricata"
+        },
+        {
+          "field": "gatewatcher.event_type",
+          "value": "alert"
+        }
+      ]
+    },
+    {
+      "value": "{source.ip} performed HTTP {http.request.method} request for {url.original} on {destination.ip} (status: {http.response.status_code})",
+      "conditions": [
+        {
+          "field": "gatewatcher.type",
+          "value": "suricata"
+        },
+        {
+          "field": "gatewatcher.event_type",
+          "value": "http"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "url.original",
+          "type": "requested"
+        },
+        {
+          "source": "url.original",
+          "target": "destination.ip",
+          "type": "hosted on"
+        }
+      ]
+    },
+    {
+      "value": "{source.ip} performed a DNS {dns.question.type} query for {dns.question.name}",
+      "conditions": [
+        {
+          "field": "gatewatcher.type",
+          "value": "suricata"
+        },
+        {
+          "field": "gatewatcher.event_type",
+          "value": "dns"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "dns.question.name",
+          "type": "resolved"
+        }
+      ]
+    }
+  ],  
   "sentinelone": [{
     "value": "{sentinelone.primaryDescription}",
     "conditions": []
