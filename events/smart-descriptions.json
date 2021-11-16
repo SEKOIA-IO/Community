@@ -43,7 +43,7 @@
       ]
     },
     {
-      "value": "{source.ip} performed HTTP {http.request.method} query for {url.original} on {destination.ip} (status: {http.response.status_code})",
+      "value": "{source.ip} performed HTTP {http.request.method} request for {url.original} on {destination.ip} (status: {http.response.status_code})",
       "conditions": [
         {
           "field": "gatewatcher.type",
