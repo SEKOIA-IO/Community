@@ -1,23 +1,16 @@
 {
   "palo alto": [
     {
-      "value": "{log.level}{action.name} {event.category}:{action.type}{event.action} between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "value": "{event.action} threat between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
       "conditions": [
         {
           "field": "event.category",
           "value": "threat"
         }
-      ],
-      "relationships": [
-        {
-          "source": "source.ip",
-          "target": "destination.ip",
-          "type": "{event.action}"
-        }
       ]
     },
     {
-      "value": "{action.name}{event.category}:{action.type} - Session denied between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "value": "Session denied between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
       "conditions": [
         {
           "field": "event.category",
@@ -36,12 +29,12 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "session denied"
+          "type": "was denied a connection to"
         }
       ]
     },
     {
-      "value": "{action.name}{event.category}:{action.type} - Session dropped between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "value": "Session dropped between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
       "conditions": [
         {
           "field": "event.category",
@@ -60,12 +53,12 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "session dropped"
+          "type": "was denied a connection to"
         }
       ]
     },
     {
-      "value": "{action.name}{event.category}:{action.type} - Session ended between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "value": "Session ended between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
       "conditions": [
         {
           "field": "event.category",
@@ -84,12 +77,12 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "session ended"
+          "type": "connected to"
         }
       ]
     },
     {
-      "value": "{action.name}{event.category}:{action.type} - Session started between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "value": "Session started between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
       "conditions": [
         {
           "field": "event.category",
@@ -108,12 +101,12 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "session started"
+          "type": "connected to"
         }
       ]
     },
     {
-      "value": "{action.name}{event.category}:{action.type} - Session denied between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "value": "Session denied between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
       "conditions": [
         {
           "field": "event.category",
@@ -132,12 +125,12 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "session denied"
+          "type": "was denied a connection to"
         }
       ]
     },
     {
-      "value": "{action.name}{event.category}:{action.type} - Session dropped between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "value": "Session dropped between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
       "conditions": [
         {
           "field": "event.category",
@@ -156,12 +149,12 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "session dropped"
+          "type": "was denied a connection to"
         }
       ]
     },
     {
-      "value": "{action.name}{event.category}:{action.type} - Session ended between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "value": "Session ended between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
       "conditions": [
         {
           "field": "event.category",
@@ -180,12 +173,12 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "session ended"
+          "type": "connected to"
         }
       ]
     },
     {
-      "value": "{action.name}{event.category}:{action.type} - Session started between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "value": "Session started between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
       "conditions": [
         {
           "field": "event.category",
@@ -204,12 +197,12 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "session started"
+          "type": "connected to"
         }
       ]
     },
     {
-      "value": "{action.name}{event.category}:{action.type} - Session denied between {source.ip} and {destination.ip}",
+      "value": "Session denied between {source.ip} and {destination.ip}",
       "conditions": [
         {
           "field": "event.category",
@@ -229,7 +222,7 @@
       ]
     },
     {
-      "value": "{action.name}{event.category}:{action.type} - Session dropped between {source.ip} and {destination.ip}",
+      "value": "Session dropped between {source.ip} and {destination.ip}",
       "conditions": [
         {
           "field": "event.category",
@@ -249,7 +242,7 @@
       ]
     },
     {
-      "value": "{action.name}{event.category}:{action.type} - Session ended between {source.ip} and {destination.ip}",
+      "value": "Session ended between {source.ip} and {destination.ip}",
       "conditions": [
         {
           "field": "event.category",
@@ -269,7 +262,7 @@
       ]
     },
     {
-      "value": "{action.name}{event.category}:{action.type} - Session started between {source.ip} and {destination.ip}",
+      "value": "Session started between {source.ip} and {destination.ip}",
       "conditions": [
         {
           "field": "event.category",
