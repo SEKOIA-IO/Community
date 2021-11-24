@@ -264,7 +264,7 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "session ended"
+          "type": "connected to"
         }
       ]
     },
