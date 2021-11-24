@@ -244,7 +244,7 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "session dropped"
+          "type": "was denied a connection to"
         }
       ]
     },
