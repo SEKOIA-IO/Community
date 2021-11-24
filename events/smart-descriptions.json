@@ -224,7 +224,7 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "session denied"
+          "type": "was denied a connection to"
         }
       ]
     },
