@@ -1,4 +1,313 @@
 {
+  "palo alto": [
+    {
+      "value": "{event.action} threat between {source.ip} and {destination.ip}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "threat"
+        }
+      ]
+    },
+    {
+      "value": "{event.action} threat between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "threat"
+        },
+        {
+          "field": "network.transport",
+          "value": "udp"
+        }
+      ]
+    },
+    {
+      "value": "{event.action} threat between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "threat"
+        },
+        {
+          "field": "network.transport",
+          "value": "tcp"
+        }
+      ]
+    },
+    {
+      "value": "Session denied between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "traffic"
+        },
+        {
+          "field": "action.type",
+          "value": "deny"
+        },
+        {
+          "field": "network.transport",
+          "value": "udp"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "was denied a connection to"
+        }
+      ]
+    },
+    {
+      "value": "Session dropped between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "traffic"
+        },
+        {
+          "field": "action.type",
+          "value": "drop"
+        },
+        {
+          "field": "network.transport",
+          "value": "udp"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "was denied a connection to"
+        }
+      ]
+    },
+    {
+      "value": "Session ended between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "traffic"
+        },
+        {
+          "field": "action.type",
+          "value": "end"
+        },
+        {
+          "field": "network.transport",
+          "value": "udp"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ]
+    },
+    {
+      "value": "Session started between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "traffic"
+        },
+        {
+          "field": "action.type",
+          "value": "start"
+        },
+        {
+          "field": "network.transport",
+          "value": "udp"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ]
+    },
+    {
+      "value": "Session denied between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "traffic"
+        },
+        {
+          "field": "action.type",
+          "value": "deny"
+        },
+        {
+          "field": "network.transport",
+          "value": "tcp"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "was denied a connection to"
+        }
+      ]
+    },
+    {
+      "value": "Session dropped between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "traffic"
+        },
+        {
+          "field": "action.type",
+          "value": "drop"
+        },
+        {
+          "field": "network.transport",
+          "value": "tcp"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "was denied a connection to"
+        }
+      ]
+    },
+    {
+      "value": "Session ended between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "traffic"
+        },
+        {
+          "field": "action.type",
+          "value": "end"
+        },
+        {
+          "field": "network.transport",
+          "value": "tcp"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ]
+    },
+    {
+      "value": "Session started between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "traffic"
+        },
+        {
+          "field": "action.type",
+          "value": "start"
+        },
+        {
+          "field": "network.transport",
+          "value": "tcp"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ]
+    },
+    {
+      "value": "Session denied between {source.ip} and {destination.ip}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "traffic"
+        },
+        {
+          "field": "action.type",
+          "value": "deny"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "was denied a connection to"
+        }
+      ]
+    },
+    {
+      "value": "Session dropped between {source.ip} and {destination.ip}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "traffic"
+        },
+        {
+          "field": "action.type",
+          "value": "drop"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "was denied a connection to"
+        }
+      ]
+    },
+    {
+      "value": "Session ended between {source.ip} and {destination.ip}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "traffic"
+        },
+        {
+          "field": "action.type",
+          "value": "end"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ]
+    },
+    {
+      "value": "Session started between {source.ip} and {destination.ip}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "traffic"
+        },
+        {
+          "field": "action.type",
+          "value": "start"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ]
+    }
+  ],
   "aioniq": [
     {
       "value": "{gatewatcher.type}:{gatewatcher.event_type} event observed between {source.ip} and {destination.ip}",
