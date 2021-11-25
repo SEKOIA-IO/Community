@@ -1,11 +1,37 @@
 {
   "palo alto": [
     {
+      "value": "{event.action} threat between {source.ip} and {destination.ip}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "threat"
+        }
+      ]
+    },
+    {
       "value": "{event.action} threat between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
       "conditions": [
         {
           "field": "event.category",
           "value": "threat"
+        },
+        {
+          "field": "network.transport",
+          "value": "udp"
+        }
+      ]
+    },
+    {
+      "value": "{event.action} threat between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "conditions": [
+        {
+          "field": "event.category",
+          "value": "threat"
+        },
+        {
+          "field": "network.transport",
+          "value": "tcp"
         }
       ]
     },
