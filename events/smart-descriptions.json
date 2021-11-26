@@ -944,7 +944,7 @@
       }]
     },
     {
-      "value": "{source.ip} connected to {url.domain}{url.path} on {customer.zone_name} (category {application.category})",
+      "value": "{source.ip} connected to {url.original}:{destination.port} on {customer.zone_name} (category {application.category})",
       "conditions": [{
           "field": "event.dataset",
           "value": "fortinet.webfilter"
