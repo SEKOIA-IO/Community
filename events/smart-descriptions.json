@@ -833,9 +833,28 @@
     }
   ],
   "sentinelone": [{
-    "value": "{sentinelone.primaryDescription}",
-    "conditions": []
-  }],
+      "value": "{sentinelone.primaryDescription}",
+      "conditions": []
+    },
+    {
+	    "conditions": [
+	      {
+		      "field": "action.properties.threatInfo_confidenceLevel",
+		      "value": "malicious"
+	      },
+	      {
+		      "field": "action.properties.mitigationStatus.status",
+		      "value": "success"
+	      }
+	    ],
+	    "relationships": [{
+		      "source": "action.properties.agentDetectionInfo_agentDomain",
+		      "target": "action.properties.threatInfo_threatName",
+		      "type": "mitigated"
+	    }],
+	    "value": "Agent on {action.properties.agentDetectionInfo_agentDomain} ({action.properties.agentDetectionInfo_agentIpV4}) succesfully mitigated threat {action.properties.threatInfo_threatName}"
+    }
+  ],
   "fortiweb": [{
     "conditions": [{
       "field": "event.kind",
