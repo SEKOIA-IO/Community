@@ -2438,6 +2438,23 @@
       ]
     },
     {
+      "value": "{action.properties.Application} was allowed to listen on {source.ip}:{source.port} on {log.hostname}",
+      "relationships": [{
+        "source": "action.properties.Application",
+        "target": "log.hostname",
+        "type": "listened to port {source.port} on"
+      }],
+      "conditions": [{
+          "field": "action.id",
+          "value": 5154
+        },
+        {
+          "field": "event.provider",
+          "value": "Microsoft-Windows-Security-Auditing"
+        }
+      ]
+    },
+    {
       "value": "{log.hostname} allowed a connection from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "relationships": [{
         "source": "source.ip",
