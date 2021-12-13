@@ -1,7 +1,7 @@
 {
   "apache": [
     {
-      "value": "Web servers received a {http.request.method} request on {url.original} by {source.address} and responded with status {http.response.status_code} and {http.response.bytes} bytes",
+      "value": "HTTP server received a {http.request.method} request on {url.original} by {source.address} and responded with status {http.response.status_code} and {http.response.bytes} bytes",
       "conditions": [
         {
           "field": "http.request.method"
