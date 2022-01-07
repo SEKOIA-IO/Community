@@ -1,0 +1,27 @@
+id: d9114938-6877-48d8-a785-bc07cb7220ff
+title: PowerShell invoking in the command line a registry value to execute.
+description: Detects a d9114938 execution which grabs a value in the windows registry to execute it.
+references:
+MD5 hash: b84c00ae9e7f9684b36d75a1a09f8210
+MD5 hash: 054940ba8908b9e11f57ee081d1140cb
+status: experimental
+author: 'SEKOIA.IO'
+date: 2022/01/03
+tags:
+  - attack.T1059.001
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        Image|contains: 'powershell'
+        CommandLine|contains: 'HKCU'
+    selection2:
+        CommandLine|contains:
+            - 'invoke-expression'
+            - 'iex'
+        CommandLine|contains:
+            - 'gp'
+            - 'Get-ItemProperty'
+    condition: selection and selection2
+level: medium
