@@ -50,5 +50,13 @@
         "tags": [
             "alert"
         ]
+    },
+    {
+        "file": "Reject_old_alerts.json",
+        "name": "Reject old alerts (1 year)",
+        "description": "Reject old alerts not updated for 1 year.",
+        "tags": [
+            "alert"
+        ]
     }
 ]
