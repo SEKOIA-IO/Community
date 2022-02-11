@@ -1,0 +1,52 @@
+{
+    "name": "Generic Fetch OSINT to observable",
+    "workspace": "Intelligence Center",
+    "description": "Retrieve observables from an OSINT to add it to observable database with a tag (eg: https://github.com/MISP/misp-warninglists/tree/main/lists)",
+    "tags": [
+        "observable",
+        "Fetch OSINT"
+    ],
+    "nodes": {
+      "0": {
+        "name": "Fetch OSINT",
+        "type": "trigger",
+        "outputs": {
+          "default": [
+            "1"
+          ]
+        },
+        "module_uuid": "19cf9b48-dc7a-485f-ba14-3b7b998774c1",
+        "trigger_uuid": "00d77e88-74e5-4725-9694-c0e7bb16cd56"
+      },
+      "1": {
+        "name": "Add Tags",
+        "type": "action",
+        "outputs": {
+          "default": [
+            "2"
+          ]
+        },
+        "arguments": {
+          "tags": [
+            ""
+          ],
+          "bundle_path": "{{ node.0['bundle_path'] }}"
+        },
+        "action_uuid": "270f4582-575c-4b8d-a884-73a3ccd6a97c",
+        "module_uuid": "5fdf8838-1529-4243-8fbc-e6bfa7b52e30"
+      },
+      "2": {
+        "name": "Upload Observables",
+        "type": "action",
+        "outputs": {
+          "default": []
+        },
+        "arguments": {
+          "observables_path": "{{ node.1['bundle_path'] }}"
+        },
+        "action_uuid": "ab660ed7-9160-4f91-bb1c-3d49dc8c0972",
+        "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+      }
+    }
+  }
+  
