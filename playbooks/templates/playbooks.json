@@ -58,5 +58,25 @@
         "tags": [
             "alert"
         ]
+    },
+    {
+        "file": "Shodan_search_to_observables.json",
+        "name": "Shodan search to observables",
+        "workspace": "Intelligence Center",
+        "description": "Get IP addresses from a shodan search and add it to Observable data base with a tag",
+        "tags": [
+          "observable",
+          "Shodan"
+        ]
+    },
+    {
+        "file": "OSINT_to_observables.json",
+        "name": "Generic Fetch OSINT to observable",
+        "workspace": "Intelligence Center",
+        "description": "Retrieve observables from an OSINT to add it to observable database with a tag (eg: https://github.com/MISP/misp-warninglists/tree/main/lists)",
+        "tags": [
+            "observable",
+            "Fetch OSINT"
+        ]
     }
 ]
