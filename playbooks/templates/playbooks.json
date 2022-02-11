@@ -48,7 +48,8 @@
         "name": "Enrich alerts with VirusTotal",
         "description": "Enrich alerts with VirusTotal informations",
         "tags": [
-            "alert"
+            "alert",
+            "enrichement"
         ]
     },
     {
@@ -56,7 +57,18 @@
         "name": "Reject old alerts (1 year)",
         "description": "Reject old alerts not updated for 1 year.",
         "tags": [
-            "alert"
+            "alert",
+            "cron"
+        ]
+    },
+    {
+        "file": "Enrich_with_IKnow_What_Your_Download.json",
+        "name": "Enrich with IKnowWhatYourDownload",
+        "description": "Enrich with IKnowWhatYourDownload to check if the IP is know from this service direclty from SEKOIA.IO.",
+        "tags": [
+            "alert",
+            "webhook",
+            "enrichement"
         ]
     },
     {
