@@ -64,7 +64,7 @@
     {
         "file": "Enrich_with_IKnow_What_Your_Download.json",
         "name": "Enrich with IKnowWhatYourDownload",
-        "description": "Enrich with IKnowWhatYourDownload to check if the IP is know from this service direclty from SEKOIA.IO.",
+        "description": "Enrich with IKnowWhatYourDownload to check if the IP is known from this service, directly from SEKOIA.IO.",
         "tags": [
             "alert",
             "webhook",
