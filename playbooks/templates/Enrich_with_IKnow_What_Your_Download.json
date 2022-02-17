@@ -92,5 +92,5 @@
     }
   },
   "workspace": "Operation Center",
-  "description": "Enrich with IKnowWhatYourDownload to check if the IP is know from this service direclty from SEKOIA.IO."
+  "description": "Enrich with IKnowWhatYourDownload to check if the IP is known from this service, directly from SEKOIA.IO."
 }
