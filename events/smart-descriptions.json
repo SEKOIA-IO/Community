@@ -3655,5 +3655,90 @@
         "value": "changed-audit-configuration"
       }]
     }
+  ],
+  "mcafee web gateway": [
+    {
+      "value": "Connection to {url.domain} from {source.ip} for user {user.name} blocked: {event.reason}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "block"
+      },{
+        "field": "user.name"
+      }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.domain",
+        "type": "blocked"
+      }]
+    },
+    {
+      "value": "Connection to {url.domain} from {source.ip} blocked: {event.reason}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "block"
+      }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.domain",
+        "type": "blocked"
+      }]
+    },
+    {
+      "value": "Connection to {url.domain} from {source.ip} for user {user.name} allowed",
+      "conditions": [{
+        "field": "event.action",
+        "value": "allow"
+      },{
+        "field": "user.name"
+      }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.domain",
+        "type": "blocked"
+      }]
+    },
+    {
+      "value": "Connection to {url.domain} from {source.ip} allowed",
+      "conditions": [{
+        "field": "event.action",
+        "value": "allow"
+      }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.domain",
+        "type": "blocked"
+      }]
+    },
+    {
+      "value": "The verification of the connection from {source.ip} to {url.domain} failed: {event.reason}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "fail"
+      },
+      {"field": "event.reason"}
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.domain",
+        "type": "blocked"
+      }]
+    },
+    {
+      "value": "The verification of the connection from {source.ip} to {url.domain} failed for an undefined reason",
+      "conditions": [{
+        "field": "event.action",
+        "value": "fail"
+      }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.domain",
+        "type": "blocked"
+      }]
+    }
   ]
 }
