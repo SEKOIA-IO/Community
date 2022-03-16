@@ -1,4 +1,22 @@
 {
+  "digital shadows": [
+    {
+      "value": "An alert of risk {digital_shadows_searchlight.risk_level} was raised on SearchLight due to {rule.name}",
+      "conditions": [
+        {
+          "field": "event.kind",
+          "value": "alert"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "event.kind",
+          "target": "digital_shadows_searchlight.risk_level",
+          "type": "has risk level"
+        }
+      ]
+    }
+  ],
   "apache": [
     {
       "value": "HTTP server received a {http.request.method} request on {url.original} by {source.address} and responded with status {http.response.status_code} and {http.response.bytes} bytes",
