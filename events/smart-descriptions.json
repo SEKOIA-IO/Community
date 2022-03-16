@@ -13,7 +13,7 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "connected was allowed"
+          "type": "connected to"
         }
       ]
     },
@@ -29,7 +29,7 @@
         {
           "source": "source.ip",
           "target": "destination.ip",
-          "type": "connection was blocked"
+          "type": "was denied a connection to"
         }
       ]
     }
