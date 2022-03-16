@@ -3669,7 +3669,7 @@
       "relationships": [{
         "source": "source.ip",
         "target": "url.domain",
-        "type": "denied"
+        "type": "was denied a connection to"
       }]
     },
     {
@@ -3682,7 +3682,7 @@
       "relationships": [{
         "source": "source.ip",
         "target": "url.domain",
-        "type": "denied"
+        "type": "was denied a connection to"
       }]
     },
     {
@@ -3697,7 +3697,7 @@
       "relationships": [{
         "source": "source.ip",
         "target": "url.domain",
-        "type": "allowed"
+        "type": "connected to"
       }]
     },
     {
@@ -3710,7 +3710,7 @@
       "relationships": [{
         "source": "source.ip",
         "target": "url.domain",
-        "type": "allowed"
+        "type": "connected to"
       }]
     },
     {
@@ -3724,7 +3724,7 @@
       "relationships": [{
         "source": "source.ip",
         "target": "url.domain",
-        "type": "error"
+        "type": "failed to connect to"
       }]
     },
     {
@@ -3737,7 +3737,7 @@
       "relationships": [{
         "source": "source.ip",
         "target": "url.domain",
-        "type": "error"
+        "type": "failed to connect to"
       }]
     }
   ]
