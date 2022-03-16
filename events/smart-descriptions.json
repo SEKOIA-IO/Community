@@ -3658,7 +3658,7 @@
   ],
   "mcafee web gateway": [
     {
-      "value": "Connection from {source.ip} to {url.domain} for user {user.name} blocked: {event.reason}",
+      "value": "Connection from {source.ip} to {url.domain} initiated by user {user.name} blocked: {event.reason}",
       "conditions": [{
         "field": "event.action",
         "value": "denied"
@@ -3686,7 +3686,7 @@
       }]
     },
     {
-      "value": "Connection from {source.ip} to {url.domain} for user {user.name} allowed",
+      "value": "Connection from {source.ip} to {url.domain} initiated by user {user.name} allowed",
       "conditions": [{
         "field": "event.action",
         "value": "allowed"
