@@ -1,4 +1,39 @@
 {
+  "stormshield network security":
+  [
+    {
+      "value": "Connection accepted by rule {rule.id} from {source.ip} to {destination.ip}",
+      "conditions": [
+        {
+          "field": "stormshield.filter.action",
+          "value": "pass"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ]
+    },
+    {
+      "value": "Connection blocked by rule {rule.id} from {source.ip} to {destination.ip}",
+      "conditions": [
+        {
+          "field": "stormshield.filter.action",
+          "value": "block"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "was denied a connection to"
+        }
+      ]
+    }
+  ],
   "apache": [
     {
       "value": "HTTP server received a {http.request.method} request on {url.original} by {source.address} and responded with status {http.response.status_code} and {http.response.bytes} bytes",
