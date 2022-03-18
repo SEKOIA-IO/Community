@@ -13,8 +13,6 @@
         },
         "module_uuid": "e76687ed-db66-482a-8549-f3ef3b248e06",
         "trigger_uuid": "7d026824-2c7c-4477-bc36-a1f96837eba1",
-        "module_configuration_uuid": "5dde9166-4727-4125-b879-6a1c5465aca2",
-        "trigger_configuration_uuid": "f8bac705-3ce1-447c-b9fe-4063653f73a5"
       },
       "1": {
         "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+ICAgCjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4KICAgICAgYWxlcnQoIlhTUyIpOwogICA8L3NjcmlwdD4KPC9zdmc+Cg==",
@@ -29,10 +27,8 @@
         },
         "action_uuid": "10314466-ac0c-4067-8e81-4093e3d1e1da",
         "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
-        "module_configuration_uuid": "4e9bfc9f-a2e4-4bc1-9f6d-cb81b6281d57"
       }
     },
     "workspace": "Operation Center",
     "description": "Synchronise alerts from Digital Shadows SearchLight to SEKOIA.IO events",
-    "community_uuid": "02ff3284-506e-49d6-a9f5-99dbb2ea69ed"
   }
