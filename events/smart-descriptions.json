@@ -50,6 +50,22 @@
           "type": "was denied a connection to"
         }
       ]
+    },
+    {
+      "value": "Connection logged by rule {rule.id} from {source.ip} to {destination.ip} protocol {network.protocol}",
+      "conditions": [
+        {
+          "field": "stormshield.filter.action",
+          "value": "log"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ]
     }
   ],
   "apache": [
