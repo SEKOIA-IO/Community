@@ -1,0 +1,96 @@
+{
+  "name": "Enrich with IKnowWhatYourDownload",
+  "nodes": {
+    "0": {
+      "name": "alert_webhook",
+      "type": "trigger",
+      "outputs": {
+        "default": [
+          "4"
+        ]
+      },
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "trigger_uuid": "fc26eb9f-b272-4c15-b3bf-ace397c0dc57"
+    },
+    "1": {
+      "name": "Read for IP",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "2"
+        ]
+      },
+      "arguments": {
+        "file": "{{ node.4.stix }}",
+        "to_file": false,
+        "jsonpath": "$.objects[?(type=\"observed-data\")].objects[?(@.type=\"ipv4-addr\")].value",
+        "return_list": true
+      },
+      "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
+      "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
+    },
+    "2": {
+      "name": "IP Check",
+      "type": "action",
+      "outputs": {
+        "known": [
+          "3"
+        ],
+        "unknown": [
+          "5"
+        ]
+      },
+      "arguments": {
+        "ip": "{{ node.1['output'][0] }}"
+      },
+      "action_uuid": "f5d6d623-8e3d-4d8e-8843-19058812b8f9",
+      "module_uuid": "3c334ccd-91be-49d5-9267-915db6ab588e"
+    },
+    "3": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=",
+      "name": "post_a_comment_on_an_alert",
+      "type": "action",
+      "outputs": {
+        "default": []
+      },
+      "arguments": {
+        "uuid": "{{ node.0['alert_uuid'] }}",
+        "author": "IP Check",
+        "content": "This IP `{{ node.1['output'][0] }}` is know for being a BitTorrent node at this date: {{ node.2['date'] }}."
+      },
+      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    },
+    "4": {
+      "name": "get_an_alert",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "1"
+        ]
+      },
+      "arguments": {
+        "stix": true,
+        "uuid": "{{ node.0['alert_uuid'] }}"
+      },
+      "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    },
+    "5": {
+      "name": "post_a_comment_on_an_alert",
+      "type": "action",
+      "outputs": {
+        "default": []
+      },
+      "arguments": {
+        "uuid": "{{ node.0['alert_uuid'] }}",
+        "author": "IP Check",
+        "content": "This IP `{{ node.1['output'][0] }}` is not know to be a BitTorrent node."
+      },
+      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    }
+  },
+  "workspace": "Operation Center",
+  "description": "Enrich with IKnowWhatYourDownload to check if the IP is known from this service, directly from SEKOIA.IO."
+}
