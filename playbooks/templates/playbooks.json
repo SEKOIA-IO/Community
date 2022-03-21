@@ -93,16 +93,16 @@
     },
     {
         "file": "create_alert_on_the_hive_automatic.json",
-        "name": "Create Alert on TheHive automatically",
+        "name": "Automatically create an alert on TheHive",
         "workspace": "Operation Center",
-        "description": "Create an alert on The Hive automatically when a new alert is created in the platform.",
+        "description": "Automatically create an alert on TheHive when a new alert is raised in SEKOIA.IO.",
         "tags": ["alert", "thehive"]
     },
     {
         "file": "create_alert_on_the_hive_manual.json",
-        "name": "Create manually Alert on TheHive",
+        "name": "Manually create an Alert on TheHive",
         "workspace": "Operation Center",
-        "description": "Create an alert on The Hive through the alert page.",
+        "description": "Create an alert on TheHive via the alert page.",
         "tags": ["alert", "thehive"]
     }
 ]
