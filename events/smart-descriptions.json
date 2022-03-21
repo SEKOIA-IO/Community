@@ -1,5 +1,5 @@
 {
-  "digital shadows": [
+  "digital shadows searchlight": [
     {
       "value": "An alert of risk {digital_shadows_searchlight.risk_level} was raised on SearchLight due to {rule.name}",
       "conditions": [
