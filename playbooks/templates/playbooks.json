@@ -104,5 +104,19 @@
         "workspace": "Operation Center",
         "description": "Create an alert on TheHive via the alert page.",
         "tags": ["alert", "thehive"]
+    },
+    {
+        "file": "forward_aws_cloudtrail_records.json",
+        "name": "Forward AWS CloudTrail records to SEKOIA.IO",
+        "workspace": "Operation Center",
+        "description": "This playbook pulls records from AWS CloudTrail then push the fetched records to SEKOIA.IO",
+        "tags": ["aws", "events"]
+    },
+    {
+        "file": "forward_aws_flowlogs_records.json",
+        "name": "Forward AWS Flow Logs records to SEKOIA.IO",
+        "workspace": "Operation Center",
+        "description": "This playbook pulls records from AWS Flow Logs then push the fetched records to SEKOIA.IO",
+        "tags": ["aws", "events"]
     }
 ]
