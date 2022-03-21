@@ -90,5 +90,19 @@
             "observable",
             "Fetch OSINT"
         ]
+    },
+    {
+        "file": "create_alert_on_the_hive_automatic.json",
+        "name": "Create Alert on TheHive automatically",
+        "workspace": "Operation Center",
+        "description": "Create an alert on The Hive automatically when a new alert is created in the platform.",
+        "tags": ["alert", "thehive"]
+    },
+    {
+        "file": "create_alert_on_the_hive_manual.json",
+        "name": "Create manually Alert on TheHive",
+        "workspace": "Operation Center",
+        "description": "Create an alert on The Hive through the alert page.",
+        "tags": ["alert", "thehive"]
     }
 ]
