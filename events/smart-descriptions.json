@@ -1,4 +1,73 @@
 {
+  "digital shadows searchlight": [
+    {
+      "value": "An alert of risk {digital_shadows_searchlight.risk_level} was raised on SearchLight due to {rule.name}",
+      "conditions": [
+        {
+          "field": "event.kind",
+          "value": "alert"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "event.kind",
+          "target": "digital_shadows_searchlight.risk_level",
+          "type": "has risk level"
+        }
+      ]
+    }
+  ],
+  "stormshield network security":
+  [
+    {
+      "value": "Connection accepted by rule {rule.id} from {source.ip} to {destination.ip}",
+      "conditions": [
+        {
+          "field": "stormshield.filter.action",
+          "value": "pass"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ]
+    },
+    {
+      "value": "Connection blocked by rule {rule.id} from {source.ip} to {destination.ip}",
+      "conditions": [
+        {
+          "field": "stormshield.filter.action",
+          "value": "block"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "was denied a connection to"
+        }
+      ]
+    },
+    {
+      "value": "Connection logged by rule {rule.id} from {source.ip} to {destination.ip} protocol {network.protocol}",
+      "conditions": [
+        {
+          "field": "stormshield.filter.action",
+          "value": "log"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ]
+    }
+  ],
   "apache": [
     {
       "value": "HTTP server received a {http.request.method} request on {url.original} by {source.address} and responded with status {http.response.status_code} and {http.response.bytes} bytes",
@@ -3653,6 +3722,91 @@
       "conditions": [{
         "field": "event.action",
         "value": "changed-audit-configuration"
+      }]
+    }
+  ],
+  "mcafee web gateway": [
+    {
+      "value": "Connection from {source.ip} to {url.domain} initiated by user {user.name} blocked: {event.reason}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "denied"
+      },{
+        "field": "user.name"
+      }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.domain",
+        "type": "was denied a connection to"
+      }]
+    },
+    {
+      "value": "Connection from {source.ip} to {url.domain} blocked: {event.reason}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "denied"
+      }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.domain",
+        "type": "was denied a connection to"
+      }]
+    },
+    {
+      "value": "Connection from {source.ip} to {url.domain} initiated by user {user.name} allowed",
+      "conditions": [{
+        "field": "event.action",
+        "value": "allowed"
+      },{
+        "field": "user.name"
+      }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.domain",
+        "type": "connected to"
+      }]
+    },
+    {
+      "value": "Connection from {source.ip} to {url.domain} allowed",
+      "conditions": [{
+        "field": "event.action",
+        "value": "allowed"
+      }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.domain",
+        "type": "connected to"
+      }]
+    },
+    {
+      "value": "The verification of the connection from {source.ip} to {url.domain} failed: {event.reason}",
+      "conditions": [{
+        "field": "event.action",
+        "value": "error"
+      },
+      {"field": "event.reason"}
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.domain",
+        "type": "failed to connect to"
+      }]
+    },
+    {
+      "value": "The verification of the connection from {source.ip} to {url.domain} failed for an undefined reason",
+      "conditions": [{
+        "field": "event.action",
+        "value": "error"
+      }
+      ],
+      "relationships": [{
+        "source": "source.ip",
+        "target": "url.domain",
+        "type": "failed to connect to"
       }]
     }
   ]
