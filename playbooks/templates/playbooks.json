@@ -1,94 +1,103 @@
 [
-    {
-        "file": "email_notification_on_alert_webhook.json",
-        "name": "Mail Webhook notification on alert",
-        "description": "Send an email about an alert when receiving a webhook event",
-        "tags": [
-            "alert",
-            "notification",
-            "webhook"
-        ]
-    },
-    {
-        "file": "mattermost_notification_on_alert.json",
-        "name": "Mattermost notification on alert",
-        "description": "Notify by mattermost when new alerts are created",
-        "tags": [
-            "alert",
-            "notification"
-        ]
-    },
-    {
-        "file": "alert_webhook_internet_scan.json",
-        "name": "Qualify Internet Scan webhook",
-        "description": "Qualify an Internet scan alert on webhook",
-        "tags": [
-            "alert",
-            "webhook"
-        ]
-    },
-    {
-        "file": "playbook_adware.json",
-        "name": "Playbook adware",
-        "description": "Automatic validation of alerts with predefined adware domains",
-        "tags": [
-            "alert"
-        ]
-    },
-    {
-        "file": "urgency_to_0_on_rejected.json",
-        "name": "Alert urgency to 0 when rejected",
-        "description": "Put the urgency of an alert to 0 when it is rejected",
-        "tags": [
-            "alert"
-        ]
-    },
-    {
-        "file": "VirusTotal_Enrichement.json",
-        "name": "Enrich alerts with VirusTotal",
-        "description": "Enrich alerts with VirusTotal informations",
-        "tags": [
-            "alert",
-            "enrichement"
-        ]
-    },
-    {
-        "file": "Reject_old_alerts.json",
-        "name": "Reject old alerts (1 year)",
-        "description": "Reject old alerts not updated for 1 year.",
-        "tags": [
-            "alert",
-            "cron"
-        ]
-    },
-    {
-        "file": "Enrich_with_IKnow_What_Your_Download.json",
-        "name": "Enrich with IKnowWhatYourDownload",
-        "description": "Enrich with IKnowWhatYourDownload to check if the IP is know from this service direclty from SEKOIA.IO.",
-        "tags": [
-            "alert",
-            "webhook",
-            "enrichement"
-        ]
-    },
-    {
-        "file": "Shodan_search_to_observables.json",
-        "name": "Shodan search to observables",
-        "workspace": "Intelligence Center",
-        "description": "Get IP addresses from a shodan search and add it to Observable data base with a tag",
-        "tags": [
-          "observable",
-          "Shodan"
-        ]
-    },
-    {
-        "file": "OSINT_to_observables.json",
-        "name": "Generic Fetch OSINT to observable",
-        "workspace": "Intelligence Center",
-        "description": "Retrieve observables from an OSINT to add it to observable database with a tag (eg: https://github.com/MISP/misp-warninglists/tree/main/lists)",
-        "tags": [
-            "observable",
-            "Fetch OSINT"
-        ]
-    }
+  {
+    "file": "email_notification_on_alert_webhook.json",
+    "name": "Mail Webhook notification on alert",
+    "description": "Send an email about an alert when receiving a webhook event",
+    "tags": [
+      "alert",
+      "notification",
+      "webhook"
+    ]
+  },
+  {
+    "file": "mattermost_notification_on_alert.json",
+    "name": "Mattermost notification on alert",
+    "description": "Notify by mattermost when new alerts are created",
+    "tags": [
+      "alert",
+      "notification"
+    ]
+  },
+  {
+    "file": "alert_webhook_internet_scan.json",
+    "name": "Qualify Internet Scan webhook",
+    "description": "Qualify an Internet scan alert on webhook",
+    "tags": [
+      "alert",
+      "webhook"
+    ]
+  },
+  {
+    "file": "playbook_adware.json",
+    "name": "Playbook adware",
+    "description": "Automatic validation of alerts with predefined adware domains",
+    "tags": [
+      "alert"
+    ]
+  },
+  {
+    "file": "urgency_to_0_on_rejected.json",
+    "name": "Alert urgency to 0 when rejected",
+    "description": "Put the urgency of an alert to 0 when it is rejected",
+    "tags": [
+      "alert"
+    ]
+  },
+  {
+    "file": "VirusTotal_Enrichement.json",
+    "name": "Enrich alerts with VirusTotal",
+    "description": "Enrich alerts with VirusTotal informations",
+    "tags": [
+      "alert",
+      "enrichement"
+    ]
+  },
+  {
+    "file": "Reject_old_alerts.json",
+    "name": "Reject old alerts (1 year)",
+    "description": "Reject old alerts not updated for 1 year.",
+    "tags": [
+      "alert",
+      "cron"
+    ]
+  },
+  {
+    "file": "Enrich_with_IKnow_What_Your_Download.json",
+    "name": "Enrich with IKnowWhatYourDownload",
+    "description": "Enrich with IKnowWhatYourDownload to check if the IP is know from this service direclty from SEKOIA.IO.",
+    "tags": [
+      "alert",
+      "webhook",
+      "enrichement"
+    ]
+  },
+  {
+    "file": "Shodan_search_to_observables.json",
+    "name": "Shodan search to observables",
+    "workspace": "Intelligence Center",
+    "description": "Get IP addresses from a shodan search and add it to Observable data base with a tag",
+    "tags": [
+      "observable",
+      "Shodan"
+    ]
+  },
+  {
+    "file": "OSINT_to_observables.json",
+    "name": "Generic Fetch OSINT to observable",
+    "workspace": "Intelligence Center",
+    "description": "Retrieve observables from an OSINT to add it to observable database with a tag (eg: https://github.com/MISP/misp-warninglists/tree/main/lists)",
+    "tags": [
+      "observable",
+      "Fetch OSINT"
+    ]
+  },
+  {
+    "file": "DigitalShadows_SearchLight_fetch_alerts.json",
+    "name": "Fetch alerts from Digital Shadows SearchLight",
+    "description": "Synchronise alerts from Digital Shadows SearchLight to SEKOIA.IO events",
+    "tags": [
+      "alerts",
+      "osint"
+    ]
+  }
 ]
