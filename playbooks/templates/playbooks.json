@@ -118,5 +118,15 @@
         "workspace": "Operation Center",
         "description": "This playbook pulls records from AWS Flow Logs then push the fetched records to SEKOIA.IO",
         "tags": ["aws", "events"]
+    },
+    {
+        "file": "DigitalShadows_SearchLight_fetch_alerts.json",
+        "name": "Fetch alerts from Digital Shadows SearchLight",
+        "workspace": "Operation Center",
+        "description": "Synchronise alerts from Digital Shadows SearchLight to SEKOIA.IO events",
+        "tags": [
+          "alerts",
+          "osint"
+        ]
     }
 ]
