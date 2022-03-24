@@ -3727,7 +3727,7 @@
   ],
   "mcafee web gateway": [
     {
-      "value": "Connection from {source.ip} to {url.domain} initiated by user {user.name} blocked: {event.reason}",
+      "value": "Connection from {source.ip} to {destination.ip} initiated by user {user.name} blocked: {event.reason}",
       "conditions": [{
         "field": "event.action",
         "value": "denied"
@@ -3737,12 +3737,12 @@
       ],
       "relationships": [{
         "source": "source.ip",
-        "target": "url.domain",
+        "target": "destination.ip",
         "type": "was denied a connection to"
       }]
     },
     {
-      "value": "Connection from {source.ip} to {url.domain} blocked: {event.reason}",
+      "value": "Connection from {source.ip} to {destination.ip} blocked: {event.reason}",
       "conditions": [{
         "field": "event.action",
         "value": "denied"
@@ -3750,12 +3750,12 @@
       ],
       "relationships": [{
         "source": "source.ip",
-        "target": "url.domain",
+        "target": "destination.ip",
         "type": "was denied a connection to"
       }]
     },
     {
-      "value": "Connection from {source.ip} to {url.domain} initiated by user {user.name} allowed",
+      "value": "Connection from {source.ip} to {destination.ip} initiated by user {user.name} allowed",
       "conditions": [{
         "field": "event.action",
         "value": "allowed"
@@ -3765,12 +3765,12 @@
       ],
       "relationships": [{
         "source": "source.ip",
-        "target": "url.domain",
+        "target": "destination.ip",
         "type": "connected to"
       }]
     },
     {
-      "value": "Connection from {source.ip} to {url.domain} allowed",
+      "value": "Connection from {source.ip} to {destination.ip} allowed",
       "conditions": [{
         "field": "event.action",
         "value": "allowed"
@@ -3778,12 +3778,12 @@
       ],
       "relationships": [{
         "source": "source.ip",
-        "target": "url.domain",
+        "target": "destination.ip",
         "type": "connected to"
       }]
     },
     {
-      "value": "The verification of the connection from {source.ip} to {url.domain} failed: {event.reason}",
+      "value": "The verification of the connection from {source.ip} to {destination.ip} failed: {event.reason}",
       "conditions": [{
         "field": "event.action",
         "value": "error"
@@ -3792,12 +3792,12 @@
       ],
       "relationships": [{
         "source": "source.ip",
-        "target": "url.domain",
+        "target": "destination.ip",
         "type": "failed to connect to"
       }]
     },
     {
-      "value": "The verification of the connection from {source.ip} to {url.domain} failed for an undefined reason",
+      "value": "The verification of the connection from {source.ip} to {destination.ip} failed for an undefined reason",
       "conditions": [{
         "field": "event.action",
         "value": "error"
@@ -3805,7 +3805,7 @@
       ],
       "relationships": [{
         "source": "source.ip",
-        "target": "url.domain",
+        "target": "destination.ip",
         "type": "failed to connect to"
       }]
     }
