@@ -7,7 +7,8 @@
             "alert",
             "notification",
             "webhook"
-        ]
+        ],
+        "workspace": ["Operation Center"]
     },
     {
         "file": "mattermost_notification_on_alert.json",
@@ -16,7 +17,8 @@
         "tags": [
             "alert",
             "notification"
-        ]
+        ],
+        "workspace": ["Operation Center"]
     },
     {
         "file": "alert_webhook_internet_scan.json",
@@ -25,7 +27,8 @@
         "tags": [
             "alert",
             "webhook"
-        ]
+        ],
+        "workspace": ["Operation Center"]
     },
     {
         "file": "playbook_adware.json",
@@ -33,7 +36,8 @@
         "description": "Automatic validation of alerts with predefined adware domains",
         "tags": [
             "alert"
-        ]
+        ],
+        "workspace": ["Operation Center"]
     },
     {
         "file": "urgency_to_0_on_rejected.json",
@@ -41,7 +45,8 @@
         "description": "Put the urgency of an alert to 0 when it is rejected",
         "tags": [
             "alert"
-        ]
+        ],
+        "workspace": ["Operation Center"]
     },
     {
         "file": "VirusTotal_Enrichement.json",
@@ -50,7 +55,8 @@
         "tags": [
             "alert",
             "enrichement"
-        ]
+        ],
+        "workspace": ["Operation Center"]
     },
     {
         "file": "Reject_old_alerts.json",
@@ -59,7 +65,8 @@
         "tags": [
             "alert",
             "cron"
-        ]
+        ],
+        "workspace": ["Operation Center"]
     },
     {
         "file": "Enrich_with_IKnow_What_You_Download.json",
@@ -69,12 +76,13 @@
             "alert",
             "webhook",
             "enrichement"
-        ]
+        ],
+        "workspace": ["Operation Center"]
     },
     {
         "file": "Shodan_search_to_observables.json",
         "name": "Shodan search to observables",
-        "workspace": "Intelligence Center",
+        "workspace": ["Intelligence Center"],
         "description": "Get IP addresses from a shodan search and add it to Observable data base with a tag",
         "tags": [
           "observable",
@@ -84,7 +92,7 @@
     {
         "file": "OSINT_to_observables.json",
         "name": "Generic Fetch OSINT to observable",
-        "workspace": "Intelligence Center",
+        "workspace": ["Intelligence Center"],
         "description": "Retrieve observables from an OSINT to add it to observable database with a tag (eg: https://github.com/MISP/misp-warninglists/tree/main/lists)",
         "tags": [
             "observable",
@@ -94,35 +102,35 @@
     {
         "file": "create_alert_on_the_hive_automatic.json",
         "name": "Automatically create an alert on TheHive",
-        "workspace": "Operation Center",
+        "workspace": ["Operation Center"],
         "description": "Automatically create an alert on TheHive when a new alert is raised in SEKOIA.IO.",
         "tags": ["alert", "thehive"]
     },
     {
         "file": "create_alert_on_the_hive_manual.json",
         "name": "Manually create an Alert on TheHive",
-        "workspace": "Operation Center",
+        "workspace": ["Operation Center"],
         "description": "Create an alert on TheHive via the alert page.",
         "tags": ["alert", "thehive"]
     },
     {
         "file": "forward_aws_cloudtrail_records.json",
         "name": "Forward AWS CloudTrail records to SEKOIA.IO",
-        "workspace": "Operation Center",
+        "workspace": ["Operation Center"],
         "description": "This playbook pulls records from AWS CloudTrail then push the fetched records to SEKOIA.IO",
         "tags": ["aws", "events"]
     },
     {
         "file": "forward_aws_flowlogs_records.json",
         "name": "Forward AWS Flow Logs records to SEKOIA.IO",
-        "workspace": "Operation Center",
+        "workspace": ["Operation Center"],
         "description": "This playbook pulls records from AWS Flow Logs then push the fetched records to SEKOIA.IO",
         "tags": ["aws", "events"]
     },
     {
         "file": "DigitalShadows_SearchLight_fetch_alerts.json",
         "name": "Fetch alerts from Digital Shadows SearchLight",
-        "workspace": "Operation Center",
+        "workspace": ["Operation Center"],
         "description": "Synchronise alerts from Digital Shadows SearchLight to SEKOIA.IO events",
         "tags": [
           "alerts",
