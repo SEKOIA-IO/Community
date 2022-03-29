@@ -1334,11 +1334,10 @@
         "target": "destination.ip",
         "type": "connected to"
       }],
-      "conditions": [{
+      "conditions": [
+        {
         "field": "event.category",
-        "value": "network",
-        "field": "event.executable",
-        "value": ""
+        "value": "network"
       }]
     }
   ],
