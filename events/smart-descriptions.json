@@ -20,7 +20,7 @@
         {
           "source": "email.from.address",
           "target": "email.to.address",
-          "type": "blocked"
+          "type": "was classified as {vadesecure.status}"
         }
       ]
     },
