@@ -543,7 +543,7 @@
       ]
     },
     {
-      "value": "Data Loss Preventation {action.name} : {source.ip} accessed to {url.full}",
+      "value": "Data Loss Prevention {action.name} : {source.ip} accessed to {url.full}",
       "relationships": [{
         "source": "source.ip",
         "target": "url.full",
@@ -563,7 +563,7 @@
       ]
     },
     {
-      "value": "Data Loss Preventation {action.name} : {source.ip} accessed to {destination.ip}",
+      "value": "Data Loss Prevention {action.name} : {source.ip} accessed to {destination.ip}",
       "relationships": [{
         "source": "source.ip",
         "target": "url.full",
@@ -924,29 +924,29 @@
       }]
     }
   ],
-  "sentinelone": [
-  {
-    "value": "{event.reason}",
-    "conditions": [
-      {
-        "field": "event.reason"
-      }
-    ]
-  },
-  {
-    "value": "{threat.enrichments.indicator.file.name} was classified as {threat.software.type} ",
-    "conditions": [
-
-    ],
-    "relationships": [
-      {
-        "source": "threat.enrichments.indicator.file.name",
-        "target": "threat.software.type",
-        "type": "classified"
-      }
-    ]
-  }
-],
+  "sentinelone": [{
+      "value": "{sentinelone.primaryDescription}",
+      "conditions": []
+    },
+    {
+	    "conditions": [
+	      {
+		      "field": "action.properties.threatInfo_confidenceLevel",
+		      "value": "malicious"
+	      },
+	      {
+		      "field": "action.properties.mitigationStatus.status",
+		      "value": "success"
+	      }
+	    ],
+	    "relationships": [{
+		      "source": "action.properties.agentDetectionInfo_agentDomain",
+		      "target": "action.properties.threatInfo_threatName",
+		      "type": "mitigated"
+	    }],
+	    "value": "Agent on {action.properties.agentDetectionInfo_agentDomain} ({action.properties.agentDetectionInfo_agentIpV4}) successfully mitigated threat {action.properties.threatInfo_threatName}"
+    }
+  ],
   "fortiweb": [{
     "conditions": [{
       "field": "event.kind",
@@ -977,7 +977,7 @@
         "value": "kevent"
       }],
       "relationships": [],
-      "value": "An event activity has been detected, with subactivity type: {event.category} and message: {event.message}"
+      "value": "An event activity has been detected, with sub-activity type: {event.category} and message: {event.message}"
     },
     {
       "conditions": [{
@@ -1323,12 +1323,26 @@
       }],
       "conditions": [{
         "field": "event.category",
+        "value": "network",
+        "field": "event.executable"
+      }]
+    },
+    {
+      "value": "User {user.name} of computer {host.domain}\\{host.hostname} handles network traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "relationships": [{
+        "source": "source.ip",
+        "target": "destination.ip",
+        "type": "connected to"
+      }],
+      "conditions": [
+        {
+        "field": "event.category",
         "value": "network"
       }]
     }
   ],
   "netflow": [{
-    "value": "Netflow initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port} with {source.packets} packets sents and {destination.packets} packets received",
+    "value": "Netflow initiated by {source.ip}:{source.port} to {destination.ip}:{destination.port} with {source.packets} packets sent and {destination.packets} packets received",
     "relationships": [{
       "source": "source.ip",
       "target": "destination.ip",
@@ -1743,7 +1757,7 @@
     }
   ],
   "openssh": [{
-      "value": "{source.ip} failed the security negociation with server {log.hostname}",
+      "value": "{source.ip} failed the security negotiation with server {log.hostname}",
       "conditions": [{
           "field": "action.name",
           "value": "negociate"
@@ -2323,7 +2337,7 @@
       ]
     },
     {
-      "value": "{action.properties.TargetDomainName}\\{action.properties.TargetUserName} sucessfully authenticated from {source.ip}",
+      "value": "{action.properties.TargetDomainName}\\{action.properties.TargetUserName} successfully authenticated from {source.ip}",
       "relationships": [{
         "source": "action.properties.TargetUserName",
         "target": "source.ip",
@@ -2420,7 +2434,7 @@
       ]
     },
     {
-      "value": "{action.properties.TargetUserName} sucessfully authenticated on {action.properties.Workstation}",
+      "value": "{action.properties.TargetUserName} successfully authenticated on {action.properties.Workstation}",
       "relationships": [{
         "source": "action.properties.TargetUserName",
         "target": "action.properties.Workstation",
@@ -3079,7 +3093,7 @@
       ]
     },
     {
-      "value": "{action.properties.User} binded WMI Consumer {action.properties.Consumer} to Event Filter {action.properties.Filter} on {log.hostname}",
+      "value": "{action.properties.User} bound WMI Consumer {action.properties.Consumer} to Event Filter {action.properties.Filter} on {log.hostname}",
       "conditions": [{
           "field": "action.id",
           "value": 21
@@ -3115,7 +3129,7 @@
       ]
     },
     {
-      "value": "An antimalware scan was stopped before it finished on {log.hostname}",
+      "value": "An anti-malware scan was stopped before it finished on {log.hostname}",
       "conditions": [{
           "field": "action.id",
           "value": 1002
@@ -3127,7 +3141,7 @@
       ]
     },
     {
-      "value": "An antimalware scan finished on {log.hostname}",
+      "value": "An anti-malware scan finished on {log.hostname}",
       "conditions": [{
           "field": "action.id",
           "value": 1001
@@ -3139,7 +3153,7 @@
       ]
     },
     {
-      "value": "An antimalware scan started on {log.hostname}",
+      "value": "An anti-malware scan started on {log.hostname}",
       "conditions": [{
           "field": "action.id",
           "value": 1000
