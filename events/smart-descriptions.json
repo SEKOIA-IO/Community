@@ -936,7 +936,8 @@
   {
     "value": "{threat.enrichments.indicator.file.name} was classified as {threat.software.type} ",
     "conditions": [
-
+      {"field": "threat.enrichments.indicator.file.name" },
+      {"field": "threat.software.type" }
     ],
     "relationships": [
       {
