@@ -924,29 +924,29 @@
       }]
     }
   ],
-  "sentinelone": [{
-      "value": "{sentinelone.primaryDescription}",
-      "conditions": []
-    },
-    {
-	    "conditions": [
-	      {
-		      "field": "action.properties.threatInfo_confidenceLevel",
-		      "value": "malicious"
-	      },
-	      {
-		      "field": "action.properties.mitigationStatus.status",
-		      "value": "success"
-	      }
-	    ],
-	    "relationships": [{
-		      "source": "action.properties.agentDetectionInfo_agentDomain",
-		      "target": "action.properties.threatInfo_threatName",
-		      "type": "mitigated"
-	    }],
-	    "value": "Agent on {action.properties.agentDetectionInfo_agentDomain} ({action.properties.agentDetectionInfo_agentIpV4}) succesfully mitigated threat {action.properties.threatInfo_threatName}"
-    }
-  ],
+  "sentinelone": [
+  {
+    "value": "{event.reason}",
+    "conditions": [
+      {
+        "field": "event.reason"
+      }
+    ]
+  },
+  {
+    "value": "{threat.enrichments.indicator.file.name} was classified as {threat.software.type} ",
+    "conditions": [
+
+    ],
+    "relationships": [
+      {
+        "source": "threat.enrichments.indicator.file.name",
+        "target": "threat.software.type",
+        "type": "classified"
+      }
+    ]
+  }
+],
   "fortiweb": [{
     "conditions": [{
       "field": "event.kind",
