@@ -1,4 +1,52 @@
 {
+  "Vade M365": [
+    {
+      "value": "E-mail {email.subject} sent by {email.to.address} to {email.from.address} was classified as {vadesecure.status}",
+      "conditions": [
+        {
+          "field": "email.subject"
+        },
+        {
+          "field": "email.to.address"
+        },
+        {
+          "field": "email.from.address"
+        },
+        {
+          "field": "vadesecure.status"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "email.from.address",
+          "target": "email.to.address",
+          "type": "was classified as {vadesecure.status}"
+        }
+      ]
+    },
+    {
+      "value": "{vadesecure.campaign.nb_messages_remediated} {vadesecure.status} message was automatically remediated.",
+      "conditions": [
+        {
+          "field": "vadesecure.campaign.nb_messages_remediated"
+        },
+        {
+          "field": "vadesecure.status"
+        }
+      ]
+    },
+    {
+      "value": "A message was manually remediated (Action {vadesecure.campaign.actions.0.action}).",
+      "conditions": [
+        {
+          "field": "vadesecure.campaign.nb_messages_remediated"
+        },
+        {
+          "field": "vadesecure.campaign.actions.0.action"
+        }
+      ]
+    }
+  ],
   "digital shadows searchlight": [
     {
       "value": "An alert of risk {digital_shadows_searchlight.risk_level} was raised on SearchLight due to {rule.name}",
