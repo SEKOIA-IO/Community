@@ -1,5 +1,5 @@
 {
-  "Vade M365": [
+  "vade m365": [
     {
       "value": "E-mail {email.subject} sent by {email.to.address} to {email.from.address} was classified as {vadesecure.status}",
       "conditions": [
