@@ -973,29 +973,93 @@
     }
   ],
   "sentinelone": [
-  {
-    "value": "{event.reason}",
-    "conditions": [
-      {
-        "field": "event.reason"
-      }
-    ]
-  },
-  {
-    "value": "{threat.enrichments.indicator.file.name} was classified as {threat.software.type} ",
-    "conditions": [
-      {"field": "threat.enrichments.indicator.file.name" },
-      {"field": "threat.software.type" }
-    ],
-    "relationships": [
-      {
-        "source": "threat.enrichments.indicator.file.name",
-        "target": "threat.software.type",
-        "type": "classified"
-      }
-    ]
-  }
-],
+    {
+      "value": "File {threat.enrichments.indicator.file.name} was classified as {threat.software.type}.",
+      "conditions": [
+        {
+          "field": "threat.enrichments.indicator.file.name"
+        },
+        {
+          "field": "threat.software.type"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "threat.enrichments.indicator.file.name",
+          "target": "threat.software.type",
+          "type": "classified"
+        }
+      ]
+    },
+    {
+      "value": "{sentinelone.data.interface} device {sentinelone.data.deviceName} connected to {host.name}.",
+      "conditions": [
+        {
+          "field": "event.reason"
+        },
+        {
+          "field": "sentinelone.data.deviceName"
+        },
+        {
+          "field": "host.name"
+        }
+      ]
+    },
+    {
+      "value": "{sentinelone.data.interface} device connected to {host.name}.",
+      "conditions": [
+        {
+          "field": "event.reason"
+        },
+        {
+          "field": "host.name"
+        }
+      ]
+    },
+    {
+      "value": "{sentinelone.data.role} connection to SentinelOne management console by {sentinelone.data.username} from {sentinelone.data.ipAddress}.",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 27
+        }
+      ]
+    },
+    {
+      "value": "Full disk scan {sentinelone.data.status} on {host.name}.",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 90
+        },
+        {
+          "field": "host.name"
+        },
+        {
+          "field": "sentinelone.data.status"
+        }
+      ]
+    },
+    {
+      "value": "Rule {rule.name} matched {process.executable}.",
+      "conditions": [
+        {
+          "field": "rule.name"
+        },
+        {
+          "field": "process.executable"
+        }
+      ]
+    },
+    {
+      "value": "{event.reason}",
+      "conditions": [
+        {
+          "field": "event.reason"
+        }
+      ]
+    }
+  ],
   "fortiweb": [{
     "conditions": [{
       "field": "event.kind",
