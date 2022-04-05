@@ -1082,6 +1082,30 @@
       ]
     },
     {
+      "value": "Threat {file.path} quarantined.",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 2004
+        },
+        {
+          "field": "file.path"
+        }
+      ]
+    },
+    {
+      "value": "Threat {file.path} successfuly killed.",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 2001
+        },
+        {
+          "field": "file.path"
+        }
+      ]
+    },
+    {
       "value": "{event.reason}",
       "conditions": [
         {
