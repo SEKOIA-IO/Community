@@ -1009,7 +1009,7 @@
       "value": "{sentinelone.data.interface} device connected to {host.name}.",
       "conditions": [
         {
-          "field": "event.reason"
+          "field": "sentinelone.data.interface"
         },
         {
           "field": "host.name"
@@ -1022,6 +1022,15 @@
         {
           "field": "action.type",
           "value": 27
+        },
+        {
+          "field": "sentinelone.data.role"
+        },
+        {
+          "field": "sentinelone.data.username"
+        },
+        {
+          "field": "sentinelone.data.ipAddress"
         }
       ]
     },
@@ -1048,6 +1057,27 @@
         },
         {
           "field": "process.executable"
+        }
+      ]
+    },
+    {
+      "value": "The Agent {host.name} dynamically moved to group {sentinelone.data.siteName}.",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 5009
+        }
+      ]
+    },
+    {
+      "value": "Suspicious threat {file.path} detected and not mitigated.",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 4003
+        },
+        {
+          "field": "file.path"
         }
       ]
     },
@@ -3018,7 +3048,7 @@
       ]
     },
     {
-      "value": "File {file.name} created by {process.executable} on {log.hostname}",
+      "value": "{file.name} created by {process.executable} on {log.hostname}",
       "conditions": [{
           "field": "action.id",
           "value": 11
