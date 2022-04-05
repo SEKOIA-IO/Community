@@ -1094,7 +1094,19 @@
       ]
     },
     {
-      "value": "Threat {file.path} successfuly killed.",
+      "value": "Status of threat {file.path} changed.",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 4008
+        },
+        {
+          "field": "file.path"
+        }
+      ]
+    },
+    {
+      "value": "Threat {file.path} successfully killed.",
       "conditions": [
         {
           "field": "action.type",
