@@ -11,13 +11,16 @@
     {
       "value": "Process {process.command_line} was created by {user.name}",
       "conditions": [
-        {"field": "deepvisibility.event.type", "value": "processCreation"}
+        {"field": "deepvisibility.event.type", "value": "processCreation"},
+        {"field": "user.name"},
+        {"field": "process.command_line"}
       ]
     },
     {
       "value": "Process {deepvisibility.process.target.executable.name} was launched by {user.name}",
       "conditions": [
-        {"field": "deepvisibility.event.type", "value": "openProcess"}
+        {"field": "deepvisibility.event.type", "value": "openProcess"},
+        {"field": "user.name"}
       ]
     },
     {
@@ -51,6 +54,27 @@
       ]
     },
     {
+      "value": "File {file.path} modified on server {host.name}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "fileModification"},
+        {"field": "host.type", "value": "server"}
+      ]
+    },
+    {
+      "value": "File {file.path} created on server {host.name}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "fileCreation"},
+        {"field": "host.type", "value": "server"}
+      ]
+    },
+    {
+      "value": "File {file.path} deleted on server {host.name}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "fileDeletion"},
+        {"field": "host.type", "value": "server"}
+      ]
+    },
+    {
       "value": "{deepvisibility.process.executable.name} modified the file {file.path}",
       "conditions": [
         {"field": "deepvisibility.event.type", "value": "fileModification"}
@@ -74,7 +98,7 @@
         {"field": "deepvisibility.event.type", "value": "behavioralIndicators"}
       ]
     }
-  ],
+],
   "vade m365": [
     {
       "value": "E-mail {email.subject} sent by {email.to.address} to {email.from.address} was classified as {vadesecure.status}",
