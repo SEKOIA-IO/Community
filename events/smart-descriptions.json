@@ -1,4 +1,14 @@
 {
+  "sekoia.io activity logs":[
+    {
+      "value": "{http.request.method} request on {url.path} from {client.ip}",
+      "conditions": [
+        {"field": "client.ip"},
+        {"field": "url.path"},
+        {"field": "http.request.method"}
+      ]
+    }
+  ],
   "vade m365": [
     {
       "value": "E-mail {email.subject} sent by {email.to.address} to {email.from.address} was classified as {vadesecure.status}",
