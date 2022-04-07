@@ -1,4 +1,80 @@
 {
+  "sentinelone deep visibility": [
+    {
+      "value": "Registry key {registry.path} modified by {deepvisibility.process.executable.name} with user {user.name}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "regValueModified"},
+        {"field": "deepvisibility.process.executable.name"},
+        {"field": "user.name"}
+      ]
+    },
+    {
+      "value": "Process {process.command_line} was created by {user.name}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "processCreation"}
+      ]
+    },
+    {
+      "value": "Process {deepvisibility.process.target.executable.name} was launched by {user.name}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "openProcess"}
+      ]
+    },
+    {
+      "value": "Process {deepvisibility.process.parent.executable.name} duplicated process to {deepvisibility.process.target.executable.name}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "duplicateProcess"}
+      ]
+    },
+    {
+      "value": "Process {deepvisibility.process.parent.executable.name} duplicated thread to {deepvisibility.process.target.executable.name}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "duplicateThread"}
+      ]
+    },
+    {
+      "value": "{network.direction} connection from {host.name} to {destination.ip}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "tcpv4"}
+      ]
+    },
+    {
+      "value": "{process.executable} performed an HTTP request to {url.original}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "http"}
+      ]
+    },
+    {
+      "value": "{process.executable} performed a DNS request for {dns.question.name}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "dns"}
+      ]
+    },
+    {
+      "value": "{deepvisibility.process.executable.name} modified the file {file.path}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "fileModification"}
+      ]
+    },
+    {
+      "value": "{deepvisibility.process.executable.name} created the file {file.path}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "fileCreation"}
+      ]
+    },
+    {
+      "value": "{deepvisibility.process.executable.name} deleted the file {file.path}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "fileDeletion"}
+      ]
+    },
+    {
+      "value": "{deepvisibility.indicator.description} was detected for {process.executable}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "behavioralIndicators"}
+      ]
+    }
+  ],
   "vade m365": [
     {
       "value": "E-mail {email.subject} sent by {email.to.address} to {email.from.address} was classified as {vadesecure.status}",
