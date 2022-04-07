@@ -1,7 +1,7 @@
 {
   "office 365": [
     {
-      "value": "{service.name}: {user.email} {action.name} from {source.ip}",
+      "value": "User {user.name} action {action.name} on service {service.name} from {source.ip}",
       "conditions": [
         {
           "field": "user.email"
@@ -14,6 +14,23 @@
         },
         {
           "field": "service.name"
+        }
+      ]
+    },
+    {
+      "value": "User {user.name} action {action.name} on service {service.name} on resource {action.properties.SourceRelativeUrl}",
+      "conditions": [
+        {
+          "field": "user.email"
+        },
+        {
+          "field": "action.name"
+        },
+        {
+          "field": "service.name"
+        },
+        {
+          "field": "action.properties.SourceRelativeUrl"
         }
       ]
     }
