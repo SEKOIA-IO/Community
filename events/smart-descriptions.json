@@ -1,4 +1,23 @@
 {
+  "office 365": [
+    {
+      "value": "{service.name}: {user.email} {action.name} from {source.ip}",
+      "conditions": [
+        {
+          "field": "user.email"
+        },
+        {
+          "field": "action.name"
+        },
+        {
+          "field": "source.ip"
+        },
+        {
+          "field": "service.name"
+        }
+      ]
+    }
+  ],
   "vade m365": [
     {
       "value": "E-mail {email.subject} sent by {email.to.address} to {email.from.address} was classified as {vadesecure.status}",
