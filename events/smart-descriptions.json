@@ -3415,15 +3415,55 @@
       ]
     }
   ],
-  "azure active directory": [{
-      "value": "Azure AD: {action.name} succeeded",
-      "conditions": []
+  "azure active directory": [
+    {
+      "value": "{service.name}: {action.name} from {source.ip}",
+      "conditions": [{
+        "field": "service.name"
+      },
+      {
+        "field": "action.name"
+      },
+      {
+        "field": "source.ip"
+      }
+      ]
     },
     {
-      "value": "Azure AD: {action.name} failed (reason: {action.outcome_reason})",
+      "value": "{service.name} - {azuread.category}: {action.name}",
       "conditions": [{
+        "field": "service.name"
+      },
+      {
+        "field": "action.name"
+      },
+      {
+        "field": "azuread.category"
+      }
+      ]
+    },
+    {
+      "value": "{service.name}: {action.name} failed {action.outcome_reason}",
+      "conditions": [
+        {
         "field": "action.outcome",
         "value": "failure"
+      },
+      {
+        "field": "action.outcome_reason"
+      },
+      {
+        "field": "service.name"
+      },
+      {
+        "field": "action.name"
+      }
+      ]
+    },
+    {
+      "value": "{event.reason}",
+      "conditions": [{
+        "field": "event.reason"
       }]
     }
   ],
