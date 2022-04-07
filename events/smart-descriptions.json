@@ -7,6 +7,14 @@
         {"field": "deepvisibility.process.executable.name"},
         {"field": "user.name"}
       ]
+    },{
+      "value": "Script {process.command_line} executed by user {user.name} from parent process {process.parent.command_line}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "scripts"},
+        {"field": "process.command_line"},
+        {"field": "process.parent.command_line"},
+        {"field": "user.name"}
+      ]
     },
     {
       "value": "Process {process.command_line} was created by {user.name}",
@@ -36,9 +44,24 @@
       ]
     },
     {
+      "value": "Process {deepvisibility.process.executable.name} was modified",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "processModification"},
+        {"field": "deepvisibility.process.executable.name"}
+      ]
+    },
+    {
       "value": "{network.direction} connection from {host.name} to {destination.ip}",
       "conditions": [
-        {"field": "deepvisibility.event.type", "value": "tcpv4"}
+        {"field": "deepvisibility.event.type", "value": "tcpv4"},
+        {"field": "network.direction"}
+      ]
+    },
+    {
+      "value": "{process.command_line} connected to {destination.ip}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "tcpv4"},
+        {"field": "process.command_line"}
       ]
     },
     {
