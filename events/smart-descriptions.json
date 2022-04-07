@@ -25,6 +25,13 @@
       ]
     },
     {
+      "value": "Process {process.command_line} was terminated",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "processTermination"},
+        {"field": "process.command_line"}
+      ]
+    },
+    {
       "value": "Process {deepvisibility.process.target.executable.name} was launched by {user.name}",
       "conditions": [
         {"field": "deepvisibility.event.type", "value": "openProcess"},
@@ -98,25 +105,39 @@
       ]
     },
     {
-      "value": "{deepvisibility.process.executable.name} modified the file {file.path}",
+      "value": "{deepvisibility.process.executable.name} modified file {file.path}",
       "conditions": [
         {"field": "deepvisibility.event.type", "value": "fileModification"}
       ]
     },
     {
-      "value": "{deepvisibility.process.executable.name} created the file {file.path}",
+      "value": "{deepvisibility.process.executable.name} created file {file.path}",
       "conditions": [
         {"field": "deepvisibility.event.type", "value": "fileCreation"}
       ]
     },
     {
-      "value": "{deepvisibility.process.executable.name} deleted the file {file.path}",
+      "value": "{deepvisibility.process.executable.name} deleted file {file.path}",
       "conditions": [
         {"field": "deepvisibility.event.type", "value": "fileDeletion"}
       ]
     },
     {
       "value": "{deepvisibility.indicator.description} was detected for {process.executable}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "behavioralIndicators"},
+        {"field": "process.executable"}
+      ]
+    },
+    {
+      "value": "{deepvisibility.indicator.description} was detected on {host.name}",
+      "conditions": [
+        {"field": "deepvisibility.event.type", "value": "behavioralIndicators"},
+        {"field": "host.name"}
+      ]
+    },
+    {
+      "value": "{deepvisibility.indicator.description}",
       "conditions": [
         {"field": "deepvisibility.event.type", "value": "behavioralIndicators"}
       ]
