@@ -18,7 +18,7 @@
       ]
     },
     {
-      "value": "User {user.name} action {action.name} on service {service.name} on resource {action.properties.SourceRelativeUrl}",
+      "value": "User {user.name} action {action.name} on service {service.name} on resource {url.full}",
       "conditions": [
         {
           "field": "user.email"
@@ -30,7 +30,15 @@
           "field": "service.name"
         },
         {
-          "field": "action.properties.SourceRelativeUrl"
+          "field": "url.full"
+        }
+      ]
+    },
+    {
+      "value": "User {user.name} action {action.name} on service {service.name} on resource {action.properties.SourceRelativeUrl}",
+      "conditions": [
+        {
+          "field": "user.email"
         }
       ]
     }
