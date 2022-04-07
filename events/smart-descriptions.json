@@ -1,10 +1,10 @@
 {
   "office 365": [
     {
-      "value": "User {user.name} action {action.name} on service {service.name} from {source.ip}",
+      "value": "User {user.name} action type {action.name} on service {service.name} from {source.ip}",
       "conditions": [
         {
-          "field": "user.email"
+          "field": "user.name"
         },
         {
           "field": "action.name"
@@ -18,10 +18,10 @@
       ]
     },
     {
-      "value": "User {user.name} action {action.name} on service {service.name} on resource {url.full}",
+      "value": "User {user.name} action type {action.name} on service {service.name} on resource {url.full}",
       "conditions": [
         {
-          "field": "user.email"
+          "field": "user.name"
         },
         {
           "field": "action.name"
@@ -35,10 +35,16 @@
       ]
     },
     {
-      "value": "User {user.name} action {action.name} on service {service.name} on resource {action.properties.SourceRelativeUrl}",
+      "value": "User {user.name} action type {action.name} on service {service.name}",
       "conditions": [
         {
-          "field": "user.email"
+          "field": "user.name"
+        },
+        {
+          "field": "action.name"
+        },
+        {
+          "field": "service.name"
         }
       ]
     }
