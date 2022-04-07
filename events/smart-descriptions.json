@@ -1997,6 +1997,41 @@
       }]
     }
   ],
+  "cisco web security appliance": [{
+        "value": "{http.request.method} request from {source.ip}: {url.original} (status: {http.response.status_code})",
+        "relationships": [{
+            "source": "source.ip",
+            "target": "url.original",
+            "type": "requested"
+          },
+          {
+            "source": "url.original",
+            "target": "destination.domain",
+            "type": "hosted on"
+          }
+        ],
+        "conditions": [{
+          "field": "url.original"
+        }]
+      },
+      {
+        "value": "{http.request.method} request from {source.ip}: {url.full} (status: {http.response.status_code})",
+        "relationships": [{
+            "source": "source.ip",
+            "target": "url.original",
+            "type": "requested"
+          },
+          {
+            "source": "url.original",
+            "target": "destination.domain",
+            "type": "hosted on"
+          }
+        ],
+        "conditions": [{
+          "field": "url.full"
+        }]
+      }
+  ],
   "nginx": [{
       "value": "{http.request.method} request from {source.ip}: {url.original} (status: {http.response.status_code})",
       "relationships": [{
