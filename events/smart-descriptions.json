@@ -3562,6 +3562,48 @@
       }]
     }
   ],
+  "sekoia.io activity logs": [{
+      "value": "Client {client.ip} connected to {url.original}",
+      "conditions": [],
+      "relationships": [{
+          "source": "client.ip",
+          "target": "url.original",
+          "type": "connected to"
+      }]
+  },{
+      "value": "Client {client.ip} created resource to {url.original}",
+      "conditions": [{
+          "field": "http.request.method",
+          "value": "POST"
+      }],
+      "relationships": [{
+          "source": "client.ip",
+          "target": "url.original",
+          "type": "created resource"
+      }]
+  },{
+      "value": "Client {client.ip} updated resource at {url.original}",
+      "conditions": [{
+          "field": "http.request.method",
+          "value": "PUT"
+      }],
+      "relationships": [{
+          "source": "client.ip",
+          "target": "url.original",
+          "type": "updated resource"
+      }]
+  },{
+      "value": "Client {client.ip} updated resource at {url.original}",
+      "conditions": [{
+          "field": "http.request.method",
+          "value": "PATCH"
+      }],
+      "relationships": [{
+          "source": "client.ip",
+          "target": "url.original",
+          "type": "updated resource"
+      }]
+  }],
   "auditbeat": [{
       "value": "{event.module}/{event.action} event on {log.hostname}",
       "conditions": []
