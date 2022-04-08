@@ -1908,7 +1908,7 @@
   ],
   "harfanglab": [
     {
-      "value": "Hostname: {host.hostname} - Source: {event.provider} - EventID: {event.code}",
+      "value": "Hostname: {host.name} - Source: {event.provider} - EventID: {event.code}",
       "conditions": [
         {
           "field": "event.provider"
@@ -1916,11 +1916,11 @@
       ]
     },
     {
-      "value": "{action.properties.TargetUserName} failed to log on {host.hostname} (LogonType {action.properties.LogonType})",
+      "value": "{action.properties.TargetUserName} failed to log on {host.name} (LogonType {action.properties.LogonType})",
       "relationships": [
         {
           "source": "action.properties.TargetUserName",
-          "target": "host.hostname",
+          "target": "host.name",
           "type": "failed to log on to"
         }
       ],
@@ -1935,7 +1935,7 @@
       ]
     },
     {
-      "value": "{process.executable} ({process.pe.company}) executed by {user.name} is running on {host.hostname}",
+      "value": "{process.executable} ({process.pe.company}) executed by {user.name} is running on {host.name}",
       "relationships": [
         {
           "source": "user.name",
@@ -1971,7 +1971,7 @@
       ]
     },
     {
-      "value": "{process.executable} on {host.hostname} handles network traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "value": "{process.executable} on {host.name} handles network traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "relationships": [
         {
           "source": "source.ip",
@@ -1988,7 +1988,7 @@
       ]
     },
     {
-      "value": "User {user.name} of computer {host.domain}\\{host.hostname} handles network traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
+      "value": "User {user.name} of computer {host.domain}\\{host.name} handles network traffic from {source.ip}:{source.port} to {destination.ip}:{destination.port}",
       "relationships": [
         {
           "source": "source.ip",
