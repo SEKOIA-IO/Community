@@ -1402,6 +1402,25 @@
   ],
   "sentinelone": [
     {
+      "value": "{user.full_name} deleted the Path Exclusion {file.path}",
+      "conditions": [
+        {
+          "field": "user.full_name"
+        },
+        {
+          "field": "action.type",
+          "value": 3016
+        }
+      ],
+      "relationships": [
+        {
+          "source": "user.full_name",
+          "target": "file.path",
+          "type": "deleted the Path Exclusion"
+        }
+      ]
+    },
+    {
       "value": "File {threat.enrichments.indicator.file.name} was classified as {threat.software.type}.",
       "conditions": [
         {
