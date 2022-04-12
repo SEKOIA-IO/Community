@@ -136,5 +136,12 @@
           "alerts",
           "osint"
         ]
+    },
+    {
+        "file": "forward_panda_security_events.json",
+        "name": "Forward Panda Security Events to SEKOIA.IO",
+        "workspace": ["Operation Center"],
+        "description": "This playbook pulls security events from the Panda Security Aether platform then push them to SEKOIA.IO",
+        "tags": ["events"]
     }
 ]
