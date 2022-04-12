@@ -140,8 +140,19 @@
     {
         "file": "forward_panda_security_events.json",
         "name": "Forward Panda Security Events to SEKOIA.IO",
-        "workspace": ["Operation Center"],
+        "workspace": [
+            "Operation Center"
+        ],
         "description": "This playbook pulls security events from the Panda Security Aether platform then push them to SEKOIA.IO",
-        "tags": ["events"]
+        "tags": [
+            "events"
+        ]
+    },
+    {
+        "file": "imperva_waf_fetch_logs.json",
+        "name": "Imperva WAF fetch logs",
+        "workspace": ["Operation Center"],
+        "description": "Fetch events from Imperva Web Application Firewall and forward them to SEKOIA.IO intake",
+        "tags": ["events", "imperva"]
     }
 ]
