@@ -469,8 +469,8 @@
           "value": "forward"
         },
         {
-          "field": "action.name",
-          "value": "accept"
+          "field": "action.type",
+          "value": "allow"
         }
       ]
     },
@@ -493,8 +493,59 @@
           "value": "forward"
         },
         {
-          "field": "action.name",
-          "value": "accept"
+          "field": "action.type",
+          "value": "allow"
+        },
+        {
+          "field": "url.full"
+        }
+      ]
+    },
+    {
+      "value": "Traffic denied between {source.ip}:{source.port} and {destination.ip}:{destination.port}",
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "destination.ip",
+          "type": "connected to"
+        }
+      ],
+      "conditions": [
+        {
+          "field": "event.kind",
+          "value": "traffic"
+        },
+        {
+          "field": "event.category",
+          "value": "forward"
+        },
+        {
+          "field": "action.type",
+          "value": "block"
+        }
+      ]
+    },
+    {
+      "value": "Traffic denied between {source.ip}:{source.port} and {url.full}",
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "url.full",
+          "type": "connected to"
+        }
+      ],
+      "conditions": [
+        {
+          "field": "event.kind",
+          "value": "traffic"
+        },
+        {
+          "field": "event.category",
+          "value": "forward"
+        },
+        {
+          "field": "action.type",
+          "value": "block"
         },
         {
           "field": "url.full"
@@ -520,8 +571,8 @@
           "value": "forward"
         },
         {
-          "field": "action.name",
-          "value": "accept"
+          "field": "action.type",
+          "value": "allow"
         },
         {
           "field": "user.name"
@@ -547,8 +598,8 @@
           "value": "forward"
         },
         {
-          "field": "action.name",
-          "value": "accept"
+          "field": "action.type",
+          "value": "allow"
         },
         {
           "field": "url.full"
@@ -876,6 +927,41 @@
         },
         {
           "field": "url.full"
+        },
+        {
+          "field": "action.type",
+          "value": "allow"
+        }
+      ]
+    },
+    {
+      "value": "Web traffic allowed between {source.ip}:{source.port} and {url.full}",
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "url.full",
+          "type": "connected to"
+        }
+      ],
+      "conditions": [
+        {
+          "field": "event.kind",
+          "value": "utm"
+        },
+        {
+          "field": "event.category",
+          "value": "webfilter"
+        },
+        {
+          "field": "action.name",
+          "value": "passthrough"
+        },
+        {
+          "field": "url.full"
+        },
+        {
+          "field": "action.type",
+          "value": "ftgd_allow"
         }
       ]
     },
@@ -906,6 +992,75 @@
         },
         {
           "field": "user.name"
+        },
+        {
+          "field": "action.type",
+          "value": "allow"
+        }
+      ]
+    },
+    {
+      "value": "Web traffic denied for {user.name} between {source.ip}:{source.port} and {url.full}",
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "url.full",
+          "type": "connected to"
+        }
+      ],
+      "conditions": [
+        {
+          "field": "event.kind",
+          "value": "utm"
+        },
+        {
+          "field": "event.category",
+          "value": "webfilter"
+        },
+        {
+          "field": "action.name",
+          "value": "passthrough"
+        },
+        {
+          "field": "url.full"
+        },
+        {
+          "field": "user.name"
+        },
+        {
+          "field": "action.type",
+          "value": "ftgd_blk"
+        }
+      ]
+    },
+    {
+      "value": "Web traffic denied between {source.ip}:{source.port} and {url.full}",
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "url.full",
+          "type": "connected to"
+        }
+      ],
+      "conditions": [
+        {
+          "field": "event.kind",
+          "value": "utm"
+        },
+        {
+          "field": "event.category",
+          "value": "webfilter"
+        },
+        {
+          "field": "action.name",
+          "value": "passthrough"
+        },
+        {
+          "field": "url.full"
+        },
+        {
+          "field": "action.type",
+          "value": "block"
         }
       ]
     },
@@ -929,6 +1084,10 @@
         },
         {
           "field": "url.full"
+        },
+        {
+          "field": "action.type",
+          "value": "allow"
         }
       ]
     },
@@ -955,6 +1114,67 @@
         },
         {
           "field": "user.name"
+        },
+        {
+          "field": "action.type",
+          "value": "allow"
+        }
+      ]
+    },
+    {
+      "value": "Web traffic denied between {source.ip}:{source.port} and {url.full}",
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "url.full",
+          "type": "connected to"
+        }
+      ],
+      "conditions": [
+        {
+          "field": "event.kind",
+          "value": "traffic"
+        },
+        {
+          "field": "event.category",
+          "value": "http-transaction"
+        },
+        {
+          "field": "url.full"
+        },
+        {
+          "field": "action.type",
+          "value": "block"
+        }
+      ]
+    },
+    {
+      "value": "Web traffic denied for user {user.name} between {source.ip}:{source.port} and {url.full}",
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "url.full",
+          "type": "connected to"
+        }
+      ],
+      "conditions": [
+        {
+          "field": "event.kind",
+          "value": "traffic"
+        },
+        {
+          "field": "event.category",
+          "value": "http-transaction"
+        },
+        {
+          "field": "url.full"
+        },
+        {
+          "field": "user.name"
+        },
+        {
+          "field": "action.type",
+          "value": "block"
         }
       ]
     },
