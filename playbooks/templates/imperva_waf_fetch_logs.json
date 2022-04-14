@@ -25,9 +25,9 @@
         "intake_server": "https://intake.sekoia.io"
       },
       "action_uuid": "10314466-ac0c-4067-8e81-4093e3d1e1da",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
     }
   },
   "workspace": "Operation Center",
-  "description": "Fetch events from Imperva Web Application Firewall and forward them to SEKOIA.IO intake",
+  "description": "Fetch events from Imperva Web Application Firewall and forward them to SEKOIA.IO intake"
 }
