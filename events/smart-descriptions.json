@@ -1401,6 +1401,73 @@
     }
   ],
   "sentinelone": [
+  {
+    "value": "The management user {sentinelone.data.byUser} deleted the user {user.full_name}.",
+    "conditions": [
+      {
+        "field": "action.type",
+        "value": 25
+      },
+      {
+        "field": "sentinelone.data.byUser"
+      },
+      {
+        "field": "user.full_name"
+      }
+    ]
+  },
+  {
+      "value": "Agent {host.name} automatically decommissioned",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 47
+        },
+        {
+          "field": "host.name"
+        }
+      ]
+    },
+    {
+      "value": "Firewall control blocked connexion between {host.name} and {destination.ip} because of rule {rule.name}",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 5232
+        },
+        {
+          "field": "host.name"
+        },
+        {
+          "field": "destination.ip"
+        },
+        {
+          "field": "rule.name"
+        }
+      ]
+    },
+    {
+      "value": "System initiated a full disk scan to the agent: {host.name} {host.ip}",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 71
+        },
+        {
+          "field": "host.ip"
+        },
+        {
+          "field": "host.name"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "System",
+          "target": "host.name",
+          "type": "initiated a full disk scan"
+        }
+      ]
+    },
     {
       "value": "{user.full_name} deleted the Path Exclusion {file.path}",
       "conditions": [
@@ -1421,13 +1488,19 @@
       ]
     },
     {
-      "value": "File {threat.enrichments.indicator.file.name} was classified as {threat.software.type}.",
+      "value": "{file.name} executed by {user.name} was classified as {threat.software.type} and {sentinelone.threatInfo.mitigationStatus}.",
       "conditions": [
         {
-          "field": "threat.enrichments.indicator.file.name"
+          "field": "file.name"
+        },
+        {
+          "field": "user.name"
         },
         {
           "field": "threat.software.type"
+        },
+        {
+          "field": "sentinelone.threatInfo.mitigationStatus"
         }
       ],
       "relationships": [
