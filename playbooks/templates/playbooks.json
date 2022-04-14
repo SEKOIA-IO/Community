@@ -153,6 +153,6 @@
         "name": "Imperva WAF fetch logs",
         "workspace": ["Operation Center"],
         "description": "Fetch events from Imperva Web Application Firewall and forward them to SEKOIA.IO intake",
-        "tags": ["events", "imperva"]
+        "tags": ["events"]
     }
 ]
