@@ -1401,6 +1401,73 @@
     }
   ],
   "sentinelone": [
+  {
+    "value": "The management user {sentinelone.data.byUser} deleted the user {user.full_name}",
+    "conditions": [
+      {
+        "field": "action.type",
+        "value": 25
+      },
+      {
+        "field": "sentinelone.data.byUser"
+      },
+      {
+        "field": "user.full_name"
+      }
+    ]
+  },
+  {
+      "value": "Agent {host.name} automatically decommissioned",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 47
+        },
+        {
+          "field": "host.name"
+        }
+      ]
+    },
+    {
+      "value": "Firewall control blocked connexion between {host.name} and {destination.ip} because of rule {rule.name}",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 5232
+        },
+        {
+          "field": "host.name"
+        },
+        {
+          "field": "destination.ip"
+        },
+        {
+          "field": "rule.name"
+        }
+      ]
+    },
+    {
+      "value": "System initiated a full disk scan to the agent: {host.name} {host.ip}",
+      "conditions": [
+        {
+          "field": "action.type",
+          "value": 71
+        },
+        {
+          "field": "host.ip"
+        },
+        {
+          "field": "host.name"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "System",
+          "target": "host.name",
+          "type": "initiated a full disk scan"
+        }
+      ]
+    },
     {
       "value": "{user.full_name} deleted the Path Exclusion {file.path}",
       "conditions": [
@@ -1421,13 +1488,19 @@
       ]
     },
     {
-      "value": "File {threat.enrichments.indicator.file.name} was classified as {threat.software.type}.",
+      "value": "{file.name} executed by {user.name} was classified as {threat.software.type} and {sentinelone.threatInfo.mitigationStatus}",
       "conditions": [
         {
-          "field": "threat.enrichments.indicator.file.name"
+          "field": "file.name"
+        },
+        {
+          "field": "user.name"
         },
         {
           "field": "threat.software.type"
+        },
+        {
+          "field": "sentinelone.threatInfo.mitigationStatus"
         }
       ],
       "relationships": [
@@ -1439,7 +1512,7 @@
       ]
     },
     {
-      "value": "{sentinelone.data.interface} device {sentinelone.data.deviceName} connected to {host.name}.",
+      "value": "{sentinelone.data.interface} device {sentinelone.data.deviceName} connected to {host.name}",
       "conditions": [
         {
           "field": "event.reason"
@@ -1453,7 +1526,7 @@
       ]
     },
     {
-      "value": "{sentinelone.data.interface} device connected to {host.name}.",
+      "value": "{sentinelone.data.interface} device connected to {host.name}",
       "conditions": [
         {
           "field": "sentinelone.data.interface"
@@ -1464,7 +1537,7 @@
       ]
     },
     {
-      "value": "{sentinelone.data.role} connection to SentinelOne management console by {sentinelone.data.username} from {sentinelone.data.ipAddress}.",
+      "value": "{sentinelone.data.role} connection to SentinelOne management console by {sentinelone.data.username} from {sentinelone.data.ipAddress}",
       "conditions": [
         {
           "field": "action.type",
@@ -1482,7 +1555,7 @@
       ]
     },
     {
-      "value": "Full disk scan {sentinelone.data.status} on {host.name}.",
+      "value": "Full disk scan {sentinelone.data.status} on {host.name}",
       "conditions": [
         {
           "field": "action.type",
@@ -1497,7 +1570,7 @@
       ]
     },
     {
-      "value": "Rule {rule.name} matched {process.executable}.",
+      "value": "Rule {rule.name} matched {process.executable}",
       "conditions": [
         {
           "field": "rule.name"
@@ -1508,7 +1581,7 @@
       ]
     },
     {
-      "value": "The Agent {host.name} dynamically moved to group {sentinelone.data.siteName}.",
+      "value": "The Agent {host.name} dynamically moved to group {sentinelone.data.siteName}",
       "conditions": [
         {
           "field": "action.type",
@@ -1517,7 +1590,7 @@
       ]
     },
     {
-      "value": "Suspicious threat {file.path} detected and not mitigated.",
+      "value": "Suspicious threat {file.path} detected and not mitigated",
       "conditions": [
         {
           "field": "action.type",
@@ -1529,7 +1602,7 @@
       ]
     },
     {
-      "value": "Threat {file.path} quarantined.",
+      "value": "Threat {file.path} quarantined",
       "conditions": [
         {
           "field": "action.type",
@@ -1541,7 +1614,7 @@
       ]
     },
     {
-      "value": "Status of threat {file.path} changed.",
+      "value": "Status of threat {file.path} changed",
       "conditions": [
         {
           "field": "action.type",
@@ -1553,7 +1626,7 @@
       ]
     },
     {
-      "value": "Threat {file.path} successfully killed.",
+      "value": "Threat {file.path} successfully killed",
       "conditions": [
         {
           "field": "action.type",
@@ -1878,7 +1951,7 @@
         }
       ],
       "relationships": [],
-      "value": "A {file.type} named {file.name} (SHA-256: {file.hash.sha256}) was scanned."
+      "value": "A {file.type} named {file.name} (SHA-256: {file.hash.sha256}) was scanned"
     },
     {
       "conditions": [
