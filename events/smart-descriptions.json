@@ -50,6 +50,69 @@
     }
   ],
   "sentinelone deep visibility": [
+  {
+      "value": "Scheduled task {deepvisibility.scheduled_task.name} modified by {deepvisibility.process.executable.name} with user {user.name}",
+      "conditions": [
+        {
+          "field": "deepvisibility.event.type",
+          "value": "schedTaskUpdate"
+        },
+        {
+          "field": "deepvisibility.process.executable.name"
+        },
+        {
+          "field": "user.name"
+        },
+        {
+          "field": "deepvisibility.scheduled_task.name"
+        }
+      ]
+    },
+  {
+      "value": "Registry key {registry.path} security changed by {deepvisibility.process.executable.name} with user {user.name}",
+      "conditions": [
+        {
+          "field": "deepvisibility.event.type",
+          "value": "regKeySecurityChanged"
+        },
+        {
+          "field": "deepvisibility.process.executable.name"
+        },
+        {
+          "field": "user.name"
+        }
+      ]
+    },
+    {
+      "value": "Registry key {registry.path} created by {deepvisibility.process.executable.name} with user {user.name}",
+      "conditions": [
+        {
+          "field": "deepvisibility.event.type",
+          "value": "regValueCreate"
+        },
+        {
+          "field": "deepvisibility.process.executable.name"
+        },
+        {
+          "field": "user.name"
+        }
+      ]
+    },
+  {
+      "value": "Registry key {registry.path} deleted by {deepvisibility.process.executable.name} with user {user.name}",
+      "conditions": [
+        {
+          "field": "deepvisibility.event.type",
+          "value": "regValueDelete"
+        },
+        {
+          "field": "deepvisibility.process.executable.name"
+        },
+        {
+          "field": "user.name"
+        }
+      ]
+    },
     {
       "value": "Registry key {registry.path} modified by {deepvisibility.process.executable.name} with user {user.name}",
       "conditions": [
