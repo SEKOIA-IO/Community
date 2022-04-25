@@ -5317,5 +5317,66 @@
         }
       ]
     }
+  ],
+  "imperva waf": [
+    {
+      "value": "Connection from {source.ip} to {url.original} blocked: {event.reason}",
+      "conditions": [
+        {
+          "field": "event.type",
+          "value": "denied, connection"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "url.original",
+          "type": "was denied a connection to"
+        }
+      ]
+    },
+    {
+      "value": "Connection from {source.ip} to {url.original} allowed",
+      "conditions": [
+        {
+          "field": "event.type",
+          "value": "allowed, connection"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "url.original",
+          "type": "connected to"
+        }
+      ]
+    },
+    {
+      "value": "The verification of the connection from {source.ip} to {url.original} failed: {event.reason}",
+      "conditions": [
+        {
+          "field": "event.type",
+          "value": "error, connection"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "url.original",
+          "type": "failed to connect to"
+        }
+      ]
+    },
+    {
+      "value": "Connection from {source.ip} to {url.original}",
+      "conditions": [],
+      "relationships": [
+        {
+          "source": "source.ip",
+          "target": "url.original",
+          "type": "connected to"
+        }
+      ]
+    }
   ]
 }
