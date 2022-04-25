@@ -421,21 +421,15 @@
       ]
     }
   ],
-  "digital shadows searchlight": [
+  "digital shadows searchlight":   [
     {
-      "value": "An alert of risk {digital_shadows_searchlight.risk_level} was raised on SearchLight due to {rule.name}",
+      "value": "{digital_shadows_searchlight.description}",
       "conditions": [
         {
-          "field": "event.kind",
-          "value": "alert"
+          "field": "digital_shadows_searchlight.description"
         }
       ],
       "relationships": [
-        {
-          "source": "event.kind",
-          "target": "digital_shadows_searchlight.risk_level",
-          "type": "has risk level"
-        }
       ]
     }
   ],
