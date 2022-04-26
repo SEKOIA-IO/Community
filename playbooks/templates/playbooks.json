@@ -154,5 +154,12 @@
         "workspace": ["Operation Center"],
         "description": "Fetch events from Imperva Web Application Firewall and forward them to SEKOIA.IO intake",
         "tags": ["events"]
+    },
+    {
+        "file": "forward_vadesecure_records.json",
+        "name": "Forward Vade M365 email Events to SEKOIA.IO",
+        "workspace": ["Operation Center"],
+        "description": "This playbook collect logs from 'Vade for M365' then push them to SEKOIA.IO",
+        "tags": ["events"]
     }
 ]
