@@ -387,16 +387,16 @@
   ],
   "vade m365": [
     {
-      "value": "E-mail {email.subject} sent by {email.to.address} to {email.from.address} was classified as {vadesecure.status}",
+      "value": "E-mail {email.subject} sent by {email.from.address} to {email.to.address} was classified as {vadesecure.status}",
       "conditions": [
         {
           "field": "email.subject"
         },
         {
-          "field": "email.to.address"
+          "field": "email.from.address"
         },
         {
-          "field": "email.from.address"
+          "field": "email.to.address"
         },
         {
           "field": "vadesecure.status"
