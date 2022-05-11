@@ -1,4 +1,20 @@
 {
+  "google cloud audit": [
+    {
+      "value": "Action type {google_cloud_audit.resource.labels.method} was performed on account {user.email} for service {google_cloud_audit.resource.labels.service}",
+      "conditions": [
+        {
+          "field": "user.email"
+        },
+        {
+          "field": "google_cloud_audit.resource.labels.service"
+        },
+        {
+          "field": "google_cloud_audit.resource.labels.method"
+        }
+      ]
+    }
+  ],
   "office 365": [
     {
       "value": "User {user.name} performed action {action.name} on service {service.name} from {source.ip}",
