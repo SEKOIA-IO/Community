@@ -21,7 +21,7 @@
         "default": []
       },
       "arguments": {
-        "events": "{{ node.0['emails'] }}",
+        "events_path": "{{ node.0['emails_path'] }}",
         "intake_key": ""
       },
       "action_uuid": "10314466-ac0c-4067-8e81-4093e3d1e1da",
