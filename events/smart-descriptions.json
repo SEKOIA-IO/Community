@@ -13,6 +13,20 @@
           "field": "google_cloud_audit.resource.labels.method"
         }
       ]
+    },
+    {
+      "value": "Severity type {google_cloud_audit.severity} for action {google_cloud_audit.protoPayload.request.type} performed by {user.email}",
+      "conditions": [
+        {
+          "field": "user.email"
+        },
+        {
+          "field": "google_cloud_audit.severity"
+        },
+        {
+          "field": "google_cloud_audit.protoPayload.request.type"
+        }
+      ]
     }
   ],
   "office 365": [
