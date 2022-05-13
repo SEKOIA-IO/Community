@@ -2,7 +2,7 @@
   "name": "Tranco top domains to observables",
   "nodes": {
     "0": {
-      "name": "Fetch Tranco (weekly)",
+      "name": "Fetch Tranco",
       "type": "trigger",
       "outputs": {
         "default": [
@@ -118,7 +118,7 @@
       ]
     },
     "5": {
-      "name": "strings-to-observables",
+      "name": "Convert domains to observables",
       "type": "action",
       "outputs": {
         "default": [
@@ -148,7 +148,7 @@
       "module_configuration_uuid": ""
     },
     "6": {
-      "name": "upload-observables-inthreat",
+      "name": "Upload observables to the TIP",
       "type": "action",
       "outputs": {
         "default": []
