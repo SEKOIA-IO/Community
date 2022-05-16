@@ -142,7 +142,7 @@
         "items_path": "{{node.0.file_path}}"
       },
       "action_uuid": "3b7ae40a-2fb8-451f-9ede-7f7a906c7132",
-      "module_uuid": "5fdf8838-1529-4243-8fbc-e6bfa7b52e30",
+      "module_uuid": "5fdf8838-1529-4243-8fbc-e6bfa7b52e30"
     },
     "6": {
       "name": "Upload observables to the TIP",
@@ -154,7 +154,7 @@
         "observables_path": "{{node.5.observables_path}}"
       },
       "action_uuid": "ab660ed7-9160-4f91-bb1c-3d49dc8c0972",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
     }
   },
   "workspace": "Intelligence Center",
