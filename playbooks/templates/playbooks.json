@@ -161,5 +161,16 @@
         "workspace": ["Operation Center"],
         "description": "This playbook collect logs from 'Vade for M365' then push them to SEKOIA.IO",
         "tags": ["events"]
+    },
+    {
+        "file": "Tranco_top_domains_to_observables.json",
+        "name": "Tranco top domains to observables",
+        "workspace": ["Intelligence Center"],
+        "tags": [
+            "observable",
+            "Tranco",
+            "TIP"
+         ],
+         "description": "Automatically import Tranco's top 1 000 000 domain names to observable database"
     }
 ]
