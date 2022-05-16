@@ -10,9 +10,7 @@
         ]
       },
       "module_uuid": "081074fc-240d-437f-a214-fba49691e69e",
-      "trigger_uuid": "469f5edd-77ab-4909-9d82-b29f734e5309",
-      "module_configuration_uuid": "",
-      "trigger_configuration_uuid": ""
+      "trigger_uuid": "469f5edd-77ab-4909-9d82-b29f734e5309"
     },
     "1": {
       "name": "Determine Tags to Apply",
@@ -145,7 +143,6 @@
       },
       "action_uuid": "3b7ae40a-2fb8-451f-9ede-7f7a906c7132",
       "module_uuid": "5fdf8838-1529-4243-8fbc-e6bfa7b52e30",
-      "module_configuration_uuid": ""
     },
     "6": {
       "name": "Upload observables to the TIP",
@@ -158,7 +155,6 @@
       },
       "action_uuid": "ab660ed7-9160-4f91-bb1c-3d49dc8c0972",
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
-      "module_configuration_uuid": ""
     }
   },
   "workspace": "Intelligence Center",
