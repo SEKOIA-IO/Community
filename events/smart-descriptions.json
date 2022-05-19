@@ -5378,5 +5378,81 @@
         }
       ]
     }
+  ],
+  "cybereason malop": [
+    {
+      "value": "A malicious connection was observed to {destination.ip}",
+      "conditions": [
+        {
+          "field": "event.action",
+          "value": "Malop Connection Added"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "cybereason.malop.id",
+          "target": "destination.ip",
+          "type": "refers malicious connection to"
+        }
+      ]
+    },
+    {
+      "value": "Generation of a report on a malicious activity (see {event.url}): {event.reason}\naffected hosts: {cybereason.malop.counters.affected_machines}\naffected users: {cybereason.malop.counters.affected_users}",
+      "conditions": [
+        {
+          "field": "event.action",
+          "value": "Malop Created"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "value": "Malicious activity detected on {host.hostname}",
+      "conditions": [
+        {
+          "field": "event.action",
+          "value": "Malop Machine Added"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "cybereason.malop.id",
+          "target": "host.hostname",
+          "type": "refers infected host"
+        }
+      ]
+    },
+    {
+      "value": "The malicious command detected: {process.command_line}.\nBinary sha1: {file.hash.sha1}",
+      "conditions": [
+        {
+          "field": "event.action",
+          "value": "Malop Process Added"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "cybereason.malop.id",
+          "target": "file.hash.sha1",
+          "type": "refers the execution"
+        }
+      ]
+    },
+    {
+      "value": "{user.domain}\\{user.name}, on {host.hostname}, used for malicious operation",
+      "conditions": [
+        {
+          "field": "event.action",
+          "value": "Malop User Added"
+        }
+      ],
+      "relationships": [
+        {
+          "source": "cybereason.malop.id",
+          "target": "user.name",
+          "type": "refers the user"
+        }
+      ]
+    }
   ]
 }
