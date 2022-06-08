@@ -172,5 +172,12 @@
             "TIP"
          ],
          "description": "Automatically import Tranco's top 1 000 000 domain names to observable database"
+    },
+    {
+        "file": "forward_google_pubsub_events.json",
+        "name": "Forward Google Pubsub records to SEKOIA.IO",
+        "workspace": ["Operation Center"],
+        "description": "This playbook consumes records from Google Pubsub and push them to SEKOIA.IO",
+        "tags": ["google", "events"]
     }
 ]
