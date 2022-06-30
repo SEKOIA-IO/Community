@@ -6,37 +6,16 @@
     ],
     "nodes": {
         "0": {
-            "name": "Security alerts trigger",
+            "name": "Alert Status Changed",
             "type": "trigger",
+            "outputs": {
+              "default": [
+                "2"
+              ]
+            },
             "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
-            "trigger_uuid": "fe249825-c8c5-4321-8791-f476b505072d",
-            "outputs": {
-                "default": [
-                    "1"
-                ]
-            }
-        },
-        "1": {
-            "name": "Check alert status changed",
-            "type": "operator",
-            "subtype": "condition",
-            "cases": [
-                {
-                    "left": "{{ node.0.event_type }}",
-                    "name": "Status change",
-                    "right": "alert-status-changed",
-                    "comparison": "==",
-                    "value_type": "string",
-                    "description": "{{ node.0.event_type }} == alert-status-changed"
-                }
-            ],
-            "outputs": {
-                "else": [],
-                "Status change": [
-                    "2"
-                ]
-            }
-        },
+            "trigger_uuid": "26df593b-6513-45bb-83e5-7b09effa34dc"
+          },
         "2": {
             "name": "Retrieve alert",
             "type": "action",
