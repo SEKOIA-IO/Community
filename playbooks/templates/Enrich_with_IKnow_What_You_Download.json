@@ -56,7 +56,7 @@
       "arguments": {
         "uuid": "{{ node.0['alert_uuid'] }}",
         "author": "IP Check",
-        "content": "This IP `{{ node.1['output'][0] }}` is know for being a BitTorrent node at this date: {{ node.2['date'] }}."
+        "content": "This IP `{{ node.1['output'][0] }}` is known for being a BitTorrent node at this date: {{ node.2['date'] }}."
       },
       "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
@@ -85,12 +85,12 @@
       "arguments": {
         "uuid": "{{ node.0['alert_uuid'] }}",
         "author": "IP Check",
-        "content": "This IP `{{ node.1['output'][0] }}` is not know to be a BitTorrent node."
+        "content": "This IP `{{ node.1['output'][0] }}` is not known to be a BitTorrent node."
       },
       "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
     }
   },
   "workspace": "Operation Center",
-  "description": "Enrich with IKnowWhatYouDownload to check if the IP is know from this service direclty from SEKOIA.IO."
+  "description": "Enrich with IKnowWhatYouDownload to check if the IP is known from this service direclty from SEKOIA.IO."
 }
