@@ -3,7 +3,7 @@
     "uuid": "9886ab71-9426-48fb-a2a3-60925fa7f298",
     "nodes": {
       "0": {
-        "name": "alert_webhook",
+        "name": "Manual trigger",
         "type": "trigger",
         "outputs": {
           "default": [
@@ -31,7 +31,7 @@
         "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
       },
       "4": {
-        "name": "get_an_alert",
+        "name": "Get alert information",
         "type": "action",
         "outputs": {
           "default": [
@@ -47,7 +47,7 @@
       },
       "6": {
         "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNNC41IDExaC0yVjlIMXY2aDEuNXYtMi41aDJWMTVINlY5SDQuNXYyem0yLjUtLjVoMS41VjE1SDEwdi00LjVoMS41VjlIN3YxLjV6bTUuNSAwSDE0VjE1aDEuNXYtNC41SDE3VjloLTQuNXYxLjV6bTktMS41SDE4djZoMS41di0yaDJjLjggMCAxLjUtLjcgMS41LTEuNXYtMWMwLS44LS43LTEuNS0xLjUtMS41em0wIDIuNWgtMnYtMWgydjF6Ii8+PHBhdGggZD0iTTI0IDI0SDBWMGgyNHYyNHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=",
-        "name": "Request URL",
+        "name": "Request AbuseIPDB",
         "type": "action",
         "outputs": {
           "default": [
@@ -68,7 +68,7 @@
       },
       "7": {
         "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=",
-        "name": "Comment Alert",
+        "name": "Comment Alert with information from AbuseIPDB",
         "type": "action",
         "outputs": {
           "default": []
