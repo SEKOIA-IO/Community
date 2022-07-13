@@ -83,6 +83,5 @@
       }
     },
     "workspace": "Operation Center",
-    "description": "Enrich with IPAbuseDB to check if the IP is known from this service direclty from SEKOIA.IO.",
-    "community_uuid": "52bd045f-4199-4361-8267-cdebfc784392"
-  }
+    "description": "Enrich with IPAbuseDB to check if the IP is known from this service direclty from "
+  }SEKOIA.IO.
