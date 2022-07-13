@@ -181,10 +181,10 @@
         "tags": ["google", "events"]
     },
     {
-        "file": "Enrich_alerts_with_IPAbuseDB.json",
-        "name": "Enrich alerts with IPAbuseDB",
+        "file": "Enrich_alerts_with_AbuseIPDB.json",
+        "name": "Enrich alerts with AbuseIPDB",
         "workspace": ["Operation Center"],
-        "description": "Enrich with IPAbuseDB to check if the IP is known from this service, directly from SEKOIA.IO.",
+        "description": "Enrich with AbuseIPDB to check if the IP is known from this service, directly from SEKOIA.IO.",
         "tags": ["alerts", "enrichement"]
     }
 ]
