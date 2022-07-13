@@ -83,5 +83,5 @@
       }
     },
     "workspace": "Operation Center",
-    "description": "Enrich with AbuseIPDB to check if the IP is known from this service direclty from "
-  }SEKOIA.IO.
+    "description": "Enrich with AbuseIPDB to check if the IP is known from this service direclty from SEKOIA.IO."
+  }
