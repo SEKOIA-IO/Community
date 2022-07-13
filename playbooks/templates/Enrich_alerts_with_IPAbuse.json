@@ -1,5 +1,5 @@
 {
-    "name": "Enrich alerts with IPAbuseDB",
+    "name": "Enrich alerts with AbuseIPDB",
     "uuid": "9886ab71-9426-48fb-a2a3-60925fa7f298",
     "nodes": {
       "0": {
@@ -75,13 +75,13 @@
         },
         "arguments": {
           "uuid": "{{ node.0['alert_uuid'] }}",
-          "author": "IPAbuse Playbook",
-          "content": "IPAbuse provide us these information: \n- Isp: \"{{ node.6['json']['data']['isp'] }}\", \n- domain: \"{{ node.6['json']['data']['domain'] }}\", \n- usageType: \"{{ node.6['json']['data']['usageType'] }}\", \n- abuseConfidenceScore: \"{{ node.6['json']['data']['abuseConfidenceScore'] }}\",\n- isWhitelisted: \"{{ node.6['json']['data']['isWhitelisted'] }}\" \n- lastReportedAt: \"{{ node.6['json']['data']['lastReportedAt'] }}\" "
+          "author": "AbuseIPDB Playbook",
+          "content": "AbuseIPDB provide us these information: \n- Isp: \"{{ node.6['json']['data']['isp'] }}\", \n- domain: \"{{ node.6['json']['data']['domain'] }}\", \n- usageType: \"{{ node.6['json']['data']['usageType'] }}\", \n- abuseConfidenceScore: \"{{ node.6['json']['data']['abuseConfidenceScore'] }}\",\n- isWhitelisted: \"{{ node.6['json']['data']['isWhitelisted'] }}\" \n- lastReportedAt: \"{{ node.6['json']['data']['lastReportedAt'] }}\" "
         },
         "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
         "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
       }
     },
     "workspace": "Operation Center",
-    "description": "Enrich with IPAbuseDB to check if the IP is known from this service direclty from "
+    "description": "Enrich with AbuseIPDB to check if the IP is known from this service direclty from "
   }SEKOIA.IO.
