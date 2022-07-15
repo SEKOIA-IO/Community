@@ -179,5 +179,12 @@
         "workspace": ["Operation Center"],
         "description": "This playbook consumes records from Google Pubsub and push them to SEKOIA.IO",
         "tags": ["google", "events"]
+    },
+    {
+        "file": "Enrich_alerts_with_AbuseIPDB.json",
+        "name": "Enrich alerts with AbuseIPDB",
+        "workspace": ["Operation Center"],
+        "description": "Enrich with AbuseIPDB to check if the IP is known from this service, directly from SEKOIA.IO.",
+        "tags": ["alerts", "enrichement"]
     }
 ]
