@@ -1,0 +1,116 @@
+type,ioc,comment
+ip,134.119.193[.]106,Android payload server
+ip,134.119.193[.]108,Android payload server
+ip,134.119.193[.]109,Android payload server
+ip,134.119.193[.]110,Android payload server
+ip,134.119.205[.]18,Android payload server
+ip,134.119.205[.]21,Android payload server
+ip,134.119.205[.]22,Android payload server
+ip,142.0.136[.]49,Android payload server
+ip,142.0.136[.]50,Android payload server
+ip,142.0.136[.]52,Android payload server
+ip,142.4.97[.]105,Android payload server
+ip,142.4.97[.]106,Android payload server
+ip,142.4.97[.]107,Android payload server
+ip,142.4.97[.]108,Android payload server
+ip,142.4.97[.]109,Android payload server
+ip,146.0.74[.]157,Android payload server
+ip,146.0.74[.]197,Android payload server
+ip,146.0.74[.]199,Android payload server
+ip,146.0.74[.]202,Android payload server
+ip,146.0.74[.]203,Android payload server
+ip,146.0.74[.]205,Android payload server
+ip,146.0.74[.]206,Android payload server
+ip,146.0.74[.]228,Android payload server
+ip,192.51.188[.]107,Android payload server
+ip,192.51.188[.]108,Android payload server
+ip,192.51.188[.]109,Android payload server
+ip,192.51.188[.]142,Android payload server
+ip,192.51.188[.]145,Android payload server
+ip,192.51.188[.]146,Android payload server
+ip,27.124.36[.]32,Android payload server
+ip,27.124.36[.]34,Android payload server
+ip,27.124.36[.]52,Android payload server
+ip,27.124.39[.]241,Android payload server
+ip,27.124.39[.]242,Android payload server
+ip,27.124.39[.]243,Android payload server
+ip,91.204.227[.]19,Android payload server
+ip,91.204.227[.]20,Android payload server
+ip,91.204.227[.]21,Android payload server
+ip,91.204.227[.]22,Android payload server
+ip,91.204.227[.]23,Android payload server
+ip,91.204.227[.]24,Android payload server
+ip,91.204.227[.]25,Android payload server
+ip,91.204.227[.]26,Android payload server
+ip,91.204.227[.]27,Android payload server
+ip,91.204.227[.]28,Android payload server
+ip,172.81.131[.]12,Apple phishing server
+ip,172.81.131[.]14,Apple phishing server
+ip,172.81.131[.]10,Apple phishing server
+ip,172.81.131[.]11,Apple phishing server
+ip,172.81.131[.]13,Apple phishing server
+ip,103.80.134[.]41,Apple phishing server
+ip,103.80.134[.]40,Apple phishing server
+ip,103.80.134[.]42,Apple phishing server
+ip,61.97.248[.]6,MoqHao C2 server
+ip,61.97.248[.]7,MoqHao C2 server
+ip,61.97.248[.]8,MoqHao C2 server
+ip,61.97.248[.]9,MoqHao C2 server
+ip,103.249.28[.]206,MoqHao C2 server
+ip,103.249.28[.]207,MoqHao C2 server
+ip,103.249.28[.]208,MoqHao C2 server
+ip,103.249.28[.]209,MoqHao C2 server
+ip,92.204.255[.]172,MoqHao C2 server
+domain,coqrf.xpddg[.]com,Domain contained in SMS
+domain,znjjq.udsuc[.]com,Domain contained in SMS
+domain,gesee.udsuc[.]com,Domain contained in SMS
+domain,bswhd.mrheu[.]com,Domain contained in SMS
+domain,xpddg[.]com,Domain contained in SMS
+domain,udsuc[.]com,Domain contained in SMS
+domain,mrheu[.]com,Domain contained in SMS
+url,hxxps://imgur[.]com/user/shaoye99/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye88/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye77/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye66/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye55/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye44/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye33/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye22/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye11/about,Imgur profile used as Dead Drop resolvers
+md5,2e7acc13e9a9911cb5dd4057c5f0c343,MoqHao sample analyzed
+sha1,293165e4734e4a7dfcac8887034526a0733eeefd,MoqHao sample analyzed
+sha256,83ba2b1c0352ea9988edeb608abf2c037b1f30482bbc05c3ae79265bab7a44c9,MoqHao sample analyzed
+ip,103.80.134[.]26,Android payload server
+ip,103.80.134[.]27,Android payload server
+ip,103.80.134[.]29,Android payload server
+ip,103.80.134[.]30,Android payload server
+ip,103.80.134[.]31,Android payload server
+ip,103.80.134[.]33,Android payload server
+ip,103.80.134[.]34,Android payload server
+ip,103.80.134[.]37,Android payload server
+ip,103.80.134[.]38,Android payload server
+ip,103.80.134[.]51,Android payload server
+ip,103.80.134[.]52,Android payload server
+ip,103.80.134[.]53,Android payload server
+ip,103.80.134[.]54,Android payload server
+ip,103.80.134[.]55,Android payload server
+ip,103.80.134[.]58,Android payload server
+ip,115.91.26[.]2,Android payload server
+ip,192.51.188[.]101,Android payload server
+ip,192.51.188[.]103,Android payload server
+ip,192.51.188[.]106,Android payload server
+ip,192.51.188[.]111,Android payload server
+ip,192.51.188[.]14,Android payload server
+ip,91.204.227[.]79,Android payload server
+ip,91.204.227[.]80,Android payload server
+ip,91.204.227[.]81,Android payload server
+ip,91.204.227[.]82,Android payload server
+ip,91.204.227[.]83,Android payload server
+ip,91.204.227[.]84,Android payload server
+ip,92.204.248[.]66,MoqHao C2 server
+url,hxxps://imgur[.]com/user/shaoye777/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye666/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye444/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye333/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye222/about,Imgur profile used as Dead Drop resolvers
+url,hxxps://imgur[.]com/user/shaoye111/about,Imgur profile used as Dead Drop resolvers
