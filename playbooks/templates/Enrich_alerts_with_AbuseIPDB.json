@@ -59,7 +59,7 @@
         "method": "get",
         "params": "{\n    'ipAddress': '{{ node.1['output'][0] }}',\n    'maxAgeInDays': '90'\n}",
         "headers": {
-          "Key": "2ae93a094934df3e885d5dc5e79c38b46736138c7e83974885f75b8746da1dc72eb19cbf305c1dc8",
+          "Key": "AbuseIPDB_API_KEY",
           "Accept": "application/json"
         }
       },
