@@ -23,7 +23,7 @@
             "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
             "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
             "arguments": {
-                "uuid": "{{ node.6.alert_uuid }}"
+                "uuid": "{{ node.0.alert_uuid }}"
             },
             "outputs": {
                 "default": [
@@ -37,7 +37,7 @@
             "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
             "action_uuid": "113a06db-3cef-48ac-908b-45f3ebc4d1bf",
             "arguments": {
-                "uuid": "{{ node.6.alert_uuid }}",
+                "uuid": "{{ node.0.alert_uuid }}",
                 "alert_type_value": "scanner",
                 "alert_type_category": "information-gathering"
             },
@@ -53,7 +53,7 @@
             "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
             "action_uuid": "c4b84449-a26f-4f18-bde4-33efa921f4d4",
             "arguments": {
-                "uuid": "{{ node.6.alert_uuid }}",
+                "uuid": "{{ node.0.alert_uuid }}",
                 "action_uuid": "ade85d7b-7507-4026-bfc6-cc006d10ddac"
             },
             "outputs": {
