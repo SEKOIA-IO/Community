@@ -50,13 +50,20 @@
     },
     {
         "file": "VirusTotal_Enrichement.json",
-        "name": "Enrich alerts with VirusTotal",
-        "description": "Enrich alerts with VirusTotal informations",
+        "name": "Enhance network alerts with VirusTotal",
+        "description": "Enhance network alerts with VirusTotal informations (Only for IP-v4, domain-name, and url",
         "tags": [
             "alert",
             "enrichement"
         ],
         "workspace": ["Operation Center"]
+    },
+    {
+        "file": "Enrich_alerts_with_VirusTotal_Hash.json",
+        "name": "Scan for hash on VirusTotal",
+        "workspace": ["Operation Center"],
+        "description": "Enrich with VirusTotal to check if this file.hash.sha1 is known from this service direclty from SEKOIA.IO.",
+        "tags": ["alerts", "enrichement"]
     },
     {
         "file": "Reject_old_alerts.json",

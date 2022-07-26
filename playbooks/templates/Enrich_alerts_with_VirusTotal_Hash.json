@@ -1,0 +1,119 @@
+{
+  "name": "Scan for hash on VirusTotal",
+  "uuid": "9886ab71-9426-48fb-a2a3-60925fa7f298",
+  "nodes": {
+    "0": {
+      "name": "Manual trigger",
+      "type": "trigger",
+      "outputs": {
+        "default": [
+          "4"
+        ]
+      },
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "trigger_uuid": "fc26eb9f-b272-4c15-b3bf-ace397c0dc57"
+    },
+    "4": {
+      "name": "Get alert information",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "8"
+        ]
+      },
+      "arguments": {
+        "stix": true,
+        "uuid": "{{ node.0['alert_uuid'] }}"
+      },
+      "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    },
+    "8": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=",
+      "name": "Get Events",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "12"
+        ]
+      },
+      "arguments": {
+        "query": "alert_short_ids: \"{{ node.4['short_id'] }}\"",
+        "latest_time": "{{ node.4['last_seen_at'] }}",
+        "earliest_time": "{{ node.4['first_seen_at'] }}"
+      },
+      "action_uuid": "af0b4355-a428-43d6-991c-d5ff878e17d5",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    },
+    "10": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNjYgNjAiIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjx1c2UgeGxpbms6aHJlZj0iI0EiIHg9Ii41IiB5PSIuNSIvPjxzeW1ib2wgaWQ9IkEiIG92ZXJmbG93PSJ2aXNpYmxlIj48cGF0aCBkPSJNMjkuMDYgMjkuMjU3TDAgNTguNTE0aDY0VjBIMHptMjkuMSAyMy40MDZIMTMuNTNMMzcuNDcgMjkuMTEgMTQuMTc0IDUuODVINTguMTV6IiBzdHJva2U9Im5vbmUiIGZpbGw9IiMzYjYxZmYiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvc3ltYm9sPjwvc3ZnPg==",
+      "name": "Scan Hash",
+      "type": "action",
+      "outputs": {
+        "unknown": [
+          "13"
+        ],
+        "detected": [
+          "11"
+        ],
+        "not detected": [
+          "11"
+        ]
+      },
+      "arguments": {
+        "hash": "{{ node.12['output'][0] }}"
+      },
+      "action_uuid": "beb9ba43-2eca-43b5-b9ea-c092a1a19ed1",
+      "module_uuid": "d023af1d-25d8-465b-b85f-2ed48214d6a5"
+    },
+    "11": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=",
+      "name": "Comment Alert",
+      "type": "action",
+      "outputs": {
+        "default": []
+      },
+      "arguments": {
+        "uuid": "{{ node.0['alert_uuid'] }}",
+        "author": "Enrich with VT.",
+        "content": "{{ node.10['positives'] }}/{{ node.10['total'] }} vendors have declared this file.hash.sha1: \"{{ node.12['output'][0] }}\" malicious.  \nHere a direct link to [VirusTotal.]({{ node.10['permalink'] }})"
+      },
+      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    },
+    "12": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCI+PGc+PHJlY3QgZmlsbD0ibm9uZSIgaGVpZ2h0PSIyNCIgd2lkdGg9IjI0Ii8+PHBhdGggZD0iTTIwLjQxLDguNDFsLTQuODMtNC44M0MxNS4yMSwzLjIxLDE0LjcsMywxNC4xNywzSDVDMy45LDMsMywzLjksMyw1djE0YzAsMS4xLDAuOSwyLDIsMmgxNGMxLjEsMCwyLTAuOSwyLTJWOS44MyBDMjEsOS4zLDIwLjc5LDguNzksMjAuNDEsOC40MXogTTcsN2g3djJIN1Y3eiBNMTcsMTdIN3YtMmgxMFYxN3ogTTE3LDEzSDd2LTJoMTBWMTN6Ii8+PC9nPjwvc3ZnPg==",
+      "name": "Read JSON File",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "10"
+        ]
+      },
+      "arguments": {
+        "file": "{{ node.8['events'] }}",
+        "to_file": false,
+        "jsonpath": "$..[\"file.hash.sha1\"]",
+        "return_list": true
+      },
+      "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
+      "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
+    },
+    "13": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=",
+      "name": "Comment Alert",
+      "type": "action",
+      "outputs": {
+        "default": []
+      },
+      "arguments": {
+        "uuid": "{{ node.0['alert_uuid'] }}",
+        "content": "This file.hash.sha1: \"{{ node.12['output'][0] }}\" is not know to be malicious."
+      },
+      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    }
+  },
+  "workspace": "Operation Center",
+  "description": "Enrich with VirusTotal to check if this file.hash.sha1 is known from this service direclty from SEKOIA.IO."
+}
