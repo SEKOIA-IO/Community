@@ -78,5 +78,5 @@
     }
   },
   "workspace": "Operation Center",
-  "description": "Enrich the destination.ip with Shodan"
+  "description": "Enrich the destination.ip field using Shodan intelligence database"
 }
