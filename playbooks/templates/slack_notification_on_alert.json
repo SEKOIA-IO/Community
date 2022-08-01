@@ -11,7 +11,7 @@
           ]
         },
         "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
-        "trigger_uuid": "785583cf-4377-43ce-a5fb-f4572eb57456",
+        "trigger_uuid": "785583cf-4377-43ce-a5fb-f4572eb57456"
       },
       "1": {
         "name": "Check if alarm level is superior to minimum level",
@@ -73,7 +73,7 @@
           "method": "post"
         },
         "action_uuid": "40bcf3c0-aa8b-4111-9b4e-f3caffccb4e5",
-        "module_uuid": "5894985f-91eb-46db-9306-cc5ac6463d3d",
+        "module_uuid": "5894985f-91eb-46db-9306-cc5ac6463d3d"
       },
       "3": {
         "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=",
@@ -89,7 +89,7 @@
           "uuid": "{{ node.0['alert_uuid'] }}"
         },
         "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
-        "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+        "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
       },
       "4": {
         "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCI+PGc+PHJlY3QgZmlsbD0ibm9uZSIgaGVpZ2h0PSIyNCIgd2lkdGg9IjI0Ii8+PHBhdGggZD0iTTIwLjQxLDguNDFsLTQuODMtNC44M0MxNS4yMSwzLjIxLDE0LjcsMywxNC4xNywzSDVDMy45LDMsMywzLjksMyw1djE0YzAsMS4xLDAuOSwyLDIsMmgxNGMxLjEsMCwyLTAuOSwyLTJWOS44MyBDMjEsOS4zLDIwLjc5LDguNzksMjAuNDEsOC40MXogTTcsN2g3djJIN1Y3eiBNMTcsMTdIN3YtMmgxMFYxN3ogTTE3LDEzSDd2LTJoMTBWMTN6Ii8+PC9nPjwvc3ZnPg==",
@@ -107,7 +107,7 @@
           "return_list": true
         },
         "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
-        "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21",
+        "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
       },
       "5": {
         "loop": [
@@ -138,7 +138,7 @@
           "earliest_time": "{{ node.3['first_seen_at'] }}"
         },
         "action_uuid": "af0b4355-a428-43d6-991c-d5ff878e17d5",
-        "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+        "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
       },
       "7": {
         "name": "Store",
