@@ -214,5 +214,9 @@
       }
     },
     "workspace": "Operation Center",
-    "description": "Push notification to slack"
+    "description": "Notify by Slack when new alerts are created. If the target is defined, it is used in the notification, otherwise the hostnames from events are used.",
+    "tags": [
+        "alert",
+        "notification"
+    ]
   }
