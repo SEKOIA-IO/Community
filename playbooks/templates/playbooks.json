@@ -193,5 +193,15 @@
         "workspace": ["Operation Center"],
         "description": "Enrich with Shodan to check if the IP is known from this service, directly from SEKOIA.IO.",
         "tags": ["alerts", "enrichement"]
+    },
+    {
+        "file": "slack_notification_on_alert.json",
+        "name": "Slack notification on alert",
+        "description": "Notify by Slack when new alerts are created. If the target is defined, it is used in the notification, otherwise the hostnames from events are used.",
+        "tags": [
+            "alert",
+            "notification"
+        ],
+        "workspace": ["Operation Center"]
     }
 ]
