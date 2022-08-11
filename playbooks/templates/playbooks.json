@@ -4,8 +4,8 @@
         "name": "Mail Webhook notification on alert",
         "description": "Send an email about an alert when receiving a webhook event",
         "tags": [
-            "alert",
-            "notification",
+            "alerts",
+            "notifications",
             "webhook"
         ],
         "workspace": ["Operation Center"]
