@@ -15,8 +15,8 @@
         "name": "Mattermost notification on alert",
         "description": "Notify by mattermost when new alerts are created",
         "tags": [
-            "alert",
-            "notification"
+            "alerts",
+            "notifications"
         ],
         "workspace": ["Operation Center"]
     },
@@ -25,7 +25,7 @@
         "name": "Qualify Internet Scan webhook",
         "description": "Qualify an Internet scan alert on webhook",
         "tags": [
-            "alert",
+            "alerts",
             "webhook"
         ],
         "workspace": ["Operation Center"]
@@ -35,7 +35,7 @@
         "name": "Playbook adware",
         "description": "Automatic validation of alerts with predefined adware domains",
         "tags": [
-            "alert"
+            "alerts"
         ],
         "workspace": ["Operation Center"]
     },
@@ -44,7 +44,7 @@
         "name": "Alert urgency to 0 when rejected",
         "description": "Put the urgency of an alert to 0 when it is rejected",
         "tags": [
-            "alert"
+            "alerts"
         ],
         "workspace": ["Operation Center"]
     },
@@ -53,8 +53,8 @@
         "name": "Enrich alerts with VirusTotal",
         "description": "Enrich alerts with VirusTotal informations",
         "tags": [
-            "alert",
-            "enrichement"
+            "alerts",
+            "enrichment"
         ],
         "workspace": ["Operation Center"]
     },
@@ -63,7 +63,7 @@
         "name": "Reject old alerts (1 year)",
         "description": "Reject old alerts not updated for 1 year.",
         "tags": [
-            "alert",
+            "alerts",
             "cron"
         ],
         "workspace": ["Operation Center"]
@@ -73,9 +73,9 @@
         "name": "Enrich with IKnowWhatYouDownload",
         "description": "Enrich with IKnowWhatYouDownload to check if the IP is known from this service, directly from SEKOIA.IO.",
         "tags": [
-            "alert",
+            "alerts",
             "webhook",
-            "enrichement"
+            "enrichment"
         ],
         "workspace": ["Operation Center"]
     },
@@ -85,7 +85,7 @@
         "workspace": ["Intelligence Center"],
         "description": "Get IP addresses from a shodan search and add it to Observable data base with a tag",
         "tags": [
-          "observable",
+          "observables",
           "Shodan"
         ]
     },
@@ -95,7 +95,7 @@
         "workspace": ["Intelligence Center"],
         "description": "Retrieve observables from an OSINT to add it to observable database with a tag (eg: https://github.com/MISP/misp-warninglists/tree/main/lists)",
         "tags": [
-            "observable",
+            "observables",
             "Fetch OSINT"
         ]
     },
@@ -104,14 +104,14 @@
         "name": "Automatically create an alert on TheHive",
         "workspace": ["Operation Center"],
         "description": "Automatically create an alert on TheHive when a new alert is raised in SEKOIA.IO.",
-        "tags": ["alert", "thehive"]
+        "tags": ["alerts", "thehive"]
     },
     {
         "file": "create_alert_on_the_hive_manual.json",
         "name": "Manually create an Alert on TheHive",
         "workspace": ["Operation Center"],
         "description": "Create an alert on TheHive via the alert page.",
-        "tags": ["alert", "thehive"]
+        "tags": ["alerts", "thehive"]
     },
     {
         "file": "forward_aws_cloudtrail_records.json",
@@ -167,7 +167,7 @@
         "name": "Tranco top domains to observables",
         "workspace": ["Intelligence Center"],
         "tags": [
-            "observable",
+            "observables",
             "Tranco",
             "TIP"
          ],
@@ -185,22 +185,22 @@
         "name": "Enrich alerts with AbuseIPDB",
         "workspace": ["Operation Center"],
         "description": "Enrich with AbuseIPDB to check if the IP is known from this service, directly from SEKOIA.IO.",
-        "tags": ["alerts", "enrichement"]
+        "tags": ["alerts", "enrichment"]
     },
     {
         "file": "Alerts_Shodan_Enrichment.json",
         "name": "Alerts Enrichment Shodan Playbook",
         "workspace": ["Operation Center"],
         "description": "Enrich with Shodan to check if the IP is known from this service, directly from SEKOIA.IO.",
-        "tags": ["alerts", "enrichement"]
+        "tags": ["alerts", "enrichment"]
     },
     {
         "file": "slack_notification_on_alert.json",
         "name": "Slack notification on alert",
         "description": "Notify by Slack when new alerts are created. If the target is defined, it is used in the notification, otherwise the hostnames from events are used.",
         "tags": [
-            "alert",
-            "notification"
+            "alerts",
+            "notifications"
         ],
         "workspace": ["Operation Center"]
     }
