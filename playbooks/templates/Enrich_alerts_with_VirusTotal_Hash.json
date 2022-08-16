@@ -115,5 +115,5 @@
     }
   },
   "workspace": "Operation Center",
-  "description": "Enrich with VirusTotal to check if this file.hash.sha1 is known from this service direclty from SEKOIA.IO."
+  "description": "Enrich to check if this file.hash.sha1 is known from VirusTotal, directly from SEKOIA.IO."
 }
