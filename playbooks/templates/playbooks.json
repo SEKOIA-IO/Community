@@ -189,7 +189,7 @@
     },
     {
         "file": "Alerts_Shodan_Enrichment.json",
-        "name": "Alerts Enrichment Shodan Playbook",
+        "name": "Enrich with Shodan",
         "workspace": ["Operation Center"],
         "description": "Enrich with Shodan to check if the IP is known from this service, directly from SEKOIA.IO.",
         "tags": ["alerts", "enrichment"]
