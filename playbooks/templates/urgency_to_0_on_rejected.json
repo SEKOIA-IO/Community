@@ -2,7 +2,7 @@
     "name": "Alert urgency to 0 when rejected",
     "description": "Put the urgency of an alert to 0 when it is rejected",
     "tags": [
-        "alert"
+        "alerts"
     ],
     "nodes": {
         "0": {
