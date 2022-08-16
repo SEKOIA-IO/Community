@@ -51,7 +51,7 @@
     {
         "file": "VirusTotal_Enrichement.json",
         "name": "Enhance network alerts with VirusTotal",
-        "description": "Enhance network alerts with VirusTotal informations (Only for IP-v4, domain-name, and url",
+        "description": "Enhance network alerts with VirusTotal informations (Only for IP-v4, domain-name, and url)",
         "tags": [
             "alert",
             "enrichement"
