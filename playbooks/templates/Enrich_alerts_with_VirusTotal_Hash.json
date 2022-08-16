@@ -108,7 +108,7 @@
       },
       "arguments": {
         "uuid": "{{ node.0['alert_uuid'] }}",
-        "content": "This file.hash.sha1: \"{{ node.12['output'][0] }}\" is not know to be malicious."
+        "content": "This file.hash.sha1: \"{{ node.12['output'][0] }}\" is not known to be malicious."
       },
       "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
