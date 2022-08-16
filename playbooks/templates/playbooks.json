@@ -62,7 +62,7 @@
         "file": "Enrich_alerts_with_VirusTotal_Hash.json",
         "name": "Scan for hash on VirusTotal",
         "workspace": ["Operation Center"],
-        "description": "Enrich with VirusTotal to check if this file.hash.sha1 is known from this service direclty from SEKOIA.IO.",
+        "description": "Enrich to check if this file.hash.sha1 is known from VirusTotal, directly from SEKOIA.IO.",
         "tags": ["alerts", "enrichement"]
     },
     {
