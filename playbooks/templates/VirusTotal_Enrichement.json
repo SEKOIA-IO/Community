@@ -588,5 +588,5 @@
     }
   },
   "workspace": "Operation Center",
-  "description": "Enhance network alerts with information from Virus Total"
+  "description": "Enrich network alerts with information from Virus Total"
 }
