@@ -2,8 +2,8 @@
     "name": "Mattermost notification on alert",
     "description": "Notify by mattermost when new alerts are created",
     "tags": [
-        "alert",
-        "notification"
+        "alerts",
+        "notifications"
     ],
     "nodes": {
         "0": {
