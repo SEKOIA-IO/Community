@@ -126,7 +126,6 @@
         "module_uuid": "5fdf8838-1529-4243-8fbc-e6bfa7b52e30"
       },
       "9": {
-        "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCI+PGc+PHJlY3QgZmlsbD0ibm9uZSIgaGVpZ2h0PSIyNCIgd2lkdGg9IjI0Ii8+PHBhdGggZD0iTTIwLjQxLDguNDFsLTQuODMtNC44M0MxNS4yMSwzLjIxLDE0LjcsMywxNC4xNywzSDVDMy45LDMsMywzLjksMyw1djE0YzAsMS4xLDAuOSwyLDIsMmgxNGMxLjEsMCwyLTAuOSwyLTJWOS44MyBDMjEsOS4zLDIwLjc5LDguNzksMjAuNDEsOC40MXogTTcsN2g3djJIN1Y3eiBNMTcsMTdIN3YtMmgxMFYxN3ogTTE3LDEzSDd2LTJoMTBWMTN6Ii8+PC9nPjwvc3ZnPg==",
         "name": "convert store to json file",
         "type": "action",
         "outputs": {
