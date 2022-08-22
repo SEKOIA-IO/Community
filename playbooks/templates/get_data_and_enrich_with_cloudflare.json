@@ -23,7 +23,6 @@
         "trigger_uuid": "00d77e88-74e5-4725-9694-c0e7bb16cd56"
       },
       "1": {
-        "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNNC41IDExaC0yVjlIMXY2aDEuNXYtMi41aDJWMTVINlY5SDQuNXYyem0yLjUtLjVoMS41VjE1SDEwdi00LjVoMS41VjlIN3YxLjV6bTUuNSAwSDE0VjE1aDEuNXYtNC41SDE3VjloLTQuNXYxLjV6bTktMS41SDE4djZoMS41di0yaDJjLjggMCAxLjUtLjcgMS41LTEuNXYtMWMwLS44LS43LTEuNS0xLjUtMS41em0wIDIuNWgtMnYtMWgydjF6Ii8+PHBhdGggZD0iTTI0IDI0SDBWMGgyNHYyNHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=",
         "name": "Request Cloudflare DNS over HTTPs",
         "type": "action",
         "outputs": {
