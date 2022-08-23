@@ -17,34 +17,17 @@
       "type": "action",
       "outputs": {
         "default": [
-          "2",
           "7",
-          "23"
+          "23",
+          "38"
         ]
       },
       "arguments": {
         "stix": true,
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}"
+        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}"
       },
       "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "2": {
-      "name": "Read JSON File to get IP",
-      "type": "action",
-      "outputs": {
-        "default": [
-          "6"
-        ]
-      },
-      "arguments": {
-        "file": "{{ node.1.stix }}",
-        "to_file": false,
-        "jsonpath": "$.objects[?(type=\"observed-data\")].objects[?(@.type=\"ipv4-addr\")].value",
-        "return_list": true
-      },
-      "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
-      "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
     },
     "4": {
       "name": "Scan URL API with IP",
@@ -61,7 +44,7 @@
         ]
       },
       "arguments": {
-        "url": "{{ node.2['output'][0] }}"
+        "url": "{{ node.39['output'][0] }}"
       },
       "action_uuid": "b43a7897-b92c-4fe1-8a5c-be9e023c4f1c",
       "module_uuid": "d023af1d-25d8-465b-b85f-2ed48214d6a5"
@@ -73,31 +56,12 @@
         "default": []
       },
       "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
         "author": "IP enrich by VirusTotal",
-        "content": "{{ node.4.positives }}/{{ node.4.total }} security vendors flagged the target IP ({{ node.2.output.0 }}) as malicious. [Direct link to VirusTotal]({{ node.4.permalink }})"
+        "content": "{{ node.4.positives }}/{{ node.4.total }} security vendors flagged the target IP ({{ node.39['output'][0] }}) as malicious. [Direct link to VirusTotal]({{ node.4.permalink }})"
       },
       "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "6": {
-      "name": "Avoid private IP",
-      "type": "operator",
-      "cases": [
-        {
-          "left": "{%if node.2.output.0 | regex_match('(^127\\.)|(^10\\.)|(^172\\.1[6-9]\\.)|(^172\\.2[0-9]\\.)|(^172\\.3[0-1]\\.)|(^192\\.168\\..*)',ignore_case=False) %}true1{% endif %}",
-          "name": "Not Private IP",
-          "right": "true1",
-          "comparison": "!="
-        }
-      ],
-      "outputs": {
-        "else": [],
-        "Not Private IP": [
-          "4"
-        ]
-      },
-      "subtype": "condition"
     },
     "7": {
       "name": "Read JSON File for domain",
@@ -138,7 +102,7 @@
         "default": []
       },
       "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
         "author": "Domain enrich by VT",
         "content": "Safety score given by Virus total: {{ node.8['Webutation domain info']['Safety score'] }}/100 with {% if node.8['Webutation domain info']['Adult content'] == \"no\" %} {{ node.8['Webutation domain info']['Adult content'] }} {% endif %} adult content detected. Virus total verdict: {{ node.8['Webutation domain info'].Verdict }}.\r\n   \r\n   {%if node.8['Forcepoint ThreatSeeker category'] is defined %}* Forcepoint classified it as '{{ node.8['Forcepoint ThreatSeeker category'] }}'\r\n   {% endif %}{%if node.8['Dr.Web category'] is defined %}* Dr.Web classified it as '{{ node.8['Dr.Web category'] }}'\r\n   {% endif %}{%if node.8['sophos category'] is defined %}* Sophos classified it as '{{ node.8['sophos category'] }}'\r\n   {% endif %}{%if node.8['Webroot category'] is defined %}* Webroot classified it as '{{ node.8['Webroot category'] }}'\r\n   {% endif %}{%if node.8['Opera domain info'] is defined %}* Opera classified it as '{{ node.8['Opera domain info'] }}'\r\n   {% endif %}{%if node.8['Comodo Valkyrie Verdict category'] is defined %}* Valkyrie classified it as '{{ node.8['Comodo Valkyrie Verdict category'] }}'\r\n   {% endif %}{%if node.8['BitDefender category'] is defined %}* BitDefender classified it as '{{ node.8['BitDefender category'] }}'\r\n   {% endif %}{%if node.8['alphaMountain.ai category'] is defined %}* AlphaMountain.ai classified it as '{{ node.8['alphaMountain.ai category'] }}'\r\n   {% endif %}"
       },
@@ -224,7 +188,7 @@
         "default": []
       },
       "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
         "content": "{% if  node.4.positives > 0 %} List of security vendors which detected this IP as malicious: {{ (store.vendor|reject('equalto', None)|reject('equalto', '')|join(',')) }}{% endif %}"
       },
       "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
@@ -280,9 +244,9 @@
         ]
       },
       "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
         "author": "Playbook Enrich domain with VT",
-        "content": "{{ node.17.positives }}/{{ node.17.total }} security vendors flagged the target domain ({{ node.7.output.0 }}) the {{ node.17.scan_date }} as malicious. [Direct link to VirusTotal]({{ node.17.permalink }})"
+        "content": "{{ node.17.positives }}/{{ node.17.total }} security vendors flagged the target domain ({{ node.7.output.0 }}) the {{ node.17.scan_date }} as malicious. [Direct link to VirusTotal]({{ node.17.permalink }})"
       },
       "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
@@ -412,7 +376,7 @@
         "default": []
       },
       "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
         "details": "{{ node.1['details'] }}   \r\n    \r\n   # Additional Information  \r\n  {{ node.18['content'] }}"
       },
       "action_uuid": "113a06db-3cef-48ac-908b-45f3ebc4d1bf",
@@ -462,7 +426,7 @@
         "default": []
       },
       "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
         "author": "Domain categories enrich by VT",
         "content": "List of domain categories: \r\n   {%if node.8['Forcepoint ThreatSeeker category'] is defined %}* Forcepoint classified it as '{{ node.8['Forcepoint ThreatSeeker category'] }}'\r\n   {% endif %}{%if node.8['Dr.Web category'] is defined %}* Dr.Web classified it as '{{ node.8['Dr.Web category'] }}'\r\n   {% endif %}{%if node.8['sophos category'] is defined %}* Sophos classified it as '{{ node.8['sophos category'] }}'\r\n   {% endif %}{%if node.8['Webroot category'] is defined %}* Webroot classified it as '{{ node.8['Webroot category'] }}'\r\n   {% endif %}{%if node.8['Opera domain info'] is defined %}* Opera classified it as '{{ node.8['Opera domain info'] }}'\r\n   {% endif %}{%if node.8['Comodo Valkyrie Verdict category'] is defined %}* Valkyrie classified it as '{{ node.8['Comodo Valkyrie Verdict category'] }}'\r\n   {% endif %}{%if node.8['BitDefender category'] is defined %}* BitDefender classified it as '{{ node.8['BitDefender category'] }}'\r\n   {% endif %}{%if node.8['alphaMountain.ai category'] is defined %}* AlphaMountain.ai classified it as '{{ node.8['alphaMountain.ai category'] }}'\r\n   {% endif %}"
       },
@@ -476,7 +440,7 @@
         "default": []
       },
       "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
         "author": "URL VT score",
         "content": "{{ node.28.positives }}/{{ node.28.total }} security vendors flagged the target url ({{ node.23['output'][0] }}) as malicious. [Direct link to VirusTotal]({{ node.28.permalink }})"
       },
@@ -490,41 +454,11 @@
         "default": []
       },
       "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
         "action_uuid": "ade85d7b-7507-4026-bfc6-cc006d10ddac"
       },
       "action_uuid": "c4b84449-a26f-4f18-bde4-33efa921f4d4",
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "32": {
-      "name": "Automatic trigger",
-      "type": "trigger",
-      "outputs": {
-        "default": [
-          "33"
-        ]
-      },
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
-      "trigger_uuid": "fe249825-c8c5-4321-8791-f476b505072d"
-    },
-    "33": {
-      "name": "New alert ?",
-      "type": "operator",
-      "cases": [
-        {
-          "left": "{{ node.32['event_type'] }}",
-          "name": "New alert?",
-          "right": "alert-created",
-          "comparison": "=="
-        }
-      ],
-      "outputs": {
-        "else": [],
-        "New alert?": [
-          "37"
-        ]
-      },
-      "subtype": "condition"
     },
     "34": {
       "name": "Rule Name?",
@@ -566,7 +500,7 @@
       },
       "arguments": {
         "stix": true,
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}"
+        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}"
       },
       "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
@@ -601,11 +535,58 @@
         {
           "key": "uuid",
           "type": "append",
-          "value": "{{ node.32.alert_uuid }}"
+          "value": "{{ node.40['alert_uuid'] }}"
         }
       ]
+    },
+    "38": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=",
+      "name": "Get Events",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "39"
+        ]
+      },
+      "arguments": {
+        "query": "alert_short_ids: \"{{ node.1['short_id'] }}\"",
+        "latest_time": "{{ node.1['last_seen_at'] }}",
+        "earliest_time": "{{ node.1['first_seen_at'] }}"
+      },
+      "action_uuid": "af0b4355-a428-43d6-991c-d5ff878e17d5",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    },
+    "39": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCI+PGc+PHJlY3QgZmlsbD0ibm9uZSIgaGVpZ2h0PSIyNCIgd2lkdGg9IjI0Ii8+PHBhdGggZD0iTTIwLjQxLDguNDFsLTQuODMtNC44M0MxNS4yMSwzLjIxLDE0LjcsMywxNC4xNywzSDVDMy45LDMsMywzLjksMyw1djE0YzAsMS4xLDAuOSwyLDIsMmgxNGMxLjEsMCwyLTAuOSwyLTJWOS44MyBDMjEsOS4zLDIwLjc5LDguNzksMjAuNDEsOC40MXogTTcsN2g3djJIN1Y3eiBNMTcsMTdIN3YtMmgxMFYxN3ogTTE3LDEzSDd2LTJoMTBWMTN6Ii8+PC9nPjwvc3ZnPg==",
+      "name": "Read JSON File",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "4"
+        ]
+      },
+      "arguments": {
+        "file": "{{ node.38['events'] }}",
+        "to_file": false,
+        "jsonpath": "$..['destination.ip']",
+        "return_list": false
+      },
+      "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
+      "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
+    },
+    "40": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=",
+      "name": "Alert Created",
+      "type": "trigger",
+      "outputs": {
+        "default": [
+          "37"
+        ]
+      },
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "trigger_uuid": "785583cf-4377-43ce-a5fb-f4572eb57456"
     }
   },
   "workspace": "Operation Center",
-  "description": "Enrich alert with information from Virus Total"
+  "description": "Enrich network alerts with information from Virus Total"
 }
