@@ -210,5 +210,12 @@
             "notifications"
         ],
         "workspace": ["Operation Center"]
+    },
+    {
+        "file": "get_data_and_enrich_with_cloudflare.json",
+        "name": "Get data from OSINT and enrich DNS names with cloudflare DNS over HTTPs API",
+        "description": "Playbook to get data from OSINT and enrich it with CloudFlare DNS over HTTPs API. The playbook then upload observables to database.\n\nPlease configure 'Fetch Osint' node and 'Get domains from Fetch OSINT' jpath to get domains.",
+        "tags": ["observable", "CloudFlare", "Fetch Osint", "Enrich"],
+        "workspace": "Intelligence Center"
     }
 ]
