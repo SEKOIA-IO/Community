@@ -1,0 +1,8 @@
+apis:
+    virustotal:
+        url: https://www.virustotal.com/api/v3/
+        api_key: <your api key>
+tools:
+    hexeditor: /usr/bin/bless
+    texteditor: /usr/bin/code
+    disassembler: /home/work/tools/Cutter-v2.1.0-Linux-x86_64.AppImage
