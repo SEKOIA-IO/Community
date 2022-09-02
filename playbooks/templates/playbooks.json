@@ -121,13 +121,6 @@
         "tags": ["alerts", "thehive"]
     },
     {
-        "file": "forward_aws_flowlogs_records.json",
-        "name": "Forward AWS Flow Logs records to SEKOIA.IO",
-        "workspace": ["Operation Center"],
-        "description": "This playbook pulls records from AWS Flow Logs then push the fetched records to SEKOIA.IO",
-        "tags": ["aws", "events"]
-    },
-    {
         "file": "DigitalShadows_SearchLight_fetch_alerts.json",
         "name": "Fetch alerts from Digital Shadows SearchLight",
         "workspace": ["Operation Center"],
