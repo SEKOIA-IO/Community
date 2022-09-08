@@ -1,5 +1,5 @@
 {
-    "name": "Mail Webhook notification on alert",
+    "name": "Manual Mail notification on alert",
     "description": "Send an email about an alert when receiving a webhook event",
     "tags": [
         "alert",
@@ -8,7 +8,7 @@
     ],
     "nodes": {
         "0": {
-            "name": "Alert webhook",
+            "name": "Manual trigger",
             "type": "trigger",
             "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
             "trigger_uuid": "fc26eb9f-b272-4c15-b3bf-ace397c0dc57",
