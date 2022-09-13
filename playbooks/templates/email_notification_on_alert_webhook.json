@@ -1,5 +1,5 @@
 {
-    "name": "Manual Mail notification on alert",
+    "name": "Manual e-mail notification on alert",
     "description": "Send an email about an alert when receiving a webhook event",
     "tags": [
         "alert",
