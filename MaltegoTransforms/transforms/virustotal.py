@@ -81,7 +81,7 @@ class Transform():
         """Download a sample """
         
         try:
-            url = f"{self.API_URL}files/{self.value}"
+            url = f"{self.API_URL}files/{self.value}/download"
             res = requests.get(url).content
             fp = os.path.join(tempfile.gettempdir(), f"{self.value}.bin")
             with open(fp, "wb") as f:
