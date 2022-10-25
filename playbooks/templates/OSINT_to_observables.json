@@ -4,7 +4,8 @@
     "description": "Retrieve observables from an OSINT to add it to observable database with a tag (eg: https://github.com/MISP/misp-warninglists/tree/main/lists)",
     "tags": [
         "observable",
-        "Fetch OSINT"
+        "fetch osint",
+        "TIP"
     ],
     "nodes": {
       "0": {

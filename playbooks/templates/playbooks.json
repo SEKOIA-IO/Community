@@ -92,8 +92,9 @@
         "workspace": ["Intelligence Center"],
         "description": "Get IP addresses from a shodan search and add it to Observable data base with a tag",
         "tags": [
-          "observables",
-          "Shodan"
+          "observable",
+          "shodan",
+          "TIP"
         ]
     },
     {
@@ -102,8 +103,9 @@
         "workspace": ["Intelligence Center"],
         "description": "Retrieve observables from an OSINT to add it to observable database with a tag (eg: https://github.com/MISP/misp-warninglists/tree/main/lists)",
         "tags": [
-            "observables",
-            "Fetch OSINT"
+            "observable",
+            "fetch osint",
+            "TIP"
         ]
     },
     {
@@ -161,7 +163,7 @@
         "workspace": ["Intelligence Center"],
         "tags": [
             "observables",
-            "Tranco",
+            "tranco",
             "TIP"
          ],
          "description": "Automatically import Tranco's top 1 000 000 domain names to observable database"
@@ -201,7 +203,7 @@
         "file": "get_data_and_enrich_with_cloudflare.json",
         "name": "Get data from OSINT and enrich DNS names with cloudflare DNS over HTTPs API",
         "description": "Playbook to get data from OSINT and enrich it with CloudFlare DNS over HTTPs API. The playbook then upload observables to database.\n\nPlease configure 'Fetch Osint' node and 'Get domains from Fetch OSINT' jpath to get domains.",
-        "tags": ["observable", "CloudFlare", "Fetch Osint", "Enrich"],
-        "workspace": "Intelligence Center"
+        "tags": ["observable", "cloudflare", "fetch osint", "enrich","TIP"],
+        "workspace": ["Intelligence Center"]
     }
 ]

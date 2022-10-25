@@ -4,7 +4,8 @@
     "workspace": "Intelligence Center",
     "tags": [
       "observable",
-      "Shodan"
+      "shodan",
+      "TIP"
     ],
     "nodes": {
       "0": {

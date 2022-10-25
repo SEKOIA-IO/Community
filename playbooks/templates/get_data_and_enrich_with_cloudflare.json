@@ -3,9 +3,9 @@
     "description": "Playbook to get data from OSINT and enrich it with CloudFlare DNS over HTTPs API. The playbook then upload observables to database.\n\nPlease configure 'Fetch Osint' node and 'Get domains from Fetch OSINT' jpath to get domains.",
     "tags": [
         "observable",
-        "CloudFlare",
-        "Fetch Osint",
-        "Enrich"
+        "cloudflare",
+        "fetch osint",
+        "enrich"
       ],
     
     "workspace": "Intelligence Center",
