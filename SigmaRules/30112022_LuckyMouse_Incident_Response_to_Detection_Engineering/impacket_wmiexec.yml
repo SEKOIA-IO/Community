@@ -1,0 +1,28 @@
+version: 2.0
+uuid: 89d93ab3-c400-45e2-aa48-6015327b5129
+rule: Impacket Wmiexec Module
+description: >-
+  Detection of impacket's wmiexec example, used by attackers to execute commands remotely.
+sources: https://github.com/SecureAuthCorp/impacket/blob/master/examples/wmiexec.py#L295, https://www.cisa.gov/uscert/ncas/alerts/aa22-277a
+effort: elementary
+detection:
+  selection:
+    process.parent.name: wmiprvse.exe
+  default1:
+    process.command_line|contains: "\\\\127.0.0.1"
+  default2:
+    process.command_line|re: ".*\\\\__[0-9]{10}\\.[0-9]{6}.*"
+  default3:
+    process.command_line|contains: "$ProgressPreference="
+  default4:
+    process.command_line|startswith: "cmd.exe /q /c "
+  condition: selection and 1 of default*
+alert_category: intrusions
+alert_type: system-compromise
+alert_severity: 70
+attack:
+  - T1047
+data_sources:
+  - PowerShell logs
+  - Windows event logs
+  - Process command-line parameters

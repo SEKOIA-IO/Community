@@ -1,7 +1,7 @@
 id: d9114938-6877-48d8-a785-bc07cb7220ff
 title: PowerShell invoking in the command line a registry value to execute.
 description: Detects a d9114938 execution which grabs a value in the windows registry to execute it.
-references:
+references: https://blog.sekoia.io/nobeliums-envyscout-infection-chain-goes-in-the-registry-targeting-embassies/#h-sigma-rule
 MD5 hash: b84c00ae9e7f9684b36d75a1a09f8210
 MD5 hash: 054940ba8908b9e11f57ee081d1140cb
 status: experimental
