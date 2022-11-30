@@ -1,0 +1,21 @@
+version: 2.0
+uuid: 7bff7f0a-c24a-4c56-a197-0574a9880a1a
+rule: SOCKS Tunneling Tool
+description: >-
+  Detects the usage of a SOCKS tunneling tool, often used by threat actors. These tools often use the socks5 commandline argument, however socks4 can sometimes be used as well. Unfortunately, socks alone (without any number) triggered too many false positives. 
+sources: https://www.intrinsec.com/apt27-analysis/?cn-reloaded=1 https://github.com/jpillora/chisel
+effort: intermediate
+detection:
+  selection:
+    process.command_line|contains: 
+      - 'socks5'
+      - 'socks4'
+      - '--tls-skip-verify'
+  condition: selection
+alert_category: intrusions
+alert_type: lateral-move
+alert_severity: 80
+attack:
+  - T1572
+data_sources:
+  - Process command-line parameters

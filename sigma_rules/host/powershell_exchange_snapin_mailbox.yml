@@ -1,0 +1,25 @@
+version: 2.0
+uuid: e1483826-c586-42e5-b59f-c2b8feae04c6
+rule: Exchange PowerShell Snap-Ins To Export Exchange Mailbox Data
+description: >-
+  Detects PowerShell SnapIn command line, often used with Get-Mailbox to export Exchange mailbox data.
+sources: https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/
+effort: intermediate
+detection:
+  process:
+    process.command_line|contains: 'Microsoft.Exchange.Management.Powershell.Snapin'
+  scriptblocktext:
+    action.properties.ScriptBlockText|re: '(?i).*Add-PSSnapin\s+Microsoft\.Exchange\.Management\.Powershell\.Snapin.+Get-Mailbox.*'
+  condition: process or scriptblocktext
+alert_category: intrusions
+alert_type: system-compromise
+alert_severity: 70
+attack:
+  -  T1005
+data_sources:
+  - Windows event logs
+  - PowerShell logs
+  - Process monitoring
+  - Process command-line parameters
+tags:
+  - exchange

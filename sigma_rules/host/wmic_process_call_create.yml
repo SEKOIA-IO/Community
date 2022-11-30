@@ -1,0 +1,37 @@
+version: 2.0
+uuid: 496c08a1-84ac-4e05-aeef-26daadcf455a
+rule: Wmic Process Call Creation
+description: >-
+  The WMI command-line (WMIC) utility provides a command-line interface for Windows Management Instrumentation (WMI). WMIC is compatible with existing shells and utility commands. Although WMI is supposed to be an administration tool, it is wildy abused by threat actors. One of the reasons is WMI is quite stealthy. This rule detects the wmic command line launching a process on a remote or local host.
+sources: https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+false_positives: This could  be legitimate admin operations.
+effort: intermediate
+detection:
+  process_wmic:
+    process.command_line|contains|all:
+     - 'process'
+     - 'call'
+     - 'create'
+    process.name: '*'
+  filter:
+    - process.name: 'crashpad_handler.exe'
+    - process.executable: '/bin/rm'
+  condition: process_wmic and not filter
+alert_category: intrusions
+alert_type: system-compromise
+alert_severity: 75
+attack:
+  - T1047
+data_sources:
+  - Process command-line parameters
+  - Process monitoring
+  - Windows event logs
+event_fields:
+  - field: host.name
+    description: Related computer
+  - field: user.name
+    description: Related user
+  - field: process.name
+    description: Spawned process
+  - field: process.command_line
+    description: Related process command line

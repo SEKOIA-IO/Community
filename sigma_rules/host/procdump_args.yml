@@ -1,0 +1,26 @@
+version: 2.0
+uuid: 12ca53fd-8f6a-4556-a5a5-7b40625b4acc
+rule: Usage Of Procdump With Common Arguments
+description: >-
+  Detects the usage of Procdump sysinternals tool with some common arguments and followed by common patterns.
+sources: https://learn.microsoft.com/en-us/sysinternals/downloads/procdump
+effort: intermediate
+detection:
+  selection:
+    process.command_line|re: '(?i)(accepteula)?(.*\s(-|/)(mm|ma|mt|mk|mc|mp|md)\s.*(\.exe|lsass|\.dll|\.dmp|AppData|ProgramData).*)'
+  filter:
+    process.command_line|contains:
+      - 'java'
+      - 'bigobj'
+      - 'cl.exe'
+      - 'cc1.exe'
+      - 'SOLIDWORKS'
+  condition: selection and not filter
+alert_category: intrusions
+alert_type: system-compromise
+alert_severity: 60
+attack:
+  - T1569.002 
+data_sources:
+  - Windows event logs
+  - Process command-line parameters
