@@ -1,0 +1,52 @@
+version: 2.0
+uuid: c91d35aa-c1e9-4405-83fa-26c72a673151
+rule: Windows Defender Disabled
+description: >-
+  The rule detects attempts to deactivate/disable Windows Defender through command line or registry. To fully use this rule Windows Registry logging is needed. This can be done for instance using Sysmon with Event IDs 12,13 and 14 (and adding the correct path in its configuration).
+sources: https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus?view=o365-worldwide https://www.howto-connect.com/enable-disable-windows-defender-antivirus-service-windows-10-windefend/
+effort: intermediate
+detection:
+  command_line1:
+    process.command_line|contains|all:
+      - 'stop'
+      - 'windefend'
+  command_line2:
+    process.command_line|contains|all:
+      - 'windefend'
+      - 'disabled'
+  command_line3:
+    process.command_line|contains|all:
+      - 'windows defender'
+      - 'policies'
+  command_line4:
+    process.command_line|contains|all:
+      - 'windefend'
+      - 'services'
+  command_line5:
+    process.command_line|contains:
+      - 'disablebehaviormonitoring'
+      - 'disablerealtimemonitoring'
+      - 'add-mppreference'
+      - 'disableintrusionpreventionsystem'
+      - 'disableioavprotection'
+      - 'disablescriptscanning'
+      - 'enablecontrolledfolderaccess'
+      - 'enablenetworkprotection'
+      - 'mapsreporting'
+      - 'submitsamplesconsent'
+  registry: # It will detect changes in this registry key overall (activation or deactivation)
+    registry.key|contains|all: 
+      - 'Windows Defender'
+      - 'Policies'
+    registry.hive: 'HKLM'
+  condition: (1 of command_line*) or registry
+alert_category: intrusions
+alert_type: system-compromise
+alert_severity: 80
+attack:
+  - T1562.001
+data_sources:
+  - Windows event logs
+  - Windows Registry
+  - Process monitoring
+  - Process command-line parameters
