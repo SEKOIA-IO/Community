@@ -1,6 +1,5 @@
 {
   "name": "Enrich with CrowdSec Fire",
-  "uuid": "30fdd2f9-bd81-438d-bd0e-e74bd662ba71",
   "nodes": {
     "0": {
       "name": "Manual Trigger",
