@@ -214,5 +214,16 @@
         "description": "Playbook to get data from OSINT and enrich it with CloudFlare DNS over HTTPs API. The playbook then upload observables to database.\n\nPlease configure 'Fetch Osint' node and 'Get domains from Fetch OSINT' jpath to get domains.",
         "tags": ["observable", "cloudflare", "fetch osint", "enrich","TIP"],
         "workspace": ["Intelligence Center"]
+    },
+    {
+        "file": "CrowdSec_alert_enrichment.json",
+        "name": "Enrich with CrowdSec Fire",
+        "description": "Enrich with CrowdSec Fire DB to check if the IP is known from this service direclty from SEKOIA.IO.",
+        "tags": [
+            "CrowdSec",
+            "alerts",
+            "enrichment"
+        ],
+        "workspace": ["Operation Center"]
     }
 ]
