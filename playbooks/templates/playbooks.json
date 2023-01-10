@@ -217,8 +217,8 @@
     },
     {
         "file": "CrowdSec_alert_enrichment.json",
-        "name": "Enrich with CrowdSec Fire",
-        "description": "Enrich with CrowdSec Fire DB to check if the IP is known from this service direclty from SEKOIA.IO.",
+        "name": "Enrich with CrowdSec Smoke database",
+        "description": "Enrich with CrowdSec Smoke DB to check if the IP is known from this service direclty from SEKOIA.IO.",
         "tags": [
             "CrowdSec",
             "alerts",
