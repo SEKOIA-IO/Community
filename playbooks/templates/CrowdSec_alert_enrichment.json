@@ -1,5 +1,5 @@
 {
-  "name": "Enrich with CrowdSec Fire",
+  "name": "Enrich with CrowdSec Smoke database",
   "nodes": {
     "0": {
       "name": "Manual Trigger",
@@ -20,7 +20,7 @@
       },
       "arguments": {
         "uuid": "{{ node.0['alert_uuid'] }}",
-        "author": "CrowdSec Fire db Playbook",
+        "author": "CrowdSec Fire DB Playbook",
         "content": "{{ node.6.default.value }}"
       },
       "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
@@ -127,7 +127,7 @@
       },
       "arguments": {
         "uuid": "{{ node.0['alert_uuid'] }}",
-        "author": "Crowdsec Fire db Playbook",
+        "author": "Crowdsec Smoke DB Playbook",
         "content": "No information on the IP address {{ node.1['output'][0] }} on CrowdSec"
       },
       "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
@@ -151,7 +151,7 @@
     }
   },
   "workspace": "Operation Center",
-  "description": "Enrich with CrowdSec Fire DB to check if the IP is known from this service direclty from SEKOIA.IO.",
+  "description": "Enrich with CrowdSec Smoke DB to check if the IP is known from this service direclty from SEKOIA.IO.",
   "tags": [
     "CrowdSec",
     "alerts",
