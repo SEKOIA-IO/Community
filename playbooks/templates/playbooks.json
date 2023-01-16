@@ -200,15 +200,6 @@
         "workspace": ["Operation Center"]
     },
     {
-        "file": "forward_okta_logs.json",
-        "name": "Forward Okta system logs to SEKOIA.IO",
-        "description": "This playbook consumes sytems logs from Okta and push them to SEKOIA.IO",
-        "tags": [
-            "events"
-        ],
-        "workspace": ["Operation Center"]
-    },
-    {
         "file": "get_data_and_enrich_with_cloudflare.json",
         "name": "Get data from OSINT and enrich DNS names with cloudflare DNS over HTTPs API",
         "description": "Playbook to get data from OSINT and enrich it with CloudFlare DNS over HTTPs API. The playbook then upload observables to database.\n\nPlease configure 'Fetch Osint' node and 'Get domains from Fetch OSINT' jpath to get domains.",
