@@ -3,7 +3,7 @@ rule infostealer_win_stealc_standalone {
         malware = "Stealc"
         description = "Find standalone Stealc sample based on decryption routine or characteristic strings"
         source = "SEKOIA.IO"
-        reference = "https://blog.sekoia.io/stealc-a-copycat-of-vidar-and-raccoon-infostealers-gaining-in-popularity---part-1/"
+        reference = "https://blog.sekoia.io/stealc-a-copycat-of-vidar-and-raccoon-infostealers-gaining-in-popularity-part-1/"
         classification = "TLP:CLEAR"
         hash = "77d6f1914af6caf909fa2a246fcec05f500f79dd56e5d0d466d55924695c702d"
 
