@@ -7,6 +7,7 @@ rule infostealer_win_stealc_behaviour {
 		source = "SEKOIA.IO"
 		reference = "https://blog.sekoia.io/stealc-a-copycat-of-vidar-and-raccoon-infostealers-gaining-in-popularity---part-1/"
 		classification = "TLP:CLEAR"
+		hash = "3feecb6e1f0296b7a9cb99e9cde0469c98bd96faed0beda76998893fbdeb9411"
 
 	condition:
         for any cmd in vt.behaviour.command_executions : (
