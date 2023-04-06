@@ -1,0 +1,301 @@
+version: 2.0
+uuid: 22fdd69c-6ab3-4507-85ec-4a0ffbecdc14
+rule: HTML Smuggling Suspicious Usage
+description: >-
+  Based on several samples from different Botnets, this rule aims at detecting HTML infection chain by looking for HTML created files followed by suspicious files being executed.
+sources: https://github.com/pr0xylife/Qakbot/blob/main/Qakbot_obama193_24.06.2022.txt https://github.com/pr0xylife/Qakbot/blob/main/Qakbot_obama194_27.06.2022.txt
+effort: intermediate
+correlation: |
+  name: html
+  detection:
+    html_file:
+      - file.extension:
+        - 'html'
+      - file.name|contains:
+        - '.html'
+    group:
+      user.name: '*'
+      host.name: '*'
+    filter:
+      - action.id:
+        - '4663'
+        - '4662'
+        - '23'
+        - '26'
+      - process.name|contains: 
+        - 'OneDriveSetup.exe'
+        - 'OneDrive'
+        - 'FileZilla'
+      - process.command_line|contains: 
+        - 'OneDrive'
+        - 'Microsoft Visual Studio'
+    condition: (html_file and group) and not filter
+  ---
+  name: suspicious_files
+  detection:
+    selection:
+      - file.name|endswith:
+        - '.zip'
+        - '.exe'
+        - '.msi'
+        - '.iso'
+        - '.vhd'
+        - '.img'
+        - '.hta'
+        - '.bat'
+        - '.chm'
+        - '.wsf'
+        - '.js'
+      - file.extension:
+        - 'zip'
+        - 'exe'
+        - 'msi'
+        - 'iso'
+        - 'vhd'
+        - 'img'
+        - 'hta'
+        - 'bat'
+        - 'chm'
+        - 'wsf'
+        - 'js'
+    lnk:
+      - file.name|endswith: '.lnk'
+      - file.extension: 'lnk'
+    process:
+      process.name:
+        - 'powershell_ise.exe'
+        - 'copy.exe'
+        - 'xcopy.exe'
+        - 'curl.exe'
+        - 'wget.exe'
+        - 'ssh.exe'
+        - 'wermgr.exe'
+        - 'Microsoft.Workflow.Compiler.exe'
+        - 'arp.exe'
+        - 'atbroker.exe'
+        - 'bginfo.exe'
+        - 'bitsadmin.exe'
+        - 'cdb.exe'
+        - 'certutil.exe'
+        - 'cmd.exe'
+        - 'cmstp.exe'
+        - 'control.exe'
+        - 'cscript.exe'
+        - 'csi.exe'
+        - 'dnx.exe'
+        - 'dsget.exe'
+        - 'dsquery.exe'
+        - 'forfiles.exe'
+        - 'fsi.exe'
+        - 'ftp.exe'
+        - 'gpresult.exe'
+        - 'hostname.exe'
+        - 'ieexec.exe'
+        - 'iexpress.exe'
+        - 'msiexec.exe'
+        - 'installutil.exe'
+        - 'ipconfig.exe'
+        - 'mshta.exe'
+        - 'msxsl.exe'
+        - 'nbtstat.exe'
+        - 'net.exe'
+        - 'net1.exe'
+        - 'netsh.exe'
+        - 'netstat.exe'
+        - 'nltest.exe'
+        - 'odbcconf.exe'
+        - 'ping.exe'
+        - 'powershell.exe'
+        - 'pwsh.exe'
+        - 'qprocess.exe'
+        - 'quser.exe'
+        - 'qwinsta.exe'
+        - 'rcsi.exe'
+        - 'reg.exe'
+        - 'regasm.exe'
+        - 'regsvcs.exe'
+        - 'regsvr32.exe'
+        - 'sc.exe'
+        - 'schtasks.exe'
+        - 'systeminfo.exe'
+        - 'tasklist.exe'
+        - 'tracert.exe'
+        - 'whoami.exe'
+        - 'wmic.exe'
+        - 'wscript.exe'
+        - 'xwizard.exe'
+        - 'rundll32.exe'
+        - 'hh.exe'
+        - 'msdt.exe'
+    group:
+      user.name: '*'
+      host.name: '*'
+    filter:
+      - action.id:
+        - '4663'
+        - '4662'
+        - '23'
+        - '26'
+      - process.name: 
+        - 'OneDriveSetup.exe'
+        - 'OneDrive.exe'
+      - file.name: 'CollectSyncLogs.bat'
+      - process.command_line|contains: 
+        - 'Microsoft Visual Studio'
+        - 'OneDrive'
+    condition: ((selection or (lnk and process)) and group) and not filter
+  ---
+  name: suspicious_processes
+  detection:
+    process:
+      process.name:
+        - 'powershell_ise.exe'
+        - 'copy.exe'
+        - 'xcopy.exe'
+        - 'curl.exe'
+        - 'wget.exe'
+        - 'ssh.exe'
+        - 'wermgr.exe'
+        - 'Microsoft.Workflow.Compiler.exe'
+        - 'arp.exe'
+        - 'msiexec.exe'
+        - 'atbroker.exe'
+        - 'bginfo.exe'
+        - 'bitsadmin.exe'
+        - 'cdb.exe'
+        - 'certutil.exe'
+        - 'cmd.exe'
+        - 'cmstp.exe'
+        - 'control.exe'
+        - 'cscript.exe'
+        - 'csi.exe'
+        - 'dnx.exe'
+        - 'dsget.exe'
+        - 'dsquery.exe'
+        - 'forfiles.exe'
+        - 'fsi.exe'
+        - 'ftp.exe'
+        - 'gpresult.exe'
+        - 'hostname.exe'
+        - 'ieexec.exe'
+        - 'iexpress.exe'
+        - 'installutil.exe'
+        - 'ipconfig.exe'
+        - 'mshta.exe'
+        - 'msxsl.exe'
+        - 'nbtstat.exe'
+        - 'net.exe'
+        - 'net1.exe'
+        - 'netsh.exe'
+        - 'netstat.exe'
+        - 'nltest.exe'
+        - 'odbcconf.exe'
+        - 'ping.exe'
+        - 'powershell.exe'
+        - 'pwsh.exe'
+        - 'qprocess.exe'
+        - 'quser.exe'
+        - 'qwinsta.exe'
+        - 'rcsi.exe'
+        - 'reg.exe'
+        - 'regasm.exe'
+        - 'regsvcs.exe'
+        - 'regsvr32.exe'
+        - 'sc.exe'
+        - 'schtasks.exe'
+        - 'systeminfo.exe'
+        - 'tasklist.exe'
+        - 'tracert.exe'
+        - 'whoami.exe'
+        - 'wmic.exe'
+        - 'wscript.exe'
+        - 'xwizard.exe'
+        - 'rundll32.exe'
+        - 'hh.exe'
+        - 'msdt.exe'
+      process.command_line: '*'
+    group:
+      user.name: '*'
+      host.name: '*'
+    filter:
+      - action.id:
+        - '4663'
+        - '4662'
+        - '23'
+        - '26'
+      - process.name: 
+        - 'OneDriveSetup.exe'
+        - 'OneDrive.exe'
+      - file.name: 'CollectSyncLogs.bat'
+      - process.command_line|contains: 
+        - 'Microsoft Visual Studio'
+        - 'OneDrive'
+    filter2:
+      - process.command_line|re: 
+        - '(?i).*C:\\Windows.*C:\\Windows.*'
+        - '(?i).*C:\\Windows.*C:\\Program Files.*'
+    condition: (process and group) and not (1 of filter*)
+  ---
+  name: suspicious_browser_process
+  detection:
+    firefox:
+      process.command_line|contains|all:
+        - 'firefox.exe'
+        - '-url '
+    chrome_based:
+      process.command_line|contains: '--single-argument'
+    filter:
+      - process.command_line|contains: 'http'
+    condition: (firefox or chrome_based) and not filter
+  ---
+  name: suspicious_html_chain
+  action: correlation
+  type: temporal
+  rule:
+    - html
+    - suspicious_browser_process
+    - suspicious_files
+  group-by:
+    - user.name
+    - host.name
+  timespan: 5m
+  ordered: false
+  ---
+  name: multiple_suspicious_processes
+  action: correlation
+  type: value_count
+  rule: suspicious_processes
+  group-by:
+    - host.name
+    - user.name
+  timespan: 2m
+  field: process.command_line
+  condition:
+    gte: 3
+  ---
+  action: correlation
+  type: temporal
+  rule:
+    - suspicious_html_chain
+    - multiple_suspicious_processes
+  group-by:
+    - host.name
+    - user.name
+  timespan: 2m
+  ordered: true
+alert_category: intrusions
+alert_type: application-compromise
+alert_severity: 60
+attack:
+  - T1546
+  - T1548
+data_sources:
+  - Process command-line parameters
+  - Process monitoring
+  - File monitoring
+  - Windows event logs
+similarity_strategy:
+  - user.name
+  - host.name
+tags:
+  - correlation
