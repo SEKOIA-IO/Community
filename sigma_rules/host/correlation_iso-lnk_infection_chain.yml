@@ -1,0 +1,119 @@
+version: 2.0
+uuid: b833f0dc-b682-4151-9f75-db2fc16e6e7f 
+rule: ISO LNK Infection Chain
+description: >-
+  Detection of an ISO download followed by a child-process of explorer, which is characteristic of an infection using an ISO containing an LNK file.
+sources: https://twitter.com/cyb3rops/status/1553711907722432512
+effort: intermediate
+correlation: |
+  name: iso_created
+  detection:
+    selection:
+      file.name|endswith:
+      - .img
+      - .iso
+      - .vhd
+      - .vhdx
+      - .xz
+      host.name: '*'
+    filter_sysmon:
+      action.id: 
+        - 23
+        - 26
+      event.provider: Microsoft-Windows-Sysmon
+    condition: selection and not 1 of filter_*
+  ---
+  name: explorer_cmd
+  detection:
+    selection:
+      process.parent.name: explorer.exe
+      process.name:
+        - 'powershell_ise.exe'
+        - 'copy.exe'
+        - 'xcopy.exe'
+        - 'curl.exe'
+        - 'wget.exe'
+        - 'ssh.exe'
+        - 'wermgr.exe'
+        - 'Microsoft.Workflow.Compiler.exe'
+        - 'arp.exe'
+        - 'msiexec.exe'
+        - 'atbroker.exe'
+        - 'bginfo.exe'
+        - 'bitsadmin.exe'
+        - 'cdb.exe'
+        - 'certutil.exe'
+        - 'cmd.exe'
+        - 'cmstp.exe'
+        - 'control.exe'
+        - 'cscript.exe'
+        - 'csi.exe'
+        - 'dnx.exe'
+        - 'dsget.exe'
+        - 'dsquery.exe'
+        - 'forfiles.exe'
+        - 'fsi.exe'
+        - 'ftp.exe'
+        - 'gpresult.exe'
+        - 'hostname.exe'
+        - 'ieexec.exe'
+        - 'iexpress.exe'
+        - 'installutil.exe'
+        - 'ipconfig.exe'
+        - 'mshta.exe'
+        - 'msxsl.exe'
+        - 'nbtstat.exe'
+        - 'net.exe'
+        - 'net1.exe'
+        - 'netsh.exe'
+        - 'netstat.exe'
+        - 'nltest.exe'
+        - 'odbcconf.exe'
+        - 'ping.exe'
+        - 'powershell.exe'
+        - 'pwsh.exe'
+        - 'qprocess.exe'
+        - 'quser.exe'
+        - 'qwinsta.exe'
+        - 'rcsi.exe'
+        - 'reg.exe'
+        - 'regasm.exe'
+        - 'regsvcs.exe'
+        - 'regsvr32.exe'
+        - 'sc.exe'
+        - 'schtasks.exe'
+        - 'systeminfo.exe'
+        - 'tasklist.exe'
+        - 'tracert.exe'
+        - 'whoami.exe'
+        - 'wmic.exe'
+        - 'wscript.exe'
+        - 'xwizard.exe'
+        - 'rundll32.exe'
+        - 'hh.exe'
+        - 'msdt.exe'
+      host.name: '*'
+    filter:
+      process.command_line|contains:
+        - '9aa46009-3ce0-458a-a354-715610a075e6' # https://strontic.github.io/xcyclopedia/library/clsid_9aa46009-3ce0-458a-a354-715610a075e6.html
+    condition: selection and not filter
+  ---
+  action: correlation
+  type: temporal
+  rule:
+    - iso_created
+    - explorer_cmd
+  group-by:
+    - host.name
+  timespan: 5m
+  ordered: true
+alert_category: malicious-code
+alert_type: virus
+alert_severity: 70
+attack:
+  - T1204.001
+data_sources:
+  - Process monitoring
+  - Windows event logs
+tags:
+  - correlation
