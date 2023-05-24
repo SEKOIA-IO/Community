@@ -1,5 +1,5 @@
 {
-  "name": "Disseminate IOCs (Crowdstrike Falcon)",
+  "name": "Disseminate IOCs to Crowdstrike Falcon",
   "nodes": {
     "0": {
       "name": "Feed Consumption",
