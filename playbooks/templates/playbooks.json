@@ -216,5 +216,15 @@
             "enrichment"
         ],
         "workspace": ["Operation Center"]
+    },
+    {
+        "file": "Crowdstrike_dissemination.json",
+        "name": "Disseminate IOCs to CrowdStrike Falcon",
+        "description": "Disseminate Sekoia.io IOCs as a detection source for CrowdStrike Falcon EDR",
+        "tags": [
+            "CrowdStrike",
+            "Dissemination"
+        ],
+        "workspace": ["Operation Center", "Intelligence Center"]
     }
 ]
