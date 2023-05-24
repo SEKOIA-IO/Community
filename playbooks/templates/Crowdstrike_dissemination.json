@@ -1,5 +1,5 @@
 {
-  "name": "Disseminate IOCs to Crowdstrike Falcon",
+  "name": "Disseminate IOCs to CrowdStrike Falcon",
   "nodes": {
     "0": {
       "name": "Feed Consumption",
@@ -28,7 +28,7 @@
       }
     }
   },
-  "description": "Disseminate Sekoia.io IOCs as a detection source for Crowdstrike Falcon EDR",
+  "description": "Disseminate Sekoia.io IOCs as a detection source for CrowdStrike Falcon EDR",
     "tags": [
     "CrowdStrike",
     "Dissemination"
