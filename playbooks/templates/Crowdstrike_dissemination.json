@@ -2,7 +2,7 @@
   "name": "Disseminate IOCs to CrowdStrike Falcon",
   "nodes": {
     "0": {
-      "name": "Feed Consumption",
+      "name": "Feed IOC Consumption",
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
       "outputs": {
         "default": [
@@ -11,7 +11,7 @@
       },
       "type": "trigger",
       "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjYwIiBoZWlnaHQ9IjY2MCIgdmlld0JveD0iMCAwIDY2MCA0NTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik00MzYuMjk4IDM3My4yN0M1MTYuOTM1IDM3My4yNyA1ODIuNDY0IDMwNy42NCA1ODIuNDY0IDIyNy4xMDNDNTgyLjQ2NCAxNDYuNDY3IDUxNi44MzUgODAuOTM2OCA0MzYuMjk4IDgwLjkzNjhDMzU1Ljc2MiA4MC45MzY4IDI5MC4xMzIgMTQ2LjU2NyAyOTAuMTMyIDIyNy4xMDNDMjkwLjAzMiAzMDcuNjQgMzU1LjY2MSAzNzMuMjcgNDM2LjI5OCAzNzMuMjdaTTQzNi4yOTggMTE4Ljg1NEM0OTUuOTI1IDExOC44NTQgNTQ0LjQ0NyAxNjcuMzc2IDU0NC40NDcgMjI3LjAwM0M1NDQuNDQ3IDI4Ni42MyA0OTUuOTI1IDMzNS4xNTIgNDM2LjI5OCAzMzUuMTUyQzM3Ni42NzEgMzM1LjE1MiAzMjguMTQ5IDI4Ni43MyAzMjguMTQ5IDIyNy4wMDNDMzI4LjE0OSAxNjcuMzc2IDM3Ni42NzEgMTE4Ljg1NCA0MzYuMjk4IDExOC44NTRaTTE0Mi41NjUgMTE4Ljk1NEgxMDQuNzQ3VjMzNS4xNTJIMTQyLjU2NVYxMTguOTU0Wk0zMS45MTQ0IDQyMy44OTNINjI3LjM4NVYyOC4wMTI3SDMxLjkxNDRWNDIzLjg5M1pNNjIxLjQ4MiA0MTguMTlIMzcuNzE3VjMzLjcxNTNINjIxLjQ4MlY0MTguMTlaIiBmaWxsPSIjMkQyRTgzIi8+Cjwvc3ZnPgo=",
-      "trigger_uuid": "ac6100ed-3fb7-4355-83ac-049c14aa44fd"
+      "trigger_uuid": "9859df5d-a743-41e9-ad6c-cca078b3e054"
     },
     "1": {
       "name": "Push IOCs for detection",
