@@ -54,7 +54,7 @@
           "default": []
         },
         "arguments": {
-          "url": "http://YOUR_XSOAR_DOMAIN/instance/execute/sekoia",
+          "url": "https://<YOUR_XSOAR_DOMAIN>/instance/execute/<YOUR_INSTANCE_NAME>",
           "json": "{\n\"name\": \"{{ node.1.rule['name'] }}\",\n\"occurred\": \"{{ node.1.created_at | timestamp_to_iso8601}}\",\n\"alertId\": \"{{ node.1.short_id }}\",\n\"urgency\": \"{% if node.1.urgency['current_value'] in range(0,50) %}Low{% elif node.1.urgency['current_value'] in range(50,75)%}Medium{% else %}High{% endif %}\",\n\"alertUrl\": \"https://app.sekoia.io/operations/alerts/{{ node.1.short_id }}\",\n\"events\": [{{ node.2.events[0] | fromjson }}]\n}",
           "method": "post",
           "headers": {
