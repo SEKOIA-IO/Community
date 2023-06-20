@@ -226,5 +226,15 @@
             "Dissemination"
         ],
         "workspace": ["Operation Center", "Intelligence Center"]
+    },
+    {
+        "file": "create_incident_on_cortex_xsoar.json",
+        "name": "Automatically create an incident on Palo Alto Cortex XSOAR",
+        "description": "Create an incident on Palo Alto Cortex XSOAR when a new alert is raised on Sekoia.io",
+        "tags": [
+            "alerts",
+            "XSOAR"
+        ],
+        "workspace": ["Operation Center"]
     }
 ]
