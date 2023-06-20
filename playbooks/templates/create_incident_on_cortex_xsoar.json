@@ -67,6 +67,5 @@
       }
     },
     "workspace": "Operation Center",
-    "description": "Create an incident on Palo Alto Cortex XSOAR when a new alert is raised on Sekoia.io",
-    "community_uuid": "f819d0e0-1b6b-43bb-8bfc-f7527b55f13c"
+    "description": "Create an incident on Palo Alto Cortex XSOAR when a new alert is raised on Sekoia.io"
   }
