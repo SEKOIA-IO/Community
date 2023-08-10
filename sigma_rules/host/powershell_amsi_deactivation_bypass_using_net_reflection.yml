@@ -1,0 +1,24 @@
+version: 2.0
+uuid: 3520662c-ca99-49e8-be7a-214922285dc5
+rule: PowerShell AMSI Deactivation Bypass Using .NET Reflection
+description: >-
+  Detects Request to amsiInitFailed that can be used to disable AMSI (Antimalware Scan Interface) Scanning. More information about Antimalware Scan Interface https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal.
+sources: https://github.com/SigmaHQ/sigma/tree/master/rules, http://amsi.fail/
+effort: elementary
+detection:
+  selection:
+    - process.command_line|contains: 'amsiinitfailed'
+    - action.properties.ScriptBlockText|contains: 'amsiinitfailed'
+  selection_base64encoded:
+    - process.command_line|wide|base64offset|contains: 'amsiInitFailed'
+    - action.properties.ScriptBlockText|wide|base64offset|contains: 'amsiInitFailed'
+  condition: selection or selection_base64encoded
+alert_category: intrusions
+alert_type: system-compromise
+alert_severity: 50
+attack:
+    - T1562.001
+data_sources:
+  - PowerShell logs
+  - Process command-line parameters
+  - Process monitoring

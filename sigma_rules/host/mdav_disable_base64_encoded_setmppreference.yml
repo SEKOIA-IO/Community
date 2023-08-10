@@ -1,0 +1,35 @@
+version: 2.0
+uuid: bf9ea197-b5b3-4335-bd78-2d6e7abf9d58 
+rule: Microsoft Defender Antivirus Set-MpPreference Base64 Encoded
+description: >-
+  Detects changes of preferences for Windows Defender scan and updates. Configure Windows Defender using base64-encoded commands is suspicious and could be related to malicious activities.
+sources: https://learn.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps https://www.virustotal.com/gui/file/04b097006309bc528779cbc75f2d9a31661f01fe91de7d8f4e0615e959c12dec/behavior 
+effort: intermediate 
+detection:
+  selection1:
+    process.command_line|wide|base64offset|contains:
+      - 'Set-MpPreference'
+      - 'set-mppreference'
+      - 'Add-MpPreference'
+      - 'add-mppreference'
+  selection2:
+    action.properties.ScriptBlockText|wide|base64offset|contains:
+      - 'Set-MpPreference'
+      - 'set-mppreference'
+      - 'Add-MpPreference'
+      - 'add-mppreference'
+  condition: selection1 or selection2
+alert_category: intrusions
+alert_type: system-compromise
+alert_severity: 80
+attack:
+  - T1562.001
+  - T1140
+  - T1059.001
+data_sources:
+  - PowerShell logs
+  - Process command-line parameters
+  - Process monitoring
+  - Windows event logs
+tags:
+  - defender

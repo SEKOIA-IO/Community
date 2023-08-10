@@ -1,0 +1,21 @@
+version: 2.0
+uuid: 1379a1f8-5f1a-41e5-a6ee-e042131b625c
+rule: Powershell AMSI Bypass
+description: >-
+  This rule aims to detect attempts to bypass AMSI in powershell using specific techniques.
+sources: https://pentestlaboratories.com/2021/05/17/amsi-bypass-methods/
+effort: advanced
+detection:
+  selection:
+    action.properties.ScriptBlockText|contains: 'NonPublic,Static'
+  condition: selection
+alert_category: intrusions
+alert_type: system-compromise
+alert_severity: 50
+attack:
+  - T1562.004
+data_sources:
+  - Windows event logs
+  - PowerShell logs
+similarity_strategy:
+  - host.name
