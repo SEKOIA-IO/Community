@@ -2,7 +2,7 @@ version: 2.0
 uuid: 4e7b3d76-62cd-4694-a4c3-c0e33c663034 
 rule: Microsoft Defender Antivirus Disabled Base64 Encoded
 description: >-
-  Detects attempts to deactivate/disable Windows Defender through base64 encoded PowerShell command line.
+  Detects attempts to deactivate/disable Microsoft Defender Antivirus (MDAV) through base64 encoded PowerShell command line.
 sources: https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus?view=o365-worldwide https://www.howto-connect.com/enable-disable-windows-defender-antivirus-service-windows-10-windefend/
 effort: elementary 
 detection:

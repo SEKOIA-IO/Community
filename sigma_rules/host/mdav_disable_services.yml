@@ -2,7 +2,7 @@ version: 2.0
 uuid: c0c5af8d-3d78-4369-a84b-4e576e6659dc
 rule: Microsoft Defender Antivirus Disable Services
 description: >-
-  The rule detects attempts to deactivate/disable Windows Defender through command line and registry.
+  The rule detects attempts to deactivate/disable Microsoft Defender Antivirus (MDAV) through command line and registry.
 sources: https://www.howto-connect.com/enable-disable-windows-defender-antivirus-service-windows-10-windefend/
 effort: intermediate
 detection:
@@ -45,7 +45,6 @@ detection:
       - 'service'
       - 'start'
   condition: (powershell_command_stop_service and powershell_service_name) or (cmd_command_stop_service and cmd_service_name) or (cmd_command_disable_service and cmd_service_name) or (powershell_modify_registry and powershell_service_name) or (cmd_modify_registry and cmd_service_name)
-
 alert_category: intrusions
 alert_type: system-compromise
 alert_severity: 80
