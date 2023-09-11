@@ -1,5 +1,5 @@
 {
-    "name": "Post an HTTP request based on alert information",
+    "name": "[Training usecase] Post an HTTP request based on alert information",
     "description": "Send HTTP request to an external service based on alert data",
     "tags": ["alerts", "webhook"],
     "nodes": {

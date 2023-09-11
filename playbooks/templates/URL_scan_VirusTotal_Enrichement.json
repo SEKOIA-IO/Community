@@ -1,5 +1,5 @@
 {
-    "name": "Scan for url on VirusTotal",
+    "name": "[Training usecase] Scan for url on VirusTotal",
     "description": "Enrich to check if this url.domain is known from VirusTotal, directly from Sekoia.io",
     "tags": ["alerts", "enrichment"],
     "nodes": {
