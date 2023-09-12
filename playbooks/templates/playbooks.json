@@ -1,5 +1,25 @@
 [
     {
+        "file": "URL_scan_VirusTotal_Enrichement.json",
+        "name": "[Training usecase] Scan for url on VirusTotal",
+        "description": "Enrich to check if this url.domain is known from VirusTotal, directly from Sekoia.io",
+        "tags": [
+            "alerts",
+            "enrichement"
+        ],
+        "workspace": ["Operation Center"]
+    },
+    {
+        "file": "HTTP_request_Remediation.json",
+        "name": "[Training usecase] Post an HTTP request based on alert information",
+        "description": "Send HTTP request to an external service based on alert data",
+        "tags": [
+            "alerts",
+            "webhook"
+        ],
+        "workspace": ["Operation Center"]
+    },
+    {
         "file": "email_notification_on_alert_webhook.json",
         "name": "Mail Webhook notification on alert",
         "description": "Send an email about an alert when receiving a webhook event",
