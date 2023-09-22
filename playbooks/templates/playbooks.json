@@ -1,5 +1,16 @@
 [
     {
+        "file": "msteams_notifications.json",
+        "name": "Teams notification on alert",
+        "tags": [
+            "alerts",
+            "notifications",
+            "MS Teams"
+        ],
+        "description": "Notify by Teams when new alerts are created.",
+        "workspace": ["Operation Center"]
+    },
+    {
         "file": "URL_scan_VirusTotal_Enrichement.json",
         "name": "[Training usecase] Scan for url on VirusTotal",
         "description": "Enrich to check if this url.domain is known from VirusTotal, directly from Sekoia.io",
