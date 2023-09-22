@@ -1,6 +1,6 @@
 [
     {
-        "file": "msteams_notifications.json",
+        "file": "msteams_notification.json",
         "name": "Teams notification on alert",
         "tags": [
             "alerts",
