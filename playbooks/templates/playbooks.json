@@ -1,13 +1,13 @@
 [
     {
         "file": "msteams_notification.json",
-        "name": "Teams notification on alert",
+        "name": "MS Teams notification on alert",
         "tags": [
             "alerts",
             "notifications",
             "MS Teams"
         ],
-        "description": "Notify by Teams when new alerts are created.",
+        "description": "Notify by Microsoft Teams when new alerts are created.",
         "workspace": ["Operation Center"]
     },
     {
