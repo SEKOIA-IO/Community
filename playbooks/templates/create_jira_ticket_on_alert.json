@@ -22,31 +22,31 @@
       "type": "operator",
       "cases": [
         {
+          "left": "{{ node.1.urgency['value'] }}",
           "name": "P1",
+          "right": "[{{76}}, {{100}}]",
           "comparison": "range",
-          "left": "[76,100]",
-          "right": "{{ node.1.urgency['value'] | int}}",
           "description": "P1"
         },
         {
+          "left": "{{ node.1.urgency['value'] }}",
           "name": "P2",
+          "right": "[{{51}}, {{75}}]",
           "comparison": "range",
-          "left": "[51, 75]",
-          "right": "{{ node.1.urgency['value'] | int}}",
           "description": "P2"
         },
         {
+          "left": "{{ node.1.urgency['value'] }}",
           "name": "P3",
+          "right": "[{{26}}, {{50}}]",
           "comparison": "range",
-          "left": "[26, 50]",
-          "right": "{{ node.1.urgency['value'] | int}}",
           "description": "P3"
         },
         {
+          "left": "{{ node.1.urgency['value'] }}",
           "name": "P4",
+          "right": "[{{0}}, {{25}}]",
           "comparison": "range",
-          "left": "[0, 25]",
-          "right": "{{ node.1.urgency['value'] | int}}",
           "description": "P4"
         }
       ],
