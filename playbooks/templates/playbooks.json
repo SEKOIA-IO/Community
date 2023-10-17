@@ -1,5 +1,16 @@
 [
     {
+        "file": "create_jira_ticket_on_alert.json",
+        "name": "Jira ticket on alert",
+        "tags": [
+            "alerts",
+            "notifications",
+            "Jira"
+        ],
+        "description": "Create Jira ticket when new alerts are created.",
+        "workspace": ["Operation Center"]
+    },
+    {
         "file": "msteams_notification.json",
         "name": "MS Teams notification on alert",
         "tags": [

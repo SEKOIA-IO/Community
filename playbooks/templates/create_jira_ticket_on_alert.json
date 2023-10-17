@@ -1,0 +1,304 @@
+{
+  "name": "Jira ticket on alert",
+  "nodes": {
+    "1": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjYwIiBoZWlnaHQ9IjY2MCIgdmlld0JveD0iMCAwIDY2MCA0NTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik00MzYuMjk4IDM3My4yN0M1MTYuOTM1IDM3My4yNyA1ODIuNDY0IDMwNy42NCA1ODIuNDY0IDIyNy4xMDNDNTgyLjQ2NCAxNDYuNDY3IDUxNi44MzUgODAuOTM2OCA0MzYuMjk4IDgwLjkzNjhDMzU1Ljc2MiA4MC45MzY4IDI5MC4xMzIgMTQ2LjU2NyAyOTAuMTMyIDIyNy4xMDNDMjkwLjAzMiAzMDcuNjQgMzU1LjY2MSAzNzMuMjcgNDM2LjI5OCAzNzMuMjdaTTQzNi4yOTggMTE4Ljg1NEM0OTUuOTI1IDExOC44NTQgNTQ0LjQ0NyAxNjcuMzc2IDU0NC40NDcgMjI3LjAwM0M1NDQuNDQ3IDI4Ni42MyA0OTUuOTI1IDMzNS4xNTIgNDM2LjI5OCAzMzUuMTUyQzM3Ni42NzEgMzM1LjE1MiAzMjguMTQ5IDI4Ni43MyAzMjguMTQ5IDIyNy4wMDNDMzI4LjE0OSAxNjcuMzc2IDM3Ni42NzEgMTE4Ljg1NCA0MzYuMjk4IDExOC44NTRaTTE0Mi41NjUgMTE4Ljk1NEgxMDQuNzQ3VjMzNS4xNTJIMTQyLjU2NVYxMTguOTU0Wk0zMS45MTQ0IDQyMy44OTNINjI3LjM4NVYyOC4wMTI3SDMxLjkxNDRWNDIzLjg5M1pNNjIxLjQ4MiA0MTguMTlIMzcuNzE3VjMzLjcxNTNINjIxLjQ4MlY0MTguMTlaIiBmaWxsPSIjMkQyRTgzIi8+Cjwvc3ZnPgo=",
+      "name": "Get Alert",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "8"
+        ]
+      },
+      "arguments": {
+        "stix": false,
+        "uuid": "{{ store.alert.uuid }}"
+      },
+      "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    },
+    "8": {
+      "name": "Condition",
+      "type": "operator",
+      "cases": [
+        {
+          "left": "{{ node.1.urgency['value'] }}",
+          "name": "P1",
+          "right": "[{{76}}, {{100}}]",
+          "comparison": "range",
+          "description": "P1"
+        },
+        {
+          "left": "{{ node.1.urgency['value'] }}",
+          "name": "P2",
+          "right": "[{{51}}, {{75}}]",
+          "comparison": "range",
+          "description": "P2"
+        },
+        {
+          "left": "{{ node.1.urgency['value'] }}",
+          "name": "P3",
+          "right": "[{{26}}, {{50}}]",
+          "comparison": "range",
+          "description": "P3"
+        },
+        {
+          "left": "{{ node.1.urgency['value'] }}",
+          "name": "P4",
+          "right": "[{{0}}, {{25}}]",
+          "comparison": "range",
+          "description": "P4"
+        }
+      ],
+      "outputs": {
+        "P1": [
+          "36"
+        ],
+        "P2": [
+          "37"
+        ],
+        "P3": [
+          "38"
+        ],
+        "P4": [
+          "39"
+        ],
+        "else": [
+          "40"
+        ]
+      },
+      "subtype": "condition"
+    },
+    "19": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjYwIiBoZWlnaHQ9IjY2MCIgdmlld0JveD0iMCAwIDY2MCA0NTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik00MzYuMjk4IDM3My4yN0M1MTYuOTM1IDM3My4yNyA1ODIuNDY0IDMwNy42NCA1ODIuNDY0IDIyNy4xMDNDNTgyLjQ2NCAxNDYuNDY3IDUxNi44MzUgODAuOTM2OCA0MzYuMjk4IDgwLjkzNjhDMzU1Ljc2MiA4MC45MzY4IDI5MC4xMzIgMTQ2LjU2NyAyOTAuMTMyIDIyNy4xMDNDMjkwLjAzMiAzMDcuNjQgMzU1LjY2MSAzNzMuMjcgNDM2LjI5OCAzNzMuMjdaTTQzNi4yOTggMTE4Ljg1NEM0OTUuOTI1IDExOC44NTQgNTQ0LjQ0NyAxNjcuMzc2IDU0NC40NDcgMjI3LjAwM0M1NDQuNDQ3IDI4Ni42MyA0OTUuOTI1IDMzNS4xNTIgNDM2LjI5OCAzMzUuMTUyQzM3Ni42NzEgMzM1LjE1MiAzMjguMTQ5IDI4Ni43MyAzMjguMTQ5IDIyNy4wMDNDMzI4LjE0OSAxNjcuMzc2IDM3Ni42NzEgMTE4Ljg1NCA0MzYuMjk4IDExOC44NTRaTTE0Mi41NjUgMTE4Ljk1NEgxMDQuNzQ3VjMzNS4xNTJIMTQyLjU2NVYxMTguOTU0Wk0zMS45MTQ0IDQyMy44OTNINjI3LjM4NVYyOC4wMTI3SDMxLjkxNDRWNDIzLjg5M1pNNjIxLjQ4MiA0MTguMTlIMzcuNzE3VjMzLjcxNTNINjIxLjQ4MlY0MTguMTlaIiBmaWxsPSIjMkQyRTgzIi8+Cjwvc3ZnPgo=",
+      "name": "Comment Alert",
+      "type": "action",
+      "outputs": {
+        "default": []
+      },
+      "arguments": {
+        "uuid": "{{ store.alert.uuid }}",
+        "content": "New Jira ticket: https://_to_update_.atlassian.net/jira/servicedesk/projects/_to_update_/{{ node.18['json'][\"key\"] }}"
+      },
+      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+    },
+    "21": {
+      "name": "Condition",
+      "type": "operator",
+      "cases": [
+        {
+          "left": "{{ node.18.status_code | int }}",
+          "name": "status_check",
+          "right": "{{ 201 | int }}",
+          "comparison": "!=",
+          "description": "Status code check"
+        }
+      ],
+      "outputs": {
+        "else": [
+          "19"
+        ],
+        "status_check": [
+          "31"
+        ]
+      },
+      "subtype": "condition"
+    },
+    "27": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjYwIiBoZWlnaHQ9IjY2MCIgdmlld0JveD0iMCAwIDY2MCA0NTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik00MzYuMjk4IDM3My4yN0M1MTYuOTM1IDM3My4yNyA1ODIuNDY0IDMwNy42NCA1ODIuNDY0IDIyNy4xMDNDNTgyLjQ2NCAxNDYuNDY3IDUxNi44MzUgODAuOTM2OCA0MzYuMjk4IDgwLjkzNjhDMzU1Ljc2MiA4MC45MzY4IDI5MC4xMzIgMTQ2LjU2NyAyOTAuMTMyIDIyNy4xMDNDMjkwLjAzMiAzMDcuNjQgMzU1LjY2MSAzNzMuMjcgNDM2LjI5OCAzNzMuMjdaTTQzNi4yOTggMTE4Ljg1NEM0OTUuOTI1IDExOC44NTQgNTQ0LjQ0NyAxNjcuMzc2IDU0NC40NDcgMjI3LjAwM0M1NDQuNDQ3IDI4Ni42MyA0OTUuOTI1IDMzNS4xNTIgNDM2LjI5OCAzMzUuMTUyQzM3Ni42NzEgMzM1LjE1MiAzMjguMTQ5IDI4Ni43MyAzMjguMTQ5IDIyNy4wMDNDMzI4LjE0OSAxNjcuMzc2IDM3Ni42NzEgMTE4Ljg1NCA0MzYuMjk4IDExOC44NTRaTTE0Mi41NjUgMTE4Ljk1NEgxMDQuNzQ3VjMzNS4xNTJIMTQyLjU2NVYxMTguOTU0Wk0zMS45MTQ0IDQyMy44OTNINjI3LjM4NVYyOC4wMTI3SDMxLjkxNDRWNDIzLjg5M1pNNjIxLjQ4MiA0MTguMTlIMzcuNzE3VjMzLjcxNTNINjIxLjQ4MlY0MTguMTlaIiBmaWxsPSIjMkQyRTgzIi8+Cjwvc3ZnPgo=",
+      "name": "Manual Trigger",
+      "type": "trigger",
+      "outputs": {
+        "default": [
+          "29"
+        ]
+      },
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "trigger_uuid": "fc26eb9f-b272-4c15-b3bf-ace397c0dc57"
+    },
+    "28": {
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjYwIiBoZWlnaHQ9IjY2MCIgdmlld0JveD0iMCAwIDY2MCA0NTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik00MzYuMjk4IDM3My4yN0M1MTYuOTM1IDM3My4yNyA1ODIuNDY0IDMwNy42NCA1ODIuNDY0IDIyNy4xMDNDNTgyLjQ2NCAxNDYuNDY3IDUxNi44MzUgODAuOTM2OCA0MzYuMjk4IDgwLjkzNjhDMzU1Ljc2MiA4MC45MzY4IDI5MC4xMzIgMTQ2LjU2NyAyOTAuMTMyIDIyNy4xMDNDMjkwLjAzMiAzMDcuNjQgMzU1LjY2MSAzNzMuMjcgNDM2LjI5OCAzNzMuMjdaTTQzNi4yOTggMTE4Ljg1NEM0OTUuOTI1IDExOC44NTQgNTQ0LjQ0NyAxNjcuMzc2IDU0NC40NDcgMjI3LjAwM0M1NDQuNDQ3IDI4Ni42MyA0OTUuOTI1IDMzNS4xNTIgNDM2LjI5OCAzMzUuMTUyQzM3Ni42NzEgMzM1LjE1MiAzMjguMTQ5IDI4Ni43MyAzMjguMTQ5IDIyNy4wMDNDMzI4LjE0OSAxNjcuMzc2IDM3Ni42NzEgMTE4Ljg1NCA0MzYuMjk4IDExOC44NTRaTTE0Mi41NjUgMTE4Ljk1NEgxMDQuNzQ3VjMzNS4xNTJIMTQyLjU2NVYxMTguOTU0Wk0zMS45MTQ0IDQyMy44OTNINjI3LjM4NVYyOC4wMTI3SDMxLjkxNDRWNDIzLjg5M1pNNjIxLjQ4MiA0MTguMTlIMzcuNzE3VjMzLjcxNTNINjIxLjQ4MlY0MTguMTlaIiBmaWxsPSIjMkQyRTgzIi8+Cjwvc3ZnPgo=",
+      "name": "Alert Created",
+      "type": "trigger",
+      "outputs": {
+        "default": [
+          "30"
+        ]
+      },
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "trigger_uuid": "785583cf-4377-43ce-a5fb-f4572eb57456"
+    },
+    "29": {
+      "name": "Store",
+      "type": "operator",
+      "outputs": {
+        "default": [
+          "1"
+        ]
+      },
+      "subtype": "store",
+      "modifications": [
+        {
+          "key": "alert.uuid",
+          "type": "set",
+          "value": "{{ node.27.alert_uuid }}"
+        }
+      ]
+    },
+    "30": {
+      "name": "Store",
+      "type": "operator",
+      "outputs": {
+        "default": [
+          "1"
+        ]
+      },
+      "subtype": "store",
+      "modifications": [
+        {
+          "type": "set",
+          "key": "alert.uuid",
+          "value": "{{ node.28.alert_uuid }}"
+        }
+      ]
+    },
+    "31": {
+      "name": "Comment Alert",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "outputs": {
+        "default": []
+      },
+      "type": "action",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYxIiBoZWlnaHQ9IjI2MSIgdmlld0JveD0iMCAwIDI2MSAyNjEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTMwLjUzMiAwLjIzNjgyQzEwNC43NjcgMC4yMzA1MSA3OS41NzkxIDcuODY1IDU4LjE1MzIgMjIuMTc0N0MzNi43Mjc0IDM2LjQ4NDMgMjAuMDI2MiA1Ni44MjY0IDEwLjE2MiA4MC42MjgzQzAuMjk3ODQ4IDEwNC40MyAtMi4yODY2MiAxMzAuNjIzIDIuNzM2MDEgMTU1Ljg5M0M3Ljc1ODY0IDE4MS4xNjQgMjAuMTYyNSAyMDQuMzc4IDM4LjM3ODkgMjIyLjU5OUM1Ni41OTUyIDI0MC44MTkgNzkuODA1OSAyNTMuMjI5IDEwNS4wNzUgMjU4LjI1OEMxMzAuMzQ1IDI2My4yODcgMTU2LjUzOCAyNjAuNzA5IDE4MC4zNDMgMjUwLjg1QzIwNC4xNDcgMjQwLjk5MiAyMjQuNDkzIDIyNC4yOTYgMjM4LjgwOCAyMDIuODc0QzI1My4xMjMgMTgxLjQ1MSAyNjAuNzYzIDE1Ni4yNjUgMjYwLjc2MyAxMzAuNUMyNjAuNzI5IDk1Ljk2OCAyNDYuOTk5IDYyLjg1OTQgMjIyLjU4NCAzOC40Mzg2QzE5OC4xNjkgMTQuMDE3OCAxNjUuMDY0IDAuMjc5MDUgMTMwLjUzMiAwLjIzNjgyWk0xMzAuNTMyIDIzNi44MzVDMTA5LjQ5MyAyMzYuODM1IDg4LjkyNyAyMzAuNTk2IDcxLjQzNDMgMjE4LjkwN0M1My45NDE2IDIwNy4yMTggNDAuMzA4NCAxOTAuNjA0IDMyLjI1ODcgMTcxLjE2NkMyNC4yMDg5IDE1MS43MjggMjIuMTA0MSAxMzAuMzM5IDI2LjIxMDkgMTA5LjcwNUMzMC4zMTc3IDg5LjA3MSA0MC40NTE2IDcwLjExODIgNTUuMzMwNSA1NS4yNDM4QzcwLjIwOTQgNDAuMzY5MyA4OS4xNjUzIDMwLjI0MTQgMTA5LjgwMSAyNi4xNDA4QzEzMC40MzYgMjIuMDQwMiAxNTEuODIzIDI0LjE1MTEgMTcxLjI1OSAzMi4yMDY3QzE5MC42OTQgNDAuMjYyMyAyMDcuMzA1IDUzLjkwMDYgMjE4Ljk4OSA3MS4zOTY4QzIzMC42NzMgODguODkzIDIzNi45MDYgMTA5LjQ2MSAyMzYuODk5IDEzMC41QzIzNi44OTEgMTU4LjcxNCAyMjUuNjg0IDE4NS43NyAyMDUuNzQgMjA1LjcyNkMxODUuNzk2IDIyNS42ODIgMTU4Ljc0NiAyMzYuOTA2IDEzMC41MzIgMjM2LjkzMVYyMzYuODM1Wk0xNTYuMTA4IDcxLjQ5MTdDMTQ0LjY1NyA3MS40OTE3IDEzMy40NjQgNzQuODg3MiAxMjMuOTQzIDgxLjI0ODdDMTE0LjQyMiA4Ny42MTAzIDEwNy4wMDIgOTYuNjUyMiAxMDIuNjIgMTA3LjIzMUM5OC4yMzggMTE3LjgxIDk3LjA5MTMgMTI5LjQ1MSA5OS4zMjUyIDE0MC42ODFDMTAxLjU1OSAxNTEuOTEyIDEwNy4wNzMgMTYyLjIyNyAxMTUuMTcgMTcwLjMyNEMxMjMuMjY3IDE3OC40MjEgMTMzLjU4MiAxODMuOTM1IDE0NC44MTMgMTg2LjE2OUMxNTYuMDQzIDE4OC40MDMgMTY3LjY4NCAxODcuMjU2IDE3OC4yNjMgMTgyLjg3NEMxODguODQyIDE3OC40OTIgMTk3Ljg4NCAxNzEuMDcyIDIwNC4yNDUgMTYxLjU1MUMyMTAuNjA3IDE1Mi4wMyAyMTQuMDAyIDE0MC44MzcgMjE0LjAwMiAxMjkuMzg2QzIxNC4wMDIgMTE0LjAzMiAyMDcuOTAzIDk5LjMwNiAxOTcuMDQ1IDg4LjQ0ODdDMTg2LjE4OCA3Ny41OTEzIDE3MS40NjIgNzEuNDkxNyAxNTYuMTA4IDcxLjQ5MTdaTTE1Ni4xMDggMTYzLjMzN0MxNDkuMzkzIDE2My4zMzcgMTQyLjgyOSAxNjEuMzQ2IDEzNy4yNDYgMTU3LjYxNUMxMzEuNjYzIDE1My44ODUgMTI3LjMxMSAxNDguNTgyIDEyNC43NDEgMTQyLjM3OUMxMjIuMTcyIDEzNi4xNzUgMTIxLjUgMTI5LjM0OSAxMjIuODEgMTIyLjc2M0MxMjQuMTIgMTE2LjE3NyAxMjcuMzUzIDExMC4xMjggMTMyLjEwMSAxMDUuMzhDMTM2Ljg0OSAxMDAuNjMyIDE0Mi44OTggOTcuMzk4MyAxNDkuNDg0IDk2LjA4ODRDMTU2LjA3IDk0Ljc3ODQgMTYyLjg5NiA5NS40NTA3IDE2OS4xIDk4LjAyMDNDMTc1LjMwMyAxMDAuNTkgMTgwLjYwNiAxMDQuOTQxIDE4NC4zMzYgMTEwLjUyNUMxODguMDY3IDExNi4xMDggMTkwLjA1OCAxMjIuNjcyIDE5MC4wNTggMTI5LjM4NkMxOTAuMDUgMTM4LjM4OCAxODYuNDcgMTQ3LjAxOSAxODAuMTA1IDE1My4zODRDMTczLjc0IDE1OS43NDkgMTY1LjEwOSAxNjMuMzI4IDE1Ni4xMDggMTYzLjMzN1pNNjAuMzU4NCA4Mi42MjU3SDg1Ljk2NTdWMTc3LjI2MUg2MC4zNTg0VjgyLjYyNTdaIiBmaWxsPSIjNUQ0RkYyIi8+Cjwvc3ZnPgo=",
+      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+      "arguments": {
+        "uuid": "{{ store.alert.uuid }}",
+        "content": "Failed to create new Jira ticket"
+      }
+    },
+    "34": {
+      "name": "Request URL",
+      "module_uuid": "5894985f-91eb-46db-9306-cc5ac6463d3d",
+      "outputs": {
+        "default": [
+          "21"
+        ]
+      },
+      "type": "action",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNNC41IDExaC0yVjlIMXY2aDEuNXYtMi41aDJWMTVINlY5SDQuNXYyem0yLjUtLjVoMS41VjE1SDEwdi00LjVoMS41VjlIN3YxLjV6bTUuNSAwSDE0VjE1aDEuNXYtNC41SDE3VjloLTQuNXYxLjV6bTktMS41SDE4djZoMS41di0yaDJjLjggMCAxLjUtLjcgMS41LTEuNXYtMWMwLS44LS43LTEuNS0xLjUtMS41em0wIDIuNWgtMnYtMWgydjF6Ii8+PHBhdGggZD0iTTI0IDI0SDBWMGgyNHYyNHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=",
+      "action_uuid": "40bcf3c0-aa8b-4111-9b4e-f3caffccb4e5",
+      "arguments": {
+        "url": "https://_to_update_atlassian.net/rest/api/3/issue/",
+        "json": {
+          "fields": {
+            "labels": [
+              "alertType:{{ node.1.alert_type['value'] }}",
+              "categoryType:{{ node.1.alert_type['category'] }}"
+            ],
+            "project": {
+              "id": "_to_update_"
+            },
+            "summary": "{{ node.1.rule['name'] }}",
+            "priority": {
+              "name": "{{ store.priority.id }}"
+            },
+            "issuetype": {
+              "id": "_to_update_"
+            },
+            "components": []
+          }
+        },
+        "method": "post",
+        "headers": {
+          "authorization": "Basic _to_update_"
+        },
+        "verify_ssl": true,
+        "fail_on_http_error": true
+      }
+    },
+    "36": {
+      "type": "operator",
+      "subtype": "store",
+      "name": "Store",
+      "modifications": [
+        {
+          "type": "set",
+          "key": "priority.id",
+          "value": "P1"
+        }
+      ],
+      "outputs": {
+        "default": [
+          "34"
+        ]
+      }
+    },
+    "37": {
+      "type": "operator",
+      "subtype": "store",
+      "name": "Store",
+      "modifications": [
+        {
+          "type": "set",
+          "key": "priority.id",
+          "value": "P2"
+        }
+      ],
+      "outputs": {
+        "default": [
+          "34"
+        ]
+      }
+    },
+    "38": {
+      "type": "operator",
+      "subtype": "store",
+      "name": "Store",
+      "modifications": [
+        {
+          "type": "set",
+          "key": "priority.id",
+          "value": "P3"
+        }
+      ],
+      "outputs": {
+        "default": [
+          "34"
+        ]
+      }
+    },
+    "39": {
+      "type": "operator",
+      "subtype": "store",
+      "name": "Store",
+      "modifications": [
+        {
+          "type": "set",
+          "key": "priority.id",
+          "value": "P4"
+        }
+      ],
+      "outputs": {
+        "default": [
+          "34"
+        ]
+      }
+    },
+    "40": {
+      "name": "Comment Alert",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "outputs": {
+        "default": []
+      },
+      "type": "action",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYxIiBoZWlnaHQ9IjI2MSIgdmlld0JveD0iMCAwIDI2MSAyNjEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTMwLjUzMiAwLjIzNjgyQzEwNC43NjcgMC4yMzA1MSA3OS41NzkxIDcuODY1IDU4LjE1MzIgMjIuMTc0N0MzNi43Mjc0IDM2LjQ4NDMgMjAuMDI2MiA1Ni44MjY0IDEwLjE2MiA4MC42MjgzQzAuMjk3ODQ4IDEwNC40MyAtMi4yODY2MiAxMzAuNjIzIDIuNzM2MDEgMTU1Ljg5M0M3Ljc1ODY0IDE4MS4xNjQgMjAuMTYyNSAyMDQuMzc4IDM4LjM3ODkgMjIyLjU5OUM1Ni41OTUyIDI0MC44MTkgNzkuODA1OSAyNTMuMjI5IDEwNS4wNzUgMjU4LjI1OEMxMzAuMzQ1IDI2My4yODcgMTU2LjUzOCAyNjAuNzA5IDE4MC4zNDMgMjUwLjg1QzIwNC4xNDcgMjQwLjk5MiAyMjQuNDkzIDIyNC4yOTYgMjM4LjgwOCAyMDIuODc0QzI1My4xMjMgMTgxLjQ1MSAyNjAuNzYzIDE1Ni4yNjUgMjYwLjc2MyAxMzAuNUMyNjAuNzI5IDk1Ljk2OCAyNDYuOTk5IDYyLjg1OTQgMjIyLjU4NCAzOC40Mzg2QzE5OC4xNjkgMTQuMDE3OCAxNjUuMDY0IDAuMjc5MDUgMTMwLjUzMiAwLjIzNjgyWk0xMzAuNTMyIDIzNi44MzVDMTA5LjQ5MyAyMzYuODM1IDg4LjkyNyAyMzAuNTk2IDcxLjQzNDMgMjE4LjkwN0M1My45NDE2IDIwNy4yMTggNDAuMzA4NCAxOTAuNjA0IDMyLjI1ODcgMTcxLjE2NkMyNC4yMDg5IDE1MS43MjggMjIuMTA0MSAxMzAuMzM5IDI2LjIxMDkgMTA5LjcwNUMzMC4zMTc3IDg5LjA3MSA0MC40NTE2IDcwLjExODIgNTUuMzMwNSA1NS4yNDM4QzcwLjIwOTQgNDAuMzY5MyA4OS4xNjUzIDMwLjI0MTQgMTA5LjgwMSAyNi4xNDA4QzEzMC40MzYgMjIuMDQwMiAxNTEuODIzIDI0LjE1MTEgMTcxLjI1OSAzMi4yMDY3QzE5MC42OTQgNDAuMjYyMyAyMDcuMzA1IDUzLjkwMDYgMjE4Ljk4OSA3MS4zOTY4QzIzMC42NzMgODguODkzIDIzNi45MDYgMTA5LjQ2MSAyMzYuODk5IDEzMC41QzIzNi44OTEgMTU4LjcxNCAyMjUuNjg0IDE4NS43NyAyMDUuNzQgMjA1LjcyNkMxODUuNzk2IDIyNS42ODIgMTU4Ljc0NiAyMzYuOTA2IDEzMC41MzIgMjM2LjkzMVYyMzYuODM1Wk0xNTYuMTA4IDcxLjQ5MTdDMTQ0LjY1NyA3MS40OTE3IDEzMy40NjQgNzQuODg3MiAxMjMuOTQzIDgxLjI0ODdDMTE0LjQyMiA4Ny42MTAzIDEwNy4wMDIgOTYuNjUyMiAxMDIuNjIgMTA3LjIzMUM5OC4yMzggMTE3LjgxIDk3LjA5MTMgMTI5LjQ1MSA5OS4zMjUyIDE0MC42ODFDMTAxLjU1OSAxNTEuOTEyIDEwNy4wNzMgMTYyLjIyNyAxMTUuMTcgMTcwLjMyNEMxMjMuMjY3IDE3OC40MjEgMTMzLjU4MiAxODMuOTM1IDE0NC44MTMgMTg2LjE2OUMxNTYuMDQzIDE4OC40MDMgMTY3LjY4NCAxODcuMjU2IDE3OC4yNjMgMTgyLjg3NEMxODguODQyIDE3OC40OTIgMTk3Ljg4NCAxNzEuMDcyIDIwNC4yNDUgMTYxLjU1MUMyMTAuNjA3IDE1Mi4wMyAyMTQuMDAyIDE0MC44MzcgMjE0LjAwMiAxMjkuMzg2QzIxNC4wMDIgMTE0LjAzMiAyMDcuOTAzIDk5LjMwNiAxOTcuMDQ1IDg4LjQ0ODdDMTg2LjE4OCA3Ny41OTEzIDE3MS40NjIgNzEuNDkxNyAxNTYuMTA4IDcxLjQ5MTdaTTE1Ni4xMDggMTYzLjMzN0MxNDkuMzkzIDE2My4zMzcgMTQyLjgyOSAxNjEuMzQ2IDEzNy4yNDYgMTU3LjYxNUMxMzEuNjYzIDE1My44ODUgMTI3LjMxMSAxNDguNTgyIDEyNC43NDEgMTQyLjM3OUMxMjIuMTcyIDEzNi4xNzUgMTIxLjUgMTI5LjM0OSAxMjIuODEgMTIyLjc2M0MxMjQuMTIgMTE2LjE3NyAxMjcuMzUzIDExMC4xMjggMTMyLjEwMSAxMDUuMzhDMTM2Ljg0OSAxMDAuNjMyIDE0Mi44OTggOTcuMzk4MyAxNDkuNDg0IDk2LjA4ODRDMTU2LjA3IDk0Ljc3ODQgMTYyLjg5NiA5NS40NTA3IDE2OS4xIDk4LjAyMDNDMTc1LjMwMyAxMDAuNTkgMTgwLjYwNiAxMDQuOTQxIDE4NC4zMzYgMTEwLjUyNUMxODguMDY3IDExNi4xMDggMTkwLjA1OCAxMjIuNjcyIDE5MC4wNTggMTI5LjM4NkMxOTAuMDUgMTM4LjM4OCAxODYuNDcgMTQ3LjAxOSAxODAuMTA1IDE1My4zODRDMTczLjc0IDE1OS43NDkgMTY1LjEwOSAxNjMuMzI4IDE1Ni4xMDggMTYzLjMzN1pNNjAuMzU4NCA4Mi42MjU3SDg1Ljk2NTdWMTc3LjI2MUg2MC4zNTg0VjgyLjYyNTdaIiBmaWxsPSIjNUQ0RkYyIi8+Cjwvc3ZnPgo=",
+      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+      "arguments": {
+        "uuid": "{{ store.alert.uuid }}",
+        "content": "Failed to process Alert urgency"
+      }
+    }
+  },
+  "workspace": "Operation Center"
+}
