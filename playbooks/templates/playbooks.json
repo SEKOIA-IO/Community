@@ -129,6 +129,16 @@
         "workspace": ["Operation Center"]
     },
     {
+        "file": "Enrich_alerts_with_hostnames.json",
+        "name": "Enrich alerts with hostnames",
+        "description": "[Training usecase] Enrich alerts with hostnames coming from initial events.",
+        "tags": [
+            "alerts",
+            "enrichment"
+        ],
+        "workspace": ["Operation Center"]
+    },
+    {
         "file": "Shodan_search_to_observables.json",
         "name": "Shodan search to observables",
         "workspace": ["Intelligence Center"],
