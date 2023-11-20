@@ -1,0 +1,34 @@
+ByteFence
+C:\Program Files (x86)\Avira
+C:\Program Files (x86)\F-Secu
+C:\Program Files (x86)\IObit
+C:\Program Files (x86)\Sophos
+C:\Program Files\Malwarebytes
+C:\Program Files\Quick Heal
+C:\ProgramData\Emsisoft
+C:\ProgramData\Kaspersky Lab
+Comodo
+Comodo
+IObit Malware Fighter
+Kaspersky
+MalwareBytes
+Nod32
+Panda Security
+Quick Heal
+SUPER AntiSpyware
+Symantec
+bytefence.exe
+cis.exe (Comodo Internet security file)
+ecx
+ecx
+mcshield.exe (McAfee)
+mcuicnt.exe (component of McAfee Security Scan)
+norton
+psuaservice.exe
+qhsafetray.exe
+sdscan.exe
+superantispyware.exe
+totalav.exe
+uiseagnt.exe (Trend Micro related file)
+vkise.exe (COMODO internet security Essentials)
+|mbam.exe (Malwarebytes Anti-Malware)
