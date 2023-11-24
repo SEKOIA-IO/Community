@@ -76,7 +76,7 @@
       "arguments": {
         "uuid": "{{ node.0['alert_uuid'] }}",
         "author": "AbuseIPDB Playbook",
-        "content": "AbuseIPDB provides us this information about this IP {{ node.9['output'][0] }}:  \nConfidence of Abuse is {{ node.6['json']['data']['abuseConfidenceScore'] }}%: \n- Isp: \"{{ node.6['json']['data']['isp'] }}\", \n- Country: \"{{ node.6['json']['data']['countryCode'] }}\",\n- Domain: \"{{ node.6['json']['data']['domain'] }}\", \n- UsageType: \"{{ node.6['json']['data']['usageType'] }}\", \n- IsWhitelisted: \"{{ node.6['json']['data']['isWhitelisted'] }}\",\n- LastReportedAt: \"{{ node.6['json']['data']['lastReportedAt'] }}\",  \n[Direct link to AbuseIPDB](https://www.abuseipdb.com/check/{{ node.9['output'][0] }}) "
+        "content": "AbuseIPDB provides us this information about this IP {{ node.1['output'][0] }}:  \nConfidence of Abuse is {{ node.6['json']['data']['abuseConfidenceScore'] }}%: \n- Isp: \"{{ node.6['json']['data']['isp'] }}\", \n- Country: \"{{ node.6['json']['data']['countryCode'] }}\",\n- Domain: \"{{ node.6['json']['data']['domain'] }}\", \n- UsageType: \"{{ node.6['json']['data']['usageType'] }}\", \n- IsWhitelisted: \"{{ node.6['json']['data']['isWhitelisted'] }}\",\n- LastReportedAt: \"{{ node.6['json']['data']['lastReportedAt'] }}\",  \n[Direct link to AbuseIPDB](https://www.abuseipdb.com/check/{{ node.1['output'][0] }}) "
       },
       "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
       "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
