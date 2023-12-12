@@ -77,4 +77,3 @@ ukrnet[.]login-live[.]review
 ukrnet[.]pw
 yahoomailfree[.]pw
 yamail[.]press
-S
