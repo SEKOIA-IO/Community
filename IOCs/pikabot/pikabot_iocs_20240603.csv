@@ -1,0 +1,369 @@
+IOC, Valid From, Valid Until, Link
+Network traffic to 192.248.159.76 on port 2222,2024-02-29T00:00:00Z,2024-04-07T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--be58accf-186a-4af7-9f54-bcaf57417ce4
+Network traffic to 64.176.68.223 on port 13785,2023-12-13T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--5ade0a06-dd29-4189-b0d6-c9204d0c1e6b
+192.254.69.35,2023-10-02T00:00:00Z,2023-10-12T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--1a7847c6-7f0e-45d8-a30a-6d79a2ff662e
+Network traffic to 192.248.151.140 on port 23399,2023-12-07T00:00:00Z,2024-05-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--1d35064d-7feb-4dd6-a9fb-a7eb8ef9b091
+Network traffic to 45.195.200.116 on port 2078,2023-05-21T00:00:00Z,2023-06-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--2cd18531-566d-4de1-9c4a-b7d49674bc5c
+Network traffic to 84.46.240.42 on port 2083,2024-03-05T00:00:00Z,2024-04-12T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--6a30e2a7-fcb2-4565-9c0c-03c5d383df18
+Network traffic to 95.179.191.137 on port 5938,2024-02-08T00:00:00Z,2024-03-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9943e2d9-fc54-4554-86d8-a7bc39467f2b
+Network traffic to 185.179.217.216 on port 9785,2024-02-16T00:00:00Z,2024-03-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--cd913546-ad97-4fa1-9c9f-abc178cb0d4b
+Network traffic to 207.246.111.127 on port 13786,2023-11-06T00:00:00Z,2023-12-14T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--d139f44f-5232-4f59-b506-8748ed44ab7a
+Network traffic to 45.56.71.218 on port 13724,2023-12-18T00:00:00Z,2024-01-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--69408ce1-8340-44b5-afb6-5ff593e9ca94
+Network traffic to 31.210.51.93 on port 443,2023-12-14T00:00:00Z,2024-01-13T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a10e018c-5690-4845-b6ab-dde0f5e6669c
+Network traffic to 51.161.81.190 on port 13721,2023-12-18T00:00:00Z,2024-02-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--683ba123-9437-4e82-aced-2565574a6e6d
+Network traffic to 129.153.135.83 on port 2078,2023-05-17T00:00:00Z,2023-08-18T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--eddb2903-7199-4f55-869b-a312bd478038
+Network traffic to 85.215.218.128 on port 5243,2023-10-23T00:00:00Z,2023-11-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--200bddce-2b75-4ba1-b412-ba57dba19069
+Network traffic to 167.179.103.206 on port 2083,2023-11-03T00:00:00Z,2023-12-09T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--1ae07395-bb6e-4640-854e-886eee2f9adb
+Network traffic to 45.33.85.73 on port 13721,2023-11-01T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--23dd5200-0633-4cc7-8356-1a6ddcca1c5e
+Network traffic to 45.76.103.152 on port 13720,2023-11-06T00:00:00Z,2023-12-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--61c1094d-b1e6-4d7f-9a36-c06d909874ea
+205.204.71.238,2023-02-01T00:00:00Z,2023-03-02T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f63dd9c5-aa5a-4458-b577-5438cb7e0838
+Network traffic to 108.61.78.17 on port 13783,2024-02-14T00:00:00Z,2024-03-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a2a844eb-6f47-4fbb-bae2-e89653feafdd
+Network traffic to 45.32.140.39 on port 2078,2023-11-03T00:00:00Z,2023-12-09T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--71668802-3bb6-48b4-925c-01fcc32dddcd
+Network traffic to 70.34.196.219 on port 2226,2023-12-18T00:00:00Z,2024-01-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--d9c8ecfb-9511-41e7-b319-f2531faa7de6
+Network traffic to 70.34.199.64 on port 9785,2024-03-06T00:00:00Z,2024-04-05T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--2c6ce7be-9c11-4278-9004-9e060fc2f34f
+Network traffic to 70.34.242.159 on port 5243,2023-11-13T00:00:00Z,2023-12-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--b663d0c6-7b7d-4ad2-b5a4-9d349610d8bb
+Network traffic to 20.67.206.46 on port 443,2024-04-24T00:00:00Z,2024-05-24T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--19ce0a2b-9652-4516-8078-2a2b78e8583c
+Network traffic to 172.232.170.25 on port 13724,2023-12-15T00:00:00Z,2024-01-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--abbdd29c-cfd2-4362-8d98-341e3410ee2a
+Network traffic to 172.232.189.219 on port 2224,2024-02-14T00:00:00Z,2024-03-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a3793333-303d-4159-ab07-52013cd240bd
+24.199.109.6,2023-07-24T00:00:00Z,2023-08-10T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--62e901c8-bf64-4a89-ba3c-c06d2bed1acd
+Network traffic to 192.9.135.73 on port 1194,2023-09-25T00:00:00Z,2024-06-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--0d472c72-f833-49f3-8b9d-7f673e8ce9e9
+Network traffic to 185.106.94.174 on port 5000,2023-10-11T00:00:00Z,2023-11-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a6db73b7-2f6c-41c6-bdb4-e4529e9d235b
+Network traffic to 85.239.243.3 on port 23399,2023-12-23T00:00:00Z,2024-01-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--2e6e9dea-2d07-4600-822e-f172b8b98891
+Network traffic to 51.79.143.215 on port 13783,2023-10-01T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a638c3ec-1801-4587-8fea-2bd6b026cec5
+Network traffic to 104.156.233.235 on port 2226,2024-02-14T00:00:00Z,2024-03-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--2ce03e68-ec04-4391-8c7c-20040d557ff0
+Network traffic to 64.176.13.28 on port 2083,2023-12-18T00:00:00Z,2024-01-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--40a59f9f-8e5d-46dd-89d5-3e5475829f8d
+Network traffic to 45.76.22.139 on port 13786,2023-12-18T00:00:00Z,2024-01-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--56d74d27-1d51-439a-9cb7-d8d1f7126280
+Network traffic to 154.38.185.135 on port 13782,2023-12-20T00:00:00Z,2024-01-27T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--caf8bd67-379a-41e1-8403-9dd1e8794d34
+Network traffic to 172.232.162.62 on port 2083,2023-12-20T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9f4faa2a-757c-4eb6-bff9-2bf73c8c9f41
+Network traffic to 139.144.215.192 on port 13785,2023-10-24T00:00:00Z,2023-11-30T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--5d62dd17-5baf-4604-96f2-1a38a184e52f
+Network traffic to 31.220.96.162 on port 2224,2023-12-08T00:00:00Z,2024-01-18T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7f526e70-8e77-48fc-9060-d6a8e18b57ca
+Network traffic to 154.61.75.156 on port 2078,2023-10-01T00:00:00Z,2024-01-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--b12c11c9-eb1c-4fb1-bc00-364370ce675d
+Network traffic to 213.199.41.33 on port 13721,2024-03-26T00:00:00Z,2024-05-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--027debb9-476d-4adb-9f05-963d15d3663c
+Network traffic to 65.20.74.26 on port 2221,2023-12-07T00:00:00Z,2024-01-14T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--cbbf7568-56d8-4ad5-b083-038ae9c0d082
+Network traffic to 69.164.213.141 on port 5631,2023-12-19T00:00:00Z,2024-01-18T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--d9bdfd44-ad20-42ba-a933-b2a8267750b8
+Network traffic to 209.126.86.48 on port 1194,2024-03-06T00:00:00Z,2024-04-17T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8146fc8d-256f-4e29-bcc0-11bc65b3e8c6
+Network traffic to 84.247.157.112 on port 13783,2024-03-26T00:00:00Z,2024-05-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a5ee4b5e-6ab1-48cd-aada-3c294b97f1b2
+Network traffic to 95.179.206.77 on port 13782,2023-11-09T00:00:00Z,2023-12-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--92d42640-ecc5-465f-8ca5-5a8c0f5042a2
+91.134.126.43,2023-05-17T00:00:00Z,2023-06-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--00dc1379-28af-4618-a01f-b7e0b7f04aaf
+Network traffic to 172.232.163.182 on port 2222,2023-12-16T00:00:00Z,2024-01-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ea599f25-2a5b-4fd1-9a60-e83064a256d4
+Network traffic to 172.233.187.145 on port 2226,2023-10-24T00:00:00Z,2023-12-02T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--36cf5603-4c28-45c5-a219-53a328875787
+Network traffic to 139.180.216.25 on port 2967,2023-10-01T00:00:00Z,2023-12-27T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--beb3c3f0-d31c-4489-bb63-39d2eb15f94c
+Network traffic to 64.176.5.228 on port 13783,2023-10-01T00:00:00Z,2023-12-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--954e0daf-1757-4224-835f-757a98f91edf
+Network traffic to 139.84.235.8 on port 2225,2023-12-07T00:00:00Z,2024-05-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--77f1d4de-dbe3-4e3a-9bfd-f73319129bcb
+Network traffic to 154.211.12.126 on port 2967,2023-12-01T00:00:00Z,2024-02-05T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--76902f43-b7e9-49af-808b-a5f1efc3c2e3
+Network traffic to 198.44.187.12 on port 2224,2024-02-14T00:00:00Z,2024-03-27T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--51984390-2a1f-4ce5-80e5-6c4275119f7b
+Network traffic to 172.232.189.146 on port 2078,2023-12-20T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f79f1a37-ee1a-4454-b1d5-da78636f3200
+Network traffic to 139.84.237.229 on port 2967,2024-02-08T00:00:00Z,2024-03-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--6c0ceb66-5250-4e48-bc41-cf68ce204362
+Network traffic to 155.138.203.158 on port 1194,2023-12-11T00:00:00Z,2024-04-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--088b834b-3371-444a-83a3-8ab496ce7a44
+Network traffic to 78.141.223.212 on port 1194,2023-12-19T00:00:00Z,2024-01-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--da117a25-fb38-4117-8cd7-6a48b5917529
+104.243.45.170,2023-10-02T00:00:00Z,2023-10-12T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8cbfdbda-04cd-43f9-a488-3c85572aa42d
+Network traffic to 65.20.98.24 on port 13783,2023-12-11T00:00:00Z,2024-04-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--697056ca-55da-40f0-b102-c5b1ad306727
+Network traffic to 37.60.242.85 on port 9785,2024-02-08T00:00:00Z,2024-04-10T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ccb374f7-aee4-49d7-84d8-9fb2acd47155
+Network traffic to 45.137.192.84 on port 2223,2023-12-07T00:00:00Z,2024-01-17T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--639f6bcf-e828-4ea9-a0a1-c8f74a46f7af
+Network traffic to 139.180.137.30 on port 5000,2023-12-20T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--5401b8e6-316a-4556-8e68-2400ef6770d2
+Network traffic to 109.123.227.104 on port 2221,2024-01-23T00:00:00Z,2024-04-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--4fc27a4f-a460-49a9-aaf4-a981e1a71782
+154.12.236.248,2024-03-06T00:00:00Z,2024-04-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ed1f32b3-d2fa-4863-b36e-33e00de6e57c
+Network traffic to 45.33.69.35 on port 5242,2023-11-15T00:00:00Z,2023-12-22T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--4d28ea1b-066c-413e-9699-0c4bba23a4c5
+Network traffic to 89.117.23.186 on port 5632,2024-02-19T00:00:00Z,2024-04-17T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--56bc9077-2e3c-4f33-a2aa-108e723c423e
+Network traffic to 78.141.222.198 on port 13786,2023-12-06T00:00:00Z,2024-05-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--fc6fd9d3-2a5e-48ea-b7ea-3f4a00bfce62
+Network traffic to 109.123.227.167 on port 5938,2023-12-21T00:00:00Z,2024-01-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--973438b4-00e8-42d3-94aa-9e5e6dc2d34f
+Network traffic to 172.232.164.77 on port 5000,2023-12-13T00:00:00Z,2024-01-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--180566f5-a210-4283-873a-97c066fd51e7
+Network traffic to 79.141.175.96 on port 2078,2023-10-03T00:00:00Z,2023-11-02T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--235ffb32-9095-4994-8c68-e9e6180b9c26
+Network traffic to 86.38.225.109 on port 13724,2024-02-14T00:00:00Z,2024-03-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--0a4dd7f7-6692-4d31-93e8-ad3841e3a72e
+Network traffic to 172.232.190.57 on port 2224,2024-02-17T00:00:00Z,2024-03-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3b154ec2-68ec-4174-b4ae-7b319e1a0af6
+Network traffic to 67.21.33.188 on port 2222,2023-05-21T00:00:00Z,2023-06-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--23b5682d-f49c-4a15-8eac-d0c23bcbb23e
+Network traffic to 154.201.81.8 on port 2967,2024-02-14T00:00:00Z,2024-03-15T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--5fb59b1a-9cee-4fb8-b456-906c42169490
+Network traffic to 104.238.144.171 on port 2221,2023-11-06T00:00:00Z,2023-12-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3789d182-4c98-427c-82ad-f4bd6c0e810e
+Network traffic to 149.28.100.66 on port 5243,2023-12-18T00:00:00Z,2024-01-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7c9f1683-2eae-41b3-85f2-1ae9b5c70ab3
+Network traffic to 149.28.189.244 on port 2222,2023-12-17T00:00:00Z,2024-01-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--05af47e7-c5ad-4fe9-95d5-d0b0e9565920
+Network traffic to 103.82.243.5 on port 13785,2024-02-13T00:00:00Z,2024-05-03T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--26060406-4903-449a-81d6-dacbbbc8b68e
+Network traffic to 192.248.174.52 on port 5631,2024-01-23T00:00:00Z,2024-04-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--744cd7c0-5092-4449-ab45-ed7061a50f90
+Network traffic to 167.86.96.3 on port 2222,2023-10-03T00:00:00Z,2023-11-02T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--85ade58f-c2fd-4835-a1d0-568c9adef69c
+Network traffic to 64.176.67.194 on port 2967,2023-10-01T00:00:00Z,2023-10-31T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--71751c60-166c-41d4-8980-8aa8d39f835b
+Network traffic to 155.138.132.163 on port 13786,2023-11-15T00:00:00Z,2023-12-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--10add378-c7e4-48ba-b74a-f3fcac4592f5
+Network traffic to 65.20.66.218 on port 5938,2024-02-08T00:00:00Z,2024-03-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--af614cdb-f4e2-4f18-b1d5-965720acf8fe
+Network traffic to 217.69.14.55 on port 13724,2023-11-09T00:00:00Z,2023-12-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--94563e54-3920-4894-b716-fe8fab8387b5
+Network traffic to 91.215.85.216 on port 443,2023-10-18T00:00:00Z,2023-11-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--32744084-0bff-4651-b799-c7362d0207d1
+Network traffic to 65.20.82.17 on port 5938,2023-10-30T00:00:00Z,2023-12-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--6496ff32-a99e-4633-a14e-2bc884c20027
+Network traffic to 109.123.227.166 on port 5938,2023-12-21T00:00:00Z,2024-01-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f50217ac-2f44-4d2d-8cef-76a91dfd1adb
+178.18.246.136,2024-02-09T00:00:00Z,2024-03-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8e127fd8-8878-4edc-8017-8f1dde703f71
+Network traffic to 95.179.135.3 on port 2225,2024-02-14T00:00:00Z,2024-03-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--4f899275-9b1e-40b6-b3b5-0f88652510a6
+Network traffic to 216.128.179.120 on port 2967,2023-12-20T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8ade32c9-ca70-4140-8303-35cb6bd71f50
+Network traffic to 172.232.190.249 on port 5631,2023-12-20T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--fc2ff3bb-b3b0-4b63-b2f1-7b2a782f7168
+Network traffic to 172.232.173.141 on port 2226,2023-12-01T00:00:00Z,2024-01-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--be8191e4-b4f0-4c13-bfd9-3b306767db6e
+172.232.189.10,2024-02-14T00:00:00Z,2024-02-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--c3bac314-d7a5-4a29-abd4-250f06f65d07
+Network traffic to 65.20.82.254 on port 5243,2023-12-11T00:00:00Z,2024-04-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--6f2ff7af-b011-4b49-89d0-e024b049f067
+Network traffic to 67.21.33.208 on port 2078,2023-05-21T00:00:00Z,2023-06-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9e2be64f-a643-4ac5-841a-c014d63e460f
+Network traffic to 149.28.252.250 on port 5000,2023-12-20T00:00:00Z,2024-01-27T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--b5c9f4b7-1dcc-4720-b2e1-c7e034bc09e6
+23.227.193.224,2023-02-01T00:00:00Z,2023-03-02T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--5a8b454d-b4a4-4230-9455-bcd7c48ab764
+Network traffic to 57.128.108.132 on port 13785,2023-12-01T00:00:00Z,2024-01-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--b0262005-cd47-4068-99d0-ee04b26c031e
+Network traffic to 64.176.67.92 on port 2078,2023-12-20T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f52fc8ec-20a3-4c74-920e-ec9b529d9b26
+Network traffic to 85.239.237.153 on port 5632,2023-12-21T00:00:00Z,2024-01-28T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--45eaaebe-10ae-4f99-96bc-7c988a1c8587
+Network traffic to 86.38.225.106 on port 2221,2024-02-12T00:00:00Z,2024-04-15T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--942cea67-9bd3-4c7d-ba52-748ec04e4743
+Network traffic to 45.137.192.63 on port 23399,2023-12-08T00:00:00Z,2024-01-17T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3b403e83-c39c-443c-b5f7-db73dd5a8440
+94.16.122.250,2023-10-09T00:00:00Z,2023-10-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--2a567794-51fe-4a38-834f-c87003259903
+Network traffic to 91.215.85.197 on port 443,2023-10-18T00:00:00Z,2023-11-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8459325d-e560-44fa-b2af-ce62f7122987
+Network traffic to 109.123.227.50 on port 13782,2023-12-11T00:00:00Z,2024-01-18T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ea65c298-6fee-4d18-92d7-754e8e3e63e9
+Network traffic to 139.180.185.171 on port 2222,2024-01-23T00:00:00Z,2024-04-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--5108b31d-c4d4-4db5-b43f-2ff158c5bb99
+Network traffic to 45.85.235.39 on port 2078,2023-05-17T00:00:00Z,2023-06-30T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--92cf7404-372a-48a7-bf52-3793b902ec21
+Network traffic to 172.232.175.59 on port 5938,2023-12-13T00:00:00Z,2024-01-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8650300e-7504-4f1c-a89d-e0a06411fdbe
+Network traffic to 65.20.77.81 on port 5242,2023-12-06T00:00:00Z,2024-01-05T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--1130540a-0395-4be9-9321-3db06299c735
+Network traffic to 109.107.182.14 on port 443,2023-10-20T00:00:00Z,2023-11-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e44b8cdd-f49f-4360-90ee-ae19efea6c62
+Network traffic to 154.12.233.66 on port 2224,2024-02-19T00:00:00Z,2024-04-17T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--20fc6708-ef56-4e98-a4d2-5c9c38b43e6e
+Network traffic to 89.117.23.34 on port 5938,2024-02-19T00:00:00Z,2024-03-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--df67bbe4-0c1c-4933-9936-7d60233e47e1
+Network traffic to 137.220.55.190 on port 2223,2023-10-01T00:00:00Z,2023-12-27T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--1112b8c1-ef80-46a0-8153-554025648423
+Network traffic to 103.231.93.15 on port 5631,2023-10-23T00:00:00Z,2023-12-03T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--2be3cefd-5834-4c78-a694-227965295dca
+Network traffic to 172.234.250.178 on port 2222,2024-05-06T00:00:00Z,2024-06-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--80296e96-5339-4bdd-bfe2-ab005b047c80
+Network traffic to 172.232.162.198 on port 13721,2023-12-14T00:00:00Z,2024-01-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8c3a1b1b-4764-4426-976b-610a8182a32d
+Network traffic to 158.220.103.150 on port 5632,2023-12-08T00:00:00Z,2024-01-17T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f2dd3a65-6104-46e5-8bcd-ab53a7e9a888
+Network traffic to 95.179.212.178 on port 13782,2023-12-13T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--95e119d7-e6ad-4478-bc36-ecb5660d33df
+Network traffic to 139.99.222.29 on port 5631,2023-12-01T00:00:00Z,2024-01-14T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--991b54b1-e5ba-4a25-b233-18032263045b
+Network traffic to 45.32.244.94 on port 9785,2023-11-17T00:00:00Z,2023-12-24T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--69c9f232-0f27-4f40-ba93-9221f513ed3d
+Network traffic to 144.64.204.81 on port 2078,2023-10-04T00:00:00Z,2023-11-03T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--40b7f0cb-8c4c-445b-9b48-e628c6b50611
+Network traffic to 45.79.174.92 on port 1194,2023-10-28T00:00:00Z,2023-12-05T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9faee29e-5640-47c0-a73c-26768df148e2
+Network traffic to 172.232.208.90 on port 2223,2024-03-26T00:00:00Z,2024-05-05T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--c7da53a9-f438-419a-ac8b-59695fbc6673
+Network traffic to 158.220.95.214 on port 5243,2024-03-26T00:00:00Z,2024-05-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--949e7f9c-4308-484d-ac68-d4ceba4369b6
+Network traffic to 78.128.112.208 on port 443,2023-10-11T00:00:00Z,2023-11-24T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--4e908f58-3db2-41d2-aee6-b9bfcfca8433
+45.76.251.190,2024-02-13T00:00:00Z,2024-02-27T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--46d8c7ed-a3a8-4f80-a635-2b0fedaff878
+Network traffic to 172.232.188.4 on port 2226,2023-12-18T00:00:00Z,2024-01-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--d9d575f3-377a-47e1-bca5-d3f70af470da
+Network traffic to 158.247.253.155 on port 2225,2023-10-01T00:00:00Z,2023-12-27T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--40a11c7d-dac2-4655-aaa7-e1615c617ddf
+Network traffic to 80.85.140.152 on port 5938,2023-10-11T00:00:00Z,2023-11-24T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--0dcf9775-a1a3-4afb-bcbb-ee2b8f7d9d69
+Network traffic to 80.85.140.43 on port 9785,2023-10-17T00:00:00Z,2023-11-24T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7cfce549-22eb-40ce-b5b7-277084aac01f
+Network traffic to 139.180.168.216 on port 13786,2023-11-13T00:00:00Z,2023-12-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--2c21684a-c372-4aa9-a58e-3da4751d780b
+Network traffic to 172.232.189.83 on port 5243,2023-11-15T00:00:00Z,2023-12-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--dc08f8fd-5125-48e1-90d7-97234c962f6f
+Network traffic to 104.237.145.83 on port 2083,2023-11-01T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e2eb09db-0c1e-4cae-8d5d-6a86de884de6
+Network traffic to 109.107.182.12 on port 443,2023-10-20T00:00:00Z,2023-11-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--08f7785a-9c0a-4cd2-8c60-13375b9c2101
+Network traffic to 202.182.121.203 on port 2083,2023-10-30T00:00:00Z,2023-11-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--64429749-5f5c-4b91-bcc9-4fb8d22f789b
+Network traffic to 209.126.9.47 on port 2078,2023-10-03T00:00:00Z,2023-11-02T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7b26570f-6a71-44e5-823b-819fa297ad94
+23.226.138.161,2024-02-09T00:00:00Z,2024-03-07T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--975b4faa-519a-4b76-863b-f8e2655b636f
+Network traffic to 216.128.176.211 on port 2222,2023-10-27T00:00:00Z,2023-12-04T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8366ea58-1b54-41da-94ee-374b47a3b36b
+Network traffic to 51.68.147.114 on port 2083,2023-10-01T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--81f38de3-4fc7-4c4c-a856-dcb107b4a76a
+Network traffic to 192.248.183.93 on port 5632,2023-12-13T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e2124890-7375-4529-9963-5f70f608193c
+Network traffic to 154.80.229.112 on port 2078,2023-05-21T00:00:00Z,2023-07-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--23ceb86c-e52f-47ab-8197-4be143fa3dd1
+Network traffic to 172.232.172.228 on port 2221,2023-12-21T00:00:00Z,2024-01-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--cc2dee8d-b56c-4827-9061-7161d89d15e4
+Network traffic to 45.32.253.21 on port 2083,2023-12-13T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9970f164-ddea-408f-b846-76bbf4fcabb0
+Network traffic to 199.247.8.136 on port 13786,2023-12-13T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--fb569bb1-a4af-41f2-ab27-1b1d66dca580
+Network traffic to 109.123.227.170 on port 5632,2023-12-21T00:00:00Z,2024-01-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--d1ff79c3-c0e5-42fb-940b-c19e6282aebc
+Network traffic to 45.131.108.250 on port 1194,2023-10-04T00:00:00Z,2023-11-03T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--2dd37807-a1b0-4fcf-b415-148771168971
+Network traffic to 46.250.253.58 on port 5243,2023-12-20T00:00:00Z,2024-01-27T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--acb2b6d0-3908-4cc4-a747-c8525e12352a
+Network traffic to 139.144.97.180 on port 2224,2023-10-31T00:00:00Z,2023-11-30T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a493d158-551c-4061-83bb-078c634f8bfd
+Network traffic to 148.113.141.220 on port 2224,2024-02-19T00:00:00Z,2024-03-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3311157e-c85c-40c0-8e0f-9d94ce2b444e
+Network traffic to 97.107.131.224 on port 13782,2023-11-15T00:00:00Z,2023-12-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--dddbc8f9-0011-4e40-b422-4d82f8c9e871
+Network traffic to 45.32.204.175 on port 2222,2024-02-20T00:00:00Z,2024-03-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--560b3055-4f35-4ce2-a94d-a30fd14198ae
+45.182.189.106,2023-02-01T00:00:00Z,2023-02-10T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--4b2f92e3-a56e-4134-adfc-b7efbac13e63
+Network traffic to 51.68.146.19 on port 5242,2023-10-23T00:00:00Z,2023-12-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ea858e77-0860-46ea-a41b-24531e38ceb2
+Network traffic to 15.235.47.80 on port 23399,2023-10-01T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--5ba85333-0299-49bc-b4a8-3a984e3ad0bd
+Network traffic to 66.135.31.146 on port 2078,2023-12-16T00:00:00Z,2024-01-15T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--536eac95-6997-410c-b971-bdf226c19a21
+Network traffic to 54.84.110.180 on port 443,2024-02-21T00:00:00Z,2024-03-22T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--4159b71c-6e5c-435f-9550-bca8ca4bc14b
+8.20.255.249,2023-06-19T00:00:00Z,2023-08-24T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--091d59e3-696e-4a10-b392-f6cc1a9449a7
+Network traffic to 158.247.215.68 on port 2225,2023-11-09T00:00:00Z,2023-12-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7ce4c7d5-3610-431d-9f50-6730c8a771c8
+Network traffic to 15.235.202.109 on port 2226,2023-10-01T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--0fe0d29d-81de-450b-889a-8749d04e94cf
+Network traffic to 158.220.80.157 on port 9785,2024-02-08T00:00:00Z,2024-03-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9d7e8439-75e4-40eb-aac8-98d476bb983e
+Network traffic to 46.250.241.197 on port 5000,2023-12-07T00:00:00Z,2024-01-15T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--c6408479-ade5-4c19-a0db-d91f2c9a11fa
+Network traffic to 139.144.31.103 on port 1194,2023-10-28T00:00:00Z,2023-12-04T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--bbc05fc9-8eab-4af6-a3b2-10c983d97c3a
+213.142.147.218,2023-02-01T00:00:00Z,2023-02-10T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--5f2d93d3-338e-4bf6-9359-ecc7cd798c9d
+Network traffic to 88.214.27.74 on port 443,2023-10-11T00:00:00Z,2023-11-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--631ddcff-ab52-48f7-b0a2-7dcf46d1522a
+Network traffic to 38.242.240.28 on port 1194,2023-10-03T00:00:00Z,2023-11-13T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--d2a8c1f4-0547-4e32-b0b9-1fef0c8c2d52
+5.61.43.38,2023-02-01T00:00:00Z,2023-03-02T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--c5d820bb-605d-4bf0-95fb-5fb90d3f3bff
+Network traffic to 102.129.139.65 on port 32999,2023-10-04T00:00:00Z,2023-11-12T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a71944f1-b562-4259-9a21-15581188cd5b
+37.1.215.220,2023-01-31T00:00:00Z,2023-03-09T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3930d189-e5d6-4b5e-a40c-6b9d13d3593a
+Network traffic to 109.123.227.174 on port 23399,2023-12-21T00:00:00Z,2024-01-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3bfa2748-ecf9-442a-9dd0-471bf26c3152
+Network traffic to 109.123.227.54 on port 13785,2023-12-11T00:00:00Z,2024-01-18T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8cce092b-681b-4659-b087-3d647a46ff30
+158.247.240.58,2024-03-06T00:00:00Z,2024-04-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--6e795fb2-bf41-4d0b-bc5f-07700abf2727
+Network traffic to 172.232.24.58 on port 2226,2023-10-24T00:00:00Z,2023-11-30T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--db510c6e-6496-432b-b0d1-6c7d786408ef
+Network traffic to 172.233.186.50 on port 5632,2023-10-24T00:00:00Z,2023-11-30T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--949da343-8af0-4297-baa0-de3fa97fb192
+Network traffic to 158.220.90.198 on port 2083,2023-12-07T00:00:00Z,2024-01-18T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f937d192-b756-4d2c-b2d7-badbb3d66c63
+Network traffic to 64.23.199.206 on port 1194,2024-03-26T00:00:00Z,2024-05-03T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--fc2c01f0-17c6-4de4-9abb-cb93fd94a020
+Network traffic to 154.12.255.254 on port 23399,2023-11-09T00:00:00Z,2023-12-17T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--35414142-c33c-4cf9-95e5-5ee4d3f4edc1
+Network traffic to 46.250.241.188 on port 1194,2023-11-18T00:00:00Z,2023-12-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a5ebce22-55c0-40f9-b747-9aa99f2ee42f
+Network traffic to 64.176.218.254 on port 9785,2023-12-07T00:00:00Z,2024-01-14T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9c715f3c-72c7-4f2c-a336-382271add873
+37.1.208.52,2023-02-01T00:00:00Z,2023-03-02T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--30d7be65-db20-4e7c-9a2c-5d76868f6f71
+Network traffic to 176.58.102.36 on port 2225,2023-10-24T00:00:00Z,2023-11-30T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--fa1c7d57-d708-4658-a907-c61b7ca61764
+154.53.55.165,2024-03-06T00:00:00Z,2024-04-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--92b2abeb-309e-4543-b6e0-cfe614286911
+Network traffic to 45.77.55.133 on port 2078,2024-02-20T00:00:00Z,2024-03-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7c722cb1-0ff6-41b4-918c-52d7a7a4c387
+Network traffic to 45.76.96.172 on port 2223,2023-12-18T00:00:00Z,2024-01-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--383c22b9-e1fb-4eba-a1c5-36a1488cf3ee
+Network traffic to 154.38.184.5 on port 9785,2023-12-11T00:00:00Z,2024-01-18T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--d1afe5f8-cc7c-4911-b180-b74b539eb601
+Network traffic to 45.63.26.148 on port 2224,2023-12-06T00:00:00Z,2024-01-05T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--fd3495fb-a210-44f0-8742-f085b58c7615
+Network traffic to 172.233.185.220 on port 5242,2023-11-01T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a451512d-532c-472f-8a1e-e6cce131c511
+Network traffic to 108.61.224.209 on port 2967,2023-12-07T00:00:00Z,2024-05-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--bc09460b-c62f-4410-942f-ec9871697732
+Network traffic to 172.233.154.98 on port 13785,2023-11-01T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--35a441b9-0c0f-402d-8ce5-5af4356df4ac
+Network traffic to 172.232.186.251 on port 5632,2023-12-14T00:00:00Z,2024-01-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--50828f2e-328c-4e1a-9c78-3407e3d5daf7
+Network traffic to 4.175.178.149 on port 443,2024-03-23T00:00:00Z,2024-04-22T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3db7be01-8cf4-45c7-9818-1a0c799516fe
+Network traffic to 154.92.19.139 on port 2222,2023-10-01T00:00:00Z,2024-01-14T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--0440e9a2-8a09-4bdb-93b9-3ef4069bd152
+Network traffic to 178.154.205.14 on port 443,2023-12-20T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ae01f2d9-6775-4b4c-9e3b-d29d2970dcde
+Network traffic to 199.247.15.68 on port 5938,2023-12-06T00:00:00Z,2024-01-13T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--31bf9b72-a602-4f8d-89b1-1442e7ce9027
+Network traffic to 148.153.34.82 on port 2078,2023-09-25T00:00:00Z,2023-11-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9ddfc655-eab8-444c-8583-bdac5958553d
+Network traffic to 45.79.147.119 on port 9785,2023-10-24T00:00:00Z,2023-12-01T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9e84ca7b-8f1e-447b-877e-04c4d934011d
+Network traffic to 109.107.182.18 on port 443,2023-10-20T00:00:00Z,2023-11-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7f4195f6-579d-4778-93ef-85ef47e4430b
+Network traffic to 45.77.63.237 on port 5632,2024-03-06T00:00:00Z,2024-04-05T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--446d51b9-8960-47b3-a9ab-554b5a8e07e9
+Network traffic to 45.33.15.215 on port 2967,2023-12-18T00:00:00Z,2024-01-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ef37d5d0-40e7-4e71-bc81-8fa0d7d46fb1
+Network traffic to 109.107.182.16 on port 443,2023-10-20T00:00:00Z,2023-11-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e9331d86-6b81-46e4-afa1-2a0ff8b02025
+Network traffic to 141.95.108.72 on port 443,2023-12-12T00:00:00Z,2024-01-11T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--40514dbc-0a16-4d69-9245-68de4474d45e
+Network traffic to 172.234.224.202 on port 13785,2023-12-21T00:00:00Z,2024-01-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--589f42fc-6224-4fb6-abdd-8c6b35d7be31
+Network traffic to 172.232.186.100 on port 2083,2024-02-15T00:00:00Z,2024-03-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f0f08224-cf7b-4624-9ab9-4df0e551e594
+Network traffic to 172.234.29.13 on port 2224,2023-10-24T00:00:00Z,2023-12-01T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--1e329a18-8132-4ab8-a2e2-9159164b3e3e
+Network traffic to 89.116.131.40 on port 2222,2023-05-22T00:00:00Z,2023-06-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7b9df74c-da14-4b5a-a698-6da6f5cd5768
+Network traffic to 158.247.210.203 on port 2222,2023-10-30T00:00:00Z,2023-11-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--d179fc12-1f13-4739-b087-9bd3e4ecf39d
+Network traffic to 57.128.109.221 on port 13724,2023-12-01T00:00:00Z,2024-01-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--94a626e1-022a-4e36-85a6-2f01dbc2000c
+Network traffic to 167.179.100.211 on port 2221,2023-11-13T00:00:00Z,2023-12-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--518248f1-cc0e-40ef-9ba6-8a78af8eaace
+185.87.151.234,2023-02-01T00:00:00Z,2023-03-02T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--6b348ab5-cd3f-4b88-92df-026d319e2d61
+Network traffic to 185.106.94.177 on port 13721,2023-10-17T00:00:00Z,2023-11-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--13c7655c-89a8-471b-bb06-b3fff250f287
+Network traffic to 91.215.85.154 on port 443,2023-10-18T00:00:00Z,2023-11-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--51f8c259-dbe8-4f7b-a426-e17ac68fc9ba
+Network traffic to 66.42.80.169 on port 5631,2023-12-11T00:00:00Z,2024-01-18T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e69037ea-d9cb-41ff-8f81-63a4e072ba58
+Network traffic to 185.106.94.152 on port 13720,2023-10-17T00:00:00Z,2023-11-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--78f6b929-64df-4f6b-92b6-d1011d70e6f4
+Network traffic to 158.220.90.199 on port 2083,2023-12-09T00:00:00Z,2024-01-18T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--0a95d127-f38f-437f-9f15-0ec90b732f59
+Network traffic to 94.228.169.221 on port 2083,2023-10-09T00:00:00Z,2023-11-10T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--21edd2a5-8717-4884-87ca-f3d312f2e153
+Network traffic to 57.128.103.99 on port 2078,2023-12-15T00:00:00Z,2024-01-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--921faaf3-256f-4bab-8bbc-5843e5eaa1db
+Network traffic to 109.123.227.147 on port 5243,2023-12-21T00:00:00Z,2024-01-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f1f6396f-bae8-4611-9962-c621d1aa24a0
+Network traffic to 64.176.66.137 on port 5000,2023-12-13T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--4713ce9d-9521-40d3-8ac0-27156e96b32d
+104.129.55.105,2024-02-13T00:00:00Z,2024-03-09T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8fb4b41c-fa0d-4f71-aa8a-851d1cd567fe
+Network traffic to 51.195.232.97 on port 13782,2023-10-01T00:00:00Z,2023-12-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a6faceae-085c-4f70-86a2-55fde1dc51b0
+Network traffic to 65.20.115.154 on port 5243,2023-12-15T00:00:00Z,2024-01-22T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--10a071cf-6874-4306-add9-1ceca4f2d7ea
+Network traffic to 109.107.182.13 on port 443,2023-10-20T00:00:00Z,2023-11-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--4187ec20-8775-4683-9d0e-08e341ed07b6
+Network traffic to 104.129.55.103 on port 2224,2024-02-08T00:00:00Z,2024-03-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ce7d4432-2e3c-46bb-99f1-5b1bca6af7ea
+Network traffic to 37.60.242.86 on port 2967,2024-02-09T00:00:00Z,2024-03-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--00ac89de-68cd-4e0a-96d4-3c1577b60d53
+Network traffic to 45.76.119.22 on port 13724,2023-12-19T00:00:00Z,2024-01-18T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--d0c52154-6baf-4952-a00b-4f2866b9c5e1
+Network traffic to 86.38.225.108 on port 2226,2024-02-12T00:00:00Z,2024-03-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e72ae835-1b75-481c-bdd0-e09d618066fd
+Network traffic to 94.72.104.77 on port 13724,2024-03-06T00:00:00Z,2024-04-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--46b935ce-6c78-44b3-b4df-d373584ec2eb
+Network traffic to 46.250.241.191 on port 13721,2023-12-07T00:00:00Z,2024-01-15T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--b2f8c37b-81fd-4254-8d2c-1e0ff65440c6
+Network traffic to 104.129.55.104 on port 2223,2024-02-08T00:00:00Z,2024-03-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e223434d-818f-49a3-8e7d-a6c252b18879
+Network traffic to 154.38.164.50 on port 5243,2023-12-21T00:00:00Z,2024-01-28T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ea013411-2197-4bac-a80e-9a015828e309
+Network traffic to 109.199.99.131 on port 13721,2024-02-19T00:00:00Z,2024-03-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ba479c38-6ea3-47bb-8c71-ea57290c98e8
+5.45.69.171,2023-02-01T00:00:00Z,2023-02-10T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--868f5a59-7d26-4e8f-aab1-1fe4e4bc01c8
+Network traffic to 78.141.200.111 on port 5938,2023-12-18T00:00:00Z,2024-01-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7a9c7c98-b2d4-4d0e-9fc7-2fdca9a02217
+Network traffic to 172.233.221.61 on port 5938,2024-04-04T00:00:00Z,2024-05-10T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8cc0acb5-dc22-4b2e-8ea8-e191754414ee
+Network traffic to 57.128.83.129 on port 2078,2023-12-01T00:00:00Z,2024-01-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--69646d25-5919-436e-ba09-1d385f31bdae
+Network traffic to 172.232.174.6 on port 5242,2024-02-16T00:00:00Z,2024-03-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--dba00a9d-d761-42b2-99f8-9e052f539f13
+Network traffic to 158.247.197.73 on port 23399,2023-11-06T00:00:00Z,2023-12-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--2b6218e5-cef4-4d20-94b4-5d0641147fa4
+23.226.138.143,2024-02-10T00:00:00Z,2024-03-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--67d1c343-806a-4819-b153-e44d2ff7217f
+Network traffic to 45.182.189.105 on port 443,2023-10-11T00:00:00Z,2023-11-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f0119634-75c4-4114-98c8-c0aee465f66c
+Network traffic to 185.87.148.132 on port 1194,2023-05-22T00:00:00Z,2023-06-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3655dce4-211b-4023-a59d-5f6d562ab053
+Network traffic to 207.148.93.23 on port 2221,2023-11-17T00:00:00Z,2023-12-24T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--1a5d519d-013e-4aa7-8d88-eec9607baaee
+Network traffic to 154.12.248.41 on port 5000,2024-02-19T00:00:00Z,2024-04-17T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--20f34b56-5ab4-4c40-a3af-8e2a8b51d59d
+Network traffic to 172.232.163.208 on port 2224,2023-12-13T00:00:00Z,2024-01-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--10522c65-4a2d-44d1-b3fe-6e15e2a628c8
+Network traffic to 109.107.182.10 on port 443,2023-10-19T00:00:00Z,2023-11-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--90eba2a8-e95a-4791-86d6-b25e14e8d0a9
+141.95.106.106,2024-02-19T00:00:00Z,2024-03-07T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8f000c13-fe74-4949-acb9-0a119c305ed8
+Network traffic to 172.233.156.100 on port 13721,2023-10-01T00:00:00Z,2023-12-28T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--c63b83ae-7a9e-4984-82ca-48698bfc9b64
+Network traffic to 155.138.156.94 on port 5243,2023-10-23T00:00:00Z,2023-11-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3dab7140-d28c-4675-a4be-0df31b25c8bc
+Network traffic to 172.232.189.134 on port 2221,2023-12-20T00:00:00Z,2024-01-27T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--127948af-9c52-4025-ac74-fb59ba3ea79c
+Network traffic to 5.180.151.180 on port 2224,2023-12-21T00:00:00Z,2024-01-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--67918c5b-eb34-44e2-8ac5-c7b43bacb487
+Network traffic to 198.244.141.4 on port 9785,2023-10-24T00:00:00Z,2023-12-03T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--343d3b26-3c2f-4dc2-a093-37f396d52984
+145.239.135.24,2024-02-19T00:00:00Z,2024-03-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8f2c0b3e-bb5f-4d1a-bd4f-89cb5b118fe9
+Network traffic to 50.116.54.138 on port 13724,2023-10-31T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--131be428-bca7-4852-badb-86b49a3e8e33
+Network traffic to 45.76.98.136 on port 2221,2023-12-01T00:00:00Z,2024-01-22T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--6e485af7-3584-4781-ac14-9460158aa8e1
+Network traffic to 158.220.95.215 on port 5242,2024-03-26T00:00:00Z,2024-05-03T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e2ac3c20-32f0-4096-a1e9-0fb5cc8ecfd7
+Network traffic to 154.38.185.138 on port 13786,2023-12-20T00:00:00Z,2024-01-28T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--fd46d5f9-57d7-4dbc-9274-5412db0c66b1
+Network traffic to 5.180.151.194 on port 5631,2023-12-21T00:00:00Z,2024-01-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--682b36cb-a01b-47b8-86b7-1e5b9343719f
+Network traffic to 158.247.246.182 on port 2226,2023-11-07T00:00:00Z,2023-12-14T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--2657a934-d18b-42ed-b114-daded39ef49e
+Network traffic to 196.218.123.202 on port 13783,2023-10-23T00:00:00Z,2024-03-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a7ada04c-2b15-4811-a353-9d97ffb07dbd
+Network traffic to 65.20.85.39 on port 2967,2023-12-18T00:00:00Z,2024-01-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7b9c8186-6713-40a4-bf2b-3f032b5c3caa
+Network traffic to 54.37.79.82 on port 2223,2023-12-15T00:00:00Z,2024-01-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--1d4b1dbd-cddc-4378-a95e-0e21dde82229
+Network traffic to 94.72.104.80 on port 5000,2024-03-06T00:00:00Z,2024-04-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--809f35b5-ca68-4799-a76a-03d28204a3a9
+Network traffic to 86.38.225.105 on port 13721,2024-02-12T00:00:00Z,2024-04-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--23c6a2a4-cc62-4876-8952-8b4673b635e6
+Network traffic to 109.123.227.158 on port 2223,2023-12-21T00:00:00Z,2024-01-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--26f12f99-4c95-4dab-ab3f-04c345d73f91
+Network traffic to 65.20.78.70 on port 2967,2023-12-20T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--43221e95-d3eb-4694-a72a-777346c6d520
+Network traffic to 208.76.221.253 on port 13724,2023-12-18T00:00:00Z,2024-01-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--bc2dab42-84af-4cff-8f9f-4760848c5867
+Network traffic to 65.20.84.3 on port 2221,2023-11-06T00:00:00Z,2023-12-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--b87e48cd-41ea-4226-832e-bf6bf54c5b84
+Network traffic to 45.32.232.31 on port 13782,2023-11-15T00:00:00Z,2023-12-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3bc3f798-f1f9-4072-886b-b7d60e21226c
+Network traffic to 188.26.127.4 on port 13785,2023-10-01T00:00:00Z,2023-12-09T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--cc198e3a-eed6-45b7-9438-ffd75dfcd683
+Network traffic to 216.128.151.26 on port 13782,2023-12-20T00:00:00Z,2024-01-27T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--92f87fff-d686-4e49-89e2-9e3477f6f75f
+Network traffic to 131.153.231.178 on port 2221,2024-02-14T00:00:00Z,2024-03-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--17964522-cb84-4f53-ad1c-ff5757db45f6
+Network traffic to 65.20.73.169 on port 13783,2024-03-01T00:00:00Z,2024-04-07T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7cc84bee-dd62-45cd-ab1d-3c1d9086d63a
+103.151.20.137,2023-05-17T00:00:00Z,2023-08-03T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--da30ad0d-31fa-401a-b3fc-83af9e474300
+Network traffic to 107.191.47.85 on port 5243,2023-12-13T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--64af8503-d35f-416c-8ab7-f60425f20360
+Network traffic to 217.69.8.229 on port 13782,2023-10-24T00:00:00Z,2023-11-30T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ab8ffe9f-26e2-4011-a169-c1f214bd9c4a
+Network traffic to 89.117.23.185 on port 2221,2024-02-19T00:00:00Z,2024-04-09T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e8b6415c-76a1-47b3-bd25-8b4da8de1a33
+Network traffic to 89.117.55.179 on port 2083,2023-12-20T00:00:00Z,2024-01-28T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8a6c03c9-8375-4044-b1fe-8aaf7e06248d
+Network traffic to 158.220.80.167 on port 2967,2024-02-08T00:00:00Z,2024-03-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9f5de56d-50c2-4364-b8bc-caad7a185467
+Network traffic to 141.95.108.252 on port 2078,2023-12-01T00:00:00Z,2024-01-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7c0d8c40-c971-4c6e-b718-6c835dfe5155
+Network traffic to 136.244.98.80 on port 13783,2023-11-06T00:00:00Z,2023-12-14T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3c48453e-a475-49f9-b00f-1f9d95b93af4
+Network traffic to 172.232.188.124 on port 2083,2023-10-24T00:00:00Z,2023-11-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a8c9063c-a9c7-4627-ba8a-f09bd510fe1a
+Network traffic to 94.199.173.6 on port 2222,2023-05-17T00:00:00Z,2023-06-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--1302cb89-f7f4-4dd5-8965-8b940e7ecce3
+Network traffic to 155.138.140.156 on port 13720,2023-12-18T00:00:00Z,2024-01-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e7793450-2217-4555-95af-1cc1c2580ce8
+172.232.162.97,2024-02-14T00:00:00Z,2024-02-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e5e06765-34a0-49a5-8c8e-3e875efbea1c
+Network traffic to 109.107.182.19 on port 443,2023-10-19T00:00:00Z,2023-11-18T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--eff97378-a085-40ad-87c5-6d4e775027b0
+Network traffic to 95.179.214.49 on port 5242,2023-11-13T00:00:00Z,2023-12-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9c87145e-366d-4e08-80d5-d5dff1dc4be6
+23.227.194.96,2023-02-01T00:00:00Z,2023-08-03T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--557b8842-0a1b-4d30-8978-ac4b79b4d896
+Network traffic to 198.38.94.213 on port 2224,2024-03-06T00:00:00Z,2024-04-13T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--5b706684-e935-44bd-8b09-1e01a020a0b3
+Network traffic to 64.176.190.166 on port 2222,2023-11-17T00:00:00Z,2023-12-24T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--44bae254-29cc-4723-ae00-b45082be946e
+Network traffic to 15.235.45.155 on port 2221,2023-10-01T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--49782322-07db-4da3-a5ed-17416a083e28
+Network traffic to 85.215.162.167 on port 2078,2023-05-21T00:00:00Z,2023-07-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--16fa94b5-63a1-4108-9ed4-3e9c5ad7c8e1
+Network traffic to 65.20.77.19 on port 5242,2023-11-09T00:00:00Z,2023-12-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3aee4748-ef78-463d-9f37-56be263ab3ca
+Network traffic to 34.135.79.247 on port 443,2023-10-21T00:00:00Z,2023-11-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--0aadbdef-c0f7-48a0-b43c-afc800c4f7da
+Network traffic to 45.32.188.56 on port 2967,2023-12-07T00:00:00Z,2024-05-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--17c6e55e-8d11-4685-96bb-d93c4e195677
+Network traffic to 154.38.184.3 on port 2223,2024-01-23T00:00:00Z,2024-04-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--cb8d8c21-22a7-4022-aeeb-44cadc9f2d44
+Network traffic to 104.200.28.75 on port 2222,2023-10-30T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--2430aed9-1b03-4a26-bcdf-b1b5ada5face
+Network traffic to 104.207.143.168 on port 2222,2023-12-20T00:00:00Z,2024-01-27T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--c63fb044-b39e-499b-84ce-0cf388ce995c
+Network traffic to 156.251.137.134 on port 5000,2023-10-23T00:00:00Z,2023-11-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a9f28706-c1d2-492a-97d5-510c55df6212
+Network traffic to 172.232.189.84 on port 23399,2023-11-15T00:00:00Z,2023-12-22T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f50c8aa4-0f79-4221-aa1f-e8385837ba05
+Network traffic to 45.32.248.100 on port 2226,2024-02-13T00:00:00Z,2024-03-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ebec9699-b9bf-4f04-9b17-7034bb77f4be
+Network traffic to 109.107.182.17 on port 443,2023-10-20T00:00:00Z,2023-11-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--4690cedb-090a-4e8f-9373-4b3a3e815167
+Network traffic to 43.229.78.74 on port 2226,2024-02-14T00:00:00Z,2024-03-15T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--d0b4bb1e-a23d-48b2-97d6-b609802c4cd6
+Network traffic to 70.34.207.219 on port 5000,2023-12-07T00:00:00Z,2024-01-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--77c931ce-d03e-4a62-87c1-5e45b276a157
+Network traffic to 167.179.93.21 on port 1194,2023-12-15T00:00:00Z,2024-01-22T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7fc9d257-26fb-4088-9785-5324e1976ce3
+Network traffic to 149.28.17.176 on port 1194,2023-12-13T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--0c008347-ddf2-40d5-9fcd-2e5af134993d
+62.197.48.230,2023-02-01T00:00:00Z,2023-03-02T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a08de1bf-a241-494b-9e5d-0669a77f58f0
+Network traffic to 172.234.16.175 on port 2083,2023-10-30T00:00:00Z,2023-12-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--efccee24-dc93-4eba-8c72-37d5cdecd9a5
+Network traffic to 154.12.252.84 on port 23399,2023-10-23T00:00:00Z,2023-12-18T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--880e7c21-a71f-46ae-9e6a-f8864755c803
+Network traffic to 45.32.235.46 on port 5242,2023-12-07T00:00:00Z,2024-05-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--64e04dd8-ccbf-4350-a75e-d5ed00b11558
+Network traffic to 149.28.49.170 on port 23399,2023-11-09T00:00:00Z,2023-12-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--ab6dd770-f205-458f-bec9-0490af666e52
+Network traffic to 89.117.55.178 on port 2083,2023-12-20T00:00:00Z,2024-01-28T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--c62d8864-b12d-4ebc-8e38-082bcebf3033
+Network traffic to 172.232.173.219 on port 5938,2023-12-14T00:00:00Z,2024-01-22T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--50571ae8-f7be-4018-9c28-f693acbd55ba
+Network traffic to 139.99.216.90 on port 13720,2023-10-23T00:00:00Z,2023-12-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f482c24f-36ff-4c45-a40e-57938357f98b
+Network traffic to 216.238.79.12 on port 2221,2023-12-18T00:00:00Z,2024-01-25T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--6b32dd8c-3d6b-4390-9c1b-db48a2ac1d60
+Network traffic to 194.233.91.144 on port 5000,2024-03-26T00:00:00Z,2024-05-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--4c058b3e-a1cc-4e08-ae10-f673c09b744b
+154.80.229.76,2023-05-17T00:00:00Z,2023-06-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--209636cd-041c-4f38-aeef-588214de4339
+Network traffic to 154.221.30.136 on port 13724,2023-10-01T00:00:00Z,2024-05-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--8a023bfc-70d2-42f5-bbb7-586682999ac8
+Network traffic to 172.232.172.117 on port 1194,2023-12-20T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--b7c90742-eba1-4e20-9265-8f3877d1d475
+Network traffic to 172.232.54.192 on port 2224,2023-12-18T00:00:00Z,2024-01-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--b520c19e-5e88-45d2-a107-9887f2a4d4bb
+Network traffic to 135.125.124.72 on port 2078,2023-09-25T00:00:00Z,2023-11-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f77e5b5b-70ed-4aac-a704-084125383a48
+Network traffic to 172.232.161.248 on port 13783,2023-12-20T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--6af15c80-e009-45a7-b057-1be43f4fc3fc
+Network traffic to 140.82.56.164 on port 5632,2023-10-31T00:00:00Z,2023-11-30T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--6dc67fbb-ab10-4d8a-9c5d-47959062fb3b
+Network traffic to 51.68.144.135 on port 2083,2023-10-31T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--579113a9-9622-46dd-b90d-ce2a4b4275cb
+Network traffic to 161.97.98.95 on port 2083,2023-12-08T00:00:00Z,2024-01-17T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--91f0fa1f-2b51-4996-8518-866881f565fb
+Network traffic to 70.34.223.164 on port 5000,2024-03-06T00:00:00Z,2024-04-05T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--c7fdd900-f219-404f-934f-b4c31c6e315b
+Network traffic to 109.107.182.15 on port 443,2023-10-20T00:00:00Z,2023-11-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--d12a3a5a-b729-45c1-8154-61d046e0fb6d
+Network traffic to 45.33.76.163 on port 2223,2023-10-24T00:00:00Z,2023-12-01T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--95372e90-91f8-4ff2-af19-5003e29e6872
+Network traffic to 172.232.189.166 on port 1194,2023-12-18T00:00:00Z,2024-01-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f8f56526-edbf-4f1b-9235-9b78d5b75cfc
+Network traffic to 45.154.24.57 on port 2078,2023-05-17T00:00:00Z,2023-08-30T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--83039516-e427-472c-8ce1-b50c7eeaedec
+Network traffic to 210.243.8.247 on port 23399,2023-10-01T00:00:00Z,2024-05-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9ff67eb9-06dd-400c-a99f-ce1573f2423f
+Network traffic to 149.248.53.65 on port 2221,2023-11-06T00:00:00Z,2023-12-14T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--c175a3c0-8357-485e-bfc7-b11c236b1e4f
+Network traffic to 172.232.7.224 on port 9785,2023-12-21T00:00:00Z,2024-01-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f88a2e51-dd4a-4794-81b1-b3defefcc98c
+Network traffic to 154.38.175.241 on port 13721,2024-02-19T00:00:00Z,2024-03-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--177634a6-eb54-473f-80fd-d8cf805ba7bb
+Network traffic to 78.47.233.121 on port 443,2024-01-24T00:00:00Z,2024-02-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--db8d65a7-f5b6-4027-a6d9-a34904fe17a1
+Network traffic to 95.179.141.41 on port 1194,2023-11-04T00:00:00Z,2023-12-10T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--5ddb2bf7-e32d-429f-b46e-04e4a504ea29
+Network traffic to 70.34.209.101 on port 13720,2023-10-01T00:00:00Z,2023-12-27T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--354cb77a-5044-4b6a-89ab-451fea1eb60d
+95.179.182.147,2023-11-13T00:00:00Z,2023-11-23T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--451df398-c9f2-4d19-bad6-cb9434328af3
+Network traffic to 15.235.143.190 on port 2224,2023-10-23T00:00:00Z,2023-12-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--1b1dac36-6085-4bf5-b04e-8b91f2a2f10e
+Network traffic to 15.235.47.206 on port 13783,2023-10-01T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--08f4a95b-8498-4f80-9ca0-c70b347c5746
+Network traffic to 70.34.223.131 on port 5938,2023-11-13T00:00:00Z,2023-12-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--0eca9748-f4a8-46c8-9608-8daba2f16fea
+Network traffic to 155.138.147.62 on port 2223,2024-02-14T00:00:00Z,2024-03-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--547b7bbc-cbe2-4359-a501-1262a4170a4c
+Network traffic to 95.179.247.197 on port 13782,2023-12-20T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--cdbff684-0c76-4ffa-875b-f8c0710ef0b0
+Network traffic to 172.232.164.159 on port 5632,2023-12-13T00:00:00Z,2024-01-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--88cb6674-5133-46ef-a82e-f27d5488f6a0
+Network traffic to 216.128.136.231 on port 13786,2023-12-07T00:00:00Z,2024-05-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--b58dc215-74a6-4073-b810-fbdbfcf9a6b1
+Network traffic to 109.107.182.11 on port 443,2023-10-19T00:00:00Z,2023-11-26T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--bc1d6fdb-06ff-4ada-b3b6-d4a797d698f4
+Network traffic to 15.235.44.231 on port 5938,2023-10-01T00:00:00Z,2023-12-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--cd581c8d-cd0a-47cc-8629-7e08a1f8c36d
+Network traffic to 65.20.69.208 on port 5000,2024-03-01T00:00:00Z,2024-03-31T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--84f4d040-cac5-4258-8ea1-5522eb033530
+Network traffic to 207.148.103.233 on port 2967,2023-12-06T00:00:00Z,2024-01-05T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--2ffd39c9-fd36-424c-bdae-26b50e5b5ae8
+Network traffic to 158.247.202.180 on port 13783,2023-11-06T00:00:00Z,2023-12-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--f130112d-88b1-44f5-9638-15aafd3c03d8
+Network traffic to 172.233.155.253 on port 2078,2024-04-05T00:00:00Z,2024-05-15T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9b5e07d5-dccc-45af-92fa-0353703bf322
+Network traffic to 85.106.94.167 on port 5631,2023-10-17T00:00:00Z,2023-11-16T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--03282663-68d5-4a96-8de4-af4676d452c5
+Network traffic to 185.187.235.158 on port 23399,2023-12-20T00:00:00Z,2024-01-29T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--085456e4-f969-4216-afe1-33d2d6aecf09
+104.129.55.106,2024-02-13T00:00:00Z,2024-03-08T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--a76c046b-7913-467b-908c-6f8fe83b5fa6
+Network traffic to 158.247.196.155 on port 9785,2023-11-15T00:00:00Z,2023-12-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--221387ff-0e78-4b9e-8ee1-ad0f3ff3f564
+Network traffic to 172.232.163.111 on port 5938,2023-12-13T00:00:00Z,2024-01-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--7782d72e-2344-49c3-83a8-241c1bf5f9bd
+Network traffic to 64.176.225.21 on port 2225,2023-12-07T00:00:00Z,2024-01-14T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--3288f7c9-b317-4ae2-b600-7ff75172f73d
+Network traffic to 51.83.253.102 on port 9785,2023-12-01T00:00:00Z,2024-01-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--c4da48e5-8a00-424c-8a8a-38740ad078e0
+Network traffic to 172.232.189.141 on port 2078,2023-12-21T00:00:00Z,2024-01-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--cd7fafea-d914-423c-9514-78fcd649f040
+Network traffic to 65.20.84.254 on port 1378,2023-11-06T00:00:00Z,2023-12-09T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--9b2a617c-90df-454e-9f02-ff9bebb86b65
+Network traffic to 57.128.164.11 on port 5242,2023-12-01T00:00:00Z,2024-01-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--96e41bf0-a925-4af0-8c84-dfa6df8e1c0e
+Network traffic to 185.106.94.167 on port 5631,2023-10-28T00:00:00Z,2023-12-05T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--1c72726c-ca43-4e3c-8524-f077d9862709
+Network traffic to 139.177.198.199 on port 2226,2023-10-24T00:00:00Z,2023-12-02T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--b5eb5de7-4085-42c4-9267-29b5435f4d86
+Network traffic to 172.232.172.171 on port 13721,2023-12-21T00:00:00Z,2024-01-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e74bddc7-4482-4310-812b-cccf1b23369d
+Network traffic to 65.20.78.68 on port 13721,2023-10-01T00:00:00Z,2023-12-21T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--1e72a39c-24a1-4ad1-b9cc-4011551df575
+Network traffic to 198.13.58.126 on port 2223,2023-11-06T00:00:00Z,2023-12-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--5a3a9bdb-17bb-4d4b-9361-aa8c724fdb0f
+Network traffic to 107.191.56.230 on port 13783,2023-12-20T00:00:00Z,2024-01-19T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--798c32fd-1f12-46b0-b038-d1dbcd19590d
+85.239.243.155,2024-02-08T00:00:00Z,2024-03-06T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--e4fa6718-c59b-449f-8d60-8b8f397d516c
+Network traffic to 45.32.21.184 on port 5242,2024-02-14T00:00:00Z,2024-03-20T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--281fd910-f5f3-4a4d-a408-209b150d6a74
+57.128.165.176,2024-02-19T00:00:00Z,2024-03-07T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--de8ff262-80b0-4fa6-bd8d-fae4acdd97fe
+185.87.150.108,2023-02-01T00:00:00Z,2023-02-10T00:00:00Z,https://app.sekoia.io/intelligence/public/objects/indicator--cb7f8560-e003-4c27-a6bc-08c9aff1f6e7
