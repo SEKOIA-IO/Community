@@ -321,5 +321,12 @@
             "XSOAR"
         ],
         "workspace": ["Operation Center"]
+    },
+    {
+        "file": "send_alert_to_nybble_hub.json",
+        "name": "Automatically send an alert to Nybble Hub",
+        "workspace": ["Operation Center"],
+        "description": "Automatically send an alert to Nybble Hub when a new alert is raised in SEKOIA.IO.",
+        "tags": ["alerts", "nybble"]
     }
 ]
