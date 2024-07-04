@@ -2,7 +2,6 @@
 
 # Docker container name
 IMAGE_NAME="sekoiaio-docker-concentrator"
-#IMAGE_NAME="forwardertest"
 CURRENT_TIME_ISO=$(date '+%Y-%m-%dT%H:%M:%S%z')
 EXEC_FILE="execution.txt"
 INSPECT_FILE="inspect.txt"
@@ -12,7 +11,7 @@ TCPDUMP_TIMEOUT=30
 RESULT_FOLDER="result_$(date '+%Y-%m-%dT%H_%M_%S%z')"
 DST_PORT=10514
 
-# List of programm to check if it's installed
+# List of programm to check if they are installed
 PROGRAMS_APT=("tcpdump" "coreutils" "nc")
 PROGRAMS_DNF=("tcpdump" "coreutils" "nmap-ncat")
 
@@ -174,7 +173,7 @@ fi
 
 # Get docker logs
 echo "- Getting container logs"
-docker logs $docker_id &> $RESULT_FOLDER/$LOGS_FILE
+docker logs --tail 10000 $docker_id &> $RESULT_FOLDER/$LOGS_FILE
 
 echo "- Starting $TCPDUMP_TIMEOUT seconds of tcpdump... please wait."
 timeout $TCPDUMP_TIMEOUT tcpdump portrange 20000-30000 -q -n -s 0 -w $RESULT_FOLDER/$PCAP_FILE
