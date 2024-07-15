@@ -1,8 +1,8 @@
-rule apt_MuddyWater_RotRot_strings {
+rule apt_MuddyWater_MuddyRot_strings {
   meta:
         id = "f7bc195a-0e60-4495-b78a-78f101543700"
         version = "1.0"
-        malware = "RotRot"
+        malware = "MuddyRot"
         intrusion_set = "MuddyWater"
         description = "Detects RotRot backdoor based on strings permutations"
         source = "Sekoia.io"
