@@ -1,0 +1,21 @@
+version: 2.0
+uuid: 7be9115f-bbd6-40f3-8d5f-b9ecce23ea1e
+rule: AWS CloudTrail EC2 Enable Serial Console Access
+description: >-
+  Detects when the EC2 serial console access feature is enabled. This could abused by some attackers to avoid network detection when accessing to EC2 instances.
+sources: https://permiso.io/blog/lucr-3-scattered-spider-getting-saas-y-in-the-cloud
+effort: intermediate
+detection:
+  selection:
+    sekoiaio.intake.dialect_uuid: 'd3a813ac-f9b5-451c-a602-a5994544d9ed' # AWS cloudtrail
+    event.action: 'EnableSerialConsoleAccess'
+  condition: selection
+alert_category: intrusions
+alert_type: application-compromise
+alert_severity: 75
+attack:
+  - T1021.007
+data_sources:
+  - AWS CloudTrail logs
+tags: 
+  - AWS CloudTrail

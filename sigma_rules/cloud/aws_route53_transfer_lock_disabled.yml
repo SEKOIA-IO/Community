@@ -1,0 +1,23 @@
+version: 2.0
+uuid: 47f618bc-fda5-4ebb-bf6b-ff5762feb8e2
+rule: AWS CloudTrail Route 53 Domain Transfer Lock Disabled
+description: >-
+  Detects when the transfer lock feature is disabled on a domain name handled by AWS Route 53 service.
+sources: https://github.com/elastic/detection-rules/blob/main/rules/integrations/aws/persistence_route_53_domain_transfer_lock_disabled.toml
+effort: elementary
+detection:
+  selection:
+    sekoiaio.intake.dialect_uuid: 'd3a813ac-f9b5-451c-a602-a5994544d9ed' # AWS cloudtrail
+    event.provider: 'route53domains.amazonaws.com'
+    event.action: 'DisableDomainTransferLock'
+  condition: selection
+alert_category: intrusions
+alert_type: application-compromise
+alert_severity: 50
+attack:
+  - T1578
+  - T1098
+data_sources:
+  - AWS CloudTrail logs
+tags: 
+  - AWS CloudTrail
