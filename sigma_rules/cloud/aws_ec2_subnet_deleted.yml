@@ -1,0 +1,23 @@
+version: 2.0
+uuid: a19df6fa-768e-449d-a97e-41d137ad0a38
+rule: AWS CloudTrail EC2 Subnet Deleted
+description: >-
+  Detects when an attacker is destroying an EC2 subnet.
+false_positives: Valid change to the EC2 subnet, you could add the admins to the alert filter
+sources: https://docs.datadoghq.com/security_platform/default_rules/aws-ec2-subnet-deleted/
+effort: master
+detection:
+  selection:
+    sekoiaio.intake.dialect_uuid: 'd3a813ac-f9b5-451c-a602-a5994544d9ed' # AWS cloudtrail
+    event.provider: 'ec2.amazonaws.com'
+    event.action: 'DeleteSubnet'
+  condition: selection
+alert_category: intrusions
+alert_type: application-compromise
+alert_severity: 20
+attack:
+  - T1578.003
+data_sources:
+  - AWS CloudTrail logs
+tags: 
+  - AWS CloudTrail

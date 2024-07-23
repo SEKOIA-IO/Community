@@ -1,0 +1,22 @@
+version: 2.0
+uuid: 22da2125-5aa7-4739-a247-2ec8626240d0
+rule: AWS CloudTrail S3 Bucket Replication
+description: >-
+  Detects a replication rule being enable for a given S3 bucket: it could provide an attacker a way to exfiltrate data.
+sources: Sekoia.io
+effort: master
+detection:
+  selection:
+    sekoiaio.intake.dialect_uuid: 'd3a813ac-f9b5-451c-a602-a5994544d9ed' # AWS cloudtrail
+    event.provider: 's3.amazonaws.com'
+    event.action: 'PutBucketReplication'
+  condition: selection
+alert_category: intrusions
+alert_type: application-compromise
+alert_severity: 50
+attack:
+  - T1578.003
+data_sources:
+  - AWS CloudTrail logs
+tags: 
+  - AWS CloudTrail
