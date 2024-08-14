@@ -1,4 +1,5 @@
 {
+    "uuid": "f2bfa692-76a1-4378-ba7f-9253ac2f5718",
     "name": "[Training usecase] Post an HTTP request based on alert information",
     "description": "Send HTTP request to an external service based on alert data",
     "tags": ["alerts", "webhook"],
