@@ -1,592 +1,593 @@
 {
-  "name": "Enhance network alerts with VirusTotal",
-  "nodes": {
-    "0": {
-      "name": "Manual trigger",
-      "type": "trigger",
-      "outputs": {
-        "default": [
-          "36"
-        ]
-      },
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
-      "trigger_uuid": "fc26eb9f-b272-4c15-b3bf-ace397c0dc57"
-    },
-    "1": {
-      "name": "Get an alert",
-      "type": "action",
-      "outputs": {
-        "default": [
-          "7",
-          "23",
-          "38"
-        ]
-      },
-      "arguments": {
-        "stix": true,
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}"
-      },
-      "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "4": {
-      "name": "Scan URL API with IP",
-      "type": "action",
-      "outputs": {
-        "unknown": [],
-        "detected": [
-          "5",
-          "13"
-        ],
-        "not detected": [
-          "5",
-          "13"
-        ]
-      },
-      "arguments": {
-        "url": "{{ node.39['output'][0] }}"
-      },
-      "action_uuid": "b43a7897-b92c-4fe1-8a5c-be9e023c4f1c",
-      "module_uuid": "d023af1d-25d8-465b-b85f-2ed48214d6a5"
-    },
-    "5": {
-      "name": "Post general score comment",
-      "type": "action",
-      "outputs": {
-        "default": []
-      },
-      "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
-        "author": "IP enrich by VirusTotal",
-        "content": "{{ node.4.positives }}/{{ node.4.total }} security vendors flagged the target IP ({{ node.39['output'][0] }}) as malicious. [Direct link to VirusTotal]({{ node.4.permalink }})"
-      },
-      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "7": {
-      "name": "Read JSON File for domain",
-      "type": "action",
-      "outputs": {
-        "default": [
-          "8",
-          "17"
-        ]
-      },
-      "arguments": {
-        "file": "{{ node.1.stix or node.35.stix }}",
-        "to_file": false,
-        "jsonpath": "$.objects[?(type=\"observed-data\")].objects[?(@.type=\"domain-name\")].value",
-        "return_list": true
-      },
-      "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
-      "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
-    },
-    "8": {
-      "name": "Scan Domain",
-      "type": "action",
-      "outputs": {
-        "default": [
-          "25"
-        ]
-      },
-      "arguments": {
-        "domain": "{{ node.7['output'][0] }}"
-      },
-      "action_uuid": "68a93925-d0c3-40e5-98a3-836d4b2e8f5e",
-      "module_uuid": "d023af1d-25d8-465b-b85f-2ed48214d6a5"
-    },
-    "9": {
-      "name": "Comment : Domain enrich by VT",
-      "type": "action",
-      "outputs": {
-        "default": []
-      },
-      "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
-        "author": "Domain enrich by VT",
-        "content": "Safety score given by Virus total: {{ node.8['Webutation domain info']['Safety score'] }}/100 with {% if node.8['Webutation domain info']['Adult content'] == \"no\" %} {{ node.8['Webutation domain info']['Adult content'] }} {% endif %} adult content detected. Virus total verdict: {{ node.8['Webutation domain info'].Verdict }}.\r\n   \r\n   {%if node.8['Forcepoint ThreatSeeker category'] is defined %}* Forcepoint classified it as '{{ node.8['Forcepoint ThreatSeeker category'] }}'\r\n   {% endif %}{%if node.8['Dr.Web category'] is defined %}* Dr.Web classified it as '{{ node.8['Dr.Web category'] }}'\r\n   {% endif %}{%if node.8['sophos category'] is defined %}* Sophos classified it as '{{ node.8['sophos category'] }}'\r\n   {% endif %}{%if node.8['Webroot category'] is defined %}* Webroot classified it as '{{ node.8['Webroot category'] }}'\r\n   {% endif %}{%if node.8['Opera domain info'] is defined %}* Opera classified it as '{{ node.8['Opera domain info'] }}'\r\n   {% endif %}{%if node.8['Comodo Valkyrie Verdict category'] is defined %}* Valkyrie classified it as '{{ node.8['Comodo Valkyrie Verdict category'] }}'\r\n   {% endif %}{%if node.8['BitDefender category'] is defined %}* BitDefender classified it as '{{ node.8['BitDefender category'] }}'\r\n   {% endif %}{%if node.8['alphaMountain.ai category'] is defined %}* AlphaMountain.ai classified it as '{{ node.8['alphaMountain.ai category'] }}'\r\n   {% endif %}"
-      },
-      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "11": {
-      "name": "Auto validation",
-      "type": "operator",
-      "cases": [
-        {
-          "left": "{{ node.17.positives }}",
-          "name": "More than 6 positives on domain ?",
-          "right": "{{ 6 }}",
-          "comparison": ">=",
-          "description": "{{ node.17.positives }} >= {{ 6 }}"
+    "name": "Enhance network alerts with VirusTotal",
+    "nodes": {
+        "0": {
+            "name": "Manual trigger",
+            "type": "trigger",
+            "outputs": {
+                "default": [
+                    "36"
+                ]
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "trigger_uuid": "fc26eb9f-b272-4c15-b3bf-ace397c0dc57"
         },
-        {
-          "left": "{{ node.17.positives }}",
-          "name": "No detection",
-          "right": "{{ 0 }}",
-          "comparison": "==",
-          "description": "{{ node.17.positives }} == {{ 0 }}"
-        }
-      ],
-      "outputs": {
-        "else": [],
-        "No detection": [
-          "31"
-        ],
-        "More than 6 positives on domain ?": [
-          "12"
-        ]
-      },
-      "subtype": "condition"
-    },
-    "12": {
-      "name": "Validate",
-      "type": "action",
-      "outputs": {
-        "default": []
-      },
-      "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
-        "action_uuid": "c39a0a95-aa2c-4d0d-8d2e-d3decf426eea"
-      },
-      "action_uuid": "c4b84449-a26f-4f18-bde4-33efa921f4d4",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "13": {
-      "loop": [
-        "14"
-      ],
-      "name": "Foreach",
-      "type": "operator",
-      "items": "{{ node.4['scans'] | list }}",
-      "outputs": {
-        "default": [
-          "16"
-        ]
-      },
-      "subtype": "foreach"
-    },
-    "14": {
-      "name": "Store",
-      "type": "operator",
-      "outputs": {
-        "default": []
-      },
-      "subtype": "store",
-      "modifications": [
-        {
-          "key": "vendor",
-          "type": "append",
-          "value": "{% if node.4['scans'][node.13.default.value]['detected'] != False %} {{ node.13.default['value'] }} {% endif %}"
-        }
-      ]
-    },
-    "15": {
-      "name": "Comment : List of security vendors",
-      "type": "action",
-      "outputs": {
-        "default": []
-      },
-      "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
-        "content": "{% if  node.4.positives > 0 %} List of security vendors which detected this IP as malicious: {{ (store.vendor|reject('equalto', None)|reject('equalto', '')|join(',')) }}{% endif %}"
-      },
-      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "16": {
-      "name": "More than 0 positive",
-      "type": "operator",
-      "cases": [
-        {
-          "left": "{{ node.4.positives  }}",
-          "name": "More than 0 positive",
-          "right": "{{ 0 }}",
-          "comparison": ">"
-        }
-      ],
-      "outputs": {
-        "else": [],
-        "More than 0 positive": [
-          "15"
-        ]
-      },
-      "subtype": "condition"
-    },
-    "17": {
-      "name": "Scan URL",
-      "type": "action",
-      "outputs": {
-        "unknown": [],
-        "detected": [
-          "18",
-          "19",
-          "11"
-        ],
-        "not detected": [
-          "18",
-          "19",
-          "11"
-        ]
-      },
-      "arguments": {
-        "url": "{{ node.7['output'][0] }}"
-      },
-      "action_uuid": "b43a7897-b92c-4fe1-8a5c-be9e023c4f1c",
-      "module_uuid": "d023af1d-25d8-465b-b85f-2ed48214d6a5"
-    },
-    "18": {
-      "name": "Domain score",
-      "type": "action",
-      "outputs": {
-        "default": [
-          "26"
-        ]
-      },
-      "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
-        "author": "Playbook Enrich domain with VT",
-        "content": "{{ node.17.positives }}/{{ node.17.total }} security vendors flagged the target domain ({{ node.7.output.0 }}) the {{ node.17.scan_date }} as malicious. [Direct link to VirusTotal]({{ node.17.permalink }})"
-      },
-      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "19": {
-      "loop": [
-        "21"
-      ],
-      "name": "Foreach",
-      "type": "operator",
-      "items": "{{ node.17['scans'] | list }}",
-      "outputs": {
-        "default": [
-          "20"
-        ]
-      },
-      "subtype": "foreach"
-    },
-    "20": {
-      "name": "Condition",
-      "type": "operator",
-      "cases": [
-        {
-          "left": "{{ node.17.positives  }}",
-          "name": "More than 0 positive",
-          "right": "{{ 0 }}",
-          "comparison": ">"
-        }
-      ],
-      "outputs": {
-        "else": [],
-        "More than 0 positive": [
-          "22"
-        ]
-      },
-      "subtype": "condition"
-    },
-    "21": {
-      "name": "Store",
-      "type": "operator",
-      "outputs": {
-        "default": []
-      },
-      "subtype": "store",
-      "modifications": [
-        {
-          "key": "vendor2",
-          "type": "append",
-          "value": "{% if node.17['scans'][node.19.default.value]['detected'] != False %} {{ node.19.default['value'] }} {% endif %}"
-        }
-      ]
-    },
-    "22": {
-      "name": "Post list of security vendors",
-      "type": "action",
-      "outputs": {
-        "default": []
-      },
-      "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
-        "content": "{% if  node.17.positives > 0 %} List of security vendors which detected this domain as malicious: {{ (store.vendor2|reject('equalto', None)|reject('equalto', '')|join(',')) }}{% endif %}"
-      },
-      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "23": {
-      "name": "Read JSON File for URL",
-      "type": "action",
-      "outputs": {
-        "default": [
-          "24"
-        ]
-      },
-      "arguments": {
-        "file": "{{ node.1.stix }}",
-        "to_file": false,
-        "jsonpath": "$.objects[?(type=\"observed-data\")].objects[?(@.type=\"url\")].value",
-        "return_list": true
-      },
-      "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
-      "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
-    },
-    "24": {
-      "name": "Check Url start with http",
-      "type": "operator",
-      "cases": [
-        {
-          "left": "{%if node.23['output'][0] | regex_match('^http.*', ignore_case=False) %}true1{% endif %}",
-          "name": "Check Url start with http",
-          "right": "true1",
-          "comparison": "=="
-        }
-      ],
-      "outputs": {
-        "else": [],
-        "Check Url start with http": [
-          "28"
-        ]
-      },
-      "subtype": "condition"
-    },
-    "25": {
-      "name": "Webtuation is defined",
-      "type": "operator",
-      "cases": [
-        {
-          "left": "{% if node.8['Webutation domain info'] is defined %}true1{% endif %}}",
-          "name": "Webutation is defined",
-          "right": "true1",
-          "comparison": "=="
-        }
-      ],
-      "outputs": {
-        "else": [
-          "27"
-        ],
-        "Webtuation is defined": [
-          "9"
-        ]
-      },
-      "subtype": "condition"
-    },
-    "26": {
-      "name": "Add informations to description",
-      "type": "action",
-      "outputs": {
-        "default": []
-      },
-      "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
-        "details": "{{ node.1['details'] }}   \r\n    \r\n   # Additional Information  \r\n  {{ node.18['content'] }}"
-      },
-      "action_uuid": "113a06db-3cef-48ac-908b-45f3ebc4d1bf",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "27": {
-      "name": "Categories is present in VT response ?",
-      "type": "operator",
-      "cases": [
-        {
-          "left": "{%if node.8['Forcepoint ThreatSeeker category'] is defined or node.8['Dr.Web category'] is defined or node.8['sophos category'] is defined or node.8['Webroot category'] is defined or node.8['Opera domain info'] is defined or node.8['Comodo Valkyrie Verdict category'] is defined or node.8['BitDefender category'] is defined or node.8['alphaMountain.ai category'] is defined %}true1{% endif %}",
-          "name": "Yes",
-          "right": "true1",
-          "comparison": "=="
-        }
-      ],
-      "outputs": {
-        "Yes": [
-          "29"
-        ],
-        "else": []
-      },
-      "subtype": "condition"
-    },
-    "28": {
-      "name": "Scan URL",
-      "type": "action",
-      "outputs": {
-        "unknown": [],
-        "detected": [
-          "30"
-        ],
-        "not detected": [
-          "30"
-        ]
-      },
-      "arguments": {
-        "url": "{{ node.23['output'][0] }}"
-      },
-      "action_uuid": "b43a7897-b92c-4fe1-8a5c-be9e023c4f1c",
-      "module_uuid": "d023af1d-25d8-465b-b85f-2ed48214d6a5"
-    },
-    "29": {
-      "name": "List of domain categories (Context)",
-      "type": "action",
-      "outputs": {
-        "default": []
-      },
-      "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
-        "author": "Domain categories enrich by VT",
-        "content": "List of domain categories: \r\n   {%if node.8['Forcepoint ThreatSeeker category'] is defined %}* Forcepoint classified it as '{{ node.8['Forcepoint ThreatSeeker category'] }}'\r\n   {% endif %}{%if node.8['Dr.Web category'] is defined %}* Dr.Web classified it as '{{ node.8['Dr.Web category'] }}'\r\n   {% endif %}{%if node.8['sophos category'] is defined %}* Sophos classified it as '{{ node.8['sophos category'] }}'\r\n   {% endif %}{%if node.8['Webroot category'] is defined %}* Webroot classified it as '{{ node.8['Webroot category'] }}'\r\n   {% endif %}{%if node.8['Opera domain info'] is defined %}* Opera classified it as '{{ node.8['Opera domain info'] }}'\r\n   {% endif %}{%if node.8['Comodo Valkyrie Verdict category'] is defined %}* Valkyrie classified it as '{{ node.8['Comodo Valkyrie Verdict category'] }}'\r\n   {% endif %}{%if node.8['BitDefender category'] is defined %}* BitDefender classified it as '{{ node.8['BitDefender category'] }}'\r\n   {% endif %}{%if node.8['alphaMountain.ai category'] is defined %}* AlphaMountain.ai classified it as '{{ node.8['alphaMountain.ai category'] }}'\r\n   {% endif %}"
-      },
-      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "30": {
-      "name": "URL VT score",
-      "type": "action",
-      "outputs": {
-        "default": []
-      },
-      "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
-        "author": "URL VT score",
-        "content": "{{ node.28.positives }}/{{ node.28.total }} security vendors flagged the target url ({{ node.23['output'][0] }}) as malicious. [Direct link to VirusTotal]({{ node.28.permalink }})"
-      },
-      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "31": {
-      "name": "Reject the alert",
-      "type": "action",
-      "outputs": {
-        "default": []
-      },
-      "arguments": {
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
-        "action_uuid": "ade85d7b-7507-4026-bfc6-cc006d10ddac"
-      },
-      "action_uuid": "c4b84449-a26f-4f18-bde4-33efa921f4d4",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "34": {
-      "name": "Rule Name?",
-      "type": "operator",
-      "cases": [
-        {
-          "left": "{{ node.35.rule.name }}",
-          "name": "Webfilter - Spam URLs",
-          "right": "Webfilter - Spam URLs",
-          "comparison": "==",
-          "description": "{{ node.35.rule.name }} == Webfilter - Spam URLs"
+        "1": {
+            "name": "Get an alert",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "7",
+                    "23",
+                    "38"
+                ]
+            },
+            "arguments": {
+                "stix": true,
+                "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}"
+            },
+            "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
         },
-        {
-          "left": "{{ node.35.rule.name }}",
-          "name": "Webfilter - Malicious Websites",
-          "right": "Webfilter - Malicious Websites",
-          "comparison": "==",
-          "description": "{{ node.35.rule.name }} == Webfilter - Malicious Websites"
+        "4": {
+            "name": "Scan URL API with IP",
+            "type": "action",
+            "outputs": {
+                "unknown": [],
+                "detected": [
+                    "5",
+                    "13"
+                ],
+                "not detected": [
+                    "5",
+                    "13"
+                ]
+            },
+            "arguments": {
+                "url": "{{ node.39['output'][0] }}"
+            },
+            "action_uuid": "b43a7897-b92c-4fe1-8a5c-be9e023c4f1c",
+            "module_uuid": "d023af1d-25d8-465b-b85f-2ed48214d6a5"
+        },
+        "5": {
+            "name": "Post general score comment",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+                "author": "IP enrich by VirusTotal",
+                "content": "{{ node.4.positives }}/{{ node.4.total }} security vendors flagged the target IP ({{ node.39['output'][0] }}) as malicious. [Direct link to VirusTotal]({{ node.4.permalink }})"
+            },
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "7": {
+            "name": "Read JSON File for domain",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "8",
+                    "17"
+                ]
+            },
+            "arguments": {
+                "file": "{{ node.1.stix or node.35.stix }}",
+                "to_file": false,
+                "jsonpath": "$.objects[?(type=\"observed-data\")].objects[?(@.type=\"domain-name\")].value",
+                "return_list": true
+            },
+            "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
+            "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
+        },
+        "8": {
+            "name": "Scan Domain",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "25"
+                ]
+            },
+            "arguments": {
+                "domain": "{{ node.7['output'][0] }}"
+            },
+            "action_uuid": "68a93925-d0c3-40e5-98a3-836d4b2e8f5e",
+            "module_uuid": "d023af1d-25d8-465b-b85f-2ed48214d6a5"
+        },
+        "9": {
+            "name": "Comment : Domain enrich by VT",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+                "author": "Domain enrich by VT",
+                "content": "Safety score given by Virus total: {{ node.8['Webutation domain info']['Safety score'] }}/100 with {% if node.8['Webutation domain info']['Adult content'] == \"no\" %} {{ node.8['Webutation domain info']['Adult content'] }} {% endif %} adult content detected. Virus total verdict: {{ node.8['Webutation domain info'].Verdict }}.\r\n   \r\n   {%if node.8['Forcepoint ThreatSeeker category'] is defined %}* Forcepoint classified it as '{{ node.8['Forcepoint ThreatSeeker category'] }}'\r\n   {% endif %}{%if node.8['Dr.Web category'] is defined %}* Dr.Web classified it as '{{ node.8['Dr.Web category'] }}'\r\n   {% endif %}{%if node.8['sophos category'] is defined %}* Sophos classified it as '{{ node.8['sophos category'] }}'\r\n   {% endif %}{%if node.8['Webroot category'] is defined %}* Webroot classified it as '{{ node.8['Webroot category'] }}'\r\n   {% endif %}{%if node.8['Opera domain info'] is defined %}* Opera classified it as '{{ node.8['Opera domain info'] }}'\r\n   {% endif %}{%if node.8['Comodo Valkyrie Verdict category'] is defined %}* Valkyrie classified it as '{{ node.8['Comodo Valkyrie Verdict category'] }}'\r\n   {% endif %}{%if node.8['BitDefender category'] is defined %}* BitDefender classified it as '{{ node.8['BitDefender category'] }}'\r\n   {% endif %}{%if node.8['alphaMountain.ai category'] is defined %}* AlphaMountain.ai classified it as '{{ node.8['alphaMountain.ai category'] }}'\r\n   {% endif %}"
+            },
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "11": {
+            "name": "Auto validation",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{{ node.17.positives }}",
+                    "name": "More than 6 positives on domain ?",
+                    "right": "{{ 6 }}",
+                    "comparison": ">=",
+                    "description": "{{ node.17.positives }} >= {{ 6 }}"
+                },
+                {
+                    "left": "{{ node.17.positives }}",
+                    "name": "No detection",
+                    "right": "{{ 0 }}",
+                    "comparison": "==",
+                    "description": "{{ node.17.positives }} == {{ 0 }}"
+                }
+            ],
+            "outputs": {
+                "else": [],
+                "No detection": [
+                    "31"
+                ],
+                "More than 6 positives on domain ?": [
+                    "12"
+                ]
+            },
+            "subtype": "condition"
+        },
+        "12": {
+            "name": "Validate",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+                "action_uuid": "c39a0a95-aa2c-4d0d-8d2e-d3decf426eea"
+            },
+            "action_uuid": "c4b84449-a26f-4f18-bde4-33efa921f4d4",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "13": {
+            "loop": [
+                "14"
+            ],
+            "name": "Foreach",
+            "type": "operator",
+            "items": "{{ node.4['scans'] | list }}",
+            "outputs": {
+                "default": [
+                    "16"
+                ]
+            },
+            "subtype": "foreach"
+        },
+        "14": {
+            "name": "Store",
+            "type": "operator",
+            "outputs": {
+                "default": []
+            },
+            "subtype": "store",
+            "modifications": [
+                {
+                    "key": "vendor",
+                    "type": "append",
+                    "value": "{% if node.4['scans'][node.13.default.value]['detected'] != False %} {{ node.13.default['value'] }} {% endif %}"
+                }
+            ]
+        },
+        "15": {
+            "name": "Comment : List of security vendors",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+                "content": "{% if  node.4.positives > 0 %} List of security vendors which detected this IP as malicious: {{ (store.vendor|reject('equalto', None)|reject('equalto', '')|join(',')) }}{% endif %}"
+            },
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "16": {
+            "name": "More than 0 positive",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{{ node.4.positives  }}",
+                    "name": "More than 0 positive",
+                    "right": "{{ 0 }}",
+                    "comparison": ">"
+                }
+            ],
+            "outputs": {
+                "else": [],
+                "More than 0 positive": [
+                    "15"
+                ]
+            },
+            "subtype": "condition"
+        },
+        "17": {
+            "name": "Scan URL",
+            "type": "action",
+            "outputs": {
+                "unknown": [],
+                "detected": [
+                    "18",
+                    "19",
+                    "11"
+                ],
+                "not detected": [
+                    "18",
+                    "19",
+                    "11"
+                ]
+            },
+            "arguments": {
+                "url": "{{ node.7['output'][0] }}"
+            },
+            "action_uuid": "b43a7897-b92c-4fe1-8a5c-be9e023c4f1c",
+            "module_uuid": "d023af1d-25d8-465b-b85f-2ed48214d6a5"
+        },
+        "18": {
+            "name": "Domain score",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "26"
+                ]
+            },
+            "arguments": {
+                "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+                "author": "Playbook Enrich domain with VT",
+                "content": "{{ node.17.positives }}/{{ node.17.total }} security vendors flagged the target domain ({{ node.7.output.0 }}) the {{ node.17.scan_date }} as malicious. [Direct link to VirusTotal]({{ node.17.permalink }})"
+            },
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "19": {
+            "loop": [
+                "21"
+            ],
+            "name": "Foreach",
+            "type": "operator",
+            "items": "{{ node.17['scans'] | list }}",
+            "outputs": {
+                "default": [
+                    "20"
+                ]
+            },
+            "subtype": "foreach"
+        },
+        "20": {
+            "name": "Condition",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{{ node.17.positives  }}",
+                    "name": "More than 0 positive",
+                    "right": "{{ 0 }}",
+                    "comparison": ">"
+                }
+            ],
+            "outputs": {
+                "else": [],
+                "More than 0 positive": [
+                    "22"
+                ]
+            },
+            "subtype": "condition"
+        },
+        "21": {
+            "name": "Store",
+            "type": "operator",
+            "outputs": {
+                "default": []
+            },
+            "subtype": "store",
+            "modifications": [
+                {
+                    "key": "vendor2",
+                    "type": "append",
+                    "value": "{% if node.17['scans'][node.19.default.value]['detected'] != False %} {{ node.19.default['value'] }} {% endif %}"
+                }
+            ]
+        },
+        "22": {
+            "name": "Post list of security vendors",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+                "content": "{% if  node.17.positives > 0 %} List of security vendors which detected this domain as malicious: {{ (store.vendor2|reject('equalto', None)|reject('equalto', '')|join(',')) }}{% endif %}"
+            },
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "23": {
+            "name": "Read JSON File for URL",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "24"
+                ]
+            },
+            "arguments": {
+                "file": "{{ node.1.stix }}",
+                "to_file": false,
+                "jsonpath": "$.objects[?(type=\"observed-data\")].objects[?(@.type=\"url\")].value",
+                "return_list": true
+            },
+            "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
+            "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
+        },
+        "24": {
+            "name": "Check Url start with http",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{%if node.23['output'][0] | regex_match('^http.*', ignore_case=False) %}true1{% endif %}",
+                    "name": "Check Url start with http",
+                    "right": "true1",
+                    "comparison": "=="
+                }
+            ],
+            "outputs": {
+                "else": [],
+                "Check Url start with http": [
+                    "28"
+                ]
+            },
+            "subtype": "condition"
+        },
+        "25": {
+            "name": "Webtuation is defined",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{% if node.8['Webutation domain info'] is defined %}true1{% endif %}}",
+                    "name": "Webutation is defined",
+                    "right": "true1",
+                    "comparison": "=="
+                }
+            ],
+            "outputs": {
+                "else": [
+                    "27"
+                ],
+                "Webtuation is defined": [
+                    "9"
+                ]
+            },
+            "subtype": "condition"
+        },
+        "26": {
+            "name": "Add informations to description",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+                "details": "{{ node.1['details'] }}   \r\n    \r\n   # Additional Information  \r\n  {{ node.18['content'] }}"
+            },
+            "action_uuid": "113a06db-3cef-48ac-908b-45f3ebc4d1bf",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "27": {
+            "name": "Categories is present in VT response ?",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{%if node.8['Forcepoint ThreatSeeker category'] is defined or node.8['Dr.Web category'] is defined or node.8['sophos category'] is defined or node.8['Webroot category'] is defined or node.8['Opera domain info'] is defined or node.8['Comodo Valkyrie Verdict category'] is defined or node.8['BitDefender category'] is defined or node.8['alphaMountain.ai category'] is defined %}true1{% endif %}",
+                    "name": "Yes",
+                    "right": "true1",
+                    "comparison": "=="
+                }
+            ],
+            "outputs": {
+                "Yes": [
+                    "29"
+                ],
+                "else": []
+            },
+            "subtype": "condition"
+        },
+        "28": {
+            "name": "Scan URL",
+            "type": "action",
+            "outputs": {
+                "unknown": [],
+                "detected": [
+                    "30"
+                ],
+                "not detected": [
+                    "30"
+                ]
+            },
+            "arguments": {
+                "url": "{{ node.23['output'][0] }}"
+            },
+            "action_uuid": "b43a7897-b92c-4fe1-8a5c-be9e023c4f1c",
+            "module_uuid": "d023af1d-25d8-465b-b85f-2ed48214d6a5"
+        },
+        "29": {
+            "name": "List of domain categories (Context)",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+                "author": "Domain categories enrich by VT",
+                "content": "List of domain categories: \r\n   {%if node.8['Forcepoint ThreatSeeker category'] is defined %}* Forcepoint classified it as '{{ node.8['Forcepoint ThreatSeeker category'] }}'\r\n   {% endif %}{%if node.8['Dr.Web category'] is defined %}* Dr.Web classified it as '{{ node.8['Dr.Web category'] }}'\r\n   {% endif %}{%if node.8['sophos category'] is defined %}* Sophos classified it as '{{ node.8['sophos category'] }}'\r\n   {% endif %}{%if node.8['Webroot category'] is defined %}* Webroot classified it as '{{ node.8['Webroot category'] }}'\r\n   {% endif %}{%if node.8['Opera domain info'] is defined %}* Opera classified it as '{{ node.8['Opera domain info'] }}'\r\n   {% endif %}{%if node.8['Comodo Valkyrie Verdict category'] is defined %}* Valkyrie classified it as '{{ node.8['Comodo Valkyrie Verdict category'] }}'\r\n   {% endif %}{%if node.8['BitDefender category'] is defined %}* BitDefender classified it as '{{ node.8['BitDefender category'] }}'\r\n   {% endif %}{%if node.8['alphaMountain.ai category'] is defined %}* AlphaMountain.ai classified it as '{{ node.8['alphaMountain.ai category'] }}'\r\n   {% endif %}"
+            },
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "30": {
+            "name": "URL VT score",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+                "author": "URL VT score",
+                "content": "{{ node.28.positives }}/{{ node.28.total }} security vendors flagged the target url ({{ node.23['output'][0] }}) as malicious. [Direct link to VirusTotal]({{ node.28.permalink }})"
+            },
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "31": {
+            "name": "Reject the alert",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}",
+                "action_uuid": "ade85d7b-7507-4026-bfc6-cc006d10ddac"
+            },
+            "action_uuid": "c4b84449-a26f-4f18-bde4-33efa921f4d4",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "34": {
+            "name": "Rule Name?",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{{ node.35.rule.name }}",
+                    "name": "Webfilter - Spam URLs",
+                    "right": "Webfilter - Spam URLs",
+                    "comparison": "==",
+                    "description": "{{ node.35.rule.name }} == Webfilter - Spam URLs"
+                },
+                {
+                    "left": "{{ node.35.rule.name }}",
+                    "name": "Webfilter - Malicious Websites",
+                    "right": "Webfilter - Malicious Websites",
+                    "comparison": "==",
+                    "description": "{{ node.35.rule.name }} == Webfilter - Malicious Websites"
+                }
+            ],
+            "outputs": {
+                "else": [],
+                "Webfilter - Spam URLs": [
+                    "1"
+                ],
+                "Webfilter - Malicious Websites": [
+                    "1"
+                ]
+            },
+            "subtype": "condition"
+        },
+        "35": {
+            "name": "Get alert to analyzed",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "34"
+                ]
+            },
+            "arguments": {
+                "stix": true,
+                "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}"
+            },
+            "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "36": {
+            "name": "Store",
+            "type": "operator",
+            "outputs": {
+                "default": [
+                    "1"
+                ]
+            },
+            "subtype": "store",
+            "modifications": [
+                {
+                    "key": "uuid",
+                    "type": "append",
+                    "value": "{{ node.0.alert_uuid }}"
+                }
+            ]
+        },
+        "37": {
+            "name": "Store",
+            "type": "operator",
+            "outputs": {
+                "default": [
+                    "35"
+                ]
+            },
+            "subtype": "store",
+            "modifications": [
+                {
+                    "key": "uuid",
+                    "type": "append",
+                    "value": "{{ node.40['alert_uuid'] }}"
+                }
+            ]
+        },
+        "38": {
+            "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=",
+            "name": "Get Events",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "39"
+                ]
+            },
+            "arguments": {
+                "query": "alert_short_ids: \"{{ node.1['short_id'] }}\"",
+                "latest_time": "{{ node.1['last_seen_at'] }}",
+                "earliest_time": "{{ node.1['first_seen_at'] }}"
+            },
+            "action_uuid": "af0b4355-a428-43d6-991c-d5ff878e17d5",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "39": {
+            "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCI+PGc+PHJlY3QgZmlsbD0ibm9uZSIgaGVpZ2h0PSIyNCIgd2lkdGg9IjI0Ii8+PHBhdGggZD0iTTIwLjQxLDguNDFsLTQuODMtNC44M0MxNS4yMSwzLjIxLDE0LjcsMywxNC4xNywzSDVDMy45LDMsMywzLjksMyw1djE0YzAsMS4xLDAuOSwyLDIsMmgxNGMxLjEsMCwyLTAuOSwyLTJWOS44MyBDMjEsOS4zLDIwLjc5LDguNzksMjAuNDEsOC40MXogTTcsN2g3djJIN1Y3eiBNMTcsMTdIN3YtMmgxMFYxN3ogTTE3LDEzSDd2LTJoMTBWMTN6Ii8+PC9nPjwvc3ZnPg==",
+            "name": "Read JSON File",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "4"
+                ]
+            },
+            "arguments": {
+                "file": "{{ node.38['events'] }}",
+                "to_file": false,
+                "jsonpath": "$..['destination.ip']",
+                "return_list": false
+            },
+            "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
+            "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
+        },
+        "40": {
+            "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=",
+            "name": "Alert Created",
+            "type": "trigger",
+            "outputs": {
+                "default": [
+                    "37"
+                ]
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "trigger_uuid": "785583cf-4377-43ce-a5fb-f4572eb57456"
         }
-      ],
-      "outputs": {
-        "else": [],
-        "Webfilter - Spam URLs": [
-          "1"
-        ],
-        "Webfilter - Malicious Websites": [
-          "1"
-        ]
-      },
-      "subtype": "condition"
     },
-    "35": {
-      "name": "Get alert to analyzed",
-      "type": "action",
-      "outputs": {
-        "default": [
-          "34"
-        ]
-      },
-      "arguments": {
-        "stix": true,
-        "uuid": "{{ (store.uuid | reject('equalto', None)) | join('') }}"
-      },
-      "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "36": {
-      "name": "Store",
-      "type": "operator",
-      "outputs": {
-        "default": [
-          "1"
-        ]
-      },
-      "subtype": "store",
-      "modifications": [
-        {
-          "key": "uuid",
-          "type": "append",
-          "value": "{{ node.0.alert_uuid }}"
-        }
-      ]
-    },
-    "37": {
-      "name": "Store",
-      "type": "operator",
-      "outputs": {
-        "default": [
-          "35"
-        ]
-      },
-      "subtype": "store",
-      "modifications": [
-        {
-          "key": "uuid",
-          "type": "append",
-          "value": "{{ node.40['alert_uuid'] }}"
-        }
-      ]
-    },
-    "38": {
-      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=",
-      "name": "Get Events",
-      "type": "action",
-      "outputs": {
-        "default": [
-          "39"
-        ]
-      },
-      "arguments": {
-        "query": "alert_short_ids: \"{{ node.1['short_id'] }}\"",
-        "latest_time": "{{ node.1['last_seen_at'] }}",
-        "earliest_time": "{{ node.1['first_seen_at'] }}"
-      },
-      "action_uuid": "af0b4355-a428-43d6-991c-d5ff878e17d5",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    },
-    "39": {
-      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCI+PGc+PHJlY3QgZmlsbD0ibm9uZSIgaGVpZ2h0PSIyNCIgd2lkdGg9IjI0Ii8+PHBhdGggZD0iTTIwLjQxLDguNDFsLTQuODMtNC44M0MxNS4yMSwzLjIxLDE0LjcsMywxNC4xNywzSDVDMy45LDMsMywzLjksMyw1djE0YzAsMS4xLDAuOSwyLDIsMmgxNGMxLjEsMCwyLTAuOSwyLTJWOS44MyBDMjEsOS4zLDIwLjc5LDguNzksMjAuNDEsOC40MXogTTcsN2g3djJIN1Y3eiBNMTcsMTdIN3YtMmgxMFYxN3ogTTE3LDEzSDd2LTJoMTBWMTN6Ii8+PC9nPjwvc3ZnPg==",
-      "name": "Read JSON File",
-      "type": "action",
-      "outputs": {
-        "default": [
-          "4"
-        ]
-      },
-      "arguments": {
-        "file": "{{ node.38['events'] }}",
-        "to_file": false,
-        "jsonpath": "$..['destination.ip']",
-        "return_list": false
-      },
-      "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
-      "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
-    },
-    "40": {
-      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE3MCIgdmlld0JveD0iMCAwIDE3MCAxNzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNy4zNjU3IDU3LjgwMzlIMjcuNzE1MVYxMTMuNjg2SDM3LjM2NTdWNTcuODAzOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05LjY1MDY2IDM3LjY4NjNINTYuNDE5Mkg2Ni4wNjk5SDE2MC4xMDJWMTMyLjA2NUg2Ni4wNjk5SDU2LjQxOTJIOS42NTA2NlYzNy42ODYzWk0wIDE0MkgxNzBWMjhIMFYxNDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjMzNCA1Ny44MDM5QzEyOC42NzYgNTcuODAzOSAxNDEuMDQ4IDcwLjIyMjIgMTQxLjA0OCA4NS42MjA5QzE0MS4wNDggMTAxLjAyIDEyOC42NzYgMTEzLjQzOCAxMTMuMzM0IDExMy40MzhDOTcuOTkxNiAxMTMuNDM4IDg1LjYxOSAxMDEuMDIgODUuNjE5IDg1LjYyMDlDODUuNjE5IDcwLjIyMjIgOTcuOTkxNiA1Ny44MDM5IDExMy4zMzQgNTcuODAzOVpNMTEzLjMzNCAxMjMuMzczQzEzNC4xMiAxMjMuMzczIDE1MC45NDYgMTA2LjQ4NCAxNTAuOTQ2IDg1LjYyMDlDMTUwLjk0NiA2NC43NTgxIDEzNC4xMiA0OC4xMTc2IDExMy4zMzQgNDguMTE3NkM5Mi41NDc2IDQ4LjExNzYgNzUuNzIwOSA2NS4wMDY1IDc1LjcyMDkgODUuODY5MkM3NS43MjA5IDEwNi43MzIgOTIuNTQ3NiAxMjMuMzczIDExMy4zMzQgMTIzLjM3M1oiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=",
-      "name": "Alert Created",
-      "type": "trigger",
-      "outputs": {
-        "default": [
-          "37"
-        ]
-      },
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
-      "trigger_uuid": "785583cf-4377-43ce-a5fb-f4572eb57456"
-    }
-  },
-  "workspace": "Operation Center",
-  "description": "Enrich network alerts with information from Virus Total"
+    "workspace": "Operation Center",
+    "description": "Enrich network alerts with information from Virus Total",
+    "uuid": "99cce973-b52d-4cec-a83f-dd281596d507"
 }
