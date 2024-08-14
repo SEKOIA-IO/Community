@@ -6,159 +6,158 @@
         "cloudflare",
         "fetch osint",
         "enrich"
-      ],
-    
+    ],
     "workspace": "Intelligence Center",
     "nodes": {
-      "0": {
-        "name": "Fetch OSINT",
-        "type": "trigger",
-        "outputs": {
-          "default": [
-            "5"
-          ]
+        "0": {
+            "name": "Fetch OSINT",
+            "type": "trigger",
+            "outputs": {
+                "default": [
+                    "5"
+                ]
+            },
+            "module_uuid": "19cf9b48-dc7a-485f-ba14-3b7b998774c1",
+            "trigger_uuid": "00d77e88-74e5-4725-9694-c0e7bb16cd56"
         },
-        "module_uuid": "19cf9b48-dc7a-485f-ba14-3b7b998774c1",
-        "trigger_uuid": "00d77e88-74e5-4725-9694-c0e7bb16cd56"
-      },
-      "1": {
-        "name": "Request Cloudflare DNS over HTTPs",
-        "type": "action",
-        "outputs": {
-          "default": [
-            "10"
-          ]
+        "1": {
+            "name": "Request Cloudflare DNS over HTTPs",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "10"
+                ]
+            },
+            "arguments": {
+                "url": "https://1.1.1.1/dns-query",
+                "method": "get",
+                "params": "name={{node.2.default.value}}",
+                "headers": {
+                    "Accept": "application/dns-json",
+                    "Content-Type": "application/dns-json"
+                }
+            },
+            "action_uuid": "40bcf3c0-aa8b-4111-9b4e-f3caffccb4e5",
+            "module_uuid": "5894985f-91eb-46db-9306-cc5ac6463d3d"
         },
-        "arguments": {
-          "url": "https://1.1.1.1/dns-query",
-          "method": "get",
-          "params": "name={{node.2.default.value}}",
-          "headers": {
-            "Accept": "application/dns-json",
-            "Content-Type": "application/dns-json"
-          }
+        "2": {
+            "loop": [
+                "1"
+            ],
+            "name": "Foreach domain from 1st request",
+            "type": "operator",
+            "items": "{{ node.5['output'] }}",
+            "outputs": {
+                "default": [
+                    "9"
+                ]
+            },
+            "subtype": "foreach"
         },
-        "action_uuid": "40bcf3c0-aa8b-4111-9b4e-f3caffccb4e5",
-        "module_uuid": "5894985f-91eb-46db-9306-cc5ac6463d3d"
-      },
-      "2": {
-        "loop": [
-          "1"
-        ],
-        "name": "Foreach domain from 1st request",
-        "type": "operator",
-        "items": "{{ node.5['output'] }}",
-        "outputs": {
-          "default": [
-            "9"
-          ]
+        "4": {
+            "name": "store ips",
+            "type": "operator",
+            "outputs": {
+                "default": []
+            },
+            "subtype": "store",
+            "modifications": [
+                {
+                    "key": "ip",
+                    "type": "append",
+                    "value": "{{node.10.default.value}}"
+                }
+            ]
         },
-        "subtype": "foreach"
-      },
-      "4": {
-        "name": "store ips",
-        "type": "operator",
-        "outputs": {
-          "default": []
+        "5": {
+            "name": "Get domains from Fetch OSINT",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "2"
+                ]
+            },
+            "arguments": {
+                "to_file": false,
+                "jsonpath": "",
+                "file_path": "{{ node.0['bundle_path'] }}",
+                "return_list": true
+            },
+            "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
+            "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
         },
-        "subtype": "store",
-        "modifications": [
-          {
-            "key": "ip",
-            "type": "append",
-            "value": "{{node.10.default.value}}"
-          }
-        ]
-      },
-      "5": {
-        "name": "Get domains from Fetch OSINT",
-        "type": "action",
-        "outputs": {
-          "default": [
-            "2"
-          ]
+        "6": {
+            "name": "JSON object to Observables",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "8"
+                ]
+            },
+            "arguments": {
+                "type": "ipv4-addr",
+                "items_path": "{{ node.9['output_path'] }}",
+                "value_path": "$"
+            },
+            "action_uuid": "7b0ff5ef-70c2-4457-80ca-482283de8baf",
+            "module_uuid": "5fdf8838-1529-4243-8fbc-e6bfa7b52e30"
         },
-        "arguments": {
-          "to_file": false,
-          "jsonpath": "",
-          "file_path": "{{ node.0['bundle_path'] }}",
-          "return_list": true
+        "8": {
+            "name": "Add Tags to IP addresses",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "11"
+                ]
+            },
+            "arguments": {
+                "tags": [],
+                "valid_for": 3,
+                "bundle_path": "{{ node.6['observables_path'] }}"
+            },
+            "action_uuid": "270f4582-575c-4b8d-a884-73a3ccd6a97c",
+            "module_uuid": "5fdf8838-1529-4243-8fbc-e6bfa7b52e30"
         },
-        "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
-        "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
-      },
-      "6": {
-        "name": "JSON object to Observables",
-        "type": "action",
-        "outputs": {
-          "default": [
-            "8"
-          ]
+        "9": {
+            "name": "convert store to json file",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "6"
+                ]
+            },
+            "arguments": {
+                "file": "{{store.ip }}",
+                "to_file": true,
+                "return_list": true
+            },
+            "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
+            "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
         },
-        "arguments": {
-          "type": "ipv4-addr",
-          "items_path": "{{ node.9['output_path'] }}",
-          "value_path": "$"
+        "10": {
+            "loop": [
+                "4"
+            ],
+            "name": "Foreach IP addresses in CloudFlare response",
+            "type": "operator",
+            "items": "{{ node.1['text'] | jsonpath(\"$.Answer..data\", True) }}",
+            "outputs": {
+                "default": []
+            },
+            "subtype": "foreach"
         },
-        "action_uuid": "7b0ff5ef-70c2-4457-80ca-482283de8baf",
-        "module_uuid": "5fdf8838-1529-4243-8fbc-e6bfa7b52e30"
-      },
-      "8": {
-        "name": "Add Tags to IP addresses",
-        "type": "action",
-        "outputs": {
-          "default": [
-            "11"
-          ]
-        },
-        "arguments": {
-          "tags": [
-          ],
-          "valid_for": 3,
-          "bundle_path": "{{ node.6['observables_path'] }}"
-        },
-        "action_uuid": "270f4582-575c-4b8d-a884-73a3ccd6a97c",
-        "module_uuid": "5fdf8838-1529-4243-8fbc-e6bfa7b52e30"
-      },
-      "9": {
-        "name": "convert store to json file",
-        "type": "action",
-        "outputs": {
-          "default": [
-            "6"
-          ]
-        },
-        "arguments": {
-          "file": "{{store.ip }}",
-          "to_file": true,
-          "return_list": true
-        },
-        "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87",
-        "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21"
-      },
-      "10": {
-        "loop": [
-          "4"
-        ],
-        "name": "Foreach IP addresses in CloudFlare response",
-        "type": "operator",
-        "items": "{{ node.1['text'] | jsonpath(\"$.Answer..data\", True) }}",
-        "outputs": {
-          "default": []
-        },
-        "subtype": "foreach"
-      },
-      "11": {
-        "name": "Upload Observables",
-        "type": "action",
-        "outputs": {
-          "default": []
-        },
-        "arguments": {
-          "observables_path": "{{ node.8['bundle_path'] }}"
-        },
-        "action_uuid": "ab660ed7-9160-4f91-bb1c-3d49dc8c0972",
-        "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-      }
-    }
-  }
+        "11": {
+            "name": "Upload Observables",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "observables_path": "{{ node.8['bundle_path'] }}"
+            },
+            "action_uuid": "ab660ed7-9160-4f91-bb1c-3d49dc8c0972",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        }
+    },
+    "uuid": "6c5d6ac9-d2bf-4910-9988-59044986cc51"
+}

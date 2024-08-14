@@ -1,167 +1,168 @@
 {
-  "name": "Tranco top domains to observables",
-  "nodes": {
-    "0": {
-      "name": "Fetch Tranco",
-      "type": "trigger",
-      "outputs": {
-        "default": [
-          "1"
-        ]
-      },
-      "module_uuid": "081074fc-240d-437f-a214-fba49691e69e",
-      "trigger_uuid": "469f5edd-77ab-4909-9d82-b29f734e5309"
-    },
-    "1": {
-      "name": "Determine Tags to Apply",
-      "type": "operator",
-      "cases": [
-        {
-          "left": "{{node.0.chunk_offset}}",
-          "name": "top_10_000",
-          "right": [
-            0,
-            9999
-          ],
-          "comparison": "range",
-          "value_type": "integer",
-          "description": "{{node.0.chunk_offset}} range [0, 9999]"
+    "name": "Tranco top domains to observables",
+    "nodes": {
+        "0": {
+            "name": "Fetch Tranco",
+            "type": "trigger",
+            "outputs": {
+                "default": [
+                    "1"
+                ]
+            },
+            "module_uuid": "081074fc-240d-437f-a214-fba49691e69e",
+            "trigger_uuid": "469f5edd-77ab-4909-9d82-b29f734e5309"
         },
-        {
-          "left": "{{node.0.chunk_offset}}",
-          "name": "top_100_000",
-          "right": [
-            10000,
-            99999
-          ],
-          "comparison": "range",
-          "value_type": "integer",
-          "description": "{{node.0.chunk_offset}} range [10000, 99999]"
+        "1": {
+            "name": "Determine Tags to Apply",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{{node.0.chunk_offset}}",
+                    "name": "top_10_000",
+                    "right": [
+                        0,
+                        9999
+                    ],
+                    "comparison": "range",
+                    "value_type": "integer",
+                    "description": "{{node.0.chunk_offset}} range [0, 9999]"
+                },
+                {
+                    "left": "{{node.0.chunk_offset}}",
+                    "name": "top_100_000",
+                    "right": [
+                        10000,
+                        99999
+                    ],
+                    "comparison": "range",
+                    "value_type": "integer",
+                    "description": "{{node.0.chunk_offset}} range [10000, 99999]"
+                },
+                {
+                    "left": "{{node.0.chunk_offset}}",
+                    "name": "top_1_000_000",
+                    "right": [
+                        100000,
+                        1000000
+                    ],
+                    "comparison": "range",
+                    "value_type": "integer",
+                    "description": "{{node.0.chunk_offset}} range [100000, 1000000]"
+                }
+            ],
+            "outputs": {
+                "else": [],
+                "top_10_000": [
+                    "2"
+                ],
+                "top_100_000": [
+                    "3"
+                ],
+                "top_1_000_000": [
+                    "4"
+                ]
+            },
+            "subtype": "condition"
         },
-        {
-          "left": "{{node.0.chunk_offset}}",
-          "name": "top_1_000_000",
-          "right": [
-            100000,
-            1000000
-          ],
-          "comparison": "range",
-          "value_type": "integer",
-          "description": "{{node.0.chunk_offset}} range [100000, 1000000]"
-        }
-      ],
-      "outputs": {
-        "else": [],
-        "top_10_000": [
-          "2"
-        ],
-        "top_100_000": [
-          "3"
-        ],
-        "top_1_000_000": [
-          "4"
-        ]
-      },
-      "subtype": "condition"
-    },
-    "2": {
-      "name": "Set Tags for top 1000",
-      "type": "operator",
-      "outputs": {
-        "default": [
-          "5"
-        ]
-      },
-      "subtype": "store",
-      "modifications": [
-        {
-          "key": "tags",
-          "type": "set",
-          "value": "['domains_top_10_000', 'domains_top_100_000', 'domains_top_1_000_000']"
-        }
-      ]
-    },
-    "3": {
-      "name": "Set Tags for top 100000",
-      "type": "operator",
-      "outputs": {
-        "default": [
-          "5"
-        ]
-      },
-      "subtype": "store",
-      "modifications": [
-        {
-          "key": "tags",
-          "type": "set",
-          "value": "['domains_top_100_000', 'domains_top_1_000_000']"
-        }
-      ]
-    },
-    "4": {
-      "name": "Set Tags for top 1000000",
-      "type": "operator",
-      "outputs": {
-        "default": [
-          "5"
-        ]
-      },
-      "subtype": "store",
-      "modifications": [
-        {
-          "key": "tags",
-          "type": "set",
-          "value": "['domains_top_1_000_000']"
-        }
-      ]
-    },
-    "5": {
-      "name": "Convert domains to observables",
-      "type": "action",
-      "outputs": {
-        "default": [
-          "6"
-        ]
-      },
-      "arguments": {
-        "tags": "{{store.tags}}",
-        "type": "domain-name",
-        "source": {
-          "id": "identity--9c1c5893-4ce7-45e9-ad8e-7fadca11b1b8",
-          "name": "Tranco",
-          "type": "identity",
-          "created": "2022-03-25T10:30:59.874898Z",
-          "sectors": [
-            "technology"
-          ],
-          "modified": "2022-03-25T10:31:10.01511Z",
-          "confidence": 100,
-          "description": "A Research-Oriented Top Sites Ranking Hardened Against Manipulation",
-          "identity_class": "group"
+        "2": {
+            "name": "Set Tags for top 1000",
+            "type": "operator",
+            "outputs": {
+                "default": [
+                    "5"
+                ]
+            },
+            "subtype": "store",
+            "modifications": [
+                {
+                    "key": "tags",
+                    "type": "set",
+                    "value": "['domains_top_10_000', 'domains_top_100_000', 'domains_top_1_000_000']"
+                }
+            ]
         },
-        "items_path": "{{node.0.file_path}}"
-      },
-      "action_uuid": "3b7ae40a-2fb8-451f-9ede-7f7a906c7132",
-      "module_uuid": "5fdf8838-1529-4243-8fbc-e6bfa7b52e30"
+        "3": {
+            "name": "Set Tags for top 100000",
+            "type": "operator",
+            "outputs": {
+                "default": [
+                    "5"
+                ]
+            },
+            "subtype": "store",
+            "modifications": [
+                {
+                    "key": "tags",
+                    "type": "set",
+                    "value": "['domains_top_100_000', 'domains_top_1_000_000']"
+                }
+            ]
+        },
+        "4": {
+            "name": "Set Tags for top 1000000",
+            "type": "operator",
+            "outputs": {
+                "default": [
+                    "5"
+                ]
+            },
+            "subtype": "store",
+            "modifications": [
+                {
+                    "key": "tags",
+                    "type": "set",
+                    "value": "['domains_top_1_000_000']"
+                }
+            ]
+        },
+        "5": {
+            "name": "Convert domains to observables",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "6"
+                ]
+            },
+            "arguments": {
+                "tags": "{{store.tags}}",
+                "type": "domain-name",
+                "source": {
+                    "id": "identity--9c1c5893-4ce7-45e9-ad8e-7fadca11b1b8",
+                    "name": "Tranco",
+                    "type": "identity",
+                    "created": "2022-03-25T10:30:59.874898Z",
+                    "sectors": [
+                        "technology"
+                    ],
+                    "modified": "2022-03-25T10:31:10.01511Z",
+                    "confidence": 100,
+                    "description": "A Research-Oriented Top Sites Ranking Hardened Against Manipulation",
+                    "identity_class": "group"
+                },
+                "items_path": "{{node.0.file_path}}"
+            },
+            "action_uuid": "3b7ae40a-2fb8-451f-9ede-7f7a906c7132",
+            "module_uuid": "5fdf8838-1529-4243-8fbc-e6bfa7b52e30"
+        },
+        "6": {
+            "name": "Upload observables to the TIP",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "observables_path": "{{node.5.observables_path}}"
+            },
+            "action_uuid": "ab660ed7-9160-4f91-bb1c-3d49dc8c0972",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        }
     },
-    "6": {
-      "name": "Upload observables to the TIP",
-      "type": "action",
-      "outputs": {
-        "default": []
-      },
-      "arguments": {
-        "observables_path": "{{node.5.observables_path}}"
-      },
-      "action_uuid": "ab660ed7-9160-4f91-bb1c-3d49dc8c0972",
-      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
-    }
-  },
-  "workspace": "Intelligence Center",
-  "tags": [
-      "observable",
-      "tranco",
-      "TIP"
+    "workspace": "Intelligence Center",
+    "tags": [
+        "observable",
+        "tranco",
+        "TIP"
     ],
-  "description": "Automatically import Tranco's top 1 000 000 domain names to observable database"
+    "description": "Automatically import Tranco's top 1 000 000 domain names to observable database",
+    "uuid": "92657fea-74f7-4b6d-9cc7-6dc9791bcdac"
 }

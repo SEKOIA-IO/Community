@@ -11,13 +11,13 @@
             "name": "Alert Created",
             "type": "trigger",
             "outputs": {
-              "default": [
-                "2"
-              ]
+                "default": [
+                    "2"
+                ]
             },
             "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
             "trigger_uuid": "785583cf-4377-43ce-a5fb-f4572eb57456"
-          },
+        },
         "2": {
             "name": "Retrieve alert",
             "type": "action",
@@ -47,5 +47,6 @@
                 "default": []
             }
         }
-    }
+    },
+    "uuid": "ad1a3114-1ce5-4909-bd13-597434e1646b"
 }
