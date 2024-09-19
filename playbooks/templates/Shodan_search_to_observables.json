@@ -27,6 +27,9 @@
                     "2"
                 ]
             },
+            "arguments": {
+                "query": "changeme"
+            },
             "action_uuid": "5cb712d6-7dc9-43bb-b0cd-956d01392e0a",
             "module_uuid": "25c9c44e-b3dc-4485-a2cb-4e9a116bc8fd"
         },
