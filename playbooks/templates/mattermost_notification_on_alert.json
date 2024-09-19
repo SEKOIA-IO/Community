@@ -41,7 +41,8 @@
             "arguments": {
                 "pretext": "New alert: {{node.2.rule.name}}. Urgency: {{node.2.urgency.current_value}}",
                 "base_url": "https://api.sekoia.io/",
-                "alert_uuid": "{{ node.0.alert_uuid }}"
+                "alert_uuid": "{{ node.0.alert_uuid }}",
+                "api_key": "changeme"
             },
             "outputs": {
                 "default": []
