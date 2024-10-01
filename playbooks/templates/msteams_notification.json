@@ -235,7 +235,7 @@
                                 "msteams": {
                                     "width": "Full"
                                 },
-                                "version": "1.4"
+                                "version": "\"1.4\""
                             },
                             "contentUrl": null,
                             "contentType": "application/vnd.microsoft.card.adaptive"
