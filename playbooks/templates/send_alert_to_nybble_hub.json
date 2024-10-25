@@ -1,5 +1,5 @@
 {
-    "name": "Linux Suspicious Search",
+    "name": "Send alert to Nybble Hub",
     "tags": [
         "alert",
         "nybble"
