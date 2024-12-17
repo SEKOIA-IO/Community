@@ -3,7 +3,7 @@ rule sekoiaio_tool_yasso_strings {
         id = "31ec7510-6770-4fde-b835-e8b12f8f2b30"
         version = "1.0"
         description = "Detects Yasso based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-21"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_edgeguard {
         id = "bbdb362f-d235-48f8-8fa5-d340d4e3e3f0"
         version = "1.0"
         description = "Finds EdgeGuard Stealer samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-08-22"
         classification = "TLP:CLEAR"
         

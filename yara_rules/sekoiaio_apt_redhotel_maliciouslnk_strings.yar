@@ -3,7 +3,7 @@ rule sekoiaio_apt_redhotel_maliciouslnk_strings {
         id = "df2f0002-7921-4378-a936-ea0de5fbfa5a"
         version = "1.0"
         description = "Detects RedHotel's malicious LNKs"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-06"
         classification = "TLP:CLEAR"
         hash = "8e2c17040ec78cbcdc07bb2cf9dd7e01"

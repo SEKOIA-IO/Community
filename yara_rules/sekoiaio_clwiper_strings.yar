@@ -2,7 +2,7 @@ rule sekoiaio_clwiper_strings {
     meta:
         id = "91e531e2-8548-460f-88a8-cc09abb901e0"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-15"
         classification = "TLP:CLEAR"
         

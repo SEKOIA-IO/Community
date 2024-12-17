@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt41_javascript_dropper {
         id = "fde70806-af50-4706-9daf-d39ad0564fc7"
         version = "1.0"
         description = "Detects Earth Lusca JS dropper"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-26"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_apt_sugargh0stcampaign_malicious_lnk {
         id = "4297c150-d125-49b9-8850-fcedf5284ae9"
         version = "1.0"
         description = "Detects malicious LNK used in SugarGh0st campaign"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-01"
         classification = "TLP:CLEAR"
         

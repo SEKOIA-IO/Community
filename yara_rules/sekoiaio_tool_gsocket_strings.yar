@@ -3,7 +3,7 @@ rule sekoiaio_tool_gsocket_strings {
         id = "55fb2f2b-1074-4b6d-9113-48eaeb0e1e27"
         version = "1.0"
         description = "Detects Gsocket based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-10"
         classification = "TLP:CLEAR"
         

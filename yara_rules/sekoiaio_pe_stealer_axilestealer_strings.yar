@@ -3,7 +3,7 @@ rule sekoiaio_pe_stealer_axilestealer_strings {
         id = "412bfc3e-6bb7-4b0d-8bb3-96eae0cc9782"
         version = "1.0"
         description = "AxileStealer strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-13"
         classification = "TLP:CLEAR"
         

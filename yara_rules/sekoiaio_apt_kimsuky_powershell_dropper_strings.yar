@@ -3,7 +3,7 @@ rule sekoiaio_apt_kimsuky_powershell_dropper_strings {
         id = "8b346e05-215b-46c0-82bf-fce3a65440f3"
         version = "1.0"
         description = "Detects a PowerShell dropper used by Kimsuky"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-11"
         classification = "TLP:CLEAR"
         

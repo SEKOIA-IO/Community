@@ -3,7 +3,7 @@ rule sekoiaio_apt_granitetyphoon_pingpulllinux_strings {
         id = "ee213206-d9ad-47fa-bea1-61a9d2cfba58"
         version = "1.0"
         description = "Detects PingPull Linux variant"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-25"
         classification = "TLP:CLEAR"
         

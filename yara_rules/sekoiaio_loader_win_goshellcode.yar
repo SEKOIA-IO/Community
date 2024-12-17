@@ -2,7 +2,7 @@ rule sekoiaio_loader_win_goshellcode {
     meta:
         version = "1.0"
         description = "Finds GoShellcode samples based on the specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://github.com/yoda66/GoShellcode/blob/main/gosc.go"
         creation_date = "2023-11-15"
         id = "61346225-325a-4067-a4d6-3b8c001dd380"

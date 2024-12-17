@@ -3,7 +3,7 @@ rule sekoiaio_apt_suspected_sandworm_sdelete_wiper {
         id = "c1419b11-33e5-4280-b92a-039719cb17d3"
         version = "1.0"
         description = "Detects Sdelete wiper"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-10-25"
         classification = "TLP:CLEAR"
         

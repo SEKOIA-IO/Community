@@ -2,10 +2,10 @@ rule sekoiaio_tool_godpotato {
     meta:
         id = "cc396771-f187-43ae-903f-147d15483c46"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-08-23"
         classification = "TLP:CLEAR"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         
     strings:
         $s1 = "[!] Cannot create process Win32Error:{0}" ascii wide

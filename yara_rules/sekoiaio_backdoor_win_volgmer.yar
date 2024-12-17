@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_win_volgmer {
         id = "9468a66d-787c-488f-937b-22617c7a2ded"
         version = "1.0"
         description = "Detect the NukeSped variant called Volgmer used by Andariel"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-04"
         classification = "TLP:CLEAR"
         hash1 = "3098e6e7ae23b3b8637677da7bfc0ba720e557e6df71fa54a8ef1579b6746061"

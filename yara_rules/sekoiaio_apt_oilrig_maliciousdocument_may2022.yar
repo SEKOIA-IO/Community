@@ -3,7 +3,7 @@ rule sekoiaio_apt_oilrig_maliciousdocument_may2022 {
         id = "cb4ab310-e24c-4edc-8804-0c49c30124fb"
         version = "1.0"
         description = "Detects OilRig Malicious Document"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-05-13"
         classification = "TLP:CLEAR"
         

@@ -2,7 +2,7 @@ rule sekoiaio_loader_amadey_stealer_plugin {
     meta:
         version = "1.0"
         description = "Finds Amadey's stealer plugin based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-16"
         id = "50154e39-98b3-40e5-8986-18bbb7b15647"
         classification = "TLP:CLEAR"

@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_fscan_strings {
         id = "6bef80c3-370c-4168-9d88-3fac88f986b1"
         version = "1.0"
         description = "Detects fscan based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-06"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_apt_37_chinotto {
         id = "eff8fd11-dc7a-4011-b083-181d0cca8790"
         version = "1.0"
         description = "Detects obfuscation and string of APT37 stealer"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-27"
         classification = "TLP:CLEAR"
         hash1 = "feab7940559392bbf38f29267509340569160e0a3b257fd86e5c65ae087ea014"

@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt41_keyplug_dropper {
         id = "b6740371-c4c3-437e-8235-0bd4f7b9c3f5"
         version = "1.0"
         description = "Detects a dropper used by keyplug"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-12"
         classification = "TLP:CLEAR"
         

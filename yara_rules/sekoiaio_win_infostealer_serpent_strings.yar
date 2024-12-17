@@ -3,7 +3,7 @@ rule sekoiaio_win_infostealer_serpent_strings {
         id = "ad9e2366-c95e-4090-a0db-48f3cc325209"
         version = "1.0"
         description = "Serpent Stealer string"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-04"
         classification = "TLP:CLEAR"
         

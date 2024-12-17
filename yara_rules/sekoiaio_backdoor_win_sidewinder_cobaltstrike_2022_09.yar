@@ -6,7 +6,7 @@ rule sekoiaio_backdoor_win_sidewinder_cobaltstrike_2022_09 {
         id = "b5e8f87a-4a2c-49bb-aa98-bf3fb5056b23"
         version = "1.0"
         description = "Detect the SideWinder malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-24"
         classification = "TLP:CLEAR"
         

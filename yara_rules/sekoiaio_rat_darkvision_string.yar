@@ -3,7 +3,7 @@ rule sekoiaio_rat_darkvision_string {
         id = "ab698a79-42ee-452a-a3ba-1a9872d5e2bc"
         version = "1.0"
         description = "DarkVision RAT based on string"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-17"
         classification = "TLP:CLEAR"
         hash = "8ec5526cecc596e0711c82e39cd4f2ce"

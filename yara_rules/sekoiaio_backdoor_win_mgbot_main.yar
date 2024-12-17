@@ -6,7 +6,7 @@ rule sekoiaio_backdoor_win_mgbot_main {
         id = "528baa11-58d5-470a-bd6d-963d4ac75d97"
         version = "1.0"
         description = "Detect MgBot main.dll file"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-20"
         classification = "TLP:CLEAR"
         reference = "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/apt-attacks-telecoms-africa-mgbot"

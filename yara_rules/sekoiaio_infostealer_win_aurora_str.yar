@@ -4,7 +4,7 @@ rule sekoiaio_infostealer_win_aurora_str {
     meta:
         version = "1.0"
         description = "Finds Aurora botnet samples based on characteristic strings."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-21"
         id = "1f4391b8-700f-4702-9ef6-68ce3d55a176"
         classification = "TLP:CLEAR"

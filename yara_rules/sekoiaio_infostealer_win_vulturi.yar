@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_vulturi {
         id = "5369cbfb-ff94-4484-b5a4-894feeed97e1"
         version = "1.0"
         description = "Detect the Vulturi infostealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://lamp-ret.club/t/vulturi-cracked-by-tr0uble-and-eshelon_mayskih.193/"
         creation_date = "2022-03-14"
         classification = "TLP:CLEAR"

@@ -2,7 +2,7 @@ rule sekoiaio_infostealer_win_aurora {
     meta:
         version = "1.0"
         description = "Finds Aurora samples based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-15"
         id = "22ae81b4-647f-4b46-9b2a-dd96e0615d65"
         classification = "TLP:CLEAR"

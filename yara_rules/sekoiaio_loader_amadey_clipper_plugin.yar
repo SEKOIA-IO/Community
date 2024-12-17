@@ -2,7 +2,7 @@ rule sekoiaio_loader_amadey_clipper_plugin {
     meta:
         version = "1.0"
         description = "Finds Amadey's clipper plugin based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-16"
         id = "487b6657-8834-45ee-8fd4-03df9c0dd7be"
         classification = "TLP:CLEAR"

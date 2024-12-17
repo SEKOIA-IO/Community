@@ -3,7 +3,7 @@ rule sekoiaio_tool_nping_strings {
         id = "fcfd9539-b224-45b4-9252-0b4d56a40be4"
         version = "1.0"
         description = "Detects NPing"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-11"
         classification = "TLP:CLEAR"
         

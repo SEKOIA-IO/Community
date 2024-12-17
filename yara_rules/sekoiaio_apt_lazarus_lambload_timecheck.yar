@@ -3,7 +3,7 @@ rule sekoiaio_apt_lazarus_lambload_timecheck {
         id = "8807c752-c34e-4c3b-9194-3a9bd2575a88"
         version = "1.0"
         description = "Detects timeCheck routine in LambLoad"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-27"
         classification = "TLP:CLEAR"
         reference = "https://www.microsoft.com/en-us/security/blog/2023/11/22/diamond-sleet-supply-chain-compromise-distributes-a-modified-cyberlink-installer/"

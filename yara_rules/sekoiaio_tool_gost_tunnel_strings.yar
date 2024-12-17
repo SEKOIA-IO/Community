@@ -3,7 +3,7 @@ rule sekoiaio_tool_gost_tunnel_strings {
         id = "2de7aae9-9cf8-4007-aa27-5caea4123713"
         version = "1.0"
         description = "Detects GOST Go Tunnel, based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-28"
         classification = "TLP:CLEAR"
         

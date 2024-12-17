@@ -5,7 +5,7 @@ rule sekoiaio_rootkit_win_purplefox_kernel_driver {
         id = "798dc20b-76cd-4e31-b9ee-f363fb39cd58"
         version = "1.0"
         description = "Detect the Purple Fox trojan"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-03-28"
         classification = "TLP:CLEAR"
         reference = "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/22/c/purple-fox-uses-new-arrival-vector-and-improves-malware-arsenal/IOCs-Purple-Fox.txt"

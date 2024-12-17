@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_powershellempire_sharpire {
         id = "fed21fbd-52ed-4649-a1ff-56eae57fc9ef"
         version = "1.0"
         description = "Detect Sharpire version of Empire"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-15"
         classification = "TLP:CLEAR"
         

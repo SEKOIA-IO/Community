@@ -2,7 +2,7 @@ rule sekoiaio_implant_mul_alchimist {
     meta:
         version = "1.0"
         description = "Detect the Alchimist implant based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-18"
         id = "66330cc6-a7da-4717-9977-0cede48f46f5"
         classification = "TLP:CLEAR"

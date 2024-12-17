@@ -3,7 +3,7 @@ rule sekoiaio_tool_bypassgodzilla {
         id = "fa492f97-a46c-422d-a617-c503744ee22e"
         version = "1.0"
         description = "Detects payload of BypassGodzilla"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-09"
         classification = "TLP:CLEAR"
         hash = "571c9042c627abba19ba1d591e2083eb"

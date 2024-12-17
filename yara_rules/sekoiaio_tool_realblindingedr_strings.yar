@@ -3,7 +3,7 @@ rule sekoiaio_tool_realblindingedr_strings {
         id = "505dcbee-ae37-47c1-a322-2c52d10e68d7"
         version = "1.0"
         description = "Detects RealBlindingEDR based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-11"
         classification = "TLP:CLEAR"
         hash = "cb6219e2b6577b8d4a18114d595e10d7"

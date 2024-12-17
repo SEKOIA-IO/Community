@@ -3,7 +3,7 @@ rule sekoiaio_apt_badmagic_startngrok_pshscript {
         id = "94d64482-3033-4531-8530-58546364ac06"
         version = "1.0"
         description = "Detects BadMagic StartNgrok powershell script"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-15"
         classification = "TLP:CLEAR"
         

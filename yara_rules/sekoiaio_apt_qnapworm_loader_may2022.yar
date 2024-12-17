@@ -3,7 +3,7 @@ rule sekoiaio_apt_qnapworm_loader_may2022 {
         id = "c6e87a55-73ea-4df4-ab61-b5d34968d741"
         version = "1.0"
         description = "Detects the QNAPWorm loader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-05-23"
         classification = "TLP:CLEAR"
         

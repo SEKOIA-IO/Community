@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_lin_sysupdate {
         id = "9cb806cf-4ca1-44d8-809a-58cc5f364fb8"
         version = "1.0"
         description = "Detect the SysUpdate malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-01"
         classification = "TLP:CLEAR"
         

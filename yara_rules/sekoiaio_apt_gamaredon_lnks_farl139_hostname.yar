@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_lnks_farl139_hostname {
         id = "f8bb2e6b-e544-46b0-b61b-048fe84e1100"
         version = "1.0"
         description = "Detects some hostname used in Gamaredon LNKs"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-20"
         classification = "TLP:CLEAR"
         

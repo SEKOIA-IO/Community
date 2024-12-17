@@ -3,7 +3,7 @@ rule sekoiaio_ta410_control_flow_obfuscation {
         id = "2a784f9b-3624-4c5d-8a64-db7d3c33a8f7"
         version = "1.0"
         description = "Detects control flow obfuscation used by TA410 in XXXModule_dlcore0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-11"
         classification = "TLP:CLEAR"
         hash = "6cf78943728286d0bddd99049d81065673ab7f679029cdd5f5dc69f90197136e"

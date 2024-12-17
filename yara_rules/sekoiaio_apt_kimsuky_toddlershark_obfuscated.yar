@@ -3,7 +3,7 @@ rule sekoiaio_apt_kimsuky_toddlershark_obfuscated {
         id = "9ab82466-4f38-4597-b75b-13252e180c70"
         version = "1.0"
         description = "Detects obfuscated version of Kimsuky TODDLERSHARK vbs malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-06"
         classification = "TLP:CLEAR"
         

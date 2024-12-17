@@ -3,7 +3,7 @@ rule sekoiaio_apt_dark_pink_pdb_path {
         id = "695586dc-66de-4f9d-814a-2d81261a7357"
         version = "1.0"
         description = "Detects PDB path of some Dark Pink sample"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-16"
         classification = "TLP:CLEAR"
         

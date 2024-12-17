@@ -3,7 +3,7 @@ rule sekoiaio_tool_win_gosecretsdump {
         id = "9225fe95-e37c-48ff-b5b5-680f255349bd"
         version = "1.0"
         description = "Finds gosecretsdump EXE based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://github.com/C-Sto/gosecretsdump/releases"
         creation_date = "2024-06-10"
         classification = "TLP:CLEAR"

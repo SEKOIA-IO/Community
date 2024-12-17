@@ -3,7 +3,7 @@ rule sekoiaio_apt_kimsuky_vbs_powershell_downloader {
         id = "4c9af11f-802b-4ffe-9783-90fc2ee53809"
         version = "1.0"
         description = "Detects VBS/Powershell Downloader used by Kimsuky"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-30"
         classification = "TLP:CLEAR"
         

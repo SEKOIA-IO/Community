@@ -3,7 +3,7 @@ rule sekoiaio_bot_lin_enemybot_april22 {
         id = "5778c653-39ce-4f5d-b10b-1503b74e5041"
         version = "1.0"
         description = "Detect enemybot based on command line observed in strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://twitter.com/3xp0rtblog/status/137520616938452173://www.fortinet.com/blog/threat-research/enemybot-a-look-into-keksecs-latest-ddos-botnet"
         creation_date = "2022-04-14"
         classification = "TLP:CLEAR"

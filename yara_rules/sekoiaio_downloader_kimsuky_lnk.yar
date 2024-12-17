@@ -3,7 +3,7 @@ rule sekoiaio_downloader_kimsuky_lnk {
         id = "3831d115-7874-4bc9-aeb4-d2cb9bc2b5c9"
         version = "1.0"
         description = "Detect Kimsuky LNK"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-07-16"
         classification = "TLP:CLEAR"
         reference = "https://blogs.jpcert.or.jp/en/2024/07/attack-activities-by-kimsuky-targeting-japanese-organizations.html"

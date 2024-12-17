@@ -3,7 +3,7 @@ rule sekoiaio_rat_win_asyncrat {
         id = "d698e4a1-77ff-4cd7-acb3-27fb16168ceb"
         version = "1.0"
         description = "Detect AsyncRAT based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-25"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_apt_mustangpanda_windows_remoteshell {
         id = "cffdd11e-9700-462e-a965-f9f51db63f0b"
         version = "1.0"
         description = "Detects Remote Shell of Mustang Panda by detecting internal structure intialization"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-06"
         classification = "TLP:CLEAR"
         

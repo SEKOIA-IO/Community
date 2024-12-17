@@ -6,7 +6,7 @@ rule sekoiaio_backdoor_win_nukesped_andariel {
         id = "a3601f0b-5782-4546-ac22-8a0514791f8f"
         version = "1.0"
         description = "Detect the NukeSped variant type 1 used by Andariel in October 2023"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-27"
         classification = "TLP:CLEAR"
         reference = "https://asec.ahnlab.com/en/59073/"

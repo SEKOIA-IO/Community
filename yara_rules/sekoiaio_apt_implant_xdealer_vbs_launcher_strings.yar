@@ -3,7 +3,7 @@ rule sekoiaio_apt_implant_xdealer_vbs_launcher_strings {
         id = "ebfc8a33-70dc-44d5-bc4a-07afc56f8254"
         version = "1.0"
         description = "Detects XDealer VBS Launcher"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-22"
         classification = "TLP:CLEAR"
         

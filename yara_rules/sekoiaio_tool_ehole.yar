@@ -2,7 +2,7 @@ rule sekoiaio_tool_ehole {
     meta:
         id = "7d30ffd0-fada-4ef4-98c3-5572a4e1e140"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-23"
         classification = "TLP:CLEAR"
         

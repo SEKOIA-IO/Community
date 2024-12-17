@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt10_hui_loader {
         id = "97d17052-80d0-4f8e-8b3a-2e0d622522a9"
         version = "1.0"
         description = "Specific string for HUI Loader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-04"
         classification = "TLP:CLEAR"
         

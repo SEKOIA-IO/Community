@@ -6,7 +6,7 @@ rule sekoiaio_backdoor_win_ketrum2 {
         id = "afcc349a-d44b-4b66-b86f-c62e700fa899"
         version = "1.0"
         description = "Detect Ke3chang's Ketrum backdoor version 2"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-19"
         classification = "TLP:CLEAR"
         reference = "https://www.intezer.com/blog/research/the-evolution-of-apt15s-codebase-2020/"

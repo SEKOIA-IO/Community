@@ -3,7 +3,7 @@ rule sekoiaio_apt_kimsuky_klogexe {
         id = "f6e3b1a5-43b6-4dac-83c2-a365c41de38d"
         version = "1.0"
         description = "Detects KLogExe, a keylogger used by Kimsuky"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-27"
         classification = "TLP:CLEAR"
         hash = "e1d683ee1746c08c5fff1c4c2b3b02f0"

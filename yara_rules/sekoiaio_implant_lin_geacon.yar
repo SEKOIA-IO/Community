@@ -3,7 +3,7 @@ rule sekoiaio_implant_lin_geacon {
         id = "ad71522e-270b-47d0-9c01-081f05a2b72a"
         version = "1.0"
         description = "Finds Geacon samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-01-11"
         classification = "TLP:CLEAR"
         reference = "https://www.sentinelone.com/blog/geacon-brings-cobalt-strike-capabilities-to-macos-threat-actors/"

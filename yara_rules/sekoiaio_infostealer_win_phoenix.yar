@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_phoenix {
         id = "d63a8fcf-f897-4c36-a6ce-4bd4ae0154e5"
         version = "1.0"
         description = "Finds Phoenix Stealer samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-20"
         classification = "TLP:CLEAR"
         

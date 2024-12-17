@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_mimilite {
         id = "abb92a9d-0978-4ef2-b2cc-53ce6e83e3e4"
         version = "1.0"
         description = "Detects Mimilite"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-05"
         classification = "TLP:CLEAR"
         

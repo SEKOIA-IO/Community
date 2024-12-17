@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_doc_external_template {
         id = "5f6bbf92-2fdf-428d-af49-2d3e754c29d7"
         version = "1.0"
         description = "Detects malicious templates used by Gamaredon"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-23"
         classification = "TLP:CLEAR"
         

@@ -6,7 +6,7 @@ rule sekoiaio_backdoor_win_winordll64 {
         id = "86a32538-bc69-47ea-9842-4af360588c27"
         version = "1.0"
         description = "Detect the WinorDLL64 backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-24"
         classification = "TLP:CLEAR"
         

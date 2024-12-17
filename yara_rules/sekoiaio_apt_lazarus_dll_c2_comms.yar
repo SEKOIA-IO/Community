@@ -3,7 +3,7 @@ rule sekoiaio_apt_lazarus_dll_c2_comms {
         id = "9b379aa8-77ce-4c76-ab13-05e35ebfbdfe"
         version = "1.0"
         description = "Detects DLL communicating with the C2"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-04-04"
         classification = "TLP:CLEAR"
         hash1 = "fe948451df90df80c8028b969bf89ecbf501401e7879805667c134080976ce2e"

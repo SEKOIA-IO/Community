@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_gammaload_maliciouslnk {
         id = "2612e6c6-0bda-4bfa-a840-aa0a0b4c945b"
         version = "1.0"
         description = "Detects Gamaredon's GammaLoad LNK"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-01"
         classification = "TLP:CLEAR"
         

@@ -2,7 +2,7 @@ rule sekoiaio_loader_win_aresloader {
     meta:
         version = "1.0"
         description = "Finds AresLoader samples based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://blog.cyble.com/2023/04/28/citrix-users-at-risk-aresloader-spreading-through-disguised-gitlab-repo/"
         creation_date = "2023-05-02"
         id = "bf5070fc-c8ca-4458-8702-cd1830667b7a"

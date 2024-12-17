@@ -3,7 +3,7 @@ rule sekoiaio_rat_win_babylon {
         id = "ba9ab80a-ad7e-4746-aff2-9328440cbb25"
         version = "1.0"
         description = "Finds Babylon RAT samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-08-22"
         classification = "TLP:CLEAR"
         

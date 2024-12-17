@@ -3,7 +3,7 @@ rule sekoiaio_apt_turla_comlook {
         id = "c3bf886b-f952-47f9-aff6-3cd74c27077d"
         version = "1.0"
         description = "Detects Class and Method names used inside ComLook"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-10-30"
         classification = "TLP:CLEAR"
         

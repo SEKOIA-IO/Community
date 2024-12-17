@@ -3,7 +3,7 @@ rule sekoiaio_ransomware_win_fonix {
         id = "b28467d5-69a0-4a8b-8938-8fdac2ae8d19"
         version = "1.0"
         description = "Detect the Fonix / XINOF ransomware by spotting its specific debug path"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-10-07"
         classification = "TLP:CLEAR"
         

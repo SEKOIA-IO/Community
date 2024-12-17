@@ -3,7 +3,7 @@ rule sekoiaio_tool_dogtunnel_strings {
         id = "00705613-6367-454f-b3f2-1e2b0a52459c"
         version = "1.0"
         description = "Detects Dog Tunnel based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-14"
         classification = "TLP:CLEAR"
         

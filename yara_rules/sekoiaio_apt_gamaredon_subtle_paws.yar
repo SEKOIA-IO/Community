@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_subtle_paws {
         id = "1950f886-97d2-4aa1-8f13-2947eba706e4"
         version = "1.0"
         description = "SUBTLE-PAWS powershell backdoor used by Gamaredon"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-09"
         classification = "TLP:CLEAR"
         

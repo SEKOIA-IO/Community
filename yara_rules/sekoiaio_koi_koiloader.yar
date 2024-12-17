@@ -3,7 +3,7 @@ rule sekoiaio_koi_koiloader {
         id = "b8289d78-42de-4919-b2c5-3c926ddd8043"
         version = "1.0"
         description = "Detects Koi Loader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-20"
         classification = "TLP:CLEAR"
         

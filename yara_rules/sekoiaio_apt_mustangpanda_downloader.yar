@@ -3,7 +3,7 @@ rule sekoiaio_apt_mustangpanda_downloader {
         id = "54850ffd-f93b-4082-b3ca-8e1d60b35422"
         version = "1.0"
         description = "Detects the MustangPanda Downloader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-03-02"
         classification = "TLP:CLEAR"
         

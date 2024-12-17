@@ -3,7 +3,7 @@ rule sekoiaio_koi_netstealer {
         id = "deb06e2a-848c-44b3-be95-017ebccf11f8"
         version = "1.0"
         description = "Detects NET ofbuscated Stealer used loaded by KoiLoader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-20"
         classification = "TLP:CLEAR"
         

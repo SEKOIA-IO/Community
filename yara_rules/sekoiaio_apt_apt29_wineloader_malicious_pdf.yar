@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt29_wineloader_malicious_pdf {
         id = "b1db731e-471e-493a-b76c-38d2808ccac9"
         version = "1.0"
         description = "Detects malicious PDF used by APT29 to drop Wineloader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-25"
         classification = "TLP:CLEAR"
         hash = "9712217ff3597468b48cdf45da588005de3a725ba554789bb7e5ae1b0f7c02a7"

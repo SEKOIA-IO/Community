@@ -3,7 +3,7 @@ rule sekoiaio_apt_mustangpanda_zpakage {
         id = "a4767d12-5058-4a26-be62-0cec685917bd"
         version = "1.0"
         description = "Detect obfuscation seen in ZPAKAGE"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-27"
         classification = "TLP:CLEAR"
         hash = "711c0e83f4e626a7b54e3948b281a71915a056c5341c8f509ecba535bc199bee"

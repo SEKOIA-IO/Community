@@ -3,7 +3,7 @@ rule sekoiaio_trojan_and_keepspy {
         id = "9390e7c8-a996-45cc-b642-c23d4b7dcf34"
         version = "1.0"
         description = "Finds KeepSpy samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-28"
         classification = "TLP:CLEAR"
         

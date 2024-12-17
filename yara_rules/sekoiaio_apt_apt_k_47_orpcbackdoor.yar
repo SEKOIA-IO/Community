@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt_k_47_orpcbackdoor {
         id = "9768371d-763f-45df-b727-ccda97501aaa"
         version = "1.0"
         description = "Detects ORPCBackdoor used by APT-K-47"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-14"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_tool_xiebroc2_strings {
         id = "8451878e-5371-440b-b8ac-f9e6f7643d3c"
         version = "1.0"
         description = "Detects XiebroC2 based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-11"
         classification = "TLP:CLEAR"
         hash = "84e665bcbf963a2cf67d879aa3422d79"

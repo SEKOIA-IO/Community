@@ -3,7 +3,7 @@ rule sekoiaio_apt_turla_kazuar_variant_2023 {
         id = "51e9de6a-5d8a-4627-8063-b70f78e78726"
         version = "1.0"
         description = "New variant of Kazuar observed in 2023"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-03"
         classification = "TLP:CLEAR"
         

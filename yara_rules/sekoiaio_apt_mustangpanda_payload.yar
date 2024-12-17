@@ -3,7 +3,7 @@ rule sekoiaio_apt_mustangpanda_payload {
         id = "ce7ddf20-e13f-4b5f-8fff-4b1387b29568"
         version = "1.0"
         description = "Decryption routine of mustang panda payload"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-08"
         classification = "TLP:CLEAR"
         

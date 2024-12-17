@@ -3,7 +3,7 @@ rule sekoiaio_tool_swor {
         id = "75ce2ed7-2972-4e04-98dc-451acf80c842"
         version = "1.0"
         description = "Detects swor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-09"
         classification = "TLP:CLEAR"
         hash = "d3f92b3349109fc6de26f5e40800fec15308c27fa4fe81fe42af5030637a3a63"

@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_banditstealer {
         id = "d1e45a5c-c06d-4161-8d30-fa94bcf0ea7a"
         version = "1.0"
         description = "Finds BanditStealer samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-07-03"
         classification = "TLP:CLEAR"
         

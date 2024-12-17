@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt37_malicious_hta_file {
         id = "22a98c27-8ff4-4760-b505-f8eacf4dabda"
         version = "1.0"
         description = "Detects malicious APT37 files"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-06"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_leaf {
         id = "17d8e384-1092-4f27-b4f7-c0c0f7efcaa3"
         version = "1.0"
         description = "Find samples of Leaf Stealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-07"
         classification = "TLP:CLEAR"
         

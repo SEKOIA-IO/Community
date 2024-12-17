@@ -3,7 +3,7 @@ rule sekoiaio_apt_tealkurma_snappytcp_reverse_shell_strings {
         id = "e842825c-546c-475a-bc94-7e97aea4e9e0"
         version = "1.0"
         description = "Detects TealKurma SnappyTCP reverse shell"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-08"
         classification = "TLP:CLEAR"
         

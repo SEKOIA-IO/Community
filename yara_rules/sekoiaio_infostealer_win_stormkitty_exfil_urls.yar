@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_stormkitty_exfil_urls {
         id = "d3b6e778-85da-4ab6-bc98-921897677485"
         version = "1.0"
         description = "Detect the open-source StormKitty spyware by looking for the github path"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-20"
         classification = "TLP:CLEAR"
         

@@ -5,7 +5,7 @@ rule sekoiaio_bumblebee_vhd {
         id = "0a9d1ffa-a3ff-4b15-b660-b4c132d5a415"
         version = "1.0"
         description = "BumbleBee new infection vector via VHD file and powershell second stage"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-09"
         classification = "TLP:CLEAR"
         

@@ -6,7 +6,7 @@ rule sekoiaio_reverseshell_win_1st_troy {
         id = "b40b742d-8b1e-4d99-8df5-6cb8c9a7d8bd"
         version = "1.0"
         description = "Detect the 1st Troy Reverse Shell agent used by Andariel"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-04"
         classification = "TLP:CLEAR"
         hash1 = "186a6663eb91999b3e2637898ab40034f5fcd451150c9199d9b49328e64f90b5"

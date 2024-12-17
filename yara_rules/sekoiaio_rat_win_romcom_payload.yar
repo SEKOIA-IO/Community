@@ -6,7 +6,7 @@ rule sekoiaio_rat_win_romcom_payload {
         id = "c391f84c-f0cb-42d8-a8d8-d59725bf74c2"
         version = "1.0"
         description = "Detect the RomCom malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-04"
         classification = "TLP:CLEAR"
         

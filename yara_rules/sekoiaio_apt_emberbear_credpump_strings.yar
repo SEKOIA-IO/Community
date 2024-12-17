@@ -3,7 +3,7 @@ rule sekoiaio_apt_emberbear_credpump_strings {
         id = "c9898e34-4ab8-49d6-9c8a-3fce592449e2"
         version = "1.0"
         description = "Detects CredPump backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-28"
         classification = "TLP:CLEAR"
         

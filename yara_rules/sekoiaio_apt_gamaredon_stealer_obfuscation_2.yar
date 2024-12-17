@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_stealer_obfuscation_2 {
         id = "fd278a90-537b-4c67-9421-01c9f2416b60"
         version = "1.0"
         description = "Matches the Gamaredon Stealer obfuscation"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-04"
         classification = "TLP:CLEAR"
         

@@ -5,7 +5,7 @@ rule sekoiaio_infostealer_win_irontiger_chrome_stealer {
         id = "8c5c3ed0-e1ea-4079-b330-ace8724bff2a"
         version = "1.0"
         description = "Detect the chrome_stealer malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-01"
         classification = "TLP:CLEAR"
         

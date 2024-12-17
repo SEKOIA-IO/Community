@@ -3,7 +3,7 @@ rule sekoiaio_rat_win_dcrat_qwqdanchun {
         id = "8206a410-48b3-425f-9dcb-7a528673a37a"
         version = "1.0"
         description = "Find DcRAT samples (qwqdanchun) based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://github.com/qwqdanchun/DcRat"
         creation_date = "2023-01-26"
         classification = "TLP:CLEAR"

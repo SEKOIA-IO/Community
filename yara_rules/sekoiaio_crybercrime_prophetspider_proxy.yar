@@ -5,7 +5,7 @@ rule sekoiaio_crybercrime_prophetspider_proxy {
         id = "b7637fc3-bf81-40c4-869c-1c283574e0a7"
         version = "1.0"
         description = "Detects the Winntaa decryption loop or imphash"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-17"
         classification = "TLP:CLEAR"
         

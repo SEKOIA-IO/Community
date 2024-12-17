@@ -3,7 +3,7 @@ rule sekoiaio_apt_polonium_technocreep_strings {
         id = "dad79df3-b081-458e-9c14-1d5e2b43ba91"
         version = "1.1"
         description = "Tries to detect TechnoCreep implant"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-12"
         classification = "TLP:CLEAR"
         

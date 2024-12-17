@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_win_rollsling {
         id = "5ef23b9c-5bc5-4f02-b1b4-1af18a03241a"
         version = "1.0"
         description = "Detect Lazarus' RollSling malware (aka LazarLoader)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-10-24"
         classification = "TLP:CLEAR"
         hash1 = "d9add2bfdfebfa235575687de356f0cefb3e4c55964c4cb8bfdcdc58294eeaca"

@@ -3,7 +3,7 @@ rule sekoiaio_apt_uac0099_lonepage {
         id = "007f62f5-da5c-4df7-8b5c-5ed815ce6993"
         version = "1.0"
         description = "Detects LonePage vbs malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-01-08"
         classification = "TLP:CLEAR"
         

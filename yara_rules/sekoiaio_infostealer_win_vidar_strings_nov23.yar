@@ -2,7 +2,7 @@ rule sekoiaio_infostealer_win_vidar_strings_nov23 {
     meta:
         version = "1.0"
         description = "Finds Vidar samples based on the specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://twitter.com/crep1x/status/1722652451319202242"
         creation_date = "2023-11-10"
         id = "b2c17627-f9b8-4401-b657-1cce560edc76"

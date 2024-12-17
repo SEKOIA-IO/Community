@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_gammaload_malicioushta {
         id = "e5e502db-7f37-40f2-9ba3-81e158e767db"
         version = "1.0"
         description = "Detects Gamaredon's GammaLoad HTA"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-01"
         classification = "TLP:CLEAR"
         

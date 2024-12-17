@@ -5,7 +5,7 @@ rule sekoiaio_in2al5d_p3in4er_loader {
         id = "6dd3046d-55fb-4bcc-8735-dbc0add4d570"
         version = "1.0"
         description = "Invalid printer loader detection based on the XOR key"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-04-24"
         classification = "TLP:CLEAR"
         

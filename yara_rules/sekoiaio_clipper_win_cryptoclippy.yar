@@ -3,7 +3,7 @@ rule sekoiaio_clipper_win_cryptoclippy {
         id = "eaa98a8e-e29e-43a4-8b2d-2137d33d4116"
         version = "1.0"
         description = "Finds CryptoClippy samples"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://unit42.paloaltonetworks.com/crypto-clipper-targets-portuguese-speakers/"
         creation_date = "2023-04-11"
         classification = "TLP:CLEAR"

@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_win_cookiekatz {
         id = "a32769bb-4ec4-46c7-9402-21afdf8d4293"
         version = "1.0"
         description = "Finds ChromeKatz (CookieKatz version) standalone samples based on the strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://github.com/Meckazin/ChromeKatz"
         creation_date = "2024-10-30"
         classification = "TLP:CLEAR"

@@ -2,7 +2,7 @@ rule sekoiaio_hacktool_win_uknowseckeylogger {
     meta:
         version = "1.0"
         description = "Detect the uknowsec keylogger based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-05"
         id = "ab08136d-b1f3-4e64-b73c-e6344b610f91"
         classification = "TLP:CLEAR"

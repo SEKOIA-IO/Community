@@ -3,7 +3,7 @@ rule sekoiaio_apt_reaper_2fa_phishing_webpage {
         id = "348ca2ad-c8f9-4aed-8a27-95caa3a34f4b"
         version = "1.0"
         description = "Detects Reaper 2FA phishing webpage"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-09"
         classification = "TLP:CLEAR"
         

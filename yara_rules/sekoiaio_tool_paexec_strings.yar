@@ -3,7 +3,7 @@ rule sekoiaio_tool_paexec_strings {
         id = "c48b897c-0d88-4fa9-b64b-0e14a38a62d7"
         version = "1.0"
         description = "Detects PAExec based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-23"
         classification = "TLP:CLEAR"
         

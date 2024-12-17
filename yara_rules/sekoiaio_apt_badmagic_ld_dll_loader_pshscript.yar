@@ -3,7 +3,7 @@ rule sekoiaio_apt_badmagic_ld_dll_loader_pshscript {
         id = "d4a23afc-693f-4fab-b2c4-15eecba047f7"
         version = "1.0"
         description = "Detects BadMagic DLL Loader powershell script"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-15"
         classification = "TLP:CLEAR"
         

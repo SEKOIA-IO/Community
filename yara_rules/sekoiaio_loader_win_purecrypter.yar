@@ -2,7 +2,7 @@ rule sekoiaio_loader_win_purecrypter {
     meta:
         version = "1.0"
         description = "Detect the PureCrypter loader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-22"
         id = "500b4d9e-55f8-41d1-ad4f-d587bbeb4507"
         classification = "TLP:CLEAR"

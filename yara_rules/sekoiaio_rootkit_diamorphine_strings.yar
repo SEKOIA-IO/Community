@@ -3,7 +3,7 @@ rule sekoiaio_rootkit_diamorphine_strings {
         id = "5a28be5c-9a57-4204-a7cc-42dfcaa2c2da"
         version = "1.0"
         description = "Detects Diamorphine linux rootkit based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-10-21"
         classification = "TLP:CLEAR"
         hash = "622675e83bab630adc0f1c6c46c4d6d1"

@@ -3,7 +3,7 @@ rule sekoiaio_luckymouse_sysupdate_loader {
         id = "6007e846-d467-4d07-b345-e25191b7c8bc"
         version = "1.0"
         description = "Detects decryption routine prologue of sysupdate loader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-19"
         classification = "TLP:CLEAR"
         

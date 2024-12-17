@@ -6,7 +6,7 @@ rule sekoiaio_implant_win_mysterysnail {
         id = "dfd2eba8-eb9c-411a-b5e0-663593453e3d"
         version = "1.0"
         description = "Detect the MysterySnail using section hashes"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-10-13"
         classification = "TLP:CLEAR"
         

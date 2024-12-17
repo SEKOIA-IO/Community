@@ -3,7 +3,7 @@ rule sekoiaio_apt_cloudatlas_init_module_virtualalloc {
         id = "299ed681-9d1f-4b47-8389-ff5a608f49d4"
         version = "1.0"
         description = "Find init module of CloudAtlas with params passed to VirtualAlloc"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-19"
         classification = "TLP:CLEAR"
         hash1 = "02a1a9582f5ccf421b08c41c35049416b9cdefc9228daf6b38d95e9b0930cc5a"

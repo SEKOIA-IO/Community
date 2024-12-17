@@ -3,7 +3,7 @@ rule sekoiaio_apt_muddywater_manifestation_backdoor {
         id = "998fb0ab-73ed-41e5-b87e-f987b8f05a8c"
         version = "1.0"
         description = "Detects Muddys manifestation JScript backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-13"
         classification = "TLP:CLEAR"
         

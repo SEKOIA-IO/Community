@@ -3,7 +3,7 @@ rule sekoiaio_ransomware_win_wing {
         id = "c2fe8321-8013-4aa4-91a6-c0face3e6b52"
         version = "1.0"
         description = "Finds Wing ransomware samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-01-30"
         classification = "TLP:CLEAR"
         

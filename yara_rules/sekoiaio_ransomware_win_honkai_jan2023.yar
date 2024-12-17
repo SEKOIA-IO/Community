@@ -3,7 +3,7 @@ rule sekoiaio_ransomware_win_honkai_jan2023 {
         id = "6ef91cb5-e122-4f91-bc15-3813b8f91cbf"
         version = "1.0"
         description = "Rule to detect Honkai ransomware samples."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-13"
         classification = "TLP:CLEAR"
         hash1 = "989cf96da60d9ebfb6f364717b4f0cae1667fdc7f9d89f77acc254ab47d439e6"

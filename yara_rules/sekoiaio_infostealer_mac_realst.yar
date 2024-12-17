@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_mac_realst {
         id = "16a89317-c92d-4e13-94d3-a85a915f52e5"
         version = "1.0"
         description = "Finds Realst Stealer samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://iamdeadlyz.gitbook.io/malware-research/july-2023/fake-blockchain-games-deliver-redline-stealer-and-realst-stealer-a-new-macos-infostealer-malware#realst-stealer-macos"
         creation_date = "2023-09-11"
         classification = "TLP:CLEAR"

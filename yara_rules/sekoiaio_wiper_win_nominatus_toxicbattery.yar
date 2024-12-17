@@ -6,7 +6,7 @@ rule sekoiaio_wiper_win_nominatus_toxicbattery {
         id = "0262378f-f509-4ea4-a3eb-cd0183c4361d"
         version = "1.0"
         description = "Detect the Nominatus_ToxicBattery malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-21"
         classification = "TLP:CLEAR"
         

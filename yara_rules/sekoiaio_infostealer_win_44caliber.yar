@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_44caliber {
         id = "44e5bbc1-f442-47d3-8431-25182f38439d"
         version = "1.0"
         description = "Finds samples of the 44Caliber stealer"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://github.com/razexgod/44CALIBER"
         creation_date = "2022-03-08"
         classification = "TLP:CLEAR"

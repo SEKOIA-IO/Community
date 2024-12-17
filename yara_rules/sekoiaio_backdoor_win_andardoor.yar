@@ -6,7 +6,7 @@ rule sekoiaio_backdoor_win_andardoor {
         id = "27f28f6e-b8fd-41dc-88a8-92f5a125a807"
         version = "1.0"
         description = "Detect the Andardoor backdoor used by Andariel"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-04"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_apt37_rokrat_macho {
         id = "c54fb9ae-85fa-4c36-bab9-6c6d989262ba"
         version = "1.0"
         description = "Detects Public key of Macho samples of RokRAT"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-29"
         classification = "TLP:CLEAR"
         

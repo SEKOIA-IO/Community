@@ -3,7 +3,7 @@ rule sekoiaio_apt_oilrig_saitama_backdoor_may2022 {
         id = "4ea8c27f-c441-4616-a29b-2b5dfdd3bd20"
         version = "1.0"
         description = "Detects tje Saitama backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-05-13"
         classification = "TLP:CLEAR"
         

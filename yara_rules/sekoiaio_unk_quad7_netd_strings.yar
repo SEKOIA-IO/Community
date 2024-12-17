@@ -3,7 +3,7 @@ rule sekoiaio_unk_quad7_netd_strings {
         id = "3f527f0e-c101-4356-9024-fc61aea644d1"
         version = "1.0"
         description = "Matches netd binary"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-08-23"
         classification = "TLP:CLEAR"
         hash = "cdb37db4543dde5ca2bd98a43699828f"

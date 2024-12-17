@@ -3,7 +3,7 @@ rule sekoiaio_implant_win_quantum_builder_lnk {
         id = "65f8a426-8bf3-4f7f-b7d2-fd8da5b660f7"
         version = "1.0"
         description = "Detect .LNK files created using Quantum Builder"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-06-22"
         classification = "TLP:CLEAR"
         

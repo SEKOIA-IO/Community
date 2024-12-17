@@ -3,7 +3,7 @@ rule sekoiaio_crime_sload_vbs_wsf_downloader {
         id = "55d87205-5f8f-479a-a616-bf3fce571f03"
         version = "1.0"
         description = "Detects sLoad Downloader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-01"
         classification = "TLP:CLEAR"
         

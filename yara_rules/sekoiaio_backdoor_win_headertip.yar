@@ -6,7 +6,7 @@ rule sekoiaio_backdoor_win_headertip {
         id = "82899406-4ec3-41d2-bcc1-bdd1ee440e77"
         version = "1.0"
         description = "Detect HeaderTip backdoor used by the Chinese threat actor Scarab. This backdoor has its hardcoded C2 in strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-03-25"
         classification = "TLP:CLEAR"
         hash1 = "e1523185eac41a615b8d2af8b7fd5fe07b755442df2836041be544dff6881237"

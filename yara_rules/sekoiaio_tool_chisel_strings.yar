@@ -3,7 +3,7 @@ rule sekoiaio_tool_chisel_strings {
         id = "667a8aa3-772b-45f1-8c89-acb7b976888d"
         version = "1.0"
         description = "Detects Chisel"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-14"
         classification = "TLP:CLEAR"
         

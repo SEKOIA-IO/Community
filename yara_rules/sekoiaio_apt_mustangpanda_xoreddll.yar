@@ -3,7 +3,7 @@ rule sekoiaio_apt_mustangpanda_xoreddll {
         id = "73d13624-01df-41ab-b449-86db43dc6c55"
         version = "1.0"
         description = "Detects xored DLL from MustangPanda embedding a document"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-19"
         classification = "TLP:CLEAR"
         

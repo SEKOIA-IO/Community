@@ -2,7 +2,7 @@ rule sekoiaio_loader_win_gcleaner {
     meta:
         version = "1.0"
         description = "Detect the GCleaner loader using specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-11"
         id = "0c085da3-ec77-4141-a927-bef1578a6dee"
         classification = "TLP:CLEAR"

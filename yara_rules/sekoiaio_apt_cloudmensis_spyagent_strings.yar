@@ -3,7 +3,7 @@ rule sekoiaio_apt_cloudmensis_spyagent_strings {
         id = "c2df8373-6698-4b23-9d77-8e7968bd69f0"
         version = "1.0"
         description = "Detects CloudMensis SpyAgent"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-26"
         classification = "TLP:CLEAR"
         

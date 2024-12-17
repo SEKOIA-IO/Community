@@ -2,7 +2,7 @@ rule sekoiaio_infostealer_win_spacestealer {
     meta:
         version = "1.0"
         description = "Detects SpaceStealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-29"
         id = "aceae3b3-1f5a-48b4-84cb-d0ba68d26df5"
         classification = "TLP:CLEAR"

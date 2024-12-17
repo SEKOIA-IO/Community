@@ -6,7 +6,7 @@ rule sekoiaio_implant_win_apt29_2022_10 {
         id = "0f270e75-f687-4fdc-a980-fde81107a4d6"
         version = "1.0"
         description = "APT29 implants from October 2022"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-15"
         classification = "TLP:CLEAR"
         hash1 = "1cffaf3be725d1514c87c328ca578d5df1a86ea3b488e9586f9db89d992da5c4"

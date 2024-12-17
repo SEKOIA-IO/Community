@@ -3,7 +3,7 @@ rule sekoiaio_apt_ta410_driver_keylogger {
         id = "0cba1b3b-b93e-41e3-a7df-afd306e6b519"
         version = "1.0"
         description = "Keylogger TA410"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-11"
         classification = "TLP:CLEAR"
         

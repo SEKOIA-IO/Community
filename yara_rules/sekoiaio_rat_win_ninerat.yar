@@ -6,7 +6,7 @@ rule sekoiaio_rat_win_ninerat {
         id = "a9f4f78b-5b86-4ac1-9b9b-ba2672b938bf"
         version = "1.0"
         description = "Detect the NineRAT payload"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-12"
         classification = "TLP:CLEAR"
         hash1 = "47e017b40d418374c0889e4d22aa48633b1d41b16b61b1f2897a39112a435d30"

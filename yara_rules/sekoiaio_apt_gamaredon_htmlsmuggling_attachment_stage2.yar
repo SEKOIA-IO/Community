@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_htmlsmuggling_attachment_stage2 {
         id = "e82335ea-48d5-409c-a270-cfd5a2197c44"
         version = "1.0"
         description = "Detects Gamaredon HTMLSmuggling attachment"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-20"
         classification = "TLP:CLEAR"
         

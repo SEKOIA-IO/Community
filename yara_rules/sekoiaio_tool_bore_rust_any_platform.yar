@@ -3,7 +3,7 @@ rule sekoiaio_tool_bore_rust_any_platform {
         id = "c0ec0d72-de8e-4b96-9db6-a7a4e2f693f1"
         version = "1.0"
         description = "Detects bore tunneling tool"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-07-28"
         classification = "TLP:CLEAR"
         

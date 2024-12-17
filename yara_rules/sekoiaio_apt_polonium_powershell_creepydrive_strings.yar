@@ -3,7 +3,7 @@ rule sekoiaio_apt_polonium_powershell_creepydrive_strings {
         id = "0ba196bd-9cd6-4553-b7bf-69989cdb8be4"
         version = "1.0"
         description = "Detects POLONIUM CreepyDrive Powershell implant"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-06-03"
         classification = "TLP:CLEAR"
         

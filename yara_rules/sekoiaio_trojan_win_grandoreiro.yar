@@ -2,7 +2,7 @@ rule sekoiaio_trojan_win_grandoreiro {
     meta:
         version = "1.0"
         description = "Finds Grandorerio samples based on the specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-24"
         id = "e48c86a1-e34f-4945-817a-9c85198a77bb"
         classification = "TLP:CLEAR"

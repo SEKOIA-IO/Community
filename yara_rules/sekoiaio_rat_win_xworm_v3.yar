@@ -2,7 +2,7 @@ rule sekoiaio_rat_win_xworm_v3 {
     meta:
         version = "1.0"
         description = "Finds XWorm (version XClient, v3) samples based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-03"
         id = "5fb1cbd3-1e37-43b9-9606-86d896f2150b"
         classification = "TLP:CLEAR"

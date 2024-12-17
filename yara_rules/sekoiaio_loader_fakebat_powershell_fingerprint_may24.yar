@@ -3,7 +3,7 @@ rule sekoiaio_loader_fakebat_powershell_fingerprint_may24 {
         id = "7efcf9cf-78fe-400e-abe3-6955c394e358"
         version = "1.0"
         description = "Finds FakeBat PowerShell script fingerprinting the infected host."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-21"
         classification = "TLP:CLEAR"
         

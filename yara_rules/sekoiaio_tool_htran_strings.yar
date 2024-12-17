@@ -3,7 +3,7 @@ rule sekoiaio_tool_htran_strings {
         id = "0184937e-eefa-4c6d-ae00-9b0af80dc7db"
         version = "1.0"
         description = "Detects HTran based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-09"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_apt_nobelium_acrobox_downloader_apr2022 {
         id = "77f7f01d-72a2-4b13-b23f-d938a415dd40"
         version = "1.0"
         description = "Detects AcroBox downloader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-05-11"
         classification = "TLP:CLEAR"
         

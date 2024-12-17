@@ -6,7 +6,7 @@ rule sekoiaio_apt_windows_wip19_screencap {
         id = "ebf5d2c5-81c9-45c3-aa61-05870f800f6b"
         version = "1.0"
         description = "Detects ScreenCap resource"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-18"
         classification = "TLP:CLEAR"
         

@@ -4,7 +4,7 @@ rule sekoiaio_apt_apt28_htmlsmuggling_disclosing_ip {
         version = "1.0"
         reference = "https://www.zscaler.com/blogs/security-research/steal-it-campaign"
         description = "Detects some kind of HTMLSmuggling used by APT28"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-11"
         classification = "TLP:CLEAR"
         

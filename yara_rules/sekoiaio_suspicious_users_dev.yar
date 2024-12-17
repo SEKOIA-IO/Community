@@ -3,7 +3,7 @@ rule sekoiaio_suspicious_users_dev {
         id = "9e8af456-6f84-4922-a262-20b8f5c8a1eb"
         version = "1.0"
         description = "Nirscord stealer"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-22"
         classification = "TLP:CLEAR"
         

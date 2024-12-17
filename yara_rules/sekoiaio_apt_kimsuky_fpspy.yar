@@ -3,7 +3,7 @@ rule sekoiaio_apt_kimsuky_fpspy {
         id = "75d41851-a7a6-4068-8ea5-6a3e6e62a965"
         version = "1.0"
         description = "Detects FPSpy, a backdoor used by Kimsuky"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-27"
         classification = "TLP:CLEAR"
         hash = "6d6c1b175e435f5564341cc1f2c33ddf"

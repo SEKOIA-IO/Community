@@ -3,7 +3,7 @@ rule sekoiaio_loader_win_squirrelwaffle {
         id = "bea3125e-6e84-435f-855b-fd3239a0deac"
         version = "1.0"
         description = "Detect the Squirrelwaffle DLL"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-09-20"
         classification = "TLP:CLEAR"
         

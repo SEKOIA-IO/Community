@@ -6,7 +6,7 @@ rule sekoiaio_implant_win_graphiron_downloader {
         id = "c50c4bd2-3828-43bf-b45c-8e911c298536"
         version = "1.0"
         description = "Detect the downloader of Graphiron"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-10"
         classification = "TLP:CLEAR"
         hash1 = "0d0a675516f1ff9247f74df31e90f06b0fea160953e5e3bada5d1c8304cfbe63"

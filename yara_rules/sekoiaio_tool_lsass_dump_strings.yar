@@ -3,7 +3,7 @@ rule sekoiaio_tool_lsass_dump_strings {
         id = "bf024dc6-a1c8-4c3f-9bf8-8d246c129639"
         version = "1.0"
         description = "Detects Lsass dump based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-09"
         classification = "TLP:CLEAR"
         hash = "f4540f42902c068b9290239729c45324"

@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_win_spacecolon {
         id = "ae09f0e2-e913-44d5-abe1-715170368cc8"
         version = "1.0"
         description = "Finds Spacecolon samples based on specific strings (ScHackTool component)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://www.welivesecurity.com/en/eset-research/scarabs-colon-izing-vulnerable-servers/"
         creation_date = "2023-08-25"
         classification = "TLP:CLEAR"

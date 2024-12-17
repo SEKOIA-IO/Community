@@ -2,7 +2,7 @@ rule sekoiaio_crime_sload_powershellarchiveexfiltrator_strings {
     meta:
         id = "3934696a-2116-49cb-9f75-3740767ad6f3"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-02"
         classification = "TLP:CLEAR"
         

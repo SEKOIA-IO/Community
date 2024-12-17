@@ -3,7 +3,7 @@ rule sekoiaio_rat_win_lilith {
         id = "944637e6-c4e4-423f-9f4c-a26b4fce3729"
         version = "1.0"
         description = "Detect the Lilith malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-23"
         classification = "TLP:CLEAR"
         

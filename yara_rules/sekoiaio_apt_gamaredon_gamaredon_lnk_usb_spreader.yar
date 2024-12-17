@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_gamaredon_lnk_usb_spreader {
         id = "a0972e30-bfc5-48ff-b04b-382db8c08a54"
         version = "1.0"
         description = "Detects Gamaredon LNK USB Spreader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         hash = "2aee8bb2a953124803bc42e5c42935c92f87030b65448624f51183bf00dd1581"
         creation_date = "2023-06-19"
         classification = "TLP:CLEAR"

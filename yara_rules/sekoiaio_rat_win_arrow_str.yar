@@ -2,7 +2,7 @@ rule sekoiaio_rat_win_arrow_str {
     meta:
         version = "1.0"
         description = "Finds Arrow RAT samples based on the specific malware strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-19"
         id = "69f6572c-91ed-4fb6-b886-5ad2dabef3d3"
         classification = "TLP:CLEAR"

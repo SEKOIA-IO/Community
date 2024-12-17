@@ -2,7 +2,7 @@ rule sekoiaio_hacktool_win_processhacker {
     meta:
         version = "1.0"
         description = "Detect ProcessHacker hacktool"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-09"
         id = "1dffe8c9-2ab7-4265-965e-8673b80f17d5"
         classification = "TLP:CLEAR"

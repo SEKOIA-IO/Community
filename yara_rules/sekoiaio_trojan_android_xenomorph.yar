@@ -1,7 +1,7 @@
 rule sekoiaio_trojan_android_xenomorph {
     meta:
         id = "ec65ca1b-e71f-4772-8be0-2a2b6a690987"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-25"
         description = "Detect samples of the Android banking trojan Xenomorph"
         version = "1.0"

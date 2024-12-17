@@ -6,7 +6,7 @@ rule sekoiaio_loader_win_dodgebox {
         id = "8d5f94f3-1add-4f34-ba9e-f8f576c4e5b8"
         version = "1.0"
         description = "Detect the DodgeBox malware using several criteria"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-07-15"
         classification = "TLP:CLEAR"
         reference = "https://www.zscaler.com/blogs/security-research/dodgebox-deep-dive-updated-arsenal-apt41-part-1"

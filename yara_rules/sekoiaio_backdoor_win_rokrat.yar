@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_win_rokrat {
         id = "97a3acc1-4120-4d67-a6ad-fa204f2fd7f5"
         version = "1.0"
         description = "Detect the RokRAT malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-07-11"
         classification = "TLP:CLEAR"
         hash1 = "84760cac26513915ebfb0a80ad3ddabe62f03ec4fda227d63e764f9c4a118c4e"

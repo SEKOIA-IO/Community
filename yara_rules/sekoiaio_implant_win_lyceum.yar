@@ -6,7 +6,7 @@ rule sekoiaio_implant_win_lyceum {
         id = "e061562f-9c17-4ef4-b7f9-2c6708bb6570"
         version = "1.0"
         description = "Detect the DnsSystem malware used by Lyceum in March 2022"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-06-13"
         classification = "TLP:CLEAR"
         reference = "https://www.zscaler.com/blogs/security-research/lyceum-net-dns-backdoor"

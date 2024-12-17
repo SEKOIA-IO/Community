@@ -2,7 +2,7 @@ rule sekoiaio_tool_win_driverjack {
     meta:
         id = "08bc0fe8-38f1-4c73-99c8-2659b4a55815"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-11"
         classification = "TLP:CLEAR"
         hash = "649fc12915bdcdebbc3798a8ad0b9b32"

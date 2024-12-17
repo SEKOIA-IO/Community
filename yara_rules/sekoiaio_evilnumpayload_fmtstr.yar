@@ -3,7 +3,7 @@ rule sekoiaio_evilnumpayload_fmtstr {
         id = "980c58e4-e04d-4076-a92e-2c04ced19ece"
         version = "1.1"
         description = "Detect payload of EvilNum"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-25"
         classification = "TLP:CLEAR"
         

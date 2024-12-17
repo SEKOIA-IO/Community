@@ -2,7 +2,7 @@ rule sekoiaio_loader_amadey_standalone_may23 {
     meta:
         version = "1.0"
         description = "Finds standalone samples of Amadey based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-17"
         id = "5013586c-5ac3-4c1a-a82e-edce4889eedc"
         classification = "TLP:CLEAR"

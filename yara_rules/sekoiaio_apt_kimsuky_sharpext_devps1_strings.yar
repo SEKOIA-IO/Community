@@ -3,7 +3,7 @@ rule sekoiaio_apt_kimsuky_sharpext_devps1_strings {
         id = "f2ad32a4-bfca-40b2-964e-b8562538a6f2"
         version = "1.0"
         description = "Detects strings of Dev.ps1"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-29"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_win_foresttiger {
         id = "d3128da2-a86d-4db8-9b75-2f3048831c7e"
         version = "1.0"
         description = "Detect Lazarus' malware ForestTiger"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-10-24"
         classification = "TLP:CLEAR"
         hash1 = "e06f29dccfe90ae80812c2357171b5c48fba189ae103d28e972067b107e58795"

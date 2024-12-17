@@ -3,7 +3,7 @@ rule sekoiaio_rat_win_remcos {
         id = "011132f5-c5d9-4e97-bfed-0b94c9a30481"
         version = "1.0"
         description = "DEPRECATED : Find Remcos RAT samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-29"
         modification_date = "2024-01-08"
         classification = "TLP:CLEAR"

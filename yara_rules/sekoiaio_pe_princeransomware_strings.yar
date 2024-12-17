@@ -3,7 +3,7 @@ rule sekoiaio_pe_princeransomware_strings {
         id = "9c5cad6e-2b11-469c-ace1-2dc51562b035"
         version = "1.0"
         description = "Prince Ransomware exe files"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-08-07"
         classification = "TLP:CLEAR"
         hash = "8bd8de169f45e32bab53f6e06088836d6f0526105f03efa1faf84f3b02c43011"

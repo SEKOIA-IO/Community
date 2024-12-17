@@ -6,7 +6,7 @@ rule sekoiaio_wiper_win_caddywiper {
         id = "869d44ff-79fc-403d-a45d-d33712da5bd0"
         version = "1.0"
         description = "Detect CaddyWiper"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-03-15"
         classification = "TLP:CLEAR"
         hash1_upx = "b66b179eac03afafdc69f62c207819eceecfbf994c9efa464fda0d2ba44fe2d7"

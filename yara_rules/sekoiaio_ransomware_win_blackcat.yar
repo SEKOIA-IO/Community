@@ -2,7 +2,7 @@ rule sekoiaio_ransomware_win_blackcat {
     meta:
         id = "873355f7-3942-4171-9df7-f524bb6b6903"
         description = "Detect the BlackCat ransomware (Windows version)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-19"
         classification = "TLP:CLEAR"
         version = "1.1"

@@ -3,7 +3,7 @@ rule sekoiaio_tool_edrsandblast_strings {
         id = "7059b89c-80b5-4768-b3eb-02f173f628b0"
         version = "1.0"
         description = "Detects EDRSandblast strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-01-08"
         classification = "TLP:CLEAR"
         

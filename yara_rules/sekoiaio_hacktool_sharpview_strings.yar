@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_sharpview_strings {
         id = "585ead98-36d0-402c-b527-4dec308cb1c9"
         version = "1.0"
         description = "Detects SharpView based on strings."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-14"
         classification = "TLP:CLEAR"
         

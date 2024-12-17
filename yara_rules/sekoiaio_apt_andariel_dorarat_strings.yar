@@ -3,7 +3,7 @@ rule sekoiaio_apt_andariel_dorarat_strings {
         id = "30388291-a287-489f-a060-c90a16cda217"
         version = "1.0"
         description = "Detects Dora RAT based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-17"
         classification = "TLP:CLEAR"
         

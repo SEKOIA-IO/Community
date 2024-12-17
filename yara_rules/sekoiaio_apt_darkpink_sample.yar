@@ -3,7 +3,7 @@ rule sekoiaio_apt_darkpink_sample {
         id = "91b4c64a-7622-4f03-bd3f-9fe56f01dfbe"
         version = "1.0"
         description = "Detects two parts of cmd.exe /c "
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-05"
         classification = "TLP:CLEAR"
         hash = "8dc3f6179120f03fd6cb2299dbc94425451d84d6852b801a313a39e9df5d9b1a"

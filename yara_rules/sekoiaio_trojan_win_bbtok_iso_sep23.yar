@@ -3,7 +3,7 @@ rule sekoiaio_trojan_win_bbtok_iso_sep23 {
         id = "6032853d-b872-4b2e-913d-366e7f3d0f32"
         version = "1.0"
         description = "Finds BBTok installation ISO file"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://research.checkpoint.com/2023/behind-the-scenes-of-bbtok-analyzing-a-bankers-server-side-components/"
         creation_date = "2023-09-26"
         classification = "TLP:CLEAR"

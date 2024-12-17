@@ -3,7 +3,7 @@ rule sekoiaio_observerstealer {
         id = "52314870-c100-441d-9ccf-07588325a401"
         version = "1.0"
         description = "detection based on the strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-01"
         classification = "TLP:CLEAR"
         

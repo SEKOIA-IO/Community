@@ -3,7 +3,7 @@ rule sekoiaio_rat_win_konni_rat {
         id = "032f1c79-6f03-4588-a4af-38b1f3ca1cb8"
         version = "1.0"
         description = "Detect the KONNI RAT DLL files (x32 and x64)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-26"
         classification = "TLP:CLEAR"
         

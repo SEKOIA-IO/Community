@@ -6,7 +6,7 @@ rule sekoiaio_downloader_win_fake_tor_browser {
         id = "6b070ba6-490b-43c2-9a01-65812d829eeb"
         version = "1.0"
         description = "Detect fake TOR browser used to spy Chinese TOR users"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-05"
         classification = "TLP:CLEAR"
         reference = "https://securelist.com/onionpoison-infected-tor-browser-installer-youtube/107627/"

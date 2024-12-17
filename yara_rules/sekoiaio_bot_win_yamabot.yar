@@ -3,7 +3,7 @@ rule sekoiaio_bot_win_yamabot {
         id = "9f5b85c4-59e3-448f-b054-5b4932ee89bb"
         version = "1.0"
         description = "Detect the Yamabot implant used by Lazarus"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-08-29"
         classification = "TLP:CLEAR"
         hash1 = "1e4de822695570421eb2f12fdfe1d32ab8639655e12180a7ab3cf429e7811b8f"

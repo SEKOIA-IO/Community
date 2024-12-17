@@ -3,7 +3,7 @@ rule sekoiaio_apt_uta0178_javascript_inclusion_strings {
         id = "af816c35-1f00-47ea-86ee-c034607c625e"
         version = "1.0"
         description = "Detects UTA0178 malicious inclusion strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-01-12"
         classification = "TLP:CLEAR"
         

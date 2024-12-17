@@ -3,7 +3,7 @@ rule sekoiaio_downloader_mac_rustbucket {
         id = "5a003b68-ad9a-47f9-b157-dd898181dac2"
         version = "1.0"
         description = "RustBucket fake PDF reader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-04-24"
         classification = "TLP:CLEAR"
         reference = "https://www.jamf.com/blog/bluenoroff-apt-targets-macos-rustbucket-malware/"

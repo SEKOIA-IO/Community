@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_opensource_northstar_strings {
         id = "6bf2f428-ec1a-4115-9c5e-258e9176969a"
         version = "1.0"
         description = "Detects the NorthStar Backdoor strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-23"
         classification = "TLP:CLEAR"
         

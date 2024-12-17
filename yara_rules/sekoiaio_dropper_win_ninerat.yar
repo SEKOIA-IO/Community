@@ -6,7 +6,7 @@ rule sekoiaio_dropper_win_ninerat {
         id = "798e3bee-4cee-4647-abda-3c3dcc602f0a"
         version = "1.0"
         description = "NineRAT dropper"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-12"
         classification = "TLP:CLEAR"
         reference = "https://blog.talosintelligence.com/lazarus_new_rats_dlang_and_telegram/"

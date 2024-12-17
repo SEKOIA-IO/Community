@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_mars_stealer_variant_llcppc1 {
         id = "3e2c7440b2fc9e4b039e6fa8152ac8fe"
         version = "1.0"
         description = "Detect Mars Stealer variand llcppc1"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-03-10"
         classification = "TLP:CLEAR"
         

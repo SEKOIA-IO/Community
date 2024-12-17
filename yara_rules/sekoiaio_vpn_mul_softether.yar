@@ -3,7 +3,7 @@ rule sekoiaio_vpn_mul_softether {
         id = "a1fbf4fe-b934-4a66-b6b1-ebe2f83505cd"
         version = "1.0"
         description = "Detect the open-source SoftEther VPN"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-15"
         classification = "TLP:CLEAR"
         reference = "https://www.softether.org/"

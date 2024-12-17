@@ -3,7 +3,7 @@ rule sekoiaio_lnk_astaroth {
         id = "1f4ce619-6f94-400a-9b32-46f2018da25c"
         version = "1.0"
         description = "Astaroth LNK"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-18"
         classification = "TLP:CLEAR"
         hash = "5611ea372f63ccd3a2e860e763714bb9"

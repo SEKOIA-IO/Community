@@ -3,7 +3,7 @@ rule sekoiaio_apt_scanbox_obfuscated_versions {
         id = "2866cead-7f16-4895-80ef-aad6fb66e864"
         version = "1.0"
         description = "Detects obfuscated versions of the scanbox framework"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-01"
         classification = "TLP:CLEAR"
         

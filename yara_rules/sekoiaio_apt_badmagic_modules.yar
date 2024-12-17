@@ -5,7 +5,7 @@ rule sekoiaio_apt_badmagic_modules {
         id = "e4f1f706-4a46-4a09-b598-e4e8d80f2c4b"
         version = "1.0"
         description = "Detect the modules used by the CloudWizard framework"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-25"
         classification = "TLP:CLEAR"
         hash = "no hash has been found on 2023-05-25 to test the rule"

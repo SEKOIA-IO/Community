@@ -5,7 +5,7 @@ rule sekoiaio_wiper_hermeticwiper_variants {
         id = "102ecf15-167e-49e4-932c-6334e3cdcc69"
         version = "1.0"
         description = "Matches HermeticWiper and possible variants"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-24"
         classification = "TLP:CLEAR"
         

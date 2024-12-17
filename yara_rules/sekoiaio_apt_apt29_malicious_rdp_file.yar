@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt29_malicious_rdp_file {
         id = "a7b092b5-53a1-4638-a6c1-733d3f063139"
         version = "1.0"
         description = "Detects malicious RDP files"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-10-25"
         classification = "TLP:CLEAR"
         hash = "db326d934e386059cc56c4e61695128e"

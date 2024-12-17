@@ -2,7 +2,7 @@ rule sekoiaio_infostealer_win_ducklogs {
     meta:
         version = "1.0"
         description = "Detects DuckLogs based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-01"
         id = "165c7d3d-de7e-4d71-b94a-8ab4a0e5ddd5"
         classification = "TLP:CLEAR"

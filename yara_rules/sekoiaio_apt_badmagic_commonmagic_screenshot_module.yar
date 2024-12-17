@@ -3,7 +3,7 @@ rule sekoiaio_apt_badmagic_commonmagic_screenshot_module {
         id = "d1ef0bd1-37dc-405f-b82b-288b1798455c"
         version = "1.0"
         description = "Detects CommonMagic related implants"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-15"
         classification = "TLP:CLEAR"
         

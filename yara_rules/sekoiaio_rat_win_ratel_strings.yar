@@ -3,7 +3,7 @@ rule sekoiaio_rat_win_ratel_strings {
         id = "d0c8b89b-c811-47aa-9e03-717998c40d91"
         version = "1.0"
         description = "Detect RATel based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-04-24"
         classification = "TLP:CLEAR"
         

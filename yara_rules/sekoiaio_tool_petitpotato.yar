@@ -2,7 +2,7 @@ rule sekoiaio_tool_petitpotato {
     meta:
         id = "72808202-a124-478e-bc60-59d35824b948"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-08-23"
         classification = "TLP:CLEAR"
         

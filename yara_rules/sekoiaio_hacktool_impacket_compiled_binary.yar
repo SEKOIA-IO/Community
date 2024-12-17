@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_impacket_compiled_binary {
         id = "43936dcc-0d74-43dd-996a-c27a28cef283"
         version = "1.0"
         description = "Detects generic PE embbeding impacket"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-28"
         classification = "TLP:CLEAR"
         

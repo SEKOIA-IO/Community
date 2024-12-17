@@ -2,7 +2,7 @@ rule sekoiaio_rat_win_asbit {
     meta:
         version = "1.0"
         description = "Finds Asbit samples based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://blogs.juniper.net/en-us/threat-research/asbit-an-emerging-remote-desktop-trojan"
         creation_date = "2022-09-19"
         id = "b2d60eff-3dc8-4857-a0ea-d4fcd34c40bc"

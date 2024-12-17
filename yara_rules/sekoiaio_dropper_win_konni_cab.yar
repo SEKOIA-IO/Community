@@ -3,7 +3,7 @@ rule sekoiaio_dropper_win_konni_cab {
         id = "87a209d5-667a-4a81-837a-660ab98c33c8"
         version = "1.0"
         description = "Detect the CAB files used to drop the KONNI malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-26"
         classification = "TLP:CLEAR"
         

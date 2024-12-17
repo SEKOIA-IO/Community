@@ -3,7 +3,7 @@ rule sekoiaio_apt_cloudmensis_downloader_strings {
         id = "450cfa42-7b56-4d93-afe2-9cf5c1049217"
         version = "1.0"
         description = "Detects CloudMensis downloader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-26"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_enigma_loader_module {
         id = "664fe8de-b406-4d63-9a4b-1c350b444f01"
         version = "1.0"
         description = "Find loader module of Enigma Stealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-30"
         classification = "TLP:CLEAR"
         hash = "f1623c2f7c00affa3985cf7b9cdf25e39320700fa9d69f9f9426f03054b4b712"

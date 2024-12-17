@@ -3,7 +3,7 @@ rule sekoiaio_apt_badmagic_malicious_lnk {
         id = "731bd51d-c4e4-4efb-9fa8-f981a8555ed3"
         version = "1.0"
         description = "Detect LNK used by BadMagic to execute MSI payloads."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-15"
         classification = "TLP:CLEAR"
         

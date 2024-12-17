@@ -3,7 +3,7 @@ rule sekoiaio_implant_mac_smoothoperator_update_agent {
         id = "45a1d0d9-083b-4b4a-b53c-e5d86f804f01"
         version = "1.0"
         description = "UpdateAgent payload delivered by SmoothOperator during the 3CX supply chain attack"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-07-04"
         classification = "TLP:CLEAR"
         

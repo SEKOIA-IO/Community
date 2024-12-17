@@ -5,7 +5,7 @@ rule sekoiaio_dotnet_injector_new_payload {
         id = "b0a1d471-5381-4fa8-8563-7e72ecd15bed"
         version = "1.0"
         description = "New dotnet injector"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-21"
         classification = "TLP:CLEAR"
         

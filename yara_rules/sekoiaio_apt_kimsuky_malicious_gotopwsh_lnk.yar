@@ -3,7 +3,7 @@ rule sekoiaio_apt_kimsuky_malicious_gotopwsh_lnk {
         id = "cfe9adf5-2c06-4d04-8006-c4eea0dab549"
         version = "1.0"
         description = "Detects malicious LNK used by Kimsuky"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-11"
         classification = "TLP:CLEAR"
         

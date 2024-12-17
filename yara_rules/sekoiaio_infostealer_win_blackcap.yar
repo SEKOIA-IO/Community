@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_blackcap {
         id = "1aa1fadb-3413-46e2-b733-1ad2134f7be2"
         version = "1.0"
         description = "Finds BlackCap Grabber samples (Python code obfuscated using Py-Fuscate)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-06"
         classification = "TLP:CLEAR"
         

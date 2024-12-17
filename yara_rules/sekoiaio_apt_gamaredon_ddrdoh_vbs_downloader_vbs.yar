@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_ddrdoh_vbs_downloader_vbs {
         id = "cc29d5d9-58bd-4f68-8673-daa41abfc7be"
         version = "1.0"
         description = "Detects malicious VBScript executed by LNK/mshta"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-24"
         classification = "TLP:CLEAR"
         

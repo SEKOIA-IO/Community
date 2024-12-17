@@ -3,7 +3,7 @@ rule sekoiaio_apt_flightnight_malicious_lnk {
         id = "06f33ece-ac9f-4dd3-98fb-cd69305ee995"
         version = "1.0"
         description = "Detects malicious LNK used by FlightNight"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-02"
         classification = "TLP:CLEAR"
         

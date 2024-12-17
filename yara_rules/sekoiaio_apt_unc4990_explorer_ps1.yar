@@ -3,7 +3,7 @@ rule sekoiaio_apt_unc4990_explorer_ps1 {
         id = "2e1abbbf-f9b7-4147-b7da-3544cbc4a5f1"
         version = "1.0"
         description = "Detects powershell script (explorer.ps1)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-01"
         classification = "TLP:CLEAR"
         

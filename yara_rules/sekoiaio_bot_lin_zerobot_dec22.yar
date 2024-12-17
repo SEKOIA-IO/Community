@@ -3,7 +3,7 @@ rule sekoiaio_bot_lin_zerobot_dec22 {
         id = "ce028297-a526-4a6a-95db-8762fb5895f6"
         version = "1.0"
         description = "Detect the linux Zerobot implant using specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://www.fortinet.com/blog/threat-research/zerobot-new-go-based-botnet-campaign-targets-multiple-vulnerabilities"
         creation_date = "2022-08-05"
         classification = "TLP:CLEAR"

@@ -6,7 +6,7 @@ rule sekoiaio_loader_win_stealthvector {
         id = "ecf6421a-f492-43c4-9ed7-eb4724d24779"
         version = "1.0"
         description = "Detect the StealthVector malware, updated in July 2024"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-08-26"
         modification_date = "2024-07-15"
         classification = "TLP:CLEAR"

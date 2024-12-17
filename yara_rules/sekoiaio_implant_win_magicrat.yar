@@ -6,7 +6,7 @@ rule sekoiaio_implant_win_magicrat {
         id = "74973682-b214-48ee-98c3-f4b6bef76587"
         version = "1.0"
         description = "Detect Lazarus' MagicRAT"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-13"
         classification = "TLP:CLEAR"
         reference = "https://blog.talosintelligence.com/2022/09/lazarus-magicrat.html"

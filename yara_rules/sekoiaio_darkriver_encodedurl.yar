@@ -3,7 +3,7 @@ rule sekoiaio_darkriver_encodedurl {
         id = "60f1676f-dade-4376-9980-f510dff52ae5"
         version = "1.0"
         description = "Detects encoding URL inside docx documents"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-10-10"
         classification = "TLP:CLEAR"
         hash1 = "5c9551388213f54c4b54cd42ccb034d8d9173a4bbfcf8b666e0db8df929762e7"

@@ -3,7 +3,7 @@ rule sekoiaio_guloader_unpacker {
         id = "dee4cad4-e3b4-4a12-860b-ff750b119fa8"
         version = "1.0"
         description = "GuLoader Unpacker"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-07"
         classification = "TLP:CLEAR"
         

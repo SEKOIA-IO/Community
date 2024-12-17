@@ -5,7 +5,7 @@ rule sekoiaio_icebot_exported_function {
     meta:
         id = "1a1fb651-6ce3-4751-be23-c27a3d8dabde"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-17"
         classification = "TLP:CLEAR"
         description = "Detects the IceBot RAT used by FIN7 based on the exported function"

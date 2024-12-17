@@ -3,7 +3,7 @@ rule sekoiaio_loader_win_konni_bat {
         id = "e8921336-6c91-4b46-bd3f-3cf4a9b31082"
         version = "1.0"
         description = "Detect the BAT files (named trap.bat or yup.bat) used by KONNI"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-26"
         classification = "TLP:CLEAR"
         

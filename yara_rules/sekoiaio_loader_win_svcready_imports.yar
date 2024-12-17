@@ -5,7 +5,7 @@ rule sekoiaio_loader_win_svcready_imports {
         id = "e89aa736-acee-4881-b367-a9abfe9784ec"
         version = "1.0"
         description = "Finds samples of the SVCReady loader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://threatresearch.ext.hp.com/svcready-a-new-loader-reveals-itself/"
         creation_date = "2022-06-08"
         classification = "TLP:CLEAR"

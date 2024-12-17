@@ -2,7 +2,7 @@ rule sekoiaio_tool_efspotato {
     meta:
         id = "4440ea37-d7d0-4107-867c-576c6e2f4f7e"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-08-23"
         classification = "TLP:CLEAR"
         

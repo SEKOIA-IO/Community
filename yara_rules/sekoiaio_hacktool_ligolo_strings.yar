@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_ligolo_strings {
         id = "5013256b-eda3-417e-ac72-959055b01c7e"
         version = "1.0"
         description = "Detects ligolo based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-08"
         classification = "TLP:CLEAR"
         

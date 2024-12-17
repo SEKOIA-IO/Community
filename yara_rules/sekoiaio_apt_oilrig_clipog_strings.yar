@@ -3,7 +3,7 @@ rule sekoiaio_apt_oilrig_clipog_strings {
         id = "0ac40fd9-f67d-41fa-a774-77a3a1b7cac3"
         version = "1.0"
         description = "Detects OilRig's Clipog stealer"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-10-24"
         classification = "TLP:CLEAR"
         

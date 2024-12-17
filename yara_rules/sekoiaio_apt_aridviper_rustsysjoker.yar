@@ -3,7 +3,7 @@ rule sekoiaio_apt_aridviper_rustsysjoker {
         id = "14ff3f76-0371-4b45-9864-bf69c74e60aa"
         version = "1.0"
         description = "Detects Rust Sysjoker variant via PDB path or key and Rust string"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-27"
         classification = "TLP:CLEAR"
         

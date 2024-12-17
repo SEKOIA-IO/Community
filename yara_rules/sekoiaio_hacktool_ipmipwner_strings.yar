@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_ipmipwner_strings {
         id = "2ac736b5-33bb-477f-a98c-57cc2744d251"
         version = "1.0"
         description = "Detects ipmiPwner script"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-08"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_ddrdoh_powershell_backdoor {
         id = "3413dedd-e3ec-4231-8af7-c7f709ab82d7"
         version = "1.0"
         description = "Detects GAMAREDON's DDRDOH PowerShell Backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-23"
         classification = "TLP:CLEAR"
         

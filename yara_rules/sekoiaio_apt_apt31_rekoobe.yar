@@ -5,7 +5,7 @@ rule sekoiaio_apt_apt31_rekoobe {
         id = "b1461a72-76ce-4cc5-ac84-3cc87454d288"
         version = "1.0"
         description = "Find Rekoobe sample via Trend Elf Hash (telfhash)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-07-10"
         classification = "TLP:CLEAR"
         

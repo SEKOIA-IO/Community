@@ -3,7 +3,7 @@ rule sekoiaio_apt_blackwood_nspx30_plugin {
         id = "ef8e0d51-c78c-426b-8008-910e27546f23"
         version = "1.0"
         description = "Detects plugins of NSPX30 backdoor based on RTTI and rundll32 string"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-01-29"
         classification = "TLP:CLEAR"
         

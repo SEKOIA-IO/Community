@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_meduzastealer {
         id = "1276f485-aa5d-491b-89d8-77f98dc496e1"
         version = "1.0"
         description = "Finds MeduzaStealer samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-20"
         classification = "TLP:CLEAR"
         

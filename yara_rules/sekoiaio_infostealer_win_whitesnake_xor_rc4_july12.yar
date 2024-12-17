@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_whitesnake_xor_rc4_july12 {
         id = "f2ebfcbd-9667-459a-a543-ce0be62c0dc4"
         version = "1.0"
         description = "Detects WhiteSnake Stealer XOR and RC4 version"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-07-12"
         classification = "TLP:CLEAR"
         

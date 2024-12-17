@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_powerrevshell {
         id = "b5161c23-c607-4096-9f4a-1be516a0a614"
         version = "1.0"
         description = "Detects Powershell reverse shell"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-08"
         classification = "TLP:CLEAR"
         

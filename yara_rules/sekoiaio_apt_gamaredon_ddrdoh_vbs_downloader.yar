@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_ddrdoh_vbs_downloader {
         id = "c934b95d-d81d-4f58-a752-1bb31ba8593d"
         version = "1.0"
         description = "Detects the core of the VBS Gamaredon's Telegram Downloader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-25"
         classification = "TLP:CLEAR"
         

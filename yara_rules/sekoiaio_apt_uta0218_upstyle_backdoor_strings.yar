@@ -3,7 +3,7 @@ rule sekoiaio_apt_uta0218_upstyle_backdoor_strings {
         id = "098fbad7-efaf-4198-83de-208c2ae16f89"
         version = "1.0"
         description = "Detects UPSTYLE backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-16"
         classification = "TLP:CLEAR"
         

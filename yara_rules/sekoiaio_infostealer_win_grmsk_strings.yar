@@ -2,7 +2,7 @@ rule sekoiaio_infostealer_win_grmsk_strings {
     meta:
         version = "1.0"
         description = "Finds GrMsk samples based on the specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-30"
         id = "58f32339-5e0f-405c-9acc-14b93f6c208b"
         classification = "TLP:CLEAR"

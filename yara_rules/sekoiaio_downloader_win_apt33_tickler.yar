@@ -6,7 +6,7 @@ rule sekoiaio_downloader_win_apt33_tickler {
         id = "e1f704d6-d527-479a-8311-d286c06768ac"
         version = "1.0"
         description = "Detect the downloader used by APT33 to diwnload Tickler"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-08-29"
         classification = "TLP:CLEAR"
         

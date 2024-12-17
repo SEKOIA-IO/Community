@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_stowaway_strings {
         id = "a952b45a-269b-4075-bf72-16d6d863e97c"
         version = "1.0"
         description = "Detects Stowaway based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-15"
         classification = "TLP:CLEAR"
         

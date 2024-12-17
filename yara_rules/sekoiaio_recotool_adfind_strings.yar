@@ -3,7 +3,7 @@ rule sekoiaio_recotool_adfind_strings {
         id = "afca88ef-756a-4b2b-91d7-d18d730e7074"
         version = "1.0"
         description = "Detects Adfind utility based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-08"
         classification = "TLP:CLEAR"
         

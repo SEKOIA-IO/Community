@@ -3,7 +3,7 @@ rule sekoiaio_apt_darkpink_kamikakabot_strings {
         id = "0f5a7d72-81c8-4fdd-aefd-136bc6d48aa5"
         version = "1.0"
         description = "Detects KamiKakaBot strings (.NET sample of Dark Pink)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-22"
         classification = "TLP:CLEAR"
         

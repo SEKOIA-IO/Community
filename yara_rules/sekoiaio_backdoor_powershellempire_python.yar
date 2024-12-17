@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_powershellempire_python {
         id = "c2913f60-46a2-42c1-8569-72568eaddaed"
         version = "1.0"
         description = "Detects Empire Python version"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-15"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_apt_cloudatlas_powershower_module {
         id = "dd688058-3d5d-46a7-8380-fe961c3327cd"
         version = "1.0"
         description = "Detects CloudAtlas PowerShower module"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-30"
         classification = "TLP:CLEAR"
         

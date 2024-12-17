@@ -3,7 +3,7 @@ rule sekoiaio_rat_win_reverserat {
         id = "8fbd395f-f44e-46d5-a942-7c7e88f37127"
         version = "1.0"
         description = "Detect SideCopy's ReverseRAT v3 observed in January 2023"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-22"
         classification = "TLP:CLEAR"
         hash = "b277a824b2671f40298ce03586a2ccc0fca2a081a66230c57a3060c2028f13ee"

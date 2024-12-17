@@ -6,7 +6,7 @@ rule sekoiaio_launcher_win_bluehaze {
         id = "ccfe0593-0a9f-4369-952e-5cef2f459bb3"
         version = "1.0"
         description = "Detect the BLUEHAZE malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-01"
         classification = "TLP:CLEAR"
         

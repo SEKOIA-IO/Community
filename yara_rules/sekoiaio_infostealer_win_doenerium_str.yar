@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_doenerium_str {
         id = "1645a86f-1063-4e98-a1fa-85fc8c4e9691"
         version = "1.0"
         description = "Detect the Doenerium infostealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-29"
         classification = "TLP:CLEAR"
         

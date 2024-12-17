@@ -3,7 +3,7 @@ rule sekoiaio_apt_sandworm_awfulshred_obfuscation_apr2022 {
         id = "52317e6b-7f2c-4c2a-bcfc-ebb4ab4c728e"
         version = "1.0"
         description = "Detects the AWFULSHRED wiper used by Sandworm"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-12"
         classification = "TLP:CLEAR"
         

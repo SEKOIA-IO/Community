@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_vbs_downloader {
         id = "13b63570-2f18-4b35-8087-9ab15c58a0d1"
         version = "1.0"
         description = "Detects small VBS loader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-08"
         classification = "TLP:CLEAR"
         

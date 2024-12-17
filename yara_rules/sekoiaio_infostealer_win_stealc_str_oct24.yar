@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_stealc_str_oct24 {
         id = "7448fafe-206c-4f9c-b5a3-cbabec12a45b"
         version = "1.0"
         description = "Finds Stealc standalone samples (or dumps) based on the strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-10-20"
         classification = "TLP:CLEAR"
         

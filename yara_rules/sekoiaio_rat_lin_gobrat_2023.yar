@@ -3,7 +3,7 @@ rule sekoiaio_rat_lin_gobrat_2023 {
         id = "ca36a586-f87f-445f-95dc-52d447c1d2a2"
         version = "1.0"
         description = "This rule detect samples that are downloaded on the GobRAT C2 URL path /a, /b and /c."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-09"
         classification = "TLP:CLEAR"
         hash1 = "36cb17d9d118bd9692106c8aafab2462aacf1cdad3a6afb0e4f1de898a7db0e1"

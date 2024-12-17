@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_stormkitty {
         id = "5014d2e5-af5c-4800-ab1e-b57de37a2450"
         version = "1.0"
         description = "Finds StormKitty samples (or their variants) based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-29"
         classification = "TLP:CLEAR"
         

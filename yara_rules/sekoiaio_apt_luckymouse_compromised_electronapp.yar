@@ -3,7 +3,7 @@ rule sekoiaio_apt_luckymouse_compromised_electronapp {
         id = "7702217d-771f-47af-8eaa-d5acf1e14f4d"
         version = "1.0"
         description = "Detects compromised ElectronApp"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-05"
         classification = "TLP:CLEAR"
         

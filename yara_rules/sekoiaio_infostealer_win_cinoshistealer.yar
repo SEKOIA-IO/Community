@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_cinoshistealer {
         id = "2e9c066b-d5e3-4a25-8954-c10af285bcd3"
         version = "1.0"
         description = "Finds Cinoshi Stealer samples based on specific strings, or PE resources"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-23"
         classification = "TLP:CLEAR"
         

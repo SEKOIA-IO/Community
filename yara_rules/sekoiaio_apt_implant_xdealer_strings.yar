@@ -3,7 +3,7 @@ rule sekoiaio_apt_implant_xdealer_strings {
         id = "06ef72ca-b4e3-493b-8e01-d34b98259c6d"
         version = "1.0"
         description = "Detects XDealer based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-22"
         classification = "TLP:CLEAR"
         

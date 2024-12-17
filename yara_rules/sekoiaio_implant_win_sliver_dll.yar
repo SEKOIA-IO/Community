@@ -3,7 +3,7 @@ import "pe"
 rule sekoiaio_implant_win_sliver_dll {
     meta:
         id = "41d83011-a08b-4245-b633-79fe6afaa4d2"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-11-08"
         modification_date = "2021-12-22"
         description = "Detect the Sliver DLL based on export names (standalone and process/memory dumps)"

@@ -6,7 +6,7 @@ rule sekoiaio_wiper_win_ruransom {
         id = "7bf3694b-c689-482f-88cd-b1f3b86bbc36"
         version = "1.0"
         description = "Detect the RURansom malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-21"
         classification = "TLP:CLEAR"
         

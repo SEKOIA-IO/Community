@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_gomorrah {
         id = "df8f06ba-6c93-4ce3-9857-ced93753f917"
         version = "1.0"
         description = "Detect the Gomorrah infostealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-25"
         classification = "TLP:CLEAR"
         

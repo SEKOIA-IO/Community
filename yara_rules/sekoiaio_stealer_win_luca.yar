@@ -5,7 +5,7 @@ rule sekoiaio_stealer_win_luca {
         id = "d2cc1442-0ba5-4e81-9fea-e9e078903eed"
         version = "1.0"
         description = "Detect Luca stealer. Open source Rust stealer."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-26"
         classification = "TLP:CLEAR"
         

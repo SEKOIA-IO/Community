@@ -3,7 +3,7 @@ rule sekoiaio_apt_gelsemium_wolfsbane_launcher {
         id = "26fbf4df-aa08-47b6-a73c-e8f80a408454"
         version = "1.0"
         description = "Detects Gelsemium's WolfsBane launcher"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-11-22"
         classification = "TLP:CLEAR"
         hash = "87e437cf74ce4b1330b8af9ff71edae2"

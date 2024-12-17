@@ -3,7 +3,7 @@ rule sekoiaio_apt_lazarus_pondrat {
         id = "a957c158-a79a-4d7a-8473-b6960cf02d9b"
         version = "1.0"
         description = "Detects PondRAT via mangled command names"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-23"
         classification = "TLP:CLEAR"
         hash = "b62c912de846e743effdf7e5654a7605"

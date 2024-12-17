@@ -3,7 +3,7 @@ rule sekoiaio_guloader_lnk_file {
         id = "ecc07753-0910-445b-bf84-911b17195894"
         version = "1.0"
         description = "LNK file delivering Guloader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-07"
         classification = "TLP:CLEAR"
         

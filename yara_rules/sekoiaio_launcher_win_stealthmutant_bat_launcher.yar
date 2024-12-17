@@ -3,7 +3,7 @@ rule sekoiaio_launcher_win_stealthmutant_bat_launcher {
         id = "7452291f-2244-469e-bb7c-5eff1ca17aa2"
         version = "1.0"
         description = "StealthMutant/StealthVector bat launcher"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-08-26"
         classification = "TLP:CLEAR"
         

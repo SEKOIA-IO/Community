@@ -3,7 +3,7 @@ rule sekoiaio_apt_gelsemium_firewood_backdoor {
         id = "93670c07-9edd-4ea2-b8ed-6fee625491f4"
         version = "1.0"
         description = "Detects Gelsemium's FireWood backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-11-22"
         classification = "TLP:CLEAR"
         hash = "2251bc7910fe46fd0baf8bc05599bdcf"

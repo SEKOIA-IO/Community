@@ -1,7 +1,7 @@
 rule sekoiaio_trojan_android_cerberus {
     meta:
         id = "3ea398bd-a80c-40f4-ad52-73b528add4ad"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-24"
         description = "Detect samples of the Android banking trojan Cerberus, or its family"
         version = "1.0"

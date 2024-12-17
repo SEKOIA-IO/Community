@@ -3,7 +3,7 @@ rule sekoiaio_apt_mustangpanda_tinynote {
         id = "a2b9bea4-a211-456f-8a3f-0f31733e8b29"
         version = "1.0"
         description = "Detects strings in TinyNote backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-07"
         classification = "TLP:CLEAR"
         

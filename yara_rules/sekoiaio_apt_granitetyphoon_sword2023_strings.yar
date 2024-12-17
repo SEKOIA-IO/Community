@@ -3,7 +3,7 @@ rule sekoiaio_apt_granitetyphoon_sword2023_strings {
         id = "417b355f-9eb8-40ae-bc3b-f7f23b5ca63e"
         version = "1.0"
         description = "Detects Sword2023 malware based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-25"
         classification = "TLP:CLEAR"
         

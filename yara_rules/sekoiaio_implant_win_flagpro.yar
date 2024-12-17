@@ -3,7 +3,7 @@ rule sekoiaio_implant_win_flagpro {
         id = "08dd2de4-b359-424f-af04-7f294d519363"
         version = "1.0"
         description = "Detect the Flagpro malware used by Blacktech"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-22"
         classification = "TLP:CLEAR"
         

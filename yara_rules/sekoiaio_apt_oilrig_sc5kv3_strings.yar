@@ -3,7 +3,7 @@ rule sekoiaio_apt_oilrig_sc5kv3_strings {
         id = "885ea13b-47b0-4a6d-8136-9b31abc9064a"
         version = "1.0"
         description = "Detects SC5kv3 malware based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-20"
         classification = "TLP:CLEAR"
         

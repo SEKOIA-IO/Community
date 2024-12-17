@@ -6,7 +6,7 @@ rule sekoiaio_ransomware_win_eking_rich_header {
         id = "9fe76f89-f27a-4a47-a61c-2d767a1a8acb"
         version = "1.0"
         description = "Detect Eking ransomware using its rich header"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-10-07"
         classification = "TLP:CLEAR"
         

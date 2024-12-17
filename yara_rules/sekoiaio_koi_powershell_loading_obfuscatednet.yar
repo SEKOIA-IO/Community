@@ -3,7 +3,7 @@ rule sekoiaio_koi_powershell_loading_obfuscatednet {
         id = "75a7460d-cc28-470e-9841-da8e46ee0101"
         version = "1.0"
         description = "Powershell script loading obfuscated .NET Koi module"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-20"
         classification = "TLP:CLEAR"
         

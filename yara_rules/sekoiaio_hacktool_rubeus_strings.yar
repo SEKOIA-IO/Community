@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_rubeus_strings {
         id = "048cab99-c288-44c2-9dc6-74eed02ef8f5"
         version = "1.0"
         description = "Detects Rubeus based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-15"
         classification = "TLP:CLEAR"
         

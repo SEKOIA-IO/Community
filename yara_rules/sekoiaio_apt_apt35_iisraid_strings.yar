@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt35_iisraid_strings {
         id = "ee42f406-0c7e-4385-9098-409611dbe0a5"
         version = "1.0"
         description = "Detects APT35s ISSRaid implant"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-11"
         classification = "TLP:CLEAR"
         

@@ -2,7 +2,7 @@ rule sekoiaio_loader_win_batloader_scripts {
     meta:
         version = "1.0"
         description = "Finds BatLoader samples based on the specific download URL"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-30"
         id = "31a04ad3-74f8-4aa5-b3fc-df792bdc71b5"
         classification = "TLP:CLEAR"

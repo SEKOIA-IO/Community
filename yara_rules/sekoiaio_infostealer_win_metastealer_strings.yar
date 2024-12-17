@@ -5,7 +5,7 @@ rule sekoiaio_infostealer_win_metastealer_strings {
         id = "1f4b6f0b-706e-48b0-889d-01c1b7f92776"
         version = "1.0"
         description = "Detects IOCs related to Metastealer"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-13"
         classification = "TLP:CLEAR"
         

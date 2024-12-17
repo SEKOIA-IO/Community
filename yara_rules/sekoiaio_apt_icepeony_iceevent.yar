@@ -3,7 +3,7 @@ rule sekoiaio_apt_icepeony_iceevent {
         id = "7d1f8b90-fde4-4d5c-a8a3-375db8aa88a1"
         version = "1.0"
         description = "Detects IceEvent Backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-10-21"
         classification = "TLP:CLEAR"
         hash = "07c291c9cea4430676c303128bbbb8e3"

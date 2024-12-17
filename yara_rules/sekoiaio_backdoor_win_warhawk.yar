@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_win_warhawk {
         id = "d0ec19a7-cb08-4bca-b153-d7b0358186b4"
         version = "1.0"
         description = "Detect the WarHawk backdoor used by the SideWinder intrusion-set"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-24"
         classification = "TLP:CLEAR"
         reference = "https://www.zscaler.com/blogs/security-research/warhawk-new-backdoor-arsenal-sidewinder-apt-group-0"

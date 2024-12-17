@@ -4,7 +4,7 @@ rule sekoiaio_loader_win_truebot_dec22 {
     meta:
         version = "1.0"
         description = "Finds TrueBot DLL based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-12"
         id = "21e2c57c-8579-4312-b188-bc9171e37e5f"
         classification = "TLP:CLEAR"

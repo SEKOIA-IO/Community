@@ -3,7 +3,7 @@ rule sekoiaio_apt_icepeony_icecache {
         id = "3135c70e-c925-4d26-beed-09424fc0c153"
         version = "1.0"
         description = "Detects IceCache backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-10-21"
         classification = "TLP:CLEAR"
         hash = "38708c33dafb5625ddde1030a7efa7db"

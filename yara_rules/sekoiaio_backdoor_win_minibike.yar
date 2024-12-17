@@ -6,7 +6,7 @@ rule sekoiaio_backdoor_win_minibike {
         id = "d758c41a-279c-4706-9cf3-87740e45f71d"
         version = "1.0"
         description = "Detect the MINIBIKE malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-08"
         classification = "TLP:CLEAR"
         hash1 = "985967e245d8fbc722e30371c9ed48c3269ceaa6b9b9b80caf2b95c920c856c2"

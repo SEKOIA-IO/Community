@@ -3,7 +3,7 @@ rule sekoiaio_apt_3cx_payload_stealer {
         id = "1ca0605d-101f-4d1d-a476-9dfd93e74b4c"
         version = "1.0"
         description = "Detects stealer used in 3CX campaign"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-31"
         classification = "TLP:CLEAR"
         

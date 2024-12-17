@@ -3,7 +3,7 @@ rule sekoiaio_tool_masky_strings {
         id = "542670ee-9f2e-4148-853d-a3f055bd584c"
         version = "1.0"
         description = "Detects Masky tool"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-23"
         classification = "TLP:CLEAR"
         

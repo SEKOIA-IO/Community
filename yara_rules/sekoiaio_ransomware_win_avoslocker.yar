@@ -3,7 +3,7 @@ rule sekoiaio_ransomware_win_avoslocker {
         id = "fc5c2483-48cb-4282-b6cb-ac728b948607"
         version = "1.0"
         description = "Detect AvosLocker ransomware (2021-07)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-08-03"
         classification = "TLP:CLEAR"
         hash6 = "f810deb1ba171cea5b595c6d3f816127fb182833f7a08a98de93226d4f6a336f"

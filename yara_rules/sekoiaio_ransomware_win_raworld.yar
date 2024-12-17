@@ -3,7 +3,7 @@ rule sekoiaio_ransomware_win_raworld {
         id = "a9ed9c5a-7a0e-4c2e-90f4-d52f5589b2b8"
         version = "1.0"
         description = "Detects files related to stage 1 of a campaign from the ransomware group RA World."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-07-24"
         classification = "TLP:CLEAR"
         

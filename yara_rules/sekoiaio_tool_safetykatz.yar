@@ -2,7 +2,7 @@ rule sekoiaio_tool_safetykatz {
     meta:
         id = "90f93244-38a7-4574-87c6-15d494e9173b"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-23"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_ransomware_linux_icefire_2023 {
         id = "b04964f4-3fdc-4745-9f4a-95a5a79bc7e1"
         version = "1.0"
         description = "Rule to detect Linux IceFire ransomware samples."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-13"
         classification = "TLP:CLEAR"
         hash1 = "e9cc7fdfa3cf40ff9c3db0248a79f4817b170f2660aa2b2ed6c551eae1c38e0b"

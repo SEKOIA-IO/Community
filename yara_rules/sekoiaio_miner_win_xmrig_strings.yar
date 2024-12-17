@@ -3,7 +3,7 @@ rule sekoiaio_miner_win_xmrig_strings {
         id = "35f203aa-20cd-4235-9ead-b34be14255d5"
         version = "1.0"
         description = "Detects XMRig EXE"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-01-04"
         classification = "TLP:CLEAR"
         

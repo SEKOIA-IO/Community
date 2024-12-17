@@ -2,7 +2,7 @@ rule sekoiaio_infostealer_win_blustealer {
     meta:
         version = "1.0"
         description = "Detect the BluStealer infostealer based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-05"
         id = "a56b3c12-9d83-4a0b-81e8-43332e64d599"
         classification = "TLP:CLEAR"

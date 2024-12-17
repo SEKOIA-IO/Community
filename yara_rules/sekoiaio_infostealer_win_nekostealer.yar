@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_nekostealer {
         id = "8b7d2708-9d33-4855-8e02-f6afedb7dda8"
         version = "1.0"
         description = "Detect the NekoStealer infostealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-24"
         classification = "TLP:CLEAR"
         

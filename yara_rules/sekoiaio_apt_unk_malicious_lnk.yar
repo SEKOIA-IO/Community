@@ -3,7 +3,7 @@ rule sekoiaio_apt_unk_malicious_lnk {
         id = "d2248803-7ddf-4cde-ab6a-78b20e760919"
         version = "1.0"
         description = "Detects a malicious LNK used by an APT"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-06"
         classification = "TLP:CLEAR"
         hash = "a8d7e56eb01a8cf576533db9af2e92ec"

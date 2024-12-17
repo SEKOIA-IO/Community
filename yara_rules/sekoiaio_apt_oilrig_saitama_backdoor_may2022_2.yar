@@ -3,7 +3,7 @@ rule sekoiaio_apt_oilrig_saitama_backdoor_may2022_2 {
         id = "f885551a-d0f0-431d-aa4f-7caa93b1db6a"
         version = "1.0"
         description = "Detects Saitama backdoor variants"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-05-13"
         classification = "TLP:CLEAR"
         

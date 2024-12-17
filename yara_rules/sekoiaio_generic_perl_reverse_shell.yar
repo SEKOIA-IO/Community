@@ -3,7 +3,7 @@ rule sekoiaio_generic_perl_reverse_shell {
         id = "4eb2ef0d-3ada-4566-bd82-8c75d6931acc"
         version = "1.0"
         description = "Detects simple reverse shell written in Perl"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-08"
         classification = "TLP:CLEAR"
         

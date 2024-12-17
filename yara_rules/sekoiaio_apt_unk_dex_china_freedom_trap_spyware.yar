@@ -3,7 +3,7 @@ rule sekoiaio_apt_unk_dex_china_freedom_trap_spyware {
         id = "3d66b6b8-8397-441a-a337-4a282df39591"
         version = "1.0"
         description = "Detects China Freedom Trap spyware dex file"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-07"
         classification = "TLP:CLEAR"
         hash = "ceb70fce74898ea64ded6880a978441c"

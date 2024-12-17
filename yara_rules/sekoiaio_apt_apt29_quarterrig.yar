@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt29_quarterrig {
         id = "e370ed7e-5e12-4add-95f3-3773ea8e2d03"
         version = "1.0"
         description = "Detects QUARTERRIG"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-04-19"
         classification = "TLP:CLEAR"
         

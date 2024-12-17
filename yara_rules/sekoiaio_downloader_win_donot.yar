@@ -3,7 +3,7 @@ rule sekoiaio_downloader_win_donot {
         id = "31b153cc-a4b9-40a0-8bcb-ce1370645b4b"
         version = "1.0"
         description = "Detect the DoNot's downloader malware. There are big binaries in downloader strings."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-20"
         classification = "TLP:CLEAR"
         

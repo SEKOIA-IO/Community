@@ -3,7 +3,7 @@ rule sekoiaio_apt_cottonsandstorm_win_implant {
         id = "04a5255c-f9bb-4612-b0e2-ed0326867055"
         version = "1.0"
         description = "Detects a simple win implant used by Cotton Sandstorm"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-11-05"
         classification = "TLP:CLEAR"
         hash = "f797d71ed07d6e05556300e4ce0f2927"

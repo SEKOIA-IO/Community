@@ -3,7 +3,7 @@ rule sekoiaio_spyware_and_fastfire {
         id = "93c0ffd5-faa5-4ead-8848-1c44b459dc29"
         version = "1.0"
         description = "Detect the FastFire malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-03"
         classification = "TLP:CLEAR"
         

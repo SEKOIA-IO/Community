@@ -3,7 +3,7 @@ rule sekoiaio_ransomware_win_shrinklocker {
         id = "93a6fbdd-ad62-456a-a1a5-b5ae3b242004"
         version = "1.0"
         description = "Detects files related to the ShrinkLocker ransomware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-07"
         classification = "TLP:CLEAR"
         
