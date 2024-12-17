@@ -3,7 +3,7 @@ rule sekoiaio_apt_unc3524_quietexit_strings {
         id = "1bfa9baa-40a3-4ad7-83dc-f9340fbed180"
         version = "1.0"
         description = "Detect the QUIETEXIT malware used by UNC3524"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-05-04"
         classification = "TLP:CLEAR"
         

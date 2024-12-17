@@ -3,7 +3,7 @@ rule sekoiaio_apt_muddywater_powgoop_decoded {
         id = "194cb9ef-da96-42b6-a3b5-b0aee7495f2c"
         version = "1.0"
         description = "Detects decoded PowGoop malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-13"
         classification = "TLP:CLEAR"
         

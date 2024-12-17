@@ -5,7 +5,7 @@ rule sekoiaio_infostealer_win_eternity {
         id = "0ed8d4bd-d57f-40a8-a709-d69531d59847"
         version = "1.0"
         description = "Detect the Eternity infostealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "hxxp://xssforumv3isucukbxhdhwz67hoa5e2voakcfkuieq4ch257vsburuid.]onion/threads/62331/"
         creation_date = "2022-03-23"
         classification = "TLP:CLEAR"

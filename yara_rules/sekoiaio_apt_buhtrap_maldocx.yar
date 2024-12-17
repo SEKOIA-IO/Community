@@ -3,7 +3,7 @@ rule sekoiaio_apt_buhtrap_maldocx {
         id = "4aaba2f1-fafd-4e3f-8b18-7beda11464d1"
         version = "1.0"
         description = "Detect the malicious DOCX used by Buhtrap"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-25"
         classification = "TLP:CLEAR"
         

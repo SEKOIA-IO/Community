@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt41_powershell_exfiltration_script {
         id = "9a15f845-c0af-4f1c-a033-b4f40232dc0d"
         version = "1.0"
         description = "Detects PowerShell exfiltration script"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-15"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_tool_win_lightrail {
         id = "39259f2c-11fe-4edd-8a9e-f36920132272"
         version = "1.0"
         description = "Detect the LIGHTRAIL tunneler used by UNC1549"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-29"
         classification = "TLP:CLEAR"
         reference = "https://www.mandiant.com/resources/blog/suspected-iranian-unc1549-targets-israel-middle-east"

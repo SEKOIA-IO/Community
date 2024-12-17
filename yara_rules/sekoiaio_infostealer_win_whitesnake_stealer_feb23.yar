@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_whitesnake_stealer_feb23 {
         id = "68ae7fbc-4486-4b60-af5e-f37ddc58f170"
         version = "1.0"
         description = "Finds WhiteSnake samples (stealer module)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-01"
         classification = "TLP:CLEAR"
         

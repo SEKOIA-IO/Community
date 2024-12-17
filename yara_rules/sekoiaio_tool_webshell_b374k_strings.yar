@@ -3,7 +3,7 @@ rule sekoiaio_tool_webshell_b374k_strings {
         id = "f53fc668-e1fc-4b85-b850-59aceefb6418"
         version = "1.0"
         description = "Detects b374k webshell"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-06"
         classification = "TLP:CLEAR"
         hash = "1d27b23fceecbb9e854c41f6a8fb878e"

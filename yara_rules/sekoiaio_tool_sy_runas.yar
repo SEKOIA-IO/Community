@@ -2,10 +2,10 @@ rule sekoiaio_tool_sy_runas {
     meta:
         id = "cb1f3707-6716-49b5-9fe0-45c5baf2e491"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-08-23"
         classification = "TLP:CLEAR"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         
     strings:
         $s1 = "Sy_Runas.exe" ascii wide

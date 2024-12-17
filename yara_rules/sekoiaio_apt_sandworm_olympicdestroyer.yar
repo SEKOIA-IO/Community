@@ -3,7 +3,7 @@ rule sekoiaio_apt_sandworm_olympicdestroyer {
         id = "6820eb32-fea2-4a00-a5a2-672ba09f8206"
         version = "1.0"
         description = "Detects OlympicDestroyer malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-15"
         classification = "TLP:CLEAR"
         

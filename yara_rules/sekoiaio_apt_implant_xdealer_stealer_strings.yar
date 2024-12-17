@@ -3,7 +3,7 @@ rule sekoiaio_apt_implant_xdealer_stealer_strings {
         id = "6314cf6c-2c3b-4e9a-87a1-b56ee148474c"
         version = "1.0"
         description = "Detects stealer module of XDealer"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-22"
         classification = "TLP:CLEAR"
         

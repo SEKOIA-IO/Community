@@ -3,7 +3,7 @@ rule sekoiaio_ransomware_mallox {
         id = "7e2edc94-26e4-4024-8bc0-8e90d76f5a96"
         version = "1.0"
         description = "Rule to detect mallox ransomware samples."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-20"
         modification_date = "2023-05-24"
         classification = "TLP:CLEAR"

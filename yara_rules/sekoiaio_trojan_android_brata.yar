@@ -1,7 +1,7 @@
 rule sekoiaio_trojan_android_brata {
     meta:
         id = "fde9b82e-c677-44ed-b512-b225a3aba201"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-27"
         description = "Detect samples of the Android banking trojan BRATA"
         version = "1.0"

@@ -3,7 +3,7 @@ rule sekoiaio_tool_win_sharpshares {
         id = "ef90d573-12f8-4216-9a9e-96e7d1e841d0"
         version = "1.0"
         description = "Finds sharpshares EXE based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://github.com/mitchmoser/SharpShares/releases"
         creation_date = "2024-06-10"
         classification = "TLP:CLEAR"

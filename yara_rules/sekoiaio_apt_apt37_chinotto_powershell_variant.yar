@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt37_chinotto_powershell_variant {
         id = "fa42b225-58fe-4e00-b84b-df37491d8fdd"
         version = "1.0"
         description = "Detects APT37 Chinotto Powershell Variant"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-06"
         classification = "TLP:CLEAR"
         

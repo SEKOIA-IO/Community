@@ -3,7 +3,7 @@ rule sekoiaio_keylogger_win_donot {
         id = "4f67dda7-da68-4496-a8b4-a8a769ddd763"
         version = "1.0"
         description = "Detect the DoNot's keylogger malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-20"
         classification = "TLP:CLEAR"
         

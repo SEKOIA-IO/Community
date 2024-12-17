@@ -3,7 +3,7 @@ rule sekoiaio_apt_polonium_megacreep_strings {
         id = "927c5fd6-0574-43bf-8db9-6ecc328estrin56c7"
         version = "1.0"
         description = "Tries to detect POLONIUM's MegaCreep implant"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-12"
         classification = "TLP:CLEAR"
         

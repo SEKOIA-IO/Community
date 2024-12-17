@@ -6,7 +6,7 @@ rule sekoiaio_backdoor_win_blackrat {
         id = "3a5a6290-6344-45ce-8929-ea5a4451840f"
         version = "1.0"
         description = "Detect Andariel's Black RAT malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-04"
         classification = "TLP:CLEAR"
         hash1 = "c2500a6e12f22b16e221ba01952b69c92278cd05632283d8b84c55c916efe27c"

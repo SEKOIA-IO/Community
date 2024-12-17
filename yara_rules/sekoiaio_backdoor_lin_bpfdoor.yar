@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_lin_bpfdoor {
         id = "1776ff6f-6fbb-4a81-bcad-c43b5117c67c"
         version = "1.0"
         description = "Detect the BPFDoor backdoor used by the Chinese TA Red Menshen"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-05-05"
         classification = "TLP:CLEAR"
         reference = "https://github.com/Neo23x0/signature-base/blob/master/yara/mal_lnx_implant_may22.yar"

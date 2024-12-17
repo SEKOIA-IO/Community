@@ -3,7 +3,7 @@ rule sekoiaio_apt_scanbox_framework_not_obfuscated {
         id = "4790f122-89de-4f7b-a25f-9ac7b1af8333"
         version = "1.0"
         description = "Detects the non obfuscated version of ScanBox"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-01"
         classification = "TLP:CLEAR"
         

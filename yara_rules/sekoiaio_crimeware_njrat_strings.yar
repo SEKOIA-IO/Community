@@ -3,7 +3,7 @@ rule sekoiaio_crimeware_njrat_strings {
         id = "215807ae-fbcb-478d-8941-e0787b883669"
         version = "1.0"
         description = "Detects njRAT based on some strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-22"
         classification = "TLP:CLEAR"
         

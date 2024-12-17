@@ -3,7 +3,7 @@ rule sekoiaio_apt_badmagic_commonmagic_generic_2 {
         id = "c6a16ecc-e00a-4756-b603-f6c85e4f4220"
         version = "1.0"
         description = "Detects CommonMagic related implants"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-15"
         classification = "TLP:CLEAR"
         

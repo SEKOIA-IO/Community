@@ -5,7 +5,7 @@ rule sekoiaio_infostealer_win_mars_stealer {
         id = "3e2c7440b2fc9e4b039e6fa8152ac8fd"
         version = "1.0"
         description = "Detect Mars Stealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://3xp0rt.com/posts/mars-stealer"
         creation_date = "2022-02-03"
         modification_date = "2022-02-14"

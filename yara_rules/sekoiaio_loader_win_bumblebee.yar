@@ -3,7 +3,7 @@ rule sekoiaio_loader_win_bumblebee {
         id = "ff36f512-c700-4f52-bc89-68ab9c69462c"
         version = "1.0"
         description = "Detect BUMBLEBEE based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-08"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_tool_sharphoundexecutable_strings {
         id = "2cf8046e-5b4d-4ff7-b4b2-7aaeaf58883b"
         version = "1.0"
         description = "Detects the SharpHound tool"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-11"
         classification = "TLP:CLEAR"
         

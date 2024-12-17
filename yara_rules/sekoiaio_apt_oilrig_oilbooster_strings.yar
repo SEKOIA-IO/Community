@@ -3,7 +3,7 @@ rule sekoiaio_apt_oilrig_oilbooster_strings {
         id = "001d12bc-1e7e-4a6c-9172-66687d08d827"
         version = "1.0"
         description = "Detects OilBooster malware based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-20"
         classification = "TLP:CLEAR"
         

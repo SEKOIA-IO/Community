@@ -3,7 +3,7 @@ rule sekoiaio_downloader_win_search {
         id = "8094ddda-6294-4dee-93cb-de79aaed1ec6"
         version = "1.0"
         description = "'Search.exe' script used by APT42"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-08-23"
         classification = "TLP:CLEAR"
         hash = "a29fa85ecfc0e5554c21f3b9db185de97b3504517403f4aa102adbd2c46dc1bf"

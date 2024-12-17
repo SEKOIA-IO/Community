@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_ginzostealer_str {
         id = "ef87e94b-9c53-44b4-b8a1-87d371a6d2cb"
         version = "1.0"
         description = "Finds samples of the Ginzo Stealer"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://blog.talosintelligence.com/2022/04/haskers-gang-zingostealer.html"
         creation_date = "2022-04-21"
         classification = "TLP:CLEAR"

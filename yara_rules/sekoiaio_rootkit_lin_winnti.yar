@@ -6,7 +6,7 @@ rule sekoiaio_rootkit_lin_winnti {
         id = "c800038e-7f8a-4f24-bf0b-06aba6a828cb"
         version = "1.0"
         description = "Rootkit used by Winnti"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-05-22"
         classification = "TLP:CLEAR"
         reference = "https://x.com/naumovax/status/1792902386295394629"

@@ -3,7 +3,7 @@ rule sekoiaio_bot_lin_kinsing_strings {
         id = "ce41b6d0-bc22-4a85-a3bb-ed3234871524"
         version = "1.0"
         description = "Catch Kinsing malware based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-24"
         classification = "TLP:CLEAR"
         

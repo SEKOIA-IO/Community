@@ -5,7 +5,7 @@ rule sekoiaio_apt_menupass_maliciouslibvlc_dll {
         id = "8b6b56f3-33b5-41cf-8bcb-e653c98718bd"
         version = "1.0"
         description = "Detects the malicious LibVLC variants used by MenuPass"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-06"
         classification = "TLP:CLEAR"
         

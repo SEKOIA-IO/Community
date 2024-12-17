@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt28_ukrnet_phishing_page {
         id = "053158d8-aac0-486f-8432-834a06f41ed2"
         version = "1.0"
         description = "Detects APT28 Phishing page"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-02"
         classification = "TLP:CLEAR"
         hash = "20dc3a5beb8e3a7801e010b4113efef1"

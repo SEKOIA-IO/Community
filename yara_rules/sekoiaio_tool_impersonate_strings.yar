@@ -5,7 +5,7 @@ rule sekoiaio_tool_impersonate_strings {
         id = "2ab345a2-9366-4673-b398-a59ba6954af5"
         version = "1.0"
         description = "Detects Impersonate"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-07-24"
         classification = "TLP:CLEAR"
         

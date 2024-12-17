@@ -3,7 +3,7 @@ rule sekoiaio_loader_win_squirrelwaffle_doc {
         id = "caadeac3-d4c7-4d84-b539-c03cc4c6c274"
         version = "1.0"
         description = "Detect the Squirrelwaffle malicious document (not xls)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-09-20"
         classification = "TLP:CLEAR"
         

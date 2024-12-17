@@ -5,7 +5,7 @@ rule sekoiaio_loader_win_doppeldridex {
         id = "ee5111ae-ba0b-4cd3-abe6-c66324d16840"
         version = "1.1"
         description = "Detect the DoppelDridex banking trojan using its Rich header"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-09-28"
         classification = "TLP:CLEAR"
         

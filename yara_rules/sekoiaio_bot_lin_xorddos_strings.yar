@@ -3,7 +3,7 @@ rule sekoiaio_bot_lin_xorddos_strings {
         id = "2f5c70a3-fe3f-4091-905d-d779bd0cb2cd"
         version = "1.0"
         description = "Catch XORDDoS strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-02"
         classification = "TLP:CLEAR"
         

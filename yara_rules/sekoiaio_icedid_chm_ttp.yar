@@ -5,7 +5,7 @@ rule sekoiaio_icedid_chm_ttp {
         id = "cae771d4-a9cf-4325-81b3-c00090cbc05e"
         version = "1.0"
         description = "IcedID campaign delivering ISO file with CHM attack chain"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-28"
         classification = "TLP:CLEAR"
         

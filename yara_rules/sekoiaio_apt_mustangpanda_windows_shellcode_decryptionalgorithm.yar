@@ -3,7 +3,7 @@ rule sekoiaio_apt_mustangpanda_windows_shellcode_decryptionalgorithm {
         id = "c9873a5f-97a6-477f-a1a0-650441c73444"
         version = "1.0"
         description = "Decryption routine for Shellcode of MustangPanda"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-05"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt41_powershell_collection_script {
         id = "55b6cc3e-24b2-4faa-a7fb-b4203a8e6d83"
         version = "1.0"
         description = "Detects PowerShell collection script"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-15"
         classification = "TLP:CLEAR"
         

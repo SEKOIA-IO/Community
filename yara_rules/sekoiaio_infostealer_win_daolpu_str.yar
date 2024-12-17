@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_daolpu_str {
         id = "dde1cf12-48d8-45b6-b453-b7196e6b1271"
         version = "1.0"
         description = "Finds Daolpu Stealer samples based on specific strings."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://www.crowdstrike.com/blog/fake-recovery-manual-used-to-deliver-unidentified-stealer/"
         creation_date = "2024-07-23"
         classification = "TLP:CLEAR"

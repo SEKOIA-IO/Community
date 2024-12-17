@@ -3,7 +3,7 @@ rule sekoiaio_apt_muddywater_powgoop_decode_loop {
         id = "644ed1c4-e0e1-496e-9efc-7d9e15565f7b"
         version = "1.0"
         description = "Detects the loop used in PowGoop and its loader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-13"
         classification = "TLP:CLEAR"
         

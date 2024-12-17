@@ -3,7 +3,7 @@ rule sekoiaio_tool_scanline_strings {
         id = "65677b81-d077-4d01-8398-cbb06ce49edf"
         version = "1.0"
         description = "Detects scanline (non-packed)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-06"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_pplblade_strings {
         id = "1a443621-fc95-4a70-873e-c1389943d4ab"
         version = "1.0"
         description = "Detects PPLBlade"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-23"
         classification = "TLP:CLEAR"
         

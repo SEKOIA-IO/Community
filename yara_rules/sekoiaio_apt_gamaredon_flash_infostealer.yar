@@ -3,7 +3,7 @@ rule sekoiaio_apt_gamaredon_flash_infostealer {
         id = "f060fe4b-74fd-4ef3-ac86-916e2113ff24"
         version = "1.0"
         description = "Detects the Gamaredon's Flash InfoStealer"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-24"
         classification = "TLP:CLEAR"
         

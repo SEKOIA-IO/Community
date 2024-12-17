@@ -3,7 +3,7 @@ rule sekoiaio_apt_andariel_nestdoor_variants_strings {
         id = "dcfc48ad-f17b-4224-912b-b01740080fea"
         version = "1.0"
         description = "Detects Nestdoor based on (weak) strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-17"
         classification = "TLP:CLEAR"
         

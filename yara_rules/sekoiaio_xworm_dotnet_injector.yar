@@ -3,7 +3,7 @@ rule sekoiaio_xworm_dotnet_injector {
         id = "50581a9d-afc3-43da-9e34-3a553cbd01b4"
         version = "1.0"
         description = ".NET injector used by XWorm TA"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-02"
         classification = "TLP:CLEAR"
         

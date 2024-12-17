@@ -3,7 +3,7 @@ rule sekoiaio_apt_tortoiseshell_imaploader {
         id = "e1706b59-5c94-4fbf-8560-0022ca631d1d"
         version = "1.0"
         description = "Detects IMAPLoader malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-13"
         classification = "TLP:CLEAR"
         

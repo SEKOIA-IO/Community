@@ -3,7 +3,7 @@ rule sekoiaio_apt_lazarus_blindingcan_rtti {
         id = "9a16c189-ffc1-4aa6-8582-298abaecd0ef"
         version = "1.0"
         description = "Detects BLINDINGCAN with RTTI"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-04"
         classification = "TLP:CLEAR"
         

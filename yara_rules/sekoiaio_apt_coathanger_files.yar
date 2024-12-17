@@ -3,7 +3,7 @@ rule sekoiaio_apt_coathanger_files {
         id = "615f5ac1-14bc-4f5b-a02e-7b13cd179917"
         version = "1.0"
         description = "Detects COATHANGER files"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-07"
         classification = "TLP:CLEAR"
         

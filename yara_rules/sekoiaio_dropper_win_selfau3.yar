@@ -3,7 +3,7 @@ rule sekoiaio_dropper_win_selfau3 {
         id = "2d005a54-b013-40e9-b88a-30454e4b22af"
         version = "1.0"
         description = "Finds SelfAU3 Dropper samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-12"
         classification = "TLP:CLEAR"
         

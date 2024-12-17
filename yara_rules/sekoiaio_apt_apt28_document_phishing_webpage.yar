@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt28_document_phishing_webpage {
         id = "585a8e23-c302-41d3-938f-eda60c82ef28"
         version = "1.0"
         description = "Detects APT28 document phishing webpage"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-08"
         classification = "TLP:CLEAR"
         

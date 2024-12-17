@@ -6,7 +6,7 @@ rule sekoiaio_implant_win_incontroller {
         id = "c346c6ea-c5c0-4e9f-a632-1e8ed0286fbc"
         version = "1.0"
         description = "Detect the INCONTROLLER implant "
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-14"
         classification = "TLP:CLEAR"
         hash = "69296ca3575d9bc04ce0250d734d1a83c1348f5b6da756944933af0578bd41d2"

@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_powershellempire_csharp {
         id = "952e8e9b-8e4d-4550-9cf4-7ffd2f9d0672"
         version = "1.0"
         description = "Detects CSharp version of Empire"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-15"
         classification = "TLP:CLEAR"
         

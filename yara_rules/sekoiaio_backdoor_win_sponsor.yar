@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_win_sponsor {
         id = "d410cdb7-a2a8-481e-a90a-49ef15a7a0e3"
         version = "1.0"
         description = "Detect the Sponsor backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-29"
         classification = "TLP:CLEAR"
         reference = "https://www.welivesecurity.com/en/eset-research/sponsor-batch-filed-whiskers-ballistic-bobcats-scan-strike-backdoor/"

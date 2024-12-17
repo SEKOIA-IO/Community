@@ -3,7 +3,7 @@ rule sekoiaio_apt_konni {
         id = "6a20c492-e932-41bd-ac4a-01d35bfb0c49"
         version = "1.0"
         description = "Rule based on structure offsets and file extension"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-12"
         classification = "TLP:CLEAR"
         

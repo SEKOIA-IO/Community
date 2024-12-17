@@ -3,7 +3,7 @@ rule sekoiaio_latrodectus_br4_js_dropper {
         id = "042a598d-66fa-4994-a793-228355abd5dd"
         version = "1.0"
         description = "Detect the JS script used to drop Latrodectus"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-25"
         classification = "TLP:CLEAR"
         

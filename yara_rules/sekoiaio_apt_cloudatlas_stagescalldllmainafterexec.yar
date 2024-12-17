@@ -3,7 +3,7 @@ rule sekoiaio_apt_cloudatlas_stagescalldllmainafterexec {
         id = "a24b7887-87f6-44e3-80c5-cd117e694595"
         version = "1.0"
         description = "Detects call to dllmain after execution of exported function"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-10-31"
         classification = "TLP:CLEAR"
         

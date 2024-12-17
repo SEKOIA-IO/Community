@@ -3,7 +3,7 @@ rule sekoiaio_apt_andariel_siennablue {
         id = "ab3f8b49-0851-47a8-ac77-98d4e26f448e"
         version = "1.0"
         description = "Detects SiennaBlue based routine names"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-16"
         classification = "TLP:CLEAR"
         

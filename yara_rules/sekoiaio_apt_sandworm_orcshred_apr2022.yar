@@ -3,7 +3,7 @@ rule sekoiaio_apt_sandworm_orcshred_apr2022 {
         id = "1a88800c-29e1-4e2c-8374-f5a93dd9fd91"
         version = "1.0"
         description = "Detects the ORCSHRED script"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-12"
         classification = "TLP:CLEAR"
         

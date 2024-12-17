@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_ligolo_relay_strings {
         id = "1e32f2e5-b66b-4b55-9dd4-1402b2f627ed"
         version = "1.0"
         description = "Detects Ligolo Relay based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-08"
         classification = "TLP:CLEAR"
         

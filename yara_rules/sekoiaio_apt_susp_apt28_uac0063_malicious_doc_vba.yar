@@ -3,7 +3,7 @@ rule sekoiaio_apt_susp_apt28_uac0063_malicious_doc_vba {
         id = "58040dbd-09ae-4f9e-940d-3a522e7ccfbb"
         version = "1.0"
         description = "Detects some suspected APT28 document vba"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-07-25"
         classification = "TLP:CLEAR"
         hash = "fceffb8ae94cef3af21b2943131e94db9e0e67073de48d9d32601a245448d067"

@@ -3,7 +3,7 @@ rule sekoiaio_unknown_7777_xlogin {
         id = "ce0beffc-f957-43ef-a739-f4a1099a7a67"
         version = "1.0"
         description = "Detects the xlogin bind shell and its variants"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-07-18"
         classification = "TLP:CLEAR"
         hash = "4d9067e7cf517158337123a30a9bd0e3"

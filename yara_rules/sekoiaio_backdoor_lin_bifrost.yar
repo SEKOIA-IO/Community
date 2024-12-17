@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_lin_bifrost {
         id = "9726b5f5-8cc3-4fad-950b-f20cac04d496"
         version = "1.0"
         description = "Detect the Bifrost backdor based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-05"
         classification = "TLP:CLEAR"
         reference = "https://unit42.paloaltonetworks.com/new-linux-variant-bifrost-malware/"

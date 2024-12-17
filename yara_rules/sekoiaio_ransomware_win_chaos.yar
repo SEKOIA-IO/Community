@@ -2,7 +2,7 @@ rule sekoiaio_ransomware_win_chaos {
     meta:
         id = "c1876a18-0618-44e2-8919-b4a041de97e7"
         description = "Detects the Chaos Ransomware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         version = "1.0"
         creation_date = "2022-01-18"
         classification = "TLP:CLEAR"

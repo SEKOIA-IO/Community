@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_lazagne_strings {
         id = "5a5e7a07-1252-48cc-ada5-46e796c4e00e"
         version = "1.0"
         description = "Detects LaZagne hacktool based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-07"
         classification = "TLP:CLEAR"
         

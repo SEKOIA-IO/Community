@@ -3,7 +3,7 @@ rule sekoiaio_apt_ivanti_krustyloader {
         id = "617fdd5f-7555-49e8-b0ec-2199f017dc40"
         version = "1.0"
         description = "Detects KrustyLoader used in the Ivanti campaign"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-01-29"
         classification = "TLP:CLEAR"
         

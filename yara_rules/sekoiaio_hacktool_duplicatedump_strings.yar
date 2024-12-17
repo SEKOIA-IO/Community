@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_duplicatedump_strings {
         id = "081d0124-4afe-418b-9767-3d987c0107ca"
         version = "1.0"
         description = "Detects Duplicate Dump"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-22"
         classification = "TLP:CLEAR"
         

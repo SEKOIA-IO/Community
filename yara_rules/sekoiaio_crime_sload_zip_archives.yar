@@ -3,7 +3,7 @@ rule sekoiaio_crime_sload_zip_archives {
         id = "5335ad65-bca5-4937-8634-46cbd7aa1b0e"
         version = "1.0"
         description = "Detects ZIP archives used by sLOad"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-01"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_apt_oilrig_odagent_strings {
         id = "1c5c0eb5-7c6f-4a34-b2e2-4a7c6d7030d6"
         version = "1.0"
         description = "Detects ODAgent malware based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-20"
         classification = "TLP:CLEAR"
         

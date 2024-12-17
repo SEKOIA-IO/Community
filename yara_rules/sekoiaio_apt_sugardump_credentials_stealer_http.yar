@@ -2,7 +2,7 @@ rule sekoiaio_apt_sugardump_credentials_stealer_http {
     meta:
         id = "47d01ba8-9fdd-42d5-9f10-115f982dc133"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-23"
         classification = "TLP:CLEAR"
         

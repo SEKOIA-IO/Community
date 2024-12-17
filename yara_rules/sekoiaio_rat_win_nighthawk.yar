@@ -9,7 +9,7 @@ rule sekoiaio_rat_win_nighthawk {
         hash3 = "38881b87826f184cc91559555a3456ecf00128e01986a9df36a72d60fb179ccf"
         hash4 = "f3bba2bfd4ed48b5426e36eba3b7613973226983a784d24d7a20fcf9df0de74e"
         hash5 = "b775a8f7629966592cc7727e2081924a7d7cf83edd7447aa60627a2b67d87c94"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-23"
         id = "91bc3c5b-83fd-47f8-9652-df0f6a70b693"
         classification = "TLP:CLEAR"

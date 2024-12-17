@@ -3,7 +3,7 @@ rule sekoiaio_apt_mustangpanda_coolclient {
         id = "2f8fdb66-03a2-400f-808b-56ae1b276d2f"
         version = "1.0"
         description = "Detect COOLCLIENT via obfuscation & specific string"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-27"
         classification = "TLP:CLEAR"
         

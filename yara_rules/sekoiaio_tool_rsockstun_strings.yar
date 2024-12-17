@@ -3,7 +3,7 @@ rule sekoiaio_tool_rsockstun_strings {
         id = "94d8cb39-3421-441c-8404-62a591b86912"
         version = "1.0"
         description = "Detects Rsockstun based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-22"
         classification = "TLP:CLEAR"
         

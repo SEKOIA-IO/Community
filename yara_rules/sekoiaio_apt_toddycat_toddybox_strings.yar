@@ -3,7 +3,7 @@ rule sekoiaio_apt_toddycat_toddybox_strings {
         id = "fde3df24-ebd7-4327-998e-bddaa08835da"
         version = "1.0"
         description = "Detects ToddyCat's ToddyBox binary"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-20"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_apt_stripedfly {
         id = "81968d34-3247-4965-ba44-55747370c90e"
         version = "1.0"
         description = "Detects string relative to Stripedfly malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-30"
         classification = "TLP:CLEAR"
         

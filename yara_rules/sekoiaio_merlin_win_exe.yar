@@ -4,7 +4,7 @@ import "hash"
 rule sekoiaio_merlin_win_exe {
     meta:
         id = "c9c57f5e-26c3-43be-b2cf-10f5129d3be4"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-03"
         description = "Detects Merling agent (PE)"
         version = "1.0"

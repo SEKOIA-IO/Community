@@ -3,7 +3,7 @@ rule sekoiaio_apt_rusticweb_stealer {
         id = "813072e0-28de-4cb7-b2cc-71d77a1e8508"
         version = "1.0"
         description = "Detects stealer used by RusticWeb"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-01-09"
         classification = "TLP:CLEAR"
         

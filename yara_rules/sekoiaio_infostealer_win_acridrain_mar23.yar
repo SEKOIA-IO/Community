@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_acridrain_mar23 {
         id = "049b502a-0fb6-4fa9-a1ce-f01a40269bdb"
         version = "1.0"
         description = "Finds AcridRain samples"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-21"
         classification = "TLP:CLEAR"
         

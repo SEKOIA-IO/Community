@@ -3,7 +3,7 @@ rule sekoiaio_loader_win_konni_wpnprv {
         id = "02162533-4ace-42bf-8df0-38b140487f01"
         version = "1.0"
         description = "Detect the wpnprv DLLs used for KONNI for UAC bypass"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-26"
         classification = "TLP:CLEAR"
         

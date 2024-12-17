@@ -3,7 +3,7 @@ rule sekoiaio_webshell_wso_webshell_strings {
         id = "84340792-73a4-4d61-9957-6cfa1f6444a7"
         version = "1.0"
         description = "Detects the WSO webshells"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-22"
         classification = "TLP:CLEAR"
         

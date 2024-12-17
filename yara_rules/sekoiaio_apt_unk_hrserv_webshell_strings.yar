@@ -3,7 +3,7 @@ rule sekoiaio_apt_unk_hrserv_webshell_strings {
         id = "684fd41c-9ea6-4f4e-8db4-82325a2ff80b"
         version = "1.0"
         description = "Detects HrServ web shell based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-23"
         classification = "TLP:CLEAR"
         

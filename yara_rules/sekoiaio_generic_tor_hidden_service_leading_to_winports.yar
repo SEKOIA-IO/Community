@@ -3,7 +3,7 @@ rule sekoiaio_generic_tor_hidden_service_leading_to_winports {
         id = "1e5c469b-f721-44af-87b3-1adf423719c1"
         version = "1.0"
         description = "Detects malicious TOR redirection affecting RDP, NetBios"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-07"
         classification = "TLP:CLEAR"
         

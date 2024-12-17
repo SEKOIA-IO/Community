@@ -3,7 +3,7 @@ rule sekoiaio_tool_tacticalrmm_installer_strings {
         id = "c4a0ba33-b458-4c2a-abfa-4c33481d6491"
         version = "1.0"
         description = "Detects TacticalRMM installer"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-05-23"
         classification = "TLP:CLEAR"
         

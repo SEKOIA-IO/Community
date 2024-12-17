@@ -3,7 +3,7 @@ rule sekoiaio_apt_kimsuky_powershell {
         id = "b7f812e0-d08b-40fe-908a-dc5765d6bc66"
         version = "1.0"
         description = "Powershell scripts used by Kimsuky. If size < 3KB ok. If between 3 and 15, a check is needed"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-23"
         classification = "TLP:CLEAR"
         hash = "6babb53d881448dc58dd7c32fcd4208a"

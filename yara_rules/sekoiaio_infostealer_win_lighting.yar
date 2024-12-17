@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_lighting {
         id = "3c160c16-f417-4fa2-aa44-fb7b981fb2b3"
         version = "1.0"
         description = "Detect the Lighting infostealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://blog.cyble.com/2022/04/05/inside-lightning-stealer/"
         creation_date = "2022-04-07"
         classification = "TLP:CLEAR"

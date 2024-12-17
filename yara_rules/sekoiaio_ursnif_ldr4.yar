@@ -1,11 +1,11 @@
 rule sekoiaio_ursnif_ldr4 {
     meta:
         description = "Ursnif LDR4"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         id = "73e63481-8a89-4342-87f0-8dc7ad459396"
         version = "1.0"
         classification = "TLP:CLEAR"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         
     strings:
         $str1 = "LOADER.dll" fullword

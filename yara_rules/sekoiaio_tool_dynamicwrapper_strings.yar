@@ -3,7 +3,7 @@ rule sekoiaio_tool_dynamicwrapper_strings {
         id = "bbfad0a8-8b86-47c7-bf70-0a3f6859d64b"
         version = "1.0"
         description = "Detects DynamicWrapperX"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-01"
         classification = "TLP:CLEAR"
         

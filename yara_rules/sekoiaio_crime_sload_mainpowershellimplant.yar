@@ -3,7 +3,7 @@ rule sekoiaio_crime_sload_mainpowershellimplant {
         id = "09d268e7-d688-4390-856e-9e9ed47aec04"
         version = "1.0"
         description = "Detects the main PowerShell implant"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-03"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_apt_coathanger_beacon {
         id = "cc201479-016a-46d2-a9e2-41b4914ce618"
         version = "1.0"
         description = "Detects COATHANGER beacon"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-07"
         classification = "TLP:CLEAR"
         

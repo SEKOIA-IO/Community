@@ -3,7 +3,7 @@ rule sekoiaio_tool_cheat_engine {
         id = "51d4246c-f7a1-4589-8f97-bd85d1fe4a0e"
         version = "1.0"
         description = "Detects Cheat Engine driver"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-07-22"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_bebra {
         id = "e84d04a7-1232-47e5-b797-ac8e56066796"
         version = "1.0"
         description = "Find samples of Bebra Stealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-06"
         classification = "TLP:CLEAR"
         hash = "7841746c54c53dbcafdf3f357c7a84b90fe3b089e07f30dea15ef6f7f15b0f00"

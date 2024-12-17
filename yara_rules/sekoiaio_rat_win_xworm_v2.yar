@@ -2,7 +2,7 @@ rule sekoiaio_rat_win_xworm_v2 {
     meta:
         version = "1.0"
         description = "Finds XWorm v2 samples based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://blog.cyble.com/2022/08/19/evilcoder-project-selling-multiple-dangerous-tools-online/"
         creation_date = "2022-11-07"
         id = "6cf06f52-0337-415d-8f29-f63d67e228f8"

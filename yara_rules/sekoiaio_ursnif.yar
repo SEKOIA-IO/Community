@@ -1,11 +1,11 @@
 rule sekoiaio_ursnif {
     meta:
         description = "Ursnif Payload"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         id = "ac392af3-c344-453c-9427-5bb46223e01c"
         version = "1.0"
         classification = "TLP:CLEAR"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         
     strings:
         $crypto64_1 = {41 8B 02 ?? C1 [0-1] 41 33 C3 45 8B 1A 41 33 C0 D3 C8 41 89 02 49 83 C2 04 83 C2 FF 75 D?}

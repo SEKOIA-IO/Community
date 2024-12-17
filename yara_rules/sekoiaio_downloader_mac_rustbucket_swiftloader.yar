@@ -3,7 +3,7 @@ rule sekoiaio_downloader_mac_rustbucket_swiftloader {
         id = "bdbc95db-5d58-4c96-91f9-34b653e67f50"
         version = "1.0"
         description = "Detect the file com.EdoneViewer in the new version of RustBucker 2023-10"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-05"
         classification = "TLP:CLEAR"
         hash1 = "7c5bf60787bfd076c8806eaa4f1185f5b9fda69008376624ab3d17f207eb16a4"

@@ -4,10 +4,10 @@ rule sekoiaio_yara_runascs {
     meta:
         id = "1720f042-2cc6-4ef1-b66c-fe8a4214366a"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-08-23"
         classification = "TLP:CLEAR"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         
     strings:
         $s1 = "RunasCs" ascii wide

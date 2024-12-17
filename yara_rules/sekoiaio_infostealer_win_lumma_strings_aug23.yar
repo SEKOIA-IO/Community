@@ -2,7 +2,7 @@ rule sekoiaio_infostealer_win_lumma_strings_aug23 {
     meta:
         version = "1.0"
         description = "Finds Lumma samples based on the specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-14"
         id = "728f7825-a463-4b19-b2d3-3460e4c06dc9"
         classification = "TLP:CLEAR"

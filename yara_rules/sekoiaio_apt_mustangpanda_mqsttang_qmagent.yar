@@ -3,7 +3,7 @@ rule sekoiaio_apt_mustangpanda_mqsttang_qmagent {
         id = "bcf6f961-0d9b-4fbc-81d2-f5d00c68d4d5"
         version = "1.0"
         description = "Detects specifics string of MQsTTang, also known as QMAGENT"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-27"
         classification = "TLP:CLEAR"
         

@@ -5,7 +5,7 @@ rule sekoiaio_apt_muddywater_moriagent {
         id = "e7a83663-6a30-416a-8f29-87a6b9445ea4"
         version = "1.0"
         description = "Detects Muddy's Mori Agent implant"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-14"
         classification = "TLP:CLEAR"
         

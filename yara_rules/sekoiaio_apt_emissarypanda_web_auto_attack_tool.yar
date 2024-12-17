@@ -3,7 +3,7 @@ rule sekoiaio_apt_emissarypanda_web_auto_attack_tool {
         id = "c93eb792-a443-4c9a-8fcb-6015cc69f9b3"
         version = "1.0"
         description = "Detect LuckyMouse's Web auto attack tool"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-03"
         classification = "TLP:CLEAR"
         

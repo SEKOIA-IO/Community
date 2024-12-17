@@ -3,7 +3,7 @@ rule sekoiaio_apt_tortoiseshell_wateringhole_script {
         id = "58c5ae66-fe09-497c-80bf-20feee4d95e7"
         version = "1.0"
         description = "Detect's Tortoiseshell WH script"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-24"
         classification = "TLP:CLEAR"
         

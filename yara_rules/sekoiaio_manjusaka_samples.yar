@@ -2,7 +2,7 @@ rule sekoiaio_manjusaka_samples {
     meta:
         id = "7aa8edb3-2e67-4632-af68-5b65c9aefe39"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         description = "Detects Manjusaka via protobuf struture names (Windows / Linux / implants / C2)"
         creation_date = "2022-08-04"
         classification = "TLP:CLEAR"

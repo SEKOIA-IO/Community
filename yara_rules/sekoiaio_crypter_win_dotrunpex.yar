@@ -3,7 +3,7 @@ rule sekoiaio_crypter_win_dotrunpex {
         id = "6fb4ffe0-3a5c-432c-8ae2-404bb5960c30"
         version = "1.0"
         description = "Detect the dotRunpeX crypter based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-08"
         classification = "TLP:CLEAR"
         

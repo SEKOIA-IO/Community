@@ -2,7 +2,7 @@ rule sekoiaio_ransomware_lin_avoslocker_strings {
     meta:
         version = "1.0"
         description = "Detect AvosLocker ransomware for Linux by using strings from its ransom note and the onion domains"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-21"
         classification = "TLP:CLEAR"
         hash1 = "0cd7b6ea8857ce827180342a1c955e79c3336a6cf2000244e5cfd4279c5fc1b6"

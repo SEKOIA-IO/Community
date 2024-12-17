@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_ntdsdumpex_strings {
         id = "9a0fe20a-49e9-4aaf-8f0e-d51800e0a6e0"
         version = "1.0"
         description = "Detects NTDSDumpEx based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-25"
         classification = "TLP:CLEAR"
         

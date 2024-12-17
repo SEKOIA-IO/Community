@@ -5,7 +5,7 @@ rule sekoiaio_plugx_final_payload {
         id = "a4047324-81a7-4c17-be84-c0fa479d2f89"
         version = "1.0"
         description = "Detects encrypted plugx config with a specific size"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-07-04"
         classification = "TLP:CLEAR"
         

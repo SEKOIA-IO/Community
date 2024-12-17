@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_ntospy_strings {
         id = "c3281666-6a31-4718-a9c0-82944c6fdcb0"
         version = "1.0"
         description = "Detects Ntospy based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-05"
         classification = "TLP:CLEAR"
         

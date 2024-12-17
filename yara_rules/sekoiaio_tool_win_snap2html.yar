@@ -3,7 +3,7 @@ rule sekoiaio_tool_win_snap2html {
         id = "9865daac-f23b-417e-813e-cbed03f45161"
         version = "1.0"
         description = "Finds Snap2HTML samples based on specific strings. Legitimate tool used by ransomware affiliates to perform discovery"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-08"
         classification = "TLP:CLEAR"
         

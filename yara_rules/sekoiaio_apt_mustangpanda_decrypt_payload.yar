@@ -3,7 +3,7 @@ rule sekoiaio_apt_mustangpanda_decrypt_payload {
         id = "7b954007-0929-454d-8a10-05279a337f1b"
         version = "1.0"
         description = "Detects the decryption routine of DAT file"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-08"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_weevely_webshell_payload {
         id = "f2879c6e-3d1b-41be-8b1d-4f0503fd4b29"
         version = "1.0"
         description = "Detects weevely webshell"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-22"
         classification = "TLP:CLEAR"
         

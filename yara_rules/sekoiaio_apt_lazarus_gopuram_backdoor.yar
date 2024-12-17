@@ -5,7 +5,7 @@ rule sekoiaio_apt_lazarus_gopuram_backdoor {
         id = "947d4ee3-79fa-450b-8482-beafe607baae"
         version = "1.0"
         description = "Detects Gopuram Backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-04-04"
         classification = "TLP:CLEAR"
         hash1 = "97b95b4a5461f950e712b82783930cb2a152ec0288c00a977983ca7788342df7"

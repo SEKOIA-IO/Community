@@ -3,7 +3,7 @@ rule sekoiaio_tool_rathole_strings {
         id = "39d11285-a3bf-46c3-901d-ab46601a9066"
         version = "1.0"
         description = "Detects RATHole based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-05-23"
         classification = "TLP:CLEAR"
         

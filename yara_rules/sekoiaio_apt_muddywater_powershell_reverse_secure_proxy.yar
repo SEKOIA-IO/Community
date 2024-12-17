@@ -3,7 +3,7 @@ rule sekoiaio_apt_muddywater_powershell_reverse_secure_proxy {
         id = "b255f327-cb56-41b7-82f7-83ee23f791a5"
         version = "1.0"
         description = "Detects PowerShell Reverse Secure Proxy"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-14"
         classification = "TLP:CLEAR"
         

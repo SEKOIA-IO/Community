@@ -3,7 +3,7 @@ rule sekoiaio_apt_cloudatlas_powertunnel {
         id = "04981493-de8b-4662-ae81-8866c182f8b2"
         version = "1.0"
         description = "Detects PowerTunnel DLL of CloudAtlas"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-29"
         classification = "TLP:CLEAR"
         

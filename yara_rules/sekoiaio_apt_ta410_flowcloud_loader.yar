@@ -3,7 +3,7 @@ rule sekoiaio_apt_ta410_flowcloud_loader {
         id = "0a11dfa0-5a59-477b-baf6-6a777d020860"
         version = "1.0"
         description = "Detects FlowCloud Loader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-05-27"
         classification = "TLP:CLEAR"
         

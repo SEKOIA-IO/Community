@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_vidar_str_jul22 {
         id = "1dc18694-aaac-41e6-979a-c06d5d62f5ea"
         version = "1.0"
         description = "Detect the Vidar infostealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-26"
         modification_date = "2022-08-23"
         classification = "TLP:CLEAR"

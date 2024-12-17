@@ -3,7 +3,7 @@ rule sekoiaio_webshell_icesword_strings {
         id = "2c6b3cec-4200-4386-8cd5-4004c9b5b96a"
         version = "1.0"
         description = "Detects icesword webshell"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-11-22"
         classification = "TLP:CLEAR"
         hash = "0447352827e61696304a8e3d34e1d270"

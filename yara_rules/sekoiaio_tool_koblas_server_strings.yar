@@ -3,7 +3,7 @@ rule sekoiaio_tool_koblas_server_strings {
         id = "ebd891da-69dd-474c-9e08-63d0b4cc654e"
         version = "1.0"
         description = "Detects Koblas server"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-05-23"
         classification = "TLP:CLEAR"
         

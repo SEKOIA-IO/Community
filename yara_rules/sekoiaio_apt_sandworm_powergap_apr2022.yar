@@ -3,7 +3,7 @@ rule sekoiaio_apt_sandworm_powergap_apr2022 {
         id = "2a1c7f02-92b3-45b8-a710-253b1a28fe85"
         version = "1.0"
         description = "Detects the POWERGAP malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-12"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_mul_supershell_client {
         id = "3498ca9e-a165-4dda-bc15-2e5d6d43d9c1"
         version = "1.0"
         description = "Detect the Supershell client (unpacked) by looking for github references"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-25"
         classification = "TLP:CLEAR"
         hash1 = "a42906f8b392089fa1fe3ea264f6cb549ce5437b5ea253d9e1b8dd94bf115dad"

@@ -3,7 +3,7 @@ rule sekoiaio_generic_php_webshell {
         id = "415a96bd-11a4-40e7-8335-ac1f1a99d17c"
         version = "1.0"
         description = "Detects generic webshell"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-08"
         classification = "TLP:CLEAR"
         

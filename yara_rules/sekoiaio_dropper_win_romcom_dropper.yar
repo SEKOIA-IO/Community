@@ -6,7 +6,7 @@ rule sekoiaio_dropper_win_romcom_dropper {
         id = "ca1b7114-5a83-4620-a9e2-8228df2be7b1"
         version = "1.0"
         description = "Detect the dropper of RomCom malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-04"
         classification = "TLP:CLEAR"
         

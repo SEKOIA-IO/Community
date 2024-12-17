@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_iox_tunneling {
         id = "45b31d67-95e9-405d-88ea-3f2006ef160a"
         version = "1.0"
         description = "Detects IOX tunneling tool"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-13"
         classification = "TLP:CLEAR"
         

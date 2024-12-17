@@ -3,7 +3,7 @@ rule sekoiaio_stealer_win_mgbot_credential_stealer {
         id = "e06501c1-c842-43f7-a429-9026bc0a4fd4"
         version = "1.0"
         description = "Detect MgBot credential stealer plugin"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-20"
         classification = "TLP:CLEAR"
         hash1 = "174a62201c7e2af67b7ad37bf7935f064a379f169cf257ca16e912a46ecc9841"

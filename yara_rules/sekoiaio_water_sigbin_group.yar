@@ -3,7 +3,7 @@ rule sekoiaio_water_sigbin_group {
         id = "c49728e8-db7e-4d83-97d2-7d56b51f8a52"
         version = "1.0"
         description = "Detects IOCs related to the 8220 Mining group."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-11"
         classification = "TLP:CLEAR"
         

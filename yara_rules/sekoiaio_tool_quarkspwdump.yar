@@ -2,7 +2,7 @@ rule sekoiaio_tool_quarkspwdump {
     meta:
         id = "859823f9-6d47-4b0f-844b-d3af7bad498b"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-23"
         classification = "TLP:CLEAR"
         

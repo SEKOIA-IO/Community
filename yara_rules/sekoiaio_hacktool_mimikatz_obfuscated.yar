@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_mimikatz_obfuscated {
         id = "bac4bb61-d250-4fc3-95a5-edd4e3c7ff83"
         version = "1.0"
         description = "Detects Mimikatz on strings obfuscation"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-22"
         classification = "TLP:CLEAR"
         

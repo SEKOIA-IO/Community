@@ -3,7 +3,7 @@ rule sekoiaio_tool_multidump_strings {
         id = "4897c898-01dd-40d2-bf28-266231c88f8a"
         version = "1.0"
         description = "Detects MultiDump"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-19"
         classification = "TLP:CLEAR"
         

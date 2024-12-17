@@ -3,7 +3,7 @@ rule sekoiaio_tool_revsocks_strings {
         id = "f5f34e74-0795-4c81-a385-218a8197a0b7"
         version = "1.0"
         description = "Detects revsocks client"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-07"
         classification = "TLP:CLEAR"
         

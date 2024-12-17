@@ -2,7 +2,7 @@ rule sekoiaio_ransomware_win_redeemer {
     meta:
         version = "1.0"
         description = "Finds Redeemer samples based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-09"
         id = "ef94c1b0-d292-4fae-9801-4860e7347745"
         classification = "TLP:CLEAR"

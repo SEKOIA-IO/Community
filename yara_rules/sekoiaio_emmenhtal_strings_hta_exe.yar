@@ -3,7 +3,7 @@ rule sekoiaio_emmenhtal_strings_hta_exe {
         id = "64e08610-e8a4-4edd-8f6b-d4e8d2b47d87"
         version = "1.0"
         description = "Emmenhtal Loader string"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-06"
         classification = "TLP:CLEAR"
         hash = "e86a22f1c73b85678e64341427c7193ba65903f3c0f29af2e65d7c56d833d912"

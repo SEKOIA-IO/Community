@@ -3,7 +3,7 @@ rule sekoiaio_koiloader_lnk {
         id = "e82975b9-94b7-4de8-8cd5-d594aa80cf02"
         version = "1.0"
         description = "LNK file leading to deploy KoiLoader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-20"
         classification = "TLP:CLEAR"
         

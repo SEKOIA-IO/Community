@@ -5,7 +5,7 @@ rule sekoiaio_tool_pchunter_and_related_certificate {
         id = "757c7738-4ee8-4b4e-bdda-0c5b0c010f40"
         version = "1.0"
         description = "Detects PCHunter and associated binairies & drivers"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-07"
         classification = "TLP:CLEAR"
         

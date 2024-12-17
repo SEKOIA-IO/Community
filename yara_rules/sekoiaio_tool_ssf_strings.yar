@@ -3,7 +3,7 @@ rule sekoiaio_tool_ssf_strings {
         id = "47fc3df8-a153-4045-a5f0-ed30df662984"
         version = "1.0"
         description = "Detects SSF based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-05-31"
         classification = "TLP:CLEAR"
         

@@ -6,7 +6,7 @@ rule sekoiaio_launcher_win_mistcloak {
         id = "3dbf5efa-d77c-436a-a080-9ac58a78425f"
         version = "1.0"
         description = "Detect the MISTCLOAK malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-01"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_apt_apt33_falsefont {
         id = "d77c1f5b-9898-456f-954a-ac1f0907a2ba"
         version = "1.0"
         description = "FalseFont backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-25"
         classification = "TLP:CLEAR"
         

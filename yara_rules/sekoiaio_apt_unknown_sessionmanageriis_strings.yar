@@ -3,7 +3,7 @@ rule sekoiaio_apt_unknown_sessionmanageriis_strings {
         id = "7d55dd82-509f-444d-a1ba-6417b51f392f"
         version = "1.0"
         description = "Detects the IIS SessionManager backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-04"
         classification = "TLP:CLEAR"
         

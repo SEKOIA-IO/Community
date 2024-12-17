@@ -3,7 +3,7 @@ rule sekoiaio_apt_badmagic_commonmagic_usbstealer {
         id = "37d5becc-f1c3-4400-bc10-cd6036d4dbb1"
         version = "1.0"
         description = "Detects CommonMagic related implants"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-15"
         classification = "TLP:CLEAR"
         

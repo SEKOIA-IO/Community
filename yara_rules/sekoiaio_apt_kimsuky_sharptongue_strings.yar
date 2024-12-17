@@ -3,7 +3,7 @@ rule sekoiaio_apt_kimsuky_sharptongue_strings {
         id = "56027edb-4e6e-40ec-a1b9-36c52b0dd3ec"
         version = "1.0"
         description = "Detects SharpTongue variants."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-29"
         classification = "TLP:CLEAR"
         

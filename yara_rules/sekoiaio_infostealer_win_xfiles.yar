@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_xfiles {
         id = "3ad3ee19-6be8-484b-943c-05813cdcbd18"
         version = "1.0"
         description = "Detect the X-FILES infostealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://twitter.com/3xp0rtblog/status/1375206169384521730"
         creation_date = "2022-02-03"
         classification = "TLP:CLEAR"

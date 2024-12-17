@@ -3,7 +3,7 @@ rule sekoiaio_tool_edrsandblast_kernelcallbacks {
         id = "74cf4444-5bd6-4167-930a-5dbf2e529f92"
         version = "1.0"
         description = "Detects EDRSandblast KernelCallbacks strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-11-25"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_koiloader_powershell_reflective_loading {
         id = "9bbe4cea-3e64-4377-bf93-def9fb629734"
         version = "1.0"
         description = "Powershell script loading service.exe (related to Koi Loader)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-20"
         classification = "TLP:CLEAR"
         

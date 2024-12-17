@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_xploitspy_strings {
         id = "0aa86c2e-dba6-4ef4-a47e-f1b43e04f1f3"
         version = "1.0"
         description = "Detects XploitSPY DEX file"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-24"
         classification = "TLP:CLEAR"
         

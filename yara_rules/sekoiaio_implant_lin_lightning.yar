@@ -3,7 +3,7 @@ rule sekoiaio_implant_lin_lightning {
         id = "56f53e89-3b63-4ce7-a3c8-da0ba37246f1"
         version = "1.0"
         description = "Detect the Lightning framework (Core & Downloader plugin)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-21"
         classification = "TLP:CLEAR"
         reference = "https://www.intezer.com/blog/research/lightning-framework-new-linux-threat/"

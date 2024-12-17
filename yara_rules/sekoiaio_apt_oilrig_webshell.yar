@@ -3,7 +3,7 @@ rule sekoiaio_apt_oilrig_webshell {
         id = "53955117-5176-4682-89ad-1503faba42aa"
         version = "1.0"
         description = "Detects a webshell used by OilRig"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-10-23"
         classification = "TLP:CLEAR"
         

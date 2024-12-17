@@ -6,7 +6,7 @@ rule sekoiaio_backdoor_win_minibus {
         id = "f88bcf15-9a9f-4d84-adc6-db1db55fe93c"
         version = "1.0"
         description = "Detect the MINIBUS backdoor used by UNC1549 since August 2023"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-29"
         classification = "TLP:CLEAR"
         reference = "https://www.mandiant.com/resources/blog/suspected-iranian-unc1549-targets-israel-middle-east"

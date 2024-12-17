@@ -3,7 +3,7 @@ rule sekoiaio_guloader_vbscript {
         id = "3472e403-b1e6-4fdf-9770-af42d505b556"
         version = "1.0"
         description = "visual basic script delivering GuLoader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-07"
         classification = "TLP:CLEAR"
         

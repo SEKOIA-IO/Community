@@ -2,7 +2,7 @@ rule sekoiaio_infostealer_win_agrat {
     meta:
         id = "472effe8-5044-4ca1-88e0-3e19d445b9d1"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-06-01"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_builder_win_royalroad_rtf {
         id = "065e798b-eadd-4aac-a444-de61b75f0273"
         description = "Detects RoyalRoad weaponized RTF documents"
         creation_date = "2022-06-23"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         version = "1.0"
         classification = "TLP:CLEAR"
         

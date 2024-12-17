@@ -3,7 +3,7 @@ rule sekoiaio_apt_yemen_apk_guardzoo {
         id = "f4004e7c-2904-46ea-a3e6-2bdd3e704fea"
         version = "1.0"
         description = "Detects Dex files containing GuardZoo strings."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-08-09"
         classification = "TLP:CLEAR"
         hash = "3afad114c68489e2d294720339baf570"

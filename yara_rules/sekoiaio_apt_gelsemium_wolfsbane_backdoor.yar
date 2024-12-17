@@ -3,7 +3,7 @@ rule sekoiaio_apt_gelsemium_wolfsbane_backdoor {
         id = "db2ad5a4-b592-4646-a385-c668bb2ea090"
         version = "1.0"
         description = "Detects Gelsemium's WolfsBane backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-11-22"
         classification = "TLP:CLEAR"
         hash = "1418fe9a743226b9661a2b6decb19db0"

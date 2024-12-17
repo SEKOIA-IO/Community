@@ -3,7 +3,7 @@ rule sekoiaio_unk_quad7_fsynet_strings {
         id = "897b2421-c177-48c0-8f5b-82d8434208cb"
         version = "1.0"
         description = "Matches node-r-control, asr_node, node-relay"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-08-20"
         classification = "TLP:CLEAR"
         hash = "f42849076e24b7827218f7a25bc11ccc"

@@ -3,7 +3,7 @@ rule sekoiaio_apt_kimsuky_vbs {
         id = "3f92dbda-2ddb-4fa3-a587-743f65ced9e4"
         version = "1.0"
         description = "VBS files used by Kimsuky"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-23"
         classification = "TLP:CLEAR"
         hash = "12386be22ca82fce98a83a5a19e632bc"

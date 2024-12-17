@@ -3,7 +3,7 @@ rule sekoiaio_apt_cerana_keeper_dropboxflop {
         id = "e077901f-3847-45f3-82cb-d52724cd3fb5"
         version = "1.0"
         description = "Detects DropboxFlop malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-10-04"
         classification = "TLP:CLEAR"
         hash = "2b65b74e52fbf25cb400dbdfcd1a06a7"

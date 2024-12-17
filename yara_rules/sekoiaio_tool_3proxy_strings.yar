@@ -3,7 +3,7 @@ rule sekoiaio_tool_3proxy_strings {
         id = "daf6cd97-8033-4bfd-88b5-41c06eb417b0"
         version = "1.0"
         description = "Detects 3proxy based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-14"
         classification = "TLP:CLEAR"
         

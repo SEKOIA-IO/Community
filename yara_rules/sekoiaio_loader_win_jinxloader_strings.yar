@@ -2,7 +2,7 @@ rule sekoiaio_loader_win_jinxloader_strings {
     meta:
         version = "1.0"
         description = "Finds JinxLoader samples based on the specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-04"
         id = "fd2f7e8c-f4a8-4452-bbc6-e03790f8ed89"
         classification = "TLP:CLEAR"

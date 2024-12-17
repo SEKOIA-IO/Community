@@ -4,7 +4,7 @@ import "hash"
 rule sekoiaio_merlin_linux_elf {
     meta:
         id = "d9c57f5e-26c3-43be-b2cf-10f5129d3be6"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-03"
         description = "Detects Merling agent (ELF)"
         version = "1.0"

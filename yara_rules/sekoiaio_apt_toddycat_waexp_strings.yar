@@ -3,7 +3,7 @@ rule sekoiaio_apt_toddycat_waexp_strings {
         id = "1bbb3e81-14a9-4bda-b647-b6f5255e9a16"
         version = "1.0"
         description = "Detects WAExp based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-23"
         classification = "TLP:CLEAR"
         

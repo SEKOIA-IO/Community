@@ -3,7 +3,7 @@ rule sekoiaio_tool_win_forkplayground {
         id = "ec9af403-7647-447d-af17-c6931363a166"
         version = "1.0"
         description = "Detect the ForkPlayground malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-28"
         classification = "TLP:CLEAR"
         

@@ -1,7 +1,7 @@
 rule sekoiaio_trojan_win_bazarloader_setscreen {
     meta:
         id = "fe2709e5-5cdd-4e52-8ab4-79a56a60bef8"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-02"
         description = "Finds BazarLoader DLL using setscreen as exported entry. (I know this rule is bad but I wanted to experiment YARA rule writing on this specific dll exported entry setscreen)"
         version = "1.0"

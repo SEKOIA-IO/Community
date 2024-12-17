@@ -3,7 +3,7 @@ rule sekoiaio_apt_ta428_tmanger_strings {
         id = "f600404d-3f93-4e3f-bba7-9f519f67c6cb"
         version = "1.0"
         description = "Detects Tmanger malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-06"
         classification = "TLP:CLEAR"
         

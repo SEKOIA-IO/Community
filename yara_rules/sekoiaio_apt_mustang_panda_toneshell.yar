@@ -6,7 +6,7 @@ rule sekoiaio_apt_mustang_panda_toneshell {
         id = "bf7c68a9-dddc-494a-a603-c2311ed712a4"
         version = "1.0"
         description = "Detect the TONESHELL implant used by Mustang Panda from specific functions"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-28"
         classification = "TLP:CLEAR"
         

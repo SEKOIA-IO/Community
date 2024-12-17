@@ -3,7 +3,7 @@ rule sekoiaio_apt_oilrig_powerexchange {
         id = "cb6b370f-7b05-480b-865e-ac81ded4a2a4"
         version = "1.0"
         description = "Detects OilRig's PowerExchange backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-10-24"
         classification = "TLP:CLEAR"
         

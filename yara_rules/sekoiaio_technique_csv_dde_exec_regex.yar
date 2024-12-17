@@ -3,7 +3,7 @@ rule sekoiaio_technique_csv_dde_exec_regex {
         id = "71d0e987-51ab-49bc-9d0d-d2f9006af1de"
         version = "1.0"
         description = "Find .csv file exploiting DDE technique"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-02"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_mul_sparkrat {
         id = "cd818207-f8ec-41fa-abef-c29d481c7897"
         version = "1.0"
         description = "Detect SparkRAT using string found in the source code"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-30"
         classification = "TLP:CLEAR"
         reference = "https://github.com/XZB-1248/Spark"

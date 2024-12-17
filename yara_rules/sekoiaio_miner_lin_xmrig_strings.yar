@@ -3,7 +3,7 @@ rule sekoiaio_miner_lin_xmrig_strings {
         id = "2f99020b-424c-4433-860c-5e9ab4e1f1de"
         version = "1.0"
         description = "Detects XMRig ELF"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-08"
         modification_date = "2024-01-04"
         classification = "TLP:CLEAR"

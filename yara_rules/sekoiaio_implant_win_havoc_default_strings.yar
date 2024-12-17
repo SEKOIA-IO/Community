@@ -1,7 +1,7 @@
 rule sekoiaio_implant_win_havoc_default_strings {
     meta:
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         description = "Finds Havoc implants based on the embedded default strings"
         creation_date = "2022-10-07"
         id = "955c2211-4502-4258-ba4c-0d96a5624283"

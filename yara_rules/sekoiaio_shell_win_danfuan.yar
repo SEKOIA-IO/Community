@@ -3,7 +3,7 @@ rule sekoiaio_shell_win_danfuan {
         id = "d1cf9988-270b-4a22-bdd5-f40b625715a8"
         version = "1.0"
         description = "Detect the Danfuan malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-04"
         classification = "TLP:CLEAR"
         

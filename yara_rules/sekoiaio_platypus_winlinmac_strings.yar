@@ -3,7 +3,7 @@ rule sekoiaio_platypus_winlinmac_strings {
         id = "4519448d-b91b-4794-9521-359b8cf4af78"
         version = "1.0"
         description = "Catch Platypus based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-07"
         classification = "TLP:CLEAR"
         

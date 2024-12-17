@@ -3,7 +3,7 @@ rule sekoiaio_ransomware_win_voidcrypt {
         id = "394033cc-20fe-4ced-8d77-5f1061bb8c96"
         version = "1.0"
         description = "Detect the Limbozar / VoidCrypt ransomware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-10-07"
         classification = "TLP:CLEAR"
         

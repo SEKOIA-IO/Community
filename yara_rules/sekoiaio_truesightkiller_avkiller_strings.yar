@@ -3,7 +3,7 @@ rule sekoiaio_truesightkiller_avkiller_strings {
         id = "8f249ac4-5181-4169-9eb2-7d73ec4fd68d"
         version = "1.0"
         description = "TrueSightKiller based on string"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-10-29"
         classification = "TLP:CLEAR"
         hash = "891202963430a4b1dea2dc5b9af01dc5"

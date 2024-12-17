@@ -3,7 +3,7 @@ rule sekoiaio_apt_sidecopy_malicious_macro {
         id = "4b90c33e-48d4-48b6-87a7-c35686e7e913"
         version = "1.0"
         description = "Detects malicious macro used by SideCopy"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-11"
         classification = "TLP:CLEAR"
         

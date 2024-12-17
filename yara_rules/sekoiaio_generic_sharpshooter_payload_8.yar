@@ -3,7 +3,7 @@ rule sekoiaio_generic_sharpshooter_payload_8 {
         id = "e28a1cd3-f7b6-4a55-8229-484e0bbeb7cb"
         version = "1.0"
         description = "Detects payload created by SharpShooter"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-03"
         classification = "TLP:CLEAR"
         

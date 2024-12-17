@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_earthworm_strings {
         id = "6c9b0225-8c41-49f9-9745-245bc7ef942f"
         version = "1.0"
         description = "Detects Mac/Win/Linux EarthWorm based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-08"
         classification = "TLP:CLEAR"
         

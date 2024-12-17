@@ -5,7 +5,7 @@ rule sekoiaio_typhon_reborn_stealer {
         id = "aab7279b-b651-4092-b988-d186d0a433de"
         version = "1.0"
         description = "Typhon Reborn v2 string based detection"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-15"
         classification = "TLP:CLEAR"
         

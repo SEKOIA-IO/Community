@@ -3,7 +3,7 @@ rule sekoiaio_apt_lazarus_vhd_ransomware_loader {
         id = "377f3ec5-fa2a-431e-93d2-6a1eb9e01d28"
         version = "1.0"
         description = "Detects VHD ransomware x64 loader "
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-28"
         classification = "TLP:CLEAR"
         

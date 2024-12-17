@@ -3,7 +3,7 @@ rule sekoiaio_apt_globalshadow {
         id = "2fef6192-25a6-4d6a-8e19-53ad51617d90"
         version = "1.0"
         description = "Detects the GLOBALSHADOW malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-04"
         classification = "TLP:CLEAR"
         hash = "68c16b6f178c88c12c9555169887c321"

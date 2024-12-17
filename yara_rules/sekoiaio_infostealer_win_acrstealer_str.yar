@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_acrstealer_str {
         id = "63b4d6ff-0cab-44ec-9d53-bb2612371a48"
         version = "1.0"
         description = "Finds ACR Stealer standalone samples based on specific strings."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-22"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_crime_sload_vbs_downloader_strings_2 {
         id = "77ff0d21-9249-43b2-9a6d-87988a2dec3b"
         version = "1.0"
         description = "Detects an sLoad downloader based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-02"
         classification = "TLP:CLEAR"
         

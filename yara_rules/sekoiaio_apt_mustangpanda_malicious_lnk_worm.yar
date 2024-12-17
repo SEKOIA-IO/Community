@@ -3,7 +3,7 @@ rule sekoiaio_apt_mustangpanda_malicious_lnk_worm {
         id = "e7cc5ecc-2369-49ff-9e35-c9faeb69acda"
         version = "1.0"
         description = "Detects MustangPanda infected ThumbDrive"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-21"
         classification = "TLP:CLEAR"
         

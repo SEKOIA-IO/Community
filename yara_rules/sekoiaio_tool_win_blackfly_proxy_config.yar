@@ -6,7 +6,7 @@ rule sekoiaio_tool_win_blackfly_proxy_config {
         id = "c8a8be5d-bd28-4306-9466-ad582e53fede"
         version = "1.0"
         description = "Detect Blackfly proxy configuration tool"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-02-28"
         classification = "TLP:CLEAR"
         

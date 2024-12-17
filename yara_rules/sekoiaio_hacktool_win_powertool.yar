@@ -2,7 +2,7 @@ rule sekoiaio_hacktool_win_powertool {
     meta:
         version = "1.0"
         description = "Detect PowerTool based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-09"
         id = "ab8355b8-322d-41a4-82f0-43896c96b9bc"
         classification = "TLP:CLEAR"

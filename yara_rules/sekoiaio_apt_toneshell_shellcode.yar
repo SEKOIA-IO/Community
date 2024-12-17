@@ -3,7 +3,7 @@ rule sekoiaio_apt_toneshell_shellcode {
         id = "5ac8d2e9-dbeb-42f9-8343-1281510d4411"
         version = "1.0"
         description = "Detects first bytes of ToneShell used to call the shellcode or the code to check the MagicNumber (0x17 0x03 0x03)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-10-02"
         classification = "TLP:CLEAR"
         

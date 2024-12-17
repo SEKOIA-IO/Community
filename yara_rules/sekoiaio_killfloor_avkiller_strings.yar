@@ -3,7 +3,7 @@ rule sekoiaio_killfloor_avkiller_strings {
         id = "ae6908c3-27d4-4d2c-af21-a9548dfcd487"
         version = "1.0"
         description = "Kill-Floor strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-10-29"
         classification = "TLP:CLEAR"
         hash = "9f16176ac20f7855fa960d321e156d69"

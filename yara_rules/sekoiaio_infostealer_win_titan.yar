@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_titan {
         id = "0adbe616-0d91-4b05-b7a8-812cd79f9252"
         version = "1.0"
         description = "Finds samples of the Titan Stealer"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-12"
         classification = "TLP:CLEAR"
         

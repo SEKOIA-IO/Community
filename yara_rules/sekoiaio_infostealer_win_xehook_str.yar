@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_xehook_str {
         id = "fa76988d-f0a2-4fc2-a122-c104fd585f34"
         version = "1.0"
         description = "Finds XehookStealer standalone samples based on specific strings."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-12"
         classification = "TLP:CLEAR"
         

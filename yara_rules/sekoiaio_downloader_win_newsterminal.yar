@@ -3,7 +3,7 @@ rule sekoiaio_downloader_win_newsterminal {
         id = "2f9aae45-e3bd-4d87-b336-5d141738952b"
         version = "1.0"
         description = "Detect the PowerShell based downloader used by APT42 called NEWSTERMINAL"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-08-26"
         classification = "TLP:CLEAR"
         hash = "2b756515400d7e3b6e21ee3a83f313c8"

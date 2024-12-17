@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_monster_stub {
         id = "10d27d49-79ae-4edc-8c30-35506bdf2c42"
         version = "1.0"
         description = "Finds Monster Stealer stub (Python payload) based on specific strings."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-08-07"
         classification = "TLP:CLEAR"
         

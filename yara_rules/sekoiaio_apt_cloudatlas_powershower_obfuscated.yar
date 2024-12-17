@@ -3,7 +3,7 @@ rule sekoiaio_apt_cloudatlas_powershower_obfuscated {
         id = "f76ab9d8-7753-4a17-aedd-fc9c3b8cd322"
         version = "1.0"
         description = "Detects obfuscated version of PowerShower"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-29"
         classification = "TLP:CLEAR"
         

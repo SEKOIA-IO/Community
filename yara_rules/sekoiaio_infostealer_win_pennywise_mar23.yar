@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_pennywise_mar23 {
         id = "9852b7e7-dfff-44e6-9068-d287cc84b069"
         version = "1.0"
         description = "Finds PennyWise samples based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-22"
         classification = "TLP:CLEAR"
         

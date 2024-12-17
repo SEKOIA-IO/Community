@@ -3,7 +3,7 @@ rule sekoiaio_apt_aptc60_downloader_strings {
         id = "02fd6d5b-7211-46cc-bcff-ab5d78e459c0"
         version = "1.0"
         description = "Detects a simple downloader abusing wlrmdr.exe and used by APT-C-60"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-05"
         classification = "TLP:CLEAR"
         hash = "b14ef85a60ac71c669cc960bdf580144"

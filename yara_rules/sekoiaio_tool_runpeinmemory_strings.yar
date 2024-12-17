@@ -3,7 +3,7 @@ rule sekoiaio_tool_runpeinmemory_strings {
         id = "64129ab0-b599-4760-ab21-20c475c2c07f"
         version = "1.0"
         description = "Detects standard implementation of RunPEInMemory"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-05-23"
         classification = "TLP:CLEAR"
         

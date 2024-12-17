@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_mars_stealer_xor_routine {
         id = "3e2c7440b2fc9e4b039e6fa8152ac8ff"
         version = "1.0"
         description = "Detect Mars Stealer based on a specific XOR routine"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-06"
         classification = "TLP:CLEAR"
         

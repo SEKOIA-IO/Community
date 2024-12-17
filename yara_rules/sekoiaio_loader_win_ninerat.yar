@@ -6,7 +6,7 @@ rule sekoiaio_loader_win_ninerat {
         id = "b9aa3ddc-7892-402f-b045-182884ee9bad"
         version = "1.0"
         description = "Detect the NineRAT instrumentator"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-12"
         classification = "TLP:CLEAR"
         reference = "https://blog.talosintelligence.com/lazarus_new_rats_dlang_and_telegram/"

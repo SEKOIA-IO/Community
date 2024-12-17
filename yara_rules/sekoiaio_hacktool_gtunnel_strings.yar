@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_gtunnel_strings {
         id = "f20a4400-8ae6-4954-b643-0a8847f037f0"
         version = "1.0"
         description = "Detects Go gTunnel based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-04-24"
         classification = "TLP:CLEAR"
         

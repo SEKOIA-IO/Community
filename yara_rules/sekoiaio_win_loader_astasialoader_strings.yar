@@ -3,7 +3,7 @@ rule sekoiaio_win_loader_astasialoader_strings {
         id = "8dfabf28-4b5a-43db-87e9-5b9080541ec3"
         version = "1.0"
         description = "AstasiaLoader strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-08-16"
         classification = "TLP:CLEAR"
         hash = "44b6f7508a82ff6a4d65defc189303eeee393b5fd498de73d74d0a2c75c87401"

@@ -3,7 +3,7 @@ rule sekoiaio_ransomware_win_scransom {
         id = "ea799295-1332-49c6-9816-035b91fc9b4f"
         version = "1.0"
         description = "Finds ScRansom samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-08-24"
         classification = "TLP:CLEAR"
         

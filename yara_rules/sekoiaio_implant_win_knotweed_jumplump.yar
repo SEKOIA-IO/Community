@@ -4,7 +4,7 @@ rule sekoiaio_implant_win_knotweed_jumplump {
     meta:
         id = "8f8cec7a-624b-4306-87f4-bde8ccc3a2d0"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-27"
         classification = "TLP:CLEAR"
         

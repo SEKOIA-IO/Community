@@ -1,7 +1,7 @@
 rule sekoiaio_merlin_crossplatform {
     meta:
         id = "c9c57f5e-26c3-43be-b2cf-10f5129d3be6"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-03"
         description = "Detects Merlin agent cross platform"
         version = "1.0"

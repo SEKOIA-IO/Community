@@ -3,7 +3,7 @@ rule sekoiaio_unknown_quad7_wildcard_login {
         id = "01510244-0795-4299-aa66-056a2b4682e7"
         version = "1.0"
         description = "Detects the (x|r|a)login bind shells"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-07-18"
         classification = "TLP:CLEAR"
         hash = "4d9067e7cf517158337123a30a9bd0e3"

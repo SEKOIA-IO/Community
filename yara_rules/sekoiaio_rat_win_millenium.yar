@@ -2,7 +2,7 @@ rule sekoiaio_rat_win_millenium {
     meta:
         version = "1.0"
         description = "Finds MilleniumRAT samples based on the specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-16"
         id = "91320924-5c74-457a-8601-29c4e4034761"
         classification = "TLP:CLEAR"

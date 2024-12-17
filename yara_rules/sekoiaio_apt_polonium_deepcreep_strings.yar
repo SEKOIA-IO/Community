@@ -3,7 +3,7 @@ rule sekoiaio_apt_polonium_deepcreep_strings {
         id = "b04af229-2bea-4ee8-9e17-8e4befa06e3a"
         version = "1.0"
         description = "Tries to detect POLONIUM's DeepCreep implant"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-12"
         classification = "TLP:CLEAR"
         

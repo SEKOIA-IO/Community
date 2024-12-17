@@ -3,7 +3,7 @@ rule sekoiaio_tool_pivotnacci_webshell {
         id = "729b6381-b59d-46fe-9ad4-b8b68fb0ceea"
         version = "1.0"
         description = "Detects pivotnacci webshell"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-22"
         classification = "TLP:CLEAR"
         

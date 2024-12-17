@@ -3,7 +3,7 @@ rule sekoiaio_tool_reversessh_strings {
         id = "b20c2c8e-3910-4545-a87a-3d428283a447"
         version = "1.0"
         description = "Detects reverse SSH based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-16"
         classification = "TLP:CLEAR"
         

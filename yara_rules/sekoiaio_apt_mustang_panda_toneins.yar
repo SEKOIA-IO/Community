@@ -6,7 +6,7 @@ rule sekoiaio_apt_mustang_panda_toneins {
         id = "f178217a-ff28-4dd7-9395-f19f3e2e934c"
         version = "1.0"
         description = "Detect the TONEINS implant used by Mustang Panda"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-28"
         classification = "TLP:CLEAR"
         

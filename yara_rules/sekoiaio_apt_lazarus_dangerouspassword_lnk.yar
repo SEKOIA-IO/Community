@@ -3,7 +3,7 @@ rule sekoiaio_apt_lazarus_dangerouspassword_lnk {
         id = "32533880-7f75-4682-a7ae-9868d0b5174b"
         version = "1.0"
         description = "Detects Lazarus DangerousPassword LNKs"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-26"
         classification = "TLP:CLEAR"
         

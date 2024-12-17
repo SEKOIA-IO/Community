@@ -3,7 +3,7 @@ rule sekoiaio_tool_iodine_strings {
         id = "029766cc-80fb-423d-adc5-8867c438c5d3"
         version = "1.0"
         description = "Detects iodine based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-02"
         classification = "TLP:CLEAR"
         

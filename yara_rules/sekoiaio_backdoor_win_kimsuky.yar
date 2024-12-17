@@ -6,7 +6,7 @@ rule sekoiaio_backdoor_win_kimsuky {
         id = "db927d1c-34cf-4501-a6ce-3e8ecdefc5a3"
         version = "1.0"
         description = "Detect the backdoors used by Kimsuky based on specific PE ressources"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-04"
         classification = "TLP:CLEAR"
         hash1 = "000e2926f6e094d01c64ff972e958cd38590299e9128a766868088aa273599c7"

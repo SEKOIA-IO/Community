@@ -3,7 +3,7 @@ rule sekoiaio_apt_luckymouse_rshell_strings {
         id = "89f18013-ea3e-440f-821e-cef102a43b7b"
         version = "1.0"
         description = "Detects LuckyMouse RShell Mach-O implant"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-05"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_socat_strings {
         id = "7c7e4085-39b2-445e-a9ff-52f21936e714"
         version = "1.0"
         description = "Detects socat"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-08"
         classification = "TLP:CLEAR"
         

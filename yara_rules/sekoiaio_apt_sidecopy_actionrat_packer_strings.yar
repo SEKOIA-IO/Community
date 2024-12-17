@@ -3,7 +3,7 @@ rule sekoiaio_apt_sidecopy_actionrat_packer_strings {
         id = "b9370bd5-12e1-448e-a5b1-2acc72adc4a7"
         version = "1.0"
         description = "Detects SideCopy's ActionRAT (packer?)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-11"
         classification = "TLP:CLEAR"
         

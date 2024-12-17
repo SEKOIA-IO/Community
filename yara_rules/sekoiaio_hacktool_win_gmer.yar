@@ -4,7 +4,7 @@ rule sekoiaio_hacktool_win_gmer {
     meta:
         version = "1.0"
         description = "Dtect the GMER hacktool based string and UPX usage"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-09"
         id = "d2f1aba1-4222-45e5-95bd-4d7f08595cea"
         classification = "TLP:CLEAR"

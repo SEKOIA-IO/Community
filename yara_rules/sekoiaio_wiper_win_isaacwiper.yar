@@ -6,7 +6,7 @@ rule sekoiaio_wiper_win_isaacwiper {
         id = "b081e3a3-612e-46ae-93af-82e7ee98fcf7"
         version = "1.0"
         description = "Detect the IsaacWiper using multiple methods + ReversingLab rule's condition"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-03-15"
         classification = "TLP:CLEAR"
         

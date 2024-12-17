@@ -3,7 +3,7 @@ rule sekoiaio_storm_1811_screenconnect_update {
         id = "252ef24a-14dc-41e8-ba91-dcb9b6deb428"
         version = "1.0"
         description = "Detects files used in a campaign performed by the intrusion set Storm-1811"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-11"
         classification = "TLP:CLEAR"
         

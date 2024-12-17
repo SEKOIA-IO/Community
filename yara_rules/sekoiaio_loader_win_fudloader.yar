@@ -3,7 +3,7 @@ rule sekoiaio_loader_win_fudloader {
         id = "4c2ac614-89af-4449-9fd2-9f935e4c27b8"
         version = "1.0"
         description = "Finds FUD-Loader samples based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://github.com/0day2/FUD-Loader/"
         creation_date = "2023-09-25"
         classification = "TLP:CLEAR"

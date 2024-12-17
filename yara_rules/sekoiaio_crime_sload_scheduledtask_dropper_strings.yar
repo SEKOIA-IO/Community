@@ -2,7 +2,7 @@ rule sekoiaio_crime_sload_scheduledtask_dropper_strings {
     meta:
         id = "01c51da8-71a5-449f-a609-933c37bc2e63"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-02"
         classification = "TLP:CLEAR"
         

@@ -2,7 +2,7 @@ rule sekoiaio_tool_sharpsecdump {
     meta:
         id = "359bf48b-81c8-4d12-ac02-777d4865411a"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-23"
         classification = "TLP:CLEAR"
         

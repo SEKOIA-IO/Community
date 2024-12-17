@@ -3,7 +3,7 @@ rule sekoiaio_tool_pivotnacci {
         id = "31ecb08a-fc92-4cbe-a865-7ce869a5fa6a"
         version = "1.0"
         description = "Detects Pivotnacci"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-22"
         classification = "TLP:CLEAR"
         

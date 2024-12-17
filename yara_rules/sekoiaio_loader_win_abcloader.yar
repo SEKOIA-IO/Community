@@ -6,7 +6,7 @@ rule sekoiaio_loader_win_abcloader {
         id = "c286ce75-a041-478e-a567-4bf1d5e66c01"
         version = "1.0"
         description = "Detect ABCloader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-08-19"
         classification = "TLP:CLEAR"
         reference = "https://nsfocusglobal.com/new-apt-group-actor240524-a-closer-look-at-its-cyber-tactics-against-azerbaijan-and-israel/"

@@ -5,7 +5,7 @@ rule sekoiaio_apt_win_disabledefender {
         id = "a7b124ab-4c9d-47c0-a59e-211cc713b9b3"
         version = "1.0"
         description = "detects strings and imphash"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-23"
         classification = "TLP:CLEAR"
         

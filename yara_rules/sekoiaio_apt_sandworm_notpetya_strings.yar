@@ -3,7 +3,7 @@ rule sekoiaio_apt_sandworm_notpetya_strings {
         id = "c6021638-1b59-4d20-a29d-95cabf256a28"
         version = "1.0"
         description = "Detects NotPetya worm"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-15"
         classification = "TLP:CLEAR"
         

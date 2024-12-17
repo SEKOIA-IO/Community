@@ -5,7 +5,7 @@ rule sekoiaio_apt_spikedwine_wineloader {
         id = "7a599076-cd9d-42c4-a83a-9a991ede19fb"
         version = "1.0"
         description = "Detects vineloader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-29"
         classification = "TLP:CLEAR"
         

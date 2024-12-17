@@ -3,7 +3,7 @@ rule sekoiaio_apt_kimsuky_validator_strings {
         id = "e055f2d4-8318-4342-812e-0f621d7886b4"
         version = "1.0"
         description = "Detects Kimsuky validator"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-11"
         classification = "TLP:CLEAR"
         

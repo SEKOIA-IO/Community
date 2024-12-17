@@ -3,7 +3,7 @@ rule sekoiaio_downloader_win_cobianrat {
         id = "7a86c17f-bf4e-4465-9488-244b75fc36f1"
         version = "1.0"
         description = "Detect CobianRAT downloader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-08-23"
         classification = "TLP:CLEAR"
         hash = "7a70779d9d7de5e370fac0fa2d4ccd13"

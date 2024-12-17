@@ -3,7 +3,7 @@ rule sekoiaio_tool_nssm_strings {
         id = "fab99d44-6494-4bfc-80c0-67c45bad0425"
         version = "1.0"
         description = "Detects nssm tool"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-06"
         classification = "TLP:CLEAR"
         hash = "beceae2fdc4f7729a93e94ac2ccd78cc"

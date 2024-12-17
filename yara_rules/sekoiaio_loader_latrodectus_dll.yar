@@ -2,7 +2,7 @@ rule sekoiaio_loader_latrodectus_dll {
     meta:
         version = "1.0"
         description = "Finds Latrodectus samples based on the specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://twitter.com/Myrtus0x0/status/1732997981866209550"
         creation_date = "2023-12-08"
         id = "c60676ad-31cb-4f4d-9073-757a0ad7d23d"

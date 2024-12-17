@@ -6,7 +6,7 @@ rule sekoiaio_loader_win_revil_loader {
         id = "3c293e87-e2d7-475a-9536-8b991961fa11"
         version = "1.0"
         description = "Detect the REvil loader using DDL side loading. The detected ressource is a legitimate executable used to load the malicious .dll containing the ransomware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-07-19"
         classification = "TLP:CLEAR"
         reference = "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/revil-ransomware-uses-dll-sideloading"

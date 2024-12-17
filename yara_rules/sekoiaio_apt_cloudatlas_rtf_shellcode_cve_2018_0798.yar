@@ -3,7 +3,7 @@ rule sekoiaio_apt_cloudatlas_rtf_shellcode_cve_2018_0798 {
         id = "6c602c66-df40-4436-800f-e548dacc1e81"
         version = "1.0"
         description = "CloudAtlas Shellcode for CVE_2018_0798 "
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-01"
         classification = "TLP:CLEAR"
         

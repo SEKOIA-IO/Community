@@ -2,10 +2,10 @@ rule sekoiaio_tool_printnotifypotato {
     meta:
         id = "8dde175f-025a-4c27-bcc6-d0016dd7238c"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-08-23"
         classification = "TLP:CLEAR"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         
     strings:
         $s1 = "PrintNotifyPotato.exe" ascii wide

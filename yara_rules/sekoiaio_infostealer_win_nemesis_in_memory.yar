@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_nemesis_in_memory {
         id = "01d85bd5-ea93-44ff-b36a-9cd9eb54d634"
         version = "1.0"
         description = "Finds Nemesis Stealer samples based on specific strings, from samples without strings obsucation, or from memory"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-29"
         classification = "TLP:CLEAR"
         

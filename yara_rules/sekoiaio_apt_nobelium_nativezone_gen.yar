@@ -5,7 +5,7 @@ rule sekoiaio_apt_nobelium_nativezone_gen {
         id = "e16cac97-38dd-4145-95f5-cf641940a19b"
         version = "1.0"
         description = "Detects NativeZone used in 2022"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-25"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_rat_win_borat {
         id = "9f8badb3-ee8b-45d9-8515-c847351bb1f5"
         version = "1.0"
         description = "Detect the Borat RAT besed on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-08"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_trojan_win_bbtok_dll1_sep23 {
         id = "eebed24b-24ec-4a85-852c-52d0acc9a698"
         version = "1.0"
         description = "Finds BBTok installation DLL file"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://research.checkpoint.com/2023/behind-the-scenes-of-bbtok-analyzing-a-bankers-server-side-components/"
         creation_date = "2023-09-26"
         classification = "TLP:CLEAR"

@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_zharkbot_dump {
         id = "84c4f02e-fa59-4ab9-b8e8-077cd23ce117"
         version = "1.0"
         description = "Finds ZharkBot dumps based on specific strings."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-07-10"
         classification = "TLP:CLEAR"
         

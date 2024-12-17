@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_mimikat_ssp_strings {
         id = "33b3620f-e02d-4d29-adcc-fea3b49ab780"
         version = "1.0"
         description = "Detects mimikat_ssp"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-22"
         classification = "TLP:CLEAR"
         

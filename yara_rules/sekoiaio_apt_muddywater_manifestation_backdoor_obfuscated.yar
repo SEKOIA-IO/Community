@@ -3,7 +3,7 @@ rule sekoiaio_apt_muddywater_manifestation_backdoor_obfuscated {
         id = "58df72a1-822c-4b82-904d-1c0124dc7bc1"
         version = "1.0"
         description = "Detects obfuscated Muddys manifestation JScript backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-13"
         classification = "TLP:CLEAR"
         

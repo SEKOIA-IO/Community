@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_credentialkatz {
         id = "4795d131-2625-40ca-bca6-02aac5030b55"
         version = "1.0"
         description = "Finds ChromeKatz (CredentialKatz version) standalone samples based on the strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://github.com/Meckazin/ChromeKatz"
         creation_date = "2024-10-30"
         classification = "TLP:CLEAR"

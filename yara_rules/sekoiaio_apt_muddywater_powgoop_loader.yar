@@ -3,7 +3,7 @@ rule sekoiaio_apt_muddywater_powgoop_loader {
         id = "716b45e1-9f17-4546-a003-a7c78340d623"
         version = "1.0"
         description = "Detects the loader of PowGoop malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-13"
         classification = "TLP:CLEAR"
         

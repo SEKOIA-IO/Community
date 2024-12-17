@@ -1,7 +1,7 @@
 rule sekoiaio_implant_any_sliver {
     meta:
         id = "4b16f28a-2048-4044-8620-8e7a1651f2b1"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-11-08"
         description = "Rule which detects any Sliver implant PE/Dlls/ELFs/MAC-O."
         version = "1.1"

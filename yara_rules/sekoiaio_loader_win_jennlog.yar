@@ -6,7 +6,7 @@ rule sekoiaio_loader_win_jennlog {
         id = "a69088e5-207f-494f-876b-766b8050e8c2"
         version = "1.0"
         description = "Jennlog loader used to deliver the Apostle ransomware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-10-04"
         classification = "TLP:CLEAR"
         reference = "https://www.sentinelone.com/labs/new-version-of-apostle-ransomware-reemerges-in-targeted-attack-on-higher-education/"

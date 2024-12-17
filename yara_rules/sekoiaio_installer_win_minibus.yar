@@ -6,7 +6,7 @@ rule sekoiaio_installer_win_minibus {
         id = "0f7f600d-d93b-4b5a-aa0e-7d91038409e6"
         version = "1.0"
         description = "Detect MINIBUS installer"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-08"
         classification = "TLP:CLEAR"
         hash1 = "26ca51cb067e1fdf1b8ad54ba49883bc5d1945952239aec0c4840754bff76621"

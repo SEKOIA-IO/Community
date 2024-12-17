@@ -6,7 +6,7 @@ rule sekoiaio_downloader_win_andarloader {
         id = "96dd737e-601c-4370-9fa6-4bbafafae203"
         version = "1.0"
         description = "Detect the AndarLoader downloader used by Andariel"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-04"
         classification = "TLP:CLEAR"
         hash1 = "02135f60f3edff0b9baa4c20715ee6a80c94f282079bf879265f5e020d37cf88"

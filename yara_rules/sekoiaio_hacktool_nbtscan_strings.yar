@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_nbtscan_strings {
         id = "8883b56c-a085-459c-9ec6-a139ad5a2671"
         version = "1.0"
         description = "Detects NBTScan hacktool based on strings, ELF & PE variants"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-06"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_gen_empire_onedrive_stager {
         id = "2053416f-1f53-491e-9c70-787a04362d16"
         version = "1.0"
         description = "Detects the Empire OneDrive stager"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-01-26"
         classification = "TLP:CLEAR"
         

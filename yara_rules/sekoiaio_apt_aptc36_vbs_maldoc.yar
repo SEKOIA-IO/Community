@@ -3,7 +3,7 @@ rule sekoiaio_apt_aptc36_vbs_maldoc {
         id = "f0ca061f-e94b-4f70-bbd1-8a15193652d3"
         version = "1.0"
         description = "Find VBS file used by the threat actor APT-C-36"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-16"
         classification = "TLP:CLEAR"
         

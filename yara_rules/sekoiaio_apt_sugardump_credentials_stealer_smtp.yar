@@ -3,7 +3,7 @@ rule sekoiaio_apt_sugardump_credentials_stealer_smtp {
         id = "bf028ebc-bfaa-45b3-9a3f-8949a5efbb73"
         version = "1.0"
         description = "Detects SUGARDUMP SMTP version"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-23"
         classification = "TLP:CLEAR"
         

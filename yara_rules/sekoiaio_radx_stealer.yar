@@ -3,7 +3,7 @@ rule sekoiaio_radx_stealer {
         id = "bf2aae08-169c-4bc9-a1ac-80f4b79ef6d7"
         version = "1.0"
         description = "detection of RADX stealer based on function named in the .NET payload"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-22"
         classification = "TLP:CLEAR"
         

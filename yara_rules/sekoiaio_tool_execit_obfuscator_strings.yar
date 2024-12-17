@@ -3,7 +3,7 @@ rule sekoiaio_tool_execit_obfuscator_strings {
         id = "59eaeb20-150b-41a4-b866-1c91a07623ac"
         version = "1.0"
         description = "Detects ExecIT Dlls"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-11"
         classification = "TLP:CLEAR"
         hash = "1c185e2e11d8eadccfb130766ca30d85"

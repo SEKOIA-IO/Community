@@ -3,7 +3,7 @@ rule sekoiaio_generic_bat_script_mock_http_services {
         id = "1cfbe5ba-6304-476d-8308-928100a85c16"
         version = "1.0"
         description = "Generic rule detecting BAT script using mock HTTP services (used by APT28)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-07"
         classification = "TLP:CLEAR"
         

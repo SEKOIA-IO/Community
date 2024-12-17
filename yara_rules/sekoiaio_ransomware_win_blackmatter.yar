@@ -6,7 +6,7 @@ rule sekoiaio_ransomware_win_blackmatter {
         id = "9b2d8ac3-b4d1-40f5-ac57-411547dcb2cf"
         version = "1.0"
         description = "Detect Black matter ransomware (2021-07-23)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-08-03"
         classification = "TLP:CLEAR"
         

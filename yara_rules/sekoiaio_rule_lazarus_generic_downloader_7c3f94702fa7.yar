@@ -3,7 +3,7 @@ rule sekoiaio_rule_lazarus_generic_downloader_7c3f94702fa7 {
         id = "eb0f0a91-5e72-4358-91a3-7c3f94702fa7"
         version = "1.0"
         description = "Detects a Generic Downloader used by Lazarus"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-08"
         classification = "TLP:CLEAR"
         

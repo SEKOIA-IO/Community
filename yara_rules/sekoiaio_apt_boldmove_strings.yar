@@ -3,7 +3,7 @@ rule sekoiaio_apt_boldmove_strings {
         id = "0458e282-f92f-4600-964a-de6b66b4a82d"
         version = "1.0"
         description = "Detects BOLDMOVE via strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-16"
         classification = "TLP:CLEAR"
         

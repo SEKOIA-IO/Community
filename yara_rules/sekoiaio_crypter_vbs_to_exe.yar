@@ -3,7 +3,7 @@ rule sekoiaio_crypter_vbs_to_exe {
         id = "33ed286f-3055-452e-952b-abaf11a543a1"
         version = "1.0"
         description = "first stage of Crypter-VBS-to-EXE dropped on infected hosted"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-03"
         classification = "TLP:CLEAR"
         

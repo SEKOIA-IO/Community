@@ -3,7 +3,7 @@ rule sekoiaio_tool_ladon_strings {
         id = "7f06f755-a103-4e74-a9df-136355775233"
         version = "1.0"
         description = "Detects Ladon based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-03"
         classification = "TLP:CLEAR"
         

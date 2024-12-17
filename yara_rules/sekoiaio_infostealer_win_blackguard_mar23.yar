@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_blackguard_mar23 {
         id = "65804d31-2a0c-4b22-a8d9-8cbe1497f155"
         version = "1.0"
         description = "Finds BlackGuard samples based on specific strings (March 2023, version 5)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-27"
         classification = "TLP:CLEAR"
         

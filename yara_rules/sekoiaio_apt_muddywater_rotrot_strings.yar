@@ -3,7 +3,7 @@ rule sekoiaio_apt_muddywater_rotrot_strings {
         id = "f7bc195a-0e60-4495-b78a-78f101543700"
         version = "1.0"
         description = "Detects RotRot backdoor based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-10"
         classification = "TLP:CLEAR"
         

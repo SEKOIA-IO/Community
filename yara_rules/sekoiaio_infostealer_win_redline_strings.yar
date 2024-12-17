@@ -2,7 +2,7 @@ rule sekoiaio_infostealer_win_redline_strings {
     meta:
         version = "1.0"
         description = "Finds Redline samples based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-07"
         id = "0c9fcb0e-ce8f-44f4-90b2-abafcdd6c02e"
         classification = "TLP:CLEAR"

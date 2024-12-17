@@ -3,7 +3,7 @@ rule sekoiaio_loader_win_piccassoloader {
         id = "91d9c2de-451e-467e-8f5c-38bbcce92b72"
         version = "1.0"
         description = "Detect the variant of Picasso used by GhostWriter as CVE-2023-38831 exploitation payload"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-07"
         classification = "TLP:CLEAR"
         

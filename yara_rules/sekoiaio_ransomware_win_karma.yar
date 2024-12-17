@@ -3,7 +3,7 @@ rule sekoiaio_ransomware_win_karma {
         id = "efd87a17-7c99-404a-8ea6-2f5c2121f9f2"
         version = "1.0"
         description = "Detect the Karma ransomware payload"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2021-08-25"
         classification = "TLP:CLEAR"
         

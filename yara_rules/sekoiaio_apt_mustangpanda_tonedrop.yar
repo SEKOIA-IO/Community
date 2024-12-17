@@ -3,7 +3,7 @@ rule sekoiaio_apt_mustangpanda_tonedrop {
         id = "39df631c-5766-4804-838f-6c9b800c0cc9"
         version = "1.0"
         description = "TONEDROP strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-19"
         classification = "TLP:CLEAR"
         

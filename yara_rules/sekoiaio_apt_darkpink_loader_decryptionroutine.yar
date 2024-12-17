@@ -6,7 +6,7 @@ rule sekoiaio_apt_darkpink_loader_decryptionroutine {
         id = "fefc7b2f-eecc-49dc-84bc-24c45e9ea8f0"
         version = "1.0"
         description = "Detects decryption routine of dark pink loader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-17"
         classification = "TLP:CLEAR"
         hashs = "3f38860d0f6f0ff1b65219379f8793383cba85b11de1c853192fb2d2ba99e481"

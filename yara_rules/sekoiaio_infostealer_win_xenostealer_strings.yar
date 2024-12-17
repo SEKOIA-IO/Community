@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_xenostealer_strings {
         id = "0a41788b-1fa7-44ff-af85-9c1ff1892aad"
         version = "1.0"
         description = "Finds XenoStealer standalone samples based on the strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://github.com/moom825/XenoStealer/"
         creation_date = "2024-10-30"
         classification = "TLP:CLEAR"

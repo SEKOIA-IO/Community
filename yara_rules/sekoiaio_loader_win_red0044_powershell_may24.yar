@@ -3,7 +3,7 @@ rule sekoiaio_loader_win_red0044_powershell_may24 {
         id = "ba3454b4-31cf-458d-8d78-c5cc5fa348ff"
         version = "1.0"
         description = "Finds PowerShell scripts used in a malvertising campaign to deliver NetSupport RAT"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         reference = "https://twitter.com/crep1x/status/1786150734121120075"
         creation_date = "2024-05-03"
         classification = "TLP:CLEAR"

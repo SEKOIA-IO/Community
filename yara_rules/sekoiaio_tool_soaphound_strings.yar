@@ -3,7 +3,7 @@ rule sekoiaio_tool_soaphound_strings {
         id = "adf48506-f07d-445a-83cc-0aed3b6b55eb"
         version = "1.0"
         description = "Detects SOAPHound based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-11-12"
         classification = "TLP:CLEAR"
         hash = "b2a953590d75213388473fb51e6b5f2f"

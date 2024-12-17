@@ -6,7 +6,7 @@ rule sekoiaio_wiper_win_dnwipe {
         id = "522fdaa5-8fe6-4e37-aaf8-13e3a7787d21"
         version = "1.0"
         description = "Detect the dnWipe malware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-21"
         classification = "TLP:CLEAR"
         

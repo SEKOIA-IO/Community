@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_whitesnake_loader_feb23 {
         id = "f81a8a96-6fd2-4f5c-8a56-ff66ff1a80d3"
         version = "1.0"
         description = "Finds WhiteSnake samples (loader module, bat file)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-01"
         classification = "TLP:CLEAR"
         

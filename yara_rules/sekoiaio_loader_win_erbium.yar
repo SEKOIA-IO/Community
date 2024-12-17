@@ -2,7 +2,7 @@ rule sekoiaio_loader_win_erbium {
     meta:
         version = "1.0"
         description = "Detect the Erbium loader based on specific user-agent and URI"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-09-30"
         id = "d1e5be62-5677-4ef4-9f10-65baf36ab619"
         classification = "TLP:CLEAR"

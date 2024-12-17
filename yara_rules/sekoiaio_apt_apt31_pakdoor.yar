@@ -5,7 +5,7 @@ rule sekoiaio_apt_apt31_pakdoor {
         version = "1.0"
         creation_date = "2021-10-11"
         classification = "TLP:CLEAR"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         version = "1.0"
         hash = "1d60edb577641ce47dc2a8299f8b7f878e37120b192655aaf80d1cde5ee482d2"
         

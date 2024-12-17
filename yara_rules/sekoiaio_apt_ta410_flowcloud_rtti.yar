@@ -3,7 +3,7 @@ rule sekoiaio_apt_ta410_flowcloud_rtti {
         id = "c6a18c08-8b98-46d7-a6c3-dc171c7791ac"
         version = "1.0"
         description = "Detects FlowCloud via RTTI"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-10-11"
         classification = "TLP:CLEAR"
         

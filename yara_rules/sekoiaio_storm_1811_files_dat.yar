@@ -3,7 +3,7 @@ rule sekoiaio_storm_1811_files_dat {
         id = "8b14f276-0c39-422b-9b19-d96b139a7ae8"
         version = "1.0"
         description = "Detects files used in a campaign performed by the intrusion set Storm-1811"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-06-10"
         classification = "TLP:CLEAR"
         

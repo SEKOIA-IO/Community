@@ -2,7 +2,7 @@ rule sekoiaio_guerrilla_lemongroup {
     meta:
         id = "df635b5a-a19a-48ab-9a3a-9723e265c71d"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-23"
         classification = "TLP:CLEAR"
         

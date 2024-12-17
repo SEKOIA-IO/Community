@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_blueshell {
         id = "8f1cd966-c4d8-44f9-8cd5-4f5277332546"
         version = "1.0"
         description = "Detects BlueShell backdoor"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-09-08"
         classification = "TLP:CLEAR"
         

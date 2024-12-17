@@ -2,7 +2,7 @@ rule sekoiaio_infostealer_win_solarmarker_powershell {
     meta:
         version = "1.0"
         description = "Finds SolarMarker PowerShell script based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-09"
         id = "a2fe7f09-7134-4054-ba40-5ea66785a26d"
         classification = "TLP:CLEAR"

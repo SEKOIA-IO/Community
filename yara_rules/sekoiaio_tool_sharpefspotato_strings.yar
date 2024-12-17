@@ -3,7 +3,7 @@ rule sekoiaio_tool_sharpefspotato_strings {
         id = "4286c72b-c0b9-4d2c-9847-68fc39ed4894"
         version = "1.0"
         description = "Detects SharpEfsPotato based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-20"
         classification = "TLP:CLEAR"
         

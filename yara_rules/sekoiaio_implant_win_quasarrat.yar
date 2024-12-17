@@ -3,7 +3,7 @@ rule sekoiaio_implant_win_quasarrat {
         id = "492fdffc-8e5f-4225-a2eb-cd6d80e6bcb8"
         version = "1.0"
         description = "Detect QuasarRAT (reted from samples 2023-03)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-03-17"
         classification = "TLP:CLEAR"
         reference = "https://blog.alyac.co.kr/5103"

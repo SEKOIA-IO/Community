@@ -5,7 +5,7 @@ rule sekoiaio_backoor_win_tinyturla_ng {
         id = "019043bb-0212-4b73-bc93-03e9a746d28d"
         version = "1.0"
         description = "Detect the TinyTurla-NG backdoor used by Turla"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-04"
         classification = "TLP:CLEAR"
         reference = "https://blog.talosintelligence.com/tinyturla-next-generation/"

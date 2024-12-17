@@ -3,7 +3,7 @@ rule sekoiaio_spyware_and_bahamut {
         id = "d416997e-baf1-412c-bf39-905a6e19b65e"
         version = "1.0"
         description = "Detect Bahamut's spyware based on common information gathering function names"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-11-23"
         classification = "TLP:CLEAR"
         reference = "https://www.welivesecurity.com/2022/11/23/bahamut-cybermercenary-group-targets-android-users-fake-vpn-apps/"

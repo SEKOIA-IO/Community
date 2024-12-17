@@ -3,7 +3,7 @@ rule sekoiaio_stealer_win_strela {
         id = "2c98f84a-4329-476b-98b8-d8e2387b1b69"
         version = "1.0"
         description = "Detects IOCs related to the Strela stealer"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-04-09"
         classification = "TLP:CLEAR"
         

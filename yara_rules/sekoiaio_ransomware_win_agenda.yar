@@ -2,7 +2,7 @@ rule sekoiaio_ransomware_win_agenda {
     meta:
         version = "1.0"
         description = "Finds Agenda ransomware (aka Qilin) samples based on characteristic strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-12-15"
         id = "b0ea8e69-8f29-452f-95f7-67ee0e545b66"
         classification = "TLP:CLEAR"

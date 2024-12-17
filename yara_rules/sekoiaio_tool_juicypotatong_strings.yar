@@ -3,7 +3,7 @@ rule sekoiaio_tool_juicypotatong_strings {
         id = "4634251b-ea41-4f58-aabd-db83ccf4edaa"
         version = "1.0"
         description = "Detects JuicyPotatoNG"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-06-20"
         classification = "TLP:CLEAR"
         

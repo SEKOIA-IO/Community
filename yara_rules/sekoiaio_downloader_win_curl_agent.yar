@@ -3,7 +3,7 @@ rule sekoiaio_downloader_win_curl_agent {
         id = "ddeb2d8f-1b10-4a33-b768-d19412e8551a"
         version = "1.0"
         description = "Detect the downloader used by Bluenoroff to install it CurlAgent"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-05-02"
         classification = "TLP:CLEAR"
         

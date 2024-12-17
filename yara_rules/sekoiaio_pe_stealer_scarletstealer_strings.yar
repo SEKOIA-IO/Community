@@ -3,7 +3,7 @@ rule sekoiaio_pe_stealer_scarletstealer_strings {
         id = "ca930851-513f-44e5-abb4-ca0edfde3428"
         version = "1.0"
         description = "ScarletStealer strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-12-15"
         classification = "TLP:CLEAR"
         

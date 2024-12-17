@@ -3,7 +3,7 @@ rule sekoiaio_apt_toneshell_loader {
         id = "b4bf284b-cab6-455e-a1c1-ad341d43bfdd"
         version = "1.0"
         description = "Detects loader of ToneShell (exception based)"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-10-02"
         classification = "TLP:CLEAR"
         hash = "41e0d172d900344a3692b88fff7527d9"

@@ -3,7 +3,7 @@ rule sekoiaio_apt_shadowpad_first_called_function {
         id = "3ce1ffd3-5c30-4b36-b7cc-c9fa873ebc25"
         version = "1.0"
         description = "Detects entrypoint of shadowpad"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-01-30"
         classification = "TLP:CLEAR"
         

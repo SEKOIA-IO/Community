@@ -3,7 +3,7 @@ rule sekoiaio_loader_fakebat_initial_powershell_may24 {
         id = "adf0e4fc-fa98-470b-9535-bd30d0bdb3aa"
         version = "1.0"
         description = "Finds FakeBat initial PowerShell script downloading and executing the next-stage payload."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-05-28"
         modification_date = "2024-06-21"
         classification = "TLP:CLEAR"

@@ -3,7 +3,7 @@ rule sekoiaio_tool_rubeus_strings {
         id = "df1860d0-ec34-4c2d-bd83-5f16b26d075c"
         version = "1.0"
         description = "Detects Rubeus"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-03-22"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_bumblebee_loader {
         id = "8fd795c7-6896-498c-a892-de9da6427b60"
         version = "1.0"
         description = "Detect the BUMBLEBEE loader"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-05-23"
         classification = "TLP:CLEAR"
         

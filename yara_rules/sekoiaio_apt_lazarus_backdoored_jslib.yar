@@ -3,7 +3,7 @@ rule sekoiaio_apt_lazarus_backdoored_jslib {
         id = "73ffd449-93c8-494e-9c14-2e933b21a200"
         version = "1.0"
         description = "Detects InvisibleFerret based on common ressource."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-10-28"
         classification = "TLP:CLEAR"
         hash = "52e92be527690f4e63608cbc699e2f70"

@@ -3,7 +3,7 @@ rule sekoiaio_tool_powershell_unicorn {
         id = "287c1669-2ee1-488e-bf66-a99bfe309c90"
         version = "1.0"
         description = "Detects Unicorn Powershell"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-08-23"
         classification = "TLP:CLEAR"
         

@@ -3,7 +3,7 @@ rule sekoiaio_backdoor_powershellempire_batlauchers {
         id = "ad371665-ec59-45c8-9d99-2a675842c384"
         version = "1.0"
         description = "Detect BAT launchers for Empire"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-15"
         classification = "TLP:CLEAR"
         

@@ -6,7 +6,7 @@ rule sekoiaio_latrodectus_exports {
         description = "detection based on the exports"
         creation_date = "2024-07-03"
         classification = "TLP:CLEAR"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         id = "29076cf5-f391-42f2-918f-e1c929bd368d"
         
     condition:

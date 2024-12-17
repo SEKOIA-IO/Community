@@ -5,7 +5,7 @@ rule sekoiaio_nomercy {
         hash1 = "9ecc76d4cda47a93681ddbb67b642c2e1f303ab834160ab94b79b47381e23a65"
         hash2 = "557acce8b787aba87c8eeb939438b52c5ca953f28ad680a7faeb2b3046d3fda0"
         description = "Detect NoMercy sample version up to 1.1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-07-11"
         classification = "TLP:CLEAR"
         reference = "https://blog.cyble.com/2022/07/07/nomercy-stealer-adding-new-features/"

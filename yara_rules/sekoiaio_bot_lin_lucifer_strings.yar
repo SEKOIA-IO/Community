@@ -3,7 +3,7 @@ rule sekoiaio_bot_lin_lucifer_strings {
         id = "c341b6d0-bc22-4a85-aebb-ed323487f524"
         version = "1.0"
         description = "Catch Lucifer DDoS - lin version - malware based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-09-24"
         classification = "TLP:CLEAR"
         

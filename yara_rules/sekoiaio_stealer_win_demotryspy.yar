@@ -2,7 +2,7 @@ rule sekoiaio_stealer_win_demotryspy {
     meta:
         id = "70af0e40-b177-49a3-bff4-723f3f4aa375"
         version = "1.0"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-02-09"
         classification = "TLP:CLEAR"
         reference = "https://paper.seebug.org/3115/"

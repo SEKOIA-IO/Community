@@ -3,7 +3,7 @@ rule sekoiaio_tool_tokenplayer_strings {
         id = "74ed8812-f113-47a9-9ff2-6cbe2746ee11"
         version = "1.0"
         description = "Detects TokenPlayer based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2024-11-04"
         classification = "TLP:CLEAR"
         hash = "f01eae4ee3cc03d621be7b0af7d60411"

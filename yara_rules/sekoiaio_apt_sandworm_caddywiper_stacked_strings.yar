@@ -3,7 +3,7 @@ rule sekoiaio_apt_sandworm_caddywiper_stacked_strings {
         id = "7750c4b6-5781-4b1c-8200-cbce9f18aa56"
         version = "2.0"
         description = "Detects stacked strings used in the wiper."
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-06"
         classification = "TLP:CLEAR"
         

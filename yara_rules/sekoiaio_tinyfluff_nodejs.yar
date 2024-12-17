@@ -3,7 +3,7 @@ rule sekoiaio_tinyfluff_nodejs {
         id = "ca8cbd90-f275-4442-8354-b8b069e2efc3"
         version = "1.0"
         description = "Detect TinyFluff backdoor by OldGremlin"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-20"
         classification = "TLP:CLEAR"
         reference = "https://blog.group-ib.com/oldgremlin_comeback"

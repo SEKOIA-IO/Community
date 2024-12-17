@@ -3,7 +3,7 @@ rule sekoiaio_apt_unk_hrserv_memory_commands_strings {
         id = "1b5f442a-e758-4bd5-a612-8b504a542d29"
         version = "1.0"
         description = "Detects HrServ web shell memory commands"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-11-23"
         classification = "TLP:CLEAR"
         

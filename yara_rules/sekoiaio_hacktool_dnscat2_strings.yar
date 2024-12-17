@@ -3,7 +3,7 @@ rule sekoiaio_hacktool_dnscat2_strings {
         id = "9655cdd7-c7fe-4033-bdd9-bdfcfd2bf827"
         version = "1.0"
         description = "Detects DNSCat2 based on strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-25"
         classification = "TLP:CLEAR"
         

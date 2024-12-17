@@ -3,7 +3,7 @@ rule sekoiaio_ransomware_win_lorenz {
         id = "6936cc61-efe5-4d13-b76f-e808ab331457"
         version = "1.1"
         description = "Detect the Lorenz ransomware"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-02-10"
         classification = "TLP:CLEAR"
         reference = "https://www.cybereason.com/blog/cybereason-vs.-lorenz-ransomware"

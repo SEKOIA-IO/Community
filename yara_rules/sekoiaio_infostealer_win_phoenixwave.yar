@@ -3,7 +3,7 @@ rule sekoiaio_infostealer_win_phoenixwave {
         id = "67c05ea8-2f1b-4c60-b108-e05d7d0c6508"
         version = "1.0"
         description = "Detect the PhoenixWave infostealer based on specific strings"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2022-04-07"
         classification = "TLP:CLEAR"
         

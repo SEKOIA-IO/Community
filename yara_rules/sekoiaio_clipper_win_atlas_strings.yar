@@ -3,7 +3,7 @@ rule sekoiaio_clipper_win_atlas_strings {
         id = "f08c6af6-c325-4f7d-8686-575b25550d6a"
         version = "1.0"
         description = "Detects Atlas Clipper"
-        source = "Sekoia.io"
+        author = "Sekoia.io"
         creation_date = "2023-07-10"
         classification = "TLP:CLEAR"
         
