@@ -1,0 +1,44 @@
+version: 2.0
+uuid: 695011ce-6c09-468b-b6ad-46768ab812d8
+rule: Suspicious Email Attachment Received
+description: >-
+  Detects email containing a suspicious file as an attachment, based on its extension.
+sources: https://attack.mitre.org/techniques/T1566/001/ https://www.microsoft.com/en-us/security/blog/2024/10/29/midnight-blizzard-conducts-large-scale-spear-phishing-campaign-using-rdp-files/
+effort: advanced
+detection:
+  email:
+    email.from.address: '*'
+  file:
+    file.name|endswith: 
+      - '.bat'
+      - '.dll'
+      - '.exe'
+      - '.hta'
+      - '.library-ms'
+      - '.ps1'
+      - '.rdp'
+  email_attachment:
+    email.attachments.file.extension: 
+      - 'bat'
+      - 'dll'
+      - 'exe'
+      - 'hta'
+      - 'library-ms'
+      - 'ps1'
+      - 'rdp'
+  filter:
+    event.action:
+      - 'discard'
+      - 'reject'
+  condition: (email and file) or (email_attachment and not filter)
+alert_category: fraud
+alert_type: phishing
+alert_severity: 50
+attack:
+  - T1566.001
+  - T1039
+data_sources:
+  - Email gateway
+  - Mail server
+similarity_strategy:
+  - file.name

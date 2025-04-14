@@ -1,0 +1,26 @@
+version: 2.0
+uuid: 68c9b077-0a3f-4b95-975d-1080c67c6cc8
+rule: Dynamic DNS Contacted 
+description: >-
+  Detect communication with dynamic dns domain. This kind of domain is often used by attackers. This rule can trigger false positive in non-controlled environment because dynamic dns is not always malicious.
+false_positives: Check the domain reputation (if legitimate or malicious). 
+sources: https://umbrella.cisco.com/blog/on-the-trail-of-malicious-dynamic-dns-domains
+effort: master 
+detection:
+  selection:
+    sekoiaio.any_tag|contains: "dynamic-dns"
+  condition: selection
+alert_category: malicious-traffic
+alert_type: exfiltration 
+alert_severity: 20
+attack:
+  - T1071
+tags:
+  - Sekoia.io tag enrichment 
+data_sources:
+  - DNS records
+  - Netflow/Enclave netflow
+  - Network protocol analysis
+  - Packet capture
+  - Process use of network
+  - Web logs
