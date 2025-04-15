@@ -1,0 +1,157 @@
+version: 2.0
+uuid: 009fb9b0-0947-4576-a6d9-3d0793e569c4
+rule: HTA Infection Chains
+description: >-
+  Detect the creation of a ZIP file and an HTA file as it is often used in infection chains. Furthermore it also detects the use of suspicious processes launched by explorer.exe combined with the creation of an HTA file, since it is also often used in infection chains (LNK - HTA for instance).
+sources: https://infosec.exchange/@rmceoin/110866230355761534
+effort: advanced
+correlation: |
+  name: explorer_cmd_or_zip
+  detection:
+    selection_zip:
+      - file.name|endswith: '.zip'
+      - file.extension: 'zip'
+    selection2:
+      host.name: '*'
+    filter_wrong_events:
+      - event.code:
+        - 4663
+        - 4662
+        - 23
+        - 26
+      - event.type:
+        - change
+        - deletion
+      - file.path|contains:
+        - '\Windows\CCM\CIDownloader\'
+        - '\Program Files\CYBERWATCH SAS\CyberwatchAgent\'
+        - '\ProgramData\Dell\SupportAssist\Agent\reports\'
+    selection_explorer:
+      process.parent.name: explorer.exe
+      process.name:
+        - 'powershell_ise.exe'
+        - 'copy.exe'
+        - 'xcopy.exe'
+        - 'curl.exe'
+        - 'wget.exe'
+        - 'ssh.exe'
+        - 'wermgr.exe'
+        - 'Microsoft.Workflow.Compiler.exe'
+        - 'arp.exe'
+        - 'msiexec.exe'
+        - 'atbroker.exe'
+        - 'bginfo.exe'
+        - 'bitsadmin.exe'
+        - 'cdb.exe'
+        - 'certutil.exe'
+        - 'cmd.exe'
+        - 'cmstp.exe'
+        - 'control.exe'
+        - 'cscript.exe'
+        - 'csi.exe'
+        - 'dnx.exe'
+        - 'dsget.exe'
+        - 'dsquery.exe'
+        - 'expand.exe'
+        - 'forfiles.exe'
+        - 'fsi.exe'
+        - 'ftp.exe'
+        - 'gpresult.exe'
+        - 'hostname.exe'
+        - 'ieexec.exe'
+        - 'iexpress.exe'
+        - 'installutil.exe'
+        - 'ipconfig.exe'
+        - 'mshta.exe'
+        - 'msxsl.exe'
+        - 'nbtstat.exe'
+        - 'net.exe'
+        - 'net1.exe'
+        - 'netsh.exe'
+        - 'netstat.exe'
+        - 'nltest.exe'
+        - 'odbcconf.exe'
+        - 'ping.exe'
+        - 'powershell.exe'
+        - 'pwsh.exe'
+        - 'qprocess.exe'
+        - 'quser.exe'
+        - 'qwinsta.exe'
+        - 'rcsi.exe'
+        - 'reg.exe'
+        - 'regasm.exe'
+        - 'regsvcs.exe'
+        - 'regsvr32.exe'
+        - 'replace.exe'
+        - 'sc.exe'
+        - 'schtasks.exe'
+        - 'systeminfo.exe'
+        - 'tasklist.exe'
+        - 'tracert.exe'
+        - 'whoami.exe'
+        - 'wmic.exe'
+        - 'wscript.exe'
+        - 'xwizard.exe'
+        - 'rundll32.exe'
+        - 'hh.exe'
+        - 'msdt.exe'
+      host.name: '*'
+    filter1:
+      process.command_line|contains:
+        - '9aa46009-3ce0-458a-a354-715610a075e6' # https://strontic.github.io/xcyclopedia/library/clsid_9aa46009-3ce0-458a-a354-715610a075e6.html
+        - 'LiteTouch.wsf'
+        - 'smsbkup.exe'
+        - 'cyberwatch-agent.exe'
+    condition: ((selection_zip and selection2) and not 1 of filter_*) or (selection_explorer and not filter1)
+  ---
+  name: hta_created
+  detection:
+    selection:
+      - file.name|endswith:
+        - .hta
+      - file.extension:
+        - hta
+    selection2:
+      host.name: '*'
+    filter_wrong_events:
+      - event.code:
+        - 4663
+        - 4662
+        - 23
+        - 26
+      - event.type:
+        - change
+        - deletion
+      - process.command_line|contains: 
+        - 'LiteTouch.wsf'
+        - 'smsbkup.exe'
+        - 'cyberwatch-agent.exe'
+      - file.path|contains:
+        - 'WCFPUblisher'
+        - '\Trend Micro\'
+        - 'Bentley'
+        - 'ProjectWise'
+        - '\Program Files\HP\HP'
+        - 'HPSolutionsPortal'
+    condition: (selection and selection2) and not 1 of filter_*
+  ---
+  action: correlation
+  type: temporal
+  rule:
+    - explorer_cmd_or_zip
+    - hta_created
+  group-by:
+    - host.name
+  timespan: 2m
+  ordered: false
+alert_category: malicious-code
+alert_type: virus
+alert_severity: 70
+attack:
+  - T1204.001
+data_sources:
+  - Process monitoring
+  - Windows event logs
+  - File monitoring
+tags:
+  - Correlation

@@ -1,0 +1,46 @@
+version: 2.0
+uuid: 5b4578b4-8c19-431a-a4f6-fc9e6223fb61
+rule: Suspicious PowerShell Keywords
+description: >-
+  Detects keywords that could indicate the use of some PowerShell exploitation framework.
+false_positives: Software (e.g. PSSoftware) or PowerShell scripts to manage resources (e.g. Microsoft SQL Server)
+sources: https://github.com/SigmaHQ/sigma/tree/master/rules
+effort: advanced
+detection:
+  scriptblocktext:
+    action.properties.ScriptBlockText|contains:
+      - "System.Reflection.Assembly.Load($"
+      - "[System.Reflection.Assembly]::Load($"
+      - "[Reflection.Assembly]::Load($"
+      - "System.Reflection.AssemblyName"
+      - "Reflection.Emit.AssemblyBuilderAccess"
+      - "Runtime.InteropServices.DllImportAttribute"
+      - "SuspendThread"
+      - "DefineDynamicModule"
+      - "GetDelegateForFunctionPointer"
+      - "System.Reflection.CallingConventions"
+  process:
+    process.command_line|contains:
+      - "System.Reflection.Assembly.Load($"
+      - "[System.Reflection.Assembly]::Load($"
+      - "[Reflection.Assembly]::Load($"
+      - "System.Reflection.AssemblyName"
+      - "Reflection.Emit.AssemblyBuilderAccess"
+      - "Runtime.InteropServices.DllImportAttribute"
+      - "SuspendThread"
+      - "DefineDynamicModule"
+      - "GetDelegateForFunctionPointer"
+      - "System.Reflection.CallingConventions"
+  filter:
+    - action.properties.ScriptBlockText|contains: 'ProgramData\N-Able Technologies\AutomationManager'
+  condition: (scriptblocktext or process) and not filter
+alert_category: malicious-code
+alert_type: malware
+alert_severity: 60
+attack:
+  - T1059.001
+data_sources:
+  - Windows event logs
+  - PowerShell logs
+tags:
+  - PowerShell

@@ -1,0 +1,42 @@
+version: 2.0
+uuid: d62f9d25-1914-44a6-8604-4a99c8baf13c
+rule: Mshta Suspicious Child Process
+description: >-
+  Detects the use of various web request methods executed remotely via Windows PowerShell
+sources: https://github.com/pr0xylife/Qakbot/blob/main/Qakbot_BB12_03.02.2023.txt
+effort: intermediate
+detection:
+  selection:
+    process.command_line: '*'
+    process.parent.name: mshta.exe
+    process.parent.command_line|contains:
+      - 'http'
+      - 'script'
+      - '.hta'
+    process.name:
+      - cmd.exe
+      - powershell.exe
+      - powershell_ise.exe
+      - curl.exe
+      - wget.exe
+      - rundll32.exe
+      - regsvr32.exe
+      - cscript.exe
+      - wscript.exe
+      - bitsadmin.exe
+  filters:
+    process.command_line|contains:
+      - '.txt'
+      - '.json'
+      - 'printui.dll'
+  condition: selection and not filters
+alert_category: intrusions
+alert_type: system-compromise
+alert_severity: 50
+similarity_strategy:
+  - host.name
+attack:
+  - T1059.001
+data_sources:
+  - Windows event logs
+  - Process monitoring

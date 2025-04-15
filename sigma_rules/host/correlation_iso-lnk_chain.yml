@@ -1,0 +1,163 @@
+version: 2.0
+uuid: b833f0dc-b682-4151-9f75-db2fc16e6e7f
+rule: ISO LNK Infection Chain
+description: >-
+  Detection of an ISO (or any other similar archive file) downloaded file, followed by a child-process of explorer, which is characteristic of an infection using an ISO containing an LNK file. For events with `host.name`.
+sources: https://www.botconf.eu/botconf-presentation-or-article/when-a-botnet-cries-detecting-botnets-infection-chains/
+effort: master
+correlation: |
+  name: iso_created
+  detection:
+    selection:
+      - file.name|endswith:
+        - .img
+        - .iso
+        - .vhd
+        - .vhdx
+        - .xz
+      - file.extension:
+        - img
+        - iso
+        - vhd
+        - vhdx
+        - xz
+    group:
+      host.name: '*'
+    filter_type:
+      - event.type:
+        - change
+        - deletion
+      - event.code:
+        - 4663
+        - 4662
+        - 23
+        - 26
+    filter_process_cmdline:
+      process.command_line|contains:
+        - '\Program Files\FSLogix\Apps\frxsvc.exe'
+        - '\Program Files\Citrix\User Profile Manager\UserProfileManager.exe'
+    filter_path_contains:
+      file.path|contains:
+        - '\Sophos\Endpoint Defense\' # Sophos EDR
+        - 'Calibre\Calibre\app\' # Calibre soft
+        - '\Docker\Docker\resources\' # Docker
+        - '\appdata\local\docker\wsl\' # Docker
+        - '.android\avd\' # Google Android
+        - '\Windows\WinSxS\' # Windows install
+        - '\ProgramData\Microsoft\Windows\Containers\' # Windows Sandbox
+        - '\ProgramData\LANDesk\timber\sandboxes\'
+        - '\AppData\Local\Microsoft\WDAG\'
+        - '\AppData\Local\Packages\CanonicalGroupLimited'
+        - '\Trend Micro\OfficeScan Client\'
+        - '\Trend Micro\Security Agent\'
+        - '\Autodesk\'
+        - '\AppData\Local\Microsoft\Windows\Notifications\wpnidm\'
+        - '\VeeamBackup'
+        - '\AppData\Local\Programs\Python\'
+        - '\WWAN\FwSwitchBin\'
+        - '\WWAN\FwSwitch bin\'
+        - '\WIN\TouchpadFW\'
+        - '\Program Files\WSL\system.vhd'
+        - '/var/log/apt/'
+        - '\Program Files\IBM\SPSS Statistics\'
+    filter_path_endswith:
+      file.path|endswith:
+        - '\swap.vhdx'
+        - 'pkl.xz' # Python object serialization compressed
+    condition: (selection and group) and not 1 of filter_*
+  ---
+  name: explorer_cmd
+  detection:
+    selection:
+      process.parent.name: explorer.exe
+      process.name:
+        - 'powershell_ise.exe'
+        - 'copy.exe'
+        - 'xcopy.exe'
+        - 'curl.exe'
+        - 'wget.exe'
+        - 'ssh.exe'
+        - 'wermgr.exe'
+        - 'Microsoft.Workflow.Compiler.exe'
+        - 'arp.exe'
+        - 'msiexec.exe'
+        - 'atbroker.exe'
+        - 'bginfo.exe'
+        - 'bitsadmin.exe'
+        - 'cdb.exe'
+        - 'certutil.exe'
+        - 'cmd.exe'
+        - 'cmstp.exe'
+        - 'control.exe'
+        - 'cscript.exe'
+        - 'csi.exe'
+        - 'dnx.exe'
+        - 'dsget.exe'
+        - 'dsquery.exe'
+        - 'forfiles.exe'
+        - 'fsi.exe'
+        - 'ftp.exe'
+        - 'gpresult.exe'
+        - 'hostname.exe'
+        - 'ieexec.exe'
+        - 'iexpress.exe'
+        - 'installutil.exe'
+        - 'ipconfig.exe'
+        - 'mshta.exe'
+        - 'msxsl.exe'
+        - 'nbtstat.exe'
+        - 'net.exe'
+        - 'net1.exe'
+        - 'netsh.exe'
+        - 'netstat.exe'
+        - 'nltest.exe'
+        - 'odbcconf.exe'
+        - 'ping.exe'
+        - 'powershell.exe'
+        - 'pwsh.exe'
+        - 'qprocess.exe'
+        - 'quser.exe'
+        - 'qwinsta.exe'
+        - 'rcsi.exe'
+        - 'reg.exe'
+        - 'regasm.exe'
+        - 'regsvcs.exe'
+        - 'regsvr32.exe'
+        - 'sc.exe'
+        - 'schtasks.exe'
+        - 'systeminfo.exe'
+        - 'tasklist.exe'
+        - 'tracert.exe'
+        - 'whoami.exe'
+        - 'wmic.exe'
+        - 'wscript.exe'
+        - 'xwizard.exe'
+        - 'rundll32.exe'
+        - 'hh.exe'
+        - 'msdt.exe'
+      host.name: '*'
+    filter1:
+      process.command_line|contains:
+        - '9aa46009-3ce0-458a-a354-715610a075e6'
+        - '\Windows\System32\LogiLDA.dll,LogiFetch'
+    condition: selection and not filter1
+  ---
+  action: correlation
+  type: temporal
+  rule:
+    - iso_created
+    - explorer_cmd
+  group-by:
+    - host.name
+  timespan: 5m
+  ordered: true
+alert_category: malicious-code
+alert_type: virus
+alert_severity: 70
+attack:
+  - T1204.001
+data_sources:
+  - Process monitoring
+  - Windows event logs
+tags:
+  - Correlation

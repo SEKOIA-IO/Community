@@ -1,0 +1,28 @@
+version: 2.0
+uuid: 7b4dabe9-63e4-4361-8623-f47d96649722
+rule: Hiding Files With Attrib.exe
+description: >-
+  Detects usage of attrib.exe to hide files from users.
+false_positives: igfxCUIService.exe hiding *.cui files via .bat script (attrib.exe a child of cmd.exe and igfxCUIService.exe is the parent of the cmd.exe). msiexec.exe hiding desktop.ini.
+sources: https://github.com/SigmaHQ/sigma/tree/master/rules
+effort: advanced
+detection:
+  selection1:
+    process.name: 'attrib.exe'
+    process.command_line|contains: ' +h '
+  selection2:
+    process.command_line|contains: '+R +H +S +A \*.cui'
+  selection3:
+    process.command_line|contains: '\desktop.ini'
+  selection4:
+    process.command_line|contains: 'c:\windows\temp'
+  condition: selection1 and not (selection2 or selection3 or selection4)
+alert_category: intrusions
+alert_type: system-compromise
+alert_severity: 50
+attack:
+  - T1564.001
+data_sources: 
+  - Process command-line parameters
+  - Process monitoring
+  - Windows event logs
