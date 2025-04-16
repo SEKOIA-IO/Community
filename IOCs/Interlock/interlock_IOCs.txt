@@ -1,0 +1,212 @@
+# Indicators
+
+## Fake Updater
+
+576d07cc8919c68914bf08663e0afd00d9f9fbf5263b5cccbded5d373905a296
+f962e15c6efebb3c29fe399bb168066042b616affddd83f72570c979184ec55c
+09793a85d372f044fe53c4b47c47049c6bc13d1141334727800b2e32e6d92342
+dee5915b76dd3bae3d3cedc0c1d1b055daab5852cba4868c92eb88b9a84a0b00
+5627457a12c562b7a08f634878758d268b9fde44ce35292e887ca13741c5f942
+3a560ca66f61ba5dceb6016703e0346ff8fe1144bd356a40f740149a2a878fe5
+f6c7ecff7b07cba12bd79833a23d12d5fcd12a75a3394d923b994ba0ed535db3
+7890b116d13a52efe696ce1e2c0ed83029775cf4bea836ce551e71d222ee116f
+e668e30b4e111e16b4017cd49dd90c39f9988f8a44cd9cc16b95b7b451862b74
+be6e5cede4e6a8b807062db211eb3e8825a6cc00d71ddf7bcd63971d76219a25
+05c99f2c1a218ce4a985fd03a3a510c2eaf08ef4772f93ef4f2d5da6cd9b86a1
+25a1d86248b7cf5f870dbc9960ce336266473bd40be3a8dcb35e6be88c9df261
+2f03b5d1081dfde3d1296dace404b362188b4a941530746d7b14711b42bc53ad
+b36c20c757c4780f89272ce224a29a5a61b62733367893574196debde19383fe
+d1cd8c4574c3290ae16bf4e718c5e89dadef5b2fd4eea2211a19a6180ff8ee5b
+eaca86a3f397d10d9188be9fcd2af1a7a30a9b573b2282b0b8300efeb5ff1efd
+f1df43fe0f95de6badfb710827cdc7272e6654f108ef2cfcb2a01aca089f0624
+
+# ClickFix PowerShell Loaders
+
+5c697162527a468a52c9e7b7dc3257dae4ae5142db62257753969d47f1db533e
+eb587b2603dfc14b420865bb862fc905cb85fe7b4b5a781a19929fc2da88eb34
+958ff93e92ee8bed7819555603ea612f263c1b9c673566f5c506288b5318eff8
+91fcf70c1775dcaaaa4d3de17d87d67976b0cec9939dedfb86f093ab388ed3b0
+e69491a61ebc4a9ffc17884063c69a5489a83dd6d71295b4216962a43242a6c8
+04bae0045b86456d6000378a2e37d58b1fa617101543ad23bcec862300b87be3
+71f773b4e9178dcedd402c94fb9384aea6312d8a93f95f3f9dc1249fd4933658
+888842bc1f6fcb354431919080858c623def305bed2214f11b93591859d4dee2
+045c041354a6d6b47e91e1124a7dc77397c18e0695ccbc73f87b12a0a1079d46
+6e4ca569ab809ba3545860d26180316366803c231a2e3a66b4906adc5826a397
+074d26b9b128be8e4a77d73dcac31307f28b0e8b8097622c02267be349fe4b4f
+a760e28145620fccd072a415031cec4036fc09e8530c93d85f5d1509d62fe551
+62971070d6a8b9fca8a50b9cd8e91545bfcc2c2b6665f134c112081f54e6bf31
+17db9d121fb3eb5033307fdb53df67402bcbc9d8970f45d8142b78c83769b7af
+60af8899b49013e9deb1d5cac58562d7ed12bfda1187627e9d25714b26218f0d
+fdd4e0bb2a4475e4e44154d7bf29490de98496553af3c8807f999ab8b920263f
+7d9f3701bf6f43ab84ce02ce4915dc0703504263db2e1eb65f4f7c791565f731
+f613966b6ed1f080aacba005b1e48268ef662fffdf9894382299645f42900848
+e307d3e9b8de59311c692b2ab0ee864f0d469066e041141d577b65b43a4b3ffa
+351b8a0081fd9f5c35497f5183fb14aef73c1af75628ae689c9218689db01cd9
+7501623230eef2f6125dcf5b5d867991bdf333d878706d77c1690b632195c3ff
+31f49c74046cc61bf102f3b9f2ce06471b0372d794139325e71c2dacca7bd00a
+
+## Interlock RAT
+
+1105a3050e6c842fb9411d4f21fd6fdb119861c15f7743e244180a4e64b19b83
+299a8ef490076664675e3b52d6767bf89ddfa6accf291818c537a600a96290d2
+2faef6a1a0c00f8d44955c243df3c098f0fccd20c59677d274a43023002a4e90
+39539766ae8f5256e6f21d853b8b7ea8f003d29f6d7cd57d1ecb621dc2b97c89
+464ca510a465a38689bd61988b7d366a8fd7e26ca805850b3adb418e95307601
+61f8224108602eb1f74cb525731c9937c2ffd9a7654cb0257624507c0fdb5610
+68366ced818508de187167d8f9106be7801b8dcf1f03ae169459c7336d6e69de
+8251186b3196e3fefb0dbfcf71dfccc2c1cd66515686c9af8a6fb48766c739c6
+9031652af104aa207d6dad1c402db86c557323b2567c0cc93d022f01ae926e9a
+9e387f1564f9e38ba87dbafbde3731db2e844ff3800500d6707028bb065c070b
+b3a512b9f4705d1947fbbbc42accdbd6bd95af1b07cec09d75af501746fecdd5
+f02622129e7774b7673e2a9f62bb4a208d4a142b5d925532c7920481549bd07b
+61d092e5c7c8200377a8bd9c10288c2766186a11153dcaa04ae9d1200db7b1c5
+b35da0c1a515286a2b3021cf518140a59a63b470a9d611303304918be9354d68
+
+## Keylogger
+
+5cbc2ae758043bb58664c28f32136e9cada50a8dc36c69670ddef0a3ef6757d8
+df41085a8aa9ee9da6a03db08ad910b6ef5fcdc8fee7ebb19744331c5e70c782
+d4f3d0446e08dbf1a7ccb6da09e756ff75eae3b04dafe2c2a69d6919052d2ebf
+
+## BerserkStealer
+
+eb1cdf3118271d754cf0a1777652f83c3d11dc1f9a2b51e81e37602c43b47692
+a5623b6a6f289bb328e4007385bdb1659407a9e825990a0faaef3625a2e782cf
+
+## LummaStealer
+
+4672fe8b37b71be834825a2477d956e0f76f7d2016c194f1538139d21703fd6e
+
+## Windows Interlock ransomware
+
+4a97599ff5823166112d9221d0e824af7896f6ca40cd3948ec129533787a3ea9
+33dc991e61ba714812aa536821b073e4274951a1e4a9bc68f71a802d034f4fb9
+b85586f95412bc69f3dceb0539f27c79c74e318b249554f0eace45f3f073c039
+a26f0a2da63a838161a7d335aaa5e4b314a232acc15dcabdb6f6dbec63cda642
+0fff8fb05cee8dc4a4f7a8f23fa2d67571f360a3025b6d515f9ef37dfdb4e2ea
+
+## Small autoremove DLL used by the ransomware
+
+c9920e995fbc98cd3883ef4c4520300d5e82bab5d2a5c781e9e9fe694a43e82f
+
+## Linux Interlock ransomware
+
+28c3c50d115d2b8ffc7ba0a8de9572fbe307907aaae3a486aabd8c0266e9426f
+
+## Data Leak Site 
+
+http://ebhmkoohccl45qesdbvrjqtyro2hmhkmh6vkyfyjjzfllm3ix72aqaid[.]onion
+
+## Backdoor C2
+
+### Cluster 1
+
+23.95.182[.]59
+195.201.21[.]34
+159.223.46[.]184
+
+### Cluster 2
+
+23.227.203[.]162
+65.109.226[.]176
+65.38.120[.]47
+
+### Cluster 3
+
+216.245.184[.]181
+212.237.217[.]182
+168.119.96[.]41
+
+### Cluster 4
+
+216.245.184[.]170
+65.108.80[.]58
+84.200.24[.]41
+
+### Cluster 5
+
+206.206.123[.]65
+49.12.102[.]206
+193.149.180[.]158
+
+### Cluster 6
+
+85.239.52[.]252
+5.252.177[.]228
+80.87.206[.]189
+
+### Cluster 7
+
+65.108.80[.]58
+212.104.133[.]72
+140.82.14[.]117
+
+### Cluster 8
+
+64.94.84[.]85
+49.12.69[.]80
+96.62.214[.]11
+
+### Cluster 9
+
+177.136.225[.]153
+188.34.195[.]44
+45.61.136[.]202
+
+## Compromised URLs
+
+http://topsportracing[.]com/wp-az
+http://topsportracing[.]com/az10
+https://airbluefootgear[.]com/wp-includes/images/xits.php
+https://apple-online[.]shop/ChromeSetup.exe 
+https://apple-online[.]shop/MSTeamsSetup.exe
+https://apple-online[.]shop/MicrosoftEdgeSetup.exe
+
+## ClickFix URLs
+
+https://microsoft-msteams[.]com/additional-check.html
+https://microstteams[.]com/additional-check.html
+https://advanceipscaner[.]com/additional-check.html
+https://ecologilives[.]com/additional-check.html
+http://162.55.47[.]21:8080/1742688720
+http://64.95.10[.]95:8080/misteams
+http://64.95.10[.]95:8080/recaptch
+http://45.61.136[.]228:8080/recaptha
+https://album-anthony-rn-submission[.]trycloudflare.com/25423565
+https://spa-step-hopkins-islands[.]trycloudflare.com/erfgtrtt
+https://metro-offset-imposed-behind[.]trycloudflare.com/ytjstast
+https://santa-reflection-capitol-classifieds[.]trycloudflare.com/12341234
+https://diff-beats-belize-chapter[.]trycloudflare.com/12341234
+https://phones-pichunter-businesses-drop[.]trycloudflare.com/12341234
+https://lcd-add-palace-switching[.]trycloudflare.com/12341234
+https://forest-offensive-height-letters[.]trycloudflare.com/12341234
+https://pub-motorola-viking-charger[.]trycloudflare.com/12341234
+https://dc-broader-green-norwegian[.]trycloudflare.com/12341234
+
+## PowerShell backdoor C2 domains
+
+refrigerator-cheers-indicator-ferrari[.]trycloudflare.com
+analytical-russell-cincinnati-settings[.]trycloudflare.com
+bristol-weed-martin-know[.]trycloudflare.com
+speak-head-somebody-stays[.]trycloudflare.com
+photo-auction-visual-gains[.]trycloudflare.com
+suffering-arnold-satisfaction-prior[.]trycloudflare.com
+lancaster-sean-initial-ru[.]trycloudflare.com
+casting-advisors-older-invitations[.]trycloudflare.com
+sublime-forecasts-pale-scored[.]trycloudflare.com
+investigators-boxing-trademark-threatened[.]trycloudflare.com
+fotos-phillips-princess-baker[.]trycloudflare.com
+washing-cartridges-watts-flags[.]trycloudflare.com
+complement-parliamentary-chairs-hc[.]trycloudflare.com
+open-exceptions-cleared-feelings[.]trycloudflare.com
+medicine-podcasts-halo-expected[.]trycloudflare.com
+securities-variance-vocal-temporal[.]trycloudflare.com
+scientific-shown-desperate-ratio[.]trycloudflare.com
+views-ethics-orientation-roommate[.]trycloudflare.com
+pipe-hawaii-monkey-automatic[.]trycloudflare.com
+california-appeals-pilot-harper[.]trycloudflare.com
+una-idol-ta-missile[.]trycloudflare.com
+musicians-implied-less-model[.]trycloudflare.com
+strain-brighton-focused-kw[.]trycloudflare.com
+mortgage-i-concrete-origins[.]trycloudflare.com
+www.sublime-forecasts-pale-scored[.]trycloudflare.com
