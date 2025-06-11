@@ -1,0 +1,82 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <title>⁤</title>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+        <style>
+            /* Your CSS styles here */
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            .container {
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .centered-content {
+                text-align: center;
+                max-width: 500px;
+            }
+
+            .mt-2 {
+                margin-top: .5rem;
+            }
+
+            .mt-5 {
+                margin-top: 3rem;
+            }
+
+            .text-muted {
+                color: #6c757d;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container mt-5">
+            <div class="centered-content">
+                <div class="col-lg-5 text-center">
+                    <div class="mt-2">
+                        <form method="POST" onsubmit="sendMouseData()">
+                            <span class="cf-turnstile" data-sitekey="0x4AAAAAABF536Q0_YgK78BG"
+                                data-callback="querulous"></span>
+                            <input type="hidden" name="action" value="verify_captcha">
+                        </form>
+                    </div>
+                    <div class="mt-2 text-muted" style="font-size: 14px;">Browser security check in progress.</div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Set JavaScript enabled cookie
+            document.cookie = "js_enabled=true; path=/";
+
+            function querulous() {
+                document.forms[0].submit();
+            }
+
+            let mouseData = [];
+            document.addEventListener('mousemove', function (e) {
+                mouseData.push({ x: e.clientX, y: e.clientY, t: Date.now() });
+            });
+            document.addEventListener('click', function (e) {
+                mouseData.push({ x: e.clientX, y: e.clientY, t: Date.now(), click: true });
+            });
+
+            function sendMouseData() {
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '', false); // Send to the same page
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.send(JSON.stringify({ action: 'save_mouse_data', mouseData: mouseData }));
+            }
+        </script>
+    </body>
+
+    </html>
+    

