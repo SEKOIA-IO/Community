@@ -328,5 +328,12 @@
         "workspace": ["Operation Center"],
         "description": "Automatically send an alert to Nybble Hub when a new alert is raised in SEKOIA.IO.",
         "tags": ["alerts", "nybble"]
+    },
+    {
+        "file": "get_additional_harfang_telemetry.json",
+        "name": "HarfangLab telemetry events",
+        "workspace": ["Operation Center"],
+        "description": "Retrieve additional telemetry when an HarfangLab alert is raised",
+        "tags": ["alerts", "enrich", "events"]
     }
 ]
