@@ -6,7 +6,7 @@
             "alerts",
             "IOC Collection",
             "blocklist"
-          ],
+        ],
         "workspace": "Operation Center",
         "description": "Add the destination ip addresses from the events linked to the alert to an IOC collection"
     },
@@ -17,7 +17,7 @@
             "alerts",
             "IOC Collection",
             "blocklist"
-          ],
+        ],
         "workspace": "Operation Center",
         "description": "Add the source ip addresses from the events linked to the alert to an IOC collection"
     },
@@ -31,7 +31,7 @@
         ],
         "workspace": "Operation Center",
         "description": "Add the domains from the events linked to the alert to an IOC collection"
-    },    
+    },
     {
         "file": "create_jira_ticket_on_alert.json",
         "name": "Jira ticket on alert",
@@ -41,7 +41,9 @@
             "Jira"
         ],
         "description": "Create Jira ticket when new alerts are created.",
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "msteams_notification.json",
@@ -52,7 +54,9 @@
             "MS Teams"
         ],
         "description": "Notify by Microsoft Teams when new alerts are created.",
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "URL_scan_VirusTotal_Enrichement.json",
@@ -62,7 +66,9 @@
             "alerts",
             "enrichement"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "HTTP_request_Remediation.json",
@@ -72,7 +78,9 @@
             "alerts",
             "webhook"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "email_notification_on_alert_webhook.json",
@@ -83,7 +91,9 @@
             "notifications",
             "webhook"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "mattermost_notification_on_alert.json",
@@ -93,7 +103,9 @@
             "alerts",
             "notifications"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "alert_webhook_internet_scan.json",
@@ -103,7 +115,9 @@
             "alerts",
             "webhook"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "playbook_adware.json",
@@ -112,7 +126,9 @@
         "tags": [
             "alerts"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "urgency_to_0_on_rejected.json",
@@ -121,7 +137,9 @@
         "tags": [
             "alerts"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "VirusTotal_Enrichement.json",
@@ -131,14 +149,21 @@
             "alerts",
             "enrichment"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "Enrich_alerts_with_VirusTotal_Hash.json",
         "name": "Scan for hash on VirusTotal",
-        "workspace": ["Operation Center"],
+        "workspace": [
+            "Operation Center"
+        ],
         "description": "Enrich to check if this file.hash.sha1 is known from VirusTotal, directly from SEKOIA.IO.",
-        "tags": ["alerts", "enrichement"]
+        "tags": [
+            "alerts",
+            "enrichement"
+        ]
     },
     {
         "file": "Reject_old_alerts.json",
@@ -148,7 +173,9 @@
             "alerts",
             "cron"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "Enrich_with_IKnow_What_You_Download.json",
@@ -159,7 +186,9 @@
             "webhook",
             "enrichment"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "Enrich_alerts_with_hostnames.json",
@@ -169,23 +198,29 @@
             "alerts",
             "enrichment"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "Shodan_search_to_observables.json",
         "name": "Shodan search to observables",
-        "workspace": ["Intelligence Center"],
+        "workspace": [
+            "Intelligence Center"
+        ],
         "description": "Get IP addresses from a shodan search and add it to Observable data base with a tag",
         "tags": [
-          "observable",
-          "shodan",
-          "TIP"
+            "observable",
+            "shodan",
+            "TIP"
         ]
     },
     {
         "file": "OSINT_to_observables.json",
         "name": "Generic Fetch OSINT to observable",
-        "workspace": ["Intelligence Center"],
+        "workspace": [
+            "Intelligence Center"
+        ],
         "description": "Retrieve observables from an OSINT to add it to observable database with a tag (eg: https://github.com/MISP/misp-warninglists/tree/main/lists)",
         "tags": [
             "observable",
@@ -196,25 +231,37 @@
     {
         "file": "create_alert_on_the_hive_automatic.json",
         "name": "Automatically create an alert on TheHive",
-        "workspace": ["Operation Center"],
+        "workspace": [
+            "Operation Center"
+        ],
         "description": "Automatically create an alert on TheHive when a new alert is raised in SEKOIA.IO.",
-        "tags": ["alerts", "thehive"]
+        "tags": [
+            "alerts",
+            "thehive"
+        ]
     },
     {
         "file": "create_alert_on_the_hive_manual.json",
         "name": "Manually create an Alert on TheHive",
-        "workspace": ["Operation Center"],
+        "workspace": [
+            "Operation Center"
+        ],
         "description": "Create an alert on TheHive via the alert page.",
-        "tags": ["alerts", "thehive"]
+        "tags": [
+            "alerts",
+            "thehive"
+        ]
     },
     {
         "file": "DigitalShadows_SearchLight_fetch_alerts.json",
         "name": "Fetch alerts from Digital Shadows SearchLight",
-        "workspace": ["Operation Center"],
+        "workspace": [
+            "Operation Center"
+        ],
         "description": "Synchronise alerts from Digital Shadows SearchLight to SEKOIA.IO events",
         "tags": [
-          "alerts",
-          "osint"
+            "alerts",
+            "osint"
         ]
     },
     {
@@ -231,48 +278,73 @@
     {
         "file": "imperva_waf_fetch_logs.json",
         "name": "Imperva WAF fetch logs",
-        "workspace": ["Operation Center"],
+        "workspace": [
+            "Operation Center"
+        ],
         "description": "Fetch events from Imperva Web Application Firewall and forward them to SEKOIA.IO intake",
-        "tags": ["events"]
+        "tags": [
+            "events"
+        ]
     },
     {
         "file": "forward_vadesecure_records.json",
         "name": "Forward Vade M365 email Events to SEKOIA.IO",
-        "workspace": ["Operation Center"],
+        "workspace": [
+            "Operation Center"
+        ],
         "description": "This playbook collect logs from 'Vade for M365' then push them to SEKOIA.IO",
-        "tags": ["events"]
+        "tags": [
+            "events"
+        ]
     },
     {
         "file": "Tranco_top_domains_to_observables.json",
         "name": "Tranco top domains to observables",
-        "workspace": ["Intelligence Center"],
+        "workspace": [
+            "Intelligence Center"
+        ],
         "tags": [
             "observables",
             "tranco",
             "TIP"
-         ],
-         "description": "Automatically import Tranco's top 1 000 000 domain names to observable database"
+        ],
+        "description": "Automatically import Tranco's top 1 000 000 domain names to observable database"
     },
     {
         "file": "forward_google_pubsub_events.json",
         "name": "Forward Google Pubsub records to SEKOIA.IO",
-        "workspace": ["Operation Center"],
+        "workspace": [
+            "Operation Center"
+        ],
         "description": "This playbook consumes records from Google Pubsub and push them to SEKOIA.IO",
-        "tags": ["google", "events"]
+        "tags": [
+            "google",
+            "events"
+        ]
     },
     {
         "file": "Enrich_alerts_with_AbuseIPDB.json",
         "name": "Enrich alerts with AbuseIPDB",
-        "workspace": ["Operation Center"],
+        "workspace": [
+            "Operation Center"
+        ],
         "description": "Enrich with AbuseIPDB to check if the IP is known from this service, directly from SEKOIA.IO.",
-        "tags": ["alerts", "enrichment"]
+        "tags": [
+            "alerts",
+            "enrichment"
+        ]
     },
     {
         "file": "Alerts_Shodan_Enrichment.json",
         "name": "Enrich with Shodan",
-        "workspace": ["Operation Center"],
+        "workspace": [
+            "Operation Center"
+        ],
         "description": "Enrich with Shodan to check if the IP is known from this service, directly from SEKOIA.IO.",
-        "tags": ["alerts", "enrichment"]
+        "tags": [
+            "alerts",
+            "enrichment"
+        ]
     },
     {
         "file": "slack_notification_on_alert.json",
@@ -282,14 +354,24 @@
             "alerts",
             "notifications"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "get_data_and_enrich_with_cloudflare.json",
         "name": "Get data from OSINT and enrich DNS names with cloudflare DNS over HTTPs API",
         "description": "Playbook to get data from OSINT and enrich it with CloudFlare DNS over HTTPs API. The playbook then upload observables to database.\n\nPlease configure 'Fetch Osint' node and 'Get domains from Fetch OSINT' jpath to get domains.",
-        "tags": ["observable", "cloudflare", "fetch osint", "enrich","TIP"],
-        "workspace": ["Intelligence Center"]
+        "tags": [
+            "observable",
+            "cloudflare",
+            "fetch osint",
+            "enrich",
+            "TIP"
+        ],
+        "workspace": [
+            "Intelligence Center"
+        ]
     },
     {
         "file": "CrowdSec_alert_enrichment.json",
@@ -300,7 +382,9 @@
             "alerts",
             "enrichment"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "Crowdstrike_dissemination.json",
@@ -310,7 +394,10 @@
             "CrowdStrike",
             "Dissemination"
         ],
-        "workspace": ["Operation Center", "Intelligence Center"]
+        "workspace": [
+            "Operation Center",
+            "Intelligence Center"
+        ]
     },
     {
         "file": "create_incident_on_cortex_xsoar.json",
@@ -320,20 +407,46 @@
             "alerts",
             "XSOAR"
         ],
-        "workspace": ["Operation Center"]
+        "workspace": [
+            "Operation Center"
+        ]
     },
     {
         "file": "send_alert_to_nybble_hub.json",
         "name": "Automatically send an alert to Nybble Hub",
-        "workspace": ["Operation Center"],
+        "workspace": [
+            "Operation Center"
+        ],
         "description": "Automatically send an alert to Nybble Hub when a new alert is raised in SEKOIA.IO.",
-        "tags": ["alerts", "nybble"]
+        "tags": [
+            "alerts",
+            "nybble"
+        ]
     },
     {
         "file": "get_additional_harfang_telemetry.json",
         "name": "HarfangLab telemetry events",
-        "workspace": ["Operation Center"],
+        "workspace": [
+            "Operation Center"
+        ],
         "description": "Retrieve additional telemetry when an HarfangLab alert is raised",
-        "tags": ["alerts", "enrich", "events"]
+        "tags": [
+            "alerts",
+            "enrich",
+            "events"
+        ]
+    },
+    {
+        "file": "push_iocs_to_xsiam.json",
+        "name": "Push Sekoia.io IOCs to Palo Alto XSIAM Collection",
+        "workspace": [
+            "Intelligence Center"
+        ],
+        "tags": [
+            "observables",
+            "XSIAM",
+            "Dissemination"
+        ],
+        "description": "Add Sekoia active IOCs in Palo Alto XSIAM Collection for detection"
     }
 ]
