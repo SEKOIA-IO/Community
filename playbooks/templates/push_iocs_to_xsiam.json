@@ -56,7 +56,7 @@
                 "headers": {
                     "Accept": "application/json",
                     "Content-Type": "application/json",
-                    "Authorization": "REDACTED_TO_REPLACED_WITH_API_KEY",
+                    "Authorization": "REPLACE_WITH_API_KEY",
                     "x-xdr-auth-id": "REPLACE_WITH_API_ID"
                 },
                 "verify_ssl": false,
