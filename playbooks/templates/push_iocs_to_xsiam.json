@@ -1,0 +1,77 @@
+{
+    "name": "Push Sekoia.io IOCs to Palo Alto XSIAM Collection",
+    "nodes": {
+        "0": {
+            "icon": "data:image/png;base64,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",
+            "name": "Feed Consumption",
+            "type": "trigger",
+            "outputs": {
+                "default": [
+                    "1"
+                ]
+            },
+            "position": {
+                "x": -520,
+                "y": -150
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "trigger_uuid": "ac6100ed-3fb7-4355-83ac-049c14aa44fd"
+        },
+        "1": {
+            "icon": "data:image/png;base64,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",
+            "name": "Transform Sekoia STIX to XSIAM",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "2"
+                ]
+            },
+            "position": {
+                "x": -518,
+                "y": 28
+            },
+            "arguments": {
+                "comment": "Valid from {valid_from} AND STIX Pattern: {pattern}",
+                "class_override": "{id}",
+                "stix_objects_path": "{{ node.0.stix_objects_path }}"
+            },
+            "action_uuid": "68a6bdfa-e0bc-46c6-9580-76a2b44163b0",
+            "module_uuid": "537e1880-5b6c-4b46-ae6c-f228cfc6c6e4"
+        },
+        "2": {
+            "icon": "data:image/png;base64,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",
+            "name": "Send batch to XSIAM",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "position": {
+                "x": -516,
+                "y": 220
+            },
+            "arguments": {
+                "url": "https://api-xxxxxxxxxxxxyourfqdn/public_api/v1/indicators/insert_jsons",
+                "json": "{\n    \"request_data\": {{ node.1.data }},\n    \"validate\": True\n}",
+                "method": "post",
+                "headers": {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json",
+                    "Authorization": "REDACTED_TO_REPLACED_WITH_API_KEY",
+                    "x-xdr-auth-id": "REPLACE_WITH_API_ID"
+                },
+                "verify_ssl": false,
+                "fail_on_http_error": true
+            },
+            "action_uuid": "40bcf3c0-aa8b-4111-9b4e-f3caffccb4e5",
+            "module_uuid": "5894985f-91eb-46db-9306-cc5ac6463d3d"
+        }
+    },
+    "description": "Add Sekoia active IOCs in Palo Alto XSIAM Collection for detection",
+    "workspace": "Operation Center",
+    "tags": [
+        "observables",
+        "XSIAM",
+        "Dissemination"
+    ],
+    "uuid": "7b81c7f7-7c9a-4882-ac26-5cb35446e1a0"
+}
