@@ -1,0 +1,15 @@
+flare-floss
+capstone==5.0.6
+cart==1.2.2
+pefile==2023.2.7
+requests==2.28.1
+flare-capa==9.2.1
+pycryptodome==3.19.0
+cryptography==3.3.2
+miasm==0.1.5
+pythonnet==3.0.3
+dncil==1.0.2
+dnfile==0.15.0
+lief==0.15.1
+beautifulsoup4==4.11.2
+lxml==5.4.0
