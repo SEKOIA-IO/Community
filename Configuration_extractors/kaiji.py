@@ -26,7 +26,7 @@ def check_ip(ioc: str) -> bool:
     else:
         return True
 
-def extract_b64_and_decode(data: bytes) -> str:
+def extract_b64_and_decode(data: bytes) -> Optional[str]:
     """
     If C2 is simply base64 encoded, it can be identified in the payload strings.
     The string is systematically placed after use ParseCertificate pattern
