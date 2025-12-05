@@ -34,6 +34,7 @@ from maco.model import ConnUsageEnum, CategoryEnum
 from maco import yara
 from ipaddress import IPv4Address, AddressValueError
 
+
 def check_ip(ioc: str) -> bool:
     """Use the built-in library ipadress to
     validate that the provided parameter `ioc`
@@ -45,6 +46,7 @@ def check_ip(ioc: str) -> bool:
         return False
     else:
         return True
+
 
 def custom_uri_extraction(uri: str) -> Tuple[str, int]:
     """Clean up a bit the URI, some decryption uncorrectly
@@ -59,9 +61,12 @@ def custom_uri_extraction(uri: str) -> Tuple[str, int]:
     ip, port = uri.split(":")
     return ip, int(port)
 
+
 class ExtractionError(Exception):
     """Raised when the config extraction fails or a required value is missing."""
+
     pass
+
 
 class QuasarRAT(Extractor):
     family: str = "QuasarRAT"
@@ -255,7 +260,9 @@ class DotNetQuasarRAT:
                             f"Crypto class found {method.FullName} in {mtype.Name}"
                         )
                         return mtype
-        raise ExtractionError("cannot locate crypto class based on `System.Security.Cryptography.AesCryptoServiceProvider::.ctor()`")
+        raise ExtractionError(
+            "cannot locate crypto class based on `System.Security.Cryptography.AesCryptoServiceProvider::.ctor()`"
+        )
 
     def get_field_from_struct(self, struct_name: str) -> Optional[bytes]:
         """becareful the variable module must be global,
@@ -298,7 +305,9 @@ class DotNetQuasarRAT:
                                     return prev_instr.Operand
                     prev_instr = instr
 
-        raise ExtractionError(f"failed to read {variable_name} constant from class {mclass.FullName}")
+        raise ExtractionError(
+            f"failed to read {variable_name} constant from class {mclass.FullName}"
+        )
 
     def extract_all_encrypted_configuration(self, mclass) -> list:
         """extract the raw encrypted string of the
@@ -364,9 +373,7 @@ class DotNetQuasarRAT:
 
         raise ExtractionError("no seed found in the sample")
 
-    def search_caller(
-        self, class_name: str, method_name: str
-    ) -> Tuple[str, str]:
+    def search_caller(self, class_name: str, method_name: str) -> Tuple[str, str]:
         # Iterate over all types in the assembly
         for typeDef in self.module.Types:
             for method in typeDef.Methods:
@@ -407,9 +414,10 @@ class DotNetQuasarRAT:
                     xref_crypto_init_class_method = (crypto_class.FullName, str(m.Name))
                     return xref_crypto_init_class_method
 
-        raise ExtractionError("no ref to System.Void System.Security.Cryptography.Rfc2898DeriveBytes::.ctor found, cannot extract init crypto class caller ")
+        raise ExtractionError(
+            "no ref to System.Void System.Security.Cryptography.Rfc2898DeriveBytes::.ctor found, cannot extract init crypto class caller "
+        )
 
-                
     def get_class_by_name(self, target_class: str):
         """ "Simply iterate over all the class of the module until
         it finds the class by its name"""
@@ -484,16 +492,18 @@ if __name__ == "__main__":
     # Here is a version that does not need AL4 context to extract QuasarRAT configuration
     # becareful it does not test any YARA rule on the submitted sample
     import argparse
+
     parser = argparse.ArgumentParser("QuasarRAT extractor")
     parser.add_argument(
-        "-f", "--file",
+        "-f",
+        "--file",
         type=argparse.FileType("rb"),
         help="Path to the QuasarRAT sample",
         required=True,
     )
     args = parser.parse_args()
     blob = args.file.read()
-        
+
     ext = DotNetQuasarRAT(blob)
     configuration = ext.extract_configuration()
     print(configuration)
