@@ -72,6 +72,8 @@ class QuasarRAT(Extractor):
 rule QuasarRAT {
     meta:
         author = "JPCERT/CC Incident Response Group"
+        hash = "8c198d22b42dc34b2689c12563ec76eb63d0e08c282e29f9648ed87aafe01ee7"
+        hash = "538e70eaa3bd3c9dbcff9c1291e40c251585f8164254853d3dd2f11c9c824177"
     strings:
         $quasarstr1 = "Client.exe" wide
         $quasarstr2 = "({0}:{1}:{2})" wide
