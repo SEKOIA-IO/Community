@@ -481,7 +481,8 @@ class DotNetQuasarRAT:
 
 
 if __name__ == "__main__":
-
+    # Here is a version that does not need AL4 context to extract QuasarRAT configuration
+    # becareful it does not test any YARA rule on the submitted sample
     import argparse
     parser = argparse.ArgumentParser("QuasarRAT extractor")
     parser.add_argument(
