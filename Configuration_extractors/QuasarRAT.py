@@ -255,6 +255,7 @@ class DotNetQuasarRAT:
                             f"Crypto class found {method.FullName} in {mtype.Name}"
                         )
                         return mtype
+        raise ExtractionError("cannot locate crypto class based on `System.Security.Cryptography.AesCryptoServiceProvider::.ctor()`")
 
     def get_field_from_struct(self, struct_name: str) -> Optional[bytes]:
         """becareful the variable module must be global,
