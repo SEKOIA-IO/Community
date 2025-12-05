@@ -215,7 +215,7 @@ class DotNetQuasarRAT:
         self.configuration["seed"] = seed.hex()
         return self.configuration
 
-    def decrypt(self, key: str, salt: bytes, ciphertext: bytes):
+    def decrypt(self, key: str, salt: bytes, ciphertext: bytes) -> bytes:
         """QuasarRAT string decryption routine.
         Each obfuscated string is stored in base64 after decoding,
         the string have this structure:
