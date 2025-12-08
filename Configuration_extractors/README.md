@@ -11,3 +11,4 @@ To test the extractors, we used the hashes contained in the YARA rules of each e
 
 ## References
 - [Advent of Configuration Extraction – Part 1: Pipeline Overview – First Steps with Kaiji Configuration Unboxing](https://blog.sekoia.io/advent-of-configuration-extraction-part-1-pipeline-overview-first-steps-with-kaiji-configuration-unboxing/)
+- [Advent of Configuration Extraction – Part 2: Unwrapping QuasarRAT’s Configuration](https://blog.sekoia.io/advent-of-configuration-extraction-part-2-unwrapping-quasarrats-configuration/)
