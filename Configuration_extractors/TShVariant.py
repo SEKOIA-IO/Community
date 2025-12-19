@@ -282,6 +282,7 @@ class TShVariant(Extractor):
         malware = "TShVariant"
         description = "Detects TSH via the PEL challenge hardcoded key"
         source = "Sekoia.io"
+        hash = "14f9a20356fc0e1806524057e8366d994831e3568cf438694a5c4d5463c25010"
     strings:
         $ = { 58 90 AE 86 F1 B9 1C F6 29 83 95 71 1D DE 58 0D }
     condition:
