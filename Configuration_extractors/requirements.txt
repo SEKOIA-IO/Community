@@ -12,4 +12,4 @@ dnfile==0.15.0
 lief==0.15.1
 beautifulsoup4==4.11.2
 lxml==5.4.0
-malduck==4.1.0
+malduck==4.4.1
