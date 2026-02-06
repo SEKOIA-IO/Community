@@ -47,7 +47,7 @@ def is_base64(value: str) -> bool:
         return False
 
 
-def parse_config(raw: str) -> tuple:
+def parse_config(raw: str) -> CommandAndControl | None:
     """
     Function to extract config data from json
 
