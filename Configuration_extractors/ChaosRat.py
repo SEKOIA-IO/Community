@@ -81,7 +81,7 @@ def parse_config(raw: str) -> CommandAndControl | None:
         c2 = ukn[0]
     else:
         return
-    config = (c2, port, token)
+    config = CommandAndControl(c2, port, token)
     return config
 
 
