@@ -184,7 +184,7 @@ class ChaosRat(Extractor):
                     if check_ip(c2.ip):
                         connection_kwargs["server_ip"] = c2.ip
                     else:
-                        connection_kwargs["server_domain"] = data.c2
+                        connection_kwargs["server_domain"] = c2.ip
                     ret.tcp.append(ret.Connection(**connection_kwargs))
                 else:
                     logging.error(f"no C2 extraction")
