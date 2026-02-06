@@ -95,11 +95,7 @@ def extract(all_str: list) -> Optional[CommandAndControl]:
                 try:
                     data = base64.b64decode(raw).decode("utf-8")
                     conf = parse_config(data)
-                    if conf:
-                        c2 = CommandAndControl(
-                            ip=conf[0], port=int(conf[1]), token=conf[2]
-                        )
-                        return c2
+                    return conf
                 except Exception as e:
                     continue
 
