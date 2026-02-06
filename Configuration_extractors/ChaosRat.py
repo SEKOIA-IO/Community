@@ -91,8 +91,7 @@ def extract(all_str: list) -> Optional[CommandAndControl]:
         match = re.search(b64_pattern, str.string)
         if match:
             raw = match.group(1)
-            check = is_base64(raw)
-            if check:
+            if is_base64(raw):
                 try:
                     data = base64.b64decode(raw).decode("utf-8")
                     conf = parse_config(data)
