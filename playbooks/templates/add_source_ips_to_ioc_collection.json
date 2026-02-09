@@ -46,7 +46,7 @@
                 ]
             },
             "arguments": {
-                "query": "{{ node.1.short_id }}",
+                "query": "alert_short_ids: {{ node.1.short_id }}",
                 "fields": "source.ip",
                 "latest_time": "{{ node.1.last_seen_at }}",
                 "earliest_time": "{{ node.1.first_seen_at }}"
