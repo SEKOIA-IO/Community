@@ -6,6 +6,8 @@ rule phishing_eviltokens_phishing_page {
         creation_date = "2026-03-05"
         modification_date = "2026-03-05"
         classification = "TLP:CLEAR"
+        reference = "https://blog.sekoia.io/new-widespread-eviltokens-kit-device-code-phishing-as-a-service-part-1/"
+
 
     strings:
         $html = "<!DOCTYPE html>" ascii
