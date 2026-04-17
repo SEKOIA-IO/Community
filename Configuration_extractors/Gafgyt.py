@@ -14,6 +14,7 @@ from ipaddress import IPv4Address, AddressValueError
 
 
 CommandAndControl = namedtuple("CommandAndControl", ["ip", "port"])
+BannerInfo = namedtuple("BannerInfo", ["raw", "fixed_middle", "has_ansi"])
 
 
 def check_ip(ioc: str) -> bool:
@@ -78,7 +79,32 @@ class ConfigExtractor:
             logging.error(f"c2 parsing error : {e}")
             return None
 
-    def run(self) -> Optional[CommandAndControl]:
+    def extract_banner(self) -> Optional[BannerInfo]:
+        """
+        Localise le template banner dans .rodata en cherchant
+        la string null-terminée contenant exactement deux '%s'.
+        Utilise le parsing ELF lief, pas de regex sur le raw.
+        """
+        for section in self.elf.sections:
+            if section.name not in (".rodata", ".data"):
+                continue
+            content = bytes(section.content)
+            # Split on null bytes
+            for candidate in content.split(b"\x00"):
+                if candidate.count(b"%s") == 2:
+                    has_ansi = b"\x1b[" in candidate
+                    parts = candidate.split(b"%s")
+                    # parts[0] = prefix, parts[1] = fixed_middle, parts[2] = suffix
+                    fixed_middle = parts[1] if len(parts) == 3 else None
+                    return BannerInfo(
+                        raw=candidate.decode("utf-8"),
+                        fixed_middle=fixed_middle.decode("utf-8"),
+                        has_ansi=has_ansi,
+                    )
+        logging.warning("banner template not found in .rodata/.data")
+        return None
+
+    def run(self) -> tuple[CommandAndControl, BannerInfo]:
         if self.arch not in self.SUPPORTED_ARCHS:
             raise ValueError(f"Unsupported architecture : {self.arch}")
 
@@ -97,7 +123,10 @@ class ConfigExtractor:
             logging.error("c2 extraction failed or empty")
             return None
 
-        return self.parse_c2(raw_c2)
+        c2 = self.parse_c2(raw_c2)
+        banner = self.extract_banner()
+
+        return (c2, banner)
 
 
 class Gafgyt(Extractor):
@@ -146,8 +175,9 @@ class Gafgyt(Extractor):
                 try:
                     elf = lief.parse(data)
                     config_extract = ConfigExtractor(elf)
-                    c2 = config_extract.run()
-
+                    config = config_extract.run()
+                    c2 = config[0]
+                    banner = config[1]
                     if c2:
                         connection_kwargs = {
                             "server_port": c2.port,
@@ -156,10 +186,15 @@ class Gafgyt(Extractor):
                         if check_ip(c2.ip):
                             connection_kwargs["server_ip"] = c2.ip
                         else:
-                            connection_kwargs["server_domain"] = data.c2
+                            connection_kwargs["server_domain"] = c2.ip
                         ret.tcp.append(ret.Connection(**connection_kwargs))
                     else:
                         logging.error("no C2 extraction")
+                    if banner:
+                        other = {}
+                        other["raw_banner"] = banner.raw
+                        other["sep_field"] = banner.fixed_middle
+                        ret.other = other
 
                     return ret
 
