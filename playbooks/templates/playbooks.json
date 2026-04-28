@@ -342,5 +342,12 @@
         "workspace": ["Operation Center"],
         "description": "Cascade an alert based on HarfangLab events to Harfang console based on ThreatId",
         "tags": ["alerts", "HarfangLab", "events"]
+    },
+    {
+        "file": "cascade_alert_status_on_s1.json",
+        "name": "Cascade an alert based on SentinelOne events to SentinelOne console",
+        "workspace": ["Operation Center"],
+        "description": "Cascade an alert based on SentinelOne events to SentinelOne console based on ThreatId",
+        "tags": ["alerts", "SentinelOne", "events"]
     }
 ]
