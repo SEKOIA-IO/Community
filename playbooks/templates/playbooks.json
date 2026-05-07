@@ -448,5 +448,13 @@
             "Dissemination"
         ],
         "description": "Add Sekoia active IOCs in Palo Alto XSIAM Collection for detection"
+        "tags": ["alerts", "enrich", "events"]
+    },
+    {
+        "file": "cascade_alert_status_on_harfang.json",
+        "name": "Cascade an alert based on HarfangLab events to Harfang console",
+        "workspace": ["Operation Center"],
+        "description": "Cascade an alert based on HarfangLab events to Harfang console based on ThreatId",
+        "tags": ["alerts", "HarfangLab", "events"]
     }
 ]
