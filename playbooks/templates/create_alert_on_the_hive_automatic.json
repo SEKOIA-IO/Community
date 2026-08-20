@@ -2,8 +2,8 @@
     "name": "Automatically create an alert on TheHive",
     "description": "Automatically create an alert on TheHive when a new alert is raised in SEKOIA.IO.",
     "tags": [
-        "alert",
-        "thehive"
+        "Alerts",
+        "TheHive"
     ],
     "workspace": "Operation Center",
     "nodes": {

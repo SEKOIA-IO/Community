@@ -69,7 +69,7 @@
     "description": "Add Sekoia active IOCs in Palo Alto XSIAM Collection for detection",
     "workspace": "Operation Center",
     "tags": [
-        "observables",
+        "Observables",
         "XSIAM",
         "Dissemination"
     ],

@@ -1,5 +1,9 @@
 {
     "name": "Enhance network alerts with VirusTotal",
+    "tags": [
+        "Alerts",
+        "Enrichment"
+    ],
     "nodes": {
         "0": {
             "name": "Manual trigger",

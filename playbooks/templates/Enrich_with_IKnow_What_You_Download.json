@@ -1,5 +1,9 @@
 {
     "name": "Enrich with IKnowWhatYouDownload",
+    "tags": [
+        "Alerts",
+        "Enrichment"
+    ],
     "nodes": {
         "0": {
             "name": "alert_webhook",

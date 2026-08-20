@@ -3,8 +3,8 @@
     "workspace": "Intelligence Center",
     "description": "Retrieve observables from an OSINT to add it to observable database with a tag (eg: https://github.com/MISP/misp-warninglists/tree/main/lists)",
     "tags": [
-        "observable",
-        "fetch osint",
+        "Observables",
+        "OSINT",
         "TIP"
     ],
     "nodes": {
