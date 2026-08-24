@@ -159,8 +159,8 @@
     },
     "workspace": "Intelligence Center",
     "tags": [
-        "observable",
-        "tranco",
+        "Observables",
+        "Tranco",
         "TIP"
     ],
     "description": "Automatically import Tranco's top 1 000 000 domain names to observable database",

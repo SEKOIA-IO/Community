@@ -1,9 +1,9 @@
 {
     "name": "HarfangLab telemetry events",
     "tags": [
-        "alerts",
-        "enrich",
-        "events"
+        "Alerts",
+        "Enrichment",
+        "Events"
     ],
     "nodes": {
       "1": {

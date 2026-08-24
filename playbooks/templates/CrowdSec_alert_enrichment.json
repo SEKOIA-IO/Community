@@ -154,8 +154,8 @@
     "description": "Enrich with CrowdSec Smoke DB to check if the IP is known from this service direclty from SEKOIA.IO.",
     "tags": [
         "CrowdSec",
-        "alerts",
-        "enrichment"
+        "Alerts",
+        "Enrichment"
     ],
     "uuid": "712e8303-fcbb-4e10-b27b-6e64e9a11b60"
 }

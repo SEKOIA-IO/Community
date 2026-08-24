@@ -1,8 +1,8 @@
 {
     "name": "Send alert to Nybble Hub",
     "tags": [
-        "alert",
-        "nybble"
+        "Alerts",
+        "Nybble"
     ],
     "nodes": {
         "0": {

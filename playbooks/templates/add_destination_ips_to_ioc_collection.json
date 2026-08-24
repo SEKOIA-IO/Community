@@ -1,9 +1,9 @@
 {
     "name": "Add Destination IP address to IOC Collection",
     "tags": [
-        "alerts",
+        "Alerts",
         "IOC Collection",
-        "blocklist"
+        "Blocklist"
     ],
     "workspace": "Operation Center",
     "description": "Add the destination ip addresses from the events linked to the alert to an IOC collection",

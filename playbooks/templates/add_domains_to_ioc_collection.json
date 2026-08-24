@@ -1,9 +1,9 @@
 {
     "name": "Add Domain to blocklist",
     "tags": [
-        "alerts",
+        "Alerts",
         "IOC Collection",
-        "blocklist"
+        "Blocklist"
     ],
     "workspace": "Operation Center",
     "description": "Add the domains from the events linked to the alert to an IOC collection",

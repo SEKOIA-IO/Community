@@ -1,8 +1,8 @@
 {
     "name": "MS Teams notification on alert",
     "tags": [
-        "alerts",
-        "notifications",
+        "Alerts",
+        "Notifications",
         "MS Teams"
     ],
     "uuid": "50d5899e-0978-42aa-81ca-e3f401237ff8",

@@ -2,9 +2,9 @@
     "name": "Manually create an Alert on TheHive",
     "description": "Create an alert on TheHive via the alert page.",
     "tags": [
-        "alert",
-        "webhook",
-        "thehive"
+        "Alerts",
+        "Webhook",
+        "TheHive"
     ],
     "workspace": "Operation Center",
     "nodes": {

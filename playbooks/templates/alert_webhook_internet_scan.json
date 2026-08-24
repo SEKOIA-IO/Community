@@ -2,8 +2,8 @@
     "name": "Qualify Internet Scan webhook",
     "description": "Qualify an Internet scan alert on webhook",
     "tags": [
-        "alert",
-        "webhook"
+        "Alerts",
+        "Webhook"
     ],
     "nodes": {
         "0": {

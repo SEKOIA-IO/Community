@@ -1,6 +1,10 @@
 {
     "name": "Scan for hash on VirusTotal",
     "uuid": "558a4c09-bb8c-4d11-9c26-635c43ba9fd0",
+    "tags": [
+        "Alerts",
+        "Enrichment"
+    ],
     "nodes": {
         "0": {
             "name": "Manual trigger",

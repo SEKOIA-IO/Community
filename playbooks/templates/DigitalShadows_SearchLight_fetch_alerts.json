@@ -32,8 +32,7 @@
     "workspace": "Operation Center",
     "description": "Synchronise alerts from Digital Shadows SearchLight to SEKOIA.IO events",
     "tags": [
-        "alerts",
-        "osint"
+        "Alerts"
     ],
     "uuid": "cafeb7d7-d76d-4dcc-a111-b0d7fe991405"
 }

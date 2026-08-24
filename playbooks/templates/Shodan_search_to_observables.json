@@ -3,8 +3,8 @@
     "description": "Get IP addresses from a shodan search and add it to Observable data base with a tag",
     "workspace": "Intelligence Center",
     "tags": [
-        "observable",
-        "shodan",
+        "Observables",
+        "Shodan",
         "TIP"
     ],
     "nodes": {

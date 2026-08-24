@@ -31,7 +31,7 @@
     "workspace": "Operation Center",
     "description": "This playbook pulls security events from the Panda Security Aether platform then push them to SEKOIA.IO",
     "tags": [
-        "events"
+        "Events"
     ],
     "uuid": "441eedde-1833-48f7-8935-a3b16a2f0c7c"
 }
