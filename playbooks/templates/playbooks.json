@@ -454,5 +454,12 @@
         "workspace": ["Operation Center"],
         "description": "Cascade an alert based on HarfangLab events to Harfang console based on ThreatId",
         "tags": ["Alerts", "HarfangLab", "Events"]
+    },
+    {
+        "file": "auto_action_on_roy_analysis.json",
+        "name": "Auto action based on Roy analysis",
+        "workspace": ["Operation Center"],
+        "description": "Automate actions based on Roy auto-investigation verdict and confidence level: auto-close high-confidence false positives, flag the others for manual review",
+        "tags": ["Alerts", "Roy", "Automation"]
     }
 ]
