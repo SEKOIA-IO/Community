@@ -1,0 +1,345 @@
+{
+    "name": "Auto action based on Roy analysis",
+    "description": "Automate actions based on Roy auto-investigation verdict and confidence level: auto-close high-confidence false positives, flag the others for manual review",
+    "tags": [
+        "Alerts",
+        "Roy",
+        "Automation"
+    ],
+    "workspace": "Operation Center",
+    "nodes": {
+        "0": {
+            "name": "Alert Updated",
+            "type": "trigger",
+            "outputs": {
+                "default": [
+                    "1"
+                ]
+            },
+            "position": {
+                "x": 1500,
+                "y": 1698
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "trigger_uuid": "7e092f68-5e35-40ac-ac0a-46b7bdbbe3ff"
+        },
+        "1": {
+            "name": "Get Alert",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "2"
+                ]
+            },
+            "position": {
+                "x": 1500,
+                "y": 1940
+            },
+            "arguments": {
+                "stix": false,
+                "uuid": "{{ node.0.alert_uuid }}",
+                "cases": false
+            },
+            "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "2": {
+            "name": "Roy analysis verif",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{{ (node.1['verdict'] or {}).get('confidence') is not none }}",
+                    "name": "Roy analysis done",
+                    "right": "True",
+                    "comparison": "==",
+                    "description": "Roy analysis verif"
+                }
+            ],
+            "outputs": {
+                "else": [],
+                "Roy analysis done": [
+                    "8"
+                ]
+            },
+            "subtype": "condition",
+            "position": {
+                "x": 1499,
+                "y": 2107
+            }
+        },
+        "3": {
+            "name": "Get custom verdict",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "9"
+                ]
+            },
+            "position": {
+                "x": 1593,
+                "y": 2559
+            },
+            "arguments": {
+                "verdict_uuid": "{{ node.1['verdict']['uuid'] }}"
+            },
+            "action_uuid": "c37221b2-5bbf-46eb-ba16-fb618f7b5282",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "4": {
+            "name": "Verdict Stage",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{{ node.3['stage'] == 'false_positive' }}",
+                    "name": "False Positive",
+                    "right": "True",
+                    "comparison": "=="
+                },
+                {
+                    "left": "{{ node.3['stage'] == 'true_positive' }}",
+                    "name": "True Positive",
+                    "right": "True",
+                    "comparison": "=="
+                }
+            ],
+            "outputs": {
+                "else": [],
+                "True Positive": [
+                    "5"
+                ],
+                "False Positive": [
+                    "6"
+                ]
+            },
+            "subtype": "condition",
+            "position": {
+                "x": 1594,
+                "y": 2838
+            }
+        },
+        "5": {
+            "name": "TP check confidence lvl",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{{ (node.1['verdict']['confidence'] | int) >= 90 }}",
+                    "name": "Confidence lvl >= 90",
+                    "right": "True",
+                    "comparison": "=="
+                }
+            ],
+            "outputs": {
+                "else": [
+                    "13"
+                ],
+                "Confidence lvl >= 90": [
+                    "7"
+                ]
+            },
+            "subtype": "condition",
+            "position": {
+                "x": 1947,
+                "y": 3000
+            }
+        },
+        "6": {
+            "name": "FP check confidence lvl",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{{ (node.1['verdict']['confidence'] | int) >= 90 }}",
+                    "name": "Confidence lvl >= 90",
+                    "right": "True",
+                    "comparison": "=="
+                }
+            ],
+            "outputs": {
+                "else": [
+                    "12"
+                ],
+                "Confidence lvl >= 90": [
+                    "10"
+                ]
+            },
+            "subtype": "condition",
+            "position": {
+                "x": 1361,
+                "y": 3007
+            }
+        },
+        "7": {
+            "name": "Comment TP high confidence",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "position": {
+                "x": 1858,
+                "y": 3479
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "author": "Roy",
+                "content": "TRUE POSITIVE >= 90 CONFIDENCE - TO REPLACE BY A CONTAINMENT ACTION"
+            },
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "8": {
+            "name": "Check marker presence",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{{ '[ROY-AUTO]' not in ((node.1['comments'] or []) | map(attribute='content', default='') | join(' ')) }}",
+                    "name": "Check ROY marker",
+                    "right": "True",
+                    "comparison": "==",
+                    "description": "Check marker presence"
+                }
+            ],
+            "outputs": {
+                "else": [],
+                "Check ROY marker": [
+                    "3"
+                ]
+            },
+            "subtype": "condition",
+            "position": {
+                "x": 1507,
+                "y": 2337
+            }
+        },
+        "9": {
+            "name": "Add marker comment",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "4"
+                ]
+            },
+            "position": {
+                "x": 1592,
+                "y": 2678
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "author": "Roy",
+                "content": "[ROY-AUTO] Stage: {{ node.3.stage }} | Label: {{ node.3.label }} | Confidence: {{ node.1['verdict']['confidence'] }}"
+            },
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "10": {
+            "name": "Close alert",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "11"
+                ]
+            },
+            "position": {
+                "x": 1116,
+                "y": 3263
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "custom_status_uuid": "<REPLACE_WITH_CLOSED_STATUS_UUID>"
+            },
+            "action_uuid": "113a06db-3cef-48ac-908b-45f3ebc4d1bf",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "11": {
+            "name": "Comment FP auto-closed",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "position": {
+                "x": 1115,
+                "y": 3465
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "author": "Roy",
+                "content": "False Positive with >90 confidence. Alert auto-closed by Roy"
+            },
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "12": {
+            "name": "Comment FP manual review",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "14"
+                ]
+            },
+            "position": {
+                "x": 1496,
+                "y": 3164
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "author": "Roy",
+                "content": "Manual Review required. (False Positive with level of confidence < 90.)"
+            },
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "13": {
+            "name": "Comment TP manual review",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "15"
+                ]
+            },
+            "position": {
+                "x": 2055,
+                "y": 3172
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "author": "Roy",
+                "content": "Manual Review required. (True Positive with level of confidence < 90.)"
+            },
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "14": {
+            "name": "Set status for manual review (FP)",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "position": {
+                "x": 1496,
+                "y": 3310
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "custom_status_uuid": "<REPLACE_WITH_MANUAL_REVIEW_STATUS_UUID>"
+            },
+            "action_uuid": "113a06db-3cef-48ac-908b-45f3ebc4d1bf",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        },
+        "15": {
+            "name": "Set status for manual review (TP)",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "position": {
+                "x": 2054,
+                "y": 3308
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "custom_status_uuid": "<REPLACE_WITH_MANUAL_REVIEW_STATUS_UUID>"
+            },
+            "action_uuid": "113a06db-3cef-48ac-908b-45f3ebc4d1bf",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        }
+    },
+    "uuid": "c53220cb-0d4b-4bce-9d1c-915ea7499563"
+}
