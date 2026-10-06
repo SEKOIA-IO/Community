@@ -459,7 +459,7 @@
         "file": "auto_action_on_roy_analysis.json",
         "name": "Auto action based on Roy analysis",
         "workspace": ["Operation Center"],
-        "description": "Automate actions based on Roy auto-investigation verdict and confidence level: auto-close high-confidence false positives, flag the others for manual review",
+        "description": "Automate actions based on Roy auto-investigation verdict and confidence level: auto-close high-confidence false positives, flag the others for manual review. To be adapted (custom status & global logic). In multi-tenant environment, child communities needs AI terms to be accepted for the playbook to work.)",
         "tags": ["Alerts", "Roy", "Automation"]
     }
 ]
