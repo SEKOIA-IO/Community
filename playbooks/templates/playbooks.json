@@ -465,7 +465,7 @@
     {
         "file": "disable_user_accounts_in_microsoft_entra_id.json",
         "name": "Disable user accounts in Microsoft Entra ID",
-        "description": "Manually disable user accounts associated with an alert using the external identifiers provided by the Microsoft Entra ID asset connector, then comment on the alert. Requires a configured Microsoft Entra ID account and permission to retrieve asset connector details.",
+        "description": "Manually disable Microsoft Entra ID accounts associated with an alert and comment on the alert after success. Requires Sekoia Reveal, a configured Microsoft Entra ID asset connector, and a Microsoft Entra ID action account with permissions to disable users.",
         "tags": [
             "alerts",
             "assets",
