@@ -461,5 +461,19 @@
         "workspace": ["Operation Center"],
         "description": "Automate actions based on Roy auto-investigation verdict and confidence level: auto-close high-confidence false positives, flag the others for manual review. To be adapted (custom status & global logic). In multi-tenant environment, child communities needs AI terms to be accepted for the playbook to work.)",
         "tags": ["Alerts", "Roy", "Automation"]
+    },
+    {
+        "file": "disable_user_accounts_in_microsoft_entra_id.json",
+        "name": "Disable user accounts in Microsoft Entra ID",
+        "description": "Manually disable user accounts associated with an alert using the external identifiers provided by the Microsoft Entra ID asset connector, then comment on the alert. Requires a configured Microsoft Entra ID account and permission to retrieve asset connector details.",
+        "tags": [
+            "alerts",
+            "assets",
+            "microsoft entra id",
+            "remediation"
+        ],
+        "workspace": [
+            "Operation Center"
+        ]
     }
 ]
