@@ -1,0 +1,247 @@
+{
+  "name": "Disable user accounts in Microsoft Entra ID",
+  "description": "Manually disable Microsoft Entra ID accounts associated with an alert. Comment after each successful disablement, or when no eligible account was found. Requires Sekoia Reveal, a configured Microsoft Entra ID asset connector, and a Microsoft Entra ID action account with permissions to disable users.",
+  "nodes": {
+    "0": {
+      "name": "Manual start from an Alert",
+      "type": "trigger",
+      "outputs": {
+        "default": [
+          "1"
+        ]
+      },
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "trigger_uuid": "fc26eb9f-b272-4c15-b3bf-ace397c0dc57",
+      "position": {
+        "x": 1500,
+        "y": 1500
+      }
+    },
+    "1": {
+      "name": "Get the Alert details",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "2"
+        ]
+      },
+      "arguments": {
+        "stix": false,
+        "uuid": "{{ node.0.alert_uuid }}"
+      },
+      "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "position": {
+        "x": 1500,
+        "y": 1736
+      }
+    },
+    "2": {
+      "name": "Initialize disabled accounts",
+      "type": "operator",
+      "subtype": "store",
+      "modifications": [
+        {
+          "key": "disabled_accounts",
+          "type": "set",
+          "value": "{{ [] }}"
+        }
+      ],
+      "outputs": {
+        "default": [
+          "3"
+        ]
+      },
+      "position": {
+        "x": 1500,
+        "y": 1972
+      }
+    },
+    "3": {
+      "name": "Foreach Asset in the alert",
+      "type": "operator",
+      "subtype": "foreach",
+      "items": "{{ node.1.assets }}",
+      "loop": [
+        "4"
+      ],
+      "outputs": {
+        "default": [
+          "10"
+        ]
+      },
+      "position": {
+        "x": 1500,
+        "y": 2208
+      }
+    },
+    "4": {
+      "name": "Get Asset details including connector identities",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "5"
+        ]
+      },
+      "arguments": {
+        "uuid": "{{ node.3.default.value }}",
+        "with_compliance": true
+      },
+      "action_uuid": "7df20273-8698-45f8-b2b4-6b6d28717b45",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "position": {
+        "x": 1500,
+        "y": 2444
+      }
+    },
+    "5": {
+      "name": "Is an account Asset?",
+      "type": "operator",
+      "subtype": "condition",
+      "cases": [
+        {
+          "left": "{{ node.4.type }}",
+          "name": "Yes",
+          "right": "account",
+          "comparison": "=="
+        }
+      ],
+      "outputs": {
+        "else": [],
+        "Yes": [
+          "6"
+        ]
+      },
+      "position": {
+        "x": 1500,
+        "y": 2680
+      }
+    },
+    "6": {
+      "name": "Has exactly one distinct Entra ID account identifier?",
+      "type": "operator",
+      "subtype": "condition",
+      "cases": [
+        {
+          "left": "{{ node.4.connectors | default([], true) | selectattr('connector_uuid', 'defined') | selectattr('connector_uuid', 'equalto', 'b6e2e2e2-4c3a-4b7a-9e2a-1f2c3d4e5f6a') | selectattr('external_id', 'defined') | selectattr('external_id') | map(attribute='external_id') | unique | list | length }}",
+          "name": "Yes",
+          "right": "1",
+          "comparison": "=="
+        }
+      ],
+      "outputs": {
+        "else": [],
+        "Yes": [
+          "7"
+        ]
+      },
+      "position": {
+        "x": 1500,
+        "y": 2916
+      }
+    },
+    "7": {
+      "name": "Disable Microsoft Entra ID User",
+      "type": "action",
+      "outputs": {
+        "default": [
+          "8"
+        ]
+      },
+      "arguments": {
+        "id": "{{ node.4.connectors | default([], true) | selectattr('connector_uuid', 'defined') | selectattr('connector_uuid', 'equalto', 'b6e2e2e2-4c3a-4b7a-9e2a-1f2c3d4e5f6a') | selectattr('external_id', 'defined') | selectattr('external_id') | map(attribute='external_id') | unique | first }}"
+      },
+      "action_uuid": "df34b4c8-f570-5c70-a986-e1c649aedf42",
+      "module_uuid": "3abf7928-65ef-4a5f-ba3e-5fbe56123d0c",
+      "position": {
+        "x": 1500,
+        "y": 3152
+      }
+    },
+    "8": {
+      "name": "Record successful account disablement",
+      "type": "operator",
+      "subtype": "store",
+      "modifications": [
+        {
+          "key": "disabled_accounts",
+          "type": "append",
+          "value": "{{ node.4.uuid }}"
+        }
+      ],
+      "outputs": {
+        "default": [
+          "9"
+        ]
+      },
+      "position": {
+        "x": 1500,
+        "y": 3388
+      }
+    },
+    "9": {
+      "name": "Comment successful disablement",
+      "type": "action",
+      "outputs": {
+        "default": []
+      },
+      "arguments": {
+        "uuid": "{{ node.0.alert_uuid }}",
+        "content": "User {{ node.4.name }} has been disabled in Microsoft Entra ID."
+      },
+      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "position": {
+        "x": 1500,
+        "y": 3624
+      }
+    },
+    "10": {
+      "name": "No account was disabled?",
+      "type": "operator",
+      "subtype": "condition",
+      "cases": [
+        {
+          "left": "{{ store.disabled_accounts | length }}",
+          "name": "Yes",
+          "right": "0",
+          "comparison": "=="
+        }
+      ],
+      "outputs": {
+        "else": [],
+        "Yes": [
+          "11"
+        ]
+      },
+      "position": {
+        "x": 988,
+        "y": 2425
+      }
+    },
+    "11": {
+      "name": "Comment no eligible Entra ID account",
+      "type": "action",
+      "outputs": {
+        "default": []
+      },
+      "arguments": {
+        "uuid": "{{ node.0.alert_uuid }}",
+        "content": "No account was disabled. None of the alert assets had exactly one distinct, non-empty account identifier from the Microsoft Entra ID asset connector."
+      },
+      "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a",
+      "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+      "position": {
+        "x": 1081,
+        "y": 2772
+      }
+    }
+  },
+  "tags": [
+    "alerts",
+    "assets",
+    "microsoft entra id",
+    "remediation"
+  ],
+  "workspace": "Operation Center"
+}
