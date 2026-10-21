@@ -94,11 +94,11 @@
       }
     },
     "5": {
-      "name": "Has exactly one usable Entra ID connector identity?",
+      "name": "Has exactly one distinct Entra ID account identifier?",
       "type": "operator",
       "cases": [
         {
-          "left": "{{ node.3.connectors | default([], true) | selectattr('connector_uuid', 'defined') | selectattr('connector_uuid', 'equalto', 'b6e2e2e2-4c3a-4b7a-9e2a-1f2c3d4e5f6a') | selectattr('external_id', 'defined') | selectattr('external_id') | list | length }}",
+          "left": "{{ node.3.connectors | default([], true) | selectattr('connector_uuid', 'defined') | selectattr('connector_uuid', 'equalto', 'b6e2e2e2-4c3a-4b7a-9e2a-1f2c3d4e5f6a') | selectattr('external_id', 'defined') | selectattr('external_id') | map(attribute='external_id') | unique | list | length }}",
           "name": "Yes",
           "right": "1",
           "comparison": "=="
@@ -129,7 +129,7 @@
         "y": 2916
       },
       "arguments": {
-        "userPrincipalName": "{{ node.3.connectors | default([], true) | selectattr('connector_uuid', 'defined') | selectattr('connector_uuid', 'equalto', 'b6e2e2e2-4c3a-4b7a-9e2a-1f2c3d4e5f6a') | selectattr('external_id', 'defined') | selectattr('external_id') | map(attribute='external_id') | first }}"
+        "id": "{{ node.3.connectors | default([], true) | selectattr('connector_uuid', 'defined') | selectattr('connector_uuid', 'equalto', 'b6e2e2e2-4c3a-4b7a-9e2a-1f2c3d4e5f6a') | selectattr('external_id', 'defined') | selectattr('external_id') | map(attribute='external_id') | unique | first }}"
       },
       "action_uuid": "df34b4c8-f570-5c70-a986-e1c649aedf42",
       "module_uuid": "3abf7928-65ef-4a5f-ba3e-5fbe56123d0c"
