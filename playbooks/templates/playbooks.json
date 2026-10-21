@@ -463,6 +463,13 @@
         "tags": ["Alerts", "Roy", "Automation"]
     },
     {
+        "file": "roy_auto_analysis_night_shift.json",
+        "name": "Roy auto-analysis during night-shift",
+        "workspace": ["Operation Center"],
+        "description": "Automatically assign new alerts to Roy when they are created during the night-shift. Covered hours are evaluated in UTC on the alert creation date: from 18:00 to 05:59 UTC (i.e. 20:00-07:59 Paris time in summer / UTC+2, 19:00-06:59 in winter / UTC+1). Adjust the hours in the condition regex to match your timezone and shift. To also cover weekends (Saturday and Sunday, 00:00-23:59 UTC), replace the condition left value with: {{ (node.0['created_at'] | timestamp_to_iso8601 | regex_match('.*T(18|19|20|21|22|23|0[0-5]):.*')) or (((node.0['created_at'] | int) // 86400 + 3) % 7 >= 5) }}",
+        "tags": ["Alerts", "Roy", "Automation"]
+    },
+    {
         "file": "disable_user_accounts_in_microsoft_entra_id.json",
         "name": "Disable user accounts in Microsoft Entra ID",
         "description": "Manually disable Microsoft Entra ID accounts associated with an alert. Comment after each successful disablement, or when no eligible account was found. Requires Sekoia Reveal, a configured Microsoft Entra ID asset connector, and a Microsoft Entra ID action account with permissions to disable users.",
