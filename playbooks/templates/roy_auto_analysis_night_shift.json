@@ -1,0 +1,68 @@
+{
+    "name": "Roy auto-analysis during night-shift",
+    "description": "Automatically assign new alerts to Roy when they are created during the night-shift. Covered hours are evaluated in UTC on the alert creation date: from 18:00 to 05:59 UTC (i.e. 20:00-07:59 Paris time in summer / UTC+2, 19:00-06:59 in winter / UTC+1). Adjust the hours in the condition regex to match your timezone and shift. To also cover weekends (Saturday and Sunday, 00:00-23:59 UTC), replace the condition left value with: {{ (node.0['created_at'] | timestamp_to_iso8601 | regex_match('.*T(18|19|20|21|22|23|0[0-5]):.*')) or (((node.0['created_at'] | int) // 86400 + 3) % 7 >= 5) }}",
+    "tags": [
+        "Alerts",
+        "Roy",
+        "Automation"
+    ],
+    "workspace": "Operation Center",
+    "nodes": {
+        "0": {
+            "name": "Alert Created",
+            "type": "trigger",
+            "outputs": {
+                "default": [
+                    "1"
+                ]
+            },
+            "position": {
+                "x": 1500,
+                "y": 1900
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "trigger_uuid": "785583cf-4377-43ce-a5fb-f4572eb57456"
+        },
+        "1": {
+            "name": "Night-shift check (18:00-05:59 UTC)",
+            "type": "operator",
+            "cases": [
+                {
+                    "left": "{{ node.0['created_at'] | timestamp_to_iso8601 | regex_match('.*T(18|19|20|21|22|23|0[0-5]):.*') }}",
+                    "name": "Night-shift alert",
+                    "right": "True",
+                    "comparison": "=="
+                }
+            ],
+            "outputs": {
+                "else": [],
+                "Night-shift alert": [
+                    "2"
+                ]
+            },
+            "subtype": "condition",
+            "position": {
+                "x": 1500,
+                "y": 2100
+            }
+        },
+        "2": {
+            "name": "Assign alert to Roy",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "position": {
+                "x": 1500,
+                "y": 2300
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "assignee": "0d2e5527-4a88-4a96-b5a5-90cb6d706c9e"
+            },
+            "action_uuid": "113a06db-3cef-48ac-908b-45f3ebc4d1bf",
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a"
+        }
+    },
+    "uuid": "dfaf0bed-a6bc-4e22-8266-edb49bbac12e"
+}
