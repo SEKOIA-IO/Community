@@ -1,4 +1,5 @@
 {
+  "uuid": "f81eb979-fb2b-4f02-800a-b25bac3acf1a",
   "name": "Disable user accounts in Microsoft Entra ID",
   "description": "Manually disable Microsoft Entra ID accounts associated with an alert. Comment after each successful disablement, or when no eligible account was found. Requires Sekoia Reveal, a configured Microsoft Entra ID asset connector, and a Microsoft Entra ID action account with permissions to disable users.",
   "nodes": {
