@@ -482,5 +482,80 @@
         "workspace": [
             "Operation Center"
         ]
+    },
+    {
+        "file": "enrich_alert_with_polyswarm.json",
+        "name": "Enrich an alert with PolySwarm",
+        "description": "Look up the file hash on a Sekoia alert against the detection engines on PolySwarm and comment the verdict back onto the alert. The lookup is read only and spends no scanning quota, so it is safe to run on every alert. The unknown branch is wired separately because an artifact nobody has seen is not the same as one nobody flagged.",
+        "tags": [
+            "Alerts",
+            "Enrichment"
+        ],
+        "workspace": [
+            "Operation Center"
+        ]
+    },
+    {
+        "file": "detonate_unknown_url_with_polyswarm.json",
+        "name": "Detonate an unknown URL with PolySwarm",
+        "description": "Look up a URL from a Sekoia alert on PolySwarm, and if nothing is known about it, send it to the sandbox. Detonation takes minutes rather than seconds, so the playbook comments that the run has started and leaves the result to the detonation finished trigger.",
+        "tags": [
+            "Alerts",
+            "Enrichment",
+            "Sandbox"
+        ],
+        "workspace": [
+            "Operation Center"
+        ]
+    },
+    {
+        "file": "handle_finished_polyswarm_detonation.json",
+        "name": "Handle a finished PolySwarm detonation",
+        "description": "Start when a PolySwarm sandbox detonation finishes and pull the report. The trigger fires once per task that reaches a terminal state. Add your own response step after the branch that matters to you: the first poll after you enable the trigger deliberately emits nothing, so it does not replay your detonation history.",
+        "tags": [
+            "Sandbox",
+            "Enrichment"
+        ],
+        "workspace": [
+            "Operation Center"
+        ]
+    },
+    {
+        "file": "triage_phishing_email_with_polyswarm.json",
+        "name": "Triage a reported phishing email with PolySwarm",
+        "description": "Pull the indicators out of a reported email on a Sekoia alert, then check the URL against the engines on PolySwarm and comment the verdict back. Extracting the indicators runs inside Sekoia and never calls PolySwarm, so the message body does not leave your environment.",
+        "tags": [
+            "Alerts",
+            "Enrichment",
+            "Phishing"
+        ],
+        "workspace": [
+            "Operation Center"
+        ]
+    },
+    {
+        "file": "pivot_indicator_with_polyswarm.json",
+        "name": "Pivot from an indicator with PolySwarm",
+        "description": "Take a domain from a Sekoia alert and ask PolySwarm which artifacts are associated with it, then comment the result. Useful when you have infrastructure but no sample, and you want to know what has been seen touching it.",
+        "tags": [
+            "Alerts",
+            "Enrichment",
+            "Threat Intelligence"
+        ],
+        "workspace": [
+            "Operation Center"
+        ]
+    },
+    {
+        "file": "check_multiple_hashes_with_polyswarm.json",
+        "name": "Check several hashes at once with PolySwarm",
+        "description": "Look up every file hash on a Sekoia alert against PolySwarm in one step. This is a loop rather than a batch, so fifty hashes cost fifty requests, and a run that stops early reports partial. Treat partial as an incomplete answer, never as a clean one for the hashes it never reached.",
+        "tags": [
+            "Alerts",
+            "Enrichment"
+        ],
+        "workspace": [
+            "Operation Center"
+        ]
     }
 ]
