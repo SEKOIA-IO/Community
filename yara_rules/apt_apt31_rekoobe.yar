@@ -11,6 +11,6 @@ rule apt_apt31_rekoobe {
         
     condition:
         uint32be(0) == 0x7f454c46 and
-        filesize < 100KB and elf.telfhash() == "t18fc080c7c6b56a34a7f32538ac7c407982035e1581561b207f50c955d93b408404c5ef"
+        filesize < 100KB and elf.telfhash() == "T18FC080C7C6B56A34A7F32538AC7C407982035E1581561B207F50C955D93B408404C5EF"
 }
         
