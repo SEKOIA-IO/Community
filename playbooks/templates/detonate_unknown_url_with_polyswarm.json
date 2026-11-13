@@ -1,0 +1,153 @@
+{
+    "name": "Detonate an unknown URL with PolySwarm",
+    "description": "Look up a URL from a Sekoia alert on PolySwarm, and if nothing is known about it, send it to the sandbox. Detonation takes minutes rather than seconds, so the playbook comments that the run has started and leaves the result to the detonation finished trigger.",
+    "tags": [
+        "Alerts",
+        "Enrichment",
+        "Sandbox"
+    ],
+    "nodes": {
+        "0": {
+            "name": "Manual Trigger",
+            "type": "trigger",
+            "outputs": {
+                "default": [
+                    "1"
+                ]
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "trigger_uuid": "fc26eb9f-b272-4c15-b3bf-ace397c0dc57"
+        },
+        "1": {
+            "name": "Get Alert",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "2"
+                ]
+            },
+            "arguments": {
+                "stix": false,
+                "uuid": "{{ node.0.alert_uuid }}"
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a"
+        },
+        "2": {
+            "name": "Get Events",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "3"
+                ]
+            },
+            "arguments": {
+                "query": "alert_short_ids: \"{{ node.1.short_id }}\"",
+                "latest_time": "{{ node.1.last_seen_at }}",
+                "earliest_time": "{{ node.1.first_seen_at }}"
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "af0b4355-a428-43d6-991c-d5ff878e17d5"
+        },
+        "3": {
+            "name": "Read JSON File",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "4"
+                ]
+            },
+            "arguments": {
+                "file": "{{ node.2| jsonpath(\"$.events[0]\", True) }}",
+                "to_file": false,
+                "jsonpath": "$..[\"url.original\"]",
+                "return_list": false
+            },
+            "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21",
+            "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87"
+        },
+        "4": {
+            "name": "Search URL",
+            "type": "action",
+            "outputs": {
+                "detected": [
+                    "8"
+                ],
+                "not detected": [
+                    "8"
+                ],
+                "unknown": [
+                    "5"
+                ]
+            },
+            "arguments": {
+                "url": "{{ node.3.output }}",
+                "detect_threshold": 1
+            },
+            "module_uuid": "0e30189d-583b-4a61-8fe1-9fea4c329985",
+            "action_uuid": "6460d220-3b55-47b8-b7e9-d711f2775257"
+        },
+        "5": {
+            "name": "Detonate URL",
+            "type": "action",
+            "outputs": {
+                "submitted": [
+                    "6"
+                ],
+                "already analysed": [
+                    "7"
+                ]
+            },
+            "arguments": {
+                "url": "{{ node.3.output }}",
+                "sandbox": "cape",
+                "wait": false
+            },
+            "module_uuid": "0e30189d-583b-4a61-8fe1-9fea4c329985",
+            "action_uuid": "08ae117c-e119-41e9-bc99-933565e67674"
+        },
+        "6": {
+            "name": "Comment Alert",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "content": "PolySwarm: nothing was known about this URL, so it has been sent to the sandbox. Task {{ node.5.sandbox_task_id }}. The detonation finished trigger will carry the result."
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a"
+        },
+        "7": {
+            "name": "Comment Alert",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "content": "PolySwarm: a sandbox report already existed for this URL. Report: {{ node.5.report_url }}"
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a"
+        },
+        "8": {
+            "name": "Comment Alert",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "content": "PolySwarm already holds a verdict for this URL: {{ node.4.malicious_count }} of {{ node.4.total_count }} engines flagged it. No detonation was needed. Details: {{ node.4.permalink }}"
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a"
+        }
+    },
+    "workspace": [
+        "Operation Center"
+    ],
+    "uuid": "86ce8155-7d00-47f9-94c0-2b474901af1c"
+}
