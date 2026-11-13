@@ -94,7 +94,7 @@
             },
             "arguments": {
                 "uuid": "{{ node.0.alert_uuid }}",
-                "content": "PolySwarm: at least one of these hashes is flagged. {{ node.4.queried_count }} of {{ node.4.requested_count }} looked up. Not found: {{ node.4.not_found }}"
+                "content": "PolySwarm: at least one of these hashes is flagged. {{ node.4.queried_count }} of {{ node.4.requested_count }} looked up. Not found: {{ node.4.not_found | join(', ') or 'none' }}"
             },
             "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
             "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a"
@@ -107,7 +107,7 @@
             },
             "arguments": {
                 "uuid": "{{ node.0.alert_uuid }}",
-                "content": "PolySwarm: no engine flagged any of these hashes. {{ node.4.queried_count }} of {{ node.4.requested_count }} looked up. Not found: {{ node.4.not_found }}"
+                "content": "PolySwarm: no engine flagged any of these hashes. {{ node.4.queried_count }} of {{ node.4.requested_count }} looked up. Not found: {{ node.4.not_found | join(', ') or 'none' }}"
             },
             "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
             "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a"
