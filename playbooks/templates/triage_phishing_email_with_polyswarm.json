@@ -1,0 +1,135 @@
+{
+    "name": "Triage a reported phishing email with PolySwarm",
+    "description": "Pull the indicators out of a reported email on a Sekoia alert, then check the URL against the engines on PolySwarm and comment the verdict back. Extracting the indicators runs inside Sekoia and never calls PolySwarm, so the message body does not leave your environment.",
+    "tags": [
+        "Alerts",
+        "Enrichment",
+        "Phishing"
+    ],
+    "nodes": {
+        "0": {
+            "name": "Manual Trigger",
+            "type": "trigger",
+            "outputs": {
+                "default": [
+                    "1"
+                ]
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "trigger_uuid": "fc26eb9f-b272-4c15-b3bf-ace397c0dc57"
+        },
+        "1": {
+            "name": "Get Alert",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "2"
+                ]
+            },
+            "arguments": {
+                "stix": false,
+                "uuid": "{{ node.0.alert_uuid }}"
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "8d189665-5401-4098-8d60-944de9a6199a"
+        },
+        "2": {
+            "name": "Get Events",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "3"
+                ]
+            },
+            "arguments": {
+                "query": "alert_short_ids: \"{{ node.1.short_id }}\"",
+                "latest_time": "{{ node.1.last_seen_at }}",
+                "earliest_time": "{{ node.1.first_seen_at }}"
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "af0b4355-a428-43d6-991c-d5ff878e17d5"
+        },
+        "3": {
+            "name": "Read JSON File",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "4"
+                ]
+            },
+            "arguments": {
+                "file": "{{ node.2| jsonpath(\"$.events[0]\", True) }}",
+                "to_file": false,
+                "jsonpath": "$..[\"email.body.content\"]",
+                "return_list": false
+            },
+            "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21",
+            "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87"
+        },
+        "4": {
+            "name": "Extract IOCs",
+            "type": "action",
+            "outputs": {
+                "default": [
+                    "5"
+                ]
+            },
+            "arguments": {
+                "text": "{{ node.3.output }}"
+            },
+            "module_uuid": "0e30189d-583b-4a61-8fe1-9fea4c329985",
+            "action_uuid": "ad1b40be-578f-4172-8805-997e62214baf"
+        },
+        "5": {
+            "name": "Search URL",
+            "type": "action",
+            "outputs": {
+                "detected": [
+                    "6"
+                ],
+                "not detected": [
+                    "7"
+                ],
+                "unknown": [
+                    "7"
+                ]
+            },
+            "arguments": {
+                "url": "{{ node.4.url[0] }}",
+                "detect_threshold": 1
+            },
+            "module_uuid": "0e30189d-583b-4a61-8fe1-9fea4c329985",
+            "action_uuid": "6460d220-3b55-47b8-b7e9-d711f2775257"
+        },
+        "6": {
+            "name": "Comment Alert",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "content": "PolySwarm: a URL in this email is flagged by {{ node.5.malicious_count }} of {{ node.5.total_count }} engines. Indicators found in the message: {{ node.4.total_count }}. Details: {{ node.5.permalink }}"
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a"
+        },
+        "7": {
+            "name": "Comment Alert",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "uuid": "{{ node.0.alert_uuid }}",
+                "content": "PolySwarm: no engine flagged the URL in this email, or it has not been seen. Indicators found in the message: {{ node.4.total_count }}. Treat an unseen URL as unknown rather than safe."
+            },
+            "module_uuid": "92d8bb47-7c51-445d-81de-ae04edbb6f0a",
+            "action_uuid": "0d323de3-a864-4afe-a0c3-e7ff45883d7a"
+        }
+    },
+    "workspace": [
+        "Operation Center"
+    ],
+    "uuid": "3b959fba-591c-40dd-a75f-091ee138cf6f"
+}

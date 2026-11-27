@@ -1,0 +1,92 @@
+{
+    "name": "Handle a finished PolySwarm detonation",
+    "description": "Start when a PolySwarm sandbox detonation finishes and pull the report. The trigger fires once per task that reaches a terminal state. Add your own response step after the branch that matters to you: the first poll after you enable the trigger deliberately emits nothing, so it does not replay your detonation history.",
+    "tags": [
+        "Sandbox",
+        "Enrichment"
+    ],
+    "nodes": {
+        "0": {
+            "name": "Sandbox detonation completed",
+            "type": "trigger",
+            "outputs": {
+                "default": [
+                    "1"
+                ]
+            },
+            "module_uuid": "0e30189d-583b-4a61-8fe1-9fea4c329985",
+            "trigger_uuid": "2cdb2836-c4b5-4d1b-aa82-b6496d43fdb2"
+        },
+        "1": {
+            "name": "Get Sandbox Report",
+            "type": "action",
+            "outputs": {
+                "malicious": [
+                    "2"
+                ],
+                "not malicious": [
+                    "3"
+                ],
+                "no report available": [
+                    "4"
+                ]
+            },
+            "arguments": {
+                "sha256": "{{ node.0.sha256 }}",
+                "sandbox": "{{ node.0.sandbox }}",
+                "include_raw_report": false
+            },
+            "module_uuid": "0e30189d-583b-4a61-8fe1-9fea4c329985",
+            "action_uuid": "244be009-2ffe-4d86-be75-9714332af756"
+        },
+        "2": {
+            "name": "Malicious behaviour",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "file": "{{ node.1 }}",
+                "to_file": false,
+                "jsonpath": "$.behavior",
+                "return_list": false
+            },
+            "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21",
+            "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87"
+        },
+        "3": {
+            "name": "No malicious score",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "file": "{{ node.1 }}",
+                "to_file": false,
+                "jsonpath": "$.behavior",
+                "return_list": false
+            },
+            "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21",
+            "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87"
+        },
+        "4": {
+            "name": "No report",
+            "type": "action",
+            "outputs": {
+                "default": []
+            },
+            "arguments": {
+                "file": "{{ node.1 }}",
+                "to_file": false,
+                "jsonpath": "$.status",
+                "return_list": false
+            },
+            "module_uuid": "07cce76b-a319-40ee-a0cf-1ba433431e21",
+            "action_uuid": "ecedfa52-7033-4ea8-9c3b-93ad34295f87"
+        }
+    },
+    "workspace": [
+        "Operation Center"
+    ],
+    "uuid": "7b2a2097-8c70-4099-b66e-181ba8aa3bf7"
+}
